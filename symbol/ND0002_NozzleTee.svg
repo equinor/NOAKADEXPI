@@ -66,13 +66,13 @@
 		</g>
 		<g id="shape1023-29" transform="translate(76.8133,-78.7028)">
 			<title>Horizontal</title>
-			<desc>4mm</desc>
+			<desc>8mm</desc>
 			<path d="M0 85.15 L0 109 L0 85.15 ZM56.69 85.15 L56.69 109 L56.69 85.15 Z" class="st3"/>
 			<path d="M0 85.15 L0 109 L0 85.15" class="st4"/>
 			<path d="M56.69 85.15 L56.69 109 L56.69 85.15" class="st4"/>
 			<path d="M28.35 93.15 L6.12 93.15" class="st5"/>
 			<path d="M28.35 93.15 L50.57 93.15" class="st5"/>
 			<rect x="19.9286" y="81.5522" width="16.8357" height="9.59985" class="st7"/>
-			<text x="19.93" y="88.75" class="st8">4mm</text>		</g>
+			<text x="19.93" y="88.75" class="st8">8mm</text>		</g>
 	</g>
 </svg>
