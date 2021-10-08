@@ -24,7 +24,7 @@
 		.st13 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.11764705882353}
 		.st14 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2}
 		.st15 {fill:#000000;font-family:Calibri;font-size:0.666664em}
-		.st16 {fill:#ffffff;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
+		.st16 {fill:none;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
 		.st17 {stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
 		.st18 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
@@ -50,9 +50,10 @@
 				v:shadowOffsetY="-8.50394"/>
 		<v:layer v:name="Grid" v:index="0"/>
 		<v:layer v:name="Label" v:index="1"/>
-		<v:layer v:name="Dimensions" v:index="2"/>
-		<v:layer v:name="Origo" v:index="3"/>
-		<v:layer v:name="Connection" v:index="4"/>
+		<v:layer v:name="Symbol" v:index="2"/>
+		<v:layer v:name="Dimensions" v:index="3"/>
+		<v:layer v:name="Origo" v:index="4"/>
+		<v:layer v:name="Connection" v:index="5"/>
 		<g id="group1404-1" transform="translate(0.125,-0.125006)" v:mID="1404" v:groupContext="group" v:layerMember="0">
 			<title>Sheet.1404</title>
 			<g id="shape1394-2" v:mID="1394" v:groupContext="shape" v:layerMember="0" transform="translate(1.40955,-548.086)">
@@ -496,11 +497,11 @@
 			<title>Sheet.1501</title>
 			<g id="shape1502-288" v:mID="1502" v:groupContext="shape" v:layerMember="1" transform="translate(2.14165,0)">
 				<title>Sheet.1502</title>
-				<desc>#</desc>
+				<desc>1</desc>
 				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 				<v:textRect cx="42.5197" cy="548.587" width="85.04" height="14.1732"/>
 				<rect x="0" y="541.501" width="85.0394" height="14.1732" class="st3"/>
-				<text x="40.24" y="551.59" class="st4" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>#</text>			</g>
+				<text x="40.24" y="551.59" class="st4" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>1</text>			</g>
 			<g id="shape1503-291" v:mID="1503" v:groupContext="shape" v:layerMember="1" transform="translate(0,-4.47576)">
 				<title>Sheet.1503</title>
 				<desc>A</desc>
@@ -509,7 +510,7 @@
 				<rect x="0" y="541.501" width="13.2348" height="14.1732" class="st5"/>
 				<text x="4" y="555.19" class="st6" v:langID="2057"><v:paragraph/><v:tabList/><tspan class="st7">A</tspan></text>			</g>
 		</g>
-		<g id="shape1508-295" v:mID="1508" v:groupContext="shape" transform="translate(279.777,-264.844)">
+		<g id="shape1508-295" v:mID="1508" v:groupContext="shape" v:layerMember="2" transform="translate(279.777,-265.59)">
 			<title>Circle.1009</title>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
@@ -517,7 +518,7 @@
 			</v:userDefs>
 			<path d="M0 442.29 A113.386 113.386 0 0 1 226.77 442.29 A113.386 113.386 0 1 1 0 442.29 Z" class="st8"/>
 		</g>
-		<g id="shape1509-297" v:mID="1509" v:groupContext="shape" transform="translate(378.99,-364.056)">
+		<g id="shape1509-297" v:mID="1509" v:groupContext="shape" v:layerMember="2" transform="translate(378.99,-364.802)">
 			<title>Circle.1015</title>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
@@ -525,11 +526,11 @@
 			</v:userDefs>
 			<path d="M0 541.5 A14.1732 14.1732 0 0 1 28.35 541.5 A14.1732 14.1732 0 1 1 0 541.5 Z" class="st8"/>
 		</g>
-		<g id="shape1510-299" v:mID="1510" v:groupContext="shape" transform="translate(280.523,-222.324)">
+		<g id="shape1510-299" v:mID="1510" v:groupContext="shape" v:layerMember="2" transform="translate(280.523,-223.07)">
 			<title>Sheet.1510</title>
 			<path d="M32.45 479.95 L0 555.67 L226.03 555.67 L192.83 479.95" class="st9"/>
 		</g>
-		<g id="shape1511-302" v:mID="1511" v:groupContext="shape" v:layerMember="2" transform="translate(279.777,-484.902)">
+		<g id="shape1511-302" v:mID="1511" v:groupContext="shape" v:layerMember="3" transform="translate(279.777,-485.648)">
 			<title>Horizontal.1014</title>
 			<desc>16mm</desc>
 			<v:custProps>
@@ -584,7 +585,7 @@
 			<path d="M113.39 535.83 L220.65 535.83" class="st12"/>
 			<rect v:rectContext="textBkgnd" x="102.941" y="524.23" width="20.8905" height="9.59985" class="st14"/>
 			<text x="102.94" y="531.43" class="st15" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>16mm</text>		</g>
-		<g id="shape1504-315" v:mID="1504" v:groupContext="shape" v:layerMember="3" transform="translate(386.599,-371.665)">
+		<g id="shape1504-315" v:mID="1504" v:groupContext="shape" v:layerMember="4" transform="translate(386.599,-372.411)">
 			<title>Circle</title>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
@@ -592,27 +593,27 @@
 			</v:userDefs>
 			<path d="M0 549.11 A6.56444 6.56444 0 1 1 13.13 549.11 A6.56444 6.56444 0 1 1 0 549.11 Z" class="st16"/>
 		</g>
-		<g id="group1505-317" transform="translate(272.691,-371.143)" v:mID="1505" v:groupContext="group" v:layerMember="4">
+		<g id="group1505-317" transform="translate(272.691,-371.889)" v:mID="1505" v:groupContext="group" v:layerMember="5">
 			<title>Sheet.1505</title>
-			<g id="shape1506-318" v:mID="1506" v:groupContext="shape" v:layerMember="4"
+			<g id="shape1506-318" v:mID="1506" v:groupContext="shape" v:layerMember="5"
 					transform="translate(407.094,934.421) rotate(135)">
 				<title>Sheet.1506</title>
 				<path d="M0 555.67 L20.04 555.67" class="st17"/>
 			</g>
-			<g id="shape1507-321" v:mID="1507" v:groupContext="shape" v:layerMember="4"
+			<g id="shape1507-321" v:mID="1507" v:groupContext="shape" v:layerMember="5"
 					transform="translate(-378.747,948.595) rotate(-135)">
 				<title>Sheet.1507</title>
 				<path d="M0 555.67 L20.04 555.67" class="st17"/>
 			</g>
 		</g>
-		<g id="group1512-324" transform="translate(386.077,-484.529)" v:mID="1512" v:groupContext="group" v:layerMember="4">
+		<g id="group1512-324" transform="translate(386.077,-485.275)" v:mID="1512" v:groupContext="group" v:layerMember="5">
 			<title>Sheet.1512</title>
-			<g id="shape1513-325" v:mID="1513" v:groupContext="shape" v:layerMember="4"
+			<g id="shape1513-325" v:mID="1513" v:groupContext="shape" v:layerMember="5"
 					transform="translate(407.094,934.421) rotate(135)">
 				<title>Sheet.1513</title>
 				<path d="M0 555.67 L20.04 555.67" class="st17"/>
 			</g>
-			<g id="shape1514-328" v:mID="1514" v:groupContext="shape" v:layerMember="4"
+			<g id="shape1514-328" v:mID="1514" v:groupContext="shape" v:layerMember="5"
 					transform="translate(-378.747,948.595) rotate(-135)">
 				<title>Sheet.1514</title>
 				<path d="M0 555.67 L20.04 555.67" class="st17"/>

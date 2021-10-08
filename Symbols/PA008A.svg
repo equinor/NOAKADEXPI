@@ -18,19 +18,24 @@
 		<title>Page-1</title>
 		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
 				v:shadowOffsetY="-8.50394"/>
-		<g id="shape1425-1" v:mID="1425" v:groupContext="shape" transform="translate(7.46004,-99.8825) rotate(-0.57131)">
+		<v:layer v:name="Symbol" v:index="0"/>
+		<g id="shape1425-1" v:mID="1425" v:groupContext="shape" v:layerMember="0"
+				transform="translate(7.46004,-99.8825) rotate(-0.57131)">
 			<title>Sheet.1425</title>
 			<path d="M0 152.06 L84.54 152.06" class="st1"/>
 		</g>
-		<g id="shape1429-4" v:mID="1429" v:groupContext="shape" transform="translate(-100.228,-53.6437) rotate(-45.9038)">
+		<g id="shape1429-4" v:mID="1429" v:groupContext="shape" v:layerMember="0"
+				transform="translate(-100.228,-53.6437) rotate(-45.9038)">
 			<title>Sheet.1429</title>
 			<path d="M-0 152.06 A43.3626 42.0157 135.9 0 1 60.38 152.06" class="st1"/>
 		</g>
-		<g id="shape1430-7" v:mID="1430" v:groupContext="shape" transform="translate(-5.20401,150.041) rotate(-135)">
+		<g id="shape1430-7" v:mID="1430" v:groupContext="shape" v:layerMember="0"
+				transform="translate(-5.20401,150.041) rotate(-135)">
 			<title>Sheet.1430</title>
 			<path d="M-0 139.61 A42.5197 42.5197 -45 0 0 60.13 139.61" class="st1"/>
 		</g>
-		<g id="shape1431-10" v:mID="1431" v:groupContext="shape" transform="translate(203.051,51.4228) rotate(90)">
+		<g id="shape1431-10" v:mID="1431" v:groupContext="shape" v:layerMember="0"
+				transform="translate(203.051,51.4228) rotate(90)">
 			<title>Sheet.1431</title>
 			<path d="M0 152.06 L99.51 152.06" class="st1"/>
 		</g>

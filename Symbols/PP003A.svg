@@ -19,7 +19,8 @@
 		<title>Page-1</title>
 		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
 				v:shadowOffsetY="-8.50394"/>
-		<g id="shape1508-1" v:mID="1508" v:groupContext="shape" transform="translate(1.125,-43.6447)">
+		<v:layer v:name="Symbol" v:index="0"/>
+		<g id="shape1508-1" v:mID="1508" v:groupContext="shape" v:layerMember="0" transform="translate(1.125,-43.6447)">
 			<title>Circle.1009</title>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
@@ -27,7 +28,7 @@
 			</v:userDefs>
 			<path d="M0 158.53 A113.759 113.759 0 0 1 227.52 158.53 A113.759 113.759 0 1 1 0 158.53 Z" class="st1"/>
 		</g>
-		<g id="shape1509-3" v:mID="1509" v:groupContext="shape" transform="translate(58.1909,-157.776)">
+		<g id="shape1509-3" v:mID="1509" v:groupContext="shape" v:layerMember="0" transform="translate(58.1909,-157.776)">
 			<title>Circle.1014</title>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
@@ -35,7 +36,7 @@
 			</v:userDefs>
 			<path d="M0 215.59 A56.6929 56.6929 0 0 1 113.39 215.59 A56.6929 56.6929 0 1 1 0 215.59 Z" class="st1"/>
 		</g>
-		<g id="shape1510-5" v:mID="1510" v:groupContext="shape" transform="translate(58.1909,-43.6447)">
+		<g id="shape1510-5" v:mID="1510" v:groupContext="shape" v:layerMember="0" transform="translate(58.1909,-43.6447)">
 			<title>Circle.1015</title>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
@@ -43,7 +44,7 @@
 			</v:userDefs>
 			<path d="M0 215.59 A56.6929 56.6929 0 0 1 113.39 215.59 A56.6929 56.6929 0 1 1 0 215.59 Z" class="st1"/>
 		</g>
-		<g id="shape1511-7" v:mID="1511" v:groupContext="shape" transform="translate(2.6169,-1.125)">
+		<g id="shape1511-7" v:mID="1511" v:groupContext="shape" v:layerMember="0" transform="translate(2.6169,-1.125)">
 			<title>Sheet.1511</title>
 			<path d="M32.45 196.57 L0 272.29 L226.03 272.29 L192.83 196.57" class="st2"/>
 		</g>

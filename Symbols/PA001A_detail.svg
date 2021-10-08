@@ -45,7 +45,8 @@
 				v:shadowOffsetY="-8.50394"/>
 		<v:layer v:name="Grid" v:index="0"/>
 		<v:layer v:name="Origo" v:index="1"/>
-		<v:layer v:name="Dimensions" v:index="2"/>
+		<v:layer v:name="Symbol" v:index="2"/>
+		<v:layer v:name="Dimensions" v:index="3"/>
 		<g id="group1404-1" transform="translate(0.125,-0.125006)" v:mID="1404" v:groupContext="group" v:layerMember="0">
 			<title>Sheet.1404</title>
 			<g id="shape1309-2" v:mID="1309" v:groupContext="shape" v:layerMember="0"
@@ -493,7 +494,7 @@
 			</v:userDefs>
 			<path d="M0 549.11 A6.56444 6.56444 0 0 1 13.13 549.11 A6.56444 6.56444 0 1 1 0 549.11 Z" class="st3"/>
 		</g>
-		<g id="shape1440-289" v:mID="1440" v:groupContext="shape" transform="translate(181.223,-264.01)">
+		<g id="shape1440-289" v:mID="1440" v:groupContext="shape" v:layerMember="2" transform="translate(181.223,-264.01)">
 			<title>Circle.1004</title>
 			<desc>M</desc>
 			<v:userDefs>
@@ -504,11 +505,12 @@
 			<v:textRect cx="57.1098" cy="498.564" width="99.95" height="85.6646"/>
 			<path d="M0 498.56 A57.1098 57.1098 0 1 1 114.22 498.56 A57.1098 57.1098 0 0 1 0 498.56 Z" class="st4"/>
 			<text x="42.12" y="509.36" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>M</text>		</g>
-		<g id="shape1441-292" v:mID="1441" v:groupContext="shape" transform="translate(794.007,291.664) rotate(90)">
+		<g id="shape1441-292" v:mID="1441" v:groupContext="shape" v:layerMember="2"
+				transform="translate(794.007,291.664) rotate(90)">
 			<title>Sheet.1441</title>
 			<path d="M0 555.67 L98.38 555.67" class="st6"/>
 		</g>
-		<g id="shape1442-295" v:mID="1442" v:groupContext="shape" v:layerMember="2" transform="translate(181.223,-374.412)">
+		<g id="shape1442-295" v:mID="1442" v:groupContext="shape" v:layerMember="3" transform="translate(181.223,-374.412)">
 			<title>Horizontal.1012</title>
 			<desc>6mm</desc>
 			<v:custProps>
@@ -573,7 +575,7 @@
 			<path d="M56.69 535.73 L107.27 535.73" class="st9"/>
 			<rect v:rectContext="textBkgnd" x="48.275" y="524.133" width="16.8357" height="9.59985" class="st11"/>
 			<text x="48.28" y="531.33" class="st12" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>6mm</text>		</g>
-		<g id="shape1443-308" v:mID="1443" v:groupContext="shape" v:layerMember="2"
+		<g id="shape1443-308" v:mID="1443" v:groupContext="shape" v:layerMember="3"
 				transform="translate(-359.444,390.14) rotate(-90)">
 			<title>Vertical.1014</title>
 			<desc>7mm</desc>
