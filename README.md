@@ -1,3 +1,5 @@
 # DEXPI
 
-not so much to write here
+NOAKA DEXPI Pilot Project:
+- symbol library with reference Symbol ID
+- 
