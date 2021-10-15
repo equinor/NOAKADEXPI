@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PlantModel xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation = "../ProteusPIDSchema_4.0.1.xsd">
+  <!--Created with INGR ISO15926 PostProc V0.0.7.13 and ConfigurationFileVersion 7.0013 by NOOFT-01\ofslinil on ABLAPP122 at 05.10.2021 13.04.49-->
+  <PlantInformation
+    SchemaVersion = "4.0.1"
+    OriginatingSystem = "SPPID"
+    Date = "2021-10-05"
+    Time = "10:52:34.0000000+02:00"
+    Is3D = "no"
+    Units = "Metre"
+    Discipline = "PID">
+    <UnitsOfMeasure/>
+  </PlantInformation>
+  <Drawing Name = "PID.002" Type = "PID">
+    <Presentation R = "1" G = "1" B = "1"/>
+    <Extent>
+      <Min X = "0" Y = "0"/>
+      <Max X = "0.841" Y = "0.594"/>
+    </Extent>
+  </Drawing>
+  <!--arbitrary name: Symbol Library"-->
+  <ShapeCatalogue Name = "Symbol Library">
+    <!--arbitrary ID and ComponentName-->
+    <Nozzle ID = "NozzleShape-1" ComponentName = "NozzleShape-1">
+      <GenericAttributes Number = "1">
+        <GenericAttribute
+          Name = "SymboleRgistrationNumberAssignmentClass"
+          AttributeURI = "http://sandbox.dexpi.org/rdl/SymboleRgistrationNumberAssignmentClass"
+          Value = "ND0002"
+          Format = "string"/>
+      </GenericAttributes>
+      <!--in "standard" DEXPI: shape geometry goes here; omitted in NOAKA-->
+    </Nozzle>
+    <Equipment ID = "BlackBoxShape-1" ComponentName = "BlackBoxShape-1">
+      <GenericAttributes Number = "1">
+        <GenericAttribute
+          Name = "SymboleRgistrationNumberAssignmentClass"
+          AttributeURI = "http://sandbox.dexpi.org/rdl/SymboleRgistrationNumberAssignmentClass"
+          Value = "..."
+          Format = "string"/>
+      </GenericAttributes>
+    </Equipment>
+  </ShapeCatalogue>
+  <Equipment
+    ID = "BlackBox-1"
+    ComponentName = "BlackBoxShape-1"
+    ComponentClass = "Pump"
+    ComponentClassURI = "http://data.posccaesar.org/rdl/RDS327239">
+    <!--details about PersistentID still in discussion-->
+    <PersistentID Identifier = "SP6154335D35F2453886A96144BBEE351D" Context = "SmartPID - AskjaC"/>
+    <Position>
+      <Location X = "0.2857" Y = "0.3353" Z = "0"/>
+      <Axis X = "0" Y = "0" Z = "1"/>
+      <Reference X = "1" Y = "0" Z = "0"/>
+    </Position>
+    <Scale X = "1.0" Y = "1.0" Z = "1.0"/>
+    <Nozzle
+      ID = "Nozzle-1"
+      ComponentClass = "Nozzle"
+      ComponentName = "NozzleShape-1"
+      ComponentClassURI = "http://data.posccaesar.org/rdl/RDS415214">
+      <!--in standard DEXPI, ObjectDisplayName would not be displayed in the graphics without explicit <Label>; in NOAKA: displayed according to rules for shape ND0002-->
+      <GenericAttributes Number = "1" Set = "CustomAttributes">
+        <GenericAttribute
+          Name = "ObjectDisplayName"
+          Format = "string"
+          AttributeURI = "http://sandbox.dexpi.org/rdl/ObjectDisplayName"
+          Value = "N01"/>
+      </GenericAttributes>
+      <!--details about PersistentID still in discussion-->
+      <PersistentID Identifier = "SP9693EDFDD1F843AC8A8638D5A1D0C411" Context = "SmartPID - AskjaC"/>
+      <Position>
+        <Location X = "0.28" Y = "0.348" Z = "0"/>
+        <Axis X = "0" Y = "0" Z = "1"/>
+        <Reference X = "1" Y = "0" Z = "0"/>
+      </Position>
+      <Scale X = "1.0" Y = "1.0" Z = "1.0"/>
+      <ConnectionPoints NumPoints = "2">
+        <Node ID = "Nozzle-1-Node-0">
+          <!--"dummy" node required by Proteus -->
+          <Position>
+            <Location X = "0.28" Y = "0.34800000000000003"/>
+            <Axis X = "0" Y = "0" Z = "1"/>
+            <Reference X = "1" Y = "0" Z = "0"/>
+          </Position>
+        </Node>
+        <Node ID = "Nozzle-1-Node-1" Type = "process">
+          <Position>
+            <Location X = "0.28" Y = "0.352"/>
+            <Axis X = "0" Y = "0" Z = "1"/>
+            <Reference X = "1" Y = "0" Z = "0"/>
+          </Position>
+        </Node>
+      </ConnectionPoints>
+    </Nozzle>
+  </Equipment>
+</PlantModel>
