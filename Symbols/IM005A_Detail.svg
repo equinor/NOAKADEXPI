@@ -420,11 +420,11 @@
 				<path d="M0 555.67 L801.48 555.67" class="st2"/>
 			</g>
 		</g>
-		<g id="shape1406-287" transform="translate(180.469,-264.941)">
+		<g id="shape1406-287" transform="translate(180.842,-264.941)">
 			<title>Circle.1009</title>
 			<path d="M0 470.63 A85.0394 85.0394 0 0 1 170.08 470.63 A85.0394 85.0394 0 1 1 0 470.63 Z" class="st3"/>
 		</g>
-		<g id="shape1407-289" transform="translate(180.469,-443.971)">
+		<g id="shape1407-289" transform="translate(180.842,-443.971)">
 			<title>Horizontal.1014</title>
 			<desc>12mm</desc>
 			<path d="M0 527.83 L0 551.67 L0 527.83 ZM170.08 527.83 L170.08 560.63 L170.08 527.83 Z" class="st4"/>
@@ -461,7 +461,7 @@
 				<rect x="0" y="541.501" width="13.2348" height="14.1732" class="st13"/>
 				<text x="4" y="555.19" class="st14"><tspan class="st15">A</tspan></text>			</g>
 		</g>
-		<g id="group1414-324" transform="translate(220.847,-387.927)">
+		<g id="group1414-324" transform="translate(222.29,-387.927)">
 			<title>Sheet.1414</title>
 			<g id="shape1415-325" transform="translate(2.14165,0)">
 				<title>Sheet.1415</title>
@@ -474,7 +474,7 @@
 				<rect x="0" y="541.501" width="13.2348" height="14.1732" class="st13"/>
 				<text x="4" y="555.19" class="st14"><tspan class="st15">B</tspan></text>			</g>
 		</g>
-		<g id="group1417-332" transform="translate(222.988,-302.888)">
+		<g id="group1417-332" transform="translate(222.29,-302.888)">
 			<title>Sheet.1417</title>
 			<g id="shape1418-333" transform="translate(2.14165,0)">
 				<title>Sheet.1418</title>
