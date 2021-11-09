@@ -1,0 +1,699 @@
+﻿<!DOCTYPE html>
+<html class="vp">
+<head>
+  <meta charset="utf-8">
+  <title>Drawing1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta property="og:title" content="Drawing1" />
+
+  <script src="vp/jquery-3.1.1.min.js"></script>
+  <link href="vp/bootstrap-3.3.7.min.css" rel="stylesheet" />
+  <script src="vp/bootstrap-3.3.7.min.js"></script>
+  
+  
+  <script src="vp/mustache-2.3.0.min.js"></script>
+  <script src="vp/marked-1.0.0.min.js"></script>
+  <link href="vp/vp-style-1.3.3.min.css" rel="stylesheet" />
+  <script>
+        window.svgpublish = {"shapes":{"shape1404":{"ShapeId":"shape1404","Props":{"Option1":"ValvePosition='NC'"},"Layers":[2],"Text":""},"shape1405":{"ShapeId":"shape1405","DefaultLink":1,"Links":[{"PageId":-1,"Address":"https://www.posccaesar.org/","Description":"","Zoom":0.0}],"Props":{"Option1":"ValvePosition='NC'"},"Layers":[3],"Text":"","MasterName":"Circle"},"shape1407":{"ShapeId":"shape1407","Props":{"Label1":"ObjectDisplayName"},"Layers":[5],"Text":""},"shape1410":{"ShapeId":"shape1410","Props":{"Precision":"0","Units":"Millimeters","Units Display":"Show Units","Angle":"0.0000 deg","Option1":"ValvePosition='NC'"},"Layers":[1],"Text":"8mm","MasterName":"Horizontal"},"shape1411":{"ShapeId":"shape1411","Props":{"Precision":"0.00","Units":"Use Drawing Page's Units","Units Display":"Don't Show Units","Angle":"90.0000 deg","Option1":"ValvePosition='NC'"},"Layers":[1],"Text":"4mm","MasterName":"Vertical"},"shape1415":{"ShapeId":"shape1415","Props":{"Option1":"ValvePosition='NC'"},"Layers":[4],"Text":""},"shape1423":{"ShapeId":"shape1423","Props":{"Option1":"ValvePosition='NC'"},"Layers":[4],"Text":""},"shape1428":{"ShapeId":"shape1428","Props":{"Rotation":"Yes","Mirroring":"Yes","ResizingX":"No","ResizingY":"No"},"Layers":[6],"Text":""},"shape1431":{"ShapeId":"shape1431","Props":{"Option1":"ValvePosition='NC'"},"Layers":[7],"Text":""}},"pages":[{"Name":"PV005A","Id":79,"FileName":"Symbols.html"}],"currentPage":{"Name":"PV005A","Id":79,"FileName":"Symbols.html"},"searchIndex":{"79":{"shape1404":{"":null},"shape1405":{"":null},"shape1407":{"":"1 A "},"shape1410":{"":"8mm "},"shape1411":{"":"4mm "},"shape1415":{"":null},"shape1423":{"":null},"shape1428":{"":null},"shape1431":{"":null}}},"layers":[{"Name":"Dimensions","Index":1,"Visible":true},{"Name":"Grid","Index":2,"Visible":true},{"Name":"Origo","Index":3,"Visible":true},{"Name":"Connection","Index":4,"Visible":true},{"Name":"Label","Index":5,"Visible":true},{"Name":"Symbol","Index":6,"Visible":true},{"Name":"Option1","Index":7,"Visible":true}],"enableProps":true,"twoFingersTouch":false,"enableAutoFrameHeight":false,"enableLinks":false,"enablePages":true,"enablePageLookup":false,"enablePageSort":false,"enableZoomCtrl":false,"enableZoomShift":false,"enableSearch":true,"enableMultiPageSearch":true,"enableSidebar":true,"enableTooltips":false,"enableSelection":true,"enableHover":true,"enableLayers":true,"enableFollowHyperlinks":true,"openHyperlinksInNewWindow":true,"transformVisioFileLinks":false,"keepRelativeLinks":true,"rightSidebar":false,"alwaysHideSidebar":false,"showSidebarOnSelection":false,"enableSidbarTitle":false,"enableSidebarMarkdown":false,"enableTooltipMarkdown":false,"enableD3":false,"skipMinification":false,"enableBootstrapSwitch":false,"enableBootstrapSelect":false,"tooltipPlacement":"","popoverPlacement":"","enablePopovers":false,"enablePopoverMarkdown":false,"tooltipTrigger":"","tooltipOutsideClick":false,"tooltipUseMousePosition":false,"tooltipKeepOnHover":false,"tooltipTimeout":false,"tooltipTimeoutShow":"","sidebarDefaultWidth":"","tooltipTimeoutHide":"","popoverTrigger":"","popoverTimeout":false,"popoverOutsideClick":false,"popoverKeepOnHover":false,"popoverTimeoutShow":"","popoverTimeoutHide":"","popoverUseMousePosition":false,"enableContainerTip":false,"enablePropertySearch":false,"enablePropertySearchFilter":false,"processNested":false,"processBackground":false,"viewBox":"0 0 841.89 595.276","layerView":{"enableLayerLookup":false,"enableLayerSort":true,"enableLayerToggles":false,"enableLayerShowAll":false},"selectionView":{"enableBoxSelection":false,"enableBlur":false,"blur":2,"enableDilate":true,"dilate":4,"mode":"normal","selectColor":"rgba(255, 255, 0, 0.90)","hoverColor":"rgba(255, 255, 0, 0.30)","hyperlinkColor":"rgba(0, 0, 255, 0.30)"}}
+        $(document).ready(function () { $("div.svg").panzoom({ svg: $("div.svg > svg").get(0), viewBox: "0 0 841.89 595.276" }).removeClass("appear"); });
+  </script>
+  <script src="vp/vp-script-1.3.3.min.js"></script>
+</head>
+<body>
+  
+  <div id="body-html"></div>
+  <div id="diagram-sidebar" style="display: none; position: absolute">
+    <div style="height: 100%; width: 100%; padding: 1em">
+      <div id="sidebar-html"></div>
+      <div id="shape-search" class="panel panel-default" style="display: none">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <svg class="icon-search">
+              <symbol id="icon-search" viewBox="0 0 32 32">
+                <path d="M28.232 6.232l-4.465-4.464c-0.972-0.972-2.893-1.768-4.268-1.768h-15c-1.375 0-2.5 1.125-2.5 2.5v27c0 1.375 1.125 2.5 2.5 2.5h23c1.375 0 2.5-1.125 2.5-2.5v-19c0-1.375-0.796-3.296-1.768-4.268zM26.818 7.646c0.098 0.098 0.195 0.218 0.29 0.354h-5.108v-5.108c0.136 0.095 0.256 0.192 0.354 0.29l4.465 4.464zM28 29.5c0 0.271-0.229 0.5-0.5 0.5h-23c-0.271 0-0.5-0.229-0.5-0.5v-27c0-0.271 0.229-0.5 0.5-0.5h15c0.151 0 0.32 0.019 0.5 0.053v7.947h7.947c0.034 0.18 0.053 0.349 0.053 0.5v19z"></path>
+              </symbol>
+              <use xlink:href="#icon-search"></use>
+            </svg>&nbsp;
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseSearch">Search</a>
+          </h4>
+        </div>
+        <div id="collapseSearch" class="panel-collapse collapse in">
+          <div id="panel-search" class="panel-body">
+            <input type="text" id="search-term" class="form-control" value="" placeholder="Search" autocomplete="off" />
+            
+            <div id="panel-search-results" data-searchresults="Search Results:"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="shape-pages" class="panel panel-default" style="display: none">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <svg class="icon-sidebar">
+              <symbol id="icon-page" viewBox="0 0 32 32">
+                <path d="M28.232 6.232l-4.465-4.464c-0.972-0.972-2.893-1.768-4.268-1.768h-15c-1.375 0-2.5 1.125-2.5 2.5v27c0 1.375 1.125 2.5 2.5 2.5h23c1.375 0 2.5-1.125 2.5-2.5v-19c0-1.375-0.796-3.296-1.768-4.268zM26.818 7.646c0.098 0.098 0.195 0.218 0.29 0.354h-5.108v-5.108c0.136 0.095 0.256 0.192 0.354 0.29l4.465 4.464zM28 29.5c0 0.271-0.229 0.5-0.5 0.5h-23c-0.271 0-0.5-0.229-0.5-0.5v-27c0-0.271 0.229-0.5 0.5-0.5h15c0.151 0 0.32 0.019 0.5 0.053v7.947h7.947c0.034 0.18 0.053 0.349 0.053 0.5v19z"></path>
+              </symbol>
+              <use xlink:href="#icon-page"></use>
+            </svg>&nbsp;
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapsePages">Pages</a>
+          </h4>
+        </div>
+        <div id="collapsePages" class="panel-collapse collapse in">
+          <div class="panel-body">
+            
+            <div id="panel-pages"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="shape-layers" class="panel panel-default" style="display: none">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <svg class="icon-sidebar">
+              <symbol id="icon-layer" viewBox="0 0 32 32">
+                <path d="M28.232 6.232l-4.465-4.464c-0.972-0.972-2.893-1.768-4.268-1.768h-15c-1.375 0-2.5 1.125-2.5 2.5v27c0 1.375 1.125 2.5 2.5 2.5h23c1.375 0 2.5-1.125 2.5-2.5v-19c0-1.375-0.796-3.296-1.768-4.268zM26.818 7.646c0.098 0.098 0.195 0.218 0.29 0.354h-5.108v-5.108c0.136 0.095 0.256 0.192 0.354 0.29l4.465 4.464zM28 29.5c0 0.271-0.229 0.5-0.5 0.5h-23c-0.271 0-0.5-0.229-0.5-0.5v-27c0-0.271 0.229-0.5 0.5-0.5h15c0.151 0 0.32 0.019 0.5 0.053v7.947h7.947c0.034 0.18 0.053 0.349 0.053 0.5v19z"></path>
+              </symbol>
+              <use xlink:href="#icon-layer"></use>
+            </svg>&nbsp;
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseLayers">Layers</a>
+          </h4>
+        </div>
+        <div id="collapseLayers" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <div id="panel-layers" data-ontext="ON" data-offtext="OFF"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="shape-props" class="panel panel-default" style="display: none">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <svg class="icon-sidebar">
+              <symbol id="icon-list-ul" viewBox="0 0 28 28">
+                <path d="M6 22c0 1.656-1.344 3-3 3s-3-1.344-3-3 1.344-3 3-3 3 1.344 3 3zM6 14c0 1.656-1.344 3-3 3s-3-1.344-3-3 1.344-3 3-3 3 1.344 3 3zM28 20.5v3c0 0.266-0.234 0.5-0.5 0.5h-19c-0.266 0-0.5-0.234-0.5-0.5v-3c0-0.266 0.234-0.5 0.5-0.5h19c0.266 0 0.5 0.234 0.5 0.5zM6 6c0 1.656-1.344 3-3 3s-3-1.344-3-3 1.344-3 3-3 3 1.344 3 3zM28 12.5v3c0 0.266-0.234 0.5-0.5 0.5h-19c-0.266 0-0.5-0.234-0.5-0.5v-3c0-0.266 0.234-0.5 0.5-0.5h19c0.266 0 0.5 0.234 0.5 0.5zM28 4.5v3c0 0.266-0.234 0.5-0.5 0.5h-19c-0.266 0-0.5-0.234-0.5-0.5v-3c0-0.266 0.234-0.5 0.5-0.5h19c0.266 0 0.5 0.234 0.5 0.5z"></path>
+              </symbol>
+              <use xlink:href="#icon-list-ul"></use>
+            </svg>&nbsp;
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseProps">Shape Properties</a>
+          </h4>
+        </div>
+        <div id="collapseProps" class="panel-collapse collapse in">
+          <div id="panel-props"
+               data-labelproperty="Property"
+               data-labelvalue="Value"
+               data-labelnodata="No Shape Data"
+               class="panel-body">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="sidebar-toggle" style="display: none">
+    <svg class="icon-sidebar">
+      <symbol id="icon-bars" viewBox="0 0 24 28">
+        <path d="M24 21v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 13v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 5v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1z"></path>
+      </symbol>
+      <use xlink:href="#icon-bars"></use>
+    </svg>
+  </div>
+  <div id="svg" class="svg appear">
+    <svg width="100%" height="100%" xml:space="preserve" color-interpolation-filters="sRGB" class="st18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events">
+	
+	
+
+	<style type="text/css">
+	.st1 {stroke:#d8d8d8;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.25;}
+	.st2 {stroke:#7f7f7f;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.25;}
+	.st3 {fill:#ffffff;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25;}
+	.st4 {fill:none;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75;}
+	.st5 {fill:#ff0000;font-family:Arial Narrow;font-size:0.833336em;font-weight:bold;}
+	.st6 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75;}
+	.st7 {fill:#ff0000;font-family:Arial Narrow;font-size:0.811964em;font-weight:bold;}
+	.st8 {baseline-shift:33.35%;font-size:0.667em;}
+	.st9 {fill:#ffffff;}
+	.st10 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24;}
+	.st11 {marker-end:url(#mrkr13-303);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24;}
+	.st12 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.11764705882353;}
+	.st13 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2;}
+	.st14 {fill:#000000;font-family:Calibri;font-size:0.666664em;}
+	.st15 {stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5;}
+	.st16 {fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25;}
+	.st17 {fill:#000000;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25;}
+	.st18 {fill:none;fill-rule:evenodd;font-size:12px;overflow:hidden;stroke-linecap:square;stroke-miterlimit:3;}
+</style>
+
+	<defs id="Markers">
+		<g id="lend13">
+			<path d="M 3 1 L 0 0 L 3 -1 L 3 1 " style="stroke:none" />
+		</g>
+		<marker style="overflow:visible" id="mrkr13-303" class="st12" refX="-25.5" orient="auto" markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend13" transform="scale(-8.5000000000001,-8.5000000000001) " />
+		</marker>
+	</defs>
+	<g id="viewport">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<g id="shape1404" transform="translate(21.2598,-21.2598)">
+			
+			
+			<g id="shape1309-2" transform="translate(633.983,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1310-5" transform="translate(662.33,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st2" />
+			</g>
+			<g id="shape1311-8" transform="translate(676.503,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1312-11" transform="translate(690.676,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1313-14" transform="translate(704.849,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1314-17" transform="translate(648.156,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1315-20" transform="translate(719.022,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1316-23" transform="translate(733.196,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st2" />
+			</g>
+			<g id="shape1317-26" transform="translate(747.369,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1318-29" transform="translate(761.542,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1319-32" transform="translate(789.889,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1320-35" transform="translate(804.062,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st2" />
+			</g>
+			<g id="shape1321-38" transform="translate(818.235,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1322-41" transform="translate(832.408,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1323-44" transform="translate(775.715,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1324-47" transform="translate(846.582,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1325-50" transform="translate(860.755,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1326-53" transform="translate(874.928,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st2" />
+			</g>
+			<g id="shape1327-56" transform="translate(889.101,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1328-59" transform="translate(917.448,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1329-62" transform="translate(931.621,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1330-65" transform="translate(945.794,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st2" />
+			</g>
+			<g id="shape1331-68" transform="translate(959.967,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1332-71" transform="translate(903.274,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1333-74" transform="translate(974.141,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1334-77" transform="translate(988.314,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1335-80" transform="translate(1002.49,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1336-83" transform="translate(1016.66,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st2" />
+			</g>
+			<g id="shape1337-86" transform="translate(1045.01,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1338-89" transform="translate(1059.18,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1339-92" transform="translate(1073.35,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1340-95" transform="translate(1087.53,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st2" />
+			</g>
+			<g id="shape1341-98" transform="translate(1030.83,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1342-101" transform="translate(1101.7,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1343-104" transform="translate(1115.87,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1344-107" transform="translate(1130.05,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1345-110" transform="translate(1144.22,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1346-113" transform="translate(1172.57,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1347-116" transform="translate(1186.74,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1348-119" transform="translate(1200.91,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1349-122" transform="translate(1215.09,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1350-125" transform="translate(1158.39,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st2" />
+			</g>
+			<g id="shape1351-128" transform="translate(1229.26,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st2" />
+			</g>
+			<g id="shape1352-131" transform="translate(1243.43,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1353-134" transform="translate(1257.61,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1354-137" transform="translate(1271.78,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1355-140" transform="translate(1300.12,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st2" />
+			</g>
+			<g id="shape1356-143" transform="translate(1314.3,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1357-146" transform="translate(1328.47,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1358-149" transform="translate(1342.64,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1359-152" transform="translate(1285.95,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1360-155" transform="translate(1356.82,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1361-158" transform="translate(1370.99,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st2" />
+			</g>
+			<g id="shape1362-161" transform="translate(0,-52.0232)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st2" />
+			</g>
+			<g id="shape1363-164" transform="translate(0,-66.1964)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+			<g id="shape1364-167" transform="translate(0,-80.3697)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+			<g id="shape1365-170" transform="translate(0,-94.5429)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+			<g id="shape1366-173" transform="translate(0,-122.889)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st2" />
+			</g>
+			<g id="shape1367-176" transform="translate(0,-137.063)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+			<g id="shape1368-179" transform="translate(0,-151.236)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+			<g id="shape1369-182" transform="translate(0,-165.409)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+			<g id="shape1370-185" transform="translate(0,-108.716)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+			<g id="shape1371-188" transform="translate(0,-179.582)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+			<g id="shape1372-191" transform="translate(0,-193.755)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st2" />
+			</g>
+			<g id="shape1373-194" transform="translate(0,-207.929)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+			<g id="shape1374-197" transform="translate(0,-222.102)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+			<g id="shape1375-200" transform="translate(0,-250.448)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+			<g id="shape1376-203" transform="translate(0,-264.622)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st2" />
+			</g>
+			<g id="shape1377-206" transform="translate(0,-278.795)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+			<g id="shape1378-209" transform="translate(2.64787,-293.065)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+			<g id="shape1379-212" transform="translate(0,-236.275)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+			<g id="shape1380-215" transform="translate(0,-307.141)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+			<g id="shape1381-218" transform="translate(0,-321.315)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+			<g id="shape1382-221" transform="translate(0,-335.488)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st2" />
+			</g>
+			<g id="shape1383-224" transform="translate(0,-349.661)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+			<g id="shape1384-227" transform="translate(0,-378.007)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+			<g id="shape1385-230" transform="translate(0,-392.181)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+			<g id="shape1386-233" transform="translate(0,-406.354)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st2" />
+			</g>
+			<g id="shape1387-236" transform="translate(0,-420.527)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+			<g id="shape1388-239" transform="translate(0,-363.834)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+			<g id="shape1389-242" transform="translate(0,-434.7)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+			<g id="shape1390-245" transform="translate(0,-448.874)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+			<g id="shape1391-248" transform="translate(0,-463.047)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+			<g id="shape1392-251" transform="translate(2.15551,-519.837)">
+				
+				<path d="M0 595.28 L799.32 595.28" class="st1" />
+			</g>
+			<g id="shape1393-254" transform="translate(0,-505.567)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+			<g id="shape1394-257" transform="translate(1.40955,-548.086)">
+				
+				<path d="M0 595.28 L800.07 595.28" class="st2" />
+			</g>
+			<g id="shape1395-260" transform="translate(0,-491.393)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+			<g id="shape1396-263" transform="translate(0,-9.50352)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+			<g id="shape1397-266" transform="translate(0,-23.6768)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+			<g id="shape1398-269" transform="translate(0,-37.85)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+			<g id="shape1399-272" transform="translate(0,-478.063)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st2" />
+			</g>
+			<g id="shape1400-275" transform="translate(605.637,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1401-278" transform="translate(619.81,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1402-281" transform="translate(1385.16,39.8518) rotate(90)">
+				
+				<path d="M0 595.28 L555.42 595.28" class="st1" />
+			</g>
+			<g id="shape1403-284" transform="translate(0,-534.01)">
+				
+				<path d="M0 595.28 L801.48 595.28" class="st1" />
+			</g>
+		</g>
+		
+			<g id="shape1405" transform="translate(379.885,-307.719)" class="circle">
+				
+				
+				
+				<path d="M0 588.71 A6.56444 6.56444 0 0 1 13.13 588.71 A6.56444 6.56444 0 1 1 0 588.71 Z" class="st3" />
+			</g>
+		
+		<g id="shape1407" transform="translate(341.695,-356.399)">
+			
+			
+			<g id="shape1408-290" transform="translate(2.14165,0)">
+				
+				<desc>1</desc>
+				
+				
+				<rect x="0" y="581.102" width="85.0394" height="14.1732" class="st4" />
+				<text x="40.24" y="591.19" class="st5">1</text>			</g>
+			<g id="shape1409-293" transform="translate(0,-4.47576)">
+				
+				<desc>A</desc>
+				
+				
+				<rect x="0" y="581.102" width="13.2348" height="14.1732" class="st6" />
+				<text x="4" y="594.79" class="st7"><tspan class="st8">A</tspan></text>			</g>
+		</g>
+		<g id="shape1410" transform="translate(329.507,-368.707)" class="horizontal">
+			
+			<desc>8mm</desc>
+			
+			
+			
+			
+			<path d="M0 567.34 L0 591.28 L0 567.34 ZM113.39 567.34 L113.39 591.28 L113.39 567.34 Z" class="st9" />
+			<path d="M0 567.34 L0 591.28 L0 567.34" class="st10" />
+			<path d="M113.39 567.34 L113.39 591.28 L113.39 567.34" class="st10" />
+			<path d="M56.69 575.34 L6.12 575.34" class="st11" />
+			<path d="M56.69 575.34 L107.27 575.34" class="st11" />
+			<rect x="48.275" y="563.734" width="16.8357" height="9.59985" class="st13" />
+			<text x="48.28" y="570.93" class="st14">8mm</text>		</g>
+		<g id="shape1411" transform="translate(-81.5164,309.743) rotate(-90)" class="vertical">
+			
+			<desc>4mm</desc>
+			
+			
+			
+			
+			<path d="M0 567.43 L0 591.28 L0 567.43 ZM56.69 567.43 L56.69 591.28 L56.69 567.43 Z" class="st9" />
+			<path d="M0 567.43 L0 591.28 L0 567.43" class="st10" />
+			<path d="M56.69 567.43 L56.69 591.28 L56.69 567.43" class="st10" />
+			<path d="M28.35 575.43 L6.12 575.43" class="st11" />
+			<path d="M28.35 575.43 L50.57 575.43" class="st11" />
+			<rect x="19.9286" y="563.831" width="16.8357" height="9.59985" class="st13" />
+			<text x="19.93" y="571.03" class="st14">4mm</text>		</g>
+		<g id="shape1415" transform="translate(322.381,-307.554)">
+			
+			
+			<g id="shape1416-323" transform="translate(435.097,1002.03) rotate(135)">
+				
+				<path d="M0 595.28 L20.04 595.28" class="st15" />
+			</g>
+			<g id="shape1417-326" transform="translate(-406.75,1016.2) rotate(-135)">
+				
+				<path d="M0 595.28 L20.04 595.28" class="st15" />
+			</g>
+		</g>
+		<g id="shape1423" transform="translate(450.725,869.426) rotate(180)">
+			
+			
+			<g id="shape1424-330" transform="translate(435.097,1002.03) rotate(135)">
+				
+				<path d="M0 595.28 L20.04 595.28" class="st15" />
+			</g>
+			<g id="shape1425-333" transform="translate(-406.75,1016.2) rotate(-135)">
+				
+				<path d="M0 595.28 L20.04 595.28" class="st15" />
+			</g>
+		</g>
+		<g id="shape1428" transform="translate(329.477,-285.668)">
+			
+			
+			<g id="shape1406-337" transform="translate(595.276,538.558) rotate(90)">
+				
+				
+				
+				<path d="M56.72 595.28 L28.36 539.58 L0 595.28 L56.72 595.28 Z" class="st16" />
+			</g>
+			<g id="shape1422-339" transform="translate(-481.869,595.236) rotate(-90)">
+				
+				
+				
+				<path d="M56.72 595.28 L28.36 539.58 L0 595.28 L56.72 595.28 Z" class="st16" />
+			</g>
+		</g>
+		<g id="shape1431" transform="translate(330.504,-285.422)">
+			
+			
+			<g id="shape1413-342" transform="translate(595.276,538.768) rotate(90)">
+				
+				
+				<path d="M56.39 595.28 L28.2 539.97 L0 595.28 L56.39 595.28 Z" class="st17" />
+			</g>
+			<g id="shape1426-344" transform="translate(-482.805,595.276) rotate(-90)">
+				
+				
+				<path d="M56.39 595.28 L28.2 539.97 L0 595.28 L56.39 595.28 Z" class="st17" />
+			</g>
+		</g>
+	</g>
+</svg>
+  </div>
+  
+  <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <filter id="hover">
+        <feMorphology operator="dilate" radius="4"></feMorphology>
+	      
+        <feColorMatrix type="matrix" values="
+                       1.00 1.00 1.00 1.00 1.00
+                       1.00 1.00 1.00 1.00 1.00
+                       0.00 0.00 0.00 0.00 0.00
+                       0 0 0 0.30 0" result="matrix" />
+        <feBlend in="SourceGraphic" in2="matrix" mode="normal" />
+      </filter>
+
+      <filter id="select">
+        <feMorphology operator="dilate" radius="4"></feMorphology>
+	      
+        <feColorMatrix type="matrix" values="
+                       1.00 1.00 1.00 1.00 1.00
+                       1.00 1.00 1.00 1.00 1.00
+                       0.00 0.00 0.00 0.00 0.00
+                       0 0 0 0.90 0" result="matrix" />
+        <feBlend in="SourceGraphic" in2="matrix" mode="normal" />
+      </filter>
+      <filter id="hyperlink">
+        <feMorphology operator="dilate" radius="4"></feMorphology>
+	      
+        <feColorMatrix type="matrix" values="
+                       0.00 0.00 0.00 0.00 0.00
+                       0.00 0.00 0.00 0.00 0.00
+                       1.00 1.00 1.00 1.00 1.00
+                       0 0 0 0.30 0" result="matrix" />
+        <feBlend in="SourceGraphic" in2="matrix" mode="normal" />
+      </filter>
+    </defs>
+  </svg>
+</body>
+</html>
