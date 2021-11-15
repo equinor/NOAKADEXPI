@@ -476,11 +476,7 @@
 				<path d="M0 555.67 L20.04 555.67" class="st12"/>
 			</g>
 		</g>
-		<g id="shape1417-333" transform="translate(934.303,134.603) rotate(90)">
-			<title>Sheet.1417</title>
-			<path d="M0 555.67 L82.91 555.67" class="st13"/>
-		</g>
-		<g id="shape1418-336" transform="translate(-219.894,219.642) rotate(-90)">
+		<g id="shape1418-333" transform="translate(-219.894,219.642) rotate(-90)">
 			<title>Vertical.1014</title>
 			<desc>6mm</desc>
 			<path d="M0 526.13 L0 551.67 L0 526.13 ZM85.04 526.13 L85.04 551.67 L85.04 526.13 Z" class="st6"/>
@@ -490,17 +486,24 @@
 			<path d="M42.52 534.13 L78.92 534.13" class="st8"/>
 			<rect x="34.1018" y="522.529" width="16.8357" height="9.59985" class="st10"/>
 			<text x="34.1" y="529.73" class="st11">6mm</text>		</g>
-		<g id="shape1419-348" transform="translate(-24.9674,-232.113) rotate(-45)">
-			<title>Sheet.1419</title>
-			<path d="M0 555.67 L28.35 555.67" class="st14"/>
-		</g>
-		<g id="shape1420-351" transform="translate(-29.5401,-209.637) rotate(-45)">
-			<title>Sheet.1420</title>
-			<path d="M0 555.67 L42.52 555.67" class="st14"/>
-		</g>
-		<g id="shape1421-354" transform="translate(-34.0159,-187.452) rotate(-45)">
-			<title>Sheet.1421</title>
-			<path d="M0 555.67 L56.69 555.67" class="st14"/>
+		<g id="group1424-345" transform="translate(358.905,-338.165)">
+			<title>Sheet.1424</title>
+			<g id="shape1417-346" transform="translate(575.398,472.768) rotate(90)">
+				<title>Sheet.1417</title>
+				<path d="M0 555.67 L82.91 555.67" class="st13"/>
+			</g>
+			<g id="shape1419-349" transform="translate(-383.872,106.053) rotate(-45)">
+				<title>Sheet.1419</title>
+				<path d="M0 555.67 L28.35 555.67" class="st14"/>
+			</g>
+			<g id="shape1420-352" transform="translate(-388.445,128.528) rotate(-45)">
+				<title>Sheet.1420</title>
+				<path d="M0 555.67 L42.52 555.67" class="st14"/>
+			</g>
+			<g id="shape1421-355" transform="translate(-392.921,150.713) rotate(-45)">
+				<title>Sheet.1421</title>
+				<path d="M0 555.67 L56.69 555.67" class="st14"/>
+			</g>
 		</g>
 	</g>
 </svg>
