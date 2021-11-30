@@ -499,5 +499,16 @@
 				<rect x="0" y="541.501" width="13.2348" height="14.1732" class="st14"/>
 				<text x="4" y="555.19" class="st15"><tspan class="st16">A</tspan></text>			</g>
 		</g>
+		<g id="group1420-356" transform="translate(726.234,-328.623)">
+			<title>Sheet.1420</title>
+			<g id="shape1421-357" transform="translate(407.094,934.421) rotate(135)">
+				<title>Sheet.1421</title>
+				<path d="M0 555.67 L20.04 555.67" class="st11"/>
+			</g>
+			<g id="shape1422-360" transform="translate(-378.747,948.595) rotate(-135)">
+				<title>Sheet.1422</title>
+				<path d="M0 555.67 L20.04 555.67" class="st11"/>
+			</g>
+		</g>
 	</g>
 </svg>
