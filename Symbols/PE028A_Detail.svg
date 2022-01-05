@@ -505,5 +505,15 @@
 			<path d="M40.34 535.49 L34.47 535.49" class="st10"/>
 			<rect x="5.75535" y="523.891" width="16.8357" height="9.59985" class="st12"/>
 			<text x="5.76" y="531.09" class="st13">2mm</text>		</g>
+		<g id="shape1549-359" transform="translate(-376.188,319.177) rotate(-90)">
+			<title>Vertical.1558</title>
+			<desc>14mm</desc>
+			<path d="M0 527.49 L0 552.75 L0 527.49 ZM169.98 527.49 L169.98 552.75 L169.98 527.49 Z" class="st8"/>
+			<path d="M0 527.49 L0 552.75 L0 527.49" class="st9"/>
+			<path d="M169.98 527.49 L169.98 552.75 L169.98 527.49" class="st9"/>
+			<path d="M84.99 535.49 L6.12 535.49" class="st10"/>
+			<path d="M84.99 535.49 L163.86 535.49" class="st10"/>
+			<rect x="74.5456" y="523.891" width="20.8905" height="9.59985" class="st12"/>
+			<text x="74.55" y="531.09" class="st13">14mm</text>		</g>
 	</g>
 </svg>
