@@ -476,5 +476,15 @@
 				<rect x="0" y="541.501" width="7.48762" height="14.1732" class="st14"/>
 				<text x="4" y="555.19" class="st15"><tspan class="st16">A</tspan></text>			</g>
 		</g>
+		<g id="shape1419-339" transform="translate(-318.416,319.274) rotate(-90)">
+			<title>Vertical.1447</title>
+			<desc>13mm</desc>
+			<path d="M0 527.83 L0 551.67 L0 527.83 ZM182.96 527.83 L182.96 580.02 L182.96 527.83 Z" class="st4"/>
+			<path d="M0 527.83 L0 551.67 L0 527.83" class="st5"/>
+			<path d="M182.96 527.83 L182.96 580.02 L182.96 527.83" class="st5"/>
+			<path d="M91.48 535.83 L6.12 535.83" class="st6"/>
+			<path d="M91.48 535.83 L176.84 535.83" class="st6"/>
+			<rect x="81.0355" y="524.23" width="20.8905" height="9.59985" class="st8"/>
+			<text x="81.04" y="531.43" class="st9">13mm</text>		</g>
 	</g>
 </svg>

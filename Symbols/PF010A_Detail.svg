@@ -488,5 +488,15 @@
 			<title>Sheet.1642</title>
 			<path d="M0 555.67 L108.51 555.67" class="st17"/>
 		</g>
+		<g id="shape1643-343" transform="translate(279.777,-397.568)">
+			<title>Horizontal.1643</title>
+			<desc>17mm</desc>
+			<path d="M0 519.33 L0 551.67 L0 519.33 ZM240.94 519.33 L240.94 546.72 L240.94 519.33 Z" class="st3"/>
+			<path d="M0 519.33 L0 551.67 L0 519.33" class="st4"/>
+			<path d="M240.94 519.33 L240.94 546.72 L240.94 519.33" class="st4"/>
+			<path d="M120.47 527.33 L6.12 527.33" class="st5"/>
+			<path d="M120.47 527.33 L234.82 527.33" class="st5"/>
+			<rect x="110.027" y="515.726" width="20.8905" height="9.59985" class="st7"/>
+			<text x="110.03" y="522.93" class="st8">17mm</text>		</g>
 	</g>
 </svg>

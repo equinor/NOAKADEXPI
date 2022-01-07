@@ -19,7 +19,7 @@
 		.st9 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
 		.st10 {marker-end:url(#mrkr13-301);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
 		.st11 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.11764705882353}
-		.st12 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2}
+		.st12 {fill:#ffffff;stroke:none;stroke-linecap:butt}
 		.st13 {fill:#000000;font-family:Calibri;font-size:0.666664em}
 		.st14 {fill:none;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
 		.st15 {fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}

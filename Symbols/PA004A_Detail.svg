@@ -446,5 +446,15 @@
 			<title>Sheet.1447</title>
 			<path d="M0 555.67 L56.69 555.67" class="st11"/>
 		</g>
+		<g id="shape1448-314" transform="translate(219.588,-335.068)">
+			<title>Horizontal.1012</title>
+			<desc>6mm</desc>
+			<path d="M0 527.83 L0 551.67 L0 527.83 ZM38.65 527.83 L38.65 565.3 L38.65 527.83 Z" class="st5"/>
+			<path d="M0 527.83 L0 551.67 L0 527.83" class="st6"/>
+			<path d="M38.65 527.83 L38.65 565.3 L38.65 527.83" class="st6"/>
+			<path d="M19.32 535.83 L6.12 535.83" class="st7"/>
+			<path d="M19.32 535.83 L32.53 535.83" class="st7"/>
+			<rect x="10.905" y="524.23" width="16.8357" height="9.59985" class="st9"/>
+			<text x="10.9" y="531.43" class="st10">6mm</text>		</g>
 	</g>
 </svg>

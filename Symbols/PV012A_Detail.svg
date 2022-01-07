@@ -487,5 +487,15 @@
 			<path d="M42.52 535.83 L78.92 535.83" class="st7"/>
 			<rect x="34.1018" y="524.23" width="16.8357" height="9.59985" class="st9"/>
 			<text x="34.1" y="531.43" class="st10">6mm</text>		</g>
+		<g id="shape1419-347" transform="translate(322.297,-440.592)">
+			<title>Horizontal.1419</title>
+			<desc>8mm</desc>
+			<path d="M0 527.83 L0 551.67 L0 527.83 ZM113.39 527.83 L113.39 550.76 L113.39 527.83 Z" class="st5"/>
+			<path d="M0 527.83 L0 551.67 L0 527.83" class="st6"/>
+			<path d="M113.39 527.83 L113.39 550.76 L113.39 527.83" class="st6"/>
+			<path d="M56.69 535.83 L6.12 535.83" class="st7"/>
+			<path d="M56.69 535.83 L107.27 535.83" class="st7"/>
+			<rect x="48.275" y="524.23" width="16.8357" height="9.59985" class="st9"/>
+			<text x="48.28" y="531.43" class="st10">8mm</text>		</g>
 	</g>
 </svg>

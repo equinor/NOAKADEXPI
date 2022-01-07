@@ -505,5 +505,25 @@
 				<path d="M0 555.67 L56.69 555.67" class="st14"/>
 			</g>
 		</g>
+		<g id="shape1430-358" transform="translate(-253.219,276.754) rotate(-90)">
+			<title>Vertical.1430</title>
+			<desc>10mm</desc>
+			<path d="M0 526.13 L0 551.67 L0 526.13 ZM142.15 526.13 L142.15 555.46 L142.15 526.13 Z" class="st6"/>
+			<path d="M0 526.13 L0 551.67 L0 526.13" class="st7"/>
+			<path d="M142.15 526.13 L142.15 555.46 L142.15 526.13" class="st7"/>
+			<path d="M71.08 534.13 L6.12 534.13" class="st8"/>
+			<path d="M71.08 534.13 L136.03 534.13" class="st8"/>
+			<rect x="60.6304" y="522.529" width="20.8905" height="9.59985" class="st10"/>
+			<text x="60.63" y="529.73" class="st11">10mm</text>		</g>
+		<g id="shape1431-370" transform="translate(350.644,-208.054)">
+			<title>Horizontal.1431</title>
+			<desc>6mm</desc>
+			<path d="M0 527.83 L0 551.67 L0 527.83 ZM85.04 527.83 L85.04 551.58 L85.04 527.83 Z" class="st6"/>
+			<path d="M0 527.83 L0 551.67 L0 527.83" class="st7"/>
+			<path d="M85.04 527.83 L85.04 551.58 L85.04 527.83" class="st7"/>
+			<path d="M42.52 535.83 L6.12 535.83" class="st8"/>
+			<path d="M42.52 535.83 L78.92 535.83" class="st8"/>
+			<rect x="34.1018" y="524.23" width="16.8357" height="9.59985" class="st10"/>
+			<text x="34.1" y="531.43" class="st11">6mm</text>		</g>
 	</g>
 </svg>

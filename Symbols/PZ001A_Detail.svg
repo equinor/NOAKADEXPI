@@ -512,5 +512,15 @@
 			<path d="M40.34 507.48 L34.47 507.48" class="st6"/>
 			<rect x="5.75535" y="495.883" width="16.8357" height="9.59985" class="st8"/>
 			<text x="5.76" y="503.08" class="st9">2mm</text>		</g>
+		<g id="shape1524-384" transform="translate(308.124,-436.34)">
+			<title>Horizontal.1524</title>
+			<desc>9mm</desc>
+			<path d="M0 527.83 L0 551.67 L0 527.83 ZM127.56 527.83 L127.56 545.09 L127.56 527.83 Z" class="st4"/>
+			<path d="M0 527.83 L0 551.67 L0 527.83" class="st5"/>
+			<path d="M127.56 527.83 L127.56 545.09 L127.56 527.83" class="st5"/>
+			<path d="M63.78 535.83 L6.12 535.83" class="st6"/>
+			<path d="M63.78 535.83 L121.44 535.83" class="st6"/>
+			<rect x="55.3617" y="524.23" width="16.8357" height="9.59985" class="st8"/>
+			<text x="55.36" y="531.43" class="st9">9mm</text>		</g>
 	</g>
 </svg>

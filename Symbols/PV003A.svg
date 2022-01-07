@@ -8,7 +8,7 @@
 
 	<style type="text/css">
 	<![CDATA[
-		.st1 {fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
+		.st1 {fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
 		.st2 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
 	</style>
@@ -25,6 +25,10 @@
 		</g>
 		<g id="shape1421-5" transform="translate(87.065,89.7349) rotate(180)">
 			<title>Triangle.1421</title>
+			<path d="M57.3 88.61 L28.65 31.31 L0 88.61 L57.3 88.61 Z" class="st1"/>
+		</g>
+		<g id="shape1425-7" transform="translate(26.8016,87.3836) rotate(-90)">
+			<title>Triangle.1425</title>
 			<path d="M57.3 88.61 L28.65 31.31 L0 88.61 L57.3 88.61 Z" class="st1"/>
 		</g>
 	</g>
