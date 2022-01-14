@@ -14,15 +14,15 @@
 		.st4 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
 		.st5 {marker-end:url(#mrkr13-293);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
 		.st6 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.11764705882353}
-		.st7 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2}
+		.st7 {fill:#ffffff;stroke:none;stroke-linecap:butt}
 		.st8 {fill:#000000;font-family:Calibri;font-size:0.666664em}
-		.st9 {fill:none;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
-		.st10 {fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
-		.st11 {fill:none;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
-		.st12 {fill:#ff0000;font-family:Arial Narrow;font-size:4.99999em;font-weight:bold}
-		.st13 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
-		.st14 {fill:#ff0000;font-family:Arial Narrow;font-size:0.811964em;font-weight:bold}
-		.st15 {baseline-shift:33.35%;font-size:0.667em}
+		.st9 {fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
+		.st10 {fill:none;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st11 {fill:#ff0000;font-family:Arial Narrow;font-size:4.99999em;font-weight:bold}
+		.st12 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st13 {fill:#ff0000;font-family:Arial Narrow;font-size:0.811964em;font-weight:bold}
+		.st14 {baseline-shift:33.35%;font-size:0.667em}
+		.st15 {fill:#ffffff;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
 		.st16 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
 	</style>
@@ -430,22 +430,18 @@
 			<path d="M56.69 527.33 L107.27 527.33" class="st5"/>
 			<rect x="48.275" y="515.726" width="16.8357" height="9.59985" class="st7"/>
 			<text x="48.28" y="522.93" class="st8">8mm</text>		</g>
-		<g id="shape1557-300" transform="translate(273.065,-243.958)">
-			<title>Circle</title>
-			<path d="M0 548.96 A6.71264 6.71264 0 0 1 13.43 548.96 A6.71264 6.71264 0 0 1 0 548.96 Z" class="st9"/>
-		</g>
-		<g id="group1611-302" transform="translate(-389.282,361.696) rotate(-90)">
+		<g id="group1611-300" transform="translate(-389.282,361.696) rotate(-90)">
 			<title>Vertical baseline.1611</title>
-			<g id="shape1612-303">
+			<g id="shape1612-301">
 				<title>Sheet.1612</title>
 			</g>
-			<g id="shape1613-306">
+			<g id="shape1613-304">
 				<title>Sheet.1613</title>
 			</g>
-			<g id="shape1614-309">
+			<g id="shape1614-307">
 				<title>Sheet.1614</title>
 			</g>
-			<g id="shape1615-312">
+			<g id="shape1615-310">
 				<title>Sheet.1615</title>
 				<desc>8mm</desc>
 				<path d="M0 527.83 L0 551.67 L0 527.83 ZM113.29 527.83 L113.29 551.67 L113.29 527.83 Z" class="st3"/>
@@ -456,19 +452,23 @@
 				<rect x="48.2265" y="524.23" width="16.8357" height="9.59985" class="st7"/>
 				<text x="48.23" y="531.43" class="st8">8mm</text>			</g>
 		</g>
-		<g id="shape1624-324" transform="translate(279.777,-193.977)">
+		<g id="shape1624-322" transform="translate(279.777,-193.977)">
 			<title>Sheet.1624</title>
-			<path d="M0 442.29 L113.39 442.29 L113.39 555.67 L0 555.67 L0 442.29 L0 442.29 Z" class="st10"/>
+			<path d="M0 442.29 L113.39 442.29 L113.39 555.67 L0 555.67 L0 442.29 L0 442.29 Z" class="st9"/>
 		</g>
-		<g id="shape1630-326" transform="translate(293.951,-221.312)">
+		<g id="shape1630-324" transform="translate(293.951,-221.312)">
 			<title>Sheet.1630</title>
-			<desc>X</desc>
-			<rect x="0" y="497.969" width="85.0394" height="57.7053" class="st11"/>
-			<text x="26.11" y="544.82" class="st12">X</text>		</g>
-		<g id="shape1631-329" transform="translate(293.951,-264.591)">
+			<desc>1</desc>
+			<rect x="0" y="497.969" width="85.0394" height="57.7053" class="st10"/>
+			<text x="28.84" y="544.82" class="st11">1</text>		</g>
+		<g id="shape1631-327" transform="translate(293.951,-264.591)">
 			<title>Sheet.1631</title>
 			<desc>A</desc>
-			<rect x="0" y="541.247" width="13.2348" height="14.4263" class="st13"/>
-			<text x="4" y="554.94" class="st14"><tspan class="st15">A</tspan></text>		</g>
+			<rect x="0" y="541.247" width="13.2348" height="14.4263" class="st12"/>
+			<text x="4" y="554.94" class="st13"><tspan class="st14">A</tspan></text>		</g>
+		<g id="shape1557-331" transform="translate(329.758,-243.958)">
+			<title>Circle</title>
+			<path d="M0 548.96 A6.71264 6.71264 0 0 1 13.43 548.96 A6.71264 6.71264 0 0 1 0 548.96 Z" class="st15"/>
+		</g>
 	</g>
 </svg>
