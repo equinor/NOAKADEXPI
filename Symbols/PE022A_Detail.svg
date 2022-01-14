@@ -20,9 +20,9 @@
 		.st10 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
 		.st11 {marker-end:url(#mrkr13-303);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
 		.st12 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.11764705882353}
-		.st13 {fill:#ffffff;stroke:none;stroke-linecap:butt}
+		.st13 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2}
 		.st14 {fill:#000000;font-family:Calibri;font-size:0.666664em}
-		.st15 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2}
+		.st15 {fill:#ffffff;stroke:none;stroke-linecap:butt}
 		.st16 {fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
 		.st17 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
 		.st18 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}

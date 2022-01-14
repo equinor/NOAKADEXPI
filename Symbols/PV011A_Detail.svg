@@ -10,21 +10,21 @@
 	<![CDATA[
 		.st1 {stroke:#d8d8d8;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.25}
 		.st2 {stroke:#7f7f7f;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.25}
-		.st3 {fill:#ffffff;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
-		.st4 {fill:#000000;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
-		.st5 {fill:#ffffff}
-		.st6 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
-		.st7 {marker-end:url(#mrkr13-299);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
-		.st8 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.11764705882353}
-		.st9 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2}
-		.st10 {fill:#000000;font-family:Calibri;font-size:0.666664em}
-		.st11 {fill:#ffffff;stroke:none;stroke-linecap:butt}
-		.st12 {stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
-		.st13 {fill:none;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
-		.st14 {fill:#ff0000;font-family:Arial Narrow;font-size:0.833336em;font-weight:bold}
-		.st15 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
-		.st16 {fill:#ff0000;font-family:Arial Narrow;font-size:0.811964em;font-weight:bold}
-		.st17 {baseline-shift:33.35%;font-size:0.667em}
+		.st3 {fill:#000000;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
+		.st4 {fill:#ffffff}
+		.st5 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st6 {marker-end:url(#mrkr13-297);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st7 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.11764705882353}
+		.st8 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2}
+		.st9 {fill:#000000;font-family:Calibri;font-size:0.666664em}
+		.st10 {stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
+		.st11 {fill:none;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st12 {fill:#ff0000;font-family:Arial Narrow;font-size:0.833336em;font-weight:bold}
+		.st13 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st14 {fill:#ff0000;font-family:Arial Narrow;font-size:0.811964em;font-weight:bold}
+		.st15 {baseline-shift:33.35%;font-size:0.667em}
+		.st16 {fill:none;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
+		.st17 {fill:#ff0000;font-family:Calibri;font-size:4.00001em}
 		.st18 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
 	</style>
@@ -33,7 +33,7 @@
 		<g id="lend13">
 			<path d="M 3 1 L 0 0 L 3 -1 L 3 1 " style="stroke:none"/>
 		</g>
-		<marker id="mrkr13-299" class="st8" refX="-25.5" orient="auto" markerUnits="strokeWidth" overflow="visible">
+		<marker id="mrkr13-297" class="st7" refX="-25.5" orient="auto" markerUnits="strokeWidth" overflow="visible">
 			<use xlink:href="#lend13" transform="scale(-8.5000000000001,-8.5000000000001) "/>
 		</marker>
 	</defs>
@@ -422,95 +422,100 @@
 				<path d="M0 555.67 L801.48 555.67" class="st1"/>
 			</g>
 		</g>
-		<g id="shape1405-287" transform="translate(344.214,-301.037)">
-			<title>Circle</title>
-			<path d="M0 549.11 A6.56444 6.56444 0 1 1 13.13 549.11 A6.56444 6.56444 0 1 1 0 549.11 Z" class="st3"/>
-		</g>
-		<g id="shape1406-289" transform="translate(321.823,-307.738)">
+		<g id="shape1406-287" transform="translate(323.964,-194.449)">
 			<title>Triangle</title>
-			<path d="M57.3 555.67 L28.65 498.37 L0 555.67 L57.3 555.67 Z" class="st4"/>
+			<path d="M57.3 555.67 L28.65 498.37 L0 555.67 L57.3 555.67 Z" class="st3"/>
 		</g>
-		<g id="shape1407-291" transform="translate(-148.202,219.421) rotate(-90)">
+		<g id="shape1407-289" transform="translate(-146.061,332.71) rotate(-90)">
 			<title>Triangle.1526</title>
-			<path d="M57.3 555.67 L28.65 498.37 L0 555.67 L57.3 555.67 Z" class="st4"/>
+			<path d="M57.3 555.67 L28.65 498.37 L0 555.67 L57.3 555.67 Z" class="st3"/>
 		</g>
-		<g id="shape1408-293" transform="translate(-85.5416,219.726) rotate(-90)">
+		<g id="shape1408-291" transform="translate(-83.4,333.015) rotate(-90)">
 			<title>Vertical</title>
 			<desc>4mm</desc>
-			<path d="M0 527.83 L0 551.67 L0 527.83 ZM56.69 527.83 L56.69 551.67 L56.69 527.83 Z" class="st5"/>
-			<path d="M0 527.83 L0 551.67 L0 527.83" class="st6"/>
-			<path d="M56.69 527.83 L56.69 551.67 L56.69 527.83" class="st6"/>
-			<path d="M28.35 535.83 L6.12 535.83" class="st7"/>
-			<path d="M28.35 535.83 L50.57 535.83" class="st7"/>
-			<rect x="19.9286" y="524.23" width="16.8357" height="9.59985" class="st9"/>
-			<text x="19.93" y="531.43" class="st10">4mm</text>		</g>
-		<g id="shape1409-306" transform="translate(322.297,-386.435)">
+			<path d="M0 527.83 L0 551.67 L0 527.83 ZM56.69 527.83 L56.69 551.67 L56.69 527.83 Z" class="st4"/>
+			<path d="M0 527.83 L0 551.67 L0 527.83" class="st5"/>
+			<path d="M56.69 527.83 L56.69 551.67 L56.69 527.83" class="st5"/>
+			<path d="M28.35 535.83 L6.12 535.83" class="st6"/>
+			<path d="M28.35 535.83 L50.57 535.83" class="st6"/>
+			<rect x="19.9286" y="524.23" width="16.8357" height="9.59985" class="st8"/>
+			<text x="19.93" y="531.43" class="st9">4mm</text>		</g>
+		<g id="shape1409-304" transform="translate(324.439,-273.146)">
 			<title>Horizontal</title>
 			<desc>4mm</desc>
-			<path d="M0 527.83 L0 551.67 L0 527.83 ZM56.69 527.83 L56.69 551.67 L56.69 527.83 Z" class="st5"/>
-			<path d="M0 527.83 L0 551.67 L0 527.83" class="st6"/>
-			<path d="M56.69 527.83 L56.69 551.67 L56.69 527.83" class="st6"/>
-			<path d="M28.35 535.83 L6.12 535.83" class="st7"/>
-			<path d="M28.35 535.83 L50.57 535.83" class="st7"/>
-			<rect x="19.9286" y="524.23" width="16.8357" height="9.59985" class="st11"/>
-			<text x="19.93" y="531.43" class="st10">4mm</text>		</g>
-		<g id="group1410-318" transform="translate(343.692,-300.515)">
+			<path d="M0 527.83 L0 551.67 L0 527.83 ZM56.69 527.83 L56.69 551.67 L56.69 527.83 Z" class="st4"/>
+			<path d="M0 527.83 L0 551.67 L0 527.83" class="st5"/>
+			<path d="M56.69 527.83 L56.69 551.67 L56.69 527.83" class="st5"/>
+			<path d="M28.35 535.83 L6.12 535.83" class="st6"/>
+			<path d="M28.35 535.83 L50.57 535.83" class="st6"/>
+			<rect x="19.9286" y="524.23" width="16.8357" height="9.59985" class="st8"/>
+			<text x="19.93" y="531.43" class="st9">4mm</text>		</g>
+		<g id="group1410-316" transform="translate(345.834,-187.226)">
 			<title>Sheet.1410</title>
 		</g>
-		<g id="group1411-319" transform="translate(400.385,-357.207)">
+		<g id="group1411-317" transform="translate(402.527,-243.919)">
 			<title>Sheet.1411</title>
-			<g id="shape1412-320" transform="translate(407.094,934.421) rotate(135)">
+			<g id="shape1412-318" transform="translate(407.094,934.421) rotate(135)">
 				<title>Sheet.1412</title>
-				<path d="M0 555.67 L20.04 555.67" class="st12"/>
+				<path d="M0 555.67 L20.04 555.67" class="st10"/>
 			</g>
-			<g id="shape1413-323" transform="translate(-378.747,948.595) rotate(-135)">
+			<g id="shape1413-321" transform="translate(-378.747,948.595) rotate(-135)">
 				<title>Sheet.1413</title>
-				<path d="M0 555.67 L20.04 555.67" class="st12"/>
+				<path d="M0 555.67 L20.04 555.67" class="st10"/>
 			</g>
 		</g>
-		<g id="group1414-326" transform="translate(343.692,-300.515)">
+		<g id="group1414-324" transform="translate(345.834,-187.226)">
 			<title>Sheet.1414</title>
-			<g id="shape1415-327" transform="translate(407.094,934.421) rotate(135)">
+			<g id="shape1415-325" transform="translate(407.094,934.421) rotate(135)">
 				<title>Sheet.1415</title>
-				<path d="M0 555.67 L20.04 555.67" class="st12"/>
+				<path d="M0 555.67 L20.04 555.67" class="st10"/>
 			</g>
-			<g id="shape1416-330" transform="translate(-378.747,948.595) rotate(-135)">
+			<g id="shape1416-328" transform="translate(-378.747,948.595) rotate(-135)">
 				<title>Sheet.1416</title>
-				<path d="M0 555.67 L20.04 555.67" class="st12"/>
+				<path d="M0 555.67 L20.04 555.67" class="st10"/>
 			</g>
 		</g>
-		<g id="group1421-333" transform="translate(320.155,-279.017)">
+		<g id="group1421-331" transform="translate(322.297,-165.728)">
 			<title>Sheet.1421</title>
-			<g id="shape1422-334" transform="translate(2.14165,0)">
+			<g id="shape1422-332" transform="translate(2.14165,0)">
 				<title>Sheet.1422</title>
 				<desc>1</desc>
-				<rect x="0" y="541.501" width="85.0394" height="14.1732" class="st13"/>
-				<text x="40.24" y="551.59" class="st14">1</text>			</g>
-			<g id="shape1423-337" transform="translate(0,-4.47576)">
+				<rect x="0" y="541.501" width="85.0394" height="14.1732" class="st11"/>
+				<text x="40.24" y="551.59" class="st12">1</text>			</g>
+			<g id="shape1423-335" transform="translate(0,-4.47576)">
 				<title>Sheet.1423</title>
 				<desc>A</desc>
-				<rect x="0" y="541.501" width="13.2348" height="14.1732" class="st15"/>
-				<text x="4" y="555.19" class="st16"><tspan class="st17">A</tspan></text>			</g>
+				<rect x="0" y="541.501" width="13.2348" height="14.1732" class="st13"/>
+				<text x="4" y="555.19" class="st14"><tspan class="st15">A</tspan></text>			</g>
 		</g>
-		<g id="shape1424-341" transform="translate(322.297,-414.278)">
+		<g id="shape1424-339" transform="translate(324.439,-300.989)">
 			<title>Horizontal.1424</title>
 			<desc>6mm</desc>
-			<path d="M0 527.83 L0 551.67 L0 527.83 ZM85.04 527.83 L85.04 545.3 L85.04 527.83 Z" class="st5"/>
-			<path d="M0 527.83 L0 551.67 L0 527.83" class="st6"/>
-			<path d="M85.04 527.83 L85.04 545.3 L85.04 527.83" class="st6"/>
-			<path d="M42.52 535.83 L6.12 535.83" class="st7"/>
-			<path d="M42.52 535.83 L78.92 535.83" class="st7"/>
-			<rect x="34.1018" y="524.23" width="16.8357" height="9.59985" class="st9"/>
-			<text x="34.1" y="531.43" class="st10">6mm</text>		</g>
-		<g id="shape1425-353" transform="translate(-56.4948,248.407) rotate(-90)">
+			<path d="M0 527.83 L0 551.67 L0 527.83 ZM85.04 527.83 L85.04 545.3 L85.04 527.83 Z" class="st4"/>
+			<path d="M0 527.83 L0 551.67 L0 527.83" class="st5"/>
+			<path d="M85.04 527.83 L85.04 545.3 L85.04 527.83" class="st5"/>
+			<path d="M42.52 535.83 L6.12 535.83" class="st6"/>
+			<path d="M42.52 535.83 L78.92 535.83" class="st6"/>
+			<rect x="34.1018" y="524.23" width="16.8357" height="9.59985" class="st8"/>
+			<text x="34.1" y="531.43" class="st9">6mm</text>		</g>
+		<g id="shape1425-351" transform="translate(-54.3532,361.696) rotate(-90)">
 			<title>Vertical.1425</title>
 			<desc>6mm</desc>
-			<path d="M0 527.83 L0 551.67 L0 527.83 ZM85.04 527.83 L85.04 552.33 L85.04 527.83 Z" class="st5"/>
-			<path d="M0 527.83 L0 551.67 L0 527.83" class="st6"/>
-			<path d="M85.04 527.83 L85.04 552.33 L85.04 527.83" class="st6"/>
-			<path d="M42.52 535.83 L6.12 535.83" class="st7"/>
-			<path d="M42.52 535.83 L78.92 535.83" class="st7"/>
-			<rect x="34.1018" y="524.23" width="16.8357" height="9.59985" class="st11"/>
-			<text x="34.1" y="531.43" class="st10">6mm</text>		</g>
+			<path d="M0 527.83 L0 551.67 L0 527.83 ZM85.04 527.83 L85.04 552.33 L85.04 527.83 Z" class="st4"/>
+			<path d="M0 527.83 L0 551.67 L0 527.83" class="st5"/>
+			<path d="M85.04 527.83 L85.04 552.33 L85.04 527.83" class="st5"/>
+			<path d="M42.52 535.83 L6.12 535.83" class="st6"/>
+			<path d="M42.52 535.83 L78.92 535.83" class="st6"/>
+			<rect x="34.1018" y="524.23" width="16.8357" height="9.59985" class="st8"/>
+			<text x="34.1" y="531.43" class="st9">6mm</text>		</g>
+		<g id="shape1426-363" transform="translate(346.221,-244.203)">
+			<title>Circle</title>
+			<path d="M0 549.11 A6.56444 6.56444 0 1 1 13.13 549.11 A6.56444 6.56444 0 1 1 0 549.11 Z" class="st16"/>
+		</g>
+		<g id="shape1427-365" transform="translate(25.2453,41.2058) rotate(-40)">
+			<title>Sheet.1427</title>
+			<desc>NOT USED</desc>
+			<rect x="0" y="462.13" width="463.465" height="93.5433" class="st13"/>
+			<text x="130.32" y="523.3" class="st17">NOT USED</text>		</g>
 	</g>
 </svg>
