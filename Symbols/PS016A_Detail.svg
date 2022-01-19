@@ -16,13 +16,13 @@
 		.st6 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.11764705882353}
 		.st7 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2}
 		.st8 {fill:#000000;font-family:Calibri;font-size:0.666664em}
-		.st9 {fill:none;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
-		.st10 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
-		.st11 {fill:none;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
-		.st12 {fill:#ff0000;font-family:Arial Narrow;font-size:0.833336em;font-weight:bold}
-		.st13 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
-		.st14 {fill:#ff0000;font-family:Arial Narrow;font-size:0.811964em;font-weight:bold}
-		.st15 {baseline-shift:33.35%;font-size:0.667em}
+		.st9 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
+		.st10 {fill:none;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st11 {fill:#ff0000;font-family:Arial Narrow;font-size:0.833336em;font-weight:bold}
+		.st12 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st13 {fill:#ff0000;font-family:Arial Narrow;font-size:0.811964em;font-weight:bold}
+		.st14 {baseline-shift:33.35%;font-size:0.667em}
+		.st15 {fill:none;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
 		.st16 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
 	</style>
@@ -426,11 +426,7 @@
 			<path d="M56.69 535.83 L107.27 535.83" class="st5"/>
 			<rect x="48.275" y="524.23" width="16.8357" height="9.59985" class="st7"/>
 			<text x="48.28" y="531.43" class="st8">8mm</text>		</g>
-		<g id="shape1412-297" transform="translate(273.213,-244.106)">
-			<title>Circle</title>
-			<path d="M0 549.11 A6.56444 6.56444 0 1 1 13.13 549.11 A6.56444 6.56444 0 1 1 0 549.11 Z" class="st9"/>
-		</g>
-		<g id="shape1517-299" transform="translate(-296.037,361.793) rotate(-90)">
+		<g id="shape1517-297" transform="translate(-296.037,361.793) rotate(-90)">
 			<title>Vertical.1517</title>
 			<desc>5.5mm</desc>
 			<path d="M0 527.83 L0 551.67 L0 527.83 ZM78.05 527.83 L78.05 543.47 L78.05 527.83 Z" class="st3"/>
@@ -440,45 +436,49 @@
 			<path d="M39.02 535.83 L71.93 535.83" class="st5"/>
 			<rect x="27.5698" y="524.23" width="22.9101" height="9.59985" class="st7"/>
 			<text x="27.57" y="531.43" class="st8">5.5mm</text>		</g>
-		<g id="shape1522-311" transform="translate(2.28051,-208.151)">
+		<g id="shape1522-309" transform="translate(2.28051,-208.151)">
 			<title>Sheet.1522</title>
 			<path d="M0 555.67 L801.48 555.67" class="st1"/>
 		</g>
-		<g id="group1529-314" transform="translate(279.777,-193.977)">
+		<g id="group1529-312" transform="translate(279.777,-193.977)">
 			<title>STPF206.583</title>
-			<g id="shape1530-315" transform="translate(555.674,477.721) rotate(90)">
+			<g id="shape1530-313" transform="translate(555.674,477.721) rotate(90)">
 				<title>Sheet.1530</title>
-				<path d="M0 555.67 L42.52 555.67" class="st10"/>
+				<path d="M0 555.67 L42.52 555.67" class="st9"/>
 			</g>
-			<g id="shape1531-318" transform="translate(669.06,477.721) rotate(90)">
+			<g id="shape1531-316" transform="translate(669.06,477.721) rotate(90)">
 				<title>Sheet.1531</title>
-				<path d="M0 555.67 L42.52 555.67" class="st10"/>
+				<path d="M0 555.67 L42.52 555.67" class="st9"/>
 			</g>
-			<g id="shape1532-321" transform="translate(0,-56.6929)">
+			<g id="shape1532-319" transform="translate(0,-56.6929)">
 				<title>Sheet.1532</title>
-				<path d="M0 555.67 L113.39 555.67" class="st10"/>
+				<path d="M0 555.67 L113.39 555.67" class="st9"/>
 			</g>
-			<g id="shape1533-324" transform="translate(77.9528,1111.35) rotate(180)">
+			<g id="shape1533-322" transform="translate(77.9528,1111.35) rotate(180)">
 				<title>Sheet.1533</title>
-				<path d="M0 555.67 L42.52 555.67" class="st10"/>
+				<path d="M0 555.67 L42.52 555.67" class="st9"/>
 			</g>
-			<g id="shape1534-327" transform="translate(612.367,498.981) rotate(90)">
+			<g id="shape1534-325" transform="translate(612.367,498.981) rotate(90)">
 				<title>Sheet.1534</title>
-				<path d="M0 555.67 L56.69 555.67" class="st10"/>
+				<path d="M0 555.67 L56.69 555.67" class="st9"/>
 			</g>
 		</g>
-		<g id="group1535-330" transform="translate(292.88,-279.017)">
+		<g id="group1535-328" transform="translate(292.88,-279.017)">
 			<title>Sheet.1535</title>
-			<g id="shape1536-331" transform="translate(2.14165,1.13687E-13)">
+			<g id="shape1536-329" transform="translate(2.14165,1.13687E-13)">
 				<title>Sheet.1536</title>
 				<desc>1</desc>
-				<rect x="0" y="541.501" width="85.0394" height="14.1732" class="st11"/>
-				<text x="40.24" y="551.59" class="st12">1</text>			</g>
-			<g id="shape1537-334" transform="translate(0,-4.47576)">
+				<rect x="0" y="541.501" width="85.0394" height="14.1732" class="st10"/>
+				<text x="40.24" y="551.59" class="st11">1</text>			</g>
+			<g id="shape1537-332" transform="translate(0,-4.47576)">
 				<title>Sheet.1537</title>
 				<desc>A</desc>
-				<rect x="0" y="541.501" width="13.2348" height="14.1732" class="st13"/>
-				<text x="4" y="555.19" class="st14"><tspan class="st15">A</tspan></text>			</g>
+				<rect x="0" y="541.501" width="13.2348" height="14.1732" class="st12"/>
+				<text x="4" y="555.19" class="st13"><tspan class="st14">A</tspan></text>			</g>
+		</g>
+		<g id="shape1538-336" transform="translate(329.906,-244.106)">
+			<title>Circle</title>
+			<path d="M0 549.11 A6.56444 6.56444 0 1 1 13.13 549.11 A6.56444 6.56444 0 1 1 0 549.11 Z" class="st15"/>
 		</g>
 	</g>
 </svg>

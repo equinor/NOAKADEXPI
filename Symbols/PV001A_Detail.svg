@@ -10,14 +10,14 @@
 	<![CDATA[
 		.st1 {stroke:#d8d8d8;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.25}
 		.st2 {stroke:#7f7f7f;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.25}
-		.st3 {fill:#ffffff;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
-		.st4 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
-		.st5 {fill:#ffffff}
-		.st6 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
-		.st7 {marker-end:url(#mrkr13-298);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
-		.st8 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.11764705882353}
-		.st9 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2}
-		.st10 {fill:#000000;font-family:Calibri;font-size:0.666664em}
+		.st3 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
+		.st4 {fill:#ffffff}
+		.st5 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st6 {marker-end:url(#mrkr13-296);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st7 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.11764705882353}
+		.st8 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2}
+		.st9 {fill:#000000;font-family:Calibri;font-size:0.666664em}
+		.st10 {fill:none;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
 		.st11 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
 	</style>
@@ -26,7 +26,7 @@
 		<g id="lend13">
 			<path d="M 3 1 L 0 0 L 3 -1 L 3 1 " style="stroke:none"/>
 		</g>
-		<marker id="mrkr13-298" class="st8" refX="-25.5" orient="auto" markerUnits="strokeWidth" overflow="visible">
+		<marker id="mrkr13-296" class="st7" refX="-25.5" orient="auto" markerUnits="strokeWidth" overflow="visible">
 			<use xlink:href="#lend13" transform="scale(-8.5000000000001,-8.5000000000001) "/>
 		</marker>
 	</defs>
@@ -415,37 +415,37 @@
 				<path d="M0 555.67 L801.48 555.67" class="st1"/>
 			</g>
 		</g>
-		<g id="shape1405-287" transform="translate(230.693,-357.589)">
-			<title>Circle.1513</title>
-			<path d="M0 549.11 A6.56444 6.56444 0 0 1 13.13 549.11 A6.56444 6.56444 0 1 1 0 549.11 Z" class="st3"/>
-		</g>
-		<g id="shape1406-289" transform="translate(792.932,163.271) rotate(90)">
+		<g id="shape1406-287" transform="translate(792.932,163.271) rotate(90)">
 			<title>Sheet.1406</title>
-			<path d="M0 555.67 L56.69 555.67" class="st4"/>
+			<path d="M0 555.67 L56.69 555.67" class="st3"/>
 		</g>
-		<g id="shape1407-292" transform="translate(-388.126,219.964) rotate(-90)">
+		<g id="shape1407-290" transform="translate(-388.126,219.964) rotate(-90)">
 			<title>Vertical.1015</title>
 			<desc>4mm</desc>
-			<path d="M0 527.83 L0 551.67 L0 527.83 ZM56.69 527.83 L56.69 556.3 L56.69 527.83 Z" class="st5"/>
-			<path d="M0 527.83 L0 551.67 L0 527.83" class="st6"/>
-			<path d="M56.69 527.83 L56.69 556.3 L56.69 527.83" class="st6"/>
-			<path d="M28.35 535.83 L6.12 535.83" class="st7"/>
-			<path d="M28.35 535.83 L50.57 535.83" class="st7"/>
-			<rect x="19.9286" y="524.23" width="16.8357" height="9.59985" class="st9"/>
-			<text x="19.93" y="531.43" class="st10">4mm</text>		</g>
-		<g id="shape1408-305" transform="translate(821.278,163.271) rotate(90)">
+			<path d="M0 527.83 L0 551.67 L0 527.83 ZM56.69 527.83 L56.69 556.3 L56.69 527.83 Z" class="st4"/>
+			<path d="M0 527.83 L0 551.67 L0 527.83" class="st5"/>
+			<path d="M56.69 527.83 L56.69 556.3 L56.69 527.83" class="st5"/>
+			<path d="M28.35 535.83 L6.12 535.83" class="st6"/>
+			<path d="M28.35 535.83 L50.57 535.83" class="st6"/>
+			<rect x="19.9286" y="524.23" width="16.8357" height="9.59985" class="st8"/>
+			<text x="19.93" y="531.43" class="st9">4mm</text>		</g>
+		<g id="shape1408-303" transform="translate(821.278,163.271) rotate(90)">
 			<title>Sheet.1408</title>
-			<path d="M0 555.67 L56.69 555.67" class="st4"/>
+			<path d="M0 555.67 L56.69 555.67" class="st3"/>
 		</g>
-		<g id="shape1409-308" transform="translate(237.258,-392.403)">
+		<g id="shape1409-306" transform="translate(237.258,-392.403)">
 			<title>Horizontal</title>
 			<desc>2mm</desc>
-			<path d="M0 527.83 L0 551.67 L0 527.83 ZM28.35 527.83 L28.35 551.67 L28.35 527.83 Z" class="st5"/>
-			<path d="M0 527.83 L0 551.67 L0 527.83" class="st6"/>
-			<path d="M28.35 527.83 L28.35 551.67 L28.35 527.83" class="st6"/>
-			<path d="M-12 535.83 L-6.12 535.83" class="st7"/>
-			<path d="M40.34 535.83 L34.47 535.83" class="st7"/>
-			<rect x="5.75536" y="524.23" width="16.8357" height="9.59985" class="st9"/>
-			<text x="5.76" y="531.43" class="st10">2mm</text>		</g>
+			<path d="M0 527.83 L0 551.67 L0 527.83 ZM28.35 527.83 L28.35 551.67 L28.35 527.83 Z" class="st4"/>
+			<path d="M0 527.83 L0 551.67 L0 527.83" class="st5"/>
+			<path d="M28.35 527.83 L28.35 551.67 L28.35 527.83" class="st5"/>
+			<path d="M-12 535.83 L-6.12 535.83" class="st6"/>
+			<path d="M40.34 535.83 L34.47 535.83" class="st6"/>
+			<rect x="5.75536" y="524.23" width="16.8357" height="9.59985" class="st8"/>
+			<text x="5.76" y="531.43" class="st9">2mm</text>		</g>
+		<g id="shape1410-318" transform="translate(244.867,-357.589)">
+			<title>Circle.1513</title>
+			<path d="M0 549.11 A6.56444 6.56444 0 0 1 13.13 549.11 A6.56444 6.56444 0 1 1 0 549.11 Z" class="st10"/>
+		</g>
 	</g>
 </svg>

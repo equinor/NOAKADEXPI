@@ -25,40 +25,21 @@
 			<title>Triangle.1423</title>
 			<path d="M57.3 145.19 L28.65 87.88 L0 145.19 L57.3 145.19 Z" class="st1"/>
 		</g>
-		<g id="group1424-5" transform="translate(9.38631,-61.0515)">
-			<title>Sheet.1424</title>
-			<g id="shape1417-6" transform="translate(164.91,62.2796) rotate(90)" display="none">
-				<title>Sheet.1417</title>
-				<path d="M0 145.19 L82.91 145.19" class="st2"/>
-			</g>
-			<g id="shape1419-9" transform="translate(-93.6132,-14.1765) rotate(-45)" display="none">
-				<title>Sheet.1419</title>
-				<path d="M0 145.19 L28.35 145.19" class="st3"/>
-			</g>
-			<g id="shape1420-12" transform="translate(-98.1859,8.29918) rotate(-45)" display="none">
-				<title>Sheet.1420</title>
-				<path d="M0 145.19 L42.52 145.19" class="st3"/>
-			</g>
-			<g id="shape1421-15" transform="translate(-102.662,30.4841) rotate(-45)" display="none">
-				<title>Sheet.1421</title>
-				<path d="M0 145.19 L56.69 145.19" class="st3"/>
-			</g>
-		</g>
-		<g id="group1425-18" transform="translate(9.42748,-61.1546)">
+		<g id="group1425-5" transform="translate(9.42748,-61.1546)">
 			<title>Sheet.1425</title>
-			<g id="shape1426-19" transform="translate(164.91,62.2796) rotate(90)">
+			<g id="shape1426-6" transform="translate(164.91,62.2796) rotate(90)">
 				<title>Sheet.1426</title>
 				<path d="M0 145.19 L82.91 145.19" class="st2"/>
 			</g>
-			<g id="shape1427-22" transform="translate(-93.6132,-14.1765) rotate(-45)">
+			<g id="shape1427-9" transform="translate(-93.6132,-14.1765) rotate(-45)">
 				<title>Sheet.1427</title>
 				<path d="M0 145.19 L28.35 145.19" class="st3"/>
 			</g>
-			<g id="shape1428-25" transform="translate(-98.1859,8.29918) rotate(-45)">
+			<g id="shape1428-12" transform="translate(-98.1859,8.29918) rotate(-45)">
 				<title>Sheet.1428</title>
 				<path d="M0 145.19 L42.52 145.19" class="st3"/>
 			</g>
-			<g id="shape1429-28" transform="translate(-102.662,30.4841) rotate(-45)">
+			<g id="shape1429-15" transform="translate(-102.662,30.4841) rotate(-45)">
 				<title>Sheet.1429</title>
 				<path d="M0 145.19 L56.69 145.19" class="st3"/>
 			</g>

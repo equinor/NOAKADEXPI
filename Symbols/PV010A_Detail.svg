@@ -10,7 +10,7 @@
 	<![CDATA[
 		.st1 {stroke:#d8d8d8;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.25}
 		.st2 {stroke:#7f7f7f;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.25}
-		.st3 {fill:#ffffff;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
+		.st3 {fill:none;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
 		.st4 {fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
 		.st5 {fill:#ffffff}
 		.st6 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
@@ -421,7 +421,7 @@
 				<path d="M0 555.67 L801.48 555.67" class="st1"/>
 			</g>
 		</g>
-		<g id="shape1405-287" transform="translate(344.214,-301.037)">
+		<g id="shape1405-287" transform="translate(344.214,-357.492)">
 			<title>Circle</title>
 			<path d="M0 549.11 A6.56444 6.56444 0 1 1 13.13 549.11 A6.56444 6.56444 0 1 1 0 549.11 Z" class="st3"/>
 		</g>
