@@ -1,4 +1,4 @@
-# DEXPI
+# NOAKA DEXPI
 
 NOAKA DEXPI Project:
 - symbol library with reference Symbol ID and DEXPI class mapping
