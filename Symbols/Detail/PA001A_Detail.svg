@@ -443,7 +443,7 @@
 			<path d="M42.52 535.73 L78.92 535.73" class="st8"/>
 			<rect x="34.1018" y="524.133" width="16.8357" height="9.59985" class="st10"/>
 			<text x="34.1" y="531.33" class="st11">6mm</text>		</g>
-		<g id="shape1443-307" transform="translate(-359.444,390.14) rotate(-90)">
+		<g id="shape1443-307" transform="translate(-253.518,389.595) rotate(-90)">
 			<title>Vertical.1014</title>
 			<desc>7mm</desc>
 			<path d="M0 527.83 L0 551.67 L0 527.83 ZM98.67 527.83 L98.67 579.03 L98.67 527.83 Z" class="st6"/>
@@ -476,5 +476,18 @@
 			<path d="M91.48 535.83 L176.84 535.83" class="st8"/>
 			<rect x="81.0355" y="524.23" width="20.8905" height="9.59985" class="st10"/>
 			<text x="81.04" y="531.43" class="st11">13mm</text>		</g>
+		<g id="group1448-339" transform="translate(170.077,-250.67)">
+			<title>Sheet.1448</title>
+			<g id="shape1449-340" transform="translate(1.21164,0)">
+				<title>Sheet.1449</title>
+				<desc>1</desc>
+				<rect x="0" y="541.501" width="48.1112" height="14.1732" class="st12"/>
+				<text x="21.78" y="551.59" class="st13">1</text>			</g>
+			<g id="shape1450-343" transform="translate(0,-4.47576)">
+				<title>Sheet.1450</title>
+				<desc>B</desc>
+				<rect x="0" y="541.501" width="7.48762" height="14.1732" class="st14"/>
+				<text x="4" y="555.19" class="st15"><tspan class="st16">B</tspan></text>			</g>
+		</g>
 	</g>
 </svg>

@@ -436,31 +436,21 @@
 			<path d="M113.39 535.73 L220.65 535.73" class="st6"/>
 			<rect x="102.941" y="524.133" width="20.8905" height="9.59985" class="st8"/>
 			<text x="102.94" y="531.33" class="st9">32mm</text>		</g>
-		<g id="shape1411-302" transform="translate(-304.243,290.096) rotate(-90)">
-			<title>Vertical.1015</title>
-			<desc>5mm</desc>
-			<path d="M0 527.83 L0 551.67 L0 527.83 ZM35.53 527.83 L35.53 558.48 L35.53 527.83 Z" class="st4"/>
-			<path d="M0 527.83 L0 551.67 L0 527.83" class="st5"/>
-			<path d="M35.53 527.83 L35.53 558.48 L35.53 527.83" class="st5"/>
-			<path d="M17.77 535.83 L6.12 535.83" class="st6"/>
-			<path d="M17.77 535.83 L29.41 535.83" class="st6"/>
-			<rect x="9.34715" y="524.23" width="16.8357" height="9.59985" class="st8"/>
-			<text x="9.35" y="531.43" class="st9">5mm</text>		</g>
-		<g id="shape1416-314" transform="translate(281.03,-264.693) rotate(0.129187)">
+		<g id="shape1416-302" transform="translate(281.03,-264.693) rotate(0.129187)">
 			<title>Sheet.1416</title>
 			<path d="M0 555.67 L226.77 555.67" class="st10"/>
 		</g>
-		<g id="shape1418-317" transform="translate(276.048,-273.795)">
+		<g id="shape1418-305" transform="translate(276.048,-273.795)">
 			<title>Sheet.1418</title>
 			<desc>XX</desc>
 			<rect x="0" y="531.137" width="46.2495" height="24.5369" class="st11"/>
 			<text x="13.28" y="548.81" class="st12"><tspan class="st13">XX</tspan></text>		</g>
-		<g id="shape1419-321" transform="translate(274.652,-287.096)">
+		<g id="shape1419-309" transform="translate(274.652,-287.096)">
 			<title>Sheet.1419</title>
 			<desc>A</desc>
 			<rect x="0" y="541.247" width="13.2348" height="14.4263" class="st14"/>
 			<text x="4" y="554.94" class="st15"><tspan class="st16">A</tspan></text>		</g>
-		<g id="shape1420-325" transform="translate(-26.4306,36.3018) rotate(-40)">
+		<g id="shape1420-313" transform="translate(-26.4306,36.3018) rotate(-40)">
 			<title>Sheet.1420</title>
 			<desc>NOT USED</desc>
 			<rect x="0" y="462.13" width="463.465" height="93.5433" class="st14"/>

@@ -9,7 +9,7 @@
 	<style type="text/css">
 	<![CDATA[
 		.st1 {fill:#ffffff;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
-		.st2 {fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
+		.st2 {fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
 		.st3 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
 		.st4 {fill:none;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
 		.st5 {fill:#ff0000;font-family:Arial Narrow;font-size:0.833336em;font-weight:bold}
