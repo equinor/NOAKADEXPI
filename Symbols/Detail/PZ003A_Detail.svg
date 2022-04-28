@@ -10,7 +10,7 @@
 	<![CDATA[
 		.st1 {stroke:#d8d8d8;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.25}
 		.st2 {stroke:#7f7f7f;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.25}
-		.st3 {fill:#ffffff;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
+		.st3 {fill:none;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
 		.st4 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
 		.st5 {fill:#ffffff}
 		.st6 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
@@ -18,12 +18,12 @@
 		.st8 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.11764705882353}
 		.st9 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2}
 		.st10 {fill:#000000;font-family:Calibri;font-size:0.666664em}
-		.st11 {fill:none;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
-		.st12 {fill:#ff0000;font-family:Arial Narrow;font-size:0.833336em;font-weight:bold}
-		.st13 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
-		.st14 {fill:#ff0000;font-family:Arial Narrow;font-size:0.811964em;font-weight:bold}
-		.st15 {baseline-shift:33.35%;font-size:0.667em}
-		.st16 {fill:#000000;font-family:Arial Narrow;font-size:4.00001em}
+		.st11 {fill:#ffffff;stroke:none;stroke-linecap:butt}
+		.st12 {fill:none;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st13 {fill:#ff0000;font-family:Arial Narrow;font-size:0.833336em;font-weight:bold}
+		.st14 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st15 {fill:#ff0000;font-family:Arial Narrow;font-size:0.811964em;font-weight:bold}
+		.st16 {baseline-shift:33.35%;font-size:0.667em}
 		.st17 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
 	</style>
@@ -421,11 +421,11 @@
 				<path d="M0 555.67 L801.48 555.67" class="st1"/>
 			</g>
 		</g>
-		<g id="shape1405-287" transform="translate(343.827,-244.507)">
+		<g id="shape1405-287" transform="translate(900.35,142.533) rotate(90)">
 			<title>Circle</title>
 			<path d="M0 549.11 A6.56444 6.56444 0 0 1 13.13 549.11 A6.56444 6.56444 0 1 1 0 549.11 Z" class="st3"/>
 		</g>
-		<g id="shape1406-289" transform="translate(906.065,205.39) rotate(90)">
+		<g id="shape1406-289" transform="translate(450.453,704.772) rotate(180)">
 			<title>Sheet.1406</title>
 			<path d="M0 555.67 L99.21 555.67" class="st4"/>
 		</g>
@@ -439,15 +439,15 @@
 			<path d="M113.39 535.73 L220.65 535.73" class="st7"/>
 			<rect x="102.941" y="524.133" width="20.8905" height="9.59985" class="st9"/>
 			<text x="102.94" y="531.33" class="st10">16mm</text>		</g>
-		<g id="shape1408-305" transform="translate(1076.14,205.503) rotate(90)">
+		<g id="shape1408-305" transform="translate(450.34,874.85) rotate(180)">
 			<title>Sheet.1408</title>
 			<path d="M0 555.67 L99.1 555.67" class="st4"/>
 		</g>
-		<g id="shape1409-308" transform="translate(548.342,746.987) rotate(-179.951)">
+		<g id="shape1409-308" transform="translate(-91.1444,347.048) rotate(-89.951)">
 			<title>Sheet.1409</title>
 			<path d="M0 555.67 L226.77 555.67" class="st4"/>
 		</g>
-		<g id="shape1410-311" transform="translate(548.817,761.16) rotate(180)">
+		<g id="shape1410-311" transform="translate(-105.318,347.523) rotate(-90)">
 			<title>Sheet.1410</title>
 			<path d="M0 555.67 L226.77 555.67" class="st4"/>
 		</g>
@@ -459,25 +459,20 @@
 			<path d="M113.48 527.83 L113.48 559.77 L113.48 527.83" class="st6"/>
 			<path d="M56.74 535.83 L6.12 535.83" class="st7"/>
 			<path d="M56.74 535.83 L107.36 535.83" class="st7"/>
-			<rect x="48.3235" y="524.23" width="16.8357" height="9.59985" class="st9"/>
+			<rect x="48.3235" y="524.23" width="16.8357" height="9.59985" class="st11"/>
 			<text x="48.32" y="531.43" class="st10">8mm</text>		</g>
-		<g id="group1412-326" transform="translate(391.346,-222.324)">
+		<g id="group1412-326" transform="translate(-63.298,277.728) rotate(-90)">
 			<title>Sheet.1412</title>
 			<g id="shape1413-327" transform="translate(2.14165,0)">
 				<title>Sheet.1413</title>
 				<desc>1</desc>
-				<rect x="0" y="541.501" width="85.0394" height="14.1732" class="st11"/>
-				<text x="40.24" y="551.59" class="st12">1</text>			</g>
+				<rect x="0" y="541.501" width="85.0394" height="14.1732" class="st12"/>
+				<text x="40.24" y="551.59" class="st13">1</text>			</g>
 			<g id="shape1414-330" transform="translate(0,-4.47576)">
 				<title>Sheet.1414</title>
 				<desc>A</desc>
-				<rect x="0" y="541.501" width="13.2348" height="14.1732" class="st13"/>
-				<text x="4" y="555.19" class="st14"><tspan class="st15">A</tspan></text>			</g>
+				<rect x="0" y="541.501" width="13.2348" height="14.1732" class="st14"/>
+				<text x="4" y="555.19" class="st15"><tspan class="st16">A</tspan></text>			</g>
 		</g>
-		<g id="shape1415-334" transform="translate(393.163,-371.143)">
-			<title>Sheet.1415</title>
-			<desc>MW</desc>
-			<rect x="0" y="513.154" width="85.0394" height="42.5197" class="st13"/>
-			<text x="7.55" y="548.81" class="st16">MW</text>		</g>
 	</g>
 </svg>

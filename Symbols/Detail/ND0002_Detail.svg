@@ -421,15 +421,15 @@
 				<path d="M0 555.67 L801.48 555.67" class="st1"/>
 			</g>
 		</g>
-		<g id="shape1405-287" transform="translate(429.294,-286.402)">
+		<g id="shape1405-287" transform="translate(956.136,227.573) rotate(90)">
 			<title>Circle</title>
 			<path d="M0 549.11 A6.56444 6.56444 0 0 1 13.13 549.11 A6.56444 6.56444 0 1 1 0 549.11 Z" class="st3"/>
 		</g>
-		<g id="shape1406-289" transform="translate(991.532,206.015) rotate(90)">
+		<g id="shape1406-289" transform="translate(463.72,789.811) rotate(180)">
 			<title>Sheet.1406</title>
 			<path d="M0 555.67 L56.6 555.67" class="st4"/>
 		</g>
-		<g id="shape1407-292" transform="translate(-190.682,262.707) rotate(-90)">
+		<g id="shape1407-292" transform="translate(-19.2864,262.678) rotate(-90)">
 			<title>Vertical.1015</title>
 			<desc>4mm</desc>
 			<path d="M0 527.83 L0 551.67 L0 527.83 ZM56.79 527.83 L56.79 559.77 L56.79 527.83 Z" class="st5"/>
@@ -439,11 +439,11 @@
 			<path d="M28.39 535.83 L50.67 535.83" class="st7"/>
 			<rect x="19.9771" y="524.23" width="16.8357" height="9.59985" class="st9"/>
 			<text x="19.98" y="531.43" class="st10">4mm</text>		</g>
-		<g id="shape1408-305" transform="translate(407.512,-349.659)">
+		<g id="shape1408-305" transform="translate(1019.39,205.791) rotate(90)">
 			<title>Sheet.1408</title>
 			<path d="M0 555.67 L56.69 555.67" class="st4"/>
 		</g>
-		<g id="shape1409-308" transform="translate(407.512,-363.93)">
+		<g id="shape1409-308" transform="translate(407.336,-412.245)">
 			<title>Horizontal</title>
 			<desc>4mm</desc>
 			<path d="M0 527.83 L0 551.67 L0 527.83 ZM56.69 527.83 L56.69 551.67 L56.69 527.83 Z" class="st5"/>
@@ -453,7 +453,7 @@
 			<path d="M28.35 535.83 L50.57 535.83" class="st7"/>
 			<rect x="19.9286" y="524.23" width="16.8357" height="9.59985" class="st9"/>
 			<text x="19.93" y="531.43" class="st10">4mm</text>		</g>
-		<g id="group1410-320" transform="translate(428.772,-342.67)">
+		<g id="group1410-320" transform="translate(1012.4,227.051) rotate(90)">
 			<title>Sheet.1410</title>
 			<g id="shape1411-321" transform="translate(407.094,934.421) rotate(135)">
 				<title>Sheet.1411</title>
@@ -464,7 +464,7 @@
 				<path d="M0 555.67 L20.04 555.67" class="st11"/>
 			</g>
 		</g>
-		<g id="group1413-327" transform="translate(391.197,-264.62)">
+		<g id="group1413-327" transform="translate(-162.511,276.657) rotate(-90)">
 			<title>Sheet.1413</title>
 			<g id="shape1414-328" transform="translate(2.14165,0)">
 				<title>Sheet.1414</title>

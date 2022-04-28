@@ -459,7 +459,7 @@
 			<path d="M141.73 520.41 L141.73 552.75 L141.73 520.41" class="st4"/>
 			<path d="M70.87 528.41 L6.12 528.41" class="st5"/>
 			<path d="M70.87 528.41 L135.61 528.41" class="st5"/>
-			<rect x="60.4209" y="516.805" width="20.8905" height="9.59985" class="st15"/>
+			<rect x="60.4209" y="516.805" width="20.8905" height="9.59985" class="st7"/>
 			<text x="60.42" y="524" class="st8">10mm</text>		</g>
 		<g id="shape1466-322" transform="translate(-418.708,361.696) rotate(-90)">
 			<title>Vertical.1466</title>
@@ -469,7 +469,7 @@
 			<path d="M85.04 527.49 L85.04 552.75 L85.04 527.49" class="st4"/>
 			<path d="M42.52 535.49 L6.12 535.49" class="st5"/>
 			<path d="M42.52 535.49 L78.92 535.49" class="st5"/>
-			<rect x="34.1018" y="523.891" width="16.8357" height="9.59985" class="st7"/>
+			<rect x="34.1018" y="523.891" width="16.8357" height="9.59985" class="st15"/>
 			<text x="34.1" y="531.09" class="st8">6mm</text>		</g>
 		<g id="group1505-334" transform="translate(400.25,-230.49)">
 			<title>Sheet.1505</title>
@@ -523,7 +523,7 @@
 			<path d="M170.08 520.41 L170.08 552.75 L170.08 520.41" class="st4"/>
 			<path d="M85.04 528.41 L6.12 528.41" class="st5"/>
 			<path d="M85.04 528.41 L163.96 528.41" class="st5"/>
-			<rect x="74.5941" y="516.805" width="20.8905" height="9.59985" class="st7"/>
+			<rect x="74.5941" y="516.805" width="20.8905" height="9.59985" class="st15"/>
 			<text x="74.59" y="524" class="st8">12mm</text>		</g>
 	</g>
 </svg>
