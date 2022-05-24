@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PlantModel xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation = "../ProteusPIDSchema_4.1.xsd">
+    <PlantInformation
+        Application = "Dexpi"
+        ApplicationVersion = "1.3"
+        SchemaVersion = "4.1"
+        OriginatingSystem = "NOAKA Pilot Test Case"
+        Date = "2021-11-08"
+        Time = "15:52:50.0000000+01:00"
+        Is3D = "no"
+        Units = "Metre"
+        Discipline = "PID">
+        <UnitsOfMeasure/>
+    </PlantInformation>
+    <PipingNetworkSystem
+        ID = "PipingNetworkSystem-1"
+        TagName = "D-20L00013A"
+        ComponentClass = "PipingNetworkSystem"
+        ComponentClassURI = "http://data.posccaesar.org/rdl/RDS270359">
+        <!--Removed because there is no item with this ID:
+        <Association Type="is a part of" ItemID="PBS861A008E2DED4F8A94D5114824B78591" />
+        Probably a PlantStructureItem.
+        -->
+        <PipingNetworkSegment
+            ID = "PipingNetworkSegment-1"
+            ComponentClass = "PipingNetworkSegment"
+            ComponentClassURI = "http://data.posccaesar.org/rdl/RDS267704"
+            DualFlow = "false">
+            <PipingComponent
+                ID = "SP491630D6DDA44587AC45B442CF00E12A"
+                TagName = "D-20PSV0002"
+                ComponentClass = "SafetyValveOrFitting"
+                ComponentName = "PipingComponent_ffbbce24-3252-499f-a238-09d95919922c"
+                ComponentClassURI = "http://sandbox.dexpi.org/rdl/SafetyValveOrFitting">
+                <GenericAttributes Number = "11" Set = "DexpiCustomAttributes">
+                    <GenericAttribute
+                        Name = "ItemTagAssignmentClass"
+                        Value = "D-20PSV0002"
+                        Format = "string"
+                        AttributeURI = "http://noaka.org/rdl/ItemTagAssignmentClass"/>
+                    <GenericAttribute
+                        Name = "ObjectDisplayNameAssignmentClass"
+                        Value = "D-20PSV0002"
+                        Format = "string"
+                        AttributeURI = "http://noaka.org/rdl/ObjectDisplayNameAssignmentClass"/>
+                    <GenericAttribute
+                        Name = "SequenceAssignmentClass"
+                        Value = "0002"
+                        Format = "string"
+                        AttributeURI = "http://noaka.org/rdl/SequenceAssignmentClass "/>
+                    <GenericAttribute
+                        Name = "TagTypeAssignmentClass"
+                        Value = ""
+                        Format = "string"
+                        AttributeURI = "http://noaka.org/rdl/TypeCodeAssignmentClass"/>
+                    <GenericAttribute
+                        Name = "ValvePosition"
+                        Value = ""
+                        Format = "string"
+                        AttributeURI = "http://noaka.org/rdl/ValvePositionAssignmentClass"/>
+                    <GenericAttribute
+                        Name = "VDS"
+                        Value = ""
+                        Format = "string"
+                        AttributeURI = "http://noaka.org/rdl/VDSAssignmentClass"/>
+                    <GenericAttribute
+                        Name = "TrimType"
+                        Value = ""
+                        Format = "string"
+                        AttributeURI = "http://noaka.org/rdl/TrimTypeAssignmentClass"/>
+                    <GenericAttribute
+                        Name = "LockMechanism"
+                        Value = ""
+                        Format = "string"
+                        AttributeURI = "http://noaka.org/rdl/LockMechanismAssignmentClass"/>
+                    <GenericAttribute
+                        Name = "BarrierInformationFlowIn"
+                        Value = ""
+                        Format = "string"
+                        AttributeURI = "http://noaka.org/rdl/BarrierInformationFlowInAssignmentClass"/>
+                    <GenericAttribute
+                        Name = "BarrierInformationFlowOut"
+                        Value = ""
+                        Format = "string"
+                        AttributeURI = "http://noaka.org/rdl/BarrierInformationFlowOutAssignmentClass"/>
+                    <GenericAttribute
+                        Name = "TypicalInformation"
+                        Value = ""
+                        Format = "string"
+                        AttributeURI = "http://sandbox.dexpi.org/rdl/TypicalInformationAssignmentClass"/>
+                </GenericAttributes>
+                <PersistentID Identifier = "SPACD7FD0E0EE147A0B52130CAB16EBA17" Context = "SmartPID - AskjaPFD"/>
+                <Position>
+                    <Location
+                        X = "0.658197204891312"
+                        Y = "0.305157042046043"
+                        Z = "0"/>
+                    <Axis
+                        X = "0"
+                        Y = "0"
+                        Z = "1"/>
+                    <Reference
+                        X = "1"
+                        Y = "0"
+                        Z = "0"/>
+                </Position>
+                <Label ID = "BubbleLabel" ComponentName = "TAG_NAME_BUBBLE_SHAPE1">
+                    <Position>
+                        <Location
+                            X = "0.2857"
+                            Y = "0.3353"
+                            Z = "0"/>
+                        <Axis
+                            X = "0"
+                            Y = "0"
+                            Z = "1"/>
+                        <Reference
+                            X = "1"
+                            Y = "0"
+                            Z = "0"/>
+                    </Position>
+                    <PolyLine NumPoints = "2">
+                        <Presentation
+                            LineType = "Solid"
+                            LineWeight = "0.00035"
+                            R = "0"
+                            G = "0"
+                            B = "0"/>
+                        <Coordinate X = "0.000222" Y = "-0.000277"/>
+                        <Coordinate X = "0.004175" Y = "-0.005217"/>
+                    </PolyLine>
+                </Label>
+                <Scale
+                    X = "1.0"
+                    Y = "1.0"
+                    Z = "1.0"/>
+                <Association Type = "is referenced by" ItemID = "OperatedValveReference-1"/>
+                <Presentation
+                    Layer = "Default"
+                    Color = "DarkGreen"
+                    LineType = "Solid"
+                    LineWeight = "0.00035"
+                    R = "0"
+                    G = "0.392"
+                    B = "0"/>
+                <Extent>
+                    <Min X = "0.65416863870965258" Y = "0.30195250076517688"/>
+                    <Max X = "0.662225771072972" Y = "0.3071713251368724"/>
+                </Extent>
+                <ConnectionPoints
+                    NumPoints = "3"
+                    FlowIn = "1"
+                    FlowOut = "2">
+                    <Presentation
+                        Layer = "Default"
+                        Color = "DarkGreen"
+                        LineType = "Solid"
+                        LineWeight = ""
+                        R = "0"
+                        G = "0.392"
+                        B = "0"/>
+                    <Extent>
+                        <Min X = "0.65416863870965258" Y = "0.30195250076517688"/>
+                        <Max X = "0.662225771072972" Y = "0.3071713251368724"/>
+                    </Extent>
+                    <Node ID = "GateValve-1-Node-0"></Node>
+                    <Node ID = "GateValve-1-Node-1" Type = "process">
+                        <Position>
+                            <Location X = "0.65419720489131228" Y = "0.30515704204604255"/>
+                            <Axis
+                                X = "0"
+                                Y = "0"
+                                Z = "1"/>
+                            <Reference
+                                X = "1"
+                                Y = "0"
+                                Z = "0"/>
+                        </Position>
+                    </Node>
+                    <Node
+                        ID = "GateValve-1-Node-2"
+                        Name = "2"
+                        Type = "process">
+                        <Position>
+                            <Location X = "0.66219720489131229" Y = "0.30515704204604255"/>
+                            <Axis
+                                X = "0"
+                                Y = "0"
+                                Z = "1"/>
+                            <Reference
+                                X = "1"
+                                Y = "0"
+                                Z = "0"/>
+                        </Position>
+                    </Node>
+                </ConnectionPoints>
+            </PipingComponent>
+        </PipingNetworkSegment>
+    </PipingNetworkSystem>
+    <ShapeCatalogue Name = "Shapes">
+        <Label ID = "BubbleLableShape-1" ComponentName = "TAG_NAME_BUBBLE_SHAPE1">
+            <GenericAttributes Number = "1" Set = "DexpiAttributes">
+                <GenericAttribute
+                    Name = "SymboleRegistrationNumberAssignmentClass"
+                    AttributeURI = "http://sandbox.dexpi.org/rdl/SymboleRegistrationNumberAssignmentClass"
+                    Value = "IM005B"
+                    Format = "string"/>
+            </GenericAttributes>
+            <!--in "standard" DEXPI: shape geometry goes here; omitted in NOAKA-->
+        </Label>
+        <PipingComponent
+            ID = "_ffbbce24-3252-499f-a238-09d95919922c"
+            ComponentClass = "SafetyValveOrFitting"
+            ComponentName = "PipingComponent_ffbbce24-3252-499f-a238-09d95919922c"
+            ComponentClassURI = "http://sandbox.dexpi.org/rdl/SafetyValveOrFitting">
+            <Position>
+                <Location
+                    X = "0.000000"
+                    Y = "0.000000"
+                    Z = "0.000000"/>
+                <Axis
+                    X = "0"
+                    Y = "0"
+                    Z = "1"/>
+                <Reference
+                    X = "1"
+                    Y = "0"
+                    Z = "0"/>
+            </Position>
+            <Presentation
+                Layer = "Default"
+                Color = "DarkGreen"
+                LineType = "Solid"
+                LineWeight = "0.00035"
+                R = "0"
+                G = "0.392"
+                B = "0"/>
+            <Extent>
+                <Min X = "-0.004029" Y = "-0.004029"/>
+                <Max X = "0.002014" Y = "0.006073"/>
+            </Extent>
+            <Line>
+                <Presentation
+                    Layer = "Default"
+                    Color = "DarkGreen"
+                    LineType = "Solid"
+                    LineWeight = "0.00018"
+                    R = "0"
+                    G = "0.392"
+                    B = "0"/>
+                <Extent>
+                    <Min X = "-0.002000" Y = "-0.004000"/>
+                    <Max X = "0.002000" Y = "-0.004000"/>
+                </Extent>
+                <Coordinate X = "0.002000" Y = "-0.004000"/>
+                <Coordinate X = "-0.002000" Y = "-0.004000"/>
+            </Line>
+            <Line>
+                <Presentation
+                    Layer = "Default"
+                    Color = "DarkGreen"
+                    LineType = "Solid"
+                    LineWeight = "0.00018"
+                    R = "0"
+                    G = "0.392"
+                    B = "0"/>
+                <Extent>
+                    <Min X = "-0.004000" Y = "-0.002000"/>
+                    <Max X = "-0.004000" Y = "0.002000"/>
+                </Extent>
+                <Coordinate X = "-0.004000" Y = "-0.002000"/>
+                <Coordinate X = "-0.004000" Y = "0.002000"/>
+            </Line>
+            <Line>
+                <Presentation
+                    Layer = "Default"
+                    Color = "DarkGreen"
+                    LineType = "Solid"
+                    LineWeight = "0.00018"
+                    R = "0"
+                    G = "0.392"
+                    B = "0"/>
+                <Extent>
+                    <Min X = "0.000000" Y = "-0.004000"/>
+                    <Max X = "0.002000" Y = "0.000000"/>
+                </Extent>
+                <Coordinate X = "0.002000" Y = "-0.004000"/>
+                <Coordinate X = "0.000000" Y = "0.000000"/>
+            </Line>
+            <Line>
+                <Presentation
+                    Layer = "Default"
+                    Color = "DarkGreen"
+                    LineType = "Solid"
+                    LineWeight = "0.00018"
+                    R = "0"
+                    G = "0.392"
+                    B = "0"/>
+                <Extent>
+                    <Min X = "-0.002000" Y = "-0.004000"/>
+                    <Max X = "0.000000" Y = "0.000000"/>
+                </Extent>
+                <Coordinate X = "0.000000" Y = "0.000000"/>
+                <Coordinate X = "-0.002000" Y = "-0.004000"/>
+            </Line>
+            <Line>
+                <Presentation
+                    Layer = "Default"
+                    Color = "DarkGreen"
+                    LineType = "Solid"
+                    LineWeight = "0.00018"
+                    R = "0"
+                    G = "0.392"
+                    B = "0"/>
+                <Extent>
+                    <Min X = "-0.004000" Y = "0.000000"/>
+                    <Max X = "0.000000" Y = "0.002000"/>
+                </Extent>
+                <Coordinate X = "-0.004000" Y = "0.002000"/>
+                <Coordinate X = "0.000000" Y = "0.000000"/>
+            </Line>
+            <Line>
+                <Presentation
+                    Layer = "Default"
+                    Color = "DarkGreen"
+                    LineType = "Solid"
+                    LineWeight = "0.00018"
+                    R = "0"
+                    G = "0.392"
+                    B = "0"/>
+                <Extent>
+                    <Min X = "-0.004000" Y = "-0.002000"/>
+                    <Max X = "0.000000" Y = "0.000000"/>
+                </Extent>
+                <Coordinate X = "0.000000" Y = "0.000000"/>
+                <Coordinate X = "-0.004000" Y = "-0.002000"/>
+            </Line>
+            <Line>
+                <Presentation
+                    Layer = "Default"
+                    Color = "DarkGreen"
+                    LineType = "Solid"
+                    LineWeight = "0.00018"
+                    R = "0"
+                    G = "0.392"
+                    B = "0"/>
+                <Extent>
+                    <Min X = "-0.000719" Y = "0.004631"/>
+                    <Max X = "0.000719" Y = "0.006069"/>
+                </Extent>
+                <Coordinate X = "-0.000719" Y = "0.006069"/>
+                <Coordinate X = "0.000719" Y = "0.004631"/>
+            </Line>
+            <Line>
+                <Presentation
+                    Layer = "Default"
+                    Color = "DarkGreen"
+                    LineType = "Solid"
+                    LineWeight = "0.00018"
+                    R = "0"
+                    G = "0.392"
+                    B = "0"/>
+                <Extent>
+                    <Min X = "-0.001077" Y = "0.003003"/>
+                    <Max X = "0.001077" Y = "0.005157"/>
+                </Extent>
+                <Coordinate X = "-0.001077" Y = "0.005157"/>
+                <Coordinate X = "0.001077" Y = "0.003003"/>
+            </Line>
+            <Line>
+                <Presentation
+                    Layer = "Default"
+                    Color = "DarkGreen"
+                    LineType = "Solid"
+                    LineWeight = "0.00018"
+                    R = "0"
+                    G = "0.392"
+                    B = "0"/>
+                <Extent>
+                    <Min X = "-0.001438" Y = "0.001372"/>
+                    <Max X = "0.001438" Y = "0.004248"/>
+                </Extent>
+                <Coordinate X = "-0.001438" Y = "0.004248"/>
+                <Coordinate X = "0.001438" Y = "0.001372"/>
+            </Line>
+            <Line>
+                <Presentation
+                    Layer = "Default"
+                    Color = "DarkGreen"
+                    LineType = "Solid"
+                    LineWeight = "0.00018"
+                    R = "0"
+                    G = "0.392"
+                    B = "0"/>
+                <Extent>
+                    <Min X = "0.000000" Y = "0.000000"/>
+                    <Max X = "0.000000" Y = "0.006000"/>
+                </Extent>
+                <Coordinate X = "0.000000" Y = "0.006000"/>
+                <Coordinate X = "0.000000" Y = "0.000000"/>
+            </Line>
+            <ConnectionPoints
+                NumPoints = "3"
+                FlowIn = "1"
+                FlowOut = "2">
+                <Presentation
+                    Layer = "Default"
+                    Color = "DarkGreen"
+                    LineType = "Solid"
+                    LineWeight = ""
+                    R = "0"
+                    G = "0.392"
+                    B = "0"/>
+                <Extent>
+                    <Min X = "-0.004029" Y = "-0.004029"/>
+                    <Max X = "0.002014" Y = "0.006073"/>
+                </Extent>
+                <Node ID = "_SP491630D6DDA44587AC45B442CF00E12A_0">
+                    <Position>
+                        <Location X = "0.000000" Y = "0.000000"/>
+                        <Axis
+                            X = "0"
+                            Y = "0"
+                            Z = "1"/>
+                        <Reference
+                            X = "1"
+                            Y = "0"
+                            Z = "0"/>
+                    </Position>
+                </Node>
+                <Node
+                    ID = "_SP491630D6DDA44587AC45B442CF00E12A_1"
+                    Name = "1"
+                    Type = "process">
+                    <Position>
+                        <Location X = "0.000000" Y = "-0.004000"/>
+                        <Axis
+                            X = "0"
+                            Y = "0"
+                            Z = "1"/>
+                        <Reference
+                            X = "1"
+                            Y = "0"
+                            Z = "0"/>
+                    </Position>
+                </Node>
+                <Node
+                    ID = "_SP491630D6DDA44587AC45B442CF00E12A_2"
+                    Name = "2"
+                    Type = "process">
+                    <Position>
+                        <Location X = "-0.004000" Y = "0.000000"/>
+                        <Axis
+                            X = "0"
+                            Y = "0"
+                            Z = "1"/>
+                        <Reference
+                            X = "1"
+                            Y = "0"
+                            Z = "0"/>
+                    </Position>
+                </Node>
+            </ConnectionPoints>
+            <Text
+                String = "PSV"
+                Font = "Arial"
+                Justification = "CenterCenter"
+                Width = "0.0025"
+                Height = "0.0025"
+                TextAngle = "0">
+                <Presentation
+                    Layer = "Labels"
+                    Color = "Black"
+                    LineType = "Solid"
+                    LineWeight = "0"
+                    R = "0"
+                    G = "0"
+                    B = "0"/>
+                <Extent>
+                    <Min X = "-0.003505" Y = "0.022704"/>
+                    <Max X = "0.003505" Y = "0.026617"/>
+                </Extent>
+                <Position>
+                    <Location X = "0.000000" Y = "0.024661"/>
+                    <Axis
+                        X = "0"
+                        Y = "0"
+                        Z = "1"/>
+                    <Reference
+                        X = "1"
+                        Y = "0"
+                        Z = "0"/>
+                </Position>
+            </Text>
+            <Text
+                String = "+"
+                Font = "Arial"
+                Justification = "CenterCenter"
+                Width = "0.001269996"
+                Height = "0.001269996"
+                TextAngle = "0">
+                <Presentation
+                    Layer = "Labels"
+                    Color = "Black"
+                    LineType = "Solid"
+                    LineWeight = "0.00035"
+                    R = "0"
+                    G = "0"
+                    B = "0"/>
+                <Extent>
+                    <Min X = "-0.000331" Y = "0.021505"/>
+                    <Max X = "0.000479" Y = "0.022513"/>
+                </Extent>
+                <Position>
+                    <Location X = "0.000074" Y = "0.022009"/>
+                    <Axis
+                        X = "0"
+                        Y = "0"
+                        Z = "1"/>
+                    <Reference
+                        X = "1"
+                        Y = "0"
+                        Z = "0"/>
+                </Position>
+            </Text>
+            <Text
+                String = "0002 "
+                Font = "Arial"
+                Justification = "CenterCenter"
+                Width = "0.002469446"
+                Height = "0.002469446"
+                TextAngle = "0">
+                <Presentation
+                    Layer = "Labels"
+                    Color = "Black"
+                    LineType = "Solid"
+                    LineWeight = "0"
+                    R = "0"
+                    G = "0"
+                    B = "0"/>
+                <Extent>
+                    <Min X = "-0.004348" Y = "0.017422"/>
+                    <Max X = "0.004348" Y = "0.021287"/>
+                </Extent>
+                <Position>
+                    <Location X = "0.000000" Y = "0.019355"/>
+                    <Axis
+                        X = "0"
+                        Y = "0"
+                        Z = "1"/>
+                    <Reference
+                        X = "1"
+                        Y = "0"
+                        Z = "0"/>
+                </Position>
+            </Text>
+            <GenericAttributes Set = "DexpiAttributes" Number = "1">
+                <GenericAttribute
+                    Name = "SymbolRegistrationNumberAssignmentClass"
+                    AttributeURI = "http://sandbox.dexpi.org/rdl/SymbolRegistrationNumberAssignmentClass"
+                    Value = "ND0017"
+                    Format = "string"/>
+            </GenericAttributes>
+        </PipingComponent>
+    </ShapeCatalogue>
+</PlantModel>

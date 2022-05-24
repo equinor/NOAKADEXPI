@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PlantModel xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation = "../ProteusPIDSchema_4.1.xsd">
+    <PlantInformation
+        Application = "Dexpi"
+        ApplicationVersion = "1.3"
+        SchemaVersion = "4.1"
+        OriginatingSystem = "NOAKA Pilot Test Case"
+        Date = "2021-11-08"
+        Time = "15:52:50.0000000+01:00"
+        Is3D = "no"
+        Units = "Metre"
+        Discipline = "PID">
+        <UnitsOfMeasure/>
+    </PlantInformation>
+    <InstrumentationLoopFunction
+        ID = "InstrumentationLoopFunction-1"
+        ComponentClass = "InstrumentationLoopFunction"
+        ComponentClassURI = "http://sandbox.dexpi.org/rdl/InstrumentationLoopFunction">
+        <GenericAttributes Number = "1" Set = "DexpiAttributes">
+            <GenericAttribute
+                Name = "InstrumentationLoopFunctionNumberAssignmentClass"
+                Value = "0003"
+                Format = "string"
+                AttributeURI = "http://sandbox.dexpi.org/rdl/InstrumentationLoopFunctionNumberAssignmentClass"/>
+        </GenericAttributes>
+        <Association Type = "is a collection including" ItemID = "ProcessInstrumentationFunction-1"/>
+    </InstrumentationLoopFunction>
+    <ProcessInstrumentationFunction
+        ID = "ProcessInstrumentationFunction-1"
+        ComponentClass = "ProcessInstrumentationFunction"
+        ComponentName = "PROCESS_INSTRUMENTATION_FUNCTION_SHAPE_1"
+        ComponentClassURI = "http://sandbox.dexpi.org/rdl/ProcessInstrumentationFunction">
+        <GenericAttributes Set = "DexpiCustomAttributes" Number = "3">
+            <GenericAttribute
+                Name = "ItemTag"
+                Value = "D-20TIC0003"
+                Format = "string"
+                Type = "String"
+                TypeURI = "http://sandbox.dexpi.org/rdl/String"/>
+            <GenericAttribute
+                Name = "Sequence"
+                Value = "0003"
+                Format = "string"
+                Type = "String"
+                TypeURI = "http://sandbox.dexpi.org/rdl/String"/>
+            <GenericAttribute
+                Name = "TagType"
+                Value = "TIC"
+                Format = "string"
+                Type = "String"
+                TypeURI = "http://sandbox.dexpi.org/rdl/String"/>
+        </GenericAttributes>
+        <!--Removed because there is no item with this ID:
+        <Association Type="is a part of" ItemID="PBS861A008E2DED4F8A94D5114824B78591" /> 
+        Probably a PlantStructureItem.
+        
+        Removed because there is no item with this ID:
+        <Association Type="is logical start of" ItemID="SP80C7186FE21043BEA11B06A968E5CFEC" />
+        If this is the signal line from left -> it would be the "end" rather than the start.
+        If this is an "invisible" signal line for an alarm -> probably OK
+        -->
+        <Association Type = "is logical start of" ItemID = "SignalLineFunction-1"/>
+        <PersistentID Identifier = "SP92E63073082448AD9F81CCB3EDCD0057" Context = "SmartPID - AskjaPFD"/>
+        <Position>
+            <Location
+                X = "0.65819720489131"
+                Y = "0.423838602436979"
+                Z = "0"/>
+            <Axis
+                X = "0"
+                Y = "0"
+                Z = "1"/>
+            <Reference
+                X = "1"
+                Y = "0"
+                Z = "0"/>
+        </Position>
+        <Scale
+            X = "1.0"
+            Y = "1.0"
+            Z = "1.0"/>
+        <Association Type = "is a part of" ItemID = "InstrumentationLoopFunction-1"/>
+        <ConnectionPoints NumPoints = "13">
+            <Node ID = "ProcessInstrumentationFunction-1-Node-0"></Node>
+            <Node ID = "ProcessInstrumentationFunction-1-Node-1" Type = "signal">
+                <Position>
+                    <Location X = "0.6521972048913105" Y = "0.42383860243697918"/>
+                    <Axis
+                        X = "0"
+                        Y = "0"
+                        Z = "1"/>
+                    <Reference
+                        X = "1"
+                        Y = "0"
+                        Z = "0"/>
+                </Position>
+            </Node>
+            <Node ID = "ProcessInstrumentationFunction-1-Node-2" Type = "signal">
+                <Position>
+                    <Location X = "0.66419720489131051" Y = "0.42383860243697918"/>
+                    <Axis
+                        X = "0"
+                        Y = "0"
+                        Z = "1"/>
+                    <Reference
+                        X = "1"
+                        Y = "0"
+                        Z = "0"/>
+                </Position>
+            </Node>
+            <Node ID = "ProcessInstrumentationFunction-1-Node-3" Type = "signal">
+                <Position>
+                    <Location X = "0.65819720489131051" Y = "0.42983860243697919"/>
+                    <Axis
+                        X = "0"
+                        Y = "0"
+                        Z = "1"/>
+                    <Reference
+                        X = "1"
+                        Y = "0"
+                        Z = "0"/>
+                </Position>
+            </Node>
+            <Node ID = "ProcessInstrumentationFunction-1-Node-4" Type = "signal">
+                <!--This node is located bottom center of the PIF square. It is the start of the graphical line for the SignalLineFunction. -->
+                <Position>
+                    <Location X = "0.65819720489131051" Y = "0.41783860243697918"/>
+                    <Axis
+                        X = "0"
+                        Y = "0"
+                        Z = "1"/>
+                    <Reference
+                        X = "1"
+                        Y = "0"
+                        Z = "0"/>
+                </Position>
+            </Node>
+            <Node ID = "ProcessInstrumentationFunction-1-Node-5" Type = "signal">
+                <Position>
+                    <Location X = "0.6521972048913105" Y = "0.41983860243697918"/>
+                    <Axis
+                        X = "0"
+                        Y = "0"
+                        Z = "1"/>
+                    <Reference
+                        X = "1"
+                        Y = "0"
+                        Z = "0"/>
+                </Position>
+            </Node>
+            <Node ID = "ProcessInstrumentationFunction-1-Node-6" Type = "signal">
+                <Position>
+                    <Location X = "0.66419720489131051" Y = "0.42783860243697919"/>
+                    <Axis
+                        X = "0"
+                        Y = "0"
+                        Z = "1"/>
+                    <Reference
+                        X = "1"
+                        Y = "0"
+                        Z = "0"/>
+                </Position>
+            </Node>
+            <Node ID = "ProcessInstrumentationFunction-1-Node-7" Type = "signal">
+                <Position>
+                    <Location X = "0.6521972048913105" Y = "0.42783860243697919"/>
+                    <Axis
+                        X = "0"
+                        Y = "0"
+                        Z = "1"/>
+                    <Reference
+                        X = "1"
+                        Y = "0"
+                        Z = "0"/>
+                </Position>
+            </Node>
+            <Node ID = "ProcessInstrumentationFunction-1-Node-8" Type = "signal">
+                <Position>
+                    <Location X = "0.66419720489131051" Y = "0.41983860243697918"/>
+                    <Axis
+                        X = "0"
+                        Y = "0"
+                        Z = "1"/>
+                    <Reference
+                        X = "1"
+                        Y = "0"
+                        Z = "0"/>
+                </Position>
+            </Node>
+            <Node ID = "ProcessInstrumentationFunction-1-Node-9" Type = "signal">
+                <Position>
+                    <Location X = "0.6541972048913105" Y = "0.42983860243697919"/>
+                    <Axis
+                        X = "0"
+                        Y = "0"
+                        Z = "1"/>
+                    <Reference
+                        X = "1"
+                        Y = "0"
+                        Z = "0"/>
+                </Position>
+            </Node>
+            <Node ID = "ProcessInstrumentationFunction-1-Node-10" Type = "signal">
+                <Position>
+                    <Location X = "0.66219720489131051" Y = "0.42983860243697919"/>
+                    <Axis
+                        X = "0"
+                        Y = "0"
+                        Z = "1"/>
+                    <Reference
+                        X = "1"
+                        Y = "0"
+                        Z = "0"/>
+                </Position>
+            </Node>
+            <Node ID = "ProcessInstrumentationFunction-1-Node-11" Type = "signal">
+                <Position>
+                    <Location X = "0.6541972048913105" Y = "0.41783860243697918"/>
+                    <Axis
+                        X = "0"
+                        Y = "0"
+                        Z = "1"/>
+                    <Reference
+                        X = "1"
+                        Y = "0"
+                        Z = "0"/>
+                </Position>
+            </Node>
+            <Node ID = "ProcessInstrumentationFunction-1-Node-12" Type = "signal">
+                <Position>
+                    <Location X = "0.66219720489131051" Y = "0.41783860243697918"/>
+                    <Axis
+                        X = "0"
+                        Y = "0"
+                        Z = "1"/>
+                    <Reference
+                        X = "1"
+                        Y = "0"
+                        Z = "0"/>
+                </Position>
+            </Node>
+        </ConnectionPoints>
+        <InformationFlow
+            ID = "SignalLineFunction-1"
+            ComponentClass = "SignalLineFunction"
+            ComponentName = "Electric"
+            ComponentClassURI = "http://sandbox.dexpi.org/rdl/SignalLineFunction">
+            <Association Type = "has logical start" ItemID = "ProcessInstrumentationFunction-1"/>
+            <Association Type = "has logical end" ItemID = "ActuatingFunction-1"/>
+            <PersistentID Identifier = "SP59ADAD83602B45ECA8467395D59646DC" Context = "SmartPID - AskjaPFD"/>
+            <!--FromNode: bottom center of PIF square, referenced by its zero-based index, see above -->
+            <Connection
+                ToID = "TODO ACTUATOR"
+                FromID = "ProcessInstrumentationFunction-1"
+                FromNode = "4"/>
+            <CenterLine ID = "CenterLine-1" NumPoints = "2">
+                <Presentation
+                    LineType = "Dashed"
+                    LineWeight = "0.00009"
+                    R = "0"
+                    G = "0.392"
+                    B = "0"/>
+                <Coordinate X = "0.65819720489131051" Y = "0.41783860243697918"/>
+                <Coordinate X = "0.65819720489131128" Y = "0.31850704303647759"/>
+            </CenterLine>
+        </InformationFlow>
+        <ActuatingFunction
+            ID = "ActuatingFunction-1"
+            ComponentClass = "ActuatingFunction"
+            ComponentClassURI = "http://sandbox.dexpi.org/rdl/ActuatingFunction">
+            <Association Type = "is located in" ItemID = "PipingNetworkSegment-1"/>
+            <Association Type = "is logical end of" ItemID = "SignalLineFunction-1"/>
+            <Association Type = "is fulfilled by" ItemID = "ActuatingSystem-1"/>
+            <GenericAttributes Number = "1" Set = "DexpiAttributes">
+                <GenericAttribute
+                    Name = "ActuatingFunctionNumberAssignmentClass"
+                    Value = "TV0003"
+                    Format = "string"
+                    AttributeURI = "http://sandbox.dexpi.org/rdl/ActuatingFunctionNumberAssignmentClass"/>
+            </GenericAttributes>
+        </ActuatingFunction>
+    </ProcessInstrumentationFunction>
+    <ActuatingSystem
+        ID = "ActuatingSystem-1"
+        ComponentClass = "ActuatingSystem"
+        ComponentClassURI = "http://sandbox.dexpi.org/rdl/ActuatingSystem"
+        ComponentName = "ACTUATING_SYSTEM_SHAPE_1">
+        <Association Type = "fulfills" ItemID = "ActuatingFunction-1"/>
+        <GenericAttributes Set = "DexpiCustomAttributes" Number = "2">
+            <GenericAttribute
+                Name = "ItemTag"
+                Value = "D-20TV0003"
+                Format = "string"
+                Type = "String"
+                TypeURI = "http://sandbox.dexpi.org/rdl/String"/>
+            <GenericAttribute
+                Name = "TagType"
+                Value = "TV"
+                Format = "string"
+                Type = "String"
+                TypeURI = "http://sandbox.dexpi.org/rdl/String"/>
+        </GenericAttributes>
+        <GenericAttributes Number = "1" Set = "DexpiAttributes">
+            <GenericAttribute
+                Name = "TypicalInformationAssignmentClass"
+                Value = "typical info"
+                Format = "string"
+                AttributeURI = "http://sandbox.dexpi.org/rdl/TypicalInformationAssignmentClass"/>
+        </GenericAttributes>
+        <ActuatingSystemComponent
+            ID = "ControlledActuator-1"
+            TagName = "D-20T0003"
+            ComponentClass = "ControlledActuator"
+            ComponentName = "CONTROLLED_ACTUATOR_SHAPE_1"
+            ComponentClassURI = "http://sandbox.dexpi.org/rdl/ControlledActuator">
+            <PersistentID Identifier = "SP5635995CB70649B4AD65A57A02CCF1F0" Context = "SmartPID - AskjaPFD"/>
+            <Position>
+                <Location
+                    X = "0.658197204891314"
+                    Y = "0.305157042046041"
+                    Z = "0"/>
+                <Axis
+                    X = "0"
+                    Y = "0"
+                    Z = "1"/>
+                <Reference
+                    X = "1"
+                    Y = "0"
+                    Z = "0"/>
+            </Position>
+            <Scale
+                X = "1.0"
+                Y = "1.0"
+                Z = "1.0"/>
+            <Presentation
+                Layer = "Default"
+                Color = "DarkGreen"
+                LineType = "Solid"
+                LineWeight = "0.00035"
+                R = "0"
+                G = "0.392"
+                B = "0"/>
+        </ActuatingSystemComponent>
+        <ActuatingSystemComponent
+            ID = "OperatedValveReference-1"
+            ComponentClass = "OperatedValveReference"
+            ComponentClassURI = "http://sandbox.dexpi.org/rdl/OperatedValveReference">
+            <Association Type = "refers to" ItemID = "PipingNetworkSegment-1"/>
+        </ActuatingSystemComponent>
+    </ActuatingSystem>
+    <PipingNetworkSystem
+        ID = "PipingNetworkSystem-1"
+        TagName = "D-20L00013A"
+        ComponentClass = "PipingNetworkSystem"
+        ComponentClassURI = "http://data.posccaesar.org/rdl/RDS270359">
+        <!--Removed because there is no item with this ID:
+        <Association Type="is a part of" ItemID="PBS861A008E2DED4F8A94D5114824B78591" />
+        Probably a PlantStructureItem.
+        -->
+        <PipingNetworkSegment
+            ID = "PipingNetworkSegment-1"
+            ComponentClass = "PipingNetworkSegment"
+            ComponentClassURI = "http://data.posccaesar.org/rdl/RDS267704"
+            DualFlow = "false">
+            <Association Type = "is the location of" ItemID = "ActuatingFunction-1"/>
+            <PipingComponent
+                ID = "GateValve-1"
+                TagName = "D-20TV0003"
+                ComponentClass = "GateValve"
+                ComponentName = "PipingComponent_5f7b0e93-f48b-430d-bdd7-32aae2f90a5f"
+                ComponentClassURI = "http://data.posccaesar.org/rdl/RDS416519">
+                <GenericAttributes Number = "1" Set = "DexpiAttributes">
+                    <GenericAttribute
+                        Name = "SymbolRegistrationNumberAssignmentClass"
+                        Value = "PV005A"
+                        Format = "string"
+                        AttributeURI = "http://sandbox.dexpi.org/rdl/SymbolRegistrationNumberAssigmentClass"/>
+                </GenericAttributes>
+                <PersistentID Identifier = "SPACD7FD0E0EE147A0B52130CAB16EBA17" Context = "SmartPID - AskjaPFD"/>
+                <Position>
+                    <Location
+                        X = "0.658197204891312"
+                        Y = "0.305157042046043"
+                        Z = "0"/>
+                    <Axis
+                        X = "0"
+                        Y = "0"
+                        Z = "1"/>
+                    <Reference
+                        X = "1"
+                        Y = "0"
+                        Z = "0"/>
+                </Position>
+        <Label ID = "BubbleLabel" ComponentName = "BubbleLableShape-1">
+            <Position>
+                <Location
+                    X = "0.2857"
+                    Y = "0.3353"
+                    Z = "0"/>
+                <Axis
+                    X = "0"
+                    Y = "0"
+                    Z = "1"/>
+                <Reference
+                    X = "1"
+                    Y = "0"
+                    Z = "0"/>
+            </Position>
+            <PolyLine NumPoints = "2">
+                <Presentation
+                    LineType = "Solid"
+                    LineWeight = "0.00035"
+                    R = "0"
+                    G = "0"
+                    B = "0"/>
+                <Coordinate X = "0.000222" Y = "-0.000277"/>
+                <Coordinate X = "0.004175" Y = "-0.005217"/>
+            </PolyLine>
+        </Label>
+                <Scale
+                    X = "1.0"
+                    Y = "1.0"
+                    Z = "1.0"/>
+                <Association Type = "is referenced by" ItemID = "OperatedValveReference-1"/>
+                <Presentation
+                    Layer = "Default"
+                    Color = "DarkGreen"
+                    LineType = "Solid"
+                    LineWeight = "0.00035"
+                    R = "0"
+                    G = "0.392"
+                    B = "0"/>
+                <Extent>
+                    <Min X = "0.65416863870965258" Y = "0.30195250076517688"/>
+                    <Max X = "0.662225771072972" Y = "0.3071713251368724"/>
+                </Extent>
+                <ConnectionPoints
+                    NumPoints = "3"
+                    FlowIn = "1"
+                    FlowOut = "2">
+                    <Presentation
+                        Layer = "Default"
+                        Color = "DarkGreen"
+                        LineType = "Solid"
+                        LineWeight = ""
+                        R = "0"
+                        G = "0.392"
+                        B = "0"/>
+                    <Extent>
+                        <Min X = "0.65416863870965258" Y = "0.30195250076517688"/>
+                        <Max X = "0.662225771072972" Y = "0.3071713251368724"/>
+                    </Extent>
+                    <Node ID = "GateValve-1-Node-0"></Node>
+                    <Node ID = "GateValve-1-Node-1" Type = "process">
+                        <Position>
+                            <Location X = "0.65419720489131228" Y = "0.30515704204604255"/>
+                            <Axis
+                                X = "0"
+                                Y = "0"
+                                Z = "1"/>
+                            <Reference
+                                X = "1"
+                                Y = "0"
+                                Z = "0"/>
+                        </Position>
+                    </Node>
+                    <Node
+                        ID = "GateValve-1-Node-2"
+                        Name = "2"
+                        Type = "process">
+                        <Position>
+                            <Location X = "0.66219720489131229" Y = "0.30515704204604255"/>
+                            <Axis
+                                X = "0"
+                                Y = "0"
+                                Z = "1"/>
+                            <Reference
+                                X = "1"
+                                Y = "0"
+                                Z = "0"/>
+                        </Position>
+                    </Node>
+                </ConnectionPoints>
+            </PipingComponent>
+        </PipingNetworkSegment>
+    </PipingNetworkSystem>
+    <ShapeCatalogue Name = "Shapes">
+        <Label ID = "BubbleLableShape-1" ComponentName = "BubbleLableShape-1">
+            <GenericAttributes Number = "1" Set = "DexpiAttributes"> 
+                <GenericAttribute
+                    Name = "SymboleRgistrationNumberAssignmentClass"
+                    AttributeURI = "http://sandbox.dexpi.org/rdl/SymboleRgistrationNumberAssignmentClass"
+                    Value = "IM005B"
+                    Format = "string"/>
+            </GenericAttributes>
+            <!--in "standard" DEXPI: shape geometry goes here; omitted in NOAKA-->
+        </Label>
+        <ProcessInstrumentationFunction ComponentName = "PROCESS_INSTRUMENTATION_FUNCTION_SHAPE_1" ID = "Shape-1">
+            <GenericAttributes Number = "1" Set = "DexpiAttributes">
+                <!--Do we have SymbolRegistrationNumber here? -->
+                <GenericAttribute
+                    Name = "SymbolRegistrationNumberAssignmentClass"
+                    Value = "???"
+                    Format = "string"
+                    AttributeURI = "http://sandbox.dexpi.org/rdl/SymbolRegistrationNumberAssigmentClass"/>
+            </GenericAttributes>
+        </ProcessInstrumentationFunction>
+        <ActuatingSystem ComponentName = "ACTUATING_SYSTEM_SHAPE_1" ID = "Shape-2">
+            <GenericAttributes Number = "1" Set = "DexpiAttributes">
+                <GenericAttribute
+                    Name = "SymbolRegistrationNumberAssignmentClass"
+                    Value = "IM005A"
+                    Format = "string"
+                    AttributeURI = "http://sandbox.dexpi.org/rdl/SymbolRegistrationNumberAssigmentClass"/>
+            </GenericAttributes>
+        </ActuatingSystem>
+        <ActuatingSystemComponent ComponentName = "CONTROLLED_ACTUATOR_SHAPE_1" ID = "Shape-3">
+            <GenericAttributes Number = "1" Set = "DexpiAttributes">
+                <GenericAttribute
+                    Name = "SymbolRegistrationNumberAssignmentClass"
+                    Value = "PA001A"
+                    Format = "string"
+                    AttributeURI = "http://sandbox.dexpi.org/rdl/SymbolRegistrationNumberAssigmentClass"/>
+            </GenericAttributes>
+        </ActuatingSystemComponent>
+    </ShapeCatalogue>
+</PlantModel>

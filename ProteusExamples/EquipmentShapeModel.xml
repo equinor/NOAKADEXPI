@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PlantModel xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation = "../ProteusPIDSchema_4.0.1.xsd">
+  <!--Created with INGR ISO15926 PostProc V0.0.7.13 and ConfigurationFileVersion 7.0013 by NOOFT-01\ofslinil on ABLAPP122 at 05.10.2021 13.04.49-->
+  <PlantInformation
+    SchemaVersion = "4.0.1"
+    OriginatingSystem = "SPPID"
+    Date = "2021-10-05"
+    Time = "10:52:34.0000000+02:00"
+    Is3D = "no"
+    Units = "Metre"
+    Discipline = "PID">
+    <UnitsOfMeasure/>
+  </PlantInformation>
+  <Drawing Name = "PID.002" Type = "PID">
+    <Presentation R = "1" G = "1" B = "1"/>
+    <Extent>
+      <Min X = "0" Y = "0"/>
+      <Max X = "0.04" Y = "0.04"/>
+    </Extent>
+  </Drawing>
+  <!--arbitrary name: Symbol Library"-->
+  <ShapeCatalogue Name = "Symbol Library">
+    <!--arbitrary ID and ComponentName-->
+     <Equipment ID = "CENTRIFUGAL_PUMP_SHAPE1" ComponentName = "CENTRIFUGAL_PUMP_SHAPE1">
+      <GenericAttributes Number = "1"  Set="DexpiAttributes">
+        <GenericAttribute
+          Name = "SymbolRegistrationNumberAssignmentClass"
+          AttributeURI = "http://sandbox.dexpi.org/rdl/SymboleRgistrationNumberAssignmentClass"
+          Value = "PP003A"
+          Format = "string"/>
+      </GenericAttributes>
+    </Equipment>
+  </ShapeCatalogue>
+  <Equipment
+    ID = "CentrifugalPump1"
+    ComponentName = "CENTRIFUGAL_PUMP_SHAPE1"
+    ComponentClass = "CentrifugalPump"
+    ComponentClassURI = "http://data.posccaesar.org/rdl/RDS416834">
+    <!--details about PersistentID still in discussion-->
+    <PersistentID Identifier = "SP6154335D35F2453886A96144BBEE351D" Context = "SmartPID - AskjaC"/>
+      <GenericAttributes Number="2" Set="DexpiAttributes">
+<GenericAttribute Name="TagNameAssignmentClass" Value="D-20PA002" Format="string" AttributeURI="http://sandbox.dexpi.org/rdl/TagNameAssignmentClass" />
+        <GenericAttribute Name="EquipmentDescriptionAssignmentClass" Value="CENTRIFUGAL PUMP" Format="string" AttributeURI="http://sandbox.dexpi.org/rdl/EquipmentDescriptionAssignmentClass" />
+      </GenericAttributes>
+<GenericAttributes Number = "1" Set = "CustomAttributes">
+        <GenericAttribute
+          Name = "ObjectDisplayName"
+          Format = "string"
+          AttributeURI = "http://sandbox.dexpi.org/rdl/ObjectDisplayName"
+          Value = "D-20PA002"/>
+      </GenericAttributes>
+    <Position>
+      <Location X = "0.02" Y = "0.02" Z = "0"/>
+      <Axis X = "0" Y = "0" Z = "1"/>
+      <Reference X = "1" Y = "0" Z = "0"/>
+    </Position>
+    <Scale X = "1.0" Y = "1.0" Z = "1.0"/>
+  </Equipment>
+</PlantModel>
