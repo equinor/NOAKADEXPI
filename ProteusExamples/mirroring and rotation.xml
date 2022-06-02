@@ -1,0 +1,769 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<PlantModel>
+  <PlantInformation Application="Dexpi" ApplicationVersion="1.3" Date="2022-02-21" Discipline="PID" Is3D="no" OriginatingSystem="P&amp;ID Toolbox" OriginatingSystemVendor="pnb plants &amp; bytes GmbH, Aachen, Germany" OriginatingSystemVersion="0.9" SchemaVersion="4.1.1" Time="15:32:37.199533" Units="mm">
+    <UnitsOfMeasure/>
+  </PlantInformation>
+  <PipingNetworkSystem ID="PipingNetworkSystem-1" ComponentClass="PipingNetworkSystem" ComponentClassURI="http://data.posccaesar.org/rdl/RDS270359">
+    <PipingNetworkSegment ID="PipingNetworkSegment-1" ComponentClass="PipingNetworkSegment" ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704">
+      <PipingComponent ID="PlugValve-1" ComponentClass="PlugValve" ComponentClassURI="http://data.posccaesar.org/rdl/RDS421109" ComponentName="SHAPE_PV023A">
+        <Position>
+          <Location X="30" Y="140" Z="0"/>
+          <Axis X="0" Y="0" Z="1"/>
+          <Reference X="1" Y="0" Z="0"/>
+        </Position>
+        <GenericAttributes Set="DexpiAttributes" Number="1">
+          <GenericAttribute Name="PipingComponentNumberAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/PipingComponentNumberAssignmentClass" Format="string" Value="(0, 0), 0°, not mirrored"/>
+        </GenericAttributes>
+      </PipingComponent>
+    </PipingNetworkSegment>
+    <PipingNetworkSegment ID="PipingNetworkSegment-2" ComponentClass="PipingNetworkSegment" ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704">
+      <PipingComponent ID="PlugValve-2" ComponentClass="PlugValve" ComponentClassURI="http://data.posccaesar.org/rdl/RDS421109" ComponentName="SHAPE_PV023A">
+        <Position>
+          <Location X="100" Y="140" Z="0"/>
+          <Axis X="0" Y="0" Z="1"/>
+          <Reference X="0" Y="-1" Z="0"/>
+        </Position>
+        <GenericAttributes Set="DexpiAttributes" Number="1">
+          <GenericAttribute Name="PipingComponentNumberAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/PipingComponentNumberAssignmentClass" Format="string" Value="(0, 0), 90°, not mirrored"/>
+        </GenericAttributes>
+      </PipingComponent>
+    </PipingNetworkSegment>
+    <PipingNetworkSegment ID="PipingNetworkSegment-3" ComponentClass="PipingNetworkSegment" ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704">
+      <PipingComponent ID="PlugValve-3" ComponentClass="PlugValve" ComponentClassURI="http://data.posccaesar.org/rdl/RDS421109" ComponentName="SHAPE_PV023A">
+        <Position>
+          <Location X="170" Y="140" Z="0"/>
+          <Axis X="0" Y="0" Z="1"/>
+          <Reference X="-1" Y="0" Z="0"/>
+        </Position>
+        <GenericAttributes Set="DexpiAttributes" Number="1">
+          <GenericAttribute Name="PipingComponentNumberAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/PipingComponentNumberAssignmentClass" Format="string" Value="(0, 0), 180°, not mirrored"/>
+        </GenericAttributes>
+      </PipingComponent>
+    </PipingNetworkSegment>
+    <PipingNetworkSegment ID="PipingNetworkSegment-4" ComponentClass="PipingNetworkSegment" ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704">
+      <PipingComponent ID="PlugValve-4" ComponentClass="PlugValve" ComponentClassURI="http://data.posccaesar.org/rdl/RDS421109" ComponentName="SHAPE_PV023A">
+        <Position>
+          <Location X="240" Y="140" Z="0"/>
+          <Axis X="0" Y="0" Z="1"/>
+          <Reference X="0" Y="1" Z="0"/>
+        </Position>
+        <GenericAttributes Set="DexpiAttributes" Number="1">
+          <GenericAttribute Name="PipingComponentNumberAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/PipingComponentNumberAssignmentClass" Format="string" Value="(0, 0), 270°, not mirrored"/>
+        </GenericAttributes>
+      </PipingComponent>
+    </PipingNetworkSegment>
+    <PipingNetworkSegment ID="PipingNetworkSegment-5" ComponentClass="PipingNetworkSegment" ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704">
+      <PipingComponent ID="PlugValve-5" ComponentClass="PlugValve" ComponentClassURI="http://data.posccaesar.org/rdl/RDS421109" ComponentName="SHAPE_PV023A">
+        <Position>
+          <Location X="30" Y="70" Z="0"/>
+          <Axis X="0" Y="0" Z="-1"/>
+          <Reference X="1" Y="0" Z="0"/>
+        </Position>
+        <GenericAttributes Set="DexpiAttributes" Number="1">
+          <GenericAttribute Name="PipingComponentNumberAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/PipingComponentNumberAssignmentClass" Format="string" Value="(0, 0), 0°, mirrored"/>
+        </GenericAttributes>
+      </PipingComponent>
+    </PipingNetworkSegment>
+    <PipingNetworkSegment ID="PipingNetworkSegment-6" ComponentClass="PipingNetworkSegment" ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704">
+      <PipingComponent ID="PlugValve-6" ComponentClass="PlugValve" ComponentClassURI="http://data.posccaesar.org/rdl/RDS421109" ComponentName="SHAPE_PV023A">
+        <Position>
+          <Location X="100" Y="70" Z="0"/>
+          <Axis X="0" Y="0" Z="-1"/>
+          <Reference X="0" Y="1" Z="0"/>
+        </Position>
+        <GenericAttributes Set="DexpiAttributes" Number="1">
+          <GenericAttribute Name="PipingComponentNumberAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/PipingComponentNumberAssignmentClass" Format="string" Value="(0, 0), 90°, mirrored"/>
+        </GenericAttributes>
+      </PipingComponent>
+    </PipingNetworkSegment>
+    <PipingNetworkSegment ID="PipingNetworkSegment-7" ComponentClass="PipingNetworkSegment" ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704">
+      <PipingComponent ID="PlugValve-7" ComponentClass="PlugValve" ComponentClassURI="http://data.posccaesar.org/rdl/RDS421109" ComponentName="SHAPE_PV023A">
+        <Position>
+          <Location X="170" Y="70" Z="0"/>
+          <Axis X="0" Y="0" Z="-1"/>
+          <Reference X="-1" Y="0" Z="0"/>
+        </Position>
+        <GenericAttributes Set="DexpiAttributes" Number="1">
+          <GenericAttribute Name="PipingComponentNumberAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/PipingComponentNumberAssignmentClass" Format="string" Value="(0, 0), 180°, mirrored"/>
+        </GenericAttributes>
+      </PipingComponent>
+    </PipingNetworkSegment>
+    <PipingNetworkSegment ID="PipingNetworkSegment-8" ComponentClass="PipingNetworkSegment" ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704">
+      <PipingComponent ID="PlugValve-8" ComponentClass="PlugValve" ComponentClassURI="http://data.posccaesar.org/rdl/RDS421109" ComponentName="SHAPE_PV023A">
+        <Position>
+          <Location X="240" Y="70" Z="0"/>
+          <Axis X="0" Y="0" Z="-1"/>
+          <Reference X="0" Y="-1" Z="0"/>
+        </Position>
+        <GenericAttributes Set="DexpiAttributes" Number="1">
+          <GenericAttribute Name="PipingComponentNumberAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/PipingComponentNumberAssignmentClass" Format="string" Value="(0, 0), 270°, mirrored"/>
+        </GenericAttributes>
+      </PipingComponent>
+    </PipingNetworkSegment>
+  </PipingNetworkSystem>
+  <Drawing Name="rotation and mirroring" Type="PID">
+    <Presentation R="1" G="1" B="1"/>
+    <Extent>
+      <Min X="0" Y="0"/>
+      <Max X="297" Y="190"/>
+    </Extent>
+    <Text String="DEXPI:" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="13" Y="180" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="Position: (0.03, 0.05)" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="16" Y="177" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="Rotation: 0.0" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="16" Y="174" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="IsMirrored: False" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="16" Y="171" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="Proteus:" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="13" Y="166.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="&lt;Position&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="16" Y="163.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="  &lt;Location X=&quot;30&quot; Y=&quot;140&quot; Z=&quot;0&quot;/&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="16" Y="160.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="  &lt;Axis X=&quot;0&quot; Y=&quot;0&quot; Z=&quot;1&quot;/&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="16" Y="157.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="  &lt;Reference X=&quot;1&quot; Y=&quot;0&quot; Z=&quot;0&quot;/&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="16" Y="154.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="&lt;/Position&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="16" Y="151.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="DEXPI:" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="83" Y="180" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="Position: (0.1, 0.05)" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="86" Y="177" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="Rotation: 90.0" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="86" Y="174" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="IsMirrored: False" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="86" Y="171" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="Proteus:" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="83" Y="166.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="&lt;Position&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="86" Y="163.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="  &lt;Location X=&quot;100&quot; Y=&quot;140&quot; Z=&quot;0&quot;/&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="86" Y="160.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="  &lt;Axis X=&quot;0&quot; Y=&quot;0&quot; Z=&quot;1&quot;/&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="86" Y="157.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="  &lt;Reference X=&quot;0&quot; Y=&quot;-1&quot; Z=&quot;0&quot;/&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="86" Y="154.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="&lt;/Position&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="86" Y="151.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="DEXPI:" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="153" Y="180" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="Position: (0.17, 0.05)" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="156" Y="177" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="Rotation: 180.0" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="156" Y="174" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="IsMirrored: False" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="156" Y="171" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="Proteus:" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="153" Y="166.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="&lt;Position&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="156" Y="163.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="  &lt;Location X=&quot;170&quot; Y=&quot;140&quot; Z=&quot;0&quot;/&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="156" Y="160.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="  &lt;Axis X=&quot;0&quot; Y=&quot;0&quot; Z=&quot;1&quot;/&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="156" Y="157.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="  &lt;Reference X=&quot;-1&quot; Y=&quot;0&quot; Z=&quot;0&quot;/&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="156" Y="154.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="&lt;/Position&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="156" Y="151.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="DEXPI:" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="223" Y="180" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="Position: (0.24, 0.05)" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="226" Y="177" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="Rotation: 270.0" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="226" Y="174" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="IsMirrored: False" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="226" Y="171" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="Proteus:" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="223" Y="166.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="&lt;Position&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="226" Y="163.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="  &lt;Location X=&quot;240&quot; Y=&quot;140&quot; Z=&quot;0&quot;/&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="226" Y="160.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="  &lt;Axis X=&quot;0&quot; Y=&quot;0&quot; Z=&quot;1&quot;/&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="226" Y="157.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="  &lt;Reference X=&quot;0&quot; Y=&quot;1&quot; Z=&quot;0&quot;/&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="226" Y="154.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="&lt;/Position&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="226" Y="151.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="DEXPI:" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="13" Y="110" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="Position: (0.03, 0.12)" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="16" Y="107" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="Rotation: 0.0" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="16" Y="104" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="IsMirrored: True" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="16" Y="101" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="Proteus:" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="13" Y="96.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="&lt;Position&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="16" Y="93.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="  &lt;Location X=&quot;30&quot; Y=&quot;70&quot; Z=&quot;0&quot;/&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="16" Y="90.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="  &lt;Axis X=&quot;0&quot; Y=&quot;0&quot; Z=&quot;-1&quot;/&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="16" Y="87.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="  &lt;Reference X=&quot;1&quot; Y=&quot;0&quot; Z=&quot;0&quot;/&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="16" Y="84.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="&lt;/Position&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="16" Y="81.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="DEXPI:" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="83" Y="110" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="Position: (0.1, 0.12)" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="86" Y="107" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="Rotation: 90.0" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="86" Y="104" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="IsMirrored: True" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="86" Y="101" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="Proteus:" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="83" Y="96.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="&lt;Position&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="86" Y="93.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="  &lt;Location X=&quot;100&quot; Y=&quot;70&quot; Z=&quot;0&quot;/&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="86" Y="90.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="  &lt;Axis X=&quot;0&quot; Y=&quot;0&quot; Z=&quot;-1&quot;/&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="86" Y="87.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="  &lt;Reference X=&quot;0&quot; Y=&quot;1&quot; Z=&quot;0&quot;/&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="86" Y="84.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="&lt;/Position&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="86" Y="81.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="DEXPI:" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="153" Y="110" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="Position: (0.17, 0.12)" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="156" Y="107" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="Rotation: 180.0" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="156" Y="104" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="IsMirrored: True" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="156" Y="101" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="Proteus:" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="153" Y="96.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="&lt;Position&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="156" Y="93.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="  &lt;Location X=&quot;170&quot; Y=&quot;70&quot; Z=&quot;0&quot;/&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="156" Y="90.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="  &lt;Axis X=&quot;0&quot; Y=&quot;0&quot; Z=&quot;-1&quot;/&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="156" Y="87.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="  &lt;Reference X=&quot;-1&quot; Y=&quot;0&quot; Z=&quot;0&quot;/&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="156" Y="84.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="&lt;/Position&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="156" Y="81.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="DEXPI:" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="223" Y="110" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="Position: (0.24, 0.12)" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="226" Y="107" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="Rotation: 270.0" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="226" Y="104" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="IsMirrored: True" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="226" Y="101" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="Proteus:" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="223" Y="96.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="&lt;Position&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="226" Y="93.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="  &lt;Location X=&quot;240&quot; Y=&quot;70&quot; Z=&quot;0&quot;/&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="226" Y="90.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="  &lt;Axis X=&quot;0&quot; Y=&quot;0&quot; Z=&quot;-1&quot;/&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="226" Y="87.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="  &lt;Reference X=&quot;0&quot; Y=&quot;-1&quot; Z=&quot;0&quot;/&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="226" Y="84.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+    <Text String="&lt;/Position&gt;" Font="Calibri" Height="3" Width="0" Justification="LeftCenter">
+      <Presentation R="0" G="0" B="0"/>
+      <Position>
+        <Location X="226" Y="81.5" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Text>
+  </Drawing>
+  <ShapeCatalogue Name="shapes">
+    <PipingComponent ID="PipingComponentShape-1" ComponentName="SHAPE_PV023A">
+      <PolyLine NumPoints="5">
+        <Presentation LineType="0" LineWeight="0.5" R="0" G="0" B="0"/>
+        <Coordinate X="-4" Y="2"/>
+        <Coordinate X="4" Y="-2"/>
+        <Coordinate X="4" Y="2"/>
+        <Coordinate X="-4" Y="-2"/>
+        <Coordinate X="-4" Y="2"/>
+      </PolyLine>
+      <PolyLine NumPoints="3">
+        <Presentation LineType="0" LineWeight="0.5" R="0" G="0" B="0"/>
+        <Coordinate X="0" Y="0"/>
+        <Coordinate X="0" Y="5"/>
+        <Coordinate X="2" Y="5"/>
+      </PolyLine>
+    </PipingComponent>
+  </ShapeCatalogue>
+</PlantModel>
