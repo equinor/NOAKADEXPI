@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<PlantModel>
+  <PlantInformation Application="Dexpi" ApplicationVersion="1.3.1" Date="2019-02-26" Discipline="PID" Is3D="no" OriginatingSystem="P&amp;ID Toolbox" OriginatingSystemVendor="pnb plants &amp; bytes GmbH, Aachen, Germany" OriginatingSystemVersion="0.9" SchemaVersion="4.1.1" Time="14:00:00" Units="mm">
+    <UnitsOfMeasure/>
+  </PlantInformation>
+  <PlantStructureItem ID="ProcessPlant-1" ComponentClass="ProcessPlant" ComponentClassURI="http://data.posccaesar.org/rdl/RDS7151859">
+    <GenericAttributes Set="DexpiAttributes" Number="1">
+      <GenericAttribute Name="ProcessPlantIdentificationCodeAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/ProcessPlantIdentificationCodeAssignmentClass" Format="string" Value="A"/>
+    </GenericAttributes>
+    <Association Type="is a collection including" ItemID="ProcessInstrumentationFunction-1"/>
+    <Association Type="is a collection including" ItemID="ProcessInstrumentationFunction-2"/>
+    <Association Type="is a collection including" ItemID="ProcessInstrumentationFunction-3"/>
+    <Association Type="is a collection including" ItemID="CustomHeater-1"/>
+  </PlantStructureItem>
+  <PlantStructureItem ID="PlantSystem-1" ComponentClass="PlantSystem" ComponentClassURI="http://sandbox.dexpi.org/rdl/PlantSystem">
+    <GenericAttributes Set="DexpiAttributes" Number="1">
+      <GenericAttribute Name="PlantSystemIdentificationCodeAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/PlantSystemIdentificationCodeAssignmentClass" Format="string" Value="01"/>
+    </GenericAttributes>
+    <Association Type="is the location of" ItemID="ProcessInstrumentationFunction-1"/>
+    <Association Type="is the location of" ItemID="ProcessInstrumentationFunction-2"/>
+    <Association Type="is the location of" ItemID="ProcessInstrumentationFunction-3"/>
+    <Association Type="is the location of" ItemID="CustomHeater-1"/>
+  </PlantStructureItem>
+  <ProcessInstrumentationFunction ID="ProcessInstrumentationFunction-1" ComponentClass="ProcessInstrumentationFunction" ComponentClassURI="http://sandbox.dexpi.org/rdl/ProcessInstrumentationFunction">
+    <GenericAttributes Set="DexpiCustomAttributes" Number="1">
+      <GenericAttribute Format="string" Type="String" TypeURI="http://sandbox.dexpi.org/rdl/String" Value="MCC" Name="TypeCodeAssignmentClass" AttributeURI="http://noaka.org/rdl/TypeCodeAssignmentClass"/>
+    </GenericAttributes>
+    <Association Type="is logical start of" ItemID="SignalConveyingFunction-1"/>
+    <Association Type="is a part of" ItemID="ProcessPlant-1"/>
+    <Association Type="is located in" ItemID="PlantSystem-1"/>
+    <Association Type="is logical end of" ItemID="SignalConveyingFunction-2"/>
+    <Association Type="is logical end of" ItemID="SignalConveyingFunction-3"/>
+    <ActuatingElectricalFunction ID="ActuatingElectricalFunction-1" ComponentClass="ActuatingElectricalFunction" ComponentClassURI="http://sandbox.dexpi.org/rdl/ActuatingElectricalFunction">
+      <Association Type="is located in" ItemID="Nozzle-1"/>
+      <Association Type="is logical end of" ItemID="SignalConveyingFunction-1"/>
+    </ActuatingElectricalFunction>
+    <InformationFlow ID="SignalConveyingFunction-1" ComponentClass="SignalConveyingFunction" ComponentClassURI="http://sandbox.dexpi.org/rdl/SignalConveyingFunction">
+      <GenericAttributes Set="DexpiCustomAttributes" Number="1">
+        <GenericAttribute Format="string" Type="String" TypeURI="http://sandbox.dexpi.org/rdl/String" Value="ElectricalSignalConveying" Name="SignalConveyingFunctionTypeRepresentationAssignmentClass" AttributeURI="http://noaka.org/rdl/SignalConveyingFunctionTypeRepresentationAssignmentClass"/>
+      </GenericAttributes>
+      <Association Type="has logical start" ItemID="ProcessInstrumentationFunction-1"/>
+      <Association Type="has logical end" ItemID="ActuatingElectricalFunction-1"/>
+    </InformationFlow>
+  </ProcessInstrumentationFunction>
+  <ProcessInstrumentationFunction ID="ProcessInstrumentationFunction-2" ComponentClass="ProcessInstrumentationFunction" ComponentClassURI="http://sandbox.dexpi.org/rdl/ProcessInstrumentationFunction">
+    <GenericAttributes Set="DexpiCustomAttributes" Number="1">
+      <GenericAttribute Format="string" Type="String" TypeURI="http://sandbox.dexpi.org/rdl/String" Value="PSD" Name="TypeCodeAssignmentClass" AttributeURI="http://noaka.org/rdl/TypeCodeAssignmentClass"/>
+    </GenericAttributes>
+    <Association Type="is logical start of" ItemID="SignalConveyingFunction-2"/>
+    <Association Type="is a part of" ItemID="ProcessPlant-1"/>
+    <Association Type="is located in" ItemID="PlantSystem-1"/>
+    <InformationFlow ID="SignalConveyingFunction-2" ComponentClass="SignalConveyingFunction" ComponentClassURI="http://sandbox.dexpi.org/rdl/SignalConveyingFunction">
+      <GenericAttributes Set="DexpiCustomAttributes" Number="1">
+        <GenericAttribute Format="string" Type="String" TypeURI="http://sandbox.dexpi.org/rdl/String" Value="SignalConveying" Name="SignalConveyingFunctionTypeRepresentationAssignmentClass" AttributeURI="http://noaka.org/rdl/SignalConveyingFunctionTypeRepresentationAssignmentClass"/>
+      </GenericAttributes>
+      <Association Type="has logical start" ItemID="ProcessInstrumentationFunction-2"/>
+      <Association Type="has logical end" ItemID="ProcessInstrumentationFunction-1"/>
+    </InformationFlow>
+  </ProcessInstrumentationFunction>
+  <ProcessInstrumentationFunction ID="ProcessInstrumentationFunction-3" ComponentClass="ProcessInstrumentationFunction" ComponentClassURI="http://sandbox.dexpi.org/rdl/ProcessInstrumentationFunction">
+    <Association Type="is logical start of" ItemID="SignalConveyingFunction-3"/>
+    <Association Type="is a part of" ItemID="ProcessPlant-1"/>
+    <Association Type="is located in" ItemID="PlantSystem-1"/>
+    <InformationFlow ID="SignalConveyingFunction-3" ComponentClass="SignalConveyingFunction" ComponentClassURI="http://sandbox.dexpi.org/rdl/SignalConveyingFunction">
+      <GenericAttributes Set="DexpiCustomAttributes" Number="1">
+        <GenericAttribute Format="string" Type="String" TypeURI="http://sandbox.dexpi.org/rdl/String" Value="BusSignalConveying" Name="SignalConveyingFunctionTypeRepresentationAssignmentClass" AttributeURI="http://noaka.org/rdl/SignalConveyingFunctionTypeRepresentationAssignmentClass"/>
+      </GenericAttributes>
+      <Association Type="has logical start" ItemID="ProcessInstrumentationFunction-3"/>
+      <Association Type="has logical end" ItemID="ProcessInstrumentationFunction-1"/>
+    </InformationFlow>
+  </ProcessInstrumentationFunction>
+  <Equipment ID="CustomHeater-1" ComponentClass="CustomHeater" ComponentClassURI="http://sandbox.dexpi.org/rdl/CustomHeater">
+    <GenericAttributes Set="DexpiAttributes" Number="2">
+      <GenericAttribute Name="TypeNameAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/TypeNameAssignmentClass" Format="string" Value="ElectricHeater"/>
+      <GenericAttribute Name="TypeURIAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/TypeURIAssignmentClass" Format="anyURI" Value="http://data.posccaesar.org/rdl/RDS14070475"/>
+    </GenericAttributes>
+    <Association Type="is a part of" ItemID="ProcessPlant-1"/>
+    <Association Type="is located in" ItemID="PlantSystem-1"/>
+    <Nozzle ID="Nozzle-1" ComponentClass="Nozzle" ComponentClassURI="http://data.posccaesar.org/rdl/RDS415214">
+      <GenericAttributes Set="DexpiCustomAttributes" Number="1">
+        <GenericAttribute Format="string" Type="String" TypeURI="http://sandbox.dexpi.org/rdl/String" Value="true" Name="IsVirtualAssignmentClass" AttributeURI="http://noaka.org/rdl/IsVirtualAssignmentClass"/>
+      </GenericAttributes>
+      <ConnectionPoints NumPoints="2">
+        <Node ID="Nozzle-1-DefaultNode"/>
+        <Node Type="process" ID="PipingNode-1"/>
+      </ConnectionPoints>
+      <Association Type="is the location of" ItemID="ActuatingElectricalFunction-1"/>
+    </Nozzle>
+  </Equipment>
+</PlantModel>

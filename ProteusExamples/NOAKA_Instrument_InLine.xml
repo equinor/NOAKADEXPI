@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<PlantModel>
+  <PlantInformation Application="Dexpi" ApplicationVersion="1.3.1" Date="2019-02-26" Discipline="PID" Is3D="no" OriginatingSystem="P&amp;ID Toolbox" OriginatingSystemVendor="pnb plants &amp; bytes GmbH, Aachen, Germany" OriginatingSystemVersion="0.9" SchemaVersion="4.1.1" Time="14:00:00" Units="mm">
+    <UnitsOfMeasure/>
+  </PlantInformation>
+  <PlantStructureItem ID="ProcessPlant-1" ComponentClass="ProcessPlant" ComponentClassURI="http://data.posccaesar.org/rdl/RDS7151859">
+    <GenericAttributes Set="DexpiAttributes" Number="1">
+      <GenericAttribute Name="ProcessPlantIdentificationCodeAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/ProcessPlantIdentificationCodeAssignmentClass" Format="string" Value="B"/>
+    </GenericAttributes>
+    <Association Type="is a collection including" ItemID="InstrumentationLoopFunction-1"/>
+    <Association Type="is a collection including" ItemID="PipingNetworkSystem-1"/>
+    <Association Type="is a collection including" ItemID="ProcessInstrumentationFunction-1"/>
+  </PlantStructureItem>
+  <PlantStructureItem ID="PlantSystem-1" ComponentClass="PlantSystem" ComponentClassURI="http://sandbox.dexpi.org/rdl/PlantSystem">
+    <GenericAttributes Set="DexpiAttributes" Number="1">
+      <GenericAttribute Name="PlantSystemIdentificationCodeAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/PlantSystemIdentificationCodeAssignmentClass" Format="string" Value="20"/>
+    </GenericAttributes>
+    <Association Type="is the location of" ItemID="InstrumentationLoopFunction-1"/>
+    <Association Type="is the location of" ItemID="PipingNetworkSystem-1"/>
+    <Association Type="is the location of" ItemID="ProcessInstrumentationFunction-1"/>
+  </PlantStructureItem>
+  <InstrumentationLoopFunction ID="InstrumentationLoopFunction-1" ComponentClass="InstrumentationLoopFunction" ComponentClassURI="http://sandbox.dexpi.org/rdl/InstrumentationLoopFunction">
+    <GenericAttributes Set="DexpiAttributes" Number="1">
+      <GenericAttribute Name="InstrumentationLoopFunctionNumberAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/InstrumentationLoopFunctionNumberAssignmentClass" Format="string" Value="0091"/>
+    </GenericAttributes>
+    <Association Type="is a part of" ItemID="ProcessPlant-1"/>
+    <Association Type="is located in" ItemID="PlantSystem-1"/>
+    <Association Type="is a collection including" ItemID="ProcessInstrumentationFunction-1"/>
+  </InstrumentationLoopFunction>
+  <PipingNetworkSystem ID="PipingNetworkSystem-1" ComponentClass="PipingNetworkSystem" ComponentClassURI="http://data.posccaesar.org/rdl/RDS270359">
+    <Association Type="is a part of" ItemID="ProcessPlant-1"/>
+    <Association Type="is located in" ItemID="PlantSystem-1"/>
+    <PipingNetworkSegment ID="PipingNetworkSegment-1" ComponentClass="PipingNetworkSegment" ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704">
+      <PipingComponent ID="CustomInlinePrimaryElement-1" ComponentClass="CustomInlinePrimaryElement" ComponentClassURI="http://sandbox.dexpi.org/rdl/CustomInlinePrimaryElement">
+        <GenericAttributes Set="DexpiCustomAttributes" Number="3">
+          <GenericAttribute Format="string" Type="String" TypeURI="http://sandbox.dexpi.org/rdl/String" Value="TW" Name="TagTypeAssignmentClass" AttributeURI="http://noaka.org/rdl/TagTypeAssignmentClass"/>
+          <GenericAttribute Format="string" Type="String" TypeURI="http://sandbox.dexpi.org/rdl/String" Value="0091" Name="InstrumentLoopNumberAssignmentClass" AttributeURI="http://noaka.org/rdl/InstrumentLoopNumberAssignmentClass"/>
+          <GenericAttribute Format="string" Type="String" TypeURI="http://sandbox.dexpi.org/rdl/String" Value="" Name="TagSuffixAssignmentClass" AttributeURI="http://noaka.org/rdl/TagSuffixAssignmentClass"/>
+        </GenericAttributes>
+        <GenericAttributes Set="DexpiAttributes" Number="2">
+          <GenericAttribute Name="TypeNameAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/TypeNameAssignmentClass" Format="string" Value="ClampOn"/>
+          <GenericAttribute Name="TypeURIAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/TypeURIAssignmentClass" Format="anyURI" Value="http://noaka.org/rdl/ClampOn"/>
+        </GenericAttributes>
+        <Association Type="is the location of" ItemID="ProcessSignalGeneratingFunction-1"/>
+      </PipingComponent>
+    </PipingNetworkSegment>
+  </PipingNetworkSystem>
+  <ProcessInstrumentationFunction ID="ProcessInstrumentationFunction-1" ComponentClass="ProcessInstrumentationFunction" ComponentClassURI="http://sandbox.dexpi.org/rdl/ProcessInstrumentationFunction">
+    <GenericAttributes Set="DexpiCustomAttributes" Number="2">
+      <GenericAttribute Format="string" Type="String" TypeURI="http://sandbox.dexpi.org/rdl/String" Value="TT" Name="TagTypeAssignmentClass" AttributeURI="http://noaka.org/rdl/TagTypeAssignmentClass"/>
+      <GenericAttribute Format="string" Type="String" TypeURI="http://sandbox.dexpi.org/rdl/String" Value="" Name="TagSuffixAssignmentClass" AttributeURI="http://noaka.org/rdl/TagSuffixAssignmentClass"/>
+    </GenericAttributes>
+    <GenericAttributes Set="DexpiAttributes" Number="1">
+      <GenericAttribute Name="ProcessInstrumentationFunctionNumberAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/ProcessInstrumentationFunctionNumberAssignmentClass" Format="string" Value="0091"/>
+    </GenericAttributes>
+    <Association Type="is a part of" ItemID="InstrumentationLoopFunction-1"/>
+    <Association Type="is logical end of" ItemID="MeasuringLineFunction-1"/>
+    <Association Type="is a part of" ItemID="ProcessPlant-1"/>
+    <Association Type="is located in" ItemID="PlantSystem-1"/>
+    <ProcessSignalGeneratingFunction ID="ProcessSignalGeneratingFunction-1" ComponentClass="ProcessSignalGeneratingFunction" ComponentClassURI="http://sandbox.dexpi.org/rdl/ProcessSignalGeneratingFunction">
+      <Association Type="is located in" ItemID="CustomInlinePrimaryElement-1"/>
+      <Association Type="is logical start of" ItemID="MeasuringLineFunction-1"/>
+    </ProcessSignalGeneratingFunction>
+    <InformationFlow ID="MeasuringLineFunction-1" ComponentClass="MeasuringLineFunction" ComponentClassURI="http://sandbox.dexpi.org/rdl/MeasuringLineFunction">
+      <Association Type="has logical start" ItemID="ProcessSignalGeneratingFunction-1"/>
+      <Association Type="has logical end" ItemID="ProcessInstrumentationFunction-1"/>
+    </InformationFlow>
+  </ProcessInstrumentationFunction>
+</PlantModel>
