@@ -1,0 +1,54 @@
+=======================
+RepresentationTypeGroup
+=======================
+
+Overview
+========
+
+.. rubric:: Abstract class
+
+.. image:: RepresentationTypeGroup.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`GraphicsGroup </reference/Graphics/GraphicsGroup>`
+
+.. rubric:: Subtypes
+
+* :doc:`Border </reference/Graphics/Border>`
+
+* :doc:`Label </reference/Graphics/Label>`
+
+* :doc:`Static </reference/Graphics/Static>`
+
+* :doc:`Symbol </reference/Graphics/Symbol>`
+
+.. rubric:: Attributes (composition)
+
++------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------+
+| Name                                                                                           | Multiplicity | Type                                                                                       |
++================================================================================================+==============+============================================================================================+
+| :ref:`Elements <dexpi-Graphics-RepresentationTypeGroup-Elements>`                              | \*           | :doc:`GraphicalElement </reference/Graphics/GraphicalElement>`                             |
++------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------+
+
+
+.. _dexpi-Graphics-RepresentationTypeGroup-Elements:
+
+Elements
+========
+
+.. rubric:: Attribute (composition)
+
+
+TODO
+
+Multiplicity
+    \*
+
+Type
+    :doc:`GraphicalElement </reference/Graphics/GraphicalElement>`
+
+Opposite multiplicity
+    0..1
+

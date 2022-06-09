@@ -1,0 +1,121 @@
+===================
+MechanicalSeparator
+===================
+
+Overview
+========
+
+.. rubric:: Class
+
+A fluid separator in which mechanical separation of fluids take place (from `http://data.posccaesar.org/rdl/RDS279134 <http://data.posccaesar.org/rdl/RDS279134>`__).
+
+.. image:: MechanicalSeparator.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Separator </reference/Equipment/Separator>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------+
+| Name                                                                                               | Multiplicity | Type                                                                                           |
++====================================================================================================+==============+================================================================================================+
+| :ref:`DesignPower <dexpi-Equipment-MechanicalSeparator-DesignPower>`                               | 0..1         | :doc:`NullablePower </reference/PhysicalQuantities/NullablePower>`                             |
++----------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `MECHANICAL SEPARATOR <http://data.posccaesar.org/rdl/RDS279134>`__
+
+   ComponentClass
+       MechanicalSeparator
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS279134 <http://data.posccaesar.org/rdl/RDS279134>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram352.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="mechanicalSeparator1"
+            ComponentClass="MechanicalSeparator"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS279134" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-MechanicalSeparator-DesignPower:
+
+DesignPower
+===========
+
+.. rubric:: Attribute (data)
+
+
+The power for which the :doc:`MechanicalSeparator </reference/Equipment/MechanicalSeparator>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullablePower </reference/PhysicalQuantities/NullablePower>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN POWER <http://sandbox.dexpi.org/rdl/DesignPower>`__
+
+   Name
+       DesignPower
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignPower <http://sandbox.dexpi.org/rdl/DesignPower>`__
+
+.. admonition:: example
+
+   The instance mechanicalSeparator1 represents a :doc:`MechanicalSeparator </reference/Equipment/MechanicalSeparator>` with a :ref:`DesignPower <dexpi-Equipment-MechanicalSeparator-DesignPower>` of 500.0 kW.
+
+   .. image:: /diagrams/diagram353.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="mechanicalSeparator1"
+            ComponentClass="MechanicalSeparator"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS279134" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignPower"
+              AttributeURI="http://sandbox.dexpi.org/rdl/DesignPower"
+              Format="double"
+              Value="500.0"
+              Units="Kilowatt"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1330919" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+

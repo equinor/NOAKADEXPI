@@ -1,0 +1,310 @@
+=========
+Displacer
+=========
+
+Overview
+========
+
+.. rubric:: Class
+
+An object that has the purpose of displacing a fluid.
+
+.. image:: Displacer.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`ConceptualObject </reference/DexpiModel/ConceptualObject>`
+
+* :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>`
+
+.. rubric:: Attributes (data)
+
++--------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+| Name                                                                                                                           | Multiplicity | Type                                                                                               |
++================================================================================================================================+==============+====================================================================================================+
+| :ref:`MaterialOfConstructionCode <dexpi-Equipment-Displacer-MaterialOfConstructionCode>`                                       | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                        |
++--------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+| :ref:`StageIdentifier <dexpi-Equipment-Displacer-StageIdentifier>`                                                             | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                        |
++--------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+| :ref:`VolumePerStroke <dexpi-Equipment-Displacer-VolumePerStroke>`                                                             | 0..1         | :doc:`NullableVolume </reference/PhysicalQuantities/NullableVolume>`                               |
++--------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+
+.. rubric:: Attributes (reference)
+
++----------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+| Name                                                                       | Multiplicity | Type                                                               |
++============================================================================+==============+====================================================================+
+| :ref:`Chamber <dexpi-Equipment-Displacer-Chamber>`                         | 0..1         | :doc:`Chamber </reference/Equipment/Chamber>`                      |
++----------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `DISPLACER <http://sandbox.dexpi.org/rdl/Displacer>`__
+
+   ComponentClass
+       Displacer
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/Displacer <http://sandbox.dexpi.org/rdl/Displacer>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram233.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="displacer1"
+            ComponentClass="Displacer"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/Displacer" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-Displacer-Chamber:
+
+Chamber
+=======
+
+.. rubric:: Attribute (reference)
+
+
+The :doc:`Chamber </reference/Equipment/Chamber>` in which the :doc:`Displacer </reference/Equipment/Displacer>` is located, if applicable. The Chamber must be a component of the same object as the Displacer.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`Chamber </reference/Equipment/Chamber>`
+
+Opposite multiplicity
+    0..*
+
+.. admonition:: proteus
+
+   The attribute is implemented using :ref:`Proteus \<Association\> elements <proteus-concept-reference-property-association>`.
+
+   Association type for the attribute ower
+       ``"is located in"``
+
+   Opposite association type
+       ``"is the location of"``
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram234.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="displacer1"
+            ComponentClass="Displacer"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/Displacer" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="is located in"
+            ItemID="chamber1" />
+          ...
+        <Equipment />
+        ...
+        <Equipment
+            ID="chamber1"
+            ComponentClass="Chamber"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS903151421" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="is the location of"
+            ItemID="displacer1" />
+          ...
+        <Equipment />
+      
+
+
+.. _dexpi-Equipment-Displacer-MaterialOfConstructionCode:
+
+MaterialOfConstructionCode
+==========================
+
+.. rubric:: Attribute (data)
+
+
+A code that gives the material of construction of the :doc:`Displacer </reference/Equipment/Displacer>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `MATERIAL OF CONSTRUCTION CODE ASSIGNMENT CLASS <http://data.posccaesar.org/rdl/RDS1460719741>`__
+
+   Name
+       MaterialOfConstructionCodeAssignmentClass
+
+   AttributeURI
+       `http://data.posccaesar.org/rdl/RDS1460719741 <http://data.posccaesar.org/rdl/RDS1460719741>`__
+
+.. admonition:: example
+
+   "1.4306" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="displacer1"
+            ComponentClass="Displacer"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/Displacer" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="MaterialOfConstructionCodeAssignmentClass"
+              AttributeURI="http://data.posccaesar.org/rdl/RDS1460719741"
+              Format="string"
+              Value="1.4306" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-Displacer-StageIdentifier:
+
+StageIdentifier
+===============
+
+.. rubric:: Attribute (data)
+
+
+The stage identifier of the :doc:`Displacer </reference/Equipment/Displacer>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `STAGE IDENTIFIER ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/StageIdentifierAssignmentClass>`__
+
+   Name
+       StageIdentifierAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/StageIdentifierAssignmentClass <http://sandbox.dexpi.org/rdl/StageIdentifierAssignmentClass>`__
+
+.. admonition:: example
+
+   "s1" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="displacer1"
+            ComponentClass="Displacer"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/Displacer" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="StageIdentifierAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/StageIdentifierAssignmentClass"
+              Format="string"
+              Value="s1" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-Displacer-VolumePerStroke:
+
+VolumePerStroke
+===============
+
+.. rubric:: Attribute (data)
+
+
+The volume per stroke of the :doc:`Displacer </reference/Equipment/Displacer>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableVolume </reference/PhysicalQuantities/NullableVolume>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `VOLUME PER STROKE <http://data.posccaesar.org/rdl/RDS7503244>`__
+
+   Name
+       VolumePerStroke
+
+   AttributeURI
+       `http://data.posccaesar.org/rdl/RDS7503244 <http://data.posccaesar.org/rdl/RDS7503244>`__
+
+.. admonition:: example
+
+   The instance displacer1 represents a :doc:`Displacer </reference/Equipment/Displacer>` with a :ref:`VolumePerStroke <dexpi-Equipment-Displacer-VolumePerStroke>` of 80.0 cm\ :sup:`3`.
+
+   .. image:: /diagrams/diagram235.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="displacer1"
+            ComponentClass="Displacer"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/Displacer" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="VolumePerStroke"
+              AttributeURI="http://data.posccaesar.org/rdl/RDS7503244"
+              Format="double"
+              Value="80.0"
+              Units="CentimetreCubed"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1357874" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+

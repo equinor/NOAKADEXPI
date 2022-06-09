@@ -1,0 +1,184 @@
+==============
+RevolvingSieve
+==============
+
+Overview
+========
+
+.. rubric:: Class
+
+A revolving sieve that intends to sift out finer from coarser parts.
+
+.. image:: RevolvingSieve.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Sieve </reference/Equipment/Sieve>`
+
+.. rubric:: Attributes (data)
+
++------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                                               | Multiplicity | Type                                                                                                                                   |
++====================================================================================================================================+==============+========================================================================================================================================+
+| :ref:`DesignRotationalFrequency <dexpi-Equipment-RevolvingSieve-DesignRotationalFrequency>`                                        | 0..1         | :doc:`NullableRotationalFrequency </reference/PhysicalQuantities/NullableRotationalFrequency>`                                         |
++------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`DesignShaftPower <dexpi-Equipment-RevolvingSieve-DesignShaftPower>`                                                          | 0..1         | :doc:`NullablePower </reference/PhysicalQuantities/NullablePower>`                                                                     |
++------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `REVOLVING SIEVE <http://sandbox.dexpi.org/rdl/RevolvingSieve>`__
+
+   ComponentClass
+       RevolvingSieve
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/RevolvingSieve <http://sandbox.dexpi.org/rdl/RevolvingSieve>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram413.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="revolvingSieve1"
+            ComponentClass="RevolvingSieve"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/RevolvingSieve" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-RevolvingSieve-DesignRotationalFrequency:
+
+DesignRotationalFrequency
+=========================
+
+.. rubric:: Attribute (data)
+
+
+The rotational frequency for which the :doc:`RevolvingSieve </reference/Equipment/RevolvingSieve>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableRotationalFrequency </reference/PhysicalQuantities/NullableRotationalFrequency>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN ROTATIONAL FREQUENCY <http://sandbox.dexpi.org/rdl/DesignRotationalFrequency>`__
+
+   Name
+       DesignRotationalFrequency
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignRotationalFrequency <http://sandbox.dexpi.org/rdl/DesignRotationalFrequency>`__
+
+.. admonition:: example
+
+   The instance revolvingSieve1 represents a :doc:`RevolvingSieve </reference/Equipment/RevolvingSieve>` with a :ref:`DesignRotationalFrequency <dexpi-Equipment-RevolvingSieve-DesignRotationalFrequency>` of 180.0 min\ :sup:`-1`.
+
+   .. image:: /diagrams/diagram414.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="revolvingSieve1"
+            ComponentClass="RevolvingSieve"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/RevolvingSieve" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignRotationalFrequency"
+              AttributeURI="http://sandbox.dexpi.org/rdl/DesignRotationalFrequency"
+              Format="double"
+              Value="180.0"
+              Units="ReciprocalMinute"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS4316851589" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-RevolvingSieve-DesignShaftPower:
+
+DesignShaftPower
+================
+
+.. rubric:: Attribute (data)
+
+
+The shaft power for which the :doc:`RevolvingSieve </reference/Equipment/RevolvingSieve>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullablePower </reference/PhysicalQuantities/NullablePower>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN SHAFT POWER <http://sandbox.dexpi.org/rdl/DesignShaftPower>`__
+
+   Name
+       DesignShaftPower
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignShaftPower <http://sandbox.dexpi.org/rdl/DesignShaftPower>`__
+
+.. admonition:: example
+
+   The instance revolvingSieve1 represents a :doc:`RevolvingSieve </reference/Equipment/RevolvingSieve>` with a :ref:`DesignShaftPower <dexpi-Equipment-RevolvingSieve-DesignShaftPower>` of 400.0 kW.
+
+   .. image:: /diagrams/diagram415.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="revolvingSieve1"
+            ComponentClass="RevolvingSieve"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/RevolvingSieve" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignShaftPower"
+              AttributeURI="http://sandbox.dexpi.org/rdl/DesignShaftPower"
+              Format="double"
+              Value="400.0"
+              Units="Kilowatt"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1330919" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+

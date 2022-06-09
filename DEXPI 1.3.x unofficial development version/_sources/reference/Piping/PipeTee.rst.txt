@@ -1,0 +1,52 @@
+=======
+PipeTee
+=======
+
+Overview
+========
+
+.. rubric:: Class
+
+An 'artefact' that has three piping ends in T-shape, including a branch at 90 degrees (from `http://data.posccaesar.org/rdl/RDS427724 <http://data.posccaesar.org/rdl/RDS427724>`__).
+
+.. image:: PipeTee.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`PipeFitting </reference/Piping/PipeFitting>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingComponent>``
+
+   RDL reference
+       `PIPE TEE <http://data.posccaesar.org/rdl/RDS427724>`__
+
+   ComponentClass
+       PipeTee
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS427724 <http://data.posccaesar.org/rdl/RDS427724>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram685.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="pipeTee1"
+            ComponentClass="PipeTee"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS427724" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+

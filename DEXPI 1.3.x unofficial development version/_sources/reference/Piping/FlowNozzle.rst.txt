@@ -1,0 +1,52 @@
+==========
+FlowNozzle
+==========
+
+Overview
+========
+
+.. rubric:: Class
+
+A nozzle with a smooth entry and a sharp exit (from `http://data.posccaesar.org/rdl/RDS821024 <http://data.posccaesar.org/rdl/RDS821024>`__).
+
+.. image:: FlowNozzle.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`InlinePrimaryElement </reference/Piping/InlinePrimaryElement>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingComponent>``
+
+   RDL reference
+       `FLOW NOZZLE <http://data.posccaesar.org/rdl/RDS821024>`__
+
+   ComponentClass
+       FlowNozzle
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS821024 <http://data.posccaesar.org/rdl/RDS821024>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram652.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="flowNozzle1"
+            ComponentClass="FlowNozzle"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS821024" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+

@@ -1,0 +1,22 @@
+================
+NULL_TEMPERATURE
+================
+
+Overview
+========
+
+.. rubric:: Instance
+
+The only instance of the singleton type :doc:`NullTemperature </reference/PhysicalQuantities/NullTemperature>`. This instance represents the :ref:`null value <dexpi-concept-null-value>` of the physical quantity type :doc:`NullableTemperature </reference/PhysicalQuantities/NullableTemperature>`.
+
+.. image:: NULL_TEMPERATURE.*
+
+
+.. rubric:: Type
+
+* :doc:`NullTemperature </reference/PhysicalQuantities/NullTemperature>`
+
+.. admonition:: proteus
+
+   See implementation of :doc:`NullTemperature </reference/PhysicalQuantities/NullTemperature>`.
+

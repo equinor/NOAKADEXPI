@@ -1,0 +1,45 @@
+==============
+PercentageUnit
+==============
+
+Overview
+========
+
+.. rubric:: Enumeration
+
+A unit of measurement for a quantity of type :doc:`NullablePercentage </reference/PhysicalQuantities/NullablePercentage>`.
+
+.. image:: PercentageUnit.*
+
+
+.. rubric:: Literals
+
++--------------------------------------------------------------------------------+--------+------------+---------------------------------------------------------+-------------------------------------------------------------------------------------------+
+| Name                                                                           | Symbol | UN Code    | proteus#RDL Reference                                   | proteus#RDL URI                                                                           |
++================================================================================+========+============+=========================================================+===========================================================================================+
+| .. _dexpi-PhysicalQuantities-PercentageUnit-Percent:                           | ???    | \-         | `PERCENT <http://data.posccaesar.org/rdl/RDS1317959>`__ | `http://data.posccaesar.org/rdl/RDS1317959 <http://data.posccaesar.org/rdl/RDS1317959>`__ |
+|                                                                                |        |            |                                                         |                                                                                           |
+| Percent                                                                        |        |            |                                                         |                                                                                           |
++--------------------------------------------------------------------------------+--------+------------+---------------------------------------------------------+-------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   :doc:`PercentageUnit </reference/PhysicalQuantities/PercentageUnit>` is only used as the type of the :ref:`Unit <dexpi-PhysicalQuantities-Percentage-Unit>` attribute of :doc:`Percentage </reference/PhysicalQuantities/Percentage>`. :doc:`Percentage </reference/PhysicalQuantities/Percentage>` is implemented using :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`. In a ``<GenericAttribute>`` element, the :doc:`PercentageUnit </reference/PhysicalQuantities/PercentageUnit>` literal is given by means of its :ref:`RDL reference <proteus-concept-rdl-reference>` in the table above. The ``Units`` attribute of the element is the name of the RDL reference in camel-case; it equals the name of the literal. The ``UnitsURI`` attribute of the element is the URI of the RDL reference.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram608.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Units="Percent"
+          UnitsURI="http://data.posccaesar.org/rdl/RDS1317959" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have further attributes (``Format``, ``Value``, ``Name``, and ``AttributeURI``)DOTANDSPACEHACKSee the implementation examples for :doc:`Percentage </reference/PhysicalQuantities/Percentage>` and for the :ref:`Efficiency <dexpi-Equipment-FilterUnit-Efficiency>` attribute of :doc:`FilterUnit </reference/Equipment/FilterUnit>`.
+

@@ -1,0 +1,16 @@
+===================================
+ProcessInstrumentationFunctionShape
+===================================
+
+Overview
+========
+
+.. rubric:: Class
+
+.. image:: ProcessInstrumentationFunctionShape.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Shape </reference/Graphics/Shape>`
+

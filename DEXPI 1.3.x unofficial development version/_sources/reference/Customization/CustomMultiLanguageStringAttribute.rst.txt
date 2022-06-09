@@ -1,0 +1,67 @@
+==================================
+CustomMultiLanguageStringAttribute
+==================================
+
+Overview
+========
+
+.. rubric:: Class
+
+A :ref:`custom attribute <dexpi-concept-custom-attributes>` with :ref:`Value <dexpi-Customization-CustomMultiLanguageStringAttribute-Value>` type :doc:`MultiLanguageString </reference/DataTypes/MultiLanguageString>`.
+
+.. image:: CustomMultiLanguageStringAttribute.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`CustomAttribute </reference/Customization/CustomAttribute>`
+
+.. rubric:: Attributes (data)
+
++------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+| Name                                                                                                       | Multiplicity | Type                                                                                               |
++============================================================================================================+==============+====================================================================================================+
+| :ref:`Value <dexpi-Customization-CustomMultiLanguageStringAttribute-Value>`                                | 1            | :doc:`MultiLanguageString </reference/DataTypes/MultiLanguageString>`                              |
++------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   :doc:`CustomMultiLanguageStringAttribute </reference/Customization/CustomMultiLanguageStringAttribute>` is implemented as a :ref:`set of DEXPI generic attributes for multi-language string values <proteus-concept-dexpi-generic-attribute-multi-language-string>`.
+
+   RDL reference
+       `MULTI LANGUAGE STRING <http://sandbox.dexpi.org/rdl/MultiLanguageString>`__
+
+   Type
+       MultiLanguageString
+
+   TypeURI
+       `http://sandbox.dexpi.org/rdl/MultiLanguageString <http://sandbox.dexpi.org/rdl/MultiLanguageString>`__
+
+
+.. _dexpi-Customization-CustomMultiLanguageStringAttribute-Value:
+
+Value
+=====
+
+.. rubric:: Attribute (data)
+
+
+The value of the :doc:`CustomMultiLanguageStringAttribute </reference/Customization/CustomMultiLanguageStringAttribute>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`MultiLanguageString </reference/DataTypes/MultiLanguageString>`
+
+Redefines
+    :ref:`Value <dexpi-Customization-CustomAttribute-Value>` (inherited from :doc:`CustomAttribute </reference/Customization/CustomAttribute>`\ )
+
+.. admonition:: proteus
+
+   See implementation of :doc:`CustomMultiLanguageStringAttribute </reference/Customization/CustomMultiLanguageStringAttribute>`.
+
+.. admonition:: example
+
+   See the example for :doc:`CustomMultiLanguageStringAttribute </reference/Customization/CustomMultiLanguageStringAttribute>`.
+

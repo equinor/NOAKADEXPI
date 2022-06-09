@@ -1,0 +1,56 @@
+============================================
+CustomProcessSignalGeneratingSystemComponent
+============================================
+
+Overview
+========
+
+.. rubric:: Class
+
+A :ref:`custom component <dexpi-concept-custom-component>` of a :doc:`ProcessSignalGeneratingSystem </reference/Instrumentation/ProcessSignalGeneratingSystem>`, i.e., a component other than a :doc:`PrimaryElement </reference/Instrumentation/PrimaryElement>`  or  a :doc:`Transmitter </reference/Instrumentation/Transmitter>`.
+
+.. image:: CustomProcessSignalGeneratingSystemComponent.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`ConceptualObject </reference/DexpiModel/ConceptualObject>`
+
+* :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>`
+
+* :doc:`CustomObject </reference/Customization/CustomObject>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<ProcessSignalGeneratingSystemComponent>``
+
+   RDL reference
+       `CUSTOM PROCESS SIGNAL GENERATING SYSTEM COMPONENT <http://sandbox.dexpi.org/rdl/CustomProcessSignalGeneratingSystemComponent>`__
+
+   ComponentClass
+       CustomProcessSignalGeneratingSystemComponent
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/CustomProcessSignalGeneratingSystemComponent <http://sandbox.dexpi.org/rdl/CustomProcessSignalGeneratingSystemComponent>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram528.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <ProcessSignalGeneratingSystemComponent
+            ID="customProcessSignalGeneratingSystemComponent1"
+            ComponentClass="CustomProcessSignalGeneratingSystemComponent"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/CustomProcessSignalGeneratingSystemComponent" DOTS123="DOTS123">
+          ...
+        </ProcessSignalGeneratingSystemComponent>
+      
+

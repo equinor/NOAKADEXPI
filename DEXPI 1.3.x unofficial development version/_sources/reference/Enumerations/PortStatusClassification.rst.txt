@@ -1,0 +1,68 @@
+========================
+PortStatusClassification
+========================
+
+Overview
+========
+
+.. rubric:: Enumeration
+
+.. image:: PortStatusClassification.*
+
+
+.. rubric:: Literals
+
++--------------------------------------------------------------------------------------------------------+------------------------------------------------------------+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                   | Symbol                                                     | proteus#RDL Reference                                                                | proteus#RDL URI                                                                                               |
++========================================================================================================+============================================================+======================================================================================+===============================================================================================================+
+| .. _dexpi-Enumerations-PortStatusClassification-NULL:                                                  | :ref:`null <dexpi-concept-null-value>`                     |                                                                                      |                                                                                                               |
+|                                                                                                        |                                                            |                                                                                      |                                                                                                               |
+| NULL                                                                                                   |                                                            |                                                                                      |                                                                                                               |
++--------------------------------------------------------------------------------------------------------+------------------------------------------------------------+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
+| .. _dexpi-Enumerations-PortStatusClassification-StatusHighHighHighPort:                                | HHH                                                        | `STATUS HIGH HIGH HIGH PORT <http://sandbox.dexpi.org/rdl/StatusHighHighHighPort>`__ | `http://sandbox.dexpi.org/rdl/StatusHighHighHighPort <http://sandbox.dexpi.org/rdl/StatusHighHighHighPort>`__ |
+|                                                                                                        |                                                            |                                                                                      |                                                                                                               |
+| StatusHighHighHighPort                                                                                 |                                                            |                                                                                      |                                                                                                               |
++--------------------------------------------------------------------------------------------------------+------------------------------------------------------------+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
+| .. _dexpi-Enumerations-PortStatusClassification-StatusHighHighPort:                                    | HH                                                         | `STATUS HIGH HIGH PORT <http://data.posccaesar.org/rdl/RDS323099>`__                 | `http://data.posccaesar.org/rdl/RDS323099 <http://data.posccaesar.org/rdl/RDS323099>`__                       |
+|                                                                                                        |                                                            |                                                                                      |                                                                                                               |
+| StatusHighHighPort                                                                                     |                                                            |                                                                                      |                                                                                                               |
++--------------------------------------------------------------------------------------------------------+------------------------------------------------------------+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
+| .. _dexpi-Enumerations-PortStatusClassification-StatusHighPort:                                        | H                                                          | `STATUS HIGH PORT <http://data.posccaesar.org/rdl/RDS323144>`__                      | `http://data.posccaesar.org/rdl/RDS323144 <http://data.posccaesar.org/rdl/RDS323144>`__                       |
+|                                                                                                        |                                                            |                                                                                      |                                                                                                               |
+| StatusHighPort                                                                                         |                                                            |                                                                                      |                                                                                                               |
++--------------------------------------------------------------------------------------------------------+------------------------------------------------------------+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
+| .. _dexpi-Enumerations-PortStatusClassification-StatusLowLowLowPort:                                   | LLL                                                        | `STATUS LOW LOW LOW PORT <http://sandbox.dexpi.org/rdl/StatusLowLowLowPort>`__       | `http://sandbox.dexpi.org/rdl/StatusLowLowLowPort <http://sandbox.dexpi.org/rdl/StatusLowLowLowPort>`__       |
+|                                                                                                        |                                                            |                                                                                      |                                                                                                               |
+| StatusLowLowLowPort                                                                                    |                                                            |                                                                                      |                                                                                                               |
++--------------------------------------------------------------------------------------------------------+------------------------------------------------------------+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
+| .. _dexpi-Enumerations-PortStatusClassification-StatusLowLowPort:                                      | LL                                                         | `STATUS LOW LOW PORT <http://data.posccaesar.org/rdl/RDS323189>`__                   | `http://data.posccaesar.org/rdl/RDS323189 <http://data.posccaesar.org/rdl/RDS323189>`__                       |
+|                                                                                                        |                                                            |                                                                                      |                                                                                                               |
+| StatusLowLowPort                                                                                       |                                                            |                                                                                      |                                                                                                               |
++--------------------------------------------------------------------------------------------------------+------------------------------------------------------------+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
+| .. _dexpi-Enumerations-PortStatusClassification-StatusLowPort:                                         | L                                                          | `STATUS LOW PORT <http://data.posccaesar.org/rdl/RDS323234>`__                       | `http://data.posccaesar.org/rdl/RDS323234 <http://data.posccaesar.org/rdl/RDS323234>`__                       |
+|                                                                                                        |                                                            |                                                                                      |                                                                                                               |
+| StatusLowPort                                                                                          |                                                            |                                                                                      |                                                                                                               |
++--------------------------------------------------------------------------------------------------------+------------------------------------------------------------+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   All data attributes with type :doc:`PortStatusClassification </reference/Enumerations/PortStatusClassification>` are implemented as :ref:`DEXPI generic attributes for enumeration values <proteus-concept-dexpi-generic-attribute-enumeration>`. In a ``<GenericAttribute>`` element, the :doc:`PortStatusClassification </reference/Enumerations/PortStatusClassification>` literal is given by means of its :ref:`RDL reference <proteus-concept-rdl-reference>` in the table above. The ``Value`` attribute of the element is the name of the RDL reference in camel-case; it equals the name of the literal. The ``ValueURI`` attribute of the element is the URI of the RDL reference.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram70.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Format="anyURI"
+          Value="StatusHighHighPort"
+          ValueURI="http://data.posccaesar.org/rdl/RDS323099" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have a ``Name`` and an ``AttributeURI`` attribute. They depend on the data type attribute of the DEXPI class that owns the instance :ref:`StatusHighHighPort <dexpi-Enumerations-PortStatusClassification-StatusHighHighPort>`. For a complete example, see the attribute :ref:`PortStatus <dexpi-Instrumentation-SignalConveyingFunction-PortStatus>` of the DEXPI class :doc:`SignalConveyingFunction </reference/Instrumentation/SignalConveyingFunction>`.
+

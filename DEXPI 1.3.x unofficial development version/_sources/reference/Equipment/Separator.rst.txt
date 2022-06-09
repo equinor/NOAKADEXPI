@@ -1,0 +1,259 @@
+=========
+Separator
+=========
+
+Overview
+========
+
+.. rubric:: Class
+
+A 'device' intended to separate different types of substances (from `http://data.posccaesar.org/rdl/RDS2194378711 <http://data.posccaesar.org/rdl/RDS2194378711>`__).
+
+.. image:: Separator.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Equipment </reference/Equipment/Equipment>`
+
+.. rubric:: Subtypes
+
+* :doc:`CustomSeparator </reference/Equipment/CustomSeparator>`
+
+* :doc:`ElectricalSeparator </reference/Equipment/ElectricalSeparator>`
+
+* :doc:`GravitationalSeparator </reference/Equipment/GravitationalSeparator>`
+
+* :doc:`MechanicalSeparator </reference/Equipment/MechanicalSeparator>`
+
+* :doc:`ScrubbingSeparator </reference/Equipment/ScrubbingSeparator>`
+
+.. rubric:: Attributes (data)
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                                                                       | Multiplicity | Type                                                                                                                           |
++============================================================================================================================================================+==============+================================================================================================================================+
+| :ref:`DesignVolumeFlowRate <dexpi-Equipment-Separator-DesignVolumeFlowRate>`                                                                               | 0..1         | :doc:`NullableVolumeFlowRate </reference/PhysicalQuantities/NullableVolumeFlowRate>`                                           |
++------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`Efficiency <dexpi-Equipment-Separator-Efficiency>`                                                                                                   | 0..1         | :doc:`NullablePercentage </reference/PhysicalQuantities/NullablePercentage>`                                                   |
++------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`UpperLimitAllowableDesignPressureDrop <dexpi-Equipment-Separator-UpperLimitAllowableDesignPressureDrop>`                                             | 0..1         | :doc:`NullablePressureAbsolute </reference/PhysicalQuantities/NullablePressureAbsolute>`                                       |
++------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `SEPARATOR <http://data.posccaesar.org/rdl/RDS2194378711>`__
+
+   ComponentClass
+       Separator
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS2194378711 <http://data.posccaesar.org/rdl/RDS2194378711>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram445.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="separator1"
+            ComponentClass="Separator"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS2194378711" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-Separator-DesignVolumeFlowRate:
+
+DesignVolumeFlowRate
+====================
+
+.. rubric:: Attribute (data)
+
+
+The volume flow rate for which the :doc:`Separator </reference/Equipment/Separator>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableVolumeFlowRate </reference/PhysicalQuantities/NullableVolumeFlowRate>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN VOLUME FLOW RATE <http://data.posccaesar.org/rdl/RDS14286227>`__
+
+   Name
+       DesignVolumeFlowRate
+
+   AttributeURI
+       `http://data.posccaesar.org/rdl/RDS14286227 <http://data.posccaesar.org/rdl/RDS14286227>`__
+
+.. admonition:: example
+
+   The instance separator1 represents a :doc:`Separator </reference/Equipment/Separator>` with a :ref:`DesignVolumeFlowRate <dexpi-Equipment-Separator-DesignVolumeFlowRate>` of 420.0 m\ :sup:`3`/h.
+
+   .. image:: /diagrams/diagram446.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="separator1"
+            ComponentClass="Separator"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS2194378711" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignVolumeFlowRate"
+              AttributeURI="http://data.posccaesar.org/rdl/RDS14286227"
+              Format="double"
+              Value="420.0"
+              Units="MetreCubedPerHour"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1321064" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-Separator-Efficiency:
+
+Efficiency
+==========
+
+.. rubric:: Attribute (data)
+
+
+The efficiency of the :doc:`Separator </reference/Equipment/Separator>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullablePercentage </reference/PhysicalQuantities/NullablePercentage>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `EFFICIENCY <http://data.posccaesar.org/rdl/RDS362654>`__
+
+   Name
+       Efficiency
+
+   AttributeURI
+       `http://data.posccaesar.org/rdl/RDS362654 <http://data.posccaesar.org/rdl/RDS362654>`__
+
+.. admonition:: example
+
+   The instance separator1 represents a :doc:`Separator </reference/Equipment/Separator>` with an :ref:`Efficiency <dexpi-Equipment-Separator-Efficiency>` of 90.0 ???.
+
+   .. image:: /diagrams/diagram447.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="separator1"
+            ComponentClass="Separator"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS2194378711" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="Efficiency"
+              AttributeURI="http://data.posccaesar.org/rdl/RDS362654"
+              Format="double"
+              Value="90.0"
+              Units="Percent"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1317959" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-Separator-UpperLimitAllowableDesignPressureDrop:
+
+UpperLimitAllowableDesignPressureDrop
+=====================================
+
+.. rubric:: Attribute (data)
+
+
+The upper limit for the pressure drop for which the :doc:`Separator </reference/Equipment/Separator>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullablePressureAbsolute </reference/PhysicalQuantities/NullablePressureAbsolute>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `UPPER LIMIT ALLOWABLE DESIGN PRESSURE DROP <http://sandbox.dexpi.org/rdl/UpperLimitAllowableDesignPressureDrop>`__
+
+   Name
+       UpperLimitAllowableDesignPressureDrop
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/UpperLimitAllowableDesignPressureDrop <http://sandbox.dexpi.org/rdl/UpperLimitAllowableDesignPressureDrop>`__
+
+.. admonition:: example
+
+   The instance separator1 represents a :doc:`Separator </reference/Equipment/Separator>` with an :ref:`UpperLimitAllowableDesignPressureDrop <dexpi-Equipment-Separator-UpperLimitAllowableDesignPressureDrop>` of 2.0 bar.
+
+   .. image:: /diagrams/diagram448.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="separator1"
+            ComponentClass="Separator"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS2194378711" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="UpperLimitAllowableDesignPressureDrop"
+              AttributeURI="http://sandbox.dexpi.org/rdl/UpperLimitAllowableDesignPressureDrop"
+              Format="double"
+              Value="2.0"
+              Units="Bar"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1314539" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+

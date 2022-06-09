@@ -1,0 +1,123 @@
+===================================
+PipeOffPageConnectorObjectReference
+===================================
+
+Overview
+========
+
+.. rubric:: Class
+
+A reference to a :doc:`PipeOffPageConnector </reference/Piping/PipeOffPageConnector>` by an association.
+
+.. image:: PipeOffPageConnectorObjectReference.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`PipeOffPageConnectorReference </reference/Piping/PipeOffPageConnectorReference>`
+
+.. rubric:: Attributes (reference)
+
++--------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+| Name                                                                                                                                       | Multiplicity | Type                                                                                               |
++============================================================================================================================================+==============+====================================================================================================+
+| :ref:`ReferencedConnector <dexpi-Piping-PipeOffPageConnectorObjectReference-ReferencedConnector>`                                          | 0..1         | :doc:`PipeOffPageConnector </reference/Piping/PipeOffPageConnector>`                               |
++--------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipeOffPageConnectorReference>``
+
+   RDL reference
+       `PIPE OFF PAGE CONNECTOR OBJECT REFERENCE <http://sandbox.dexpi.org/rdl/PipeOffPageConnectorObjectReference>`__
+
+   ComponentClass
+       PipeOffPageConnectorObjectReference
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/PipeOffPageConnectorObjectReference <http://sandbox.dexpi.org/rdl/PipeOffPageConnectorObjectReference>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram680.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipeOffPageConnectorReference
+            ID="pipeOffPageConnectorObjectReference1"
+            ComponentClass="PipeOffPageConnectorObjectReference"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/PipeOffPageConnectorObjectReference" DOTS123="DOTS123">
+          ...
+        </PipeOffPageConnectorReference>
+      
+
+
+.. _dexpi-Piping-PipeOffPageConnectorObjectReference-ReferencedConnector:
+
+ReferencedConnector
+===================
+
+.. rubric:: Attribute (reference)
+
+
+The :doc:`PipeOffPageConnector </reference/Piping/PipeOffPageConnector>` referenced.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`PipeOffPageConnector </reference/Piping/PipeOffPageConnector>`
+
+Opposite multiplicity
+    0..*
+
+.. admonition:: proteus
+
+   The attribute is implemented using :ref:`Proteus \<Association\> elements <proteus-concept-reference-property-association>`.
+
+   Association type for the attribute ower
+       ``"refers to"``
+
+   Opposite association type
+       ``"is referenced by"``
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram681.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipeOffPageConnectorReference
+            ID="pipeOffPageConnectorObjectReference1"
+            ComponentClass="PipeOffPageConnectorObjectReference"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/PipeOffPageConnectorObjectReference" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="refers to"
+            ItemID="flowInPipeOffPageConnector1" />
+          ...
+        <PipeOffPageConnectorReference />
+        ...
+        <PipeOffPageConnector
+            ID="flowInPipeOffPageConnector1"
+            ComponentClass="FlowInPipeOffPageConnector"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/FlowInPipeOffPageConnector" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="is referenced by"
+            ItemID="pipeOffPageConnectorObjectReference1" />
+          ...
+        <PipeOffPageConnector />
+      
+

@@ -1,0 +1,110 @@
+============
+ChamberOwner
+============
+
+Overview
+========
+
+.. rubric:: Abstract class
+
+An object that can have chambers.
+
+.. image:: ChamberOwner.*
+
+
+.. rubric:: Subtypes
+
+* :doc:`Equipment </reference/Equipment/Equipment>`
+
+.. rubric:: Attributes (composition)
+
++------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+| Name                                                                               | Multiplicity | Type                                                               |
++====================================================================================+==============+====================================================================+
+| :ref:`Chambers <dexpi-Equipment-ChamberOwner-Chambers>`                            | \*           | :doc:`Chamber </reference/Equipment/Chamber>`                      |
++------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl-abstract>`. As :doc:`ChamberOwner </reference/Equipment/ChamberOwner>` is abstract, there is no RDL reference for the class itself;  the RDL reference depends on the concrete subclass.
+
+   Tag
+       ``<Equipment>``
+
+   ComponentClass
+       *depending on subclass*
+
+   ComponentClassURI
+       *depending on subclass*
+
+.. admonition:: example
+
+   As :doc:`ChamberOwner </reference/Equipment/ChamberOwner>` is abstract, we consider :doc:`Vessel </reference/Equipment/Vessel>` as an arbitrary concrete subclass.
+
+   .. image:: /diagrams/diagram151.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="vessel1"
+            ComponentClass="Vessel"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS414674" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-ChamberOwner-Chambers:
+
+Chambers
+========
+
+.. rubric:: Attribute (composition)
+
+
+The Chambers of the :doc:`ChamberOwner </reference/Equipment/ChamberOwner>`.
+
+Multiplicity
+    \*
+
+Type
+    :doc:`Chamber </reference/Equipment/Chamber>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   The attribute is implemented using the :ref:`XML hierarchy of the Proteus file <proteus-concept-composition-property-xml-child>`: The  element for the attribute value (a :doc:`Chamber </reference/Equipment/Chamber>`\ ) is a child of the ``<Equipment>`` element for the attribute owner (a :doc:`ChamberOwner </reference/Equipment/ChamberOwner>`\ ).
+
+.. admonition:: example
+
+   As the owner type :doc:`ChamberOwner </reference/Equipment/ChamberOwner>` is abstract, we consider :doc:`Vessel </reference/Equipment/Vessel>` as an arbitrary concrete subclass.
+
+   .. image:: /diagrams/diagram152.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="vessel1"
+            ComponentClass="Vessel"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS414674" DOTS123="DOTS123">
+          ...
+          <Equipment
+              ID="chamber1"
+              ComponentClass="Chamber"
+              ComponentClassURI="http://data.posccaesar.org/rdl/RDS903151421" DOTS123="DOTS123">
+            ...
+          <Equipment />
+          ...
+        <Equipment />
+      
+

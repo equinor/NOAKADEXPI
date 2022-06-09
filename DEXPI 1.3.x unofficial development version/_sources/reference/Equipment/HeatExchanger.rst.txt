@@ -1,0 +1,334 @@
+=============
+HeatExchanger
+=============
+
+Overview
+========
+
+.. rubric:: Class
+
+An apparatus or machine that has the capability of heat exchanging (from `http://data.15926.org/rdl/RDS304199 <http://data.15926.org/rdl/RDS304199>`__).
+
+.. image:: HeatExchanger.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Equipment </reference/Equipment/Equipment>`
+
+.. rubric:: Subtypes
+
+* :doc:`AirCoolingSystem </reference/Equipment/AirCoolingSystem>`
+
+* :doc:`CustomHeatExchanger </reference/Equipment/CustomHeatExchanger>`
+
+* :doc:`ElectricHeater </reference/Equipment/ElectricHeater>`
+
+* :doc:`PlateHeatExchanger </reference/Equipment/PlateHeatExchanger>`
+
+* :doc:`SpiralHeatExchanger </reference/Equipment/SpiralHeatExchanger>`
+
+* :doc:`ThinFilmEvaporator </reference/Equipment/ThinFilmEvaporator>`
+
+* :doc:`TubularHeatExchanger </reference/Equipment/TubularHeatExchanger>`
+
+.. rubric:: Attributes (data)
+
++--------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                                                       | Multiplicity | Type                                                                                                                                           |
++============================================================================================================================================+==============+================================================================================================================================================+
+| :ref:`DesignHeatFlowRate <dexpi-Equipment-HeatExchanger-DesignHeatFlowRate>`                                                               | 0..1         | :doc:`NullablePower </reference/PhysicalQuantities/NullablePower>`                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`DesignHeatTransferArea <dexpi-Equipment-HeatExchanger-DesignHeatTransferArea>`                                                       | 0..1         | :doc:`NullableArea </reference/PhysicalQuantities/NullableArea>`                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`DesignHeatTransferCoefficient <dexpi-Equipment-HeatExchanger-DesignHeatTransferCoefficient>`                                         | 0..1         | :doc:`NullableHeatTransferCoefficient </reference/PhysicalQuantities/NullableHeatTransferCoefficient>`                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. rubric:: Attributes (reference)
+
++------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------+
+| Name                                                                               | Multiplicity | Type                                                                   |
++====================================================================================+==============+========================================================================+
+| :ref:`Agitator <dexpi-Equipment-HeatExchanger-Agitator>`                           | 0..1         | :doc:`Agitator </reference/Equipment/Agitator>`                        |
++------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `HEAT EXCHANGER <http://data.posccaesar.org/rdl/RDS304199>`__
+
+   ComponentClass
+       HeatExchanger
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS304199 <http://data.posccaesar.org/rdl/RDS304199>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram316.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="heatExchanger1"
+            ComponentClass="HeatExchanger"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS304199" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-HeatExchanger-Agitator:
+
+Agitator
+========
+
+.. rubric:: Attribute (reference)
+
+
+The :doc:`Agitator </reference/Equipment/Agitator>` of the :doc:`HeatExchanger </reference/Equipment/HeatExchanger>`, if applicable.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`Agitator </reference/Equipment/Agitator>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   The attribute is implemented using :ref:`Proteus \<Association\> elements <proteus-concept-reference-property-association>`.
+
+   Association type for the attribute ower
+       ``"is the location of"``
+
+   Opposite association type
+       ``"is located in"``
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram317.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="heatExchanger1"
+            ComponentClass="HeatExchanger"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS304199" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="is the location of"
+            ItemID="agitator1" />
+          ...
+        <Equipment />
+        ...
+        <Equipment
+            ID="agitator1"
+            ComponentClass="Agitator"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS16045622" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="is located in"
+            ItemID="heatExchanger1" />
+          ...
+        <Equipment />
+      
+
+
+.. _dexpi-Equipment-HeatExchanger-DesignHeatFlowRate:
+
+DesignHeatFlowRate
+==================
+
+.. rubric:: Attribute (data)
+
+
+The heat flow rate for which the :doc:`HeatExchanger </reference/Equipment/HeatExchanger>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullablePower </reference/PhysicalQuantities/NullablePower>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN HEAT FLOW RATE <http://sandbox.dexpi.org/rdl/DesignHeatFlowRate>`__
+
+   Name
+       DesignHeatFlowRate
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignHeatFlowRate <http://sandbox.dexpi.org/rdl/DesignHeatFlowRate>`__
+
+.. admonition:: example
+
+   The instance heatExchanger1 represents a :doc:`HeatExchanger </reference/Equipment/HeatExchanger>` with a :ref:`DesignHeatFlowRate <dexpi-Equipment-HeatExchanger-DesignHeatFlowRate>` of 313.0 kW.
+
+   .. image:: /diagrams/diagram318.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="heatExchanger1"
+            ComponentClass="HeatExchanger"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS304199" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignHeatFlowRate"
+              AttributeURI="http://sandbox.dexpi.org/rdl/DesignHeatFlowRate"
+              Format="double"
+              Value="313.0"
+              Units="Kilowatt"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1330919" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-HeatExchanger-DesignHeatTransferArea:
+
+DesignHeatTransferArea
+======================
+
+.. rubric:: Attribute (data)
+
+
+The heat transfer area for which the :doc:`HeatExchanger </reference/Equipment/HeatExchanger>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableArea </reference/PhysicalQuantities/NullableArea>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN HEAT TRANSFER AREA <http://sandbox.dexpi.org/rdl/DesignHeatTransferArea>`__
+
+   Name
+       DesignHeatTransferArea
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignHeatTransferArea <http://sandbox.dexpi.org/rdl/DesignHeatTransferArea>`__
+
+.. admonition:: example
+
+   The instance heatExchanger1 represents a :doc:`HeatExchanger </reference/Equipment/HeatExchanger>` with a :ref:`DesignHeatTransferArea <dexpi-Equipment-HeatExchanger-DesignHeatTransferArea>` of 46.8 m\ :sup:`2`.
+
+   .. image:: /diagrams/diagram319.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="heatExchanger1"
+            ComponentClass="HeatExchanger"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS304199" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignHeatTransferArea"
+              AttributeURI="http://sandbox.dexpi.org/rdl/DesignHeatTransferArea"
+              Format="double"
+              Value="46.8"
+              Units="MetreSquared"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1358009" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-HeatExchanger-DesignHeatTransferCoefficient:
+
+DesignHeatTransferCoefficient
+=============================
+
+.. rubric:: Attribute (data)
+
+
+The heat transfer coefficient for which the :doc:`HeatExchanger </reference/Equipment/HeatExchanger>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableHeatTransferCoefficient </reference/PhysicalQuantities/NullableHeatTransferCoefficient>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN HEAT TRANSFER COEFFICIENT <http://sandbox.dexpi.org/rdl/DesignHeatTransferCoefficient>`__
+
+   Name
+       DesignHeatTransferCoefficient
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignHeatTransferCoefficient <http://sandbox.dexpi.org/rdl/DesignHeatTransferCoefficient>`__
+
+.. admonition:: example
+
+   The instance heatExchanger1 represents a :doc:`HeatExchanger </reference/Equipment/HeatExchanger>` with a :ref:`DesignHeatTransferCoefficient <dexpi-Equipment-HeatExchanger-DesignHeatTransferCoefficient>` of 1.2 kW/(m\ :sup:`2`\·K).
+
+   .. image:: /diagrams/diagram320.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="heatExchanger1"
+            ComponentClass="HeatExchanger"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS304199" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignHeatTransferCoefficient"
+              AttributeURI="http://sandbox.dexpi.org/rdl/DesignHeatTransferCoefficient"
+              Format="double"
+              Value="1.2"
+              Units="KilowattPerMetreSquaredKelvin"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS43167567170" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+

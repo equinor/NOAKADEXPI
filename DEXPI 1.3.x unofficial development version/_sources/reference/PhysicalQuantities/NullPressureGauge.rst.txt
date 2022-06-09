@@ -1,0 +1,38 @@
+=================
+NullPressureGauge
+=================
+
+Overview
+========
+
+.. rubric:: Data type
+
+A :ref:`null value <dexpi-concept-null-value>` for a physical quantity of application type :doc:`NullablePressureGauge </reference/PhysicalQuantities/NullablePressureGauge>`. The only instance of this singleton type is :doc:`NULL_PRESSURE_GAUGE </reference/PhysicalQuantities/NULL_PRESSURE_GAUGE>`.
+
+.. image:: NullPressureGauge.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`NullablePressureGauge </reference/PhysicalQuantities/NullablePressureGauge>`
+
+.. admonition:: proteus
+
+   All data attributes with type :doc:`NullablePressureGauge </reference/PhysicalQuantities/NullablePressureGauge>` (the base type of :doc:`NullPressureGauge </reference/PhysicalQuantities/NullPressureGauge>`\ ) are implemented as :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram599.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Format="double" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have a ``Name`` and an ``AttributeURI`` attribute. They depend on the data type attribute of the DEXPI class that owns the null instance :doc:`NULL_PRESSURE_GAUGE </reference/PhysicalQuantities/NULL_PRESSURE_GAUGE>` (e.g., see the implementation example for the attribute :ref:`LowerLimitDesignPressure <dexpi-Equipment-Chamber-LowerLimitDesignPressure>` of the DEXPI class :doc:`Chamber </reference/Equipment/Chamber>`\ )DOTANDSPACEHACKFor a null value, the attributes ``Units``, ``UnitsURI``, and ``Value`` *must not be used*.
+

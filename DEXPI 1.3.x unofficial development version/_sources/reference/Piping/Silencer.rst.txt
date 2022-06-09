@@ -1,0 +1,52 @@
+========
+Silencer
+========
+
+Overview
+========
+
+.. rubric:: Class
+
+A device intended to reduce a noise level (from `http://data.posccaesar.org/rdl/RDS1049368591 <http://data.posccaesar.org/rdl/RDS1049368591>`__).
+
+.. image:: Silencer.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`PipeFitting </reference/Piping/PipeFitting>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingComponent>``
+
+   RDL reference
+       `SILENCER <http://data.posccaesar.org/rdl/RDS1049368591>`__
+
+   ComponentClass
+       Silencer
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS1049368591 <http://data.posccaesar.org/rdl/RDS1049368591>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram718.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="silencer1"
+            ComponentClass="Silencer"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS1049368591" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+

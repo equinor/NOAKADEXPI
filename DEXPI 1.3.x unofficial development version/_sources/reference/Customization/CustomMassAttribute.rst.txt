@@ -1,0 +1,102 @@
+===================
+CustomMassAttribute
+===================
+
+Overview
+========
+
+.. rubric:: Class
+
+A :ref:`custom attribute <dexpi-concept-custom-attributes>` with :ref:`Value <dexpi-Customization-CustomMassAttribute-Value>` type :doc:`NullableMass </reference/PhysicalQuantities/NullableMass>`.
+
+.. image:: CustomMassAttribute.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`CustomAttribute </reference/Customization/CustomAttribute>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------+
+| Name                                                                                   | Multiplicity | Type                                                                                           |
++========================================================================================+==============+================================================================================================+
+| :ref:`Value <dexpi-Customization-CustomMassAttribute-Value>`                           | 1            | :doc:`NullableMass </reference/PhysicalQuantities/NullableMass>`                               |
++----------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   :doc:`CustomMassAttribute </reference/Customization/CustomMassAttribute>` is implemented as a :ref:`custom generic attribute for physical quantities <proteus-concept-dexpi-custom-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `MASS <http://data.posccaesar.org/rdl/RDS353339>`__
+
+   Type
+       Mass
+
+   TypeURI
+       `http://data.posccaesar.org/rdl/RDS353339 <http://data.posccaesar.org/rdl/RDS353339>`__
+
+.. admonition:: example
+
+   As :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>` is abstract, we consider :doc:`Sieve </reference/Equipment/Sieve>` as an arbitrary concrete subclass.
+
+   The :doc:`Sieve </reference/Equipment/Sieve>` sieve1 has a :doc:`CustomMassAttribute </reference/Customization/CustomMassAttribute>` with :ref:`AttributeName <dexpi-Customization-CustomAttribute-AttributeName>` "UpperLimitDesignLoad" and :ref:`AttributeURI <dexpi-Customization-CustomAttribute-AttributeURI>` "http://sandbox.dexpi.org/rdl/UpperLimitDesignLoad"DOTANDSPACEHACKThe :ref:`Value <dexpi-Customization-CustomMassAttribute-Value>` is 200 kg.
+
+   .. image:: /diagrams/diagram21.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="sieve1"
+            ComponentClass="Sieve"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/Sieve" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiCustomAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="UpperLimitDesignLoad"
+              AttributeURI="http://sandbox.dexpi.org/rdl/UpperLimitDesignLoad"
+              Format="double"
+              Type="Mass"
+              TypeURI="http://data.posccaesar.org/rdl/RDS353339"
+              Value="200"
+              Units="Kilogram"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1328669" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Customization-CustomMassAttribute-Value:
+
+Value
+=====
+
+.. rubric:: Attribute (data)
+
+
+The value of the :doc:`CustomMassAttribute </reference/Customization/CustomMassAttribute>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`NullableMass </reference/PhysicalQuantities/NullableMass>`
+
+Redefines
+    :ref:`Value <dexpi-Customization-CustomAttribute-Value>` (inherited from :doc:`CustomAttribute </reference/Customization/CustomAttribute>`\ )
+
+.. admonition:: proteus
+
+   See implementation of :doc:`CustomMassAttribute </reference/Customization/CustomMassAttribute>`.
+
+.. admonition:: example
+
+   See the example for :doc:`CustomMassAttribute </reference/Customization/CustomMassAttribute>`.
+

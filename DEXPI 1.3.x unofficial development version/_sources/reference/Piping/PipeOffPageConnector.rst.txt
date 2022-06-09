@@ -1,0 +1,122 @@
+====================
+PipeOffPageConnector
+====================
+
+Overview
+========
+
+.. rubric:: Abstract class
+
+A connector that indicates that a piping network segment is continued elsewhere, either on the same PID or on another PID. Graphically, it is usually represented as an arrow.
+
+.. image:: PipeOffPageConnector.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`ConceptualObject </reference/DexpiModel/ConceptualObject>`
+
+* :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>`
+
+* :doc:`PipingNetworkSegmentItem </reference/Piping/PipingNetworkSegmentItem>`
+
+* :doc:`PipingNodeOwner </reference/Piping/PipingNodeOwner>`
+
+.. rubric:: Subtypes
+
+* :doc:`FlowInPipeOffPageConnector </reference/Piping/FlowInPipeOffPageConnector>`
+
+* :doc:`FlowOutPipeOffPageConnector </reference/Piping/FlowOutPipeOffPageConnector>`
+
+.. rubric:: Attributes (composition)
+
++--------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                               | Multiplicity | Type                                                                                                                       |
++====================================================================================================================+==============+============================================================================================================================+
+| :ref:`ConnectorReference <dexpi-Piping-PipeOffPageConnector-ConnectorReference>`                                   | 0..1         | :doc:`PipeOffPageConnectorReference </reference/Piping/PipeOffPageConnectorReference>`                                     |
++--------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl-abstract>`. As :doc:`PipeOffPageConnector </reference/Piping/PipeOffPageConnector>` is abstract, there is no RDL reference for the class itself;  the RDL reference depends on the concrete subclass.
+
+   Tag
+       ``<PipeOffPageConnector>``
+
+   ComponentClass
+       *depending on subclass*
+
+   ComponentClassURI
+       *depending on subclass*
+
+.. admonition:: example
+
+   As :doc:`PipeOffPageConnector </reference/Piping/PipeOffPageConnector>` is abstract, we consider :doc:`FlowInPipeOffPageConnector </reference/Piping/FlowInPipeOffPageConnector>` as an arbitrary concrete subclass.
+
+   .. image:: /diagrams/diagram678.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipeOffPageConnector
+            ID="flowInPipeOffPageConnector1"
+            ComponentClass="FlowInPipeOffPageConnector"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/FlowInPipeOffPageConnector" DOTS123="DOTS123">
+          ...
+        </PipeOffPageConnector>
+      
+
+
+.. _dexpi-Piping-PipeOffPageConnector-ConnectorReference:
+
+ConnectorReference
+==================
+
+.. rubric:: Attribute (composition)
+
+
+A reference indicating to which other :doc:`PipeOffPageConnector </reference/Piping/PipeOffPageConnector>` this :doc:`PipeOffPageConnector </reference/Piping/PipeOffPageConnector>` is connected.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`PipeOffPageConnectorReference </reference/Piping/PipeOffPageConnectorReference>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   The attribute is implemented using the :ref:`XML hierarchy of the Proteus file <proteus-concept-composition-property-xml-child>`: The  element for the attribute value (a :doc:`PipeOffPageConnectorReference </reference/Piping/PipeOffPageConnectorReference>`\ ) is a child of the ``<PipeOffPageConnector>`` element for the attribute owner (a :doc:`PipeOffPageConnector </reference/Piping/PipeOffPageConnector>`\ ).
+
+.. admonition:: example
+
+   As the owner type :doc:`PipeOffPageConnector </reference/Piping/PipeOffPageConnector>` is abstract, we consider :doc:`FlowInPipeOffPageConnector </reference/Piping/FlowInPipeOffPageConnector>` as an arbitrary concrete subclass. As the value type :doc:`PipeOffPageConnectorReference </reference/Piping/PipeOffPageConnectorReference>` is abstract, we consider :doc:`PipeOffPageConnectorObjectReference </reference/Piping/PipeOffPageConnectorObjectReference>` as an arbitrary concrete subclass.
+
+   .. image:: /diagrams/diagram679.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipeOffPageConnector
+            ID="flowInPipeOffPageConnector1"
+            ComponentClass="FlowInPipeOffPageConnector"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/FlowInPipeOffPageConnector" DOTS123="DOTS123">
+          ...
+          <PipeOffPageConnectorReference
+              ID="pipeOffPageConnectorObjectReference1"
+              ComponentClass="PipeOffPageConnectorObjectReference"
+              ComponentClassURI="http://sandbox.dexpi.org/rdl/PipeOffPageConnectorObjectReference" DOTS123="DOTS123">
+            ...
+          <PipeOffPageConnectorReference />
+          ...
+        <PipeOffPageConnector />
+      
+

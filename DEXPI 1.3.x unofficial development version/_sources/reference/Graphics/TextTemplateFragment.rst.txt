@@ -1,0 +1,18 @@
+====================
+TextTemplateFragment
+====================
+
+Overview
+========
+
+.. rubric:: Abstract class
+
+.. image:: TextTemplateFragment.*
+
+
+.. rubric:: Subtypes
+
+* :doc:`AttributeRepresentation </reference/Graphics/AttributeRepresentation>`
+
+* :doc:`LiteralText </reference/Graphics/LiteralText>`
+

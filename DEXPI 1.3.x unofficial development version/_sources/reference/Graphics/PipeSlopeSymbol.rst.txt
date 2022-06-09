@@ -1,0 +1,16 @@
+===============
+PipeSlopeSymbol
+===============
+
+Overview
+========
+
+.. rubric:: Class
+
+.. image:: PipeSlopeSymbol.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Symbol </reference/Graphics/Symbol>`
+

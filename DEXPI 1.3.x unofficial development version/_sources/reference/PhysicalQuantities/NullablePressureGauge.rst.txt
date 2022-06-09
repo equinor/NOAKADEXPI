@@ -1,0 +1,36 @@
+=====================
+NullablePressureGauge
+=====================
+
+Overview
+========
+
+.. rubric:: Abstract data type
+
+A physical quantity of dimension L\ :sup:`-1`\MT\ :sup:`-2` (inherited from :doc:`NullablePressure </reference/PhysicalQuantities/NullablePressure>`\ ) for the application type *pressure gauge*. A *pressure gauge* is a pressure relative to atmospheric pressure. :doc:`NullablePressureGauge </reference/PhysicalQuantities/NullablePressureGauge>` is abstract and has two concrete subtypes:
+
+* a :doc:`PressureGauge </reference/PhysicalQuantities/PressureGauge>` is an :ref:`actual value <dexpi-concept-actual-value>` for a physical quantity with a numerical value and a unit of measurement;
+
+* a :doc:`NullPressureGauge </reference/PhysicalQuantities/NullPressureGauge>` is a :ref:`null value <dexpi-concept-null-value>` that explicitly indicates the absence of an actual physical quantity.
+
+.. image:: NullablePressureGauge.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`NullablePressure </reference/PhysicalQuantities/NullablePressure>`
+
+.. rubric:: Subtypes
+
+* :doc:`NullPressureGauge </reference/PhysicalQuantities/NullPressureGauge>`
+
+* :doc:`PressureGauge </reference/PhysicalQuantities/PressureGauge>`
+
+.. admonition:: proteus
+
+   All data attributes with type :doc:`NullablePressureGauge </reference/PhysicalQuantities/NullablePressureGauge>` are implemented as :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+.. admonition:: example
+
+   See the examples for :doc:`PressureGauge </reference/PhysicalQuantities/PressureGauge>` and :doc:`NullPressureGauge </reference/PhysicalQuantities/NullPressureGauge>`.
+

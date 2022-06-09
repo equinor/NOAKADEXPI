@@ -1,0 +1,52 @@
+================
+StraightwayValve
+================
+
+Overview
+========
+
+.. rubric:: Class
+
+A valve that is straight, i.e. the centerlines perpendicular to the ends are in-line with no offset (from `http://data.posccaesar.org/rdl/RDS9390905 <http://data.posccaesar.org/rdl/RDS9390905>`__).
+
+.. image:: StraightwayValve.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`OperatedValve </reference/Piping/OperatedValve>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingComponent>``
+
+   RDL reference
+       `STRAIGHTWAY VALVE <http://data.posccaesar.org/rdl/RDS9390905>`__
+
+   ComponentClass
+       StraightwayValve
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS9390905 <http://data.posccaesar.org/rdl/RDS9390905>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram722.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="straightwayValve1"
+            ComponentClass="StraightwayValve"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS9390905" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+

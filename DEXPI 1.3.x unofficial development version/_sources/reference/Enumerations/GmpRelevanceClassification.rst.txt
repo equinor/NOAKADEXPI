@@ -1,0 +1,52 @@
+==========================
+GmpRelevanceClassification
+==========================
+
+Overview
+========
+
+.. rubric:: Enumeration
+
+.. image:: GmpRelevanceClassification.*
+
+
+.. rubric:: Literals
+
++------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                       | Symbol                                                     | proteus#RDL Reference                                                               | proteus#RDL URI                                                                                               |
++============================================================================================================+============================================================+=====================================================================================+===============================================================================================================+
+| .. _dexpi-Enumerations-GmpRelevanceClassification-NULL:                                                    | :ref:`null <dexpi-concept-null-value>`                     |                                                                                     |                                                                                                               |
+|                                                                                                            |                                                            |                                                                                     |                                                                                                               |
+| NULL                                                                                                       |                                                            |                                                                                     |                                                                                                               |
++------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
+| .. _dexpi-Enumerations-GmpRelevanceClassification-GmpRelevantFunction:                                     | GMP relevant                                               | `GMP RELEVANT FUNCTION <http://sandbox.dexpi.org/rdl/GmpRelevantFunction>`__        | `http://sandbox.dexpi.org/rdl/GmpRelevantFunction <http://sandbox.dexpi.org/rdl/GmpRelevantFunction>`__       |
+|                                                                                                            |                                                            |                                                                                     |                                                                                                               |
+| GmpRelevantFunction                                                                                        |                                                            |                                                                                     |                                                                                                               |
++------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
+| .. _dexpi-Enumerations-GmpRelevanceClassification-NonGmpRelevantFunction:                                  | not GMP relevant                                           | `NON GMP RELEVANT FUNCTION <http://sandbox.dexpi.org/rdl/NonGmpRelevantFunction>`__ | `http://sandbox.dexpi.org/rdl/NonGmpRelevantFunction <http://sandbox.dexpi.org/rdl/NonGmpRelevantFunction>`__ |
+|                                                                                                            |                                                            |                                                                                     |                                                                                                               |
+| NonGmpRelevantFunction                                                                                     |                                                            |                                                                                     |                                                                                                               |
++------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   All data attributes with type :doc:`GmpRelevanceClassification </reference/Enumerations/GmpRelevanceClassification>` are implemented as :ref:`DEXPI generic attributes for enumeration values <proteus-concept-dexpi-generic-attribute-enumeration>`. In a ``<GenericAttribute>`` element, the :doc:`GmpRelevanceClassification </reference/Enumerations/GmpRelevanceClassification>` literal is given by means of its :ref:`RDL reference <proteus-concept-rdl-reference>` in the table above. The ``Value`` attribute of the element is the name of the RDL reference in camel-case; it equals the name of the literal. The ``ValueURI`` attribute of the element is the URI of the RDL reference.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram54.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Format="anyURI"
+          Value="GmpRelevantFunction"
+          ValueURI="http://sandbox.dexpi.org/rdl/GmpRelevantFunction" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have a ``Name`` and an ``AttributeURI`` attribute. They depend on the data type attribute of the DEXPI class that owns the instance :ref:`GmpRelevantFunction <dexpi-Enumerations-GmpRelevanceClassification-GmpRelevantFunction>`. For a complete example, see the attribute :ref:`GmpRelevance <dexpi-Instrumentation-ProcessInstrumentationFunction-GmpRelevance>` of the DEXPI class :doc:`ProcessInstrumentationFunction </reference/Instrumentation/ProcessInstrumentationFunction>`.
+

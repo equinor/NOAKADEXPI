@@ -1,0 +1,49 @@
+=======================
+RotationalFrequencyUnit
+=======================
+
+Overview
+========
+
+.. rubric:: Enumeration
+
+A unit of measurement for a physical quantity of application type :doc:`NullableRotationalFrequency </reference/PhysicalQuantities/NullableRotationalFrequency>` with dimension T\ :sup:`-1`.
+
+.. image:: RotationalFrequencyUnit.*
+
+
+.. rubric:: Literals
+
++--------------------------------------------------------------------------------------------------------+----------------+---------+----------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+
+| Name                                                                                                   | Symbol         | UN Code | proteus#RDL Reference                                                | proteus#RDL URI                                                                                 |
++========================================================================================================+================+=========+======================================================================+=================================================================================================+
+| .. _dexpi-PhysicalQuantities-RotationalFrequencyUnit-ReciprocalMinute:                                 | min\ :sup:`-1` | C94     | `RECIPROCAL MINUTE <http://data.posccaesar.org/rdl/RDS4316851589>`__ | `http://data.posccaesar.org/rdl/RDS4316851589 <http://data.posccaesar.org/rdl/RDS4316851589>`__ |
+|                                                                                                        |                |         |                                                                      |                                                                                                 |
+| ReciprocalMinute                                                                                       |                |         |                                                                      |                                                                                                 |
++--------------------------------------------------------------------------------------------------------+----------------+---------+----------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+
+| .. _dexpi-PhysicalQuantities-RotationalFrequencyUnit-ReciprocalSecond:                                 | s\ :sup:`-1`   | C97     | `RECIPROCAL SECOND <http://data.posccaesar.org/rdl/RDS1355489>`__    | `http://data.posccaesar.org/rdl/RDS1355489 <http://data.posccaesar.org/rdl/RDS1355489>`__       |
+|                                                                                                        |                |         |                                                                      |                                                                                                 |
+| ReciprocalSecond                                                                                       |                |         |                                                                      |                                                                                                 |
++--------------------------------------------------------------------------------------------------------+----------------+---------+----------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   :doc:`RotationalFrequencyUnit </reference/PhysicalQuantities/RotationalFrequencyUnit>` is only used as the type of the :ref:`Unit <dexpi-PhysicalQuantities-RotationalFrequency-Unit>` attribute of :doc:`RotationalFrequency </reference/PhysicalQuantities/RotationalFrequency>`. :doc:`RotationalFrequency </reference/PhysicalQuantities/RotationalFrequency>` is implemented using :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`. In a ``<GenericAttribute>`` element, the :doc:`RotationalFrequencyUnit </reference/PhysicalQuantities/RotationalFrequencyUnit>` literal is given by means of its :ref:`RDL reference <proteus-concept-rdl-reference>` in the table above. The ``Units`` attribute of the element is the name of the RDL reference in camel-case; it equals the name of the literal. The ``UnitsURI`` attribute of the element is the URI of the RDL reference.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram616.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Units="ReciprocalMinute"
+          UnitsURI="http://data.posccaesar.org/rdl/RDS4316851589" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have further attributes (``Format``, ``Value``, ``Name``, and ``AttributeURI``)DOTANDSPACEHACKSee the implementation examples for :doc:`RotationalFrequency </reference/PhysicalQuantities/RotationalFrequency>` and for the :ref:`DesignRotationalSpeed <dexpi-Equipment-Agglomerator-DesignRotationalSpeed>` attribute of :doc:`Agglomerator </reference/Equipment/Agglomerator>`.
+

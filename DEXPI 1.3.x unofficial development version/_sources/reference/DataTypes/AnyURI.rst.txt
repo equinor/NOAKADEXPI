@@ -1,0 +1,28 @@
+======
+AnyURI
+======
+
+Overview
+========
+
+.. rubric:: Data type
+
+A Uniform Resource Identifier (URI). The value space of :doc:`AnyURI </reference/DataTypes/AnyURI>` is the same as that of the XML Schema data type `anyURI <https://www.w3.org/TR/xmlschema-2/#anyURI>`__ as specified by the W3C Recommendation `XML Schema Part 2: Datatypes Second Edition <https://www.w3.org/TR/xmlschema-2>`__ from October 28, 2004.
+
+.. image:: AnyURI.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`NullableAnyURI </reference/DataTypes/NullableAnyURI>`
+
+.. admonition:: proteus
+
+   An :doc:`AnyURI </reference/DataTypes/AnyURI>` is implemented as a literal for the XML Schema data type `anyURI <https://www.w3.org/TR/xmlschema-2/#anyURI>`__.
+
+   The way this literal is used in a Proteus XML document depends on the Proteus Schema implementations of the data attributes with type :doc:`NullableAnyURI </reference/DataTypes/NullableAnyURI>`. There is no attribute with direct type :doc:`AnyURI </reference/DataTypes/AnyURI>`.
+
+   * :doc:`NullableAnyURI </reference/DataTypes/NullableAnyURI>` is the type of the :ref:`AttributeURI <dexpi-Customization-CustomAttribute-AttributeURI>` attribute of :doc:`CustomAttribute </reference/Customization/CustomAttribute>`. See Proteus Schema implementation of :ref:`AttributeURI <dexpi-Customization-CustomAttribute-AttributeURI>`.
+
+   * :doc:`NullableAnyURI </reference/DataTypes/NullableAnyURI>` is the type of the :ref:`TypeURI <dexpi-Customization-CustomObject-TypeURI>` attribute of :doc:`CustomObject </reference/Customization/CustomObject>`. See Proteus Schema implementation of :ref:`TypeURI <dexpi-Customization-CustomObject-TypeURI>`.
+

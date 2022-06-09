@@ -1,0 +1,188 @@
+=====
+Sieve
+=====
+
+Overview
+========
+
+.. rubric:: Class
+
+A device that removes particles from a fluid when the fluid passes through or separates particles or molecules according to their size.
+
+.. image:: Sieve.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Equipment </reference/Equipment/Equipment>`
+
+.. rubric:: Subtypes
+
+* :doc:`CustomSieve </reference/Equipment/CustomSieve>`
+
+* :doc:`RevolvingSieve </reference/Equipment/RevolvingSieve>`
+
+* :doc:`StationarySieve </reference/Equipment/StationarySieve>`
+
+* :doc:`VibratingSieve </reference/Equipment/VibratingSieve>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                               | Multiplicity | Type                                                                                                               |
++====================================================================================================+==============+====================================================================================================================+
+| :ref:`DesignMassFlowRate <dexpi-Equipment-Sieve-DesignMassFlowRate>`                               | 0..1         | :doc:`NullableMassFlowRate </reference/PhysicalQuantities/NullableMassFlowRate>`                                   |
++----------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------+
+
+.. rubric:: Attributes (composition)
+
++----------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------+
+| Name                                                                                   | Multiplicity | Type                                                                               |
++========================================================================================+==============+====================================================================================+
+| :ref:`SieveElements <dexpi-Equipment-Sieve-SieveElements>`                             | \*           | :doc:`SieveElement </reference/Equipment/SieveElement>`                            |
++----------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `SIEVE <http://sandbox.dexpi.org/rdl/Sieve>`__
+
+   ComponentClass
+       Sieve
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/Sieve <http://sandbox.dexpi.org/rdl/Sieve>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram450.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="sieve1"
+            ComponentClass="Sieve"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/Sieve" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-Sieve-DesignMassFlowRate:
+
+DesignMassFlowRate
+==================
+
+.. rubric:: Attribute (data)
+
+
+The mass flow rate for which the :doc:`Sieve </reference/Equipment/Sieve>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableMassFlowRate </reference/PhysicalQuantities/NullableMassFlowRate>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN MASS FLOW RATE <http://data.posccaesar.org/rdl/RDS14286182>`__
+
+   Name
+       DesignMassFlowRate
+
+   AttributeURI
+       `http://data.posccaesar.org/rdl/RDS14286182 <http://data.posccaesar.org/rdl/RDS14286182>`__
+
+.. admonition:: example
+
+   The instance sieve1 represents a :doc:`Sieve </reference/Equipment/Sieve>` with a :ref:`DesignMassFlowRate <dexpi-Equipment-Sieve-DesignMassFlowRate>` of 420.0 kg/s.
+
+   .. image:: /diagrams/diagram451.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="sieve1"
+            ComponentClass="Sieve"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/Sieve" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignMassFlowRate"
+              AttributeURI="http://data.posccaesar.org/rdl/RDS14286182"
+              Format="double"
+              Value="420.0"
+              Units="KilogramPerSecond"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1329659" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-Sieve-SieveElements:
+
+SieveElements
+=============
+
+.. rubric:: Attribute (composition)
+
+
+The sieve elements of the :doc:`Sieve </reference/Equipment/Sieve>`.
+
+Multiplicity
+    \*
+
+Type
+    :doc:`SieveElement </reference/Equipment/SieveElement>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   The attribute is implemented using the :ref:`XML hierarchy of the Proteus file <proteus-concept-composition-property-xml-child>`: The  element for the attribute value (a :doc:`SieveElement </reference/Equipment/SieveElement>`\ ) is a child of the ``<Equipment>`` element for the attribute owner (a :doc:`Sieve </reference/Equipment/Sieve>`\ ).
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram452.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="sieve1"
+            ComponentClass="Sieve"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/Sieve" DOTS123="DOTS123">
+          ...
+          <Equipment
+              ID="sieveElement1"
+              ComponentClass="SieveElement"
+              ComponentClassURI="http://sandbox.dexpi.org/rdl/SieveElement" DOTS123="DOTS123">
+            ...
+          <Equipment />
+          ...
+        <Equipment />
+      
+

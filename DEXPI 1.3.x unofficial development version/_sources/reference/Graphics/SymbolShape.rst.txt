@@ -1,0 +1,16 @@
+===========
+SymbolShape
+===========
+
+Overview
+========
+
+.. rubric:: Class
+
+.. image:: SymbolShape.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Shape </reference/Graphics/Shape>`
+

@@ -1,0 +1,52 @@
+===========
+NeedleValve
+===========
+
+Overview
+========
+
+.. rubric:: Class
+
+A globe valve that has a closure member with the shape of a conical plug (needle) which closes into a small seat (from `http://data.posccaesar.org/rdl/RDS421064 <http://data.posccaesar.org/rdl/RDS421064>`__).
+
+.. image:: NeedleValve.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`OperatedValve </reference/Piping/OperatedValve>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingComponent>``
+
+   RDL reference
+       `NEEDLE VALVE <http://data.posccaesar.org/rdl/RDS421064>`__
+
+   ComponentClass
+       NeedleValve
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS421064 <http://data.posccaesar.org/rdl/RDS421064>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram666.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="needleValve1"
+            ComponentClass="NeedleValve"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS421064" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+

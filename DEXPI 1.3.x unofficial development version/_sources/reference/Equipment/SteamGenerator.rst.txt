@@ -1,0 +1,52 @@
+==============
+SteamGenerator
+==============
+
+Overview
+========
+
+.. rubric:: Class
+
+A boiler that is intended to generate steam (from `http://data.posccaesar.org/rdl/RDS13306207 <http://data.posccaesar.org/rdl/RDS13306207>`__).
+
+.. image:: SteamGenerator.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Heater </reference/Equipment/Heater>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `STEAM GENERATOR <http://data.posccaesar.org/rdl/RDS13306207>`__
+
+   ComponentClass
+       SteamGenerator
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS13306207 <http://data.posccaesar.org/rdl/RDS13306207>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram470.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="steamGenerator1"
+            ComponentClass="SteamGenerator"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS13306207" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+

@@ -1,0 +1,52 @@
+====
+Hose
+====
+
+Overview
+========
+
+.. rubric:: Class
+
+A tubular which is flexible and capable of conveying liquids under pressure (from `http://data.posccaesar.org/rdl/RDS302174 <http://data.posccaesar.org/rdl/RDS302174>`__).
+
+.. image:: Hose.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`PipeFitting </reference/Piping/PipeFitting>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingComponent>``
+
+   RDL reference
+       `HOSE <http://data.posccaesar.org/rdl/RDS302174>`__
+
+   ComponentClass
+       Hose
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS302174 <http://data.posccaesar.org/rdl/RDS302174>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram658.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="hose1"
+            ComponentClass="Hose"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS302174" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+

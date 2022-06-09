@@ -1,0 +1,22 @@
+==========
+NullAnyURI
+==========
+
+Overview
+========
+
+.. rubric:: Data type
+
+A :ref:`null value <dexpi-concept-null-value>` for a value of type :doc:`NullableAnyURI </reference/DataTypes/NullableAnyURI>`. The only instance of this singleton type is :doc:`NULL_ANY_URI </reference/DataTypes/NULL_ANY_URI>`.
+
+.. image:: NullAnyURI.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`NullableAnyURI </reference/DataTypes/NullableAnyURI>`
+
+.. admonition:: proteus
+
+   See Proteus Schema implementation of the base type :doc:`NullableAnyURI </reference/DataTypes/NullableAnyURI>`
+

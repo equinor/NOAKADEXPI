@@ -1,0 +1,157 @@
+==========
+EllipseArc
+==========
+
+Overview
+========
+
+.. rubric:: Class
+
+A ellipse arc.
+
+.. image:: EllipseArc.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`GraphicalPrimitive </reference/Graphics/GraphicalPrimitive>`
+
+.. rubric:: Attributes (data)
+
++--------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+| Name                                                                                                   | Multiplicity | Type                                                               |
++========================================================================================================+==============+====================================================================+
+| :ref:`Center <dexpi-Graphics-EllipseArc-Center>`                                                       | 1            | :doc:`Point </reference/Graphics/Point>`                           |
++--------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+| :ref:`EndAngle <dexpi-Graphics-EllipseArc-EndAngle>`                                                   | 1            | :doc:`Double </reference/DataTypes/Double>`                        |
++--------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+| :ref:`HorizontalSemiAxis <dexpi-Graphics-EllipseArc-HorizontalSemiAxis>`                               | 1            | :doc:`Double </reference/DataTypes/Double>`                        |
++--------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+| :ref:`Rotation <dexpi-Graphics-EllipseArc-Rotation>`                                                   | 1            | :doc:`Double </reference/DataTypes/Double>`                        |
++--------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+| :ref:`StartAngle <dexpi-Graphics-EllipseArc-StartAngle>`                                               | 1            | :doc:`Double </reference/DataTypes/Double>`                        |
++--------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+| :ref:`Stroke <dexpi-Graphics-EllipseArc-Stroke>`                                                       | 1            | :doc:`Stroke </reference/Graphics/Stroke>`                         |
++--------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+| :ref:`VerticalSemiAxis <dexpi-Graphics-EllipseArc-VerticalSemiAxis>`                                   | 1            | :doc:`Double </reference/DataTypes/Double>`                        |
++--------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+
+
+.. _dexpi-Graphics-EllipseArc-Center:
+
+Center
+======
+
+.. rubric:: Attribute (data)
+
+
+The center position of the :doc:`EllipseArc </reference/Graphics/EllipseArc>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Point </reference/Graphics/Point>`
+
+
+.. _dexpi-Graphics-EllipseArc-EndAngle:
+
+EndAngle
+========
+
+.. rubric:: Attribute (data)
+
+
+The end angle of the :doc:`EllipseArc </reference/Graphics/EllipseArc>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Double </reference/DataTypes/Double>`
+
+
+.. _dexpi-Graphics-EllipseArc-HorizontalSemiAxis:
+
+HorizontalSemiAxis
+==================
+
+.. rubric:: Attribute (data)
+
+
+The length of the horizontal semi-axis of the :doc:`EllipseArc </reference/Graphics/EllipseArc>` in mm.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Double </reference/DataTypes/Double>`
+
+
+.. _dexpi-Graphics-EllipseArc-Rotation:
+
+Rotation
+========
+
+.. rubric:: Attribute (data)
+
+
+The rotation of the :doc:`EllipseArc </reference/Graphics/EllipseArc>` around its center in degrees.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Double </reference/DataTypes/Double>`
+
+
+.. _dexpi-Graphics-EllipseArc-StartAngle:
+
+StartAngle
+==========
+
+.. rubric:: Attribute (data)
+
+
+The start angle of the :doc:`EllipseArc </reference/Graphics/EllipseArc>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Double </reference/DataTypes/Double>`
+
+
+.. _dexpi-Graphics-EllipseArc-Stroke:
+
+Stroke
+======
+
+.. rubric:: Attribute (data)
+
+
+The stroke of the :doc:`EllipseArc </reference/Graphics/EllipseArc>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Stroke </reference/Graphics/Stroke>`
+
+
+.. _dexpi-Graphics-EllipseArc-VerticalSemiAxis:
+
+VerticalSemiAxis
+================
+
+.. rubric:: Attribute (data)
+
+
+The length of the vertical semi-axis of the :doc:`EllipseArc </reference/Graphics/EllipseArc>` in mm.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Double </reference/DataTypes/Double>`
+

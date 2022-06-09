@@ -1,0 +1,27 @@
+======================
+DirectPipingConnection
+======================
+
+Overview
+========
+
+.. rubric:: Class
+
+A direct connection between two piping items, i.e. a connection that is not realized by a pipe.
+
+.. image:: DirectPipingConnection.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`PipingConnection </reference/Piping/PipingConnection>`
+
+.. admonition:: proteus
+
+   There is no direct implementation of :doc:`DirectPipingConnection </reference/Piping/DirectPipingConnection>` in Proteus Schema. A :doc:`DirectPipingConnection </reference/Piping/DirectPipingConnection>` rather corresponds to cases where Proteus Schema allows direct connections between piping-related items without a ``<CenterLine>`` element (corresponding to a :doc:`Pipe </reference/Piping/Pipe>`\ ) between, e.g., between two :doc:`PipingComponents </reference/Piping/PipingComponent>` or between a :doc:`PipingComponent </reference/Piping/PipingComponent>` and a :doc:`PropertyBreak </reference/Piping/PropertyBreak>`.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram645.*
+
+

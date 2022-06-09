@@ -1,0 +1,278 @@
+==========
+PipingNode
+==========
+
+Overview
+========
+
+.. rubric:: Class
+
+A possible connection point for a :doc:`PipingConnection </reference/Piping/PipingConnection>`.
+
+.. image:: PipingNode.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`ConceptualObject </reference/DexpiModel/ConceptualObject>`
+
+* :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>`
+
+.. rubric:: Attributes (data)
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                                                                                   | Multiplicity | Type                                                                                                                                                   |
++========================================================================================================================================================================+==============+========================================================================================================================================================+
+| :ref:`NominalDiameterNumericalValueRepresentation <dexpi-Piping-PipingNode-NominalDiameterNumericalValueRepresentation>`                                               | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                                            |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`NominalDiameterRepresentation <dexpi-Piping-PipingNode-NominalDiameterRepresentation>`                                                                           | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                                            |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`NominalDiameterStandard <dexpi-Piping-PipingNode-NominalDiameterStandard>`                                                                                       | 0..1         | :doc:`NominalDiameterStandardClassification </reference/Enumerations/NominalDiameterStandardClassification>`                                           |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`NominalDiameterTypeRepresentation <dexpi-Piping-PipingNode-NominalDiameterTypeRepresentation>`                                                                   | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                                            |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented using the Proteus element ``<Node>``. The value of the Proteus XML attribute ``Type`` must be ``"process"``.
+
+   See also the Proteus implementation of the :ref:`Nodes <dexpi-Piping-PipingNodeOwner-Nodes>` attribute of :doc:`PipingNodeOwner </reference/Piping/PipingNodeOwner>`.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram704.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Node
+            ID="pipingNode1"
+            Type="process">
+          ...
+        </Node>
+      
+
+
+.. _dexpi-Piping-PipingNode-NominalDiameterNumericalValueRepresentation:
+
+NominalDiameterNumericalValueRepresentation
+===========================================
+
+.. rubric:: Attribute (data)
+
+
+A readable representation of the numerical value of the nominal diameter of the :doc:`PipingNode </reference/Piping/PipingNode>`, without any type or unit of measure.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `NOMINAL DIAMETER NUMERICAL VALUE REPRESENTATION ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/NominalDiameterNumericalValueRepresentationAssignmentClass>`__
+
+   Name
+       NominalDiameterNumericalValueRepresentationAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/NominalDiameterNumericalValueRepresentationAssignmentClass <http://sandbox.dexpi.org/rdl/NominalDiameterNumericalValueRepresentationAssignmentClass>`__
+
+.. admonition:: example
+
+   "25" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Node
+            ID="pipingNode1"
+            Type="process">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="NominalDiameterNumericalValueRepresentationAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/NominalDiameterNumericalValueRepresentationAssignmentClass"
+              Format="string"
+              Value="25" />
+            ...
+          </GenericAttributes>
+          ...
+        </Node>
+      
+
+
+.. _dexpi-Piping-PipingNode-NominalDiameterRepresentation:
+
+NominalDiameterRepresentation
+=============================
+
+.. rubric:: Attribute (data)
+
+
+A readable representation of the nominal diameter of the :doc:`PipingNode </reference/Piping/PipingNode>`. It normally contains a numerical value and a type or unit of measure.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `NOMINAL DIAMETER REPRESENTATION ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/NominalDiameterRepresentationAssignmentClass>`__
+
+   Name
+       NominalDiameterRepresentationAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/NominalDiameterRepresentationAssignmentClass <http://sandbox.dexpi.org/rdl/NominalDiameterRepresentationAssignmentClass>`__
+
+.. admonition:: example
+
+   "DN 25" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Node
+            ID="pipingNode1"
+            Type="process">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="NominalDiameterRepresentationAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/NominalDiameterRepresentationAssignmentClass"
+              Format="string"
+              Value="DN 25" />
+            ...
+          </GenericAttributes>
+          ...
+        </Node>
+      
+
+
+.. _dexpi-Piping-PipingNode-NominalDiameterStandard:
+
+NominalDiameterStandard
+=======================
+
+.. rubric:: Attribute (data)
+
+
+The nominal diameter of the :doc:`PipingNode </reference/Piping/PipingNode>`, given as a reference to a nominal diameter standard and value.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NominalDiameterStandardClassification </reference/Enumerations/NominalDiameterStandardClassification>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for enumeration values <proteus-concept-dexpi-generic-attribute-enumeration>`.
+
+   RDL reference
+       `NOMINAL DIAMETER STANDARD SPECIALIZATION <http://sandbox.dexpi.org/rdl/NominalDiameterStandardSpecialization>`__
+
+   Name
+       NominalDiameterStandardSpecialization
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/NominalDiameterStandardSpecialization <http://sandbox.dexpi.org/rdl/NominalDiameterStandardSpecialization>`__
+
+.. admonition:: example
+
+   DN 25 (DIN 2448) (:ref:`NominalDiameterStandardClassification::Din2448ObjectDn25 <dexpi-Enumerations-NominalDiameterStandardClassification-Din2448ObjectDn25>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Node
+            ID="pipingNode1"
+            Type="process">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="NominalDiameterStandardSpecialization"
+              AttributeURI="http://sandbox.dexpi.org/rdl/NominalDiameterStandardSpecialization"
+              Format="anyURI"
+              Value="Din2448ObjectDn25"
+              ValueURI="http://sandbox.dexpi.org/rdl/Din2448ObjectDn25" />
+            ...
+          </GenericAttributes>
+          ...
+        </Node>
+      
+
+
+.. _dexpi-Piping-PipingNode-NominalDiameterTypeRepresentation:
+
+NominalDiameterTypeRepresentation
+=================================
+
+.. rubric:: Attribute (data)
+
+
+A readable representation of the type or unit of measure of the nominal diameter of the :doc:`PipingNode </reference/Piping/PipingNode>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `NOMINAL DIAMETER TYPE REPRESENTATION ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/NominalDiameterTypeRepresentationAssignmentClass>`__
+
+   Name
+       NominalDiameterTypeRepresentationAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/NominalDiameterTypeRepresentationAssignmentClass <http://sandbox.dexpi.org/rdl/NominalDiameterTypeRepresentationAssignmentClass>`__
+
+.. admonition:: example
+
+   "DN" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Node
+            ID="pipingNode1"
+            Type="process">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="NominalDiameterTypeRepresentationAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/NominalDiameterTypeRepresentationAssignmentClass"
+              Format="string"
+              Value="DN" />
+            ...
+          </GenericAttributes>
+          ...
+        </Node>
+      
+

@@ -1,0 +1,162 @@
+================
+PipingConnection
+================
+
+Overview
+========
+
+.. rubric:: Abstract class
+
+An elementary connection between two piping items.
+
+.. image:: PipingConnection.*
+
+
+.. rubric:: Subtypes
+
+* :doc:`DirectPipingConnection </reference/Piping/DirectPipingConnection>`
+
+* :doc:`Pipe </reference/Piping/Pipe>`
+
+.. rubric:: Attributes (reference)
+
++----------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+| Name                                                                                   | Multiplicity | Type                                                                                   |
++========================================================================================+==============+========================================================================================+
+| :ref:`SourceItem <dexpi-Piping-PipingConnection-SourceItem>`                           | 0..1         | :doc:`PipingSourceItem </reference/Piping/PipingSourceItem>`                           |
++----------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+| :ref:`SourceNode <dexpi-Piping-PipingConnection-SourceNode>`                           | 0..1         | :doc:`PipingNode </reference/Piping/PipingNode>`                                       |
++----------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+| :ref:`TargetItem <dexpi-Piping-PipingConnection-TargetItem>`                           | 0..1         | :doc:`PipingTargetItem </reference/Piping/PipingTargetItem>`                           |
++----------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+| :ref:`TargetNode <dexpi-Piping-PipingConnection-TargetNode>`                           | 0..1         | :doc:`PipingNode </reference/Piping/PipingNode>`                                       |
++----------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   Implementation is subclass-specific.
+
+.. admonition:: example
+
+   As :doc:`PipingConnection </reference/Piping/PipingConnection>` is abstract, we consider :doc:`Pipe </reference/Piping/Pipe>` as an arbitrary concrete subclass.
+
+   .. image:: /diagrams/diagram687.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704">
+          ...
+          <!--
+            Only  a <CenterLine> whose parent is a <PipingNetworkSegment>
+            implements a DEXPI Pipe.
+          -->
+          <CenterLine DOTS123="DOTS123">
+            ...
+          </CenterLine>
+          ...
+        </PipingNetworkSegment>
+      
+
+
+.. _dexpi-Piping-PipingConnection-SourceItem:
+
+SourceItem
+==========
+
+.. rubric:: Attribute (reference)
+
+
+The :doc:`PipingSourceItem </reference/Piping/PipingSourceItem>` at which the :doc:`PipingConnection </reference/Piping/PipingConnection>` starts.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`PipingSourceItem </reference/Piping/PipingSourceItem>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   Implementation is subclass-specific.
+
+
+.. _dexpi-Piping-PipingConnection-SourceNode:
+
+SourceNode
+==========
+
+.. rubric:: Attribute (reference)
+
+
+The :doc:`PipingNode </reference/Piping/PipingNode>` at which the :doc:`PipingConnection </reference/Piping/PipingConnection>` starts. The SourceNode must belong to the :ref:`SourceItem <dexpi-Piping-PipingConnection-SourceItem>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`PipingNode </reference/Piping/PipingNode>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   Implementation is subclass-specific.
+
+
+.. _dexpi-Piping-PipingConnection-TargetItem:
+
+TargetItem
+==========
+
+.. rubric:: Attribute (reference)
+
+
+The :doc:`PipingTargetItem </reference/Piping/PipingTargetItem>` at which the :doc:`PipingConnection </reference/Piping/PipingConnection>` starts.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`PipingTargetItem </reference/Piping/PipingTargetItem>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   Implementation is subclass-specific.
+
+
+.. _dexpi-Piping-PipingConnection-TargetNode:
+
+TargetNode
+==========
+
+.. rubric:: Attribute (reference)
+
+
+The :doc:`PipingNode </reference/Piping/PipingNode>` at which the :doc:`PipingConnection </reference/Piping/PipingConnection>` ends. The TargetNode must belong to the :ref:`TargetItem <dexpi-Piping-PipingConnection-TargetItem>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`PipingNode </reference/Piping/PipingNode>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   Implementation is subclass-specific.
+

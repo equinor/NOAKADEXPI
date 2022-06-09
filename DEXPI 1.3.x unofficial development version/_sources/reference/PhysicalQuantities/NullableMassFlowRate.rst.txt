@@ -1,0 +1,32 @@
+====================
+NullableMassFlowRate
+====================
+
+Overview
+========
+
+.. rubric:: Abstract data type
+
+:doc:`NullableMassFlowRate </reference/PhysicalQuantities/NullableMassFlowRate>` is a :ref:`simple physical quantity type <dexpi-concept-simple-physical-quantity-type>` for the dimension MT\ :sup:`-1`. :doc:`NullableMassFlowRate </reference/PhysicalQuantities/NullableMassFlowRate>` is abstract and has two concrete subtypes:
+
+* a :doc:`MassFlowRate </reference/PhysicalQuantities/MassFlowRate>` is an :ref:`actual value <dexpi-concept-actual-value>` for a physical quantity with a numerical value and a unit of measurement;
+
+* a :doc:`NullMassFlowRate </reference/PhysicalQuantities/NullMassFlowRate>` is a :ref:`null value <dexpi-concept-null-value>` that explicitly indicates the absence of an actual physical quantity.
+
+.. image:: NullableMassFlowRate.*
+
+
+.. rubric:: Subtypes
+
+* :doc:`MassFlowRate </reference/PhysicalQuantities/MassFlowRate>`
+
+* :doc:`NullMassFlowRate </reference/PhysicalQuantities/NullMassFlowRate>`
+
+.. admonition:: proteus
+
+   All data attributes with type :doc:`NullableMassFlowRate </reference/PhysicalQuantities/NullableMassFlowRate>` are implemented as :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+.. admonition:: example
+
+   See the examples for :doc:`MassFlowRate </reference/PhysicalQuantities/MassFlowRate>` and :doc:`NullMassFlowRate </reference/PhysicalQuantities/NullMassFlowRate>`.
+

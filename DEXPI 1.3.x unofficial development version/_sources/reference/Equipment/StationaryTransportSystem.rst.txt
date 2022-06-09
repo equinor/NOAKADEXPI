@@ -1,0 +1,131 @@
+=========================
+StationaryTransportSystem
+=========================
+
+Overview
+========
+
+.. rubric:: Class
+
+A transport system that is intended to transport, store or load/unload material and that, as a whole, remains in one place.
+
+.. image:: StationaryTransportSystem.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Equipment </reference/Equipment/Equipment>`
+
+.. rubric:: Subtypes
+
+* :doc:`Conveyor </reference/Equipment/Conveyor>`
+
+* :doc:`CustomStationaryTransportSystem </reference/Equipment/CustomStationaryTransportSystem>`
+
+* :doc:`Lift </reference/Equipment/Lift>`
+
+* :doc:`LoadingUnloadingSystem </reference/Equipment/LoadingUnloadingSystem>`
+
+.. rubric:: Attributes (data)
+
++------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------+
+| Name                                                                                                       | Multiplicity | Type                                                                                           |
++============================================================================================================+==============+================================================================================================+
+| :ref:`DesignPower <dexpi-Equipment-StationaryTransportSystem-DesignPower>`                                 | 0..1         | :doc:`NullablePower </reference/PhysicalQuantities/NullablePower>`                             |
++------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `STATIONARY TRANSPORT SYSTEM <http://sandbox.dexpi.org/rdl/StationaryTransportSystem>`__
+
+   ComponentClass
+       StationaryTransportSystem
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/StationaryTransportSystem <http://sandbox.dexpi.org/rdl/StationaryTransportSystem>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram468.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="stationaryTransportSystem1"
+            ComponentClass="StationaryTransportSystem"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/StationaryTransportSystem" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-StationaryTransportSystem-DesignPower:
+
+DesignPower
+===========
+
+.. rubric:: Attribute (data)
+
+
+The power for which the :doc:`StationaryTransportSystem </reference/Equipment/StationaryTransportSystem>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullablePower </reference/PhysicalQuantities/NullablePower>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN POWER <http://sandbox.dexpi.org/rdl/DesignPower>`__
+
+   Name
+       DesignPower
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignPower <http://sandbox.dexpi.org/rdl/DesignPower>`__
+
+.. admonition:: example
+
+   The instance stationaryTransportSystem1 represents a :doc:`StationaryTransportSystem </reference/Equipment/StationaryTransportSystem>` with a :ref:`DesignPower <dexpi-Equipment-StationaryTransportSystem-DesignPower>` of 500.0 kW.
+
+   .. image:: /diagrams/diagram469.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="stationaryTransportSystem1"
+            ComponentClass="StationaryTransportSystem"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/StationaryTransportSystem" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignPower"
+              AttributeURI="http://sandbox.dexpi.org/rdl/DesignPower"
+              Format="double"
+              Value="500.0"
+              Units="Kilowatt"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1330919" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+

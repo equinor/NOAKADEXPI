@@ -1,0 +1,102 @@
+==================================
+CustomRotationalFrequencyAttribute
+==================================
+
+Overview
+========
+
+.. rubric:: Class
+
+A :ref:`custom attribute <dexpi-concept-custom-attributes>` with :ref:`Value <dexpi-Customization-CustomRotationalFrequencyAttribute-Value>` type :doc:`NullableRotationalFrequency </reference/PhysicalQuantities/NullableRotationalFrequency>`.
+
+.. image:: CustomRotationalFrequencyAttribute.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`CustomAttribute </reference/Customization/CustomAttribute>`
+
+.. rubric:: Attributes (data)
+
++------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                       | Multiplicity | Type                                                                                                                                   |
++============================================================================================================+==============+========================================================================================================================================+
+| :ref:`Value <dexpi-Customization-CustomRotationalFrequencyAttribute-Value>`                                | 1            | :doc:`NullableRotationalFrequency </reference/PhysicalQuantities/NullableRotationalFrequency>`                                         |
++------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   :doc:`CustomRotationalFrequencyAttribute </reference/Customization/CustomRotationalFrequencyAttribute>` is implemented as a :ref:`custom generic attribute for physical quantities <proteus-concept-dexpi-custom-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `ROTATIONAL FREQUENCY <http://data.posccaesar.org/rdl/RDS354734>`__
+
+   Type
+       RotationalFrequency
+
+   TypeURI
+       `http://data.posccaesar.org/rdl/RDS354734 <http://data.posccaesar.org/rdl/RDS354734>`__
+
+.. admonition:: example
+
+   As :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>` is abstract, we consider :doc:`CustomEquipment </reference/Equipment/CustomEquipment>` as an arbitrary concrete subclass.
+
+   The :doc:`CustomEquipment </reference/Equipment/CustomEquipment>` customEquipment1 has a :doc:`CustomRotationalFrequencyAttribute </reference/Customization/CustomRotationalFrequencyAttribute>` with :ref:`AttributeName <dexpi-Customization-CustomAttribute-AttributeName>` "DesignRotationalSpeed" and an (arbitrary) :ref:`AttributeURI <dexpi-Customization-CustomAttribute-AttributeURI>` "http://www.example.org/29618b48f52ede"DOTANDSPACEHACKThe :ref:`Value <dexpi-Customization-CustomRotationalFrequencyAttribute-Value>` is 40 min\ :sup:`-1`.
+
+   .. image:: /diagrams/diagram28.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="customEquipment1"
+            ComponentClass="CustomEquipment"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/CustomEquipment" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiCustomAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignRotationalSpeed"
+              AttributeURI="http://www.example.org/29618b48f52ede"
+              Format="double"
+              Type="RotationalFrequency"
+              TypeURI="http://data.posccaesar.org/rdl/RDS354734"
+              Value="40"
+              Units="ReciprocalMinute"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS4316851589" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Customization-CustomRotationalFrequencyAttribute-Value:
+
+Value
+=====
+
+.. rubric:: Attribute (data)
+
+
+The value of the :doc:`CustomRotationalFrequencyAttribute </reference/Customization/CustomRotationalFrequencyAttribute>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`NullableRotationalFrequency </reference/PhysicalQuantities/NullableRotationalFrequency>`
+
+Redefines
+    :ref:`Value <dexpi-Customization-CustomAttribute-Value>` (inherited from :doc:`CustomAttribute </reference/Customization/CustomAttribute>`\ )
+
+.. admonition:: proteus
+
+   See implementation of :doc:`CustomRotationalFrequencyAttribute </reference/Customization/CustomRotationalFrequencyAttribute>`.
+
+.. admonition:: example
+
+   See the example for :doc:`CustomRotationalFrequencyAttribute </reference/Customization/CustomRotationalFrequencyAttribute>`.
+

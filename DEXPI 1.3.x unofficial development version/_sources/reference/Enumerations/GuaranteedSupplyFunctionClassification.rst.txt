@@ -1,0 +1,52 @@
+======================================
+GuaranteedSupplyFunctionClassification
+======================================
+
+Overview
+========
+
+.. rubric:: Enumeration
+
+.. image:: GuaranteedSupplyFunctionClassification.*
+
+
+.. rubric:: Literals
+
++--------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+-----------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                                           | Symbol                                                     | proteus#RDL Reference                                                                         | proteus#RDL URI                                                                                                         |
++================================================================================================================================+============================================================+===============================================================================================+=========================================================================================================================+
+| .. _dexpi-Enumerations-GuaranteedSupplyFunctionClassification-NULL:                                                            | :ref:`null <dexpi-concept-null-value>`                     |                                                                                               |                                                                                                                         |
+|                                                                                                                                |                                                            |                                                                                               |                                                                                                                         |
+| NULL                                                                                                                           |                                                            |                                                                                               |                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+-----------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| .. _dexpi-Enumerations-GuaranteedSupplyFunctionClassification-GuaranteedSupplyFunction:                                        | guaranteed supply                                          | `GUARANTEED SUPPLY FUNCTION <http://sandbox.dexpi.org/rdl/GuaranteedSupplyFunction>`__        | `http://sandbox.dexpi.org/rdl/GuaranteedSupplyFunction <http://sandbox.dexpi.org/rdl/GuaranteedSupplyFunction>`__       |
+|                                                                                                                                |                                                            |                                                                                               |                                                                                                                         |
+| GuaranteedSupplyFunction                                                                                                       |                                                            |                                                                                               |                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+-----------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| .. _dexpi-Enumerations-GuaranteedSupplyFunctionClassification-NonGuaranteedSupplyFunction:                                     | no guaranteed supply                                       | `NON GUARANTEED SUPPLY FUNCTION <http://sandbox.dexpi.org/rdl/NonGuaranteedSupplyFunction>`__ | `http://sandbox.dexpi.org/rdl/NonGuaranteedSupplyFunction <http://sandbox.dexpi.org/rdl/NonGuaranteedSupplyFunction>`__ |
+|                                                                                                                                |                                                            |                                                                                               |                                                                                                                         |
+| NonGuaranteedSupplyFunction                                                                                                    |                                                            |                                                                                               |                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+-----------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   All data attributes with type :doc:`GuaranteedSupplyFunctionClassification </reference/Enumerations/GuaranteedSupplyFunctionClassification>` are implemented as :ref:`DEXPI generic attributes for enumeration values <proteus-concept-dexpi-generic-attribute-enumeration>`. In a ``<GenericAttribute>`` element, the :doc:`GuaranteedSupplyFunctionClassification </reference/Enumerations/GuaranteedSupplyFunctionClassification>` literal is given by means of its :ref:`RDL reference <proteus-concept-rdl-reference>` in the table above. The ``Value`` attribute of the element is the name of the RDL reference in camel-case; it equals the name of the literal. The ``ValueURI`` attribute of the element is the URI of the RDL reference.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram55.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Format="anyURI"
+          Value="GuaranteedSupplyFunction"
+          ValueURI="http://sandbox.dexpi.org/rdl/GuaranteedSupplyFunction" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have a ``Name`` and an ``AttributeURI`` attribute. They depend on the data type attribute of the DEXPI class that owns the instance :ref:`GuaranteedSupplyFunction <dexpi-Enumerations-GuaranteedSupplyFunctionClassification-GuaranteedSupplyFunction>`. For a complete example, see the attribute :ref:`GuaranteedSupplyFunction <dexpi-Instrumentation-ProcessInstrumentationFunction-GuaranteedSupplyFunction>` of the DEXPI class :doc:`ProcessInstrumentationFunction </reference/Instrumentation/ProcessInstrumentationFunction>`.
+

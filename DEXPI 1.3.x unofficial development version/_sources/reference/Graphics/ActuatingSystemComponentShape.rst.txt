@@ -1,0 +1,16 @@
+=============================
+ActuatingSystemComponentShape
+=============================
+
+Overview
+========
+
+.. rubric:: Class
+
+.. image:: ActuatingSystemComponentShape.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Shape </reference/Graphics/Shape>`
+

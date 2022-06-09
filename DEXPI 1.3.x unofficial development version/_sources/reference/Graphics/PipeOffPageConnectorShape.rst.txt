@@ -1,0 +1,16 @@
+=========================
+PipeOffPageConnectorShape
+=========================
+
+Overview
+========
+
+.. rubric:: Class
+
+.. image:: PipeOffPageConnectorShape.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Shape </reference/Graphics/Shape>`
+

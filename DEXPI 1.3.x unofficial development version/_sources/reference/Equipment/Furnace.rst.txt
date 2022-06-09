@@ -1,0 +1,52 @@
+=======
+Furnace
+=======
+
+Overview
+========
+
+.. rubric:: Class
+
+A physical object that is intended to induce a reaction in a process fluid by heating it (from `http://data.posccaesar.org/rdl/RDS441134 <http://data.posccaesar.org/rdl/RDS441134>`__).
+
+.. image:: Furnace.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Heater </reference/Equipment/Heater>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `FURNACE <http://data.posccaesar.org/rdl/RDS441134>`__
+
+   ComponentClass
+       Furnace
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS441134 <http://data.posccaesar.org/rdl/RDS441134>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram297.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="furnace1"
+            ComponentClass="Furnace"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS441134" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+

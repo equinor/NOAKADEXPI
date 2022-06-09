@@ -1,0 +1,103 @@
+====
+Mass
+====
+
+Overview
+========
+
+.. rubric:: Data type
+
+An :ref:`actual value <dexpi-concept-actual-value>` for a physical quantity of type :doc:`NullableMass </reference/PhysicalQuantities/NullableMass>`, i.e., a physical quantity that has a numerical value and a unit of measurement.
+
+.. image:: Mass.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`NullableMass </reference/PhysicalQuantities/NullableMass>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------+
+| Name                                                                       | Multiplicity | Type                                                                               |
++============================================================================+==============+====================================================================================+
+| :ref:`Unit <dexpi-PhysicalQuantities-Mass-Unit>`                           | 1            | :doc:`MassUnit </reference/PhysicalQuantities/MassUnit>`                           |
++----------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------+
+| :ref:`Value <dexpi-PhysicalQuantities-Mass-Value>`                         | 1            | :doc:`Double </reference/DataTypes/Double>`                                        |
++----------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   All data attributes with type :doc:`NullableMass </reference/PhysicalQuantities/NullableMass>` (the base type of :doc:`Mass </reference/PhysicalQuantities/Mass>`\ ) are implemented as :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+.. admonition:: example
+
+   The instance mass1 represents a :doc:`Mass </reference/PhysicalQuantities/Mass>` of 900.0 kg.
+
+   .. image:: /diagrams/diagram584.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Format="double"
+          Value="900.0"
+          Units="Kilogram"
+          UnitsURI="http://data.posccaesar.org/rdl/RDS1328669" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have a ``Name`` and an ``AttributeURI`` attribute. They depend on the data type attribute of the DEXPI class that owns the instance mass1. For a complete example, see the attribute :ref:`UpperLimitDesignLoad <dexpi-Equipment-BatchWeigher-UpperLimitDesignLoad>` of the DEXPI class :doc:`BatchWeigher </reference/Equipment/BatchWeigher>`.
+
+
+.. _dexpi-PhysicalQuantities-Mass-Unit:
+
+Unit
+====
+
+.. rubric:: Attribute (data)
+
+
+The unit of measurement of the :doc:`Mass </reference/PhysicalQuantities/Mass>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`MassUnit </reference/PhysicalQuantities/MassUnit>`
+
+.. admonition:: proteus
+
+   See implementation of :doc:`Mass </reference/PhysicalQuantities/Mass>`.
+
+.. admonition:: example
+
+   See example for :doc:`Mass </reference/PhysicalQuantities/Mass>`.
+
+
+.. _dexpi-PhysicalQuantities-Mass-Value:
+
+Value
+=====
+
+.. rubric:: Attribute (data)
+
+
+The numerical value of the :doc:`Mass </reference/PhysicalQuantities/Mass>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Double </reference/DataTypes/Double>`
+
+.. admonition:: proteus
+
+   See implementation of :doc:`Mass </reference/PhysicalQuantities/Mass>`.
+
+.. admonition:: example
+
+   See example for :doc:`Mass </reference/PhysicalQuantities/Mass>`.
+

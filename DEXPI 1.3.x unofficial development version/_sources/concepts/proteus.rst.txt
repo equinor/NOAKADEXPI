@@ -1,0 +1,353 @@
+================================
+Implementation in Proteus Schema
+================================
+
+The exchange format for DEXPI |DEXPI_VERSION| is :ref:`Proteus Schema <dexpi-glossary-proteus>` |PROTEUS_VERSION| (see |PROTEUS_WEB|). To this end, there is a mapping from each type and attribute in the :doc:`DEXPI Information Model </reference/index>` to an XML pattern. Even if there are special cases due to certain design decisions in Proteus Schema, some general guidelines for the DEXPI-Proteus mapping apply.
+
+
+
+Primitive Types
+---------------
+
+Most primitive types in DEXPI have an equivalent XML data type (see `XML Schema Part 2: Datatypes Second Edition <https://www.w3.org/TR/xmlschema-2>`__). Values of these primitive types are serialized as specified by XML Schema. For example, see :doc:`String </reference/DataTypes/String>` or :doc:`Double </reference/DataTypes/Double>`.
+
+
+.. _proteus-concept-xml-element-with-rdl-abstract:
+
+.. _proteus-concept-xml-element-with-rdl:
+
+
+Classes
+-------
+
+Most classes that are used in the :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>` are mapped to an XML tag name defined by Proteus Schema and to an RDL reference. Instances of these classes are serialized as an XML element with the appropriate tag name. The RDL reference is given using the ``ComponentClass`` and ``ComponentClassURI`` XML attributes.
+
+.. admonition:: technical
+
+  The mapping is strictly not to tag names, but to the `complex XML types <https://www.w3.org/TR/xmlschema-1/#Complex_Type_Definitions>`__ defined in Proteus Schema. As there is no ambiguity, we use the tag names to describe the mapping.
+  
+
+.. admonition:: example
+
+  In case of the DEXPI class :doc:`Pump </reference/Equipment/Pump>`, the tag name is ``<Equipment>`` and the RDL reference is `PUMP <http://data.posccaesar.org/rdl/RDS327239>`__. Thus, an instance ``pump1`` is serialized as follows:
+
+  .. code-block:: xml
+
+    <Equipment
+        ID="pump1"
+        ComponentClass="Pump"
+        ComponentClassURI="http://data.posccaesar.org/rdl/RDS327239" DOTS123="DOTS123">
+      ...
+    </Equipment>
+
+
+Predefined Data Attributes
+--------------------------
+
+Most predefined data attributes in the :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`, i.e., those data attributes that are not :ref:`custom attributes <dexpi-concept-custom-attributes>`, are implemented as Proteus ``<GenericAttribute>`` elements.
+
+.. _proteus-concept-dexpi-generic-attribute:
+
+``<GenericAttribute>`` elements are grouped in a ``<GenericAttributes>`` element (note the plural-``s``). According to Proteus Schema, an arbitrary number of ``<GenericAttributes>`` elements can be used as children of several other Proteus elements (e.g., of an ``<Equipment>`` element). The required ``Number`` attribute of a ``<GenericAttributes>`` element gives the number of ``<GenericAttribute>`` elements. The optional ``Set`` attribute can be an arbitrary string.
+
+In order to give values for the predefined data attributes, the ``Set`` attribute must have the value ``"DexpiAttributes"``. For any parent element, there must be at most one ``<GenericAttributes>`` child with ``Set="DexpiAttributes"``. This ``<GenericAttributes>`` element must not contain other content than the predefined data attributes according to this specification.
+
+The DEXPI specification does not forbid other ``<GenericAttributes>`` containers. Note that ``Set="CustomAttributes"`` is also reserved by DEXPI.
+
+.. admonition:: example
+
+  This ``<Equipment>`` element for a :doc:`Pump </reference/Equipment/Pump>` has an ``<GenericAttributes>`` element for predefined DEXPI data attributes and another ``<GenericAttributes>`` element for arbitrary content.
+
+  .. code-block:: xml
+
+    <Equipment
+        ID="pump1"
+        ComponentClass="Pump"
+        ComponentClassURI="http://data.posccaesar.org/rdl/RDS327239" DOTS123="DOTS123">
+      ...
+      <GenericAttributes Number=”3” Set=”DexpiAttributes”>
+        <!-- only content according to this specification -->
+        <GenericAttribute DOTS123="DOTS123"/>
+        <GenericAttribute DOTS123="DOTS123"/>
+        <GenericAttribute DOTS123="DOTS123"/>
+      </GenericAttributes>
+      <GenericAttributes Number=”2” Set=”SomeOtherContent”>
+        <!-- arbitrary content -->
+        <GenericAttribute DOTS123="DOTS123"/>
+        <GenericAttribute DOTS123="DOTS123"/>
+      </GenericAttributes>
+      ...
+    </Equipment>
+
+
+
+The XML attributes to be used for each ``<GenericAttribute>`` element depend on the type of the data attribute.
+
+.. _proteus-concept-dexpi-generic-attribute-enumeration:
+
+
+Enumerations
+............
+
+For enumeration types, the ``<GenericAttribute>`` element must have these XML attributes:
+
+================    ==============================================================================
+XML Attribute       Description
+================    ==============================================================================
+``Name``            RDL reference for attribute: name in camel-case
+``AttributeURI``    RDL reference for attribute: URI
+``Value``           RDL reference for enumeration literal: name in camel-case; must be omitted to transfer an enumeration literal that represents a null value
+``ValueURI``        RDL reference for enumeration literal: URI; must be omitted to transfer an enumeration literal that represents a null value
+``Format``          fixed value ``"anyURI"``
+================    ==============================================================================
+
+.. admonition:: example
+
+  Consider the attribute :ref:`Location <dexpi-Instrumentation-ProcessInstrumentationFunction-Location>` of :doc:`ProcessInstrumentationFunction </reference/Instrumentation/ProcessInstrumentationFunction>`. The RDL reference is ``LOCATION SPECIALIZATION`` at http://sandbox.dexpi.org/rdl/LocationSpecialization\ .
+
+  Attribute value :ref:`Field <dexpi-Enumerations-LocationClassification-Field>`; the RDL reference for this literal is ``FIELD`` at http://data.posccaesar.org/rdl/RDS409545541\ .
+  
+  .. code-block:: xml
+
+    <GenericAttribute
+      Name="LocationSpecialization"
+      AttributeURI="http://sandbox.dexpi.org/rdl/LocationSpecialization"
+      Value="Field"
+      ValueURI="http://data.posccaesar.org/rdl/RDS409545541"
+      Format="anyURI"/>
+        
+  Attribute value :ref:`NULL <dexpi-Enumerations-LocationClassification-NULL>` (null value of :doc:`LocationClassification </reference/Enumerations/LocationClassification>`).
+        
+  .. code-block:: xml
+  
+    <GenericAttribute
+      Name="LocationSpecialization"
+      AttributeURI="http://sandbox.dexpi.org/rdl/LocationSpecialization"
+      Format="anyURI"/>
+
+
+.. _proteus-concept-dexpi-generic-attribute-integer:
+
+Integers
+........
+
+For values of type :doc:`NullableInteger </reference/DataTypes/NullableInteger>`, the ``<GenericAttribute>`` element must have these XML attributes:
+
+================    ==============================================================================
+XML Attribute       Description
+================    ==============================================================================
+``Name``            RDL reference for attribute: name in camel-case
+``AttributeURI``    RDL reference for attribute: URI
+``Value``           integer value; must be omitted to transfer the null value :doc:`NULL_INTEGER </reference/DataTypes/NULL_INTEGER>`
+``Format``          fixed value ``"integer"``
+================    ==============================================================================
+
+.. admonition:: example
+
+  Consider the attribute :ref:`NumberOfTubes <dexpi-Equipment-TubeBundle-NumberOfTubes>` of :doc:`TubeBundle </reference/Equipment/TubeBundle>`. The RDL reference is ``NUMBER OF TUBES`` at http://data.posccaesar.org/rdl/RDS363959\ .
+
+  Attribute value 36:
+  
+  .. code-block:: xml
+
+    <GenericAttribute
+      Name="NumberOfTubes"
+      AttributeURI="http://data.posccaesar.org/rdl/RDS363959"
+      Value="36"
+      Format="integer"/>
+        
+  Attribute value :doc:`NULL_INTEGER </reference/DataTypes/NULL_INTEGER>`:
+        
+  .. code-block:: xml
+  
+    <GenericAttribute
+      Name="NumberOfTubes"
+      AttributeURI="http://data.posccaesar.org/rdl/RDS363959"
+      Format="integer"/>
+
+
+.. _proteus-concept-dexpi-generic-attribute-multi-language-string:
+
+Multi-Language Strings
+......................
+
+For values of type :doc:`MultiLanguageString </reference/DataTypes/MultiLanguageString>`, a ``<GenericAttribute>`` element is used for each :doc:`SingleLanguageString </reference/DataTypes/SingleLanguageString>`. Each ``<GenericAttribute>`` element must have these attributes:
+
+================    =========================================================================================================================================================
+XML Attribute       Description
+================    =========================================================================================================================================================
+``Name``            RDL reference for attribute: name in camel-case
+``AttributeURI``    RDL reference for attribute: URI
+``Value``           :ref:`Value <dexpi-DataTypes-SingleLanguageString-Value>` of the :doc:`SingleLanguageString </reference/DataTypes/SingleLanguageString>`; must be omitted to transfer the null value :doc:`NULL_STRING </reference/DataTypes/NULL_STRING>`
+``Format``          fixed value ``"string"``
+``Language``        :ref:`Language <dexpi-DataTypes-SingleLanguageString-Language>` of the :doc:`SingleLanguageString </reference/DataTypes/SingleLanguageString>`; must be omitted to transfer the null value :doc:`NULL_STRING </reference/DataTypes/NULL_STRING>`
+================    =========================================================================================================================================================
+
+For an example, see attribute :ref:`ChamberDescription <dexpi-Equipment-Chamber-ChamberDescription>` of :doc:`Chamber </reference/Equipment/Chamber>`.
+
+
+.. _proteus-concept-dexpi-generic-attribute-physical-quantity:
+
+Physical Quantities
+...................
+
+For physical quantities, the ``<GenericAttribute>`` element must have these XML attributes:
+
+================    ====================================================================================
+XML Attribute       Description
+================    ====================================================================================
+``Name``            RDL reference for attribute: name in camel-case
+``AttributeURI``    RDL reference for attribute: URI
+``Value``           numeric value of the physical quantity; must be omitted to transfer a null value 
+``Units``           RDL reference for unit: name in camel-case; must be omitted to transfer a null value 
+``UnitsURI``        RDL reference for unit: URI; must be omitted to transfer a null value 
+``Format``          fixed value ``"double"``
+================    ====================================================================================
+
+.. admonition:: example
+
+  Consider the attribute :ref:`InsulationThickness <dexpi-Piping-PipeFitting-InsulationThickness>` of :doc:`PipeFitting </reference/Piping/PipeFitting>`. The RDL reference is ``INSULATION THICKNESS`` at http://data.posccaesar.org/rdl/RDS4238040\ .
+
+  Attribute value 40 mm: The RDL reference for :ref:`Millimetre <dexpi-PhysicalQuantities-LengthUnit-Millimetre>` is ``MILLIMETRE`` at http://data.posccaesar.org/rdl/RDS1357739\ .
+  
+  .. code-block:: xml
+
+    <GenericAttribute
+      Name="InsulationThickness"
+      AttributeURI="http://data.posccaesar.org/rdl/RDS4238040"
+      Value="40"
+      Units="Millimetre"
+      UnitsURI="http://data.posccaesar.org/rdl/RDS1357739"
+      Format="double"/>
+        
+  Attribute value :doc:`NULL_LENGTH </reference/PhysicalQuantities/NULL_LENGTH>`:
+        
+  .. code-block:: xml
+  
+    <GenericAttribute
+      Name="InsulationThickness"
+      AttributeURI="http://data.posccaesar.org/rdl/RDS4238040"
+      Format="double"/>
+
+           
+.. _proteus-concept-dexpi-generic-attribute-string:
+
+Strings
+.......
+
+For values of type :doc:`NullableString </reference/DataTypes/NullableString>`, the ``<GenericAttribute>`` element must have these XML attributes:
+
+================    ==============================================================================
+XML Attribute       Description
+================    ==============================================================================
+``Name``            RDL reference for attribute: name in camel-case
+``AttributeURI``    RDL reference for attribute: URI
+``Value``           integer value; must be omitted to transfer the null value :doc:`NULL_STRING </reference/DataTypes/NULL_STRING>`
+``Format``          fixed value ``"string"``
+================    ==============================================================================
+
+.. admonition:: example
+
+  Consider the attribute :ref:`LineNumber <dexpi-Piping-PipingNetworkSystem-LineNumber>` of :doc:`PipingNetworkSystem </reference/Piping/PipingNetworkSystem>`. The RDL reference is ``LINE NUMBER ASSIGNMENT CLASS`` at http://sandbox.dexpi.org/rdl/LineNumberAssignmentClass\ .
+
+  Attribute value "47121":
+  
+  .. code-block:: xml
+
+    <GenericAttribute
+      Name="LineNumberAssignmentClass"
+      AttributeURI="http://sandbox.dexpi.org/rdl/LineNumberAssignmentClass"
+      Value="47121"
+      Format="string"/>
+        
+  Attribute value :doc:`NULL_STRING </reference/DataTypes/NULL_STRING>`:
+        
+  .. code-block:: xml
+  
+    <GenericAttribute
+      Name="LineNumberAssignmentClass"
+      AttributeURI="http://sandbox.dexpi.org/rdl/LineNumberAssignmentClass"
+      Format="string"/>
+
+
+
+.. _proteus-concept-dexpi-generic-attribute-any-uri:
+
+URIs
+....
+
+For values of type :doc:`NullableAnyURI </reference/DataTypes/NullableAnyURI>`, the ``<GenericAttribute>`` element must have these XML attributes:
+
+================    ==============================================================================
+XML Attribute       Description
+================    ==============================================================================
+``Name``            RDL reference for attribute: name in camel-case
+``AttributeURI``    RDL reference for attribute: URI
+``Value``           URI value; must be omitted to transfer the null value :doc:`NULL_ANY_URI </reference/DataTypes/NULL_ANY_URI>`
+``Format``          fixed value ``"anyURI"``
+================    ==============================================================================
+
+.. admonition:: example
+
+  Consider the attribute :ref:`TypeURI <dexpi-Customization-CustomObject-TypeURI>` of :doc:`CustomObject </reference/Customization/CustomObject>`. The RDL reference is ``TYPE URI ASSIGNMENT CLASS`` at http://sandbox.dexpi.org/rdl/TypeURIAssignmentClass\ .
+
+  Attribute value ``http://www.example.org/MicroImpedancePump``:
+  
+  .. code-block:: xml
+
+    <GenericAttribute
+      Name="TypeURIAssignmentClass"
+      AttributeURI="http://sandbox.dexpi.org/rdl/TypeURIAssignmentClass"
+      Value="http://www.example.org/MicroImpedancePump"
+      Format="anyURI"/>
+        
+  Attribute value :doc:`NULL_ANY_URI </reference/DataTypes/NULL_ANY_URI>`:
+        
+  .. code-block:: xml
+  
+    <GenericAttribute
+      Name="TypeURIAssignmentClass"
+      AttributeURI="http://sandbox.dexpi.org/rdl/TypeURIAssignmentClass"
+      Format="anyURI"/>
+
+
+
+
+.. _proteus-concept-dexpi-custom-generic-attribute:
+
+Custom Data Attributes
+----------------------
+
+All custom attributes are implemented using ``<GenericAttribute>`` elements. The same rules as for predefined attributes apply, with the following modifications:
+
+- Custom attributes are grouped in a ``<GenericAttributes>`` element with ``Set="CustomAttributes"``.
+
+.. _proteus-concept-dexpi-custom-generic-attribute-any-uri:
+
+.. _proteus-concept-dexpi-custom-generic-attribute-integer:
+
+.. _proteus-concept-dexpi-custom-generic-attribute-physical-quantity:
+
+.. _proteus-concept-dexpi-custom-generic-attribute-multi-language-string:
+
+.. _proteus-concept-dexpi-custom-generic-attribute-string:
+
+- Each ``<GenericAttribute>`` element needs a reference to the type of the attribute. To this end, each subclass of :doc:`CustomAttribute </reference/Customization/CustomAttribute>` is mapped to an RDL reference. This RDL reference is given in the mandatory ``Type`` (RDL label in camel case) and ``TypeURI`` attributes of each ``<GenericAttribute>`` element. For Proteus XML examples, see the subclasses of :doc:`CustomAttribute </reference/Customization/CustomAttribute>`.
+ 
+.. _proteus-concept-reference-property-association:
+
+Reference Attributes
+--------------------
+
+Most reference attributes are implemented using ``<Association>`` elements.
+
+.. _proteus-concept-composition-property-xml-child:
+
+Composition Attributes
+----------------------
+
+Most composition attributes correspond to a parent-child relation in the XML hierarchy.
+
+..
+  _proteus-concept-rdl-reference:
+  TODO.

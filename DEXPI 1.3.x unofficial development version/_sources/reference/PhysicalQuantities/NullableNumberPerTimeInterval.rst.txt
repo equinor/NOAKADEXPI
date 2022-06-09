@@ -1,0 +1,36 @@
+=============================
+NullableNumberPerTimeInterval
+=============================
+
+Overview
+========
+
+.. rubric:: Abstract data type
+
+A physical quantity of dimension T\ :sup:`-1` (inherited from :doc:`NullableFrequency </reference/PhysicalQuantities/NullableFrequency>`\ ) for the application type *number per time interval*. :doc:`NullableNumberPerTimeInterval </reference/PhysicalQuantities/NullableNumberPerTimeInterval>` is abstract and has two concrete subtypes:
+
+* a :doc:`NumberPerTimeInterval </reference/PhysicalQuantities/NumberPerTimeInterval>` is an :ref:`actual value <dexpi-concept-actual-value>` for a physical quantity with a numerical value and a unit of measurement;
+
+* a :doc:`NullNumberPerTimeInterval </reference/PhysicalQuantities/NullNumberPerTimeInterval>` is a :ref:`null value <dexpi-concept-null-value>` that explicitly indicates the absence of an actual physical quantity.
+
+.. image:: NullableNumberPerTimeInterval.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`NullableFrequency </reference/PhysicalQuantities/NullableFrequency>`
+
+.. rubric:: Subtypes
+
+* :doc:`NullNumberPerTimeInterval </reference/PhysicalQuantities/NullNumberPerTimeInterval>`
+
+* :doc:`NumberPerTimeInterval </reference/PhysicalQuantities/NumberPerTimeInterval>`
+
+.. admonition:: proteus
+
+   All data attributes with type :doc:`NullableNumberPerTimeInterval </reference/PhysicalQuantities/NullableNumberPerTimeInterval>` are implemented as :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+.. admonition:: example
+
+   See the examples for :doc:`NumberPerTimeInterval </reference/PhysicalQuantities/NumberPerTimeInterval>` and :doc:`NullNumberPerTimeInterval </reference/PhysicalQuantities/NullNumberPerTimeInterval>`.
+

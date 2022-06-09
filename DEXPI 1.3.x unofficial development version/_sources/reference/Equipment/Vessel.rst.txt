@@ -1,0 +1,267 @@
+======
+Vessel
+======
+
+Overview
+========
+
+.. rubric:: Class
+
+A container intended for storage and/or processing of fluids or solids.
+
+.. image:: Vessel.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Equipment </reference/Equipment/Equipment>`
+
+.. rubric:: Subtypes
+
+* :doc:`CustomVessel </reference/Equipment/CustomVessel>`
+
+* :doc:`PressureVessel </reference/Equipment/PressureVessel>`
+
+* :doc:`Silo </reference/Equipment/Silo>`
+
+* :doc:`Tank </reference/Equipment/Tank>`
+
+.. rubric:: Attributes (data)
+
++--------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+| Name                                                                                                               | Multiplicity | Type                                                                                               |
++====================================================================================================================+==============+====================================================================================================+
+| :ref:`NominalCapacity(Volume) <dexpi-Equipment-Vessel-NominalCapacity(Volume)>`                                    | 0..1         | :doc:`NullableVolume </reference/PhysicalQuantities/NullableVolume>`                               |
++--------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+
+.. rubric:: Attributes (reference)
+
++--------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+| Name                                                                                       | Multiplicity | Type                                                                                               |
++============================================================================================+==============+====================================================================================================+
+| :ref:`Agitator <dexpi-Equipment-Vessel-Agitator>`                                          | 0..1         | :doc:`Agitator </reference/Equipment/Agitator>`                                                    |
++--------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+| :ref:`ColumnSections <dexpi-Equipment-Vessel-ColumnSections>`                              | \*           | :doc:`TaggedColumnSection </reference/Equipment/TaggedColumnSection>`                              |
++--------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `VESSEL <http://data.posccaesar.org/rdl/RDS414674>`__
+
+   ComponentClass
+       Vessel
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS414674 <http://data.posccaesar.org/rdl/RDS414674>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram494.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="vessel1"
+            ComponentClass="Vessel"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS414674" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-Vessel-Agitator:
+
+Agitator
+========
+
+.. rubric:: Attribute (reference)
+
+
+The :doc:`Agitator </reference/Equipment/Agitator>` of the :doc:`Vessel </reference/Equipment/Vessel>`, if applicable.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`Agitator </reference/Equipment/Agitator>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   The attribute is implemented using :ref:`Proteus \<Association\> elements <proteus-concept-reference-property-association>`.
+
+   Association type for the attribute ower
+       ``"is the location of"``
+
+   Opposite association type
+       ``"is located in"``
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram495.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="vessel1"
+            ComponentClass="Vessel"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS414674" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="is the location of"
+            ItemID="agitator1" />
+          ...
+        <Equipment />
+        ...
+        <Equipment
+            ID="agitator1"
+            ComponentClass="Agitator"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS16045622" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="is located in"
+            ItemID="vessel1" />
+          ...
+        <Equipment />
+      
+
+
+.. _dexpi-Equipment-Vessel-ColumnSections:
+
+ColumnSections
+==============
+
+.. rubric:: Attribute (reference)
+
+
+The column sections of the :doc:`Vessel </reference/Equipment/Vessel>`, if applicable.
+
+Multiplicity
+    \*
+
+Type
+    :doc:`TaggedColumnSection </reference/Equipment/TaggedColumnSection>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   The attribute is implemented using :ref:`Proteus \<Association\> elements <proteus-concept-reference-property-association>`.
+
+   Association type for the attribute ower
+       ``"is the location of"``
+
+   Opposite association type
+       ``"is located in"``
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram496.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="vessel1"
+            ComponentClass="Vessel"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS414674" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="is the location of"
+            ItemID="taggedColumnSection1" />
+          ...
+        <Equipment />
+        ...
+        <Equipment
+            ID="taggedColumnSection1"
+            ComponentClass="ColumnSection"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/ColumnSection" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="is located in"
+            ItemID="vessel1" />
+          ...
+        <Equipment />
+      
+
+
+.. _dexpi-Equipment-Vessel-NominalCapacity(Volume):
+
+NominalCapacity(Volume)
+=======================
+
+.. rubric:: Attribute (data)
+
+
+The nominal volumetric capacity of the :doc:`Vessel </reference/Equipment/Vessel>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableVolume </reference/PhysicalQuantities/NullableVolume>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `NOMINAL CAPACITY VOLUME <http://sandbox.dexpi.org/rdl/NominalCapacityVolume>`__
+
+   Name
+       NominalCapacityVolume
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/NominalCapacityVolume <http://sandbox.dexpi.org/rdl/NominalCapacityVolume>`__
+
+.. admonition:: example
+
+   The instance vessel1 represents a :doc:`Vessel </reference/Equipment/Vessel>` with a :ref:`NominalCapacity(Volume) <dexpi-Equipment-Vessel-NominalCapacity(Volume)>` of 7.2 m\ :sup:`3`.
+
+   .. image:: /diagrams/diagram497.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="vessel1"
+            ComponentClass="Vessel"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS414674" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="NominalCapacityVolume"
+              AttributeURI="http://sandbox.dexpi.org/rdl/NominalCapacityVolume"
+              Format="double"
+              Value="7.2"
+              Units="MetreCubed"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1349099" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+

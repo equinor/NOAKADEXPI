@@ -1,0 +1,59 @@
+===============================
+SignalOffPageConnectorReference
+===============================
+
+Overview
+========
+
+.. rubric:: Abstract class
+
+A reference to a :doc:`SignalOffPageConnector </reference/Instrumentation/SignalOffPageConnector>`.
+
+.. image:: SignalOffPageConnectorReference.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`ConceptualObject </reference/DexpiModel/ConceptualObject>`
+
+* :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>`
+
+.. rubric:: Subtypes
+
+* :doc:`SignalOffPageConnectorObjectReference </reference/Instrumentation/SignalOffPageConnectorObjectReference>`
+
+* :doc:`SignalOffPageConnectorReferenceByNumber </reference/Instrumentation/SignalOffPageConnectorReferenceByNumber>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl-abstract>`. As :doc:`SignalOffPageConnectorReference </reference/Instrumentation/SignalOffPageConnectorReference>` is abstract, there is no RDL reference for the class itself;  the RDL reference depends on the concrete subclass.
+
+   Tag
+       ``<InformationFlowOffPageConnectorReference>``
+
+   ComponentClass
+       *depending on subclass*
+
+   ComponentClassURI
+       *depending on subclass*
+
+.. admonition:: example
+
+   As :doc:`SignalOffPageConnectorReference </reference/Instrumentation/SignalOffPageConnectorReference>` is abstract, we consider :doc:`SignalOffPageConnectorObjectReference </reference/Instrumentation/SignalOffPageConnectorObjectReference>` as an arbitrary concrete subclass.
+
+   .. image:: /diagrams/diagram570.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <InformationFlowOffPageConnectorReference
+            ID="signalOffPageConnectorObjectReference1"
+            ComponentClass="SignalOffPageConnectorObjectReference"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/SignalOffPageConnectorObjectReference" DOTS123="DOTS123">
+          ...
+        </InformationFlowOffPageConnectorReference>
+      
+

@@ -1,0 +1,52 @@
+==========
+AngleValve
+==========
+
+Overview
+========
+
+.. rubric:: Class
+
+A valve that has valve ports which are not in-line (from `http://data.posccaesar.org/rdl/RDS5789384 <http://data.posccaesar.org/rdl/RDS5789384>`__).
+
+.. image:: AngleValve.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`OperatedValve </reference/Piping/OperatedValve>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingComponent>``
+
+   RDL reference
+       `ANGLE VALVE <http://data.posccaesar.org/rdl/RDS5789384>`__
+
+   ComponentClass
+       AngleValve
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS5789384 <http://data.posccaesar.org/rdl/RDS5789384>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram628.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="angleValve1"
+            ComponentClass="AngleValve"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS5789384" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+

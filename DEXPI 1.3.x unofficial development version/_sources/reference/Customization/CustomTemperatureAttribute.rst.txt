@@ -1,0 +1,102 @@
+==========================
+CustomTemperatureAttribute
+==========================
+
+Overview
+========
+
+.. rubric:: Class
+
+A :ref:`custom attribute <dexpi-concept-custom-attributes>` with :ref:`Value <dexpi-Customization-CustomTemperatureAttribute-Value>` type :doc:`NullableTemperature </reference/PhysicalQuantities/NullableTemperature>`.
+
+.. image:: CustomTemperatureAttribute.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`CustomAttribute </reference/Customization/CustomAttribute>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------+
+| Name                                                                                               | Multiplicity | Type                                                                                                           |
++====================================================================================================+==============+================================================================================================================+
+| :ref:`Value <dexpi-Customization-CustomTemperatureAttribute-Value>`                                | 1            | :doc:`NullableTemperature </reference/PhysicalQuantities/NullableTemperature>`                                 |
++----------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   :doc:`CustomTemperatureAttribute </reference/Customization/CustomTemperatureAttribute>` is implemented as a :ref:`custom generic attribute for physical quantities <proteus-concept-dexpi-custom-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `TEMPERATURE <http://data.posccaesar.org/rdl/RDS355859>`__
+
+   Type
+       Temperature
+
+   TypeURI
+       `http://data.posccaesar.org/rdl/RDS355859 <http://data.posccaesar.org/rdl/RDS355859>`__
+
+.. admonition:: example
+
+   As :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>` is abstract, we consider :doc:`ProcessColumn </reference/Equipment/ProcessColumn>` as an arbitrary concrete subclass.
+
+   The :doc:`ProcessColumn </reference/Equipment/ProcessColumn>` processColumn1 has a :doc:`CustomTemperatureAttribute </reference/Customization/CustomTemperatureAttribute>` with :ref:`AttributeName <dexpi-Customization-CustomAttribute-AttributeName>` "MaximumAllowableAmbientTemperature" and an (arbitrary) :ref:`AttributeURI <dexpi-Customization-CustomAttribute-AttributeURI>` "http://www.example.org/0095a462f8e42c"DOTANDSPACEHACKThe :ref:`Value <dexpi-Customization-CustomTemperatureAttribute-Value>` is 40 °C.
+
+   .. image:: /diagrams/diagram29.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="processColumn1"
+            ComponentClass="ProcessColumn"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS4316825224" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiCustomAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="MaximumAllowableAmbientTemperature"
+              AttributeURI="http://www.example.org/0095a462f8e42c"
+              Format="double"
+              Type="Temperature"
+              TypeURI="http://data.posccaesar.org/rdl/RDS355859"
+              Value="40"
+              Units="DegreeCelsius"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1322684" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Customization-CustomTemperatureAttribute-Value:
+
+Value
+=====
+
+.. rubric:: Attribute (data)
+
+
+The value of the :doc:`CustomTemperatureAttribute </reference/Customization/CustomTemperatureAttribute>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`NullableTemperature </reference/PhysicalQuantities/NullableTemperature>`
+
+Redefines
+    :ref:`Value <dexpi-Customization-CustomAttribute-Value>` (inherited from :doc:`CustomAttribute </reference/Customization/CustomAttribute>`\ )
+
+.. admonition:: proteus
+
+   See implementation of :doc:`CustomTemperatureAttribute </reference/Customization/CustomTemperatureAttribute>`.
+
+.. admonition:: example
+
+   See the example for :doc:`CustomTemperatureAttribute </reference/Customization/CustomTemperatureAttribute>`.
+

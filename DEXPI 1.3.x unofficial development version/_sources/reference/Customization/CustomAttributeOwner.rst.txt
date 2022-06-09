@@ -1,0 +1,160 @@
+====================
+CustomAttributeOwner
+====================
+
+Overview
+========
+
+.. rubric:: Abstract class
+
+An object that can have :ref:`custom attributes <dexpi-concept-custom-attributes>`.
+
+.. image:: CustomAttributeOwner.*
+
+
+.. rubric:: Subtypes
+
+* :doc:`ActuatingElectricalFunction </reference/Instrumentation/ActuatingElectricalFunction>`
+
+* :doc:`ActuatingElectricalSystem </reference/Instrumentation/ActuatingElectricalSystem>`
+
+* :doc:`ActuatingFunction </reference/Instrumentation/ActuatingFunction>`
+
+* :doc:`ActuatingSystem </reference/Instrumentation/ActuatingSystem>`
+
+* :doc:`AgitatorRotor </reference/Equipment/AgitatorRotor>`
+
+* :doc:`BriquettingRoller </reference/Equipment/BriquettingRoller>`
+
+* :doc:`Chamber </reference/Equipment/Chamber>`
+
+* :doc:`ColumnInternalsArrangement </reference/Equipment/ColumnInternalsArrangement>`
+
+* :doc:`ColumnSection </reference/Equipment/ColumnSection>`
+
+* :doc:`ControlledActuator </reference/Instrumentation/ControlledActuator>`
+
+* :doc:`CoolingTowerRotor </reference/Equipment/CoolingTowerRotor>`
+
+* :doc:`CrusherElement </reference/Equipment/CrusherElement>`
+
+* :doc:`CustomActuatingElectricalSystemComponent </reference/Instrumentation/CustomActuatingElectricalSystemComponent>`
+
+* :doc:`CustomActuatingSystemComponent </reference/Instrumentation/CustomActuatingSystemComponent>`
+
+* :doc:`CustomProcessSignalGeneratingSystemComponent </reference/Instrumentation/CustomProcessSignalGeneratingSystemComponent>`
+
+* :doc:`Displacer </reference/Equipment/Displacer>`
+
+* :doc:`DryingChamber </reference/Equipment/DryingChamber>`
+
+* :doc:`ElectronicFrequencyConverter </reference/Instrumentation/ElectronicFrequencyConverter>`
+
+* :doc:`FilterUnit </reference/Equipment/FilterUnit>`
+
+* :doc:`FilteringCentrifugeDrum </reference/Equipment/FilteringCentrifugeDrum>`
+
+* :doc:`GearBox </reference/Equipment/GearBox>`
+
+* :doc:`GrindingElement </reference/Equipment/GrindingElement>`
+
+* :doc:`HeatExchangerRotor </reference/Equipment/HeatExchangerRotor>`
+
+* :doc:`Impeller </reference/Equipment/Impeller>`
+
+* :doc:`InstrumentationLoopFunction </reference/Instrumentation/InstrumentationLoopFunction>`
+
+* :doc:`MetaData </reference/MetaData/MetaData>`
+
+* :doc:`MixingElementAssembly </reference/Equipment/MixingElementAssembly>`
+
+* :doc:`MotorAsComponent </reference/Equipment/MotorAsComponent>`
+
+* :doc:`Nozzle </reference/Equipment/Nozzle>`
+
+* :doc:`OperatedValveReference </reference/Instrumentation/OperatedValveReference>`
+
+* :doc:`PelletizerDisc </reference/Equipment/PelletizerDisc>`
+
+* :doc:`Pipe </reference/Piping/Pipe>`
+
+* :doc:`PipeOffPageConnector </reference/Piping/PipeOffPageConnector>`
+
+* :doc:`PipeOffPageConnectorReference </reference/Piping/PipeOffPageConnectorReference>`
+
+* :doc:`PipingComponent </reference/Piping/PipingComponent>`
+
+* :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>`
+
+* :doc:`PipingNetworkSystem </reference/Piping/PipingNetworkSystem>`
+
+* :doc:`PipingNode </reference/Piping/PipingNode>`
+
+* :doc:`PlantStructureItem </reference/PlantStructure/PlantStructureItem>`
+
+* :doc:`Positioner </reference/Instrumentation/Positioner>`
+
+* :doc:`PrimaryElement </reference/Instrumentation/PrimaryElement>`
+
+* :doc:`ProcessInstrumentationFunction </reference/Instrumentation/ProcessInstrumentationFunction>`
+
+* :doc:`ProcessSignalGeneratingFunction </reference/Instrumentation/ProcessSignalGeneratingFunction>`
+
+* :doc:`ProcessSignalGeneratingSystem </reference/Instrumentation/ProcessSignalGeneratingSystem>`
+
+* :doc:`PropertyBreak </reference/Piping/PropertyBreak>`
+
+* :doc:`Screw </reference/Equipment/Screw>`
+
+* :doc:`SedimentalCentrifugeDrum </reference/Equipment/SedimentalCentrifugeDrum>`
+
+* :doc:`SieveElement </reference/Equipment/SieveElement>`
+
+* :doc:`SignalConveyingFunction </reference/Instrumentation/SignalConveyingFunction>`
+
+* :doc:`SignalOffPageConnector </reference/Instrumentation/SignalOffPageConnector>`
+
+* :doc:`SignalOffPageConnectorReference </reference/Instrumentation/SignalOffPageConnectorReference>`
+
+* :doc:`SprayNozzle </reference/Equipment/SprayNozzle>`
+
+* :doc:`TaggedPlantItem </reference/Equipment/TaggedPlantItem>`
+
+* :doc:`Transmitter </reference/Instrumentation/Transmitter>`
+
+* :doc:`TubeBundle </reference/Equipment/TubeBundle>`
+
+.. rubric:: Attributes (composition)
+
++------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------+
+| Name                                                                                                                   | Multiplicity | Type                                                                                           |
++========================================================================================================================+==============+================================================================================================+
+| :ref:`CustomAttributes <dexpi-Customization-CustomAttributeOwner-CustomAttributes>`                                    | \*           | :doc:`CustomAttribute </reference/Customization/CustomAttribute>`                              |
++------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   Implementation is subclass-specific.
+
+.. admonition:: example
+
+   See the examples for the subclasses of :doc:`CustomAttribute </reference/Customization/CustomAttribute>`.
+
+
+.. _dexpi-Customization-CustomAttributeOwner-CustomAttributes:
+
+CustomAttributes
+================
+
+.. rubric:: Attribute (composition)
+
+
+Multiplicity
+    \*
+
+Type
+    :doc:`CustomAttribute </reference/Customization/CustomAttribute>`
+
+Opposite multiplicity
+    0..1
+

@@ -1,0 +1,22 @@
+============
+NullDateTime
+============
+
+Overview
+========
+
+.. rubric:: Data type
+
+A :ref:`null value <dexpi-concept-null-value>` for a value of type :doc:`NullableDateTime </reference/DataTypes/NullableDateTime>`. The only instance of this singleton type is :doc:`NULL_DATE_TIME </reference/DataTypes/NULL_DATE_TIME>`.
+
+.. image:: NullDateTime.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`NullableDateTime </reference/DataTypes/NullableDateTime>`
+
+.. admonition:: proteus
+
+   See Proteus Schema implementation of the base type :doc:`NullableDateTime </reference/DataTypes/NullableDateTime>`
+

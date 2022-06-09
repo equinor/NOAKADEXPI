@@ -1,0 +1,181 @@
+==============
+PelletizerDisc
+==============
+
+Overview
+========
+
+.. rubric:: Class
+
+A rotating disc as a component of an :doc:`Agglomerator </reference/Equipment/Agglomerator>`.
+
+.. image:: PelletizerDisc.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`ConceptualObject </reference/DexpiModel/ConceptualObject>`
+
+* :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>`
+
+.. rubric:: Attributes (data)
+
++------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+| Name                                                                                                                               | Multiplicity | Type                                                                                               |
++====================================================================================================================================+==============+====================================================================================================+
+| :ref:`Diameter <dexpi-Equipment-PelletizerDisc-Diameter>`                                                                          | 0..1         | :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`                               |
++------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+| :ref:`MaterialOfConstructionCode <dexpi-Equipment-PelletizerDisc-MaterialOfConstructionCode>`                                      | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                        |
++------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `PELLETING DISC <http://sandbox.dexpi.org/rdl/PelletingDisc>`__
+
+   ComponentClass
+       PelletingDisc
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/PelletingDisc <http://sandbox.dexpi.org/rdl/PelletingDisc>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram382.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="pelletizerDisc1"
+            ComponentClass="PelletingDisc"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/PelletingDisc" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-PelletizerDisc-Diameter:
+
+Diameter
+========
+
+.. rubric:: Attribute (data)
+
+
+The diameter of the :doc:`PelletizerDisc </reference/Equipment/PelletizerDisc>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DIAMETER <http://data.posccaesar.org/rdl/RDS350954>`__
+
+   Name
+       Diameter
+
+   AttributeURI
+       `http://data.posccaesar.org/rdl/RDS350954 <http://data.posccaesar.org/rdl/RDS350954>`__
+
+.. admonition:: example
+
+   The instance pelletizerDisc1 represents a :doc:`PelletizerDisc </reference/Equipment/PelletizerDisc>` with a :ref:`Diameter <dexpi-Equipment-PelletizerDisc-Diameter>` of 20.0 cm.
+
+   .. image:: /diagrams/diagram383.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="pelletizerDisc1"
+            ComponentClass="PelletingDisc"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/PelletingDisc" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="Diameter"
+              AttributeURI="http://data.posccaesar.org/rdl/RDS350954"
+              Format="double"
+              Value="20.0"
+              Units="Centimetre"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1318004" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-PelletizerDisc-MaterialOfConstructionCode:
+
+MaterialOfConstructionCode
+==========================
+
+.. rubric:: Attribute (data)
+
+
+A code that gives the material of construction of the :doc:`PelletizerDisc </reference/Equipment/PelletizerDisc>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `MATERIAL OF CONSTRUCTION CODE ASSIGNMENT CLASS <http://data.posccaesar.org/rdl/RDS1460719741>`__
+
+   Name
+       MaterialOfConstructionCodeAssignmentClass
+
+   AttributeURI
+       `http://data.posccaesar.org/rdl/RDS1460719741 <http://data.posccaesar.org/rdl/RDS1460719741>`__
+
+.. admonition:: example
+
+   "1.4306" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="pelletizerDisc1"
+            ComponentClass="PelletingDisc"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/PelletingDisc" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="MaterialOfConstructionCodeAssignmentClass"
+              AttributeURI="http://data.posccaesar.org/rdl/RDS1460719741"
+              Format="string"
+              Value="1.4306" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+

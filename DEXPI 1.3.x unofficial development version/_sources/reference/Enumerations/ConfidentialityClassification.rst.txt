@@ -1,0 +1,52 @@
+=============================
+ConfidentialityClassification
+=============================
+
+Overview
+========
+
+.. rubric:: Enumeration
+
+.. image:: ConfidentialityClassification.*
+
+
+.. rubric:: Literals
+
++--------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                               | Symbol                                                     | proteus#RDL Reference                                                                      | proteus#RDL URI                                                                                                       |
++====================================================================================================================+============================================================+============================================================================================+=======================================================================================================================+
+| .. _dexpi-Enumerations-ConfidentialityClassification-NULL:                                                         | :ref:`null <dexpi-concept-null-value>`                     |                                                                                            |                                                                                                                       |
+|                                                                                                                    |                                                            |                                                                                            |                                                                                                                       |
+| NULL                                                                                                               |                                                            |                                                                                            |                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+| .. _dexpi-Enumerations-ConfidentialityClassification-ConfidentialInformation:                                      | confidential                                               | `CONFIDENTIAL INFORMATION <http://data.posccaesar.org/rdl/RDS4316590816>`__                | `http://data.posccaesar.org/rdl/RDS4316590816 <http://data.posccaesar.org/rdl/RDS4316590816>`__                       |
+|                                                                                                                    |                                                            |                                                                                            |                                                                                                                       |
+| ConfidentialInformation                                                                                            |                                                            |                                                                                            |                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+| .. _dexpi-Enumerations-ConfidentialityClassification-NonConfidentialInformation:                                   | not confidential                                           | `NON CONFIDENTIAL INFORMATION <http://sandbox.dexpi.org/rdl/NonConfidentialInformation>`__ | `http://sandbox.dexpi.org/rdl/NonConfidentialInformation <http://sandbox.dexpi.org/rdl/NonConfidentialInformation>`__ |
+|                                                                                                                    |                                                            |                                                                                            |                                                                                                                       |
+| NonConfidentialInformation                                                                                         |                                                            |                                                                                            |                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   All data attributes with type :doc:`ConfidentialityClassification </reference/Enumerations/ConfidentialityClassification>` are implemented as :ref:`DEXPI generic attributes for enumeration values <proteus-concept-dexpi-generic-attribute-enumeration>`. In a ``<GenericAttribute>`` element, the :doc:`ConfidentialityClassification </reference/Enumerations/ConfidentialityClassification>` literal is given by means of its :ref:`RDL reference <proteus-concept-rdl-reference>` in the table above. The ``Value`` attribute of the element is the name of the RDL reference in camel-case; it equals the name of the literal. The ``ValueURI`` attribute of the element is the URI of the RDL reference.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram49.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Format="anyURI"
+          Value="ConfidentialInformation"
+          ValueURI="http://data.posccaesar.org/rdl/RDS4316590816" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have a ``Name`` and an ``AttributeURI`` attribute. They depend on the data type attribute of the DEXPI class that owns the instance :ref:`ConfidentialInformation <dexpi-Enumerations-ConfidentialityClassification-ConfidentialInformation>`. For a complete example, see the attribute :ref:`Confidentiality <dexpi-MetaData-MetaData-Confidentiality>` of the DEXPI class :doc:`MetaData </reference/MetaData/MetaData>`.
+

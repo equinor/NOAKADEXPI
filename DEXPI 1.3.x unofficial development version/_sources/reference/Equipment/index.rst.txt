@@ -1,0 +1,486 @@
+=================
+Package Equipment
+=================
+.. rubric:: Classes
+
+* :doc:`Agglomerator </reference/Equipment/Agglomerator>`
+
+* :doc:`Agitator </reference/Equipment/Agitator>`
+
+* :doc:`AgitatorRotor </reference/Equipment/AgitatorRotor>`
+
+* :doc:`AirCoolingSystem </reference/Equipment/AirCoolingSystem>`
+
+* :doc:`AirEjector </reference/Equipment/AirEjector>`
+
+* :doc:`AlternatingCurrentGenerator </reference/Equipment/AlternatingCurrentGenerator>`
+
+* :doc:`AlternatingCurrentMotor </reference/Equipment/AlternatingCurrentMotor>`
+
+* :doc:`AlternatingCurrentMotorAsComponent </reference/Equipment/AlternatingCurrentMotorAsComponent>`
+
+* :doc:`AxialBlower </reference/Equipment/AxialBlower>`
+
+* :doc:`AxialCompressor </reference/Equipment/AxialCompressor>`
+
+* :doc:`AxialFan </reference/Equipment/AxialFan>`
+
+* :doc:`BatchWeigher </reference/Equipment/BatchWeigher>`
+
+* :doc:`Blower </reference/Equipment/Blower>`
+
+* :doc:`Boiler </reference/Equipment/Boiler>`
+
+* :doc:`BriquettingRoller </reference/Equipment/BriquettingRoller>`
+
+* :doc:`Burner </reference/Equipment/Burner>`
+
+* :doc:`CentrifugalBlower </reference/Equipment/CentrifugalBlower>`
+
+* :doc:`CentrifugalCompressor </reference/Equipment/CentrifugalCompressor>`
+
+* :doc:`CentrifugalPump </reference/Equipment/CentrifugalPump>`
+
+* :doc:`Centrifuge </reference/Equipment/Centrifuge>`
+
+* :doc:`Chamber </reference/Equipment/Chamber>`
+
+* :doc:`ChamberOwner </reference/Equipment/ChamberOwner>`
+
+* :doc:`Chimney </reference/Equipment/Chimney>`
+
+* :doc:`ColumnInternalsArrangement </reference/Equipment/ColumnInternalsArrangement>`
+
+* :doc:`ColumnPackingsArrangement </reference/Equipment/ColumnPackingsArrangement>`
+
+* :doc:`ColumnSection </reference/Equipment/ColumnSection>`
+
+* :doc:`ColumnTraysArrangement </reference/Equipment/ColumnTraysArrangement>`
+
+* :doc:`CombustionEngine </reference/Equipment/CombustionEngine>`
+
+* :doc:`CombustionEngineAsComponent </reference/Equipment/CombustionEngineAsComponent>`
+
+* :doc:`Compressor </reference/Equipment/Compressor>`
+
+* :doc:`ContinuousWeigher </reference/Equipment/ContinuousWeigher>`
+
+* :doc:`ConvectionDryer </reference/Equipment/ConvectionDryer>`
+
+* :doc:`Conveyor </reference/Equipment/Conveyor>`
+
+* :doc:`CoolingTower </reference/Equipment/CoolingTower>`
+
+* :doc:`CoolingTowerRotor </reference/Equipment/CoolingTowerRotor>`
+
+* :doc:`Crusher </reference/Equipment/Crusher>`
+
+* :doc:`CrusherElement </reference/Equipment/CrusherElement>`
+
+* :doc:`CustomAgglomerator </reference/Equipment/CustomAgglomerator>`
+
+* :doc:`CustomBlower </reference/Equipment/CustomBlower>`
+
+* :doc:`CustomCentrifuge </reference/Equipment/CustomCentrifuge>`
+
+* :doc:`CustomCompressor </reference/Equipment/CustomCompressor>`
+
+* :doc:`CustomCoolingTower </reference/Equipment/CustomCoolingTower>`
+
+* :doc:`CustomDryer </reference/Equipment/CustomDryer>`
+
+* :doc:`CustomElectricGenerator </reference/Equipment/CustomElectricGenerator>`
+
+* :doc:`CustomEquipment </reference/Equipment/CustomEquipment>`
+
+* :doc:`CustomExtruder </reference/Equipment/CustomExtruder>`
+
+* :doc:`CustomFan </reference/Equipment/CustomFan>`
+
+* :doc:`CustomFilter </reference/Equipment/CustomFilter>`
+
+* :doc:`CustomHeatExchanger </reference/Equipment/CustomHeatExchanger>`
+
+* :doc:`CustomHeater </reference/Equipment/CustomHeater>`
+
+* :doc:`CustomMill </reference/Equipment/CustomMill>`
+
+* :doc:`CustomMixer </reference/Equipment/CustomMixer>`
+
+* :doc:`CustomMobileTransportSystem </reference/Equipment/CustomMobileTransportSystem>`
+
+* :doc:`CustomMotor </reference/Equipment/CustomMotor>`
+
+* :doc:`CustomPump </reference/Equipment/CustomPump>`
+
+* :doc:`CustomSeparator </reference/Equipment/CustomSeparator>`
+
+* :doc:`CustomSieve </reference/Equipment/CustomSieve>`
+
+* :doc:`CustomStationaryTransportSystem </reference/Equipment/CustomStationaryTransportSystem>`
+
+* :doc:`CustomTurbine </reference/Equipment/CustomTurbine>`
+
+* :doc:`CustomVessel </reference/Equipment/CustomVessel>`
+
+* :doc:`CustomWasteGasEmitter </reference/Equipment/CustomWasteGasEmitter>`
+
+* :doc:`CustomWeigher </reference/Equipment/CustomWeigher>`
+
+* :doc:`DirectCurrentGenerator </reference/Equipment/DirectCurrentGenerator>`
+
+* :doc:`DirectCurrentMotor </reference/Equipment/DirectCurrentMotor>`
+
+* :doc:`DirectCurrentMotorAsComponent </reference/Equipment/DirectCurrentMotorAsComponent>`
+
+* :doc:`Displacer </reference/Equipment/Displacer>`
+
+* :doc:`DryCoolingTower </reference/Equipment/DryCoolingTower>`
+
+* :doc:`Dryer </reference/Equipment/Dryer>`
+
+* :doc:`DryingChamber </reference/Equipment/DryingChamber>`
+
+* :doc:`EjectorPump </reference/Equipment/EjectorPump>`
+
+* :doc:`ElectricGenerator </reference/Equipment/ElectricGenerator>`
+
+* :doc:`ElectricHeater </reference/Equipment/ElectricHeater>`
+
+* :doc:`ElectricalSeparator </reference/Equipment/ElectricalSeparator>`
+
+* :doc:`Equipment </reference/Equipment/Equipment>`
+
+* :doc:`Extruder </reference/Equipment/Extruder>`
+
+* :doc:`Fan </reference/Equipment/Fan>`
+
+* :doc:`Feeder </reference/Equipment/Feeder>`
+
+* :doc:`Filter </reference/Equipment/Filter>`
+
+* :doc:`FilterUnit </reference/Equipment/FilterUnit>`
+
+* :doc:`FilteringCentrifuge </reference/Equipment/FilteringCentrifuge>`
+
+* :doc:`FilteringCentrifugeDrum </reference/Equipment/FilteringCentrifugeDrum>`
+
+* :doc:`Flare </reference/Equipment/Flare>`
+
+* :doc:`ForkliftTruck </reference/Equipment/ForkliftTruck>`
+
+* :doc:`Furnace </reference/Equipment/Furnace>`
+
+* :doc:`GasFilter </reference/Equipment/GasFilter>`
+
+* :doc:`GasTurbine </reference/Equipment/GasTurbine>`
+
+* :doc:`GearBox </reference/Equipment/GearBox>`
+
+* :doc:`GravitationalSeparator </reference/Equipment/GravitationalSeparator>`
+
+* :doc:`Grinder </reference/Equipment/Grinder>`
+
+* :doc:`GrindingElement </reference/Equipment/GrindingElement>`
+
+* :doc:`HeatExchanger </reference/Equipment/HeatExchanger>`
+
+* :doc:`HeatExchangerRotor </reference/Equipment/HeatExchangerRotor>`
+
+* :doc:`HeatedSurfaceDryer </reference/Equipment/HeatedSurfaceDryer>`
+
+* :doc:`Heater </reference/Equipment/Heater>`
+
+* :doc:`Impeller </reference/Equipment/Impeller>`
+
+* :doc:`Kneader </reference/Equipment/Kneader>`
+
+* :doc:`Lift </reference/Equipment/Lift>`
+
+* :doc:`LiquidFilter </reference/Equipment/LiquidFilter>`
+
+* :doc:`LoadingUnloadingSystem </reference/Equipment/LoadingUnloadingSystem>`
+
+* :doc:`MechanicalSeparator </reference/Equipment/MechanicalSeparator>`
+
+* :doc:`Mill </reference/Equipment/Mill>`
+
+* :doc:`Mixer </reference/Equipment/Mixer>`
+
+* :doc:`MixingElementAssembly </reference/Equipment/MixingElementAssembly>`
+
+* :doc:`MobileTransportSystem </reference/Equipment/MobileTransportSystem>`
+
+* :doc:`Motor </reference/Equipment/Motor>`
+
+* :doc:`MotorAsComponent </reference/Equipment/MotorAsComponent>`
+
+* :doc:`Nozzle </reference/Equipment/Nozzle>`
+
+* :doc:`NozzleOwner </reference/Equipment/NozzleOwner>`
+
+* :doc:`PackagingSystem </reference/Equipment/PackagingSystem>`
+
+* :doc:`PelletizerDisc </reference/Equipment/PelletizerDisc>`
+
+* :doc:`PlateHeatExchanger </reference/Equipment/PlateHeatExchanger>`
+
+* :doc:`PressureVessel </reference/Equipment/PressureVessel>`
+
+* :doc:`ProcessColumn </reference/Equipment/ProcessColumn>`
+
+* :doc:`Pump </reference/Equipment/Pump>`
+
+* :doc:`RadialFan </reference/Equipment/RadialFan>`
+
+* :doc:`RailWaggon </reference/Equipment/RailWaggon>`
+
+* :doc:`ReciprocatingCompressor </reference/Equipment/ReciprocatingCompressor>`
+
+* :doc:`ReciprocatingExtruder </reference/Equipment/ReciprocatingExtruder>`
+
+* :doc:`ReciprocatingPressureAgglomerator </reference/Equipment/ReciprocatingPressureAgglomerator>`
+
+* :doc:`ReciprocatingPump </reference/Equipment/ReciprocatingPump>`
+
+* :doc:`RevolvingSieve </reference/Equipment/RevolvingSieve>`
+
+* :doc:`RotaryCompressor </reference/Equipment/RotaryCompressor>`
+
+* :doc:`RotaryMixer </reference/Equipment/RotaryMixer>`
+
+* :doc:`RotaryPump </reference/Equipment/RotaryPump>`
+
+* :doc:`RotatingExtruder </reference/Equipment/RotatingExtruder>`
+
+* :doc:`RotatingGrowthAgglomerator </reference/Equipment/RotatingGrowthAgglomerator>`
+
+* :doc:`RotatingPressureAgglomerator </reference/Equipment/RotatingPressureAgglomerator>`
+
+* :doc:`Screw </reference/Equipment/Screw>`
+
+* :doc:`ScrubbingSeparator </reference/Equipment/ScrubbingSeparator>`
+
+* :doc:`SedimentalCentrifuge </reference/Equipment/SedimentalCentrifuge>`
+
+* :doc:`SedimentalCentrifugeDrum </reference/Equipment/SedimentalCentrifugeDrum>`
+
+* :doc:`Separator </reference/Equipment/Separator>`
+
+* :doc:`Ship </reference/Equipment/Ship>`
+
+* :doc:`Sieve </reference/Equipment/Sieve>`
+
+* :doc:`SieveElement </reference/Equipment/SieveElement>`
+
+* :doc:`Silo </reference/Equipment/Silo>`
+
+* :doc:`SpiralHeatExchanger </reference/Equipment/SpiralHeatExchanger>`
+
+* :doc:`SprayCooler </reference/Equipment/SprayCooler>`
+
+* :doc:`SprayNozzle </reference/Equipment/SprayNozzle>`
+
+* :doc:`StaticMixer </reference/Equipment/StaticMixer>`
+
+* :doc:`StationarySieve </reference/Equipment/StationarySieve>`
+
+* :doc:`StationaryTransportSystem </reference/Equipment/StationaryTransportSystem>`
+
+* :doc:`SteamGenerator </reference/Equipment/SteamGenerator>`
+
+* :doc:`SteamTurbine </reference/Equipment/SteamTurbine>`
+
+* :doc:`SubTaggedColumnSection </reference/Equipment/SubTaggedColumnSection>`
+
+* :doc:`TaggedColumnSection </reference/Equipment/TaggedColumnSection>`
+
+* :doc:`TaggedPlantItem </reference/Equipment/TaggedPlantItem>`
+
+* :doc:`Tank </reference/Equipment/Tank>`
+
+* :doc:`ThinFilmEvaporator </reference/Equipment/ThinFilmEvaporator>`
+
+* :doc:`TransportableContainer </reference/Equipment/TransportableContainer>`
+
+* :doc:`Truck </reference/Equipment/Truck>`
+
+* :doc:`TubeBundle </reference/Equipment/TubeBundle>`
+
+* :doc:`TubularHeatExchanger </reference/Equipment/TubularHeatExchanger>`
+
+* :doc:`Turbine </reference/Equipment/Turbine>`
+
+* :doc:`Vessel </reference/Equipment/Vessel>`
+
+* :doc:`VibratingSieve </reference/Equipment/VibratingSieve>`
+
+* :doc:`WasteGasEmitter </reference/Equipment/WasteGasEmitter>`
+
+* :doc:`Weigher </reference/Equipment/Weigher>`
+
+* :doc:`WetCoolingTower </reference/Equipment/WetCoolingTower>`
+
+
+.. toctree::
+   :hidden:
+
+   Agglomerator
+   Agitator
+   AgitatorRotor
+   AirCoolingSystem
+   AirEjector
+   AlternatingCurrentGenerator
+   AlternatingCurrentMotor
+   AlternatingCurrentMotorAsComponent
+   AxialBlower
+   AxialCompressor
+   AxialFan
+   BatchWeigher
+   Blower
+   Boiler
+   BriquettingRoller
+   Burner
+   CentrifugalBlower
+   CentrifugalCompressor
+   CentrifugalPump
+   Centrifuge
+   Chamber
+   ChamberOwner
+   Chimney
+   ColumnInternalsArrangement
+   ColumnPackingsArrangement
+   ColumnSection
+   ColumnTraysArrangement
+   CombustionEngine
+   CombustionEngineAsComponent
+   Compressor
+   ContinuousWeigher
+   ConvectionDryer
+   Conveyor
+   CoolingTower
+   CoolingTowerRotor
+   Crusher
+   CrusherElement
+   CustomAgglomerator
+   CustomBlower
+   CustomCentrifuge
+   CustomCompressor
+   CustomCoolingTower
+   CustomDryer
+   CustomElectricGenerator
+   CustomEquipment
+   CustomExtruder
+   CustomFan
+   CustomFilter
+   CustomHeatExchanger
+   CustomHeater
+   CustomMill
+   CustomMixer
+   CustomMobileTransportSystem
+   CustomMotor
+   CustomPump
+   CustomSeparator
+   CustomSieve
+   CustomStationaryTransportSystem
+   CustomTurbine
+   CustomVessel
+   CustomWasteGasEmitter
+   CustomWeigher
+   DirectCurrentGenerator
+   DirectCurrentMotor
+   DirectCurrentMotorAsComponent
+   Displacer
+   DryCoolingTower
+   Dryer
+   DryingChamber
+   EjectorPump
+   ElectricGenerator
+   ElectricHeater
+   ElectricalSeparator
+   Equipment
+   Extruder
+   Fan
+   Feeder
+   Filter
+   FilterUnit
+   FilteringCentrifuge
+   FilteringCentrifugeDrum
+   Flare
+   ForkliftTruck
+   Furnace
+   GasFilter
+   GasTurbine
+   GearBox
+   GravitationalSeparator
+   Grinder
+   GrindingElement
+   HeatExchanger
+   HeatExchangerRotor
+   HeatedSurfaceDryer
+   Heater
+   Impeller
+   Kneader
+   Lift
+   LiquidFilter
+   LoadingUnloadingSystem
+   MechanicalSeparator
+   Mill
+   Mixer
+   MixingElementAssembly
+   MobileTransportSystem
+   Motor
+   MotorAsComponent
+   Nozzle
+   NozzleOwner
+   PackagingSystem
+   PelletizerDisc
+   PlateHeatExchanger
+   PressureVessel
+   ProcessColumn
+   Pump
+   RadialFan
+   RailWaggon
+   ReciprocatingCompressor
+   ReciprocatingExtruder
+   ReciprocatingPressureAgglomerator
+   ReciprocatingPump
+   RevolvingSieve
+   RotaryCompressor
+   RotaryMixer
+   RotaryPump
+   RotatingExtruder
+   RotatingGrowthAgglomerator
+   RotatingPressureAgglomerator
+   Screw
+   ScrubbingSeparator
+   SedimentalCentrifuge
+   SedimentalCentrifugeDrum
+   Separator
+   Ship
+   Sieve
+   SieveElement
+   Silo
+   SpiralHeatExchanger
+   SprayCooler
+   SprayNozzle
+   StaticMixer
+   StationarySieve
+   StationaryTransportSystem
+   SteamGenerator
+   SteamTurbine
+   SubTaggedColumnSection
+   TaggedColumnSection
+   TaggedPlantItem
+   Tank
+   ThinFilmEvaporator
+   TransportableContainer
+   Truck
+   TubeBundle
+   TubularHeatExchanger
+   Turbine
+   Vessel
+   VibratingSieve
+   WasteGasEmitter
+   Weigher
+   WetCoolingTower

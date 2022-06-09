@@ -1,0 +1,138 @@
+=======
+Ellipse
+=======
+
+Overview
+========
+
+.. rubric:: Class
+
+An ellipse.
+
+.. image:: Ellipse.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`GraphicalPrimitive </reference/Graphics/GraphicalPrimitive>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------+
+| Name                                                                                               | Multiplicity | Type                                                                   |
++====================================================================================================+==============+========================================================================+
+| :ref:`Center <dexpi-Graphics-Ellipse-Center>`                                                      | 1            | :doc:`Point </reference/Graphics/Point>`                               |
++----------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------+
+| :ref:`FillStyle <dexpi-Graphics-Ellipse-FillStyle>`                                                | 1            | :doc:`FillStyle </reference/Graphics/FillStyle>`                       |
++----------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------+
+| :ref:`HorizontalSemiAxis <dexpi-Graphics-Ellipse-HorizontalSemiAxis>`                              | 1            | :doc:`Double </reference/DataTypes/Double>`                            |
++----------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------+
+| :ref:`Rotation <dexpi-Graphics-Ellipse-Rotation>`                                                  | 1            | :doc:`Double </reference/DataTypes/Double>`                            |
++----------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------+
+| :ref:`Stroke <dexpi-Graphics-Ellipse-Stroke>`                                                      | 1            | :doc:`Stroke </reference/Graphics/Stroke>`                             |
++----------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------+
+| :ref:`VerticalSemiAxis <dexpi-Graphics-Ellipse-VerticalSemiAxis>`                                  | 1            | :doc:`Double </reference/DataTypes/Double>`                            |
++----------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------+
+
+
+.. _dexpi-Graphics-Ellipse-Center:
+
+Center
+======
+
+.. rubric:: Attribute (data)
+
+
+The center position of the :doc:`Ellipse </reference/Graphics/Ellipse>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Point </reference/Graphics/Point>`
+
+
+.. _dexpi-Graphics-Ellipse-FillStyle:
+
+FillStyle
+=========
+
+.. rubric:: Attribute (data)
+
+
+The fill style of the :doc:`Ellipse </reference/Graphics/Ellipse>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`FillStyle </reference/Graphics/FillStyle>`
+
+
+.. _dexpi-Graphics-Ellipse-HorizontalSemiAxis:
+
+HorizontalSemiAxis
+==================
+
+.. rubric:: Attribute (data)
+
+
+The length of the horizontal semi-axis of the :doc:`Ellipse </reference/Graphics/Ellipse>` in mm.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Double </reference/DataTypes/Double>`
+
+
+.. _dexpi-Graphics-Ellipse-Rotation:
+
+Rotation
+========
+
+.. rubric:: Attribute (data)
+
+
+The rotation of the :doc:`Ellipse </reference/Graphics/Ellipse>` around its center in degrees.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Double </reference/DataTypes/Double>`
+
+
+.. _dexpi-Graphics-Ellipse-Stroke:
+
+Stroke
+======
+
+.. rubric:: Attribute (data)
+
+
+The stroke of the :doc:`Ellipse </reference/Graphics/Ellipse>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Stroke </reference/Graphics/Stroke>`
+
+
+.. _dexpi-Graphics-Ellipse-VerticalSemiAxis:
+
+VerticalSemiAxis
+================
+
+.. rubric:: Attribute (data)
+
+
+The length of the vertical semi-axis of the :doc:`Ellipse </reference/Graphics/Ellipse>` in mm.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Double </reference/DataTypes/Double>`
+

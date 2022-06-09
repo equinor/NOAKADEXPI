@@ -1,0 +1,118 @@
+============================
+ElectronicFrequencyConverter
+============================
+
+Overview
+========
+
+.. rubric:: Class
+
+An electronic AC converter for changing the frequency
+
+.. image:: ElectronicFrequencyConverter.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`ConceptualObject </reference/DexpiModel/ConceptualObject>`
+
+* :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>`
+
+.. rubric:: Attributes (data)
+
++--------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+| Name                                                                                                               | Multiplicity | Type                                                                                   |
++====================================================================================================================+==============+========================================================================================+
+| :ref:`SubTagName <dexpi-Instrumentation-ElectronicFrequencyConverter-SubTagName>`                                  | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                            |
++--------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<ActuatingElectricalSystemComponent>``
+
+   RDL reference
+       `ELECTRONIC FREQUENCY CONVERTER <http://sandbox.dexpi.org/rdl/ElectronicFrequencyConverter>`__
+
+   ComponentClass
+       ElectronicFrequencyConverter
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/ElectronicFrequencyConverter <http://sandbox.dexpi.org/rdl/ElectronicFrequencyConverter>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram529.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <ActuatingElectricalSystemComponent
+            ID="electronicFrequencyConverter1"
+            ComponentClass="ElectronicFrequencyConverter"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/ElectronicFrequencyConverter" DOTS123="DOTS123">
+          ...
+        </ActuatingElectricalSystemComponent>
+      
+
+
+.. _dexpi-Instrumentation-ElectronicFrequencyConverter-SubTagName:
+
+SubTagName
+==========
+
+.. rubric:: Attribute (data)
+
+
+The sub tag name of the :doc:`ElectronicFrequencyConverter </reference/Instrumentation/ElectronicFrequencyConverter>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `SUB TAG NAME ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/SubTagNameAssignmentClass>`__
+
+   Name
+       SubTagNameAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/SubTagNameAssignmentClass <http://sandbox.dexpi.org/rdl/SubTagNameAssignmentClass>`__
+
+.. admonition:: example
+
+   "ST1" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <ActuatingElectricalSystemComponent
+            ID="electronicFrequencyConverter1"
+            ComponentClass="ElectronicFrequencyConverter"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/ElectronicFrequencyConverter" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="SubTagNameAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/SubTagNameAssignmentClass"
+              Format="string"
+              Value="ST1" />
+            ...
+          </GenericAttributes>
+          ...
+        </ActuatingElectricalSystemComponent>
+      
+

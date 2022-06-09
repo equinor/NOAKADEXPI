@@ -1,0 +1,16 @@
+DEXPI Information Model
+=======================
+
+.. toctree::
+
+   DexpiModel/index
+   MetaData/index
+   PlantStructure/index
+   Equipment/index
+   Piping/index
+   Instrumentation/index
+   Customization/index
+   Enumerations/index
+   PhysicalQuantities/index
+   Graphics/index
+   DataTypes/index

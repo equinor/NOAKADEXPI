@@ -1,0 +1,32 @@
+============
+NullableArea
+============
+
+Overview
+========
+
+.. rubric:: Abstract data type
+
+:doc:`NullableArea </reference/PhysicalQuantities/NullableArea>` is a :ref:`simple physical quantity type <dexpi-concept-simple-physical-quantity-type>` for the dimension L\ :sup:`2`. :doc:`NullableArea </reference/PhysicalQuantities/NullableArea>` is abstract and has two concrete subtypes:
+
+* an :doc:`Area </reference/PhysicalQuantities/Area>` is an :ref:`actual value <dexpi-concept-actual-value>` for a physical quantity with a numerical value and a unit of measurement;
+
+* a :doc:`NullArea </reference/PhysicalQuantities/NullArea>` is a :ref:`null value <dexpi-concept-null-value>` that explicitly indicates the absence of an actual physical quantity.
+
+.. image:: NullableArea.*
+
+
+.. rubric:: Subtypes
+
+* :doc:`Area </reference/PhysicalQuantities/Area>`
+
+* :doc:`NullArea </reference/PhysicalQuantities/NullArea>`
+
+.. admonition:: proteus
+
+   All data attributes with type :doc:`NullableArea </reference/PhysicalQuantities/NullableArea>` are implemented as :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+.. admonition:: example
+
+   See the examples for :doc:`Area </reference/PhysicalQuantities/Area>` and :doc:`NullArea </reference/PhysicalQuantities/NullArea>`.
+

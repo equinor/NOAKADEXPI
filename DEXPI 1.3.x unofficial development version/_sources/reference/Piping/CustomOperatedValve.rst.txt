@@ -1,0 +1,54 @@
+===================
+CustomOperatedValve
+===================
+
+Overview
+========
+
+.. rubric:: Class
+
+A :ref:`custom <dexpi-concept-custom-sibling>` :doc:`OperatedValve </reference/Piping/OperatedValve>`, i.e., an :doc:`OperatedValve </reference/Piping/OperatedValve>` that is not covered by any of the other subclasses of :doc:`OperatedValve </reference/Piping/OperatedValve>`.
+
+.. image:: CustomOperatedValve.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`CustomObject </reference/Customization/CustomObject>`
+
+* :doc:`OperatedValve </reference/Piping/OperatedValve>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingComponent>``
+
+   RDL reference
+       `CUSTOM OPERATED VALVE <http://sandbox.dexpi.org/rdl/CustomOperatedValve>`__
+
+   ComponentClass
+       CustomOperatedValve
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/CustomOperatedValve <http://sandbox.dexpi.org/rdl/CustomOperatedValve>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram641.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="customOperatedValve1"
+            ComponentClass="CustomOperatedValve"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/CustomOperatedValve" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+

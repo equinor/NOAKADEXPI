@@ -1,0 +1,52 @@
+====
+Silo
+====
+
+Overview
+========
+
+.. rubric:: Class
+
+A :doc:`Vessel </reference/Equipment/Vessel>` with a conical shape that is intended to store solids in bulk (from `http://data.15926.org/rdl/RDS1022399 <http://data.15926.org/rdl/RDS1022399>`__).
+
+.. image:: Silo.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Vessel </reference/Equipment/Vessel>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `SILO <http://data.posccaesar.org/rdl/RDS1022399>`__
+
+   ComponentClass
+       Silo
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS1022399 <http://data.posccaesar.org/rdl/RDS1022399>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram458.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="silo1"
+            ComponentClass="Silo"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS1022399" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+

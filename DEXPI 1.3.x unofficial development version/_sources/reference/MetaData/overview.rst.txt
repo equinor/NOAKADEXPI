@@ -1,0 +1,4 @@
+Overview
+========
+
+The :doc:`MetaData </reference/MetaData/index>` package provides the :doc:`MetaData </reference/MetaData/MetaData>` class, a container for meta data about a :doc:`DexpiModel </reference/DexpiModel/DexpiModel>`.

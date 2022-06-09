@@ -1,0 +1,1759 @@
+====================
+PipingNetworkSegment
+====================
+
+Overview
+========
+
+.. rubric:: Class
+
+The piping limited by a Node and a Break, Node and Connector,  two Nodes, two Breaks, two Connectors or a Break and a Connector. The last five providing there are no Breaks or Connectors in between. In the last three cases the Segment will coincide with a Piping Branch (from `http://data.posccaesar.org/rdl/RDS267704 <http://data.posccaesar.org/rdl/RDS267704>`__).
+
+.. image:: PipingNetworkSegment.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`ActuatingElectricalLocation </reference/Instrumentation/ActuatingElectricalLocation>`
+
+* :doc:`ConceptualObject </reference/DexpiModel/ConceptualObject>`
+
+* :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>`
+
+* :doc:`SensingLocation </reference/Instrumentation/SensingLocation>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                                                                                                   | Multiplicity | Type                                                                                                                                                                                       |
++========================================================================================================================================================================================+==============+============================================================================================================================================================================================+
+| :ref:`ColorCode <dexpi-Piping-PipingNetworkSegment-ColorCode>`                                                                                                                         | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                                                                                |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`FlowDirection <dexpi-Piping-PipingNetworkSegment-FlowDirection>`                                                                                                                 | 0..1         | :doc:`PipingNetworkSegmentFlowClassification </reference/Enumerations/PipingNetworkSegmentFlowClassification>`                                                                             |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`FluidCode <dexpi-Piping-PipingNetworkSegment-FluidCode>`                                                                                                                         | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                                                                                |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`HeatTracingType <dexpi-Piping-PipingNetworkSegment-HeatTracingType>`                                                                                                             | 0..1         | :doc:`HeatTracingTypeClassification </reference/Enumerations/HeatTracingTypeClassification>`                                                                                               |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`HeatTracingTypeRepresentation <dexpi-Piping-PipingNetworkSegment-HeatTracingTypeRepresentation>`                                                                                 | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                                                                                |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`Inclination <dexpi-Piping-PipingNetworkSegment-Inclination>`                                                                                                                     | 0..1         | :doc:`NullablePercentage </reference/PhysicalQuantities/NullablePercentage>`                                                                                                               |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`InsulationThickness <dexpi-Piping-PipingNetworkSegment-InsulationThickness>`                                                                                                     | 0..1         | :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`                                                                                                                       |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`InsulationType <dexpi-Piping-PipingNetworkSegment-InsulationType>`                                                                                                               | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                                                                                |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`JacketedPipe <dexpi-Piping-PipingNetworkSegment-JacketedPipe>`                                                                                                                   | 0..1         | :doc:`JacketedPipeClassification </reference/Enumerations/JacketedPipeClassification>`                                                                                                     |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`LowerLimitHeatTracingTemperature <dexpi-Piping-PipingNetworkSegment-LowerLimitHeatTracingTemperature>`                                                                           | 0..1         | :doc:`NullableTemperature </reference/PhysicalQuantities/NullableTemperature>`                                                                                                             |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`NominalDiameterNumericalValueRepresentation <dexpi-Piping-PipingNetworkSegment-NominalDiameterNumericalValueRepresentation>`                                                     | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                                                                                |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`NominalDiameterRepresentation <dexpi-Piping-PipingNetworkSegment-NominalDiameterRepresentation>`                                                                                 | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                                                                                |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`NominalDiameterStandard <dexpi-Piping-PipingNetworkSegment-NominalDiameterStandard>`                                                                                             | 0..1         | :doc:`NominalDiameterStandardClassification </reference/Enumerations/NominalDiameterStandardClassification>`                                                                               |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`NominalDiameterTypeRepresentation <dexpi-Piping-PipingNetworkSegment-NominalDiameterTypeRepresentation>`                                                                         | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                                                                                |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`OnHold <dexpi-Piping-PipingNetworkSegment-OnHold>`                                                                                                                               | 0..1         | :doc:`OnHoldClassification </reference/Enumerations/OnHoldClassification>`                                                                                                                 |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`OperatingTemperature <dexpi-Piping-PipingNetworkSegment-OperatingTemperature>`                                                                                                   | 0..1         | :doc:`NullableTemperature </reference/PhysicalQuantities/NullableTemperature>`                                                                                                             |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`PipingClassCode <dexpi-Piping-PipingNetworkSegment-PipingClassCode>`                                                                                                             | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                                                                                |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`PressureTestCircuitNumber <dexpi-Piping-PipingNetworkSegment-PressureTestCircuitNumber>`                                                                                         | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                                                                                |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`PrimarySecondaryPipingNetworkSegment <dexpi-Piping-PipingNetworkSegment-PrimarySecondaryPipingNetworkSegment>`                                                                   | 0..1         | :doc:`PrimarySecondaryPipingNetworkSegmentClassification </reference/Enumerations/PrimarySecondaryPipingNetworkSegmentClassification>`                                                     |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`SegmentNumber <dexpi-Piping-PipingNetworkSegment-SegmentNumber>`                                                                                                                 | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                                                                                |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`Siphon <dexpi-Piping-PipingNetworkSegment-Siphon>`                                                                                                                               | 0..1         | :doc:`SiphonClassification </reference/Enumerations/SiphonClassification>`                                                                                                                 |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`Slope <dexpi-Piping-PipingNetworkSegment-Slope>`                                                                                                                                 | 0..1         | :doc:`PipingNetworkSegmentSlopeClassification </reference/Enumerations/PipingNetworkSegmentSlopeClassification>`                                                                           |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. rubric:: Attributes (composition)
+
++------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------+
+| Name                                                                                           | Multiplicity | Type                                                                                                           |
++================================================================================================+==============+================================================================================================================+
+| :ref:`Connections <dexpi-Piping-PipingNetworkSegment-Connections>`                             | \*           | :doc:`PipingConnection </reference/Piping/PipingConnection>`                                                   |
++------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------+
+| :ref:`Items <dexpi-Piping-PipingNetworkSegment-Items>`                                         | \*           | :doc:`PipingNetworkSegmentItem </reference/Piping/PipingNetworkSegmentItem>`                                   |
++------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------+
+
+.. rubric:: Attributes (reference)
+
++------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+| Name                                                                                           | Multiplicity | Type                                                                                   |
++================================================================================================+==============+========================================================================================+
+| :ref:`SourceItem <dexpi-Piping-PipingNetworkSegment-SourceItem>`                               | 0..1         | :doc:`PipingSourceItem </reference/Piping/PipingSourceItem>`                           |
++------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+| :ref:`SourceNode <dexpi-Piping-PipingNetworkSegment-SourceNode>`                               | 0..1         | :doc:`PipingNode </reference/Piping/PipingNode>`                                       |
++------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+| :ref:`TargetItem <dexpi-Piping-PipingNetworkSegment-TargetItem>`                               | 0..1         | :doc:`PipingTargetItem </reference/Piping/PipingTargetItem>`                           |
++------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+| :ref:`TargetNode <dexpi-Piping-PipingNetworkSegment-TargetNode>`                               | 0..1         | :doc:`PipingNode </reference/Piping/PipingNode>`                                       |
++------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingNetworkSegment>``
+
+   RDL reference
+       `PIPING NETWORK SEGMENT <http://data.posccaesar.org/rdl/RDS267704>`__
+
+   ComponentClass
+       PipingNetworkSegment
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS267704 <http://data.posccaesar.org/rdl/RDS267704>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram688.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704" DOTS123="DOTS123">
+          ...
+        </PipingNetworkSegment>
+      
+
+
+.. _dexpi-Piping-PipingNetworkSegment-ColorCode:
+
+ColorCode
+=========
+
+.. rubric:: Attribute (data)
+
+
+The color code of the :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>`, represented as a string.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `COLOR CODE ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/ColorCodeAssignmentClass>`__
+
+   Name
+       ColorCodeAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/ColorCodeAssignmentClass <http://sandbox.dexpi.org/rdl/ColorCodeAssignmentClass>`__
+
+.. admonition:: example
+
+   "C321" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="ColorCodeAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/ColorCodeAssignmentClass"
+              Format="string"
+              Value="C321" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingNetworkSegment>
+      
+
+
+.. _dexpi-Piping-PipingNetworkSegment-Connections:
+
+Connections
+===========
+
+.. rubric:: Attribute (composition)
+
+
+The connections of the :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>`.
+
+Multiplicity
+    \*
+
+Type
+    :doc:`PipingConnection </reference/Piping/PipingConnection>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   In case the :doc:`PipingConnection </reference/Piping/PipingConnection>` is a :doc:`Pipe </reference/Piping/Pipe>`, the corresponding ``<CenterLine>`` element is a child of the ``<PipingNetworkSegment>``. Two ``<CenterLine>`` elements must be separated by at least one element representing a :doc:`PipingNetworkSegmentItem </reference/Piping/PipingNetworkSegmentItem>`, e.g., a ``<PipingComponent>``, in order to implement two :doc:`Pipes </reference/Piping/Pipe>`; otherwise, the two ``<CenterLine>`` elements would represent a single :doc:`Pipe </reference/Piping/Pipe>` whose graphical representation contains a visual "gap", e.g., when another :doc:`Pipe </reference/Piping/Pipe>` crosses.
+
+   In case the :doc:`PipingConnection </reference/Piping/PipingConnection>` is a :doc:`DirectPipingConnection </reference/Piping/DirectPipingConnection>`, there is no corresponding Proteus element. A :doc:`DirectPipingConnection </reference/Piping/DirectPipingConnection>` is rather given implicitly, e.g., by two successive ``<PipingComponent>`` elements (see Proteus Schema Implementation of :doc:`DirectPipingConnection </reference/Piping/DirectPipingConnection>`\ ).
+
+.. admonition:: example
+
+   As the value type :doc:`PipingConnection </reference/Piping/PipingConnection>` is abstract, we consider :doc:`Pipe </reference/Piping/Pipe>` as an arbitrary concrete subclass.
+
+   .. image:: /diagrams/diagram689.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704" DOTS123="DOTS123">
+          ...
+          <CenterLine DOTS123="DOTS123">
+            <!-- pipe1 -->
+            ...
+          </CenterLine>
+          ...
+        </PipingNetworkSegment>
+      
+
+
+.. _dexpi-Piping-PipingNetworkSegment-FlowDirection:
+
+FlowDirection
+=============
+
+.. rubric:: Attribute (data)
+
+
+A specialization indicating if the :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>` enables dual flow or not.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`PipingNetworkSegmentFlowClassification </reference/Enumerations/PipingNetworkSegmentFlowClassification>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for enumeration values <proteus-concept-dexpi-generic-attribute-enumeration>`.
+
+   RDL reference
+       `FLOW DIRECTION SPECIALIZATION <http://sandbox.dexpi.org/rdl/FlowDirectionSpecialization>`__
+
+   Name
+       FlowDirectionSpecialization
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/FlowDirectionSpecialization <http://sandbox.dexpi.org/rdl/FlowDirectionSpecialization>`__
+
+.. admonition:: example
+
+   dual flow (:ref:`PipingNetworkSegmentFlowClassification::DualFlowPipingNetworkSegment <dexpi-Enumerations-PipingNetworkSegmentFlowClassification-DualFlowPipingNetworkSegment>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="FlowDirectionSpecialization"
+              AttributeURI="http://sandbox.dexpi.org/rdl/FlowDirectionSpecialization"
+              Format="anyURI"
+              Value="DualFlowPipingNetworkSegment"
+              ValueURI="http://sandbox.dexpi.org/rdl/DualFlowPipingNetworkSegment" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingNetworkSegment>
+      
+
+
+.. _dexpi-Piping-PipingNetworkSegment-FluidCode:
+
+FluidCode
+=========
+
+.. rubric:: Attribute (data)
+
+
+The identification code of the fluid related to the :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>`. So far, DEXPI does not define restrictions for valid values.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `FLUID CODE ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/FluidCodeAssignmentClass>`__
+
+   Name
+       FluidCodeAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/FluidCodeAssignmentClass <http://sandbox.dexpi.org/rdl/FluidCodeAssignmentClass>`__
+
+.. admonition:: example
+
+   "MNb" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="FluidCodeAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/FluidCodeAssignmentClass"
+              Format="string"
+              Value="MNb" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingNetworkSegment>
+      
+
+
+.. _dexpi-Piping-PipingNetworkSegment-HeatTracingType:
+
+HeatTracingType
+===============
+
+.. rubric:: Attribute (data)
+
+
+A specialization indicating the heat tracing type related to the :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`HeatTracingTypeClassification </reference/Enumerations/HeatTracingTypeClassification>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for enumeration values <proteus-concept-dexpi-generic-attribute-enumeration>`.
+
+   RDL reference
+       `HEAT TRACING TYPE SPECIALIZATION <http://sandbox.dexpi.org/rdl/HeatTracingTypeSpecialization>`__
+
+   Name
+       HeatTracingTypeSpecialization
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/HeatTracingTypeSpecialization <http://sandbox.dexpi.org/rdl/HeatTracingTypeSpecialization>`__
+
+.. admonition:: example
+
+   electrical heat tracing system (:ref:`HeatTracingTypeClassification::ElectricalHeatTracingSystem <dexpi-Enumerations-HeatTracingTypeClassification-ElectricalHeatTracingSystem>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="HeatTracingTypeSpecialization"
+              AttributeURI="http://sandbox.dexpi.org/rdl/HeatTracingTypeSpecialization"
+              Format="anyURI"
+              Value="ElectricalHeatTracingSystem"
+              ValueURI="http://data.posccaesar.org/rdl/RDS11854600" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingNetworkSegment>
+      
+
+
+.. _dexpi-Piping-PipingNetworkSegment-HeatTracingTypeRepresentation:
+
+HeatTracingTypeRepresentation
+=============================
+
+.. rubric:: Attribute (data)
+
+
+The heat tracing type related to the :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>`, represented as a string.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `HEAT TRACING TYPE REPRESENTATION ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/HeatTracingTypeRepresentationAssignmentClass>`__
+
+   Name
+       HeatTracingTypeRepresentationAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/HeatTracingTypeRepresentationAssignmentClass <http://sandbox.dexpi.org/rdl/HeatTracingTypeRepresentationAssignmentClass>`__
+
+.. admonition:: example
+
+   "E" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="HeatTracingTypeRepresentationAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/HeatTracingTypeRepresentationAssignmentClass"
+              Format="string"
+              Value="E" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingNetworkSegment>
+      
+
+
+.. _dexpi-Piping-PipingNetworkSegment-Inclination:
+
+Inclination
+===========
+
+.. rubric:: Attribute (data)
+
+
+The inclination (slope) of the :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>` in percent.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullablePercentage </reference/PhysicalQuantities/NullablePercentage>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `INCLINATION <http://data.posccaesar.org/rdl/RDS17688057>`__
+
+   Name
+       Inclination
+
+   AttributeURI
+       `http://data.posccaesar.org/rdl/RDS17688057 <http://data.posccaesar.org/rdl/RDS17688057>`__
+
+.. admonition:: example
+
+   The instance pipingNetworkSegment1 represents a :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>` with an :ref:`Inclination <dexpi-Piping-PipingNetworkSegment-Inclination>` of 10.0 ???.
+
+   .. image:: /diagrams/diagram690.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="Inclination"
+              AttributeURI="http://data.posccaesar.org/rdl/RDS17688057"
+              Format="double"
+              Value="10.0"
+              Units="Percent"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1317959" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingNetworkSegment>
+      
+
+
+.. _dexpi-Piping-PipingNetworkSegment-InsulationThickness:
+
+InsulationThickness
+===================
+
+.. rubric:: Attribute (data)
+
+
+The insulation thickness of the :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `INSULATION THICKNESS <http://data.posccaesar.org/rdl/RDS4238040>`__
+
+   Name
+       InsulationThickness
+
+   AttributeURI
+       `http://data.posccaesar.org/rdl/RDS4238040 <http://data.posccaesar.org/rdl/RDS4238040>`__
+
+.. admonition:: example
+
+   The instance pipingNetworkSegment1 represents a :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>` with an :ref:`InsulationThickness <dexpi-Piping-PipingNetworkSegment-InsulationThickness>` of 40.0 mm.
+
+   .. image:: /diagrams/diagram691.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="InsulationThickness"
+              AttributeURI="http://data.posccaesar.org/rdl/RDS4238040"
+              Format="double"
+              Value="40.0"
+              Units="Millimetre"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1357739" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingNetworkSegment>
+      
+
+
+.. _dexpi-Piping-PipingNetworkSegment-InsulationType:
+
+InsulationType
+==============
+
+.. rubric:: Attribute (data)
+
+
+The identification code for the insulation type related to the :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>`. So far, DEXPI does not define restrictions for valid values.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `INSULATION TYPE ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/InsulationTypeAssignmentClass>`__
+
+   Name
+       InsulationTypeAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/InsulationTypeAssignmentClass <http://sandbox.dexpi.org/rdl/InsulationTypeAssignmentClass>`__
+
+.. admonition:: example
+
+   "Q" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="InsulationTypeAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/InsulationTypeAssignmentClass"
+              Format="string"
+              Value="Q" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingNetworkSegment>
+      
+
+
+.. _dexpi-Piping-PipingNetworkSegment-Items:
+
+Items
+=====
+
+.. rubric:: Attribute (composition)
+
+
+The items of the :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>`.
+
+Multiplicity
+    \*
+
+Type
+    :doc:`PipingNetworkSegmentItem </reference/Piping/PipingNetworkSegmentItem>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   The attribute is implemented using the :ref:`XML hierarchy of the Proteus file <proteus-concept-composition-property-xml-child>`: The ``<PipeOffPageConnector>``, ``<PipingComponent>``, or ``<PropertyBreak>`` elements for the attribute value (a :doc:`PipingNetworkSegmentItem </reference/Piping/PipingNetworkSegmentItem>`\ ) is a child of the ``<PipingNetworkSegment>`` element for the attribute owner (a :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>`\ ).
+
+.. admonition:: example
+
+   As the value type :doc:`PipingNetworkSegmentItem </reference/Piping/PipingNetworkSegmentItem>` is abstract, we consider :doc:`CheckValve </reference/Piping/CheckValve>` as an arbitrary concrete subclass.
+
+   .. image:: /diagrams/diagram692.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704" DOTS123="DOTS123">
+          ...
+          <PipingComponent
+              ID="checkValve1"
+              ComponentClass="CheckValve"
+              ComponentClassURI="http://data.posccaesar.org/rdl/RDS292229" DOTS123="DOTS123">
+            ...
+          <PipingComponent />
+          ...
+        <PipingNetworkSegment />
+      
+
+
+.. _dexpi-Piping-PipingNetworkSegment-JacketedPipe:
+
+JacketedPipe
+============
+
+.. rubric:: Attribute (data)
+
+
+A specialization indicating whether the :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>` is jacketed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`JacketedPipeClassification </reference/Enumerations/JacketedPipeClassification>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for enumeration values <proteus-concept-dexpi-generic-attribute-enumeration>`.
+
+   RDL reference
+       `JACKETED PIPE SPECIALIZATION <http://sandbox.dexpi.org/rdl/JacketedPipeSpecialization>`__
+
+   Name
+       JacketedPipeSpecialization
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/JacketedPipeSpecialization <http://sandbox.dexpi.org/rdl/JacketedPipeSpecialization>`__
+
+.. admonition:: example
+
+   jacketed (:ref:`JacketedPipeClassification::JacketedPipe <dexpi-Enumerations-JacketedPipeClassification-JacketedPipe>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="JacketedPipeSpecialization"
+              AttributeURI="http://sandbox.dexpi.org/rdl/JacketedPipeSpecialization"
+              Format="anyURI"
+              Value="JacketedPipe"
+              ValueURI="http://sandbox.dexpi.org/rdl/JacketedPipe" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingNetworkSegment>
+      
+
+
+.. _dexpi-Piping-PipingNetworkSegment-LowerLimitHeatTracingTemperature:
+
+LowerLimitHeatTracingTemperature
+================================
+
+.. rubric:: Attribute (data)
+
+
+The lower limit for the temperature that a heat tracing system must ensure for the :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableTemperature </reference/PhysicalQuantities/NullableTemperature>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `LOWER LIMIT HEAT TRACING TEMPERATURE <http://sandbox.dexpi.org/rdl/LowerLimitHeatTracingTemperature>`__
+
+   Name
+       LowerLimitHeatTracingTemperature
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/LowerLimitHeatTracingTemperature <http://sandbox.dexpi.org/rdl/LowerLimitHeatTracingTemperature>`__
+
+.. admonition:: example
+
+   The instance pipingNetworkSegment1 represents a :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>` with a :ref:`LowerLimitHeatTracingTemperature <dexpi-Piping-PipingNetworkSegment-LowerLimitHeatTracingTemperature>` of 100.0 °C.
+
+   .. image:: /diagrams/diagram693.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="LowerLimitHeatTracingTemperature"
+              AttributeURI="http://sandbox.dexpi.org/rdl/LowerLimitHeatTracingTemperature"
+              Format="double"
+              Value="100.0"
+              Units="DegreeCelsius"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1322684" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingNetworkSegment>
+      
+
+
+.. _dexpi-Piping-PipingNetworkSegment-NominalDiameterNumericalValueRepresentation:
+
+NominalDiameterNumericalValueRepresentation
+===========================================
+
+.. rubric:: Attribute (data)
+
+
+A readable representation of the numerical value of the nominal diameter of the :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>`, without any type or unit of measure.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `NOMINAL DIAMETER NUMERICAL VALUE REPRESENTATION ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/NominalDiameterNumericalValueRepresentationAssignmentClass>`__
+
+   Name
+       NominalDiameterNumericalValueRepresentationAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/NominalDiameterNumericalValueRepresentationAssignmentClass <http://sandbox.dexpi.org/rdl/NominalDiameterNumericalValueRepresentationAssignmentClass>`__
+
+.. admonition:: example
+
+   "25" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="NominalDiameterNumericalValueRepresentationAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/NominalDiameterNumericalValueRepresentationAssignmentClass"
+              Format="string"
+              Value="25" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingNetworkSegment>
+      
+
+
+.. _dexpi-Piping-PipingNetworkSegment-NominalDiameterRepresentation:
+
+NominalDiameterRepresentation
+=============================
+
+.. rubric:: Attribute (data)
+
+
+A readable representation of the nominal diameter of the :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>`. It normally contains a numerical value and a type or unit of measure.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `NOMINAL DIAMETER REPRESENTATION ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/NominalDiameterRepresentationAssignmentClass>`__
+
+   Name
+       NominalDiameterRepresentationAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/NominalDiameterRepresentationAssignmentClass <http://sandbox.dexpi.org/rdl/NominalDiameterRepresentationAssignmentClass>`__
+
+.. admonition:: example
+
+   "DN 25" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="NominalDiameterRepresentationAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/NominalDiameterRepresentationAssignmentClass"
+              Format="string"
+              Value="DN 25" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingNetworkSegment>
+      
+
+
+.. _dexpi-Piping-PipingNetworkSegment-NominalDiameterStandard:
+
+NominalDiameterStandard
+=======================
+
+.. rubric:: Attribute (data)
+
+
+The nominal diameter of the :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>`, given as a reference to a nominal diameter standard and value.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NominalDiameterStandardClassification </reference/Enumerations/NominalDiameterStandardClassification>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for enumeration values <proteus-concept-dexpi-generic-attribute-enumeration>`.
+
+   RDL reference
+       `NOMINAL DIAMETER STANDARD SPECIALIZATION <http://sandbox.dexpi.org/rdl/NominalDiameterStandardSpecialization>`__
+
+   Name
+       NominalDiameterStandardSpecialization
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/NominalDiameterStandardSpecialization <http://sandbox.dexpi.org/rdl/NominalDiameterStandardSpecialization>`__
+
+.. admonition:: example
+
+   DN 25 (DIN 2448) (:ref:`NominalDiameterStandardClassification::Din2448ObjectDn25 <dexpi-Enumerations-NominalDiameterStandardClassification-Din2448ObjectDn25>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="NominalDiameterStandardSpecialization"
+              AttributeURI="http://sandbox.dexpi.org/rdl/NominalDiameterStandardSpecialization"
+              Format="anyURI"
+              Value="Din2448ObjectDn25"
+              ValueURI="http://sandbox.dexpi.org/rdl/Din2448ObjectDn25" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingNetworkSegment>
+      
+
+
+.. _dexpi-Piping-PipingNetworkSegment-NominalDiameterTypeRepresentation:
+
+NominalDiameterTypeRepresentation
+=================================
+
+.. rubric:: Attribute (data)
+
+
+A readable representation of the type or unit of measure of the nominal diameter of the :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `NOMINAL DIAMETER TYPE REPRESENTATION ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/NominalDiameterTypeRepresentationAssignmentClass>`__
+
+   Name
+       NominalDiameterTypeRepresentationAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/NominalDiameterTypeRepresentationAssignmentClass <http://sandbox.dexpi.org/rdl/NominalDiameterTypeRepresentationAssignmentClass>`__
+
+.. admonition:: example
+
+   "DN" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="NominalDiameterTypeRepresentationAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/NominalDiameterTypeRepresentationAssignmentClass"
+              Format="string"
+              Value="DN" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingNetworkSegment>
+      
+
+
+.. _dexpi-Piping-PipingNetworkSegment-OnHold:
+
+OnHold
+======
+
+.. rubric:: Attribute (data)
+
+
+A specialization indicating if the :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>` is on hold or not.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`OnHoldClassification </reference/Enumerations/OnHoldClassification>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for enumeration values <proteus-concept-dexpi-generic-attribute-enumeration>`.
+
+   RDL reference
+       `ON HOLD SPECIALIZATION <http://sandbox.dexpi.org/rdl/OnHoldSpecialization>`__
+
+   Name
+       OnHoldSpecialization
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/OnHoldSpecialization <http://sandbox.dexpi.org/rdl/OnHoldSpecialization>`__
+
+.. admonition:: example
+
+   on hold (:ref:`OnHoldClassification::OnHold <dexpi-Enumerations-OnHoldClassification-OnHold>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="OnHoldSpecialization"
+              AttributeURI="http://sandbox.dexpi.org/rdl/OnHoldSpecialization"
+              Format="anyURI"
+              Value="OnHold"
+              ValueURI="http://sandbox.dexpi.org/rdl/OnHold" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingNetworkSegment>
+      
+
+
+.. _dexpi-Piping-PipingNetworkSegment-OperatingTemperature:
+
+OperatingTemperature
+====================
+
+.. rubric:: Attribute (data)
+
+
+The operating temperature of the :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableTemperature </reference/PhysicalQuantities/NullableTemperature>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `OPERATING TEMPERATURE <http://data.posccaesar.org/rdl/RDS357119>`__
+
+   Name
+       OperatingTemperature
+
+   AttributeURI
+       `http://data.posccaesar.org/rdl/RDS357119 <http://data.posccaesar.org/rdl/RDS357119>`__
+
+.. admonition:: example
+
+   The instance pipingNetworkSegment1 represents a :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>` with an :ref:`OperatingTemperature <dexpi-Piping-PipingNetworkSegment-OperatingTemperature>` of 100.0 °C.
+
+   .. image:: /diagrams/diagram694.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="OperatingTemperature"
+              AttributeURI="http://data.posccaesar.org/rdl/RDS357119"
+              Format="double"
+              Value="100.0"
+              Units="DegreeCelsius"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1322684" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingNetworkSegment>
+      
+
+
+.. _dexpi-Piping-PipingNetworkSegment-PipingClassCode:
+
+PipingClassCode
+===============
+
+.. rubric:: Attribute (data)
+
+
+The identification code of the piping class of the :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>`. So far, DEXPI does not define restrictions for valid values.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `PIPING CLASS CODE ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/PipingClassCodeAssignmentClass>`__
+
+   Name
+       PipingClassCodeAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/PipingClassCodeAssignmentClass <http://sandbox.dexpi.org/rdl/PipingClassCodeAssignmentClass>`__
+
+.. admonition:: example
+
+   "75HB13" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="PipingClassCodeAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/PipingClassCodeAssignmentClass"
+              Format="string"
+              Value="75HB13" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingNetworkSegment>
+      
+
+
+.. _dexpi-Piping-PipingNetworkSegment-PressureTestCircuitNumber:
+
+PressureTestCircuitNumber
+=========================
+
+.. rubric:: Attribute (data)
+
+
+The number of the pressure test circuit of the :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `PRESSURE TEST CIRCUIT NUMBER ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/PressureTestCircuitNumberAssignmentClass>`__
+
+   Name
+       PressureTestCircuitNumberAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/PressureTestCircuitNumberAssignmentClass <http://sandbox.dexpi.org/rdl/PressureTestCircuitNumberAssignmentClass>`__
+
+.. admonition:: example
+
+   "TC123" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="PressureTestCircuitNumberAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/PressureTestCircuitNumberAssignmentClass"
+              Format="string"
+              Value="TC123" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingNetworkSegment>
+      
+
+
+.. _dexpi-Piping-PipingNetworkSegment-PrimarySecondaryPipingNetworkSegment:
+
+PrimarySecondaryPipingNetworkSegment
+====================================
+
+.. rubric:: Attribute (data)
+
+
+A specialization indicating whether the :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>` is a primary or secondary :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`PrimarySecondaryPipingNetworkSegmentClassification </reference/Enumerations/PrimarySecondaryPipingNetworkSegmentClassification>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for enumeration values <proteus-concept-dexpi-generic-attribute-enumeration>`.
+
+   RDL reference
+       `PRIMARY SECONDARY PIPING NETWORK SEGMENT SPECIALIZATION <http://sandbox.dexpi.org/rdl/PrimarySecondaryPipingNetworkSegmentSpecialization>`__
+
+   Name
+       PrimarySecondaryPipingNetworkSegmentSpecialization
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/PrimarySecondaryPipingNetworkSegmentSpecialization <http://sandbox.dexpi.org/rdl/PrimarySecondaryPipingNetworkSegmentSpecialization>`__
+
+.. admonition:: example
+
+   primary segment (:ref:`PrimarySecondaryPipingNetworkSegmentClassification::PrimaryPipingNetworkSegment <dexpi-Enumerations-PrimarySecondaryPipingNetworkSegmentClassification-PrimaryPipingNetworkSegment>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="PrimarySecondaryPipingNetworkSegmentSpecialization"
+              AttributeURI="http://sandbox.dexpi.org/rdl/PrimarySecondaryPipingNetworkSegmentSpecialization"
+              Format="anyURI"
+              Value="PrimaryPipingNetworkSegment"
+              ValueURI="http://sandbox.dexpi.org/rdl/PrimaryPipingNetworkSegment" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingNetworkSegment>
+      
+
+
+.. _dexpi-Piping-PipingNetworkSegment-SegmentNumber:
+
+SegmentNumber
+=============
+
+.. rubric:: Attribute (data)
+
+
+The segment number of a :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>`. Values are typically (but not necessarily) string representations of numbers with a prefix.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `SEGMENT NUMBER ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/SegmentNumberAssignmentClass>`__
+
+   Name
+       SegmentNumberAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/SegmentNumberAssignmentClass <http://sandbox.dexpi.org/rdl/SegmentNumberAssignmentClass>`__
+
+.. admonition:: example
+
+   "S3" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="SegmentNumberAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/SegmentNumberAssignmentClass"
+              Format="string"
+              Value="S3" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingNetworkSegment>
+      
+
+
+.. _dexpi-Piping-PipingNetworkSegment-Siphon:
+
+Siphon
+======
+
+.. rubric:: Attribute (data)
+
+
+A specialization indicating if the :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>` is a siphon or not.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`SiphonClassification </reference/Enumerations/SiphonClassification>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for enumeration values <proteus-concept-dexpi-generic-attribute-enumeration>`.
+
+   RDL reference
+       `SIPHON SPECIALIZATION <http://sandbox.dexpi.org/rdl/SiphonSpecialization>`__
+
+   Name
+       SiphonSpecialization
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/SiphonSpecialization <http://sandbox.dexpi.org/rdl/SiphonSpecialization>`__
+
+.. admonition:: example
+
+   siphon (:ref:`SiphonClassification::Siphon <dexpi-Enumerations-SiphonClassification-Siphon>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="SiphonSpecialization"
+              AttributeURI="http://sandbox.dexpi.org/rdl/SiphonSpecialization"
+              Format="anyURI"
+              Value="Siphon"
+              ValueURI="http://data.posccaesar.org/rdl/RDS311084" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingNetworkSegment>
+      
+
+
+.. _dexpi-Piping-PipingNetworkSegment-Slope:
+
+Slope
+=====
+
+.. rubric:: Attribute (data)
+
+
+A specialization indicating if the :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>` is sloped or not.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`PipingNetworkSegmentSlopeClassification </reference/Enumerations/PipingNetworkSegmentSlopeClassification>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for enumeration values <proteus-concept-dexpi-generic-attribute-enumeration>`.
+
+   RDL reference
+       `SLOPE SPECIALIZATION <http://sandbox.dexpi.org/rdl/SlopeSpecialization>`__
+
+   Name
+       SlopeSpecialization
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/SlopeSpecialization <http://sandbox.dexpi.org/rdl/SlopeSpecialization>`__
+
+.. admonition:: example
+
+   sloped (:ref:`PipingNetworkSegmentSlopeClassification::SlopedPipingNetworkSegment <dexpi-Enumerations-PipingNetworkSegmentSlopeClassification-SlopedPipingNetworkSegment>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="SlopeSpecialization"
+              AttributeURI="http://sandbox.dexpi.org/rdl/SlopeSpecialization"
+              Format="anyURI"
+              Value="SlopedPipingNetworkSegment"
+              ValueURI="http://sandbox.dexpi.org/rdl/SlopedPipingNetworkSegment" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingNetworkSegment>
+      
+
+
+.. _dexpi-Piping-PipingNetworkSegment-SourceItem:
+
+SourceItem
+==========
+
+.. rubric:: Attribute (reference)
+
+
+The item at which the PipingNetworkSegment starts.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`PipingSourceItem </reference/Piping/PipingSourceItem>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   The SourceItem is given by means of the ``FromID`` XML attribute of the ``<Connection>`` element in the ``<PipingNetworkSegment>`` element. The value of the ``FromID`` XML attribute is the XML ``ID`` of the XML element corresponding to the SourceItem, e.g., a :doc:`Nozzle </reference/Equipment/Nozzle>` or a :doc:`PipingComponent </reference/Piping/PipingComponent>`.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram695.*
+
+
+   .. admonition:: proteus-example
+   
+      The XML fragment demonstrates the case that the SourceItem of the ``<PipingNetworkSegment>`` is the first item of the segment itself.
+
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment 
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704"
+            DOTS123="DOTS123">
+          ...
+          <PipingComponent
+              ID="blindFlange1"
+              ComponentClass="BlindFlange"
+              ComponentClassURI="http://data.posccaesar.org/rdl/RDS414719"
+              DOTS123="DOTS123">
+            <!-- This is the first item of the PipingNetworkSegment. -->
+            ...
+          </PipingComponent>
+          ...
+          <Connection FromID="blindFlange1" DOTS123="DOTS123">
+          ...
+        </PipingNetworkSegment>
+      
+
+
+.. _dexpi-Piping-PipingNetworkSegment-SourceNode:
+
+SourceNode
+==========
+
+.. rubric:: Attribute (reference)
+
+
+The :doc:`PipingNode </reference/Piping/PipingNode>` at which the :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>` starts.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`PipingNode </reference/Piping/PipingNode>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   The SourceNode is given by means of the ``FromNode`` XML attribute of the ``<Connection>`` element in the ``<PipingNetworkSegment>`` element. The value of the ``FromNode`` XML attribute is an integer. It refers to the zero-based index of the ``<Node>`` element within the ``<ConnectionPoints>`` element associated with the owner of the :doc:`PipingNode </reference/Piping/PipingNode>`. The owner itself is given by means of the ``FromID`` XML attribute of the ``<Connection>`` element (see Proteus Schema Implementation of :ref:`SourceItem <dexpi-Piping-PipingNetworkSegment-SourceItem>`\ ).
+
+   For details, see :ref:`Proteus P&ID File Specification <dexpi-glossary-proteus>`. Note that in certain cases, Proteus Schema allows to omit the ``FromNode`` attribute when it is clear from the context.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram696.*
+
+
+   .. admonition:: proteus-example
+   
+      The XML fragment demonstrates the case that the SourceNode belongs to a :doc:`PipeTee </reference/Piping/PipeTee>` in another :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>`.
+
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment 
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704"
+            DOTS123="DOTS123">
+          ...
+          <Connection FromID="pipeTee1" FromNode="2"/>
+          ...
+        </PipingNetworkSegment>
+        ...
+        <PipingNetworkSegment 
+            ID="pipingNetworkSegment2"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704"
+            DOTS123="DOTS123">
+          ...
+          <PipingComponent
+              ID="pipeTee1"
+              ComponentClass="PipeTee"
+              ComponentClassURI="http://data.posccaesar.org/rdl/RDS427724"
+              DOTS123="DOTS123">
+            ...
+            <ConnectionPoints NumPoints="4" DOTS123="DOTS123">
+              <Node DOTS123="DOTS123"> ... </Node>
+              <Node DOTS123="DOTS123"> ... </Node>
+              <Node ID="pipingNode1" Type="process" DOTS123="DOTS123">
+                <!-- This node has index 2. -->
+              </Node>
+              <Node DOTS123="DOTS123"> ... </Node>
+            </ConnectionPoints>
+            ...
+          </PipingComponent>
+        
+          ...
+        </PipingNetworkSegment>
+      
+
+
+.. _dexpi-Piping-PipingNetworkSegment-TargetItem:
+
+TargetItem
+==========
+
+.. rubric:: Attribute (reference)
+
+
+The item at which the PipingNetworkSegment ends.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`PipingTargetItem </reference/Piping/PipingTargetItem>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   The TargetItem is given by means of the ``ToID`` XML attribute of the ``<Connection>`` element in the ``<PipingNetworkSegment>`` element. The value of the ``ToID`` XML attribute is the XML ``ID`` of the XML element corresponding to the TargetItem, e.g., a :doc:`Nozzle </reference/Equipment/Nozzle>` or a :doc:`PipingComponent </reference/Piping/PipingComponent>`.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram697.*
+
+
+   .. admonition:: proteus-example
+   
+      The XML fragment demonstrates the case that the TargetItem of the ``<PipingNetworkSegment>`` is a :doc:`Nozzle </reference/Equipment/Nozzle>` of some :doc:`Equipment </reference/Equipment/Equipment>` item.
+
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment 
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704"
+            DOTS123="DOTS123">
+          ...
+          <Connection ToID="nozzle1" DOTS123="DOTS123">
+          ...
+        </PipingNetworkSegment>
+        ...
+        <Equipment DOTS123="DOTS123">
+          ...
+          <Nozzle
+              ID="nozzle1"
+              ComponentClass="Nozzle"
+              ComponentClassURI="http://data.posccaesar.org/rdl/RDS415214"
+              DOTS123="DOTS123">
+            ...
+          </Nozzle>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Piping-PipingNetworkSegment-TargetNode:
+
+TargetNode
+==========
+
+.. rubric:: Attribute (reference)
+
+
+The Node at which the PipingNetworkSegment ends.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`PipingNode </reference/Piping/PipingNode>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   The TargetNode is given by means of the ``ToNode`` XML attribute of the ``<Connection>`` element in the ``<PipingNetworkSegment>`` element. The value of the ``ToNode`` XML attribute is an integer. It refers to the zero-based index of the ``<Node>`` element within the ``<ConnectionPoints>`` element associated with the owner of the :doc:`PipingNode </reference/Piping/PipingNode>`. The owner itself is given by means of the ``ToID`` XML attribute of the ``<Connection>`` element (see Proteus Schema Implementation of :ref:`TargetItem <dexpi-Piping-PipingNetworkSegment-TargetItem>`\ ).
+
+   For details, see :ref:`Proteus P&ID File Specification <dexpi-glossary-proteus>`. Note that in certain cases, Proteus Schema allows to omit the ``ToNode`` attribute when it is clear from the context.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram698.*
+
+
+   .. admonition:: proteus-example
+   
+      The XML fragment demonstrates the case that the TargetNode belongs to a :doc:`PipeTee </reference/Piping/PipeTee>` in another :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>`.
+
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSegment 
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704"
+            DOTS123="DOTS123">
+          ...
+          <Connection ToID="pipeTee1" ToNode="2"/>
+          ...
+        </PipingNetworkSegment>
+        ...
+        <PipingNetworkSegment 
+            ID="pipingNetworkSegment2"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704"
+            DOTS123="DOTS123">
+          ...
+          <PipingComponent
+              ID="pipeTee1"
+              ComponentClass="PipeTee"
+              ComponentClassURI="http://data.posccaesar.org/rdl/RDS427724"
+              DOTS123="DOTS123">
+            ...
+            <ConnectionPoints NumPoints="4" DOTS123="DOTS123">
+              <Node DOTS123="DOTS123"> ... </Node>
+              <Node DOTS123="DOTS123"> ... </Node>
+              <Node ID="pipingNode1" Type="process" DOTS123="DOTS123">
+                <!-- This node has index 2. -->
+              </Node>
+              <Node DOTS123="DOTS123"> ... </Node>
+            </ConnectionPoints>
+            ...
+          </PipingComponent>
+        
+          ...
+        </PipingNetworkSegment>
+      
+

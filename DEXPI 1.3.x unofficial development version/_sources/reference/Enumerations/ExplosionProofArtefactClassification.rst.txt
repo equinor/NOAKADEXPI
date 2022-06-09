@@ -1,0 +1,52 @@
+====================================
+ExplosionProofArtefactClassification
+====================================
+
+Overview
+========
+
+.. rubric:: Enumeration
+
+.. image:: ExplosionProofArtefactClassification.*
+
+
+.. rubric:: Literals
+
++----------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+-------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                                       | Symbol                                                     | proteus#RDL Reference                                                                     | proteus#RDL URI                                                                                                     |
++============================================================================================================================+============================================================+===========================================================================================+=====================================================================================================================+
+| .. _dexpi-Enumerations-ExplosionProofArtefactClassification-NULL:                                                          | :ref:`null <dexpi-concept-null-value>`                     |                                                                                           |                                                                                                                     |
+|                                                                                                                            |                                                            |                                                                                           |                                                                                                                     |
+| NULL                                                                                                                       |                                                            |                                                                                           |                                                                                                                     |
++----------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+-------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
+| .. _dexpi-Enumerations-ExplosionProofArtefactClassification-ExplosionProofArtefact:                                        | explosion-proof artefact                                   | `EXPLOSION PROOF ARTEFACT <http://sandbox.dexpi.org/rdl/ExplosionProofArtefact>`__        | `http://sandbox.dexpi.org/rdl/ExplosionProofArtefact <http://sandbox.dexpi.org/rdl/ExplosionProofArtefact>`__       |
+|                                                                                                                            |                                                            |                                                                                           |                                                                                                                     |
+| ExplosionProofArtefact                                                                                                     |                                                            |                                                                                           |                                                                                                                     |
++----------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+-------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
+| .. _dexpi-Enumerations-ExplosionProofArtefactClassification-NonExplosionProofArtefact:                                     | non explosion-proof artefact                               | `NON EXPLOSION PROOF ARTEFACT <http://sandbox.dexpi.org/rdl/NonExplosionProofArtefact>`__ | `http://sandbox.dexpi.org/rdl/NonExplosionProofArtefact <http://sandbox.dexpi.org/rdl/NonExplosionProofArtefact>`__ |
+|                                                                                                                            |                                                            |                                                                                           |                                                                                                                     |
+| NonExplosionProofArtefact                                                                                                  |                                                            |                                                                                           |                                                                                                                     |
++----------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+-------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   All data attributes with type :doc:`ExplosionProofArtefactClassification </reference/Enumerations/ExplosionProofArtefactClassification>` are implemented as :ref:`DEXPI generic attributes for enumeration values <proteus-concept-dexpi-generic-attribute-enumeration>`. In a ``<GenericAttribute>`` element, the :doc:`ExplosionProofArtefactClassification </reference/Enumerations/ExplosionProofArtefactClassification>` literal is given by means of its :ref:`RDL reference <proteus-concept-rdl-reference>` in the table above. The ``Value`` attribute of the element is the name of the RDL reference in camel-case; it equals the name of the literal. The ``ValueURI`` attribute of the element is the URI of the RDL reference.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram51.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Format="anyURI"
+          Value="ExplosionProofArtefact"
+          ValueURI="http://sandbox.dexpi.org/rdl/ExplosionProofArtefact" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have a ``Name`` and an ``AttributeURI`` attribute. They depend on the data type attribute of the DEXPI class that owns the instance :ref:`ExplosionProofArtefact <dexpi-Enumerations-ExplosionProofArtefactClassification-ExplosionProofArtefact>`. For a complete example, see the attribute :ref:`ExplosionProofArtefact <dexpi-Piping-FlameArrestor-ExplosionProofArtefact>` of the DEXPI class :doc:`FlameArrestor </reference/Piping/FlameArrestor>`.
+

@@ -1,0 +1,18 @@
+============
+UnsignedByte
+============
+
+Overview
+========
+
+.. rubric:: Data type
+
+An integer number in the range from 0 to 255 (inclusively). The value space of :doc:`UnsignedByte </reference/DataTypes/UnsignedByte>` is the same as that of the XML Schema data type `unsignedByte <https://www.w3.org/TR/xmlschema-2/#unsignedByte>`__ as specified by the W3C Recommendation `XML Schema Part 2: Datatypes Second Edition <https://www.w3.org/TR/xmlschema-2>`__ from October 28, 2004.
+
+.. image:: UnsignedByte.*
+
+
+.. admonition:: proteus
+
+   :doc:`UnsignedByte </reference/DataTypes/UnsignedByte>` is only used as the type of the :ref:`R <dexpi-Graphics-Color-R>`, :ref:`G <dexpi-Graphics-Color-G>`, and :ref:`B <dexpi-Graphics-Color-B>` attributes of :doc:`Color </reference/Graphics/Color>`. For these attributes, special rules apply; see Proteus Schema implementation of :doc:`Color </reference/Graphics/Color>`.
+

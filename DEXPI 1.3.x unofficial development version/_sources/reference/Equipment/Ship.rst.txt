@@ -1,0 +1,52 @@
+====
+Ship
+====
+
+Overview
+========
+
+.. rubric:: Class
+
+A watercraft and :doc:`MobileTransportSystem </reference/Equipment/MobileTransportSystem>` that is a sea-going vessel of considerable size.
+
+.. image:: Ship.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`MobileTransportSystem </reference/Equipment/MobileTransportSystem>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `SHIP <http://data.posccaesar.org/rdl/RDS11523932>`__
+
+   ComponentClass
+       Ship
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS11523932 <http://data.posccaesar.org/rdl/RDS11523932>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram449.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="ship1"
+            ComponentClass="Ship"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS11523932" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+

@@ -1,0 +1,52 @@
+=====================
+ClampedFlangeCoupling
+=====================
+
+Overview
+========
+
+.. rubric:: Class
+
+A clamped flange coupling.
+
+.. image:: ClampedFlangeCoupling.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`PipeFitting </reference/Piping/PipeFitting>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingComponent>``
+
+   RDL reference
+       `CLAMPED FLANGE COUPLING <http://sandbox.dexpi.org/rdl/ClampedFlangeCoupling>`__
+
+   ComponentClass
+       ClampedFlangeCoupling
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/ClampedFlangeCoupling <http://sandbox.dexpi.org/rdl/ClampedFlangeCoupling>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram636.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="clampedFlangeCoupling1"
+            ComponentClass="ClampedFlangeCoupling"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/ClampedFlangeCoupling" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+

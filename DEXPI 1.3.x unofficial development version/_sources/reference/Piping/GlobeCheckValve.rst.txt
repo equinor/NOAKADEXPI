@@ -1,0 +1,52 @@
+===============
+GlobeCheckValve
+===============
+
+Overview
+========
+
+.. rubric:: Class
+
+A globe chack valve.
+
+.. image:: GlobeCheckValve.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`CheckValve </reference/Piping/CheckValve>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingComponent>``
+
+   RDL reference
+       `GLOBE CHECK VALVE <http://sandbox.dexpi.org/rdl/GlobeCheckValve>`__
+
+   ComponentClass
+       GlobeCheckValve
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/GlobeCheckValve <http://sandbox.dexpi.org/rdl/GlobeCheckValve>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram656.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="globeCheckValve1"
+            ComponentClass="GlobeCheckValve"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/GlobeCheckValve" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+

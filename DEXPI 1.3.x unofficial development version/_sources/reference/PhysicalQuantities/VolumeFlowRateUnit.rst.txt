@@ -1,0 +1,69 @@
+==================
+VolumeFlowRateUnit
+==================
+
+Overview
+========
+
+.. rubric:: Enumeration
+
+A unit of measurement for a physical quantity of type :doc:`NullableVolumeFlowRate </reference/PhysicalQuantities/NullableVolumeFlowRate>` with :ref:`dimension <dexpi-glossary-physical-dimension>` L\ :sup:`3`\T\ :sup:`-1`.
+
+.. image:: VolumeFlowRateUnit.*
+
+
+.. rubric:: Literals
+
++----------------------------------------------------------------------------------------------------+------------------+---------+------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+| Name                                                                                               | Symbol           | UN Code | proteus#RDL Reference                                                  | proteus#RDL URI                                                                           |
++====================================================================================================+==================+=========+========================================================================+===========================================================================================+
+| .. _dexpi-PhysicalQuantities-VolumeFlowRateUnit-FootCubedPerHour:                                  | ft\ :sup:`3`/h   | 2K      | `FOOT CUBED PER HOUR <http://data.posccaesar.org/rdl/RDS1320029>`__    | `http://data.posccaesar.org/rdl/RDS1320029 <http://data.posccaesar.org/rdl/RDS1320029>`__ |
+|                                                                                                    |                  |         |                                                                        |                                                                                           |
+| FootCubedPerHour                                                                                   |                  |         |                                                                        |                                                                                           |
++----------------------------------------------------------------------------------------------------+------------------+---------+------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+| .. _dexpi-PhysicalQuantities-VolumeFlowRateUnit-FootCubedPerMinute:                                | ft\ :sup:`3`/min | 2L      | `FOOT CUBED PER MINUTE <http://data.posccaesar.org/rdl/RDS1320164>`__  | `http://data.posccaesar.org/rdl/RDS1320164 <http://data.posccaesar.org/rdl/RDS1320164>`__ |
+|                                                                                                    |                  |         |                                                                        |                                                                                           |
+| FootCubedPerMinute                                                                                 |                  |         |                                                                        |                                                                                           |
++----------------------------------------------------------------------------------------------------+------------------+---------+------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+| .. _dexpi-PhysicalQuantities-VolumeFlowRateUnit-LitrePerSecond:                                    | l/s              | G51     | `LITRE PER SECOND <http://data.posccaesar.org/rdl/RDS1331369>`__       | `http://data.posccaesar.org/rdl/RDS1331369 <http://data.posccaesar.org/rdl/RDS1331369>`__ |
+|                                                                                                    |                  |         |                                                                        |                                                                                           |
+| LitrePerSecond                                                                                     |                  |         |                                                                        |                                                                                           |
++----------------------------------------------------------------------------------------------------+------------------+---------+------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+| .. _dexpi-PhysicalQuantities-VolumeFlowRateUnit-MetreCubedPerDay:                                  | m\ :sup:`3`/d    | G52     | `METRE CUBED PER DAY <http://data.posccaesar.org/rdl/RDS1320839>`__    | `http://data.posccaesar.org/rdl/RDS1320839 <http://data.posccaesar.org/rdl/RDS1320839>`__ |
+|                                                                                                    |                  |         |                                                                        |                                                                                           |
+| MetreCubedPerDay                                                                                   |                  |         |                                                                        |                                                                                           |
++----------------------------------------------------------------------------------------------------+------------------+---------+------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+| .. _dexpi-PhysicalQuantities-VolumeFlowRateUnit-MetreCubedPerHour:                                 | m\ :sup:`3`/h    | MQH     | `METRE CUBED PER HOUR <http://data.posccaesar.org/rdl/RDS1321064>`__   | `http://data.posccaesar.org/rdl/RDS1321064 <http://data.posccaesar.org/rdl/RDS1321064>`__ |
+|                                                                                                    |                  |         |                                                                        |                                                                                           |
+| MetreCubedPerHour                                                                                  |                  |         |                                                                        |                                                                                           |
++----------------------------------------------------------------------------------------------------+------------------+---------+------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+| .. _dexpi-PhysicalQuantities-VolumeFlowRateUnit-MetreCubedPerMinute:                               | m\ :sup:`3`/min  | G53     | `METRE CUBED PER MINUTE <http://data.posccaesar.org/rdl/RDS1349909>`__ | `http://data.posccaesar.org/rdl/RDS1349909 <http://data.posccaesar.org/rdl/RDS1349909>`__ |
+|                                                                                                    |                  |         |                                                                        |                                                                                           |
+| MetreCubedPerMinute                                                                                |                  |         |                                                                        |                                                                                           |
++----------------------------------------------------------------------------------------------------+------------------+---------+------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+| .. _dexpi-PhysicalQuantities-VolumeFlowRateUnit-MetreCubedPerSecond:                               | m\ :sup:`3`/s    | MQS     | `METRE CUBED PER SECOND <http://data.posccaesar.org/rdl/RDS1321379>`__ | `http://data.posccaesar.org/rdl/RDS1321379 <http://data.posccaesar.org/rdl/RDS1321379>`__ |
+|                                                                                                    |                  |         |                                                                        |                                                                                           |
+| MetreCubedPerSecond                                                                                |                  |         |                                                                        |                                                                                           |
++----------------------------------------------------------------------------------------------------+------------------+---------+------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   :doc:`VolumeFlowRateUnit </reference/PhysicalQuantities/VolumeFlowRateUnit>` is only used as the type of the :ref:`Unit <dexpi-PhysicalQuantities-VolumeFlowRate-Unit>` attribute of :doc:`VolumeFlowRate </reference/PhysicalQuantities/VolumeFlowRate>`. :doc:`VolumeFlowRate </reference/PhysicalQuantities/VolumeFlowRate>` is implemented using :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`. In a ``<GenericAttribute>`` element, the :doc:`VolumeFlowRateUnit </reference/PhysicalQuantities/VolumeFlowRateUnit>` literal is given by means of its :ref:`RDL reference <proteus-concept-rdl-reference>` in the table above. The ``Units`` attribute of the element is the name of the RDL reference in camel-case; it equals the name of the literal. The ``UnitsURI`` attribute of the element is the URI of the RDL reference.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram623.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Units="MetreCubedPerHour"
+          UnitsURI="http://data.posccaesar.org/rdl/RDS1321064" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have further attributes (``Format``, ``Value``, ``Name``, and ``AttributeURI``)DOTANDSPACEHACKSee the implementation examples for :doc:`VolumeFlowRate </reference/PhysicalQuantities/VolumeFlowRate>` and for the :ref:`DesignVolumeFlowRate <dexpi-Equipment-Agglomerator-DesignVolumeFlowRate>` attribute of :doc:`Agglomerator </reference/Equipment/Agglomerator>`.
+

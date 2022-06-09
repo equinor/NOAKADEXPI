@@ -1,0 +1,16 @@
+======
+Border
+======
+
+Overview
+========
+
+.. rubric:: Class
+
+.. image:: Border.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`RepresentationTypeGroup </reference/Graphics/RepresentationTypeGroup>`
+

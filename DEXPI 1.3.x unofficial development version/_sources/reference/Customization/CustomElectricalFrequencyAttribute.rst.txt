@@ -1,0 +1,102 @@
+==================================
+CustomElectricalFrequencyAttribute
+==================================
+
+Overview
+========
+
+.. rubric:: Class
+
+A :ref:`custom attribute <dexpi-concept-custom-attributes>` with :ref:`Value <dexpi-Customization-CustomElectricalFrequencyAttribute-Value>` type :doc:`NullableElectricalFrequency </reference/PhysicalQuantities/NullableElectricalFrequency>`.
+
+.. image:: CustomElectricalFrequencyAttribute.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`CustomAttribute </reference/Customization/CustomAttribute>`
+
+.. rubric:: Attributes (data)
+
++------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                       | Multiplicity | Type                                                                                                                                   |
++============================================================================================================+==============+========================================================================================================================================+
+| :ref:`Value <dexpi-Customization-CustomElectricalFrequencyAttribute-Value>`                                | 1            | :doc:`NullableElectricalFrequency </reference/PhysicalQuantities/NullableElectricalFrequency>`                                         |
++------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   :doc:`CustomElectricalFrequencyAttribute </reference/Customization/CustomElectricalFrequencyAttribute>` is implemented as a :ref:`custom generic attribute for physical quantities <proteus-concept-dexpi-custom-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `ELECTRICAL FREQUENCY <http://data.posccaesar.org/rdl/RDS401399>`__
+
+   Type
+       ElectricalFrequency
+
+   TypeURI
+       `http://data.posccaesar.org/rdl/RDS401399 <http://data.posccaesar.org/rdl/RDS401399>`__
+
+.. admonition:: example
+
+   As :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>` is abstract, we consider :doc:`Positioner </reference/Instrumentation/Positioner>` as an arbitrary concrete subclass.
+
+   The :doc:`Positioner </reference/Instrumentation/Positioner>` positioner1 has a :doc:`CustomElectricalFrequencyAttribute </reference/Customization/CustomElectricalFrequencyAttribute>` with :ref:`AttributeName <dexpi-Customization-CustomAttribute-AttributeName>` "AlternatingCurrentFrequency" and an (arbitrary) :ref:`AttributeURI <dexpi-Customization-CustomAttribute-AttributeURI>` "http://www.example.org/9c2c76fc470069"DOTANDSPACEHACKThe :ref:`Value <dexpi-Customization-CustomElectricalFrequencyAttribute-Value>` is 50 Hz.
+
+   .. image:: /diagrams/diagram17.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <ActuatingSystemComponent
+            ID="positioner1"
+            ComponentClass="Positioner"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/Positioner" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiCustomAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="AlternatingCurrentFrequency"
+              AttributeURI="http://www.example.org/9c2c76fc470069"
+              Format="double"
+              Type="ElectricalFrequency"
+              TypeURI="http://data.posccaesar.org/rdl/RDS401399"
+              Value="50"
+              Units="Hertz"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1326464" />
+            ...
+          </GenericAttributes>
+          ...
+        </ActuatingSystemComponent>
+      
+
+
+.. _dexpi-Customization-CustomElectricalFrequencyAttribute-Value:
+
+Value
+=====
+
+.. rubric:: Attribute (data)
+
+
+The value of the :doc:`CustomElectricalFrequencyAttribute </reference/Customization/CustomElectricalFrequencyAttribute>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`NullableElectricalFrequency </reference/PhysicalQuantities/NullableElectricalFrequency>`
+
+Redefines
+    :ref:`Value <dexpi-Customization-CustomAttribute-Value>` (inherited from :doc:`CustomAttribute </reference/Customization/CustomAttribute>`\ )
+
+.. admonition:: proteus
+
+   See implementation of :doc:`CustomElectricalFrequencyAttribute </reference/Customization/CustomElectricalFrequencyAttribute>`.
+
+.. admonition:: example
+
+   See the example for :doc:`CustomElectricalFrequencyAttribute </reference/Customization/CustomElectricalFrequencyAttribute>`.
+

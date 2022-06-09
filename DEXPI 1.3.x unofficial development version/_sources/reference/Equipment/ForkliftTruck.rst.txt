@@ -1,0 +1,121 @@
+=============
+ForkliftTruck
+=============
+
+Overview
+========
+
+.. rubric:: Class
+
+A :doc:`MobileTransportSystem </reference/Equipment/MobileTransportSystem>` and vehicle with power operated prongs that can be raised and lowered by will, for loading, transporting and unloading goods (from `http://data.15926.org/rdl/RDS11590075 <http://data.15926.org/rdl/RDS11590075>`__).
+
+.. image:: ForkliftTruck.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`MobileTransportSystem </reference/Equipment/MobileTransportSystem>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+| Name                                                                                                                       | Multiplicity | Type                                                                                               |
++============================================================================================================================+==============+====================================================================================================+
+| :ref:`UpperLimitDischargeHead <dexpi-Equipment-ForkliftTruck-UpperLimitDischargeHead>`                                     | 0..1         | :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`                               |
++----------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `FORKLIFT TRUCK <http://data.posccaesar.org/rdl/RDS11590075>`__
+
+   ComponentClass
+       ForkliftTruck
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS11590075 <http://data.posccaesar.org/rdl/RDS11590075>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram295.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="forkliftTruck1"
+            ComponentClass="ForkliftTruck"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS11590075" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-ForkliftTruck-UpperLimitDischargeHead:
+
+UpperLimitDischargeHead
+=======================
+
+.. rubric:: Attribute (data)
+
+
+The upper limit for the discharge head of the :doc:`ForkliftTruck </reference/Equipment/ForkliftTruck>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `UPPER LIMIT DISCHARGE HEAD <http://sandbox.dexpi.org/rdl/UpperLimitDischargeHead>`__
+
+   Name
+       UpperLimitDischargeHead
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/UpperLimitDischargeHead <http://sandbox.dexpi.org/rdl/UpperLimitDischargeHead>`__
+
+.. admonition:: example
+
+   The instance forkliftTruck1 represents a :doc:`ForkliftTruck </reference/Equipment/ForkliftTruck>` with an :ref:`UpperLimitDischargeHead <dexpi-Equipment-ForkliftTruck-UpperLimitDischargeHead>` of 37.0 cm.
+
+   .. image:: /diagrams/diagram296.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="forkliftTruck1"
+            ComponentClass="ForkliftTruck"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS11590075" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="UpperLimitDischargeHead"
+              AttributeURI="http://sandbox.dexpi.org/rdl/UpperLimitDischargeHead"
+              Format="double"
+              Value="37.0"
+              Units="Centimetre"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1318004" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+

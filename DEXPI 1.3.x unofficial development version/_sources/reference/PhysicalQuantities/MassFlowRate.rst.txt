@@ -1,0 +1,103 @@
+============
+MassFlowRate
+============
+
+Overview
+========
+
+.. rubric:: Data type
+
+An :ref:`actual value <dexpi-concept-actual-value>` for a physical quantity of type :doc:`NullableMassFlowRate </reference/PhysicalQuantities/NullableMassFlowRate>`, i.e., a physical quantity that has a numerical value and a unit of measurement.
+
+.. image:: MassFlowRate.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`NullableMassFlowRate </reference/PhysicalQuantities/NullableMassFlowRate>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------+
+| Name                                                                                   | Multiplicity | Type                                                                                                   |
++========================================================================================+==============+========================================================================================================+
+| :ref:`Unit <dexpi-PhysicalQuantities-MassFlowRate-Unit>`                               | 1            | :doc:`MassFlowRateUnit </reference/PhysicalQuantities/MassFlowRateUnit>`                               |
++----------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------+
+| :ref:`Value <dexpi-PhysicalQuantities-MassFlowRate-Value>`                             | 1            | :doc:`Double </reference/DataTypes/Double>`                                                            |
++----------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   All data attributes with type :doc:`NullableMassFlowRate </reference/PhysicalQuantities/NullableMassFlowRate>` (the base type of :doc:`MassFlowRate </reference/PhysicalQuantities/MassFlowRate>`\ ) are implemented as :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+.. admonition:: example
+
+   The instance massFlowRate1 represents a :doc:`MassFlowRate </reference/PhysicalQuantities/MassFlowRate>` of 240.0 kg/h.
+
+   .. image:: /diagrams/diagram585.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Format="double"
+          Value="240.0"
+          Units="KilogramPerHour"
+          UnitsURI="http://data.posccaesar.org/rdl/RDS1329344" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have a ``Name`` and an ``AttributeURI`` attribute. They depend on the data type attribute of the DEXPI class that owns the instance massFlowRate1. For a complete example, see the attribute :ref:`DesignLiquidFeedMassFlowRate <dexpi-Equipment-Agglomerator-DesignLiquidFeedMassFlowRate>` of the DEXPI class :doc:`Agglomerator </reference/Equipment/Agglomerator>`.
+
+
+.. _dexpi-PhysicalQuantities-MassFlowRate-Unit:
+
+Unit
+====
+
+.. rubric:: Attribute (data)
+
+
+The unit of measurement of the :doc:`MassFlowRate </reference/PhysicalQuantities/MassFlowRate>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`MassFlowRateUnit </reference/PhysicalQuantities/MassFlowRateUnit>`
+
+.. admonition:: proteus
+
+   See implementation of :doc:`MassFlowRate </reference/PhysicalQuantities/MassFlowRate>`.
+
+.. admonition:: example
+
+   See example for :doc:`MassFlowRate </reference/PhysicalQuantities/MassFlowRate>`.
+
+
+.. _dexpi-PhysicalQuantities-MassFlowRate-Value:
+
+Value
+=====
+
+.. rubric:: Attribute (data)
+
+
+The numerical value of the :doc:`MassFlowRate </reference/PhysicalQuantities/MassFlowRate>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Double </reference/DataTypes/Double>`
+
+.. admonition:: proteus
+
+   See implementation of :doc:`MassFlowRate </reference/PhysicalQuantities/MassFlowRate>`.
+
+.. admonition:: example
+
+   See example for :doc:`MassFlowRate </reference/PhysicalQuantities/MassFlowRate>`.
+

@@ -1,0 +1,310 @@
+========
+Impeller
+========
+
+Overview
+========
+
+.. rubric:: Class
+
+An energy converter component that is an assembly of rotating vanes within an enclosure which is used to impart energy to or derive energy from a fluid through dynamic force (from `http://data.posccaesar.org/rdl/RDS414539 <http://data.posccaesar.org/rdl/RDS414539>`__).
+
+.. image:: Impeller.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`ConceptualObject </reference/DexpiModel/ConceptualObject>`
+
+* :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+| Name                                                                                                                       | Multiplicity | Type                                                                                               |
++============================================================================================================================+==============+====================================================================================================+
+| :ref:`Diameter <dexpi-Equipment-Impeller-Diameter>`                                                                        | 0..1         | :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`                               |
++----------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+| :ref:`MaterialOfConstructionCode <dexpi-Equipment-Impeller-MaterialOfConstructionCode>`                                    | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                        |
++----------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+| :ref:`StageIdentifier <dexpi-Equipment-Impeller-StageIdentifier>`                                                          | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                        |
++----------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+
+.. rubric:: Attributes (reference)
+
++----------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+| Name                                                                       | Multiplicity | Type                                                               |
++============================================================================+==============+====================================================================+
+| :ref:`Chamber <dexpi-Equipment-Impeller-Chamber>`                          | 0..1         | :doc:`Chamber </reference/Equipment/Chamber>`                      |
++----------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `IMPELLER <http://data.posccaesar.org/rdl/RDS414539>`__
+
+   ComponentClass
+       Impeller
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS414539 <http://data.posccaesar.org/rdl/RDS414539>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram331.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="impeller1"
+            ComponentClass="Impeller"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS414539" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-Impeller-Chamber:
+
+Chamber
+=======
+
+.. rubric:: Attribute (reference)
+
+
+The :doc:`Chamber </reference/Equipment/Chamber>` in which the :doc:`Impeller </reference/Equipment/Impeller>` is located, if applicable. The Chamber must be a component of the same object as the Impeller.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`Chamber </reference/Equipment/Chamber>`
+
+Opposite multiplicity
+    0..*
+
+.. admonition:: proteus
+
+   The attribute is implemented using :ref:`Proteus \<Association\> elements <proteus-concept-reference-property-association>`.
+
+   Association type for the attribute ower
+       ``"is located in"``
+
+   Opposite association type
+       ``"is the location of"``
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram332.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="impeller1"
+            ComponentClass="Impeller"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS414539" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="is located in"
+            ItemID="chamber1" />
+          ...
+        <Equipment />
+        ...
+        <Equipment
+            ID="chamber1"
+            ComponentClass="Chamber"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS903151421" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="is the location of"
+            ItemID="impeller1" />
+          ...
+        <Equipment />
+      
+
+
+.. _dexpi-Equipment-Impeller-Diameter:
+
+Diameter
+========
+
+.. rubric:: Attribute (data)
+
+
+The diameter of the :doc:`Impeller </reference/Equipment/Impeller>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DIAMETER <http://data.posccaesar.org/rdl/RDS350954>`__
+
+   Name
+       Diameter
+
+   AttributeURI
+       `http://data.posccaesar.org/rdl/RDS350954 <http://data.posccaesar.org/rdl/RDS350954>`__
+
+.. admonition:: example
+
+   The instance impeller1 represents an :doc:`Impeller </reference/Equipment/Impeller>` with a :ref:`Diameter <dexpi-Equipment-Impeller-Diameter>` of 20.0 cm.
+
+   .. image:: /diagrams/diagram333.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="impeller1"
+            ComponentClass="Impeller"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS414539" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="Diameter"
+              AttributeURI="http://data.posccaesar.org/rdl/RDS350954"
+              Format="double"
+              Value="20.0"
+              Units="Centimetre"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1318004" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-Impeller-MaterialOfConstructionCode:
+
+MaterialOfConstructionCode
+==========================
+
+.. rubric:: Attribute (data)
+
+
+A code that gives the material of construction of the :doc:`Impeller </reference/Equipment/Impeller>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `MATERIAL OF CONSTRUCTION CODE ASSIGNMENT CLASS <http://data.posccaesar.org/rdl/RDS1460719741>`__
+
+   Name
+       MaterialOfConstructionCodeAssignmentClass
+
+   AttributeURI
+       `http://data.posccaesar.org/rdl/RDS1460719741 <http://data.posccaesar.org/rdl/RDS1460719741>`__
+
+.. admonition:: example
+
+   "1.4306" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="impeller1"
+            ComponentClass="Impeller"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS414539" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="MaterialOfConstructionCodeAssignmentClass"
+              AttributeURI="http://data.posccaesar.org/rdl/RDS1460719741"
+              Format="string"
+              Value="1.4306" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-Impeller-StageIdentifier:
+
+StageIdentifier
+===============
+
+.. rubric:: Attribute (data)
+
+
+The stage identifier of the :doc:`Impeller </reference/Equipment/Impeller>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `STAGE IDENTIFIER ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/StageIdentifierAssignmentClass>`__
+
+   Name
+       StageIdentifierAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/StageIdentifierAssignmentClass <http://sandbox.dexpi.org/rdl/StageIdentifierAssignmentClass>`__
+
+.. admonition:: example
+
+   "s1" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="impeller1"
+            ComponentClass="Impeller"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS414539" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="StageIdentifierAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/StageIdentifierAssignmentClass"
+              Format="string"
+              Value="s1" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+

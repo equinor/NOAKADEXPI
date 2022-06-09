@@ -1,0 +1,52 @@
+===========
+BlindFlange
+===========
+
+Overview
+========
+
+.. rubric:: Class
+
+A pipe flange that is without a central opening and used to shut off a flanged pipe end (from `http://data.posccaesar.org/rdl/RDS414719 <http://data.posccaesar.org/rdl/RDS414719>`__).
+
+.. image:: BlindFlange.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`PipeFitting </reference/Piping/PipeFitting>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingComponent>``
+
+   RDL reference
+       `BLIND FLANGE <http://data.posccaesar.org/rdl/RDS414719>`__
+
+   ComponentClass
+       BlindFlange
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS414719 <http://data.posccaesar.org/rdl/RDS414719>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram630.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="blindFlange1"
+            ComponentClass="BlindFlange"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS414719" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+

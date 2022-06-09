@@ -1,0 +1,304 @@
+===============
+WetCoolingTower
+===============
+
+Overview
+========
+
+.. rubric:: Class
+
+A :doc:`CoolingTower </reference/Equipment/CoolingTower>` that derives its primary cooling effect from the evaporation that takes place when air and water are brought into direct contact.
+
+.. image:: WetCoolingTower.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`CoolingTower </reference/Equipment/CoolingTower>`
+
+.. rubric:: Attributes (data)
+
++------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                                   | Multiplicity | Type                                                                                                                                   |
++========================================================================================================================+==============+========================================================================================================================================+
+| :ref:`DesignRotationalSpeed <dexpi-Equipment-WetCoolingTower-DesignRotationalSpeed>`                                   | 0..1         | :doc:`NullableRotationalFrequency </reference/PhysicalQuantities/NullableRotationalFrequency>`                                         |
++------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`DesignShaftPower <dexpi-Equipment-WetCoolingTower-DesignShaftPower>`                                             | 0..1         | :doc:`NullablePower </reference/PhysicalQuantities/NullablePower>`                                                                     |
++------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`DesignSprayFlowRate <dexpi-Equipment-WetCoolingTower-DesignSprayFlowRate>`                                       | 0..1         | :doc:`NullableVolumeFlowRate </reference/PhysicalQuantities/NullableVolumeFlowRate>`                                                   |
++------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+
+.. rubric:: Attributes (composition)
+
++----------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------+
+| Name                                                                                                           | Multiplicity | Type                                                                                           |
++================================================================================================================+==============+================================================================================================+
+| :ref:`CoolingTowerRotor <dexpi-Equipment-WetCoolingTower-CoolingTowerRotor>`                                   | 0..1         | :doc:`CoolingTowerRotor </reference/Equipment/CoolingTowerRotor>`                              |
++----------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `WET COOLING TOWER <http://data.posccaesar.org/rdl/RDS14071846>`__
+
+   ComponentClass
+       WetCoolingTower
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS14071846 <http://data.posccaesar.org/rdl/RDS14071846>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram505.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="wetCoolingTower1"
+            ComponentClass="WetCoolingTower"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS14071846" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-WetCoolingTower-CoolingTowerRotor:
+
+CoolingTowerRotor
+=================
+
+.. rubric:: Attribute (composition)
+
+
+The cooling tower rotor of the :doc:`WetCoolingTower </reference/Equipment/WetCoolingTower>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`CoolingTowerRotor </reference/Equipment/CoolingTowerRotor>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   The attribute is implemented using the :ref:`XML hierarchy of the Proteus file <proteus-concept-composition-property-xml-child>`: The  element for the attribute value (a :doc:`CoolingTowerRotor </reference/Equipment/CoolingTowerRotor>`\ ) is a child of the ``<Equipment>`` element for the attribute owner (a :doc:`WetCoolingTower </reference/Equipment/WetCoolingTower>`\ ).
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram506.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="wetCoolingTower1"
+            ComponentClass="WetCoolingTower"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS14071846" DOTS123="DOTS123">
+          ...
+          <Equipment
+              ID="coolingTowerRotor1"
+              ComponentClass="CoolingTowerRotor"
+              ComponentClassURI="http://sandbox.dexpi.org/rdl/CoolingTowerRotor" DOTS123="DOTS123">
+            ...
+          <Equipment />
+          ...
+        <Equipment />
+      
+
+
+.. _dexpi-Equipment-WetCoolingTower-DesignRotationalSpeed:
+
+DesignRotationalSpeed
+=====================
+
+.. rubric:: Attribute (data)
+
+
+The rotational speed for which the :doc:`WetCoolingTower </reference/Equipment/WetCoolingTower>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableRotationalFrequency </reference/PhysicalQuantities/NullableRotationalFrequency>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN ROTATIONAL SPEED <http://sandbox.dexpi.org/rdl/DesignRotationalSpeed>`__
+
+   Name
+       DesignRotationalSpeed
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignRotationalSpeed <http://sandbox.dexpi.org/rdl/DesignRotationalSpeed>`__
+
+.. admonition:: example
+
+   The instance wetCoolingTower1 represents a :doc:`WetCoolingTower </reference/Equipment/WetCoolingTower>` with a :ref:`DesignRotationalSpeed <dexpi-Equipment-WetCoolingTower-DesignRotationalSpeed>` of 180.0 min\ :sup:`-1`.
+
+   .. image:: /diagrams/diagram507.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="wetCoolingTower1"
+            ComponentClass="WetCoolingTower"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS14071846" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignRotationalSpeed"
+              AttributeURI="http://sandbox.dexpi.org/rdl/DesignRotationalSpeed"
+              Format="double"
+              Value="180.0"
+              Units="ReciprocalMinute"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS4316851589" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-WetCoolingTower-DesignShaftPower:
+
+DesignShaftPower
+================
+
+.. rubric:: Attribute (data)
+
+
+The shaft power for which the :doc:`WetCoolingTower </reference/Equipment/WetCoolingTower>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullablePower </reference/PhysicalQuantities/NullablePower>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN SHAFT POWER <http://sandbox.dexpi.org/rdl/DesignShaftPower>`__
+
+   Name
+       DesignShaftPower
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignShaftPower <http://sandbox.dexpi.org/rdl/DesignShaftPower>`__
+
+.. admonition:: example
+
+   The instance wetCoolingTower1 represents a :doc:`WetCoolingTower </reference/Equipment/WetCoolingTower>` with a :ref:`DesignShaftPower <dexpi-Equipment-WetCoolingTower-DesignShaftPower>` of 400.0 kW.
+
+   .. image:: /diagrams/diagram508.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="wetCoolingTower1"
+            ComponentClass="WetCoolingTower"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS14071846" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignShaftPower"
+              AttributeURI="http://sandbox.dexpi.org/rdl/DesignShaftPower"
+              Format="double"
+              Value="400.0"
+              Units="Kilowatt"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1330919" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-WetCoolingTower-DesignSprayFlowRate:
+
+DesignSprayFlowRate
+===================
+
+.. rubric:: Attribute (data)
+
+
+The spray volume flow rate for the motive fluid for which the :doc:`WetCoolingTower </reference/Equipment/WetCoolingTower>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableVolumeFlowRate </reference/PhysicalQuantities/NullableVolumeFlowRate>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN SPRAY FLOW RATE <http://sandbox.dexpi.org/rdl/DesignSprayFlowRate>`__
+
+   Name
+       DesignSprayFlowRate
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignSprayFlowRate <http://sandbox.dexpi.org/rdl/DesignSprayFlowRate>`__
+
+.. admonition:: example
+
+   The instance wetCoolingTower1 represents a :doc:`WetCoolingTower </reference/Equipment/WetCoolingTower>` with a :ref:`DesignSprayFlowRate <dexpi-Equipment-WetCoolingTower-DesignSprayFlowRate>` of 40.0 m\ :sup:`3`/h.
+
+   .. image:: /diagrams/diagram509.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="wetCoolingTower1"
+            ComponentClass="WetCoolingTower"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS14071846" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignSprayFlowRate"
+              AttributeURI="http://sandbox.dexpi.org/rdl/DesignSprayFlowRate"
+              Format="double"
+              Value="40.0"
+              Units="MetreCubedPerHour"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1321064" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+

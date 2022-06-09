@@ -1,0 +1,103 @@
+======
+Length
+======
+
+Overview
+========
+
+.. rubric:: Data type
+
+An :ref:`actual value <dexpi-concept-actual-value>` for a physical quantity of type :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`, i.e., a physical quantity that has a numerical value and a unit of measurement.
+
+.. image:: Length.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`
+
+.. rubric:: Attributes (data)
+
++--------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+| Name                                                                           | Multiplicity | Type                                                                                   |
++================================================================================+==============+========================================================================================+
+| :ref:`Unit <dexpi-PhysicalQuantities-Length-Unit>`                             | 1            | :doc:`LengthUnit </reference/PhysicalQuantities/LengthUnit>`                           |
++--------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+| :ref:`Value <dexpi-PhysicalQuantities-Length-Value>`                           | 1            | :doc:`Double </reference/DataTypes/Double>`                                            |
++--------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   All data attributes with type :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>` (the base type of :doc:`Length </reference/PhysicalQuantities/Length>`\ ) are implemented as :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+.. admonition:: example
+
+   The instance length1 represents a :doc:`Length </reference/PhysicalQuantities/Length>` of 20.0 cm.
+
+   .. image:: /diagrams/diagram582.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Format="double"
+          Value="20.0"
+          Units="Centimetre"
+          UnitsURI="http://data.posccaesar.org/rdl/RDS1318004" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have a ``Name`` and an ``AttributeURI`` attribute. They depend on the data type attribute of the DEXPI class that owns the instance length1. For a complete example, see the attribute :ref:`Diameter <dexpi-Equipment-AgitatorRotor-Diameter>` of the DEXPI class :doc:`AgitatorRotor </reference/Equipment/AgitatorRotor>`.
+
+
+.. _dexpi-PhysicalQuantities-Length-Unit:
+
+Unit
+====
+
+.. rubric:: Attribute (data)
+
+
+The unit of measurement of the :doc:`Length </reference/PhysicalQuantities/Length>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`LengthUnit </reference/PhysicalQuantities/LengthUnit>`
+
+.. admonition:: proteus
+
+   See implementation of :doc:`Length </reference/PhysicalQuantities/Length>`.
+
+.. admonition:: example
+
+   See example for :doc:`Length </reference/PhysicalQuantities/Length>`.
+
+
+.. _dexpi-PhysicalQuantities-Length-Value:
+
+Value
+=====
+
+.. rubric:: Attribute (data)
+
+
+The numerical value of the :doc:`Length </reference/PhysicalQuantities/Length>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Double </reference/DataTypes/Double>`
+
+.. admonition:: proteus
+
+   See implementation of :doc:`Length </reference/PhysicalQuantities/Length>`.
+
+.. admonition:: example
+
+   See example for :doc:`Length </reference/PhysicalQuantities/Length>`.
+

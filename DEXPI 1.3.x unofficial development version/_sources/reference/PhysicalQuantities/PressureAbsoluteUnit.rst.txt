@@ -1,0 +1,65 @@
+====================
+PressureAbsoluteUnit
+====================
+
+Overview
+========
+
+.. rubric:: Enumeration
+
+A unit of measurement for a physical quantity of application type :doc:`NullablePressureAbsolute </reference/PhysicalQuantities/NullablePressureAbsolute>` with dimension L\ :sup:`-1`\MT\ :sup:`-2`.
+
+.. image:: PressureAbsoluteUnit.*
+
+
+.. rubric:: Literals
+
++------------------------------------------------------------------------------------------------------------+------------------+---------+------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
+| Name                                                                                                       | Symbol           | UN Code | proteus#RDL Reference                                                        | proteus#RDL URI                                                                             |
++============================================================================================================+==================+=========+==============================================================================+=============================================================================================+
+| .. _dexpi-PhysicalQuantities-PressureAbsoluteUnit-Bar:                                                     | bar              | BAR     | `BAR <http://data.posccaesar.org/rdl/RDS1314539>`__                          | `http://data.posccaesar.org/rdl/RDS1314539 <http://data.posccaesar.org/rdl/RDS1314539>`__   |
+|                                                                                                            |                  |         |                                                                              |                                                                                             |
+| Bar                                                                                                        |                  |         |                                                                              |                                                                                             |
++------------------------------------------------------------------------------------------------------------+------------------+---------+------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
+| .. _dexpi-PhysicalQuantities-PressureAbsoluteUnit-Kilopascal:                                              | kPa              | KPA     | `KILOPASCAL <http://data.posccaesar.org/rdl/RDS1330559>`__                   | `http://data.posccaesar.org/rdl/RDS1330559 <http://data.posccaesar.org/rdl/RDS1330559>`__   |
+|                                                                                                            |                  |         |                                                                              |                                                                                             |
+| Kilopascal                                                                                                 |                  |         |                                                                              |                                                                                             |
++------------------------------------------------------------------------------------------------------------+------------------+---------+------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
+| .. _dexpi-PhysicalQuantities-PressureAbsoluteUnit-Megapascal:                                              | MPa              | MPA     | `MEGAPASCAL <http://data.posccaesar.org/rdl/RDS1332404>`__                   | `http://data.posccaesar.org/rdl/RDS1332404 <http://data.posccaesar.org/rdl/RDS1332404>`__   |
+|                                                                                                            |                  |         |                                                                              |                                                                                             |
+| Megapascal                                                                                                 |                  |         |                                                                              |                                                                                             |
++------------------------------------------------------------------------------------------------------------+------------------+---------+------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
+| .. _dexpi-PhysicalQuantities-PressureAbsoluteUnit-Millibar:                                                | mbar             | MBR     | `MILLIBAR <http://data.posccaesar.org/rdl/RDS11617875>`__                    | `http://data.posccaesar.org/rdl/RDS11617875 <http://data.posccaesar.org/rdl/RDS11617875>`__ |
+|                                                                                                            |                  |         |                                                                              |                                                                                             |
+| Millibar                                                                                                   |                  |         |                                                                              |                                                                                             |
++------------------------------------------------------------------------------------------------------------+------------------+---------+------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
+| .. _dexpi-PhysicalQuantities-PressureAbsoluteUnit-Pascal:                                                  | Pa               | PAL     | `PASCAL <http://data.posccaesar.org/rdl/RDS1338749>`__                       | `http://data.posccaesar.org/rdl/RDS1338749 <http://data.posccaesar.org/rdl/RDS1338749>`__   |
+|                                                                                                            |                  |         |                                                                              |                                                                                             |
+| Pascal                                                                                                     |                  |         |                                                                              |                                                                                             |
++------------------------------------------------------------------------------------------------------------+------------------+---------+------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
+| .. _dexpi-PhysicalQuantities-PressureAbsoluteUnit-PoundForcePerInchSquared:                                | lbf/in\ :sup:`2` | PS      | `POUND FORCE PER INCH SQUARED <http://data.posccaesar.org/rdl/RDS1341809>`__ | `http://data.posccaesar.org/rdl/RDS1341809 <http://data.posccaesar.org/rdl/RDS1341809>`__   |
+|                                                                                                            |                  |         |                                                                              |                                                                                             |
+| PoundForcePerInchSquared                                                                                   |                  |         |                                                                              |                                                                                             |
++------------------------------------------------------------------------------------------------------------+------------------+---------+------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   :doc:`PressureAbsoluteUnit </reference/PhysicalQuantities/PressureAbsoluteUnit>` is only used as the type of the :ref:`Unit <dexpi-PhysicalQuantities-PressureAbsolute-Unit>` attribute of :doc:`PressureAbsolute </reference/PhysicalQuantities/PressureAbsolute>`. :doc:`PressureAbsolute </reference/PhysicalQuantities/PressureAbsolute>` is implemented using :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`. In a ``<GenericAttribute>`` element, the :doc:`PressureAbsoluteUnit </reference/PhysicalQuantities/PressureAbsoluteUnit>` literal is given by means of its :ref:`RDL reference <proteus-concept-rdl-reference>` in the table above. The ``Units`` attribute of the element is the name of the RDL reference in camel-case; it equals the name of the literal. The ``UnitsURI`` attribute of the element is the URI of the RDL reference.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram612.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Units="Bar"
+          UnitsURI="http://data.posccaesar.org/rdl/RDS1314539" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have further attributes (``Format``, ``Value``, ``Name``, and ``AttributeURI``)DOTANDSPACEHACKSee the implementation examples for :doc:`PressureAbsolute </reference/PhysicalQuantities/PressureAbsolute>` and for the :ref:`DesignDifferentialPressure <dexpi-Equipment-Blower-DesignDifferentialPressure>` attribute of :doc:`Blower </reference/Equipment/Blower>`.
+

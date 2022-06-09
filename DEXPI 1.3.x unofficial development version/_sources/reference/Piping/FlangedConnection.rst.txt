@@ -1,0 +1,52 @@
+=================
+FlangedConnection
+=================
+
+Overview
+========
+
+.. rubric:: Class
+
+A flanged connection.
+
+.. image:: FlangedConnection.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`PipeFitting </reference/Piping/PipeFitting>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingComponent>``
+
+   RDL reference
+       `FLANGED CONNECTION <http://sandbox.dexpi.org/rdl/FlangedConnection>`__
+
+   ComponentClass
+       FlangedConnection
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/FlangedConnection <http://sandbox.dexpi.org/rdl/FlangedConnection>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram649.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="flangedConnection1"
+            ComponentClass="FlangedConnection"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/FlangedConnection" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+

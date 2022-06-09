@@ -1,0 +1,22 @@
+=====================
+NULL_VOLUME_FLOW_RATE
+=====================
+
+Overview
+========
+
+.. rubric:: Instance
+
+The only instance of the singleton type :doc:`NullVolumeFlowRate </reference/PhysicalQuantities/NullVolumeFlowRate>`. This instance represents the :ref:`null value <dexpi-concept-null-value>` of the physical quantity type :doc:`NullableVolumeFlowRate </reference/PhysicalQuantities/NullableVolumeFlowRate>`.
+
+.. image:: NULL_VOLUME_FLOW_RATE.*
+
+
+.. rubric:: Type
+
+* :doc:`NullVolumeFlowRate </reference/PhysicalQuantities/NullVolumeFlowRate>`
+
+.. admonition:: proteus
+
+   See implementation of :doc:`NullVolumeFlowRate </reference/PhysicalQuantities/NullVolumeFlowRate>`.
+

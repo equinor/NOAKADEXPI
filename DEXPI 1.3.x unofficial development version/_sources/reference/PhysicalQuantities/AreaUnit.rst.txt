@@ -1,0 +1,65 @@
+========
+AreaUnit
+========
+
+Overview
+========
+
+.. rubric:: Enumeration
+
+A unit of measurement for a physical quantity of type :doc:`NullableArea </reference/PhysicalQuantities/NullableArea>` with :ref:`dimension <dexpi-glossary-physical-dimension>` L\ :sup:`2`.
+
+.. image:: AreaUnit.*
+
+
+.. rubric:: Literals
+
++------------------------------------------------------------------------------------+--------------+---------+--------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+| Name                                                                               | Symbol       | UN Code | proteus#RDL Reference                                              | proteus#RDL URI                                                                           |
++====================================================================================+==============+=========+====================================================================+===========================================================================================+
+| .. _dexpi-PhysicalQuantities-AreaUnit-CentimetreSquared:                           | cm\ :sup:`2` | CMK     | `CENTIMETRE SQUARED <http://data.posccaesar.org/rdl/RDS1357829>`__ | `http://data.posccaesar.org/rdl/RDS1357829 <http://data.posccaesar.org/rdl/RDS1357829>`__ |
+|                                                                                    |              |         |                                                                    |                                                                                           |
+| CentimetreSquared                                                                  |              |         |                                                                    |                                                                                           |
++------------------------------------------------------------------------------------+--------------+---------+--------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+| .. _dexpi-PhysicalQuantities-AreaUnit-FootSquared:                                 | ft\ :sup:`2` | FTK     | `FOOT SQUARED <http://data.posccaesar.org/rdl/RDS1342934>`__       | `http://data.posccaesar.org/rdl/RDS1342934 <http://data.posccaesar.org/rdl/RDS1342934>`__ |
+|                                                                                    |              |         |                                                                    |                                                                                           |
+| FootSquared                                                                        |              |         |                                                                    |                                                                                           |
++------------------------------------------------------------------------------------+--------------+---------+--------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+| .. _dexpi-PhysicalQuantities-AreaUnit-InchSquared:                                 | in\ :sup:`2` | INK     | `INCH SQUARED <http://data.posccaesar.org/rdl/RDS1342979>`__       | `http://data.posccaesar.org/rdl/RDS1342979 <http://data.posccaesar.org/rdl/RDS1342979>`__ |
+|                                                                                    |              |         |                                                                    |                                                                                           |
+| InchSquared                                                                        |              |         |                                                                    |                                                                                           |
++------------------------------------------------------------------------------------+--------------+---------+--------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+| .. _dexpi-PhysicalQuantities-AreaUnit-MetreSquared:                                | m\ :sup:`2`  | MTK     | `METRE SQUARED <http://data.posccaesar.org/rdl/RDS1358009>`__      | `http://data.posccaesar.org/rdl/RDS1358009 <http://data.posccaesar.org/rdl/RDS1358009>`__ |
+|                                                                                    |              |         |                                                                    |                                                                                           |
+| MetreSquared                                                                       |              |         |                                                                    |                                                                                           |
++------------------------------------------------------------------------------------+--------------+---------+--------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+| .. _dexpi-PhysicalQuantities-AreaUnit-MillimetreSquared:                           | mm\ :sup:`2` | MMK     | `MILLIMETRE SQUARED <http://data.posccaesar.org/rdl/RDS1358189>`__ | `http://data.posccaesar.org/rdl/RDS1358189 <http://data.posccaesar.org/rdl/RDS1358189>`__ |
+|                                                                                    |              |         |                                                                    |                                                                                           |
+| MillimetreSquared                                                                  |              |         |                                                                    |                                                                                           |
++------------------------------------------------------------------------------------+--------------+---------+--------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+| .. _dexpi-PhysicalQuantities-AreaUnit-YardSquared:                                 | yd\ :sup:`2` | YDK     | `YARD SQUARED <http://data.posccaesar.org/rdl/RDS1343744>`__       | `http://data.posccaesar.org/rdl/RDS1343744 <http://data.posccaesar.org/rdl/RDS1343744>`__ |
+|                                                                                    |              |         |                                                                    |                                                                                           |
+| YardSquared                                                                        |              |         |                                                                    |                                                                                           |
++------------------------------------------------------------------------------------+--------------+---------+--------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   :doc:`AreaUnit </reference/PhysicalQuantities/AreaUnit>` is only used as the type of the :ref:`Unit <dexpi-PhysicalQuantities-Area-Unit>` attribute of :doc:`Area </reference/PhysicalQuantities/Area>`. :doc:`Area </reference/PhysicalQuantities/Area>` is implemented using :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`. In a ``<GenericAttribute>`` element, the :doc:`AreaUnit </reference/PhysicalQuantities/AreaUnit>` literal is given by means of its :ref:`RDL reference <proteus-concept-rdl-reference>` in the table above. The ``Units`` attribute of the element is the name of the RDL reference in camel-case; it equals the name of the literal. The ``UnitsURI`` attribute of the element is the URI of the RDL reference.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram575.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Units="MetreSquared"
+          UnitsURI="http://data.posccaesar.org/rdl/RDS1358009" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have further attributes (``Format``, ``Value``, ``Name``, and ``AttributeURI``)DOTANDSPACEHACKSee the implementation examples for :doc:`Area </reference/PhysicalQuantities/Area>` and for the :ref:`FilterArea <dexpi-Equipment-FilterUnit-FilterArea>` attribute of :doc:`FilterUnit </reference/Equipment/FilterUnit>`.
+

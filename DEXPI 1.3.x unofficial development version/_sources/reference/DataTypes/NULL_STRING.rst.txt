@@ -1,0 +1,22 @@
+===========
+NULL_STRING
+===========
+
+Overview
+========
+
+.. rubric:: Instance
+
+The only instance of the singleton type :doc:`NullString </reference/DataTypes/NullString>`. This instance represents the :ref:`null value <dexpi-concept-null-value>` of type :doc:`NullableString </reference/DataTypes/NullableString>`.
+
+.. image:: NULL_STRING.*
+
+
+.. rubric:: Type
+
+* :doc:`NullString </reference/DataTypes/NullString>`
+
+.. admonition:: proteus
+
+   See Proteus Schema implementation of :doc:`NullableString </reference/DataTypes/NullableString>`.
+

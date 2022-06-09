@@ -1,0 +1,77 @@
+======
+Stroke
+======
+
+Overview
+========
+
+.. rubric:: Data type
+
+A stroke style.
+
+.. image:: Stroke.*
+
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------+--------------+------------------------------------------------------------------------+
+| Name                                                                       | Multiplicity | Type                                                                   |
++============================================================================+==============+========================================================================+
+| :ref:`Color <dexpi-Graphics-Stroke-Color>`                                 | 1            | :doc:`Color </reference/Graphics/Color>`                               |
++----------------------------------------------------------------------------+--------------+------------------------------------------------------------------------+
+| :ref:`DashStyle <dexpi-Graphics-Stroke-DashStyle>`                         | 1            | :doc:`DashStyle </reference/Graphics/DashStyle>`                       |
++----------------------------------------------------------------------------+--------------+------------------------------------------------------------------------+
+| :ref:`Width <dexpi-Graphics-Stroke-Width>`                                 | 1            | :doc:`Double </reference/DataTypes/Double>`                            |
++----------------------------------------------------------------------------+--------------+------------------------------------------------------------------------+
+
+
+.. _dexpi-Graphics-Stroke-Color:
+
+Color
+=====
+
+.. rubric:: Attribute (data)
+
+
+The color of the :doc:`Stroke </reference/Graphics/Stroke>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Color </reference/Graphics/Color>`
+
+
+.. _dexpi-Graphics-Stroke-DashStyle:
+
+DashStyle
+=========
+
+.. rubric:: Attribute (data)
+
+
+The dash style of the :doc:`Stroke </reference/Graphics/Stroke>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`DashStyle </reference/Graphics/DashStyle>`
+
+
+.. _dexpi-Graphics-Stroke-Width:
+
+Width
+=====
+
+.. rubric:: Attribute (data)
+
+
+The width of the :doc:`Stroke </reference/Graphics/Stroke>` in mm.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Double </reference/DataTypes/Double>`
+

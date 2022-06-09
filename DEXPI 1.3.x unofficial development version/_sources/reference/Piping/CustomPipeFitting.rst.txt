@@ -1,0 +1,54 @@
+=================
+CustomPipeFitting
+=================
+
+Overview
+========
+
+.. rubric:: Class
+
+A :ref:`custom <dexpi-concept-custom-sibling>` :doc:`PipeFitting </reference/Piping/PipeFitting>`, i.e., a :doc:`PipeFitting </reference/Piping/PipeFitting>` that is not covered by any of the other subclasses of :doc:`PipeFitting </reference/Piping/PipeFitting>`.
+
+.. image:: CustomPipeFitting.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`CustomObject </reference/Customization/CustomObject>`
+
+* :doc:`PipeFitting </reference/Piping/PipeFitting>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingComponent>``
+
+   RDL reference
+       `CUSTOM PIPE FITTING <http://sandbox.dexpi.org/rdl/CustomPipeFitting>`__
+
+   ComponentClass
+       CustomPipeFitting
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/CustomPipeFitting <http://sandbox.dexpi.org/rdl/CustomPipeFitting>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram642.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="customPipeFitting1"
+            ComponentClass="CustomPipeFitting"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/CustomPipeFitting" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+

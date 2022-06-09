@@ -1,0 +1,65 @@
+========
+PolyLine
+========
+
+Overview
+========
+
+.. rubric:: Class
+
+A poly line, i.e., a line that consists of 1 or more straight sections.
+
+.. image:: PolyLine.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`GraphicalPrimitive </reference/Graphics/GraphicalPrimitive>`
+
+.. rubric:: Attributes (data)
+
++------------------------------------------------------------------------+--------------+----------------------------------------------------------------+
+| Name                                                                   | Multiplicity | Type                                                           |
++========================================================================+==============+================================================================+
+| :ref:`Points <dexpi-Graphics-PolyLine-Points>`                         | 2..*         | :doc:`Point </reference/Graphics/Point>`                       |
++------------------------------------------------------------------------+--------------+----------------------------------------------------------------+
+| :ref:`Stroke <dexpi-Graphics-PolyLine-Stroke>`                         | 1            | :doc:`Stroke </reference/Graphics/Stroke>`                     |
++------------------------------------------------------------------------+--------------+----------------------------------------------------------------+
+
+
+.. _dexpi-Graphics-PolyLine-Points:
+
+Points
+======
+
+.. rubric:: Attribute (data)
+
+
+The points of the :doc:`PolyLine </reference/Graphics/PolyLine>`.
+
+Multiplicity
+    2..*
+
+Type
+    :doc:`Point </reference/Graphics/Point>`
+
+Modifiers
+    :ref:`ordered <dexpi-concept-ordered-attribute>`, :ref:`nonunique <dexpi-concept-nonunique-attribute>`
+
+
+.. _dexpi-Graphics-PolyLine-Stroke:
+
+Stroke
+======
+
+.. rubric:: Attribute (data)
+
+
+The stroke of the :doc:`PolyLine </reference/Graphics/PolyLine>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Stroke </reference/Graphics/Stroke>`
+

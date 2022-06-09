@@ -1,0 +1,124 @@
+==============
+PrimaryElement
+==============
+
+Overview
+========
+
+.. rubric:: Class
+
+An artefact that converts the input variable into a signal suitable for measurement.
+
+.. image:: PrimaryElement.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`ConceptualObject </reference/DexpiModel/ConceptualObject>`
+
+* :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>`
+
+.. rubric:: Subtypes
+
+* :doc:`InlinePrimaryElementReference </reference/Instrumentation/InlinePrimaryElementReference>`
+
+* :doc:`OfflinePrimaryElement </reference/Instrumentation/OfflinePrimaryElement>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+| Name                                                                                               | Multiplicity | Type                                                                                   |
++====================================================================================================+==============+========================================================================================+
+| :ref:`SubTagName <dexpi-Instrumentation-PrimaryElement-SubTagName>`                                | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                            |
++----------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<ProcessSignalGeneratingSystemComponent>``
+
+   RDL reference
+       `PRIMARY ELEMENT <http://sandbox.dexpi.org/rdl/PrimaryElement>`__
+
+   ComponentClass
+       PrimaryElement
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/PrimaryElement <http://sandbox.dexpi.org/rdl/PrimaryElement>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram544.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <ProcessSignalGeneratingSystemComponent
+            ID="primaryElement1"
+            ComponentClass="PrimaryElement"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/PrimaryElement" DOTS123="DOTS123">
+          ...
+        </ProcessSignalGeneratingSystemComponent>
+      
+
+
+.. _dexpi-Instrumentation-PrimaryElement-SubTagName:
+
+SubTagName
+==========
+
+.. rubric:: Attribute (data)
+
+
+The sub tag name of the :doc:`PrimaryElement </reference/Instrumentation/PrimaryElement>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `SUB TAG NAME ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/SubTagNameAssignmentClass>`__
+
+   Name
+       SubTagNameAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/SubTagNameAssignmentClass <http://sandbox.dexpi.org/rdl/SubTagNameAssignmentClass>`__
+
+.. admonition:: example
+
+   "ST1" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <ProcessSignalGeneratingSystemComponent
+            ID="primaryElement1"
+            ComponentClass="PrimaryElement"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/PrimaryElement" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="SubTagNameAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/SubTagNameAssignmentClass"
+              Format="string"
+              Value="ST1" />
+            ...
+          </GenericAttributes>
+          ...
+        </ProcessSignalGeneratingSystemComponent>
+      
+

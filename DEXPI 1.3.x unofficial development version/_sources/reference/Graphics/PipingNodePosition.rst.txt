@@ -1,0 +1,42 @@
+==================
+PipingNodePosition
+==================
+
+Overview
+========
+
+.. rubric:: Class
+
+.. image:: PipingNodePosition.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`NodePosition </reference/Graphics/NodePosition>`
+
+.. rubric:: Attributes (reference)
+
++--------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------+
+| Name                                                                           | Multiplicity | Type                                                                   |
++================================================================================+==============+========================================================================+
+| :ref:`Node <dexpi-Graphics-PipingNodePosition-Node>`                           | 0..1         | :doc:`PipingNode </reference/Piping/PipingNode>`                       |
++--------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------+
+
+
+.. _dexpi-Graphics-PipingNodePosition-Node:
+
+Node
+====
+
+.. rubric:: Attribute (reference)
+
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`PipingNode </reference/Piping/PipingNode>`
+
+Opposite multiplicity
+    0..*
+

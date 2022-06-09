@@ -1,0 +1,67 @@
+======================
+CustomIntegerAttribute
+======================
+
+Overview
+========
+
+.. rubric:: Class
+
+A :ref:`custom attribute <dexpi-concept-custom-attributes>` with :ref:`Value <dexpi-Customization-CustomIntegerAttribute-Value>` type :doc:`NullableInteger </reference/DataTypes/NullableInteger>`.
+
+.. image:: CustomIntegerAttribute.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`CustomAttribute </reference/Customization/CustomAttribute>`
+
+.. rubric:: Attributes (data)
+
++--------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------+
+| Name                                                                                       | Multiplicity | Type                                                                                       |
++============================================================================================+==============+============================================================================================+
+| :ref:`Value <dexpi-Customization-CustomIntegerAttribute-Value>`                            | 1            | :doc:`NullableInteger </reference/DataTypes/NullableInteger>`                              |
++--------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   :doc:`CustomIntegerAttribute </reference/Customization/CustomIntegerAttribute>` is implemented as a :ref:`custom generic attribute for integer values <proteus-concept-dexpi-custom-generic-attribute-integer>`.
+
+   RDL reference
+       `INTEGER NUMBER <http://data.posccaesar.org/rdl/RDS47466171135>`__
+
+   Type
+       IntegerNumber
+
+   TypeURI
+       `http://data.posccaesar.org/rdl/RDS47466171135 <http://data.posccaesar.org/rdl/RDS47466171135>`__
+
+
+.. _dexpi-Customization-CustomIntegerAttribute-Value:
+
+Value
+=====
+
+.. rubric:: Attribute (data)
+
+
+The value of the :doc:`CustomIntegerAttribute </reference/Customization/CustomIntegerAttribute>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`NullableInteger </reference/DataTypes/NullableInteger>`
+
+Redefines
+    :ref:`Value <dexpi-Customization-CustomAttribute-Value>` (inherited from :doc:`CustomAttribute </reference/Customization/CustomAttribute>`\ )
+
+.. admonition:: proteus
+
+   See implementation of :doc:`CustomIntegerAttribute </reference/Customization/CustomIntegerAttribute>`.
+
+.. admonition:: example
+
+   See the example for :doc:`CustomIntegerAttribute </reference/Customization/CustomIntegerAttribute>`.
+

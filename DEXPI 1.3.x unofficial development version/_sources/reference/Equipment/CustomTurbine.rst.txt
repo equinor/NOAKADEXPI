@@ -1,0 +1,156 @@
+=============
+CustomTurbine
+=============
+
+Overview
+========
+
+.. rubric:: Class
+
+A :ref:`custom <dexpi-concept-custom-sibling>` :doc:`Turbine </reference/Equipment/Turbine>`, i.e., a :doc:`Turbine </reference/Equipment/Turbine>` that is not covered by any of the other subclasses of :doc:`Turbine </reference/Equipment/Turbine>` (:doc:`GasTurbine </reference/Equipment/GasTurbine>` or :doc:`SteamTurbine </reference/Equipment/SteamTurbine>`\ ).
+
+.. image:: CustomTurbine.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`CustomObject </reference/Customization/CustomObject>`
+
+* :doc:`Turbine </reference/Equipment/Turbine>`
+
+.. rubric:: Attributes (data)
+
++------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                                   | Multiplicity | Type                                                                                                                   |
++========================================================================================================================+==============+========================================================================================================================+
+| :ref:`DesignInletMassFlow <dexpi-Equipment-CustomTurbine-DesignInletMassFlow>`                                         | 0..1         | :doc:`NullableMassFlowRate </reference/PhysicalQuantities/NullableMassFlowRate>`                                       |
++------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------+
+| :ref:`DesignInletVolumeFlow <dexpi-Equipment-CustomTurbine-DesignInletVolumeFlow>`                                     | 0..1         | :doc:`NullableVolumeFlowRate </reference/PhysicalQuantities/NullableVolumeFlowRate>`                                   |
++------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------+
+| :ref:`FuelType <dexpi-Equipment-CustomTurbine-FuelType>`                                                               | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                            |
++------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `CUSTOM TURBINE <http://sandbox.dexpi.org/rdl/CustomTurbine>`__
+
+   ComponentClass
+       CustomTurbine
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/CustomTurbine <http://sandbox.dexpi.org/rdl/CustomTurbine>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram224.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="customTurbine1"
+            ComponentClass="CustomTurbine"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/CustomTurbine" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-CustomTurbine-DesignInletMassFlow:
+
+DesignInletMassFlow
+===================
+
+.. rubric:: Attribute (data)
+
+
+The inlet mass flow for which the :doc:`CustomTurbine </reference/Equipment/CustomTurbine>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableMassFlowRate </reference/PhysicalQuantities/NullableMassFlowRate>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN INLET MASS FLOW <http://sandbox.dexpi.org/rdl/DesignInletMassFlow>`__
+
+   Name
+       DesignInletMassFlow
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignInletMassFlow <http://sandbox.dexpi.org/rdl/DesignInletMassFlow>`__
+
+
+.. _dexpi-Equipment-CustomTurbine-DesignInletVolumeFlow:
+
+DesignInletVolumeFlow
+=====================
+
+.. rubric:: Attribute (data)
+
+
+The inlet volume flow for which the :doc:`CustomTurbine </reference/Equipment/CustomTurbine>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableVolumeFlowRate </reference/PhysicalQuantities/NullableVolumeFlowRate>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN INLET VOLUME FLOW <http://sandbox.dexpi.org/rdl/DesignInletVolumeFlow>`__
+
+   Name
+       DesignInletVolumeFlow
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignInletVolumeFlow <http://sandbox.dexpi.org/rdl/DesignInletVolumeFlow>`__
+
+
+.. _dexpi-Equipment-CustomTurbine-FuelType:
+
+FuelType
+========
+
+.. rubric:: Attribute (data)
+
+
+The fuel type of the :doc:`CustomTurbine </reference/Equipment/CustomTurbine>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `FUEL TYPE <http://sandbox.dexpi.org/rdl/FuelType>`__
+
+   Name
+       FuelType
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/FuelType <http://sandbox.dexpi.org/rdl/FuelType>`__
+

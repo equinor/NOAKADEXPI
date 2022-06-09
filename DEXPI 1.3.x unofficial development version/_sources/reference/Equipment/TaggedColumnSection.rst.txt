@@ -1,0 +1,54 @@
+===================
+TaggedColumnSection
+===================
+
+Overview
+========
+
+.. rubric:: Class
+
+A fully tagged column section.
+
+.. image:: TaggedColumnSection.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`ColumnSection </reference/Equipment/ColumnSection>`
+
+* :doc:`TaggedPlantItem </reference/Equipment/TaggedPlantItem>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `COLUMN SECTION <http://sandbox.dexpi.org/rdl/ColumnSection>`__
+
+   ComponentClass
+       ColumnSection
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/ColumnSection <http://sandbox.dexpi.org/rdl/ColumnSection>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram475.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="taggedColumnSection1"
+            ComponentClass="ColumnSection"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/ColumnSection" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+

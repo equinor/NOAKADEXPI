@@ -1,0 +1,121 @@
+==================
+HeatedSurfaceDryer
+==================
+
+Overview
+========
+
+.. rubric:: Class
+
+A :doc:`Dryer </reference/Equipment/Dryer>` that dries a material by radiation and/or conduction caused by a heated surface (from `http://data.15926.org/rdl/RDS2228449 <http://data.15926.org/rdl/RDS2228449>`__).
+
+.. image:: HeatedSurfaceDryer.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Dryer </reference/Equipment/Dryer>`
+
+.. rubric:: Attributes (data)
+
++--------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------+
+| Name                                                                                                               | Multiplicity | Type                                                                                           |
++====================================================================================================================+==============+================================================================================================+
+| :ref:`HeatedSurfaceArea <dexpi-Equipment-HeatedSurfaceDryer-HeatedSurfaceArea>`                                    | 0..1         | :doc:`NullableArea </reference/PhysicalQuantities/NullableArea>`                               |
++--------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `HEATED SURFACE DRYER <http://sandbox.dexpi.org/rdl/HeatedSurfaceDryer>`__
+
+   ComponentClass
+       HeatedSurfaceDryer
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/HeatedSurfaceDryer <http://sandbox.dexpi.org/rdl/HeatedSurfaceDryer>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram323.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="heatedSurfaceDryer1"
+            ComponentClass="HeatedSurfaceDryer"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/HeatedSurfaceDryer" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-HeatedSurfaceDryer-HeatedSurfaceArea:
+
+HeatedSurfaceArea
+=================
+
+.. rubric:: Attribute (data)
+
+
+The heated surface area of the :doc:`HeatedSurfaceDryer </reference/Equipment/HeatedSurfaceDryer>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableArea </reference/PhysicalQuantities/NullableArea>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `HEATED SURFACE AREA <http://sandbox.dexpi.org/rdl/HeatedSurfaceArea>`__
+
+   Name
+       HeatedSurfaceArea
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/HeatedSurfaceArea <http://sandbox.dexpi.org/rdl/HeatedSurfaceArea>`__
+
+.. admonition:: example
+
+   The instance heatedSurfaceDryer1 represents a :doc:`HeatedSurfaceDryer </reference/Equipment/HeatedSurfaceDryer>` with a :ref:`HeatedSurfaceArea <dexpi-Equipment-HeatedSurfaceDryer-HeatedSurfaceArea>` of 6.0 m\ :sup:`2`.
+
+   .. image:: /diagrams/diagram324.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="heatedSurfaceDryer1"
+            ComponentClass="HeatedSurfaceDryer"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/HeatedSurfaceDryer" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="HeatedSurfaceArea"
+              AttributeURI="http://sandbox.dexpi.org/rdl/HeatedSurfaceArea"
+              Format="double"
+              Value="6.0"
+              Units="MetreSquared"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1358009" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+

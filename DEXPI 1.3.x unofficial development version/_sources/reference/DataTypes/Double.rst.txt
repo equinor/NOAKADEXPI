@@ -1,0 +1,72 @@
+======
+Double
+======
+
+Overview
+========
+
+.. rubric:: Data type
+
+A double-precision 64-bit floating point number. The value space of :doc:`Double </reference/DataTypes/Double>` is the same as that of the XML Schema data type `double <https://www.w3.org/TR/xmlschema-2/#double>`__ as specified by the W3C Recommendation `XML Schema Part 2: Datatypes Second Edition <https://www.w3.org/TR/xmlschema-2>`__ from October 28, 2004, with the exception that the special values *positive infinity* (``INF``), *negative infinity* (``-INF``), and *not-a-number* (``NaN``) are excluded from the value space of :doc:`Double </reference/DataTypes/Double>`.
+
+.. image:: Double.*
+
+
+.. admonition:: proteus
+
+   A :doc:`Double </reference/DataTypes/Double>` is implemented as a literal for the XML Schema data type `double <https://www.w3.org/TR/xmlschema-2/#double>`__.
+
+   The way this literal is used in a Proteus XML document depends on the Proteus Schema implementations of the data attributes with type :doc:`Double </reference/DataTypes/Double>`.
+
+   * :doc:`Double </reference/DataTypes/Double>` is the type of the *Value* attributes of the physical quantity types and physical quantity application types in the :doc:`PhysicalQuantities </reference/PhysicalQuantities/index>` package. For example, see the Proteus Schema implementations of :doc:`Area </reference/PhysicalQuantities/Area>`:::ref:`Value <dexpi-PhysicalQuantities-Area-Value>` and :doc:`ElectricalFrequency </reference/PhysicalQuantities/ElectricalFrequency>`:::ref:`Value <dexpi-PhysicalQuantities-ElectricalFrequency-Value>`.
+
+   * :doc:`Double </reference/DataTypes/Double>` is the type of several data attributes of classes and data types in the :doc:`Graphics </reference/Graphics/index>` package. See the Proteus Schema implementations of these attributes:
+
+     * :doc:`Circle </reference/Graphics/Circle>`:::ref:`Radius <dexpi-Graphics-Circle-Radius>`
+
+     * :doc:`CircleArc </reference/Graphics/CircleArc>`:::ref:`EndAngle <dexpi-Graphics-CircleArc-EndAngle>`
+
+     * :doc:`CircleArc </reference/Graphics/CircleArc>`:::ref:`Radius <dexpi-Graphics-CircleArc-Radius>`
+
+     * :doc:`CircleArc </reference/Graphics/CircleArc>`:::ref:`StartAngle <dexpi-Graphics-CircleArc-StartAngle>`
+
+     * :doc:`Diagram </reference/Graphics/Diagram>`:::ref:`MaxX <dexpi-Graphics-Diagram-MaxX>`
+
+     * :doc:`Diagram </reference/Graphics/Diagram>`:::ref:`MaxY <dexpi-Graphics-Diagram-MaxY>`
+
+     * :doc:`Diagram </reference/Graphics/Diagram>`:::ref:`MinX <dexpi-Graphics-Diagram-MinX>`
+
+     * :doc:`Diagram </reference/Graphics/Diagram>`:::ref:`MinY <dexpi-Graphics-Diagram-MinY>`
+
+     * :doc:`Ellipse </reference/Graphics/Ellipse>`:::ref:`HorizontalSemiAxis <dexpi-Graphics-Ellipse-HorizontalSemiAxis>`
+
+     * :doc:`Ellipse </reference/Graphics/Ellipse>`:::ref:`Rotation <dexpi-Graphics-Ellipse-Rotation>`
+
+     * :doc:`Ellipse </reference/Graphics/Ellipse>`:::ref:`VerticalSemiAxis <dexpi-Graphics-Ellipse-VerticalSemiAxis>`
+
+     * :doc:`EllipseArc </reference/Graphics/EllipseArc>`:::ref:`EndAngle <dexpi-Graphics-EllipseArc-EndAngle>`
+
+     * :doc:`EllipseArc </reference/Graphics/EllipseArc>`:::ref:`HorizontalSemiAxis <dexpi-Graphics-EllipseArc-HorizontalSemiAxis>`
+
+     * :doc:`EllipseArc </reference/Graphics/EllipseArc>`:::ref:`Rotation <dexpi-Graphics-EllipseArc-Rotation>`
+
+     * :doc:`EllipseArc </reference/Graphics/EllipseArc>`:::ref:`StartAngle <dexpi-Graphics-EllipseArc-StartAngle>`
+
+     * :doc:`EllipseArc </reference/Graphics/EllipseArc>`:::ref:`VerticalSemiAxis <dexpi-Graphics-EllipseArc-VerticalSemiAxis>`
+
+     * :doc:`Point </reference/Graphics/Point>`:::ref:`X <dexpi-Graphics-Point-X>`
+
+     * :doc:`Point </reference/Graphics/Point>`:::ref:`Y <dexpi-Graphics-Point-Y>`
+
+     * :doc:`ShapeUsage </reference/Graphics/ShapeUsage>`:::ref:`Rotation <dexpi-Graphics-ShapeUsage-Rotation>`
+
+     * :doc:`ShapeUsage </reference/Graphics/ShapeUsage>`:::ref:`ScaleX <dexpi-Graphics-ShapeUsage-ScaleX>`
+
+     * :doc:`ShapeUsage </reference/Graphics/ShapeUsage>`:::ref:`ScaleY <dexpi-Graphics-ShapeUsage-ScaleY>`
+
+     * :doc:`Stroke </reference/Graphics/Stroke>`:::ref:`Width <dexpi-Graphics-Stroke-Width>`
+
+     * :doc:`Text </reference/Graphics/Text>`:::ref:`Rotation <dexpi-Graphics-Text-Rotation>`
+
+     * :doc:`Text </reference/Graphics/Text>`:::ref:`Size <dexpi-Graphics-Text-Size>`
+

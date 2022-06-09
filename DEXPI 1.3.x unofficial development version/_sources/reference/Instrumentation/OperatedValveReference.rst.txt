@@ -1,0 +1,189 @@
+======================
+OperatedValveReference
+======================
+
+Overview
+========
+
+.. rubric:: Class
+
+A reference to an :doc:`OperatedValve </reference/Piping/OperatedValve>`.
+
+.. image:: OperatedValveReference.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`ConceptualObject </reference/DexpiModel/ConceptualObject>`
+
+* :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>`
+
+.. rubric:: Attributes (data)
+
++------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+| Name                                                                                                       | Multiplicity | Type                                                                                   |
++============================================================================================================+==============+========================================================================================+
+| :ref:`SubTagName <dexpi-Instrumentation-OperatedValveReference-SubTagName>`                                | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                            |
++------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+
+.. rubric:: Attributes (reference)
+
++------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------+
+| Name                                                                                           | Multiplicity | Type                                                                           |
++================================================================================================+==============+================================================================================+
+| :ref:`Valve <dexpi-Instrumentation-OperatedValveReference-Valve>`                              | 0..1         | :doc:`OperatedValve </reference/Piping/OperatedValve>`                         |
++------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<ActuatingSystemComponent>``
+
+   RDL reference
+       `OPERATED VALVE REFERENCE <http://sandbox.dexpi.org/rdl/OperatedValveReference>`__
+
+   ComponentClass
+       OperatedValveReference
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/OperatedValveReference <http://sandbox.dexpi.org/rdl/OperatedValveReference>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram541.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <ActuatingSystemComponent
+            ID="operatedValveReference1"
+            ComponentClass="OperatedValveReference"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/OperatedValveReference" DOTS123="DOTS123">
+          ...
+        </ActuatingSystemComponent>
+      
+
+
+.. _dexpi-Instrumentation-OperatedValveReference-SubTagName:
+
+SubTagName
+==========
+
+.. rubric:: Attribute (data)
+
+
+The sub tag name of the :doc:`OperatedValveReference </reference/Instrumentation/OperatedValveReference>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `SUB TAG NAME ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/SubTagNameAssignmentClass>`__
+
+   Name
+       SubTagNameAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/SubTagNameAssignmentClass <http://sandbox.dexpi.org/rdl/SubTagNameAssignmentClass>`__
+
+.. admonition:: example
+
+   "ST1" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <ActuatingSystemComponent
+            ID="operatedValveReference1"
+            ComponentClass="OperatedValveReference"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/OperatedValveReference" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="SubTagNameAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/SubTagNameAssignmentClass"
+              Format="string"
+              Value="ST1" />
+            ...
+          </GenericAttributes>
+          ...
+        </ActuatingSystemComponent>
+      
+
+
+.. _dexpi-Instrumentation-OperatedValveReference-Valve:
+
+Valve
+=====
+
+.. rubric:: Attribute (reference)
+
+
+The actual valve referenced by the :doc:`OperatedValveReference </reference/Instrumentation/OperatedValveReference>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`OperatedValve </reference/Piping/OperatedValve>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   The attribute is implemented using :ref:`Proteus \<Association\> elements <proteus-concept-reference-property-association>`.
+
+   Association type for the attribute ower
+       ``"refers to"``
+
+   Opposite association type
+       ``"is referenced by"``
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram542.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <ActuatingSystemComponent
+            ID="operatedValveReference1"
+            ComponentClass="OperatedValveReference"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/OperatedValveReference" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="refers to"
+            ItemID="operatedValve1" />
+          ...
+        <ActuatingSystemComponent />
+        ...
+        <PipingComponent
+            ID="operatedValve1"
+            ComponentClass="OperatedValve"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS11141590" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="is referenced by"
+            ItemID="operatedValveReference1" />
+          ...
+        <PipingComponent />
+      
+

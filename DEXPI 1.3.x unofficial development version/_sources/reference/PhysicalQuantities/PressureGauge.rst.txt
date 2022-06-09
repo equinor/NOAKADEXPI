@@ -1,0 +1,103 @@
+=============
+PressureGauge
+=============
+
+Overview
+========
+
+.. rubric:: Data type
+
+An :ref:`actual value <dexpi-concept-actual-value>` for a physical quantity of type :doc:`NullablePressureGauge </reference/PhysicalQuantities/NullablePressureGauge>`, i.e., a physical quantity that has a numerical value and a unit of measurement.
+
+.. image:: PressureGauge.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`NullablePressureGauge </reference/PhysicalQuantities/NullablePressureGauge>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------+
+| Name                                                                                   | Multiplicity | Type                                                                                                       |
++========================================================================================+==============+============================================================================================================+
+| :ref:`Unit <dexpi-PhysicalQuantities-PressureGauge-Unit>`                              | 1            | :doc:`PressureGaugeUnit </reference/PhysicalQuantities/PressureGaugeUnit>`                                 |
++----------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------+
+| :ref:`Value <dexpi-PhysicalQuantities-PressureGauge-Value>`                            | 1            | :doc:`Double </reference/DataTypes/Double>`                                                                |
++----------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   All data attributes with type :doc:`NullablePressureGauge </reference/PhysicalQuantities/NullablePressureGauge>` (the base type of :doc:`PressureGauge </reference/PhysicalQuantities/PressureGauge>`\ ) are implemented as :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+.. admonition:: example
+
+   The instance pressureGauge1 represents a :doc:`PressureGauge </reference/PhysicalQuantities/PressureGauge>` of -0.5 bar.
+
+   .. image:: /diagrams/diagram613.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Format="double"
+          Value="-0.5"
+          Units="Bar"
+          UnitsURI="http://data.posccaesar.org/rdl/RDS1314539" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have a ``Name`` and an ``AttributeURI`` attribute. They depend on the data type attribute of the DEXPI class that owns the instance pressureGauge1. For a complete example, see the attribute :ref:`LowerLimitDesignPressure <dexpi-Equipment-Chamber-LowerLimitDesignPressure>` of the DEXPI class :doc:`Chamber </reference/Equipment/Chamber>`.
+
+
+.. _dexpi-PhysicalQuantities-PressureGauge-Unit:
+
+Unit
+====
+
+.. rubric:: Attribute (data)
+
+
+The unit of measurement of the :doc:`PressureGauge </reference/PhysicalQuantities/PressureGauge>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`PressureGaugeUnit </reference/PhysicalQuantities/PressureGaugeUnit>`
+
+.. admonition:: proteus
+
+   See implementation of :doc:`PressureGauge </reference/PhysicalQuantities/PressureGauge>`.
+
+.. admonition:: example
+
+   See example for :doc:`PressureGauge </reference/PhysicalQuantities/PressureGauge>`.
+
+
+.. _dexpi-PhysicalQuantities-PressureGauge-Value:
+
+Value
+=====
+
+.. rubric:: Attribute (data)
+
+
+The numerical value of the :doc:`PressureGauge </reference/PhysicalQuantities/PressureGauge>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Double </reference/DataTypes/Double>`
+
+.. admonition:: proteus
+
+   See implementation of :doc:`PressureGauge </reference/PhysicalQuantities/PressureGauge>`.
+
+.. admonition:: example
+
+   See example for :doc:`PressureGauge </reference/PhysicalQuantities/PressureGauge>`.
+

@@ -1,0 +1,304 @@
+=============
+PropertyBreak
+=============
+
+Overview
+========
+
+.. rubric:: Class
+
+A symbol indicating a change in the piping properties.
+
+.. image:: PropertyBreak.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`ConceptualObject </reference/DexpiModel/ConceptualObject>`
+
+* :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>`
+
+* :doc:`PipingNetworkSegmentItem </reference/Piping/PipingNetworkSegmentItem>`
+
+* :doc:`PipingNodeOwner </reference/Piping/PipingNodeOwner>`
+
+* :doc:`PipingSourceItem </reference/Piping/PipingSourceItem>`
+
+* :doc:`PipingTargetItem </reference/Piping/PipingTargetItem>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                           | Multiplicity | Type                                                                                                                                           |
++================================================================================================================+==============+================================================================================================================================================+
+| :ref:`CompositionBreak <dexpi-Piping-PropertyBreak-CompositionBreak>`                                          | 0..1         | :doc:`CompositionBreakClassification </reference/Enumerations/CompositionBreakClassification>`                                                 |
++----------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`InsulationBreak <dexpi-Piping-PropertyBreak-InsulationBreak>`                                            | 0..1         | :doc:`InsulationBreakClassification </reference/Enumerations/InsulationBreakClassification>`                                                   |
++----------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`NominalDiameterBreak <dexpi-Piping-PropertyBreak-NominalDiameterBreak>`                                  | 0..1         | :doc:`NominalDiameterBreakClassification </reference/Enumerations/NominalDiameterBreakClassification>`                                         |
++----------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`PipingClassBreak <dexpi-Piping-PropertyBreak-PipingClassBreak>`                                          | 0..1         | :doc:`PipingClassBreakClassification </reference/Enumerations/PipingClassBreakClassification>`                                                 |
++----------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PropertyBreak>``
+
+   RDL reference
+       `PROPERTY BREAK <http://sandbox.dexpi.org/rdl/PropertyBreak>`__
+
+   ComponentClass
+       PropertyBreak
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/PropertyBreak <http://sandbox.dexpi.org/rdl/PropertyBreak>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram711.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PropertyBreak
+            ID="propertyBreak1"
+            ComponentClass="PropertyBreak"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/PropertyBreak" DOTS123="DOTS123">
+          ...
+        </PropertyBreak>
+      
+
+
+.. _dexpi-Piping-PropertyBreak-CompositionBreak:
+
+CompositionBreak
+================
+
+.. rubric:: Attribute (data)
+
+
+A specialization indicating if the :doc:`PropertyBreak </reference/Piping/PropertyBreak>` is a composition break or not.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`CompositionBreakClassification </reference/Enumerations/CompositionBreakClassification>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for enumeration values <proteus-concept-dexpi-generic-attribute-enumeration>`.
+
+   RDL reference
+       `COMPOSITION BREAK SPECIALIZATION <http://sandbox.dexpi.org/rdl/CompositionBreakSpecialization>`__
+
+   Name
+       CompositionBreakSpecialization
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/CompositionBreakSpecialization <http://sandbox.dexpi.org/rdl/CompositionBreakSpecialization>`__
+
+.. admonition:: example
+
+   no composition break (:ref:`CompositionBreakClassification::NoCompositionBreak <dexpi-Enumerations-CompositionBreakClassification-NoCompositionBreak>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PropertyBreak
+            ID="propertyBreak1"
+            ComponentClass="PropertyBreak"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/PropertyBreak" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="CompositionBreakSpecialization"
+              AttributeURI="http://sandbox.dexpi.org/rdl/CompositionBreakSpecialization"
+              Format="anyURI"
+              Value="NoCompositionBreak"
+              ValueURI="http://sandbox.dexpi.org/rdl/NoCompositionBreak" />
+            ...
+          </GenericAttributes>
+          ...
+        </PropertyBreak>
+      
+
+
+.. _dexpi-Piping-PropertyBreak-InsulationBreak:
+
+InsulationBreak
+===============
+
+.. rubric:: Attribute (data)
+
+
+A specialization indicating if the :doc:`PropertyBreak </reference/Piping/PropertyBreak>` is an insulation break or not.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`InsulationBreakClassification </reference/Enumerations/InsulationBreakClassification>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for enumeration values <proteus-concept-dexpi-generic-attribute-enumeration>`.
+
+   RDL reference
+       `INSULATION BREAK SPECIALIZATION <http://sandbox.dexpi.org/rdl/InsulationBreakSpecialization>`__
+
+   Name
+       InsulationBreakSpecialization
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/InsulationBreakSpecialization <http://sandbox.dexpi.org/rdl/InsulationBreakSpecialization>`__
+
+.. admonition:: example
+
+   inulation break (:ref:`InsulationBreakClassification::InsulationBreak <dexpi-Enumerations-InsulationBreakClassification-InsulationBreak>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PropertyBreak
+            ID="propertyBreak1"
+            ComponentClass="PropertyBreak"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/PropertyBreak" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="InsulationBreakSpecialization"
+              AttributeURI="http://sandbox.dexpi.org/rdl/InsulationBreakSpecialization"
+              Format="anyURI"
+              Value="InsulationBreak"
+              ValueURI="http://sandbox.dexpi.org/rdl/InsulationBreak" />
+            ...
+          </GenericAttributes>
+          ...
+        </PropertyBreak>
+      
+
+
+.. _dexpi-Piping-PropertyBreak-NominalDiameterBreak:
+
+NominalDiameterBreak
+====================
+
+.. rubric:: Attribute (data)
+
+
+A specialization indicating if the :doc:`PropertyBreak </reference/Piping/PropertyBreak>` is a nominal diameter break or not.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NominalDiameterBreakClassification </reference/Enumerations/NominalDiameterBreakClassification>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for enumeration values <proteus-concept-dexpi-generic-attribute-enumeration>`.
+
+   RDL reference
+       `NOMINAL DIAMETER BREAK SPECIALIZATION <http://sandbox.dexpi.org/rdl/NominalDiameterBreakSpecialization>`__
+
+   Name
+       NominalDiameterBreakSpecialization
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/NominalDiameterBreakSpecialization <http://sandbox.dexpi.org/rdl/NominalDiameterBreakSpecialization>`__
+
+.. admonition:: example
+
+   no nominal diameter break (:ref:`NominalDiameterBreakClassification::NoNominalDiameterBreak <dexpi-Enumerations-NominalDiameterBreakClassification-NoNominalDiameterBreak>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PropertyBreak
+            ID="propertyBreak1"
+            ComponentClass="PropertyBreak"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/PropertyBreak" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="NominalDiameterBreakSpecialization"
+              AttributeURI="http://sandbox.dexpi.org/rdl/NominalDiameterBreakSpecialization"
+              Format="anyURI"
+              Value="NoNominalDiameterBreak"
+              ValueURI="http://sandbox.dexpi.org/rdl/NoNominalDiameterBreak" />
+            ...
+          </GenericAttributes>
+          ...
+        </PropertyBreak>
+      
+
+
+.. _dexpi-Piping-PropertyBreak-PipingClassBreak:
+
+PipingClassBreak
+================
+
+.. rubric:: Attribute (data)
+
+
+A specialization indicating if the :doc:`PropertyBreak </reference/Piping/PropertyBreak>` is a composition break or not.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`PipingClassBreakClassification </reference/Enumerations/PipingClassBreakClassification>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for enumeration values <proteus-concept-dexpi-generic-attribute-enumeration>`.
+
+   RDL reference
+       `PIPING CLASS BREAK SPECIALIZATION <http://sandbox.dexpi.org/rdl/PipingClassBreakSpecialization>`__
+
+   Name
+       PipingClassBreakSpecialization
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/PipingClassBreakSpecialization <http://sandbox.dexpi.org/rdl/PipingClassBreakSpecialization>`__
+
+.. admonition:: example
+
+   piping class break (:ref:`PipingClassBreakClassification::PipingClassBreak <dexpi-Enumerations-PipingClassBreakClassification-PipingClassBreak>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PropertyBreak
+            ID="propertyBreak1"
+            ComponentClass="PropertyBreak"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/PropertyBreak" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="PipingClassBreakSpecialization"
+              AttributeURI="http://sandbox.dexpi.org/rdl/PipingClassBreakSpecialization"
+              Format="anyURI"
+              Value="PipingClassBreak"
+              ValueURI="http://sandbox.dexpi.org/rdl/PipingClassBreak" />
+            ...
+          </GenericAttributes>
+          ...
+        </PropertyBreak>
+      
+

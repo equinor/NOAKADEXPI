@@ -1,0 +1,22 @@
+======================
+NULL_PRESSURE_ABSOLUTE
+======================
+
+Overview
+========
+
+.. rubric:: Instance
+
+The only instance of the singleton type :doc:`NullPressureAbsolute </reference/PhysicalQuantities/NullPressureAbsolute>`. This instance represents the :ref:`null value <dexpi-concept-null-value>` of the physical quantity type :doc:`NullablePressureAbsolute </reference/PhysicalQuantities/NullablePressureAbsolute>`.
+
+.. image:: NULL_PRESSURE_ABSOLUTE.*
+
+
+.. rubric:: Type
+
+* :doc:`NullPressureAbsolute </reference/PhysicalQuantities/NullPressureAbsolute>`
+
+.. admonition:: proteus
+
+   See implementation of :doc:`NullPressureAbsolute </reference/PhysicalQuantities/NullPressureAbsolute>`.
+

@@ -1,0 +1,102 @@
+===============================
+CustomPressureAbsoluteAttribute
+===============================
+
+Overview
+========
+
+.. rubric:: Class
+
+A :ref:`custom attribute <dexpi-concept-custom-attributes>` with :ref:`Value <dexpi-Customization-CustomPressureAbsoluteAttribute-Value>` type :doc:`NullablePressureAbsolute </reference/PhysicalQuantities/NullablePressureAbsolute>`.
+
+.. image:: CustomPressureAbsoluteAttribute.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`CustomAttribute </reference/Customization/CustomAttribute>`
+
+.. rubric:: Attributes (data)
+
++--------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                   | Multiplicity | Type                                                                                                                           |
++========================================================================================================+==============+================================================================================================================================+
+| :ref:`Value <dexpi-Customization-CustomPressureAbsoluteAttribute-Value>`                               | 1            | :doc:`NullablePressureAbsolute </reference/PhysicalQuantities/NullablePressureAbsolute>`                                       |
++--------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   :doc:`CustomPressureAbsoluteAttribute </reference/Customization/CustomPressureAbsoluteAttribute>` is implemented as a :ref:`custom generic attribute for physical quantities <proteus-concept-dexpi-custom-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `PRESSURE ABSOLUTE <http://sandbox.dexpi.org/rdl/PressureAbsolute>`__
+
+   Type
+       PressureAbsolute
+
+   TypeURI
+       `http://sandbox.dexpi.org/rdl/PressureAbsolute <http://sandbox.dexpi.org/rdl/PressureAbsolute>`__
+
+.. admonition:: example
+
+   As :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>` is abstract, we consider :doc:`CustomEquipment </reference/Equipment/CustomEquipment>` as an arbitrary concrete subclass.
+
+   The :doc:`CustomEquipment </reference/Equipment/CustomEquipment>` customEquipment1 has a :doc:`CustomPressureAbsoluteAttribute </reference/Customization/CustomPressureAbsoluteAttribute>` with :ref:`AttributeName <dexpi-Customization-CustomAttribute-AttributeName>` "UpperLimitAllowableDesignPressureDrop" and an (arbitrary) :ref:`AttributeURI <dexpi-Customization-CustomAttribute-AttributeURI>` "http://www.example.org/5257fef273782e"DOTANDSPACEHACKThe :ref:`Value <dexpi-Customization-CustomPressureAbsoluteAttribute-Value>` is 0.2 bar.
+
+   .. image:: /diagrams/diagram26.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="customEquipment1"
+            ComponentClass="CustomEquipment"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/CustomEquipment" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiCustomAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="UpperLimitAllowableDesignPressureDrop"
+              AttributeURI="http://www.example.org/5257fef273782e"
+              Format="double"
+              Type="PressureAbsolute"
+              TypeURI="http://sandbox.dexpi.org/rdl/PressureAbsolute"
+              Value="0.2"
+              Units="Bar"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1314539" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Customization-CustomPressureAbsoluteAttribute-Value:
+
+Value
+=====
+
+.. rubric:: Attribute (data)
+
+
+The value of the :doc:`CustomPressureAbsoluteAttribute </reference/Customization/CustomPressureAbsoluteAttribute>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`NullablePressureAbsolute </reference/PhysicalQuantities/NullablePressureAbsolute>`
+
+Redefines
+    :ref:`Value <dexpi-Customization-CustomAttribute-Value>` (inherited from :doc:`CustomAttribute </reference/Customization/CustomAttribute>`\ )
+
+.. admonition:: proteus
+
+   See implementation of :doc:`CustomPressureAbsoluteAttribute </reference/Customization/CustomPressureAbsoluteAttribute>`.
+
+.. admonition:: example
+
+   See the example for :doc:`CustomPressureAbsoluteAttribute </reference/Customization/CustomPressureAbsoluteAttribute>`.
+

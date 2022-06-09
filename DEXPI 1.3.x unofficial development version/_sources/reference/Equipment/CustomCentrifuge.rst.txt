@@ -1,0 +1,232 @@
+================
+CustomCentrifuge
+================
+
+Overview
+========
+
+.. rubric:: Class
+
+A :ref:`custom <dexpi-concept-custom-sibling>` :doc:`Centrifuge </reference/Equipment/Centrifuge>`, i.e., a :doc:`Centrifuge </reference/Equipment/Centrifuge>` that is not covered by any of the other subclasses of :doc:`Centrifuge </reference/Equipment/Centrifuge>` (:doc:`FilteringCentrifuge </reference/Equipment/FilteringCentrifuge>` or :doc:`SedimentalCentrifuge </reference/Equipment/SedimentalCentrifuge>`\ ).
+
+.. image:: CustomCentrifuge.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Centrifuge </reference/Equipment/Centrifuge>`
+
+* :doc:`CustomObject </reference/Customization/CustomObject>`
+
+.. rubric:: Attributes (data)
+
++--------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                               | Multiplicity | Type                                                                                                           |
++====================================================================================================================+==============+================================================================================================================+
+| :ref:`Efficiency <dexpi-Equipment-CustomCentrifuge-Efficiency>`                                                    | 0..1         | :doc:`NullablePercentage </reference/PhysicalQuantities/NullablePercentage>`                                   |
++--------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------+
+| :ref:`MinimumParticleSize <dexpi-Equipment-CustomCentrifuge-MinimumParticleSize>`                                  | 0..1         | :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`                                           |
++--------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------+
+
+.. rubric:: Attributes (composition)
+
++------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                                               | Multiplicity | Type                                                                                                               |
++====================================================================================================================================+==============+====================================================================================================================+
+| :ref:`FilteringCentrifugeDrum <dexpi-Equipment-CustomCentrifuge-FilteringCentrifugeDrum>`                                          | 0..1         | :doc:`FilteringCentrifugeDrum </reference/Equipment/FilteringCentrifugeDrum>`                                      |
++------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------+
+| :ref:`SedimentalCentrifugeDrum <dexpi-Equipment-CustomCentrifuge-SedimentalCentrifugeDrum>`                                        | 0..1         | :doc:`SedimentalCentrifugeDrum </reference/Equipment/SedimentalCentrifugeDrum>`                                    |
++------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `CUSTOM CENTRIFUGE <http://sandbox.dexpi.org/rdl/CustomCentrifuge>`__
+
+   ComponentClass
+       CustomCentrifuge
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/CustomCentrifuge <http://sandbox.dexpi.org/rdl/CustomCentrifuge>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram190.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="customCentrifuge1"
+            ComponentClass="CustomCentrifuge"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/CustomCentrifuge" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-CustomCentrifuge-Efficiency:
+
+Efficiency
+==========
+
+.. rubric:: Attribute (data)
+
+
+The efficiency of the :doc:`CustomCentrifuge </reference/Equipment/CustomCentrifuge>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullablePercentage </reference/PhysicalQuantities/NullablePercentage>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `EFFICIENCY <http://data.posccaesar.org/rdl/RDS362654>`__
+
+   Name
+       Efficiency
+
+   AttributeURI
+       `http://data.posccaesar.org/rdl/RDS362654 <http://data.posccaesar.org/rdl/RDS362654>`__
+
+
+.. _dexpi-Equipment-CustomCentrifuge-FilteringCentrifugeDrum:
+
+FilteringCentrifugeDrum
+=======================
+
+.. rubric:: Attribute (composition)
+
+
+The filtering centrifuge drum of the :doc:`CustomCentrifuge </reference/Equipment/CustomCentrifuge>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`FilteringCentrifugeDrum </reference/Equipment/FilteringCentrifugeDrum>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   The attribute is implemented using the :ref:`XML hierarchy of the Proteus file <proteus-concept-composition-property-xml-child>`: The  element for the attribute value (a :doc:`FilteringCentrifugeDrum </reference/Equipment/FilteringCentrifugeDrum>`\ ) is a child of the ``<Equipment>`` element for the attribute owner (a :doc:`CustomCentrifuge </reference/Equipment/CustomCentrifuge>`\ ).
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram191.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="customCentrifuge1"
+            ComponentClass="CustomCentrifuge"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/CustomCentrifuge" DOTS123="DOTS123">
+          ...
+          <Equipment
+              ID="filteringCentrifugeDrum1"
+              ComponentClass="FilteringCentrifugeDrum"
+              ComponentClassURI="http://sandbox.dexpi.org/rdl/FilteringCentrifugeDrum" DOTS123="DOTS123">
+            ...
+          <Equipment />
+          ...
+        <Equipment />
+      
+
+
+.. _dexpi-Equipment-CustomCentrifuge-MinimumParticleSize:
+
+MinimumParticleSize
+===================
+
+.. rubric:: Attribute (data)
+
+
+The minimum particle size of the :doc:`CustomCentrifuge </reference/Equipment/CustomCentrifuge>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `MINIMUM PARTICLE SIZE <http://sandbox.dexpi.org/rdl/MinimumParticleSize>`__
+
+   Name
+       MinimumParticleSize
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/MinimumParticleSize <http://sandbox.dexpi.org/rdl/MinimumParticleSize>`__
+
+
+.. _dexpi-Equipment-CustomCentrifuge-SedimentalCentrifugeDrum:
+
+SedimentalCentrifugeDrum
+========================
+
+.. rubric:: Attribute (composition)
+
+
+The sedimental centrifuge drum of the :doc:`CustomCentrifuge </reference/Equipment/CustomCentrifuge>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`SedimentalCentrifugeDrum </reference/Equipment/SedimentalCentrifugeDrum>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   The attribute is implemented using the :ref:`XML hierarchy of the Proteus file <proteus-concept-composition-property-xml-child>`: The  element for the attribute value (a :doc:`SedimentalCentrifugeDrum </reference/Equipment/SedimentalCentrifugeDrum>`\ ) is a child of the ``<Equipment>`` element for the attribute owner (a :doc:`CustomCentrifuge </reference/Equipment/CustomCentrifuge>`\ ).
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram192.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="customCentrifuge1"
+            ComponentClass="CustomCentrifuge"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/CustomCentrifuge" DOTS123="DOTS123">
+          ...
+          <Equipment
+              ID="sedimentalCentrifugeDrum1"
+              ComponentClass="SedimentalCentrifugeDrum"
+              ComponentClassURI="http://sandbox.dexpi.org/rdl/SedimentalCentrifugeDrum" DOTS123="DOTS123">
+            ...
+          <Equipment />
+          ...
+        <Equipment />
+      
+

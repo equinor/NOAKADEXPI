@@ -1,0 +1,20 @@
+================
+GraphicalElement
+================
+
+Overview
+========
+
+.. rubric:: Abstract class
+
+A graphical element.
+
+.. image:: GraphicalElement.*
+
+
+.. rubric:: Subtypes
+
+* :doc:`GraphicalPrimitive </reference/Graphics/GraphicalPrimitive>`
+
+* :doc:`ShapeUsage </reference/Graphics/ShapeUsage>`
+

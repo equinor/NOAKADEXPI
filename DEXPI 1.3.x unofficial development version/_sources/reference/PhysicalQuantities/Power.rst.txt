@@ -1,0 +1,103 @@
+=====
+Power
+=====
+
+Overview
+========
+
+.. rubric:: Data type
+
+An :ref:`actual value <dexpi-concept-actual-value>` for a physical quantity of type :doc:`NullablePower </reference/PhysicalQuantities/NullablePower>`, i.e., a physical quantity that has a numerical value and a unit of measurement.
+
+.. image:: Power.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`NullablePower </reference/PhysicalQuantities/NullablePower>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+| Name                                                                       | Multiplicity | Type                                                                                   |
++============================================================================+==============+========================================================================================+
+| :ref:`Unit <dexpi-PhysicalQuantities-Power-Unit>`                          | 1            | :doc:`PowerUnit </reference/PhysicalQuantities/PowerUnit>`                             |
++----------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+| :ref:`Value <dexpi-PhysicalQuantities-Power-Value>`                        | 1            | :doc:`Double </reference/DataTypes/Double>`                                            |
++----------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   All data attributes with type :doc:`NullablePower </reference/PhysicalQuantities/NullablePower>` (the base type of :doc:`Power </reference/PhysicalQuantities/Power>`\ ) are implemented as :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+.. admonition:: example
+
+   The instance power1 represents a :doc:`Power </reference/PhysicalQuantities/Power>` of 400.0 kW.
+
+   .. image:: /diagrams/diagram609.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Format="double"
+          Value="400.0"
+          Units="Kilowatt"
+          UnitsURI="http://data.posccaesar.org/rdl/RDS1330919" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have a ``Name`` and an ``AttributeURI`` attribute. They depend on the data type attribute of the DEXPI class that owns the instance power1. For a complete example, see the attribute :ref:`DesignShaftPower <dexpi-Equipment-Agglomerator-DesignShaftPower>` of the DEXPI class :doc:`Agglomerator </reference/Equipment/Agglomerator>`.
+
+
+.. _dexpi-PhysicalQuantities-Power-Unit:
+
+Unit
+====
+
+.. rubric:: Attribute (data)
+
+
+The unit of measurement of the :doc:`Power </reference/PhysicalQuantities/Power>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`PowerUnit </reference/PhysicalQuantities/PowerUnit>`
+
+.. admonition:: proteus
+
+   See implementation of :doc:`Power </reference/PhysicalQuantities/Power>`.
+
+.. admonition:: example
+
+   See example for :doc:`Power </reference/PhysicalQuantities/Power>`.
+
+
+.. _dexpi-PhysicalQuantities-Power-Value:
+
+Value
+=====
+
+.. rubric:: Attribute (data)
+
+
+The numerical value of the :doc:`Power </reference/PhysicalQuantities/Power>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Double </reference/DataTypes/Double>`
+
+.. admonition:: proteus
+
+   See implementation of :doc:`Power </reference/PhysicalQuantities/Power>`.
+
+.. admonition:: example
+
+   See example for :doc:`Power </reference/PhysicalQuantities/Power>`.
+

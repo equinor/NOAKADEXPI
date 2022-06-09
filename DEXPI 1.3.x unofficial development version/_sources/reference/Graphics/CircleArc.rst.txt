@@ -1,0 +1,119 @@
+=========
+CircleArc
+=========
+
+Overview
+========
+
+.. rubric:: Class
+
+A circle arc.
+
+.. image:: CircleArc.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`GraphicalPrimitive </reference/Graphics/GraphicalPrimitive>`
+
+.. rubric:: Attributes (data)
+
++------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+| Name                                                                               | Multiplicity | Type                                                               |
++====================================================================================+==============+====================================================================+
+| :ref:`Center <dexpi-Graphics-CircleArc-Center>`                                    | 1            | :doc:`Point </reference/Graphics/Point>`                           |
++------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+| :ref:`EndAngle <dexpi-Graphics-CircleArc-EndAngle>`                                | 1            | :doc:`Double </reference/DataTypes/Double>`                        |
++------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+| :ref:`Radius <dexpi-Graphics-CircleArc-Radius>`                                    | 1            | :doc:`Double </reference/DataTypes/Double>`                        |
++------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+| :ref:`StartAngle <dexpi-Graphics-CircleArc-StartAngle>`                            | 1            | :doc:`Double </reference/DataTypes/Double>`                        |
++------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+| :ref:`Stroke <dexpi-Graphics-CircleArc-Stroke>`                                    | 1            | :doc:`Stroke </reference/Graphics/Stroke>`                         |
++------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+
+
+.. _dexpi-Graphics-CircleArc-Center:
+
+Center
+======
+
+.. rubric:: Attribute (data)
+
+
+The center position of the :doc:`CircleArc </reference/Graphics/CircleArc>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Point </reference/Graphics/Point>`
+
+
+.. _dexpi-Graphics-CircleArc-EndAngle:
+
+EndAngle
+========
+
+.. rubric:: Attribute (data)
+
+
+The end angle of the :doc:`CircleArc </reference/Graphics/CircleArc>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Double </reference/DataTypes/Double>`
+
+
+.. _dexpi-Graphics-CircleArc-Radius:
+
+Radius
+======
+
+.. rubric:: Attribute (data)
+
+
+The radius of the :doc:`CircleArc </reference/Graphics/CircleArc>` in mm.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Double </reference/DataTypes/Double>`
+
+
+.. _dexpi-Graphics-CircleArc-StartAngle:
+
+StartAngle
+==========
+
+.. rubric:: Attribute (data)
+
+
+The start angle of the :doc:`CircleArc </reference/Graphics/CircleArc>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Double </reference/DataTypes/Double>`
+
+
+.. _dexpi-Graphics-CircleArc-Stroke:
+
+Stroke
+======
+
+.. rubric:: Attribute (data)
+
+
+The stroke of the :doc:`CircleArc </reference/Graphics/CircleArc>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Stroke </reference/Graphics/Stroke>`
+

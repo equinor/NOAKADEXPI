@@ -1,0 +1,38 @@
+====================
+NullPressureAbsolute
+====================
+
+Overview
+========
+
+.. rubric:: Data type
+
+A :ref:`null value <dexpi-concept-null-value>` for a physical quantity of application type :doc:`NullablePressureAbsolute </reference/PhysicalQuantities/NullablePressureAbsolute>`. The only instance of this singleton type is :doc:`NULL_PRESSURE_ABSOLUTE </reference/PhysicalQuantities/NULL_PRESSURE_ABSOLUTE>`.
+
+.. image:: NullPressureAbsolute.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`NullablePressureAbsolute </reference/PhysicalQuantities/NullablePressureAbsolute>`
+
+.. admonition:: proteus
+
+   All data attributes with type :doc:`NullablePressureAbsolute </reference/PhysicalQuantities/NullablePressureAbsolute>` (the base type of :doc:`NullPressureAbsolute </reference/PhysicalQuantities/NullPressureAbsolute>`\ ) are implemented as :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram598.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Format="double" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have a ``Name`` and an ``AttributeURI`` attribute. They depend on the data type attribute of the DEXPI class that owns the null instance :doc:`NULL_PRESSURE_ABSOLUTE </reference/PhysicalQuantities/NULL_PRESSURE_ABSOLUTE>` (e.g., see the implementation example for the attribute :ref:`DesignDifferentialPressure <dexpi-Equipment-Blower-DesignDifferentialPressure>` of the DEXPI class :doc:`Blower </reference/Equipment/Blower>`\ )DOTANDSPACEHACKFor a null value, the attributes ``Units``, ``UnitsURI``, and ``Value`` *must not be used*.
+

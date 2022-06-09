@@ -1,0 +1,36 @@
+==================
+GraphicalPrimitive
+==================
+
+Overview
+========
+
+.. rubric:: Abstract class
+
+A primitive graphical element.
+
+.. image:: GraphicalPrimitive.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`GraphicalElement </reference/Graphics/GraphicalElement>`
+
+.. rubric:: Subtypes
+
+* :doc:`Circle </reference/Graphics/Circle>`
+
+* :doc:`CircleArc </reference/Graphics/CircleArc>`
+
+* :doc:`ConnectorLine </reference/Graphics/ConnectorLine>`
+
+* :doc:`Ellipse </reference/Graphics/Ellipse>`
+
+* :doc:`EllipseArc </reference/Graphics/EllipseArc>`
+
+* :doc:`PolyLine </reference/Graphics/PolyLine>`
+
+* :doc:`Polygon </reference/Graphics/Polygon>`
+
+* :doc:`Text </reference/Graphics/Text>`
+

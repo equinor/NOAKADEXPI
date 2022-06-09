@@ -1,0 +1,54 @@
+===========================
+FlowOutPipeOffPageConnector
+===========================
+
+Overview
+========
+
+.. rubric:: Class
+
+A pipe connector that indicates that a subsequent part of a piping network segment is represented somewhere else, either on the same PID, or on some other PID.
+
+.. image:: FlowOutPipeOffPageConnector.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`PipeOffPageConnector </reference/Piping/PipeOffPageConnector>`
+
+* :doc:`PipingTargetItem </reference/Piping/PipingTargetItem>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipeOffPageConnector>``
+
+   RDL reference
+       `FLOW OUT PIPE OFF PAGE CONNECTOR <http://sandbox.dexpi.org/rdl/FlowOutPipeOffPageConnector>`__
+
+   ComponentClass
+       FlowOutPipeOffPageConnector
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/FlowOutPipeOffPageConnector <http://sandbox.dexpi.org/rdl/FlowOutPipeOffPageConnector>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram653.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipeOffPageConnector
+            ID="flowOutPipeOffPageConnector1"
+            ComponentClass="FlowOutPipeOffPageConnector"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/FlowOutPipeOffPageConnector" DOTS123="DOTS123">
+          ...
+        </PipeOffPageConnector>
+      
+

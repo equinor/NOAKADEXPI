@@ -1,0 +1,210 @@
+============
+CustomObject
+============
+
+Overview
+========
+
+.. rubric:: Abstract class
+
+The abstract base class of all :ref:`custom classes <dexpi-concept-custom-class>`.
+
+.. image:: CustomObject.*
+
+
+.. rubric:: Subtypes
+
+* :doc:`CustomActuatingElectricalSystemComponent </reference/Instrumentation/CustomActuatingElectricalSystemComponent>`
+
+* :doc:`CustomActuatingSystemComponent </reference/Instrumentation/CustomActuatingSystemComponent>`
+
+* :doc:`CustomAgglomerator </reference/Equipment/CustomAgglomerator>`
+
+* :doc:`CustomBlower </reference/Equipment/CustomBlower>`
+
+* :doc:`CustomCentrifuge </reference/Equipment/CustomCentrifuge>`
+
+* :doc:`CustomCheckValve </reference/Piping/CustomCheckValve>`
+
+* :doc:`CustomCompressor </reference/Equipment/CustomCompressor>`
+
+* :doc:`CustomCoolingTower </reference/Equipment/CustomCoolingTower>`
+
+* :doc:`CustomDryer </reference/Equipment/CustomDryer>`
+
+* :doc:`CustomElectricGenerator </reference/Equipment/CustomElectricGenerator>`
+
+* :doc:`CustomEquipment </reference/Equipment/CustomEquipment>`
+
+* :doc:`CustomExtruder </reference/Equipment/CustomExtruder>`
+
+* :doc:`CustomFan </reference/Equipment/CustomFan>`
+
+* :doc:`CustomFilter </reference/Equipment/CustomFilter>`
+
+* :doc:`CustomHeatExchanger </reference/Equipment/CustomHeatExchanger>`
+
+* :doc:`CustomHeater </reference/Equipment/CustomHeater>`
+
+* :doc:`CustomInlinePrimaryElement </reference/Piping/CustomInlinePrimaryElement>`
+
+* :doc:`CustomMill </reference/Equipment/CustomMill>`
+
+* :doc:`CustomMixer </reference/Equipment/CustomMixer>`
+
+* :doc:`CustomMobileTransportSystem </reference/Equipment/CustomMobileTransportSystem>`
+
+* :doc:`CustomMotor </reference/Equipment/CustomMotor>`
+
+* :doc:`CustomOperatedValve </reference/Piping/CustomOperatedValve>`
+
+* :doc:`CustomPipeFitting </reference/Piping/CustomPipeFitting>`
+
+* :doc:`CustomPipingComponent </reference/Piping/CustomPipingComponent>`
+
+* :doc:`CustomProcessSignalGeneratingSystemComponent </reference/Instrumentation/CustomProcessSignalGeneratingSystemComponent>`
+
+* :doc:`CustomPump </reference/Equipment/CustomPump>`
+
+* :doc:`CustomSafetyValveOrFitting </reference/Piping/CustomSafetyValveOrFitting>`
+
+* :doc:`CustomSeparator </reference/Equipment/CustomSeparator>`
+
+* :doc:`CustomSieve </reference/Equipment/CustomSieve>`
+
+* :doc:`CustomStationaryTransportSystem </reference/Equipment/CustomStationaryTransportSystem>`
+
+* :doc:`CustomTurbine </reference/Equipment/CustomTurbine>`
+
+* :doc:`CustomVessel </reference/Equipment/CustomVessel>`
+
+* :doc:`CustomWasteGasEmitter </reference/Equipment/CustomWasteGasEmitter>`
+
+* :doc:`CustomWeigher </reference/Equipment/CustomWeigher>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+| Name                                                                                   | Multiplicity | Type                                                                                   |
++========================================================================================+==============+========================================================================================+
+| :ref:`TypeName <dexpi-Customization-CustomObject-TypeName>`                            | 1            | :doc:`String </reference/DataTypes/String>`                                            |
++----------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+| :ref:`TypeURI <dexpi-Customization-CustomObject-TypeURI>`                              | 1            | :doc:`NullableAnyURI </reference/DataTypes/NullableAnyURI>`                            |
++----------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   Implementation is subclass-specific.
+
+
+.. _dexpi-Customization-CustomObject-TypeName:
+
+TypeName
+========
+
+.. rubric:: Attribute (data)
+
+
+A name that identifies the type of the :doc:`CustomObject </reference/Customization/CustomObject>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`String </reference/DataTypes/String>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `TYPE NAME ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/TypeNameAssignmentClass>`__
+
+   Name
+       TypeNameAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/TypeNameAssignmentClass <http://sandbox.dexpi.org/rdl/TypeNameAssignmentClass>`__
+
+.. admonition:: example
+
+   "micro impedance pump" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="customPump1"
+            ComponentClass="CustomPump"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/CustomPump" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="TypeNameAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/TypeNameAssignmentClass"
+              Format="string"
+              Value="micro impedance pump" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Customization-CustomObject-TypeURI:
+
+TypeURI
+=======
+
+.. rubric:: Attribute (data)
+
+
+A URI that identifies the type of the :doc:`CustomObject </reference/Customization/CustomObject>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`NullableAnyURI </reference/DataTypes/NullableAnyURI>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for URI values <proteus-concept-dexpi-generic-attribute-any-uri>`.
+
+   RDL reference
+       `TYPE URI ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/TypeURIAssignmentClass>`__
+
+   Name
+       TypeURIAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/TypeURIAssignmentClass <http://sandbox.dexpi.org/rdl/TypeURIAssignmentClass>`__
+
+.. admonition:: example
+
+   ``http://www.example.org/MicroImpedancePump`` (:doc:`AnyURI </reference/DataTypes/AnyURI>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="customPump1"
+            ComponentClass="CustomPump"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/CustomPump" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="TypeURIAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/TypeURIAssignmentClass"
+              Format="anyURI"
+              Value="http://www.example.org/MicroImpedancePump" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+

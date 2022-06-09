@@ -1,0 +1,52 @@
+=======
+Chimney
+=======
+
+Overview
+========
+
+.. rubric:: Class
+
+A :doc:`WasteGasEmitter </reference/Equipment/WasteGasEmitter>` that is intended to transport waste gas to a high location in the atmosphere.
+
+.. image:: Chimney.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`WasteGasEmitter </reference/Equipment/WasteGasEmitter>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `CHIMNEY <http://sandbox.dexpi.org/rdl/Chimney>`__
+
+   ComponentClass
+       Chimney
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/Chimney <http://sandbox.dexpi.org/rdl/Chimney>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram153.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="chimney1"
+            ComponentClass="Chimney"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/Chimney" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+

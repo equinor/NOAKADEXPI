@@ -1,0 +1,52 @@
+================
+PipeFlangeSpacer
+================
+
+Overview
+========
+
+.. rubric:: Class
+
+A 'spacer' and an 'artefact' that is intended to be inserted between two pipe flanged ends to provide the distance between the flanges required to insert a 'pipe flange spade' (from `http://data.posccaesar.org/rdl/RDS472724 <http://data.posccaesar.org/rdl/RDS472724>`__).
+
+.. image:: PipeFlangeSpacer.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`PipeFitting </reference/Piping/PipeFitting>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingComponent>``
+
+   RDL reference
+       `PIPE FLANGE SPACER <http://data.posccaesar.org/rdl/RDS472724>`__
+
+   ComponentClass
+       PipeFlangeSpacer
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS472724 <http://data.posccaesar.org/rdl/RDS472724>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram676.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="pipeFlangeSpacer1"
+            ComponentClass="PipeFlangeSpacer"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS472724" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+

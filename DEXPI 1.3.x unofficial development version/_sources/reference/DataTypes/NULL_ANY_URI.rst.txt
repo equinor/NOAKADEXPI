@@ -1,0 +1,22 @@
+============
+NULL_ANY_URI
+============
+
+Overview
+========
+
+.. rubric:: Instance
+
+The only instance of the singleton type :doc:`NullAnyURI </reference/DataTypes/NullAnyURI>`. This instance represents the :ref:`null value <dexpi-concept-null-value>` of type :doc:`NullableAnyURI </reference/DataTypes/NullableAnyURI>`.
+
+.. image:: NULL_ANY_URI.*
+
+
+.. rubric:: Type
+
+* :doc:`NullAnyURI </reference/DataTypes/NullAnyURI>`
+
+.. admonition:: proteus
+
+   See Proteus Schema implementation of :doc:`NullableAnyURI </reference/DataTypes/NullableAnyURI>`.
+

@@ -1,0 +1,252 @@
+===========
+SprayNozzle
+===========
+
+Overview
+========
+
+.. rubric:: Class
+
+A nozzle where liquid is introduced under pressure (from `http://data.posccaesar.org/rdl/RDS5855670 <http://data.posccaesar.org/rdl/RDS5855670>`__).
+
+.. image:: SprayNozzle.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`ConceptualObject </reference/DexpiModel/ConceptualObject>`
+
+* :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                           | Multiplicity | Type                                                                                                                   |
++================================================================================================================+==============+========================================================================================================================+
+| :ref:`DesignVolumeFlowRate <dexpi-Equipment-SprayNozzle-DesignVolumeFlowRate>`                                 | 0..1         | :doc:`NullableVolumeFlowRate </reference/PhysicalQuantities/NullableVolumeFlowRate>`                                   |
++----------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------+
+| :ref:`SubTagName <dexpi-Equipment-SprayNozzle-SubTagName>`                                                     | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                            |
++----------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------+
+
+.. rubric:: Attributes (reference)
+
++--------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+| Name                                                                           | Multiplicity | Type                                                               |
++================================================================================+==============+====================================================================+
+| :ref:`Chamber <dexpi-Equipment-SprayNozzle-Chamber>`                           | 0..1         | :doc:`Chamber </reference/Equipment/Chamber>`                      |
++--------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `SPRAY NOZZLE <http://data.posccaesar.org/rdl/RDS5855670>`__
+
+   ComponentClass
+       SprayNozzle
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS5855670 <http://data.posccaesar.org/rdl/RDS5855670>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram462.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="sprayNozzle1"
+            ComponentClass="SprayNozzle"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS5855670" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-SprayNozzle-Chamber:
+
+Chamber
+=======
+
+.. rubric:: Attribute (reference)
+
+
+The :doc:`Chamber </reference/Equipment/Chamber>` in which the :doc:`SprayNozzle </reference/Equipment/SprayNozzle>` is located, if applicable. The Chamber must be a component of the same object as the :doc:`SprayNozzle </reference/Equipment/SprayNozzle>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`Chamber </reference/Equipment/Chamber>`
+
+Opposite multiplicity
+    0..*
+
+.. admonition:: proteus
+
+   The attribute is implemented using :ref:`Proteus \<Association\> elements <proteus-concept-reference-property-association>`.
+
+   Association type for the attribute ower
+       ``"is located in"``
+
+   Opposite association type
+       ``"is the location of"``
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram463.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="sprayNozzle1"
+            ComponentClass="SprayNozzle"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS5855670" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="is located in"
+            ItemID="chamber1" />
+          ...
+        <Equipment />
+        ...
+        <Equipment
+            ID="chamber1"
+            ComponentClass="Chamber"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS903151421" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="is the location of"
+            ItemID="sprayNozzle1" />
+          ...
+        <Equipment />
+      
+
+
+.. _dexpi-Equipment-SprayNozzle-DesignVolumeFlowRate:
+
+DesignVolumeFlowRate
+====================
+
+.. rubric:: Attribute (data)
+
+
+The volume flow rate for which the :doc:`SprayNozzle </reference/Equipment/SprayNozzle>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableVolumeFlowRate </reference/PhysicalQuantities/NullableVolumeFlowRate>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN VOLUME FLOW RATE <http://data.posccaesar.org/rdl/RDS14286227>`__
+
+   Name
+       DesignVolumeFlowRate
+
+   AttributeURI
+       `http://data.posccaesar.org/rdl/RDS14286227 <http://data.posccaesar.org/rdl/RDS14286227>`__
+
+.. admonition:: example
+
+   The instance sprayNozzle1 represents a :doc:`SprayNozzle </reference/Equipment/SprayNozzle>` with a :ref:`DesignVolumeFlowRate <dexpi-Equipment-SprayNozzle-DesignVolumeFlowRate>` of 420.0 m\ :sup:`3`/h.
+
+   .. image:: /diagrams/diagram464.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="sprayNozzle1"
+            ComponentClass="SprayNozzle"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS5855670" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignVolumeFlowRate"
+              AttributeURI="http://data.posccaesar.org/rdl/RDS14286227"
+              Format="double"
+              Value="420.0"
+              Units="MetreCubedPerHour"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1321064" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-SprayNozzle-SubTagName:
+
+SubTagName
+==========
+
+.. rubric:: Attribute (data)
+
+
+The sub tag name of the :doc:`SprayNozzle </reference/Equipment/SprayNozzle>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `SUB TAG NAME ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/SubTagNameAssignmentClass>`__
+
+   Name
+       SubTagNameAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/SubTagNameAssignmentClass <http://sandbox.dexpi.org/rdl/SubTagNameAssignmentClass>`__
+
+.. admonition:: example
+
+   "ST1" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="sprayNozzle1"
+            ComponentClass="SprayNozzle"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS5855670" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="SubTagNameAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/SubTagNameAssignmentClass"
+              Format="string"
+              Value="ST1" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+

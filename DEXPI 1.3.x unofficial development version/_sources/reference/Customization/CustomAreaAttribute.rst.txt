@@ -1,0 +1,102 @@
+===================
+CustomAreaAttribute
+===================
+
+Overview
+========
+
+.. rubric:: Class
+
+A :ref:`custom attribute <dexpi-concept-custom-attributes>` with :ref:`Value <dexpi-Customization-CustomAreaAttribute-Value>` type :doc:`NullableArea </reference/PhysicalQuantities/NullableArea>`.
+
+.. image:: CustomAreaAttribute.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`CustomAttribute </reference/Customization/CustomAttribute>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------+
+| Name                                                                                   | Multiplicity | Type                                                                                           |
++========================================================================================+==============+================================================================================================+
+| :ref:`Value <dexpi-Customization-CustomAreaAttribute-Value>`                           | 1            | :doc:`NullableArea </reference/PhysicalQuantities/NullableArea>`                               |
++----------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   :doc:`CustomAreaAttribute </reference/Customization/CustomAreaAttribute>` is implemented as a :ref:`custom generic attribute for physical quantities <proteus-concept-dexpi-custom-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `AREA <http://data.posccaesar.org/rdl/RDS349874>`__
+
+   Type
+       Area
+
+   TypeURI
+       `http://data.posccaesar.org/rdl/RDS349874 <http://data.posccaesar.org/rdl/RDS349874>`__
+
+.. admonition:: example
+
+   As :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>` is abstract, we consider :doc:`Truck </reference/Equipment/Truck>` as an arbitrary concrete subclass.
+
+   The :doc:`Truck </reference/Equipment/Truck>` truck1 has a :doc:`CustomAreaAttribute </reference/Customization/CustomAreaAttribute>` with :ref:`AttributeName <dexpi-Customization-CustomAttribute-AttributeName>` "LowerLimitCargoArea" and an (arbitrary) :ref:`AttributeURI <dexpi-Customization-CustomAttribute-AttributeURI>` "http://www.example.org/9926bcaf834762"DOTANDSPACEHACKThe :ref:`Value <dexpi-Customization-CustomAreaAttribute-Value>` is 32 m\ :sup:`2`.
+
+   .. image:: /diagrams/diagram16.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="truck1"
+            ComponentClass="Truck"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS11524112" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiCustomAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="LowerLimitCargoArea"
+              AttributeURI="http://www.example.org/9926bcaf834762"
+              Format="double"
+              Type="Area"
+              TypeURI="http://data.posccaesar.org/rdl/RDS349874"
+              Value="32"
+              Units="MetreSquared"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1358009" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Customization-CustomAreaAttribute-Value:
+
+Value
+=====
+
+.. rubric:: Attribute (data)
+
+
+The value of the :doc:`CustomAreaAttribute </reference/Customization/CustomAreaAttribute>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`NullableArea </reference/PhysicalQuantities/NullableArea>`
+
+Redefines
+    :ref:`Value <dexpi-Customization-CustomAttribute-Value>` (inherited from :doc:`CustomAttribute </reference/Customization/CustomAttribute>`\ )
+
+.. admonition:: proteus
+
+   See implementation of :doc:`CustomAreaAttribute </reference/Customization/CustomAreaAttribute>`.
+
+.. admonition:: example
+
+   See the example for :doc:`CustomAreaAttribute </reference/Customization/CustomAreaAttribute>`.
+

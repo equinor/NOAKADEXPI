@@ -1,0 +1,48 @@
+=============================
+SignalConveyingFunctionTarget
+=============================
+
+Overview
+========
+
+.. rubric:: Abstract class
+
+An object than can act as the :ref:`Target <dexpi-Instrumentation-SignalConveyingFunction-Target>` of a :doc:`SignalConveyingFunction </reference/Instrumentation/SignalConveyingFunction>`.
+
+.. image:: SignalConveyingFunctionTarget.*
+
+
+.. rubric:: Subtypes
+
+* :doc:`ActuatingElectricalFunction </reference/Instrumentation/ActuatingElectricalFunction>`
+
+* :doc:`ActuatingFunction </reference/Instrumentation/ActuatingFunction>`
+
+* :doc:`FlowOutSignalOffPageConnector </reference/Instrumentation/FlowOutSignalOffPageConnector>`
+
+* :doc:`ProcessInstrumentationFunction </reference/Instrumentation/ProcessInstrumentationFunction>`
+
+.. admonition:: proteus
+
+   Implementation is subclass-specific.
+
+.. admonition:: example
+
+   As :doc:`SignalConveyingFunctionTarget </reference/Instrumentation/SignalConveyingFunctionTarget>` is abstract, we consider :doc:`ActuatingElectricalFunction </reference/Instrumentation/ActuatingElectricalFunction>` as an arbitrary concrete subclass.
+
+   .. image:: /diagrams/diagram564.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <ActuatingElectricalFunction
+            ID="actuatingElectricalFunction1"
+            ComponentClass="ActuatingElectricalFunction"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/ActuatingElectricalFunction" DOTS123="DOTS123">
+          ...
+        </ActuatingElectricalFunction>
+      
+

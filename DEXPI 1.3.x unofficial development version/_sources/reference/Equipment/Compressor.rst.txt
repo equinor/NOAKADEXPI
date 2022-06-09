@@ -1,0 +1,198 @@
+==========
+Compressor
+==========
+
+Overview
+========
+
+.. rubric:: Class
+
+A machine that has the capability of compressing a gas.
+
+.. image:: Compressor.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Equipment </reference/Equipment/Equipment>`
+
+.. rubric:: Subtypes
+
+* :doc:`AirEjector </reference/Equipment/AirEjector>`
+
+* :doc:`AxialCompressor </reference/Equipment/AxialCompressor>`
+
+* :doc:`CentrifugalCompressor </reference/Equipment/CentrifugalCompressor>`
+
+* :doc:`CustomCompressor </reference/Equipment/CustomCompressor>`
+
+* :doc:`ReciprocatingCompressor </reference/Equipment/ReciprocatingCompressor>`
+
+* :doc:`RotaryCompressor </reference/Equipment/RotaryCompressor>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                           | Multiplicity | Type                                                                                                                           |
++================================================================================================================+==============+================================================================================================================================+
+| :ref:`DesignVolumeFlowRate <dexpi-Equipment-Compressor-DesignVolumeFlowRate>`                                  | 0..1         | :doc:`NullableVolumeFlowRate </reference/PhysicalQuantities/NullableVolumeFlowRate>`                                           |
++----------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`DifferentialPressure <dexpi-Equipment-Compressor-DifferentialPressure>`                                  | 0..1         | :doc:`NullablePressureAbsolute </reference/PhysicalQuantities/NullablePressureAbsolute>`                                       |
++----------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `COMPRESSOR <http://data.posccaesar.org/rdl/RDS14286497>`__
+
+   ComponentClass
+       Compressor
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS14286497 <http://data.posccaesar.org/rdl/RDS14286497>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram164.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="compressor1"
+            ComponentClass="Compressor"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS14286497" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-Compressor-DesignVolumeFlowRate:
+
+DesignVolumeFlowRate
+====================
+
+.. rubric:: Attribute (data)
+
+
+The volume flow rate for which the :doc:`Compressor </reference/Equipment/Compressor>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableVolumeFlowRate </reference/PhysicalQuantities/NullableVolumeFlowRate>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN VOLUME FLOW RATE <http://data.posccaesar.org/rdl/RDS14286227>`__
+
+   Name
+       DesignVolumeFlowRate
+
+   AttributeURI
+       `http://data.posccaesar.org/rdl/RDS14286227 <http://data.posccaesar.org/rdl/RDS14286227>`__
+
+.. admonition:: example
+
+   The instance compressor1 represents a :doc:`Compressor </reference/Equipment/Compressor>` with a :ref:`DesignVolumeFlowRate <dexpi-Equipment-Compressor-DesignVolumeFlowRate>` of 420.0 m\ :sup:`3`/h.
+
+   .. image:: /diagrams/diagram165.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="compressor1"
+            ComponentClass="Compressor"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS14286497" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignVolumeFlowRate"
+              AttributeURI="http://data.posccaesar.org/rdl/RDS14286227"
+              Format="double"
+              Value="420.0"
+              Units="MetreCubedPerHour"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1321064" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-Compressor-DifferentialPressure:
+
+DifferentialPressure
+====================
+
+.. rubric:: Attribute (data)
+
+
+The differential pressure of the :doc:`Compressor </reference/Equipment/Compressor>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullablePressureAbsolute </reference/PhysicalQuantities/NullablePressureAbsolute>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DIFFERENTIAL PRESSURE <http://data.posccaesar.org/rdl/RDS361574>`__
+
+   Name
+       DifferentialPressure
+
+   AttributeURI
+       `http://data.posccaesar.org/rdl/RDS361574 <http://data.posccaesar.org/rdl/RDS361574>`__
+
+.. admonition:: example
+
+   The instance compressor1 represents a :doc:`Compressor </reference/Equipment/Compressor>` with a :ref:`DifferentialPressure <dexpi-Equipment-Compressor-DifferentialPressure>` of 4.8 bar.
+
+   .. image:: /diagrams/diagram166.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="compressor1"
+            ComponentClass="Compressor"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS14286497" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DifferentialPressure"
+              AttributeURI="http://data.posccaesar.org/rdl/RDS361574"
+              Format="double"
+              Value="4.8"
+              Units="Bar"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1314539" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+

@@ -1,0 +1,16 @@
+===========================
+SignalOffPageConnectorShape
+===========================
+
+Overview
+========
+
+.. rubric:: Class
+
+.. image:: SignalOffPageConnectorShape.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Shape </reference/Graphics/Shape>`
+

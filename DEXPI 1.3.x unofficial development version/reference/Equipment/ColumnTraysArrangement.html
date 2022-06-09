@@ -1,0 +1,1702 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="lang:clipboard.copy" content="Copy to clipboard">
+  <meta name="lang:clipboard.copied" content="Copied to clipboard">
+  <meta name="lang:search.language" content="en">
+  <meta name="lang:search.pipeline.stopwords" content="True">
+  <meta name="lang:search.pipeline.trimmer" content="True">
+  <meta name="lang:search.result.none" content="No matching documents">
+  <meta name="lang:search.result.one" content="1 matching document">
+  <meta name="lang:search.result.other" content="# matching documents">
+  <meta name="lang:search.tokenizer" content="[\s\-]+">
+
+  
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700%7CRoboto:300,400,400i,700&amp;display=fallback" rel="stylesheet">
+
+    <style>
+      body,
+      input {
+        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif
+      }
+
+      code,
+      kbd,
+      pre {
+        font-family: "Roboto Mono", "Courier New", Courier, monospace
+      }
+    </style>
+  
+
+  <link rel="stylesheet" href="../../_static/stylesheets/application.css">
+  <link rel="stylesheet" href="../../_static/stylesheets/application-palette.css">
+  <link rel="stylesheet" href="../../_static/stylesheets/application-fixes.css">
+  
+  <link rel="stylesheet" href="../../_static/fonts/material-icons.css">
+  
+  <meta name="theme-color" content="#3f51b5">
+  <script src="../../_static/javascripts/modernizr.js"></script>
+  
+  
+  
+    <title>ColumnTraysArrangement &#8212; DEXPI P&amp;ID Specification Version 1.3</title>
+    <link rel="stylesheet" href="../../_static/material.css" type="text/css">
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../../_static/stylesheets/custom.css">
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/javascripts/features.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html">
+    <link rel="search" title="Search" href="../../search.html">
+    <link rel="next" title="CombustionEngine" href="CombustionEngine.html">
+    <link rel="prev" title="ColumnSection" href="ColumnSection.html">
+  
+   
+
+  </head>
+  <body dir="ltr" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+  <svg class="md-svg">
+    <defs data-children-count="0">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewbox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"></path></svg>
+      
+    </defs>
+  </svg>
+  
+  <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer">
+  <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search">
+  <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+  <a href="#reference/Equipment/ColumnTraysArrangement" tabindex="1" class="md-skip"> Skip to content </a>
+  <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex navheader">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../index.html" title="DEXPI P&amp;ID Specification Version 1.3" class="md-header-nav__button md-logo">
+          
+            &#160;
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          <span class="md-header-nav__topic">DEXPI P&amp;ID Specification 1.3</span>
+          <span class="md-header-nav__topic"> ColumnTraysArrangement </span>
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+        
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" action="../../search.html" method="GET" name="search">
+      <input type="text" class="md-search__input" name="q" placeholder="Search" autocapitalize="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#58829;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      
+      
+  
+  <script src="../../_static/javascripts/version_dropdown.js"></script>
+  <script>
+    var json_loc = "../../"versions.json"",
+        target_loc = "../../../",
+        text = "Versions";
+    $( document ).ready( add_version_dropdown(json_loc, target_loc, text));
+  </script>
+  
+
+    </div>
+  </nav>
+</header>
+
+  
+  <div class="md-container">
+    
+    
+    
+  <nav class="md-tabs" data-md-component="tabs">
+    <div class="md-tabs__inner md-grid">
+      <ul class="md-tabs__list">
+          <li class="md-tabs__item"><a href="../../index.html" class="md-tabs__link">DEXPI P&amp;ID Specification Version 1.3</a></li>
+          <li class="md-tabs__item"><a href="../index.html" class="md-tabs__link">DEXPI Information Model</a></li>
+          <li class="md-tabs__item"><a href="index.html" class="md-tabs__link">Package Equipment</a></li>
+      </ul>
+    </div>
+  </nav>
+    <main class="md-main">
+      <div class="md-main__inner md-grid" data-md-component="container">
+        
+          <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                <nav class="md-nav md-nav--primary" data-md-level="0">
+  <div class="feature-selection">
+<label for="examples" title="Show examples in reference reference part."><input checked id="show-examples" name="examples" type="checkbox">Show Examples</label><label for="proteus" title="Show proteus implementation in reference part."><input checked id="show-proteus" name="proteus" type="checkbox">Show Proteus</label>
+</div>
+<label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../index.html" title="DEXPI P&amp;ID Specification Version 1.3" class="md-nav__button md-logo">
+      
+        <img src="../../_static/" alt=" logo" width="48" height="48">
+      
+    </a>
+    <a href="../../index.html" title="DEXPI P&amp;ID Specification Version 1.3">DEXPI P&amp;ID Specification 1.3</a>
+  </label>
+  
+
+  
+  <ul class="md-nav__list">
+    <li class="md-nav__item">
+    
+    
+      <a href="../../concepts/index.html" class="md-nav__link">Overview and Concepts</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../index.html" class="md-nav__link">DEXPI Information Model</a>
+      <ul class="md-nav__list"> 
+    <li class="md-nav__item">
+    
+    
+      <a href="../DexpiModel/index.html" class="md-nav__link">Package DexpiModel</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../MetaData/index.html" class="md-nav__link">Package MetaData</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../PlantStructure/index.html" class="md-nav__link">Package PlantStructure</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="index.html" class="md-nav__link">Package Equipment</a>
+      <ul class="md-nav__list"> 
+    <li class="md-nav__item">
+    
+    
+      <a href="Agglomerator.html" class="md-nav__link">Agglomerator</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Agitator.html" class="md-nav__link">Agitator</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="AgitatorRotor.html" class="md-nav__link">AgitatorRotor</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="AirCoolingSystem.html" class="md-nav__link">AirCoolingSystem</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="AirEjector.html" class="md-nav__link">AirEjector</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="AlternatingCurrentGenerator.html" class="md-nav__link">AlternatingCurrentGenerator</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="AlternatingCurrentMotor.html" class="md-nav__link">AlternatingCurrentMotor</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="AlternatingCurrentMotorAsComponent.html" class="md-nav__link">AlternatingCurrentMotorAsComponent</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="AxialBlower.html" class="md-nav__link">AxialBlower</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="AxialCompressor.html" class="md-nav__link">AxialCompressor</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="AxialFan.html" class="md-nav__link">AxialFan</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="BatchWeigher.html" class="md-nav__link">BatchWeigher</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Blower.html" class="md-nav__link">Blower</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Boiler.html" class="md-nav__link">Boiler</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="BriquettingRoller.html" class="md-nav__link">BriquettingRoller</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Burner.html" class="md-nav__link">Burner</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CentrifugalBlower.html" class="md-nav__link">CentrifugalBlower</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CentrifugalCompressor.html" class="md-nav__link">CentrifugalCompressor</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CentrifugalPump.html" class="md-nav__link">CentrifugalPump</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Centrifuge.html" class="md-nav__link">Centrifuge</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Chamber.html" class="md-nav__link">Chamber</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="ChamberOwner.html" class="md-nav__link">ChamberOwner</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Chimney.html" class="md-nav__link">Chimney</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="ColumnInternalsArrangement.html" class="md-nav__link">ColumnInternalsArrangement</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="ColumnPackingsArrangement.html" class="md-nav__link">ColumnPackingsArrangement</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="ColumnSection.html" class="md-nav__link">ColumnSection</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    <label class="md-nav__link md-nav__link--active" for="__toc"> ColumnTraysArrangement </label>
+    
+      <a href="#" class="md-nav__link md-nav__link--active">ColumnTraysArrangement</a>
+      
+        
+<nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">ColumnTraysArrangement</label>
+  <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item">
+<nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item">
+<a href="#overview" class="md-nav__link">Overview</a>
+        </li>
+        <li class="md-nav__item">
+<a href="#materialofconstructioncode" class="md-nav__link">MaterialOfConstructionCode</a>
+        </li>
+        <li class="md-nav__item">
+<a href="#numberoftrays" class="md-nav__link">NumberOfTrays</a>
+        </li>
+        <li class="md-nav__item">
+<a href="#traytype" class="md-nav__link">TrayType</a>
+        </li>
+</ul>
+            </nav>
+        </li>
+  </ul>
+</nav>
+      </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CombustionEngine.html" class="md-nav__link">CombustionEngine</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CombustionEngineAsComponent.html" class="md-nav__link">CombustionEngineAsComponent</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Compressor.html" class="md-nav__link">Compressor</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="ContinuousWeigher.html" class="md-nav__link">ContinuousWeigher</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="ConvectionDryer.html" class="md-nav__link">ConvectionDryer</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Conveyor.html" class="md-nav__link">Conveyor</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CoolingTower.html" class="md-nav__link">CoolingTower</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CoolingTowerRotor.html" class="md-nav__link">CoolingTowerRotor</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Crusher.html" class="md-nav__link">Crusher</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CrusherElement.html" class="md-nav__link">CrusherElement</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CustomAgglomerator.html" class="md-nav__link">CustomAgglomerator</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CustomBlower.html" class="md-nav__link">CustomBlower</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CustomCentrifuge.html" class="md-nav__link">CustomCentrifuge</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CustomCompressor.html" class="md-nav__link">CustomCompressor</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CustomCoolingTower.html" class="md-nav__link">CustomCoolingTower</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CustomDryer.html" class="md-nav__link">CustomDryer</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CustomElectricGenerator.html" class="md-nav__link">CustomElectricGenerator</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CustomEquipment.html" class="md-nav__link">CustomEquipment</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CustomExtruder.html" class="md-nav__link">CustomExtruder</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CustomFan.html" class="md-nav__link">CustomFan</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CustomFilter.html" class="md-nav__link">CustomFilter</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CustomHeatExchanger.html" class="md-nav__link">CustomHeatExchanger</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CustomHeater.html" class="md-nav__link">CustomHeater</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CustomMill.html" class="md-nav__link">CustomMill</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CustomMixer.html" class="md-nav__link">CustomMixer</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CustomMobileTransportSystem.html" class="md-nav__link">CustomMobileTransportSystem</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CustomMotor.html" class="md-nav__link">CustomMotor</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CustomPump.html" class="md-nav__link">CustomPump</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CustomSeparator.html" class="md-nav__link">CustomSeparator</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CustomSieve.html" class="md-nav__link">CustomSieve</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CustomStationaryTransportSystem.html" class="md-nav__link">CustomStationaryTransportSystem</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CustomTurbine.html" class="md-nav__link">CustomTurbine</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CustomVessel.html" class="md-nav__link">CustomVessel</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CustomWasteGasEmitter.html" class="md-nav__link">CustomWasteGasEmitter</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="CustomWeigher.html" class="md-nav__link">CustomWeigher</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="DirectCurrentGenerator.html" class="md-nav__link">DirectCurrentGenerator</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="DirectCurrentMotor.html" class="md-nav__link">DirectCurrentMotor</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="DirectCurrentMotorAsComponent.html" class="md-nav__link">DirectCurrentMotorAsComponent</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Displacer.html" class="md-nav__link">Displacer</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="DryCoolingTower.html" class="md-nav__link">DryCoolingTower</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Dryer.html" class="md-nav__link">Dryer</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="DryingChamber.html" class="md-nav__link">DryingChamber</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="EjectorPump.html" class="md-nav__link">EjectorPump</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="ElectricGenerator.html" class="md-nav__link">ElectricGenerator</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="ElectricHeater.html" class="md-nav__link">ElectricHeater</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="ElectricalSeparator.html" class="md-nav__link">ElectricalSeparator</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Equipment.html" class="md-nav__link">Equipment</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Extruder.html" class="md-nav__link">Extruder</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Fan.html" class="md-nav__link">Fan</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Feeder.html" class="md-nav__link">Feeder</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Filter.html" class="md-nav__link">Filter</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="FilterUnit.html" class="md-nav__link">FilterUnit</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="FilteringCentrifuge.html" class="md-nav__link">FilteringCentrifuge</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="FilteringCentrifugeDrum.html" class="md-nav__link">FilteringCentrifugeDrum</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Flare.html" class="md-nav__link">Flare</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="ForkliftTruck.html" class="md-nav__link">ForkliftTruck</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Furnace.html" class="md-nav__link">Furnace</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="GasFilter.html" class="md-nav__link">GasFilter</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="GasTurbine.html" class="md-nav__link">GasTurbine</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="GearBox.html" class="md-nav__link">GearBox</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="GravitationalSeparator.html" class="md-nav__link">GravitationalSeparator</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Grinder.html" class="md-nav__link">Grinder</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="GrindingElement.html" class="md-nav__link">GrindingElement</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="HeatExchanger.html" class="md-nav__link">HeatExchanger</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="HeatExchangerRotor.html" class="md-nav__link">HeatExchangerRotor</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="HeatedSurfaceDryer.html" class="md-nav__link">HeatedSurfaceDryer</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Heater.html" class="md-nav__link">Heater</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Impeller.html" class="md-nav__link">Impeller</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Kneader.html" class="md-nav__link">Kneader</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Lift.html" class="md-nav__link">Lift</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="LiquidFilter.html" class="md-nav__link">LiquidFilter</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="LoadingUnloadingSystem.html" class="md-nav__link">LoadingUnloadingSystem</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="MechanicalSeparator.html" class="md-nav__link">MechanicalSeparator</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Mill.html" class="md-nav__link">Mill</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Mixer.html" class="md-nav__link">Mixer</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="MixingElementAssembly.html" class="md-nav__link">MixingElementAssembly</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="MobileTransportSystem.html" class="md-nav__link">MobileTransportSystem</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Motor.html" class="md-nav__link">Motor</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="MotorAsComponent.html" class="md-nav__link">MotorAsComponent</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Nozzle.html" class="md-nav__link">Nozzle</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="NozzleOwner.html" class="md-nav__link">NozzleOwner</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="PackagingSystem.html" class="md-nav__link">PackagingSystem</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="PelletizerDisc.html" class="md-nav__link">PelletizerDisc</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="PlateHeatExchanger.html" class="md-nav__link">PlateHeatExchanger</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="PressureVessel.html" class="md-nav__link">PressureVessel</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="ProcessColumn.html" class="md-nav__link">ProcessColumn</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Pump.html" class="md-nav__link">Pump</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="RadialFan.html" class="md-nav__link">RadialFan</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="RailWaggon.html" class="md-nav__link">RailWaggon</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="ReciprocatingCompressor.html" class="md-nav__link">ReciprocatingCompressor</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="ReciprocatingExtruder.html" class="md-nav__link">ReciprocatingExtruder</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="ReciprocatingPressureAgglomerator.html" class="md-nav__link">ReciprocatingPressureAgglomerator</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="ReciprocatingPump.html" class="md-nav__link">ReciprocatingPump</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="RevolvingSieve.html" class="md-nav__link">RevolvingSieve</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="RotaryCompressor.html" class="md-nav__link">RotaryCompressor</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="RotaryMixer.html" class="md-nav__link">RotaryMixer</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="RotaryPump.html" class="md-nav__link">RotaryPump</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="RotatingExtruder.html" class="md-nav__link">RotatingExtruder</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="RotatingGrowthAgglomerator.html" class="md-nav__link">RotatingGrowthAgglomerator</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="RotatingPressureAgglomerator.html" class="md-nav__link">RotatingPressureAgglomerator</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Screw.html" class="md-nav__link">Screw</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="ScrubbingSeparator.html" class="md-nav__link">ScrubbingSeparator</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="SedimentalCentrifuge.html" class="md-nav__link">SedimentalCentrifuge</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="SedimentalCentrifugeDrum.html" class="md-nav__link">SedimentalCentrifugeDrum</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Separator.html" class="md-nav__link">Separator</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Ship.html" class="md-nav__link">Ship</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Sieve.html" class="md-nav__link">Sieve</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="SieveElement.html" class="md-nav__link">SieveElement</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Silo.html" class="md-nav__link">Silo</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="SpiralHeatExchanger.html" class="md-nav__link">SpiralHeatExchanger</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="SprayCooler.html" class="md-nav__link">SprayCooler</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="SprayNozzle.html" class="md-nav__link">SprayNozzle</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="StaticMixer.html" class="md-nav__link">StaticMixer</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="StationarySieve.html" class="md-nav__link">StationarySieve</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="StationaryTransportSystem.html" class="md-nav__link">StationaryTransportSystem</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="SteamGenerator.html" class="md-nav__link">SteamGenerator</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="SteamTurbine.html" class="md-nav__link">SteamTurbine</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="SubTaggedColumnSection.html" class="md-nav__link">SubTaggedColumnSection</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="TaggedColumnSection.html" class="md-nav__link">TaggedColumnSection</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="TaggedPlantItem.html" class="md-nav__link">TaggedPlantItem</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Tank.html" class="md-nav__link">Tank</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="ThinFilmEvaporator.html" class="md-nav__link">ThinFilmEvaporator</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="TransportableContainer.html" class="md-nav__link">TransportableContainer</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Truck.html" class="md-nav__link">Truck</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="TubeBundle.html" class="md-nav__link">TubeBundle</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="TubularHeatExchanger.html" class="md-nav__link">TubularHeatExchanger</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Turbine.html" class="md-nav__link">Turbine</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Vessel.html" class="md-nav__link">Vessel</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="VibratingSieve.html" class="md-nav__link">VibratingSieve</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="WasteGasEmitter.html" class="md-nav__link">WasteGasEmitter</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Weigher.html" class="md-nav__link">Weigher</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="WetCoolingTower.html" class="md-nav__link">WetCoolingTower</a>
+      
+    
+    </li>
+</ul>
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../Piping/index.html" class="md-nav__link">Package Piping</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../Instrumentation/index.html" class="md-nav__link">Package Instrumentation</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../Customization/index.html" class="md-nav__link">Package Customization</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../Enumerations/index.html" class="md-nav__link">Package Enumerations</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../PhysicalQuantities/index.html" class="md-nav__link">Package PhysicalQuantities</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../Graphics/index.html" class="md-nav__link">Package Graphics</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../DataTypes/index.html" class="md-nav__link">Package DataTypes</a>
+      
+    
+    </li>
+</ul>
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../../appendix/index.html" class="md-nav__link">Appendix</a>
+      
+    
+    </li>
+  </ul>
+  
+
+</nav>
+              </div>
+            </div>
+          </div>
+          <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                
+<nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">ColumnTraysArrangement</label>
+  <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item">
+<nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item">
+<a href="#overview" class="md-nav__link">Overview</a>
+        </li>
+        <li class="md-nav__item">
+<a href="#materialofconstructioncode" class="md-nav__link">MaterialOfConstructionCode</a>
+        </li>
+        <li class="md-nav__item">
+<a href="#numberoftrays" class="md-nav__link">NumberOfTrays</a>
+        </li>
+        <li class="md-nav__item">
+<a href="#traytype" class="md-nav__link">TrayType</a>
+        </li>
+</ul>
+            </nav>
+        </li>
+  </ul>
+</nav>
+              </div>
+            </div>
+          </div>
+        
+        <div class="md-content">
+          <article class="md-content__inner md-typeset" role="main">
+            
+  
+<h1 id="reference-equipment-columntraysarrangement--page-root">ColumnTraysArrangement<a class="headerlink" href="#reference-equipment-columntraysarrangement--page-root" title="Permalink to this headline">&#182;</a>
+</h1>
+
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permalink to this headline">&#182;</a>
+</h2>
+<p class="rubric">Class</p>
+<p>The trays of a column.</p>
+<object class="max-width-100" data="../../_images/ColumnTraysArrangement.svg" type="image/svg+xml"></object><p class="rubric">Supertypes</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="ColumnInternalsArrangement.html"><span class="doc">ColumnInternalsArrangement</span></a></p></li>
+</ul>
+<p class="rubric">Attributes (data)</p>
+<table>
+<thead>
+<tr class="row-odd">
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Multiplicity</p></th>
+<th class="head"><p>Type</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even">
+<td><p><a class="reference internal" href="#dexpi-equipment-columntraysarrangement-materialofconstructioncode"><span class="std std-ref">MaterialOfConstructionCode</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="reference internal" href="../DataTypes/NullableString.html"><span class="doc">NullableString</span></a></p></td>
+</tr>
+<tr class="row-odd">
+<td><p><a class="reference internal" href="#dexpi-equipment-columntraysarrangement-numberoftrays"><span class="std std-ref">NumberOfTrays</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="reference internal" href="../DataTypes/NullableInteger.html"><span class="doc">NullableInteger</span></a></p></td>
+</tr>
+<tr class="row-even">
+<td><p><a class="reference internal" href="#dexpi-equipment-columntraysarrangement-traytype"><span class="std std-ref">TrayType</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="reference internal" href="../DataTypes/NullableString.html"><span class="doc">NullableString</span></a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="feature-proteus proteus admonition tip">
+<p class="admonition-title">Implementation in Proteus Schema</p>
+<p>The class is implemented as a <a class="reference internal" href="../../concepts/proteus.html#proteus-concept-xml-element-with-rdl"><span class="std std-ref">Proteus XML element with RDL reference</span></a>.</p>
+<div class="terms">
+<div class="term-def"><p><span class="term">Tag: </span><code class="docutils literal notranslate"><span class="pre">&lt;Equipment&gt;</span></code></p></div>
+<div class="term-def"><p><span class="term">RDL reference: </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/ColumnTraysArrangement">COLUMN TRAYS ARRANGEMENT</a></p></div>
+<div class="term-def"><p><span class="term">ComponentClass: </span>ColumnTraysArrangement</p></div>
+<div class="term-def"><p><span class="term">ComponentClassURI: </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/ColumnTraysArrangement">http://sandbox.dexpi.org/rdl/ColumnTraysArrangement</a></p></div>
+</div>
+</div>
+<div class="feature-examples examples admonition">
+<p class="admonition-title">Example</p>
+<object class="max-width-100" data="../../_images/diagram161.svg" type="image/svg+xml"></object><div class="feature-proteus proteus admonition tip">
+<p class="admonition-title">Implementation in Proteus Schema</p>
+<div class="highlight-xml notranslate">
+<div class="highlight"><pre><span></span><span class="nt">&lt;Equipment</span>
+    <span class="na">ID=</span><span class="s">"columnTraysArrangement1"</span>
+    <span class="na">ComponentClass=</span><span class="s">"ColumnTraysArrangement"</span>
+    <span class="na">ComponentClassURI=</span><span class="s">"http://sandbox.dexpi.org/rdl/ColumnTraysArrangement"</span> <span class="na">...</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/Equipment&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+<span id="dexpi-equipment-columntraysarrangement-materialofconstructioncode"></span><h2 id="materialofconstructioncode">MaterialOfConstructionCode<a class="headerlink" href="#materialofconstructioncode" title="Permalink to this headline">&#182;</a>
+</h2>
+<p class="rubric">Attribute (data)</p>
+<p>A code that gives the material of construction of the <a class="reference internal" href="#"><span class="doc">ColumnTraysArrangement</span></a>.</p>
+<div class="terms">
+<div class="term-def"><p><span class="term">Multiplicity: </span>0..1</p></div>
+<div class="term-def"><p><span class="term">Type: </span><a class="reference internal" href="../DataTypes/NullableString.html"><span class="doc">NullableString</span></a></p></div>
+</div>
+<div class="feature-proteus proteus admonition tip">
+<p class="admonition-title">Implementation in Proteus Schema</p>
+<p>The attribute is implemented as a <a class="reference internal" href="../../concepts/proteus.html#proteus-concept-dexpi-generic-attribute-string"><span class="std std-ref">DEXPI generic attribute for string values</span></a>.</p>
+<div class="terms">
+<div class="term-def"><p><span class="term">RDL reference: </span><a class="reference external" href="http://data.posccaesar.org/rdl/RDS1460719741">MATERIAL OF CONSTRUCTION CODE ASSIGNMENT CLASS</a></p></div>
+<div class="term-def"><p><span class="term">Name: </span>MaterialOfConstructionCodeAssignmentClass</p></div>
+<div class="term-def"><p><span class="term">AttributeURI: </span><a class="reference external" href="http://data.posccaesar.org/rdl/RDS1460719741">http://data.posccaesar.org/rdl/RDS1460719741</a></p></div>
+</div>
+</div>
+<div class="feature-examples examples admonition">
+<p class="admonition-title">Example</p>
+<p>&#8220;1.4306&#8221; (<a class="reference internal" href="../DataTypes/String.html"><span class="doc">String</span></a>)</p>
+<div class="feature-proteus proteus admonition tip">
+<p class="admonition-title">Implementation in Proteus Schema</p>
+<div class="highlight-xml notranslate">
+<div class="highlight"><pre><span></span><span class="nt">&lt;Equipment</span>
+    <span class="na">ID=</span><span class="s">"columnTraysArrangement1"</span>
+    <span class="na">ComponentClass=</span><span class="s">"ColumnTraysArrangement"</span>
+    <span class="na">ComponentClassURI=</span><span class="s">"http://sandbox.dexpi.org/rdl/ColumnTraysArrangement"</span> <span class="na">...</span><span class="nt">&gt;</span>
+  ...
+  <span class="nt">&lt;GenericAttributes</span> <span class="na">Set=</span><span class="s">"DexpiAttributes"</span> <span class="na">...</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;GenericAttribute</span>
+      <span class="na">Name=</span><span class="s">"MaterialOfConstructionCodeAssignmentClass"</span>
+      <span class="na">AttributeURI=</span><span class="s">"http://data.posccaesar.org/rdl/RDS1460719741"</span>
+      <span class="na">Format=</span><span class="s">"string"</span>
+      <span class="na">Value=</span><span class="s">"1.4306"</span> <span class="nt">/&gt;</span>
+    ...
+  <span class="nt">&lt;/GenericAttributes&gt;</span>
+  ...
+<span class="nt">&lt;/Equipment&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+<span id="dexpi-equipment-columntraysarrangement-numberoftrays"></span><h2 id="numberoftrays">NumberOfTrays<a class="headerlink" href="#numberoftrays" title="Permalink to this headline">&#182;</a>
+</h2>
+<p class="rubric">Attribute (data)</p>
+<p>The number of trays in the <a class="reference internal" href="#"><span class="doc">ColumnTraysArrangement</span></a>.</p>
+<div class="terms">
+<div class="term-def"><p><span class="term">Multiplicity: </span>0..1</p></div>
+<div class="term-def"><p><span class="term">Type: </span><a class="reference internal" href="../DataTypes/NullableInteger.html"><span class="doc">NullableInteger</span></a></p></div>
+</div>
+<div class="feature-proteus proteus admonition tip">
+<p class="admonition-title">Implementation in Proteus Schema</p>
+<p>The attribute is implemented as a <a class="reference internal" href="../../concepts/proteus.html#proteus-concept-dexpi-generic-attribute-integer"><span class="std std-ref">DEXPI generic attribute for integer values</span></a>.</p>
+<div class="terms">
+<div class="term-def"><p><span class="term">RDL reference: </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/NumberOfTrays">NUMBER OF TRAYS</a></p></div>
+<div class="term-def"><p><span class="term">Name: </span>NumberOfTrays</p></div>
+<div class="term-def"><p><span class="term">AttributeURI: </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/NumberOfTrays">http://sandbox.dexpi.org/rdl/NumberOfTrays</a></p></div>
+</div>
+</div>
+<div class="feature-examples examples admonition">
+<p class="admonition-title">Example</p>
+<p>16 (<a class="reference internal" href="../DataTypes/Integer.html"><span class="doc">Integer</span></a>)</p>
+<div class="feature-proteus proteus admonition tip">
+<p class="admonition-title">Implementation in Proteus Schema</p>
+<div class="highlight-xml notranslate">
+<div class="highlight"><pre><span></span><span class="nt">&lt;Equipment</span>
+    <span class="na">ID=</span><span class="s">"columnTraysArrangement1"</span>
+    <span class="na">ComponentClass=</span><span class="s">"ColumnTraysArrangement"</span>
+    <span class="na">ComponentClassURI=</span><span class="s">"http://sandbox.dexpi.org/rdl/ColumnTraysArrangement"</span> <span class="na">...</span><span class="nt">&gt;</span>
+  ...
+  <span class="nt">&lt;GenericAttributes</span> <span class="na">Set=</span><span class="s">"DexpiAttributes"</span> <span class="na">...</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;GenericAttribute</span>
+      <span class="na">Name=</span><span class="s">"NumberOfTrays"</span>
+      <span class="na">AttributeURI=</span><span class="s">"http://sandbox.dexpi.org/rdl/NumberOfTrays"</span>
+      <span class="na">Format=</span><span class="s">"integer"</span>
+      <span class="na">Value=</span><span class="s">"16"</span> <span class="nt">/&gt;</span>
+    ...
+  <span class="nt">&lt;/GenericAttributes&gt;</span>
+  ...
+<span class="nt">&lt;/Equipment&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+<span id="dexpi-equipment-columntraysarrangement-traytype"></span><h2 id="traytype">TrayType<a class="headerlink" href="#traytype" title="Permalink to this headline">&#182;</a>
+</h2>
+<p class="rubric">Attribute (data)</p>
+<p>The type of the trays in the <a class="reference internal" href="#"><span class="doc">ColumnTraysArrangement</span></a>.</p>
+<div class="terms">
+<div class="term-def"><p><span class="term">Multiplicity: </span>0..1</p></div>
+<div class="term-def"><p><span class="term">Type: </span><a class="reference internal" href="../DataTypes/NullableString.html"><span class="doc">NullableString</span></a></p></div>
+</div>
+<div class="feature-proteus proteus admonition tip">
+<p class="admonition-title">Implementation in Proteus Schema</p>
+<p>The attribute is implemented as a <a class="reference internal" href="../../concepts/proteus.html#proteus-concept-dexpi-generic-attribute-string"><span class="std std-ref">DEXPI generic attribute for string values</span></a>.</p>
+<div class="terms">
+<div class="term-def"><p><span class="term">RDL reference: </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/TrayTypeAssignmentClass">TRAY TYPE ASSIGNMENT CLASS</a></p></div>
+<div class="term-def"><p><span class="term">Name: </span>TrayTypeAssignmentClass</p></div>
+<div class="term-def"><p><span class="term">AttributeURI: </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/TrayTypeAssignmentClass">http://sandbox.dexpi.org/rdl/TrayTypeAssignmentClass</a></p></div>
+</div>
+</div>
+<div class="feature-examples examples admonition">
+<p class="admonition-title">Example</p>
+<p>&#8220;sieve trays&#8221; (<a class="reference internal" href="../DataTypes/String.html"><span class="doc">String</span></a>)</p>
+<div class="feature-proteus proteus admonition tip">
+<p class="admonition-title">Implementation in Proteus Schema</p>
+<div class="highlight-xml notranslate">
+<div class="highlight"><pre><span></span><span class="nt">&lt;Equipment</span>
+    <span class="na">ID=</span><span class="s">"columnTraysArrangement1"</span>
+    <span class="na">ComponentClass=</span><span class="s">"ColumnTraysArrangement"</span>
+    <span class="na">ComponentClassURI=</span><span class="s">"http://sandbox.dexpi.org/rdl/ColumnTraysArrangement"</span> <span class="na">...</span><span class="nt">&gt;</span>
+  ...
+  <span class="nt">&lt;GenericAttributes</span> <span class="na">Set=</span><span class="s">"DexpiAttributes"</span> <span class="na">...</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;GenericAttribute</span>
+      <span class="na">Name=</span><span class="s">"TrayTypeAssignmentClass"</span>
+      <span class="na">AttributeURI=</span><span class="s">"http://sandbox.dexpi.org/rdl/TrayTypeAssignmentClass"</span>
+      <span class="na">Format=</span><span class="s">"string"</span>
+      <span class="na">Value=</span><span class="s">"sieve trays"</span> <span class="nt">/&gt;</span>
+    ...
+  <span class="nt">&lt;/GenericAttributes&gt;</span>
+  ...
+<span class="nt">&lt;/Equipment&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+
+
+          </article>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="md-footer">
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+          
+            <a href="ColumnSection.html" title="ColumnSection" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+              </div>
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span class="md-footer-nav__direction"> Previous </span> ColumnSection </span>
+              </div>
+            </a>
+          
+          
+            <a href="CombustionEngine.html" title="CombustionEngine" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+<span class="md-flex__ellipsis"> <span class="md-footer-nav__direction"> Next </span> CombustionEngine </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+<i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          
+        </a>
+        
+      </nav>
+    </div>
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <div class="md-footer-copyright">
+          <div style="font-size:0.9rem" class="md-footer-copyright__highlight">
+<a href="http://creativecommons.org/licenses/by/4.0/" rel="license"><img src="https://i.creativecommons.org/l/by/4.0/88x31.png" style="border-width:0; margin-right: 1rem; vertical-align: middle" alt="Creative Commons License"></a>This work is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International License</a>.</div>
+</div>
+      </div>
+    </div>
+  </footer>
+  <script src="../../_static/javascripts/application.js"></script>
+  <script>app.initialize({version: "1.0.4", url: {base: ".."}})</script>
+  <script>initializeFeatures(["examples", "proteus"]);</script>
+  </body>
+</html>

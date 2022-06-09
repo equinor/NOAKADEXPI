@@ -1,0 +1,54 @@
+================
+CustomCheckValve
+================
+
+Overview
+========
+
+.. rubric:: Class
+
+A :ref:`custom <dexpi-concept-custom-sibling>` :doc:`CheckValve </reference/Piping/CheckValve>`, i.e., a :doc:`CheckValve </reference/Piping/CheckValve>` that is not covered by any of the other subclasses of :doc:`CheckValve </reference/Piping/CheckValve>` (:doc:`GlobeCheckValve </reference/Piping/GlobeCheckValve>` or :doc:`SwingCheckValve </reference/Piping/SwingCheckValve>`\ ).
+
+.. image:: CustomCheckValve.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`CheckValve </reference/Piping/CheckValve>`
+
+* :doc:`CustomObject </reference/Customization/CustomObject>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingComponent>``
+
+   RDL reference
+       `CUSTOM CHECK VALVE <http://sandbox.dexpi.org/rdl/CustomCheckValve>`__
+
+   ComponentClass
+       CustomCheckValve
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/CustomCheckValve <http://sandbox.dexpi.org/rdl/CustomCheckValve>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram639.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="customCheckValve1"
+            ComponentClass="CustomCheckValve"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/CustomCheckValve" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+

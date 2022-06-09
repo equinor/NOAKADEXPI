@@ -1,0 +1,52 @@
+==========================
+VolumeFlowMeasuringElement
+==========================
+
+Overview
+========
+
+.. rubric:: Class
+
+A VOLUME FLOW MEASURING ELEMENT is a FLOW MEASURING ELEMENT that is used to measure VOLUME FLOW RATE.
+
+.. image:: VolumeFlowMeasuringElement.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`InlinePrimaryElement </reference/Piping/InlinePrimaryElement>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingComponent>``
+
+   RDL reference
+       `VOLUME FLOW MEASURING ELEMENT <http://sandbox.dexpi.org/rdl/VolumeFlowMeasuringElement>`__
+
+   ComponentClass
+       VolumeFlowMeasuringElement
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/VolumeFlowMeasuringElement <http://sandbox.dexpi.org/rdl/VolumeFlowMeasuringElement>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram729.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="volumeFlowMeasuringElement1"
+            ComponentClass="VolumeFlowMeasuringElement"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/VolumeFlowMeasuringElement" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+

@@ -1,0 +1,316 @@
+===============================
+ProcessSignalGeneratingFunction
+===============================
+
+Overview
+========
+
+.. rubric:: Class
+
+A function for instrumentation and/or control structures relating to Process Engineering
+
+.. image:: ProcessSignalGeneratingFunction.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`ConceptualObject </reference/DexpiModel/ConceptualObject>`
+
+* :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>`
+
+* :doc:`SignalConveyingFunctionSource </reference/Instrumentation/SignalConveyingFunctionSource>`
+
+* :doc:`TechnicalItem </reference/PlantStructure/TechnicalItem>`
+
+.. rubric:: Attributes (data)
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+| Name                                                                                                                                                                                           | Multiplicity | Type                                                                                   |
++================================================================================================================================================================================================+==============+========================================================================================+
+| :ref:`ProcessSignalGeneratingFunctionNumber <dexpi-Instrumentation-ProcessSignalGeneratingFunction-ProcessSignalGeneratingFunctionNumber>`                                                     | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                            |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+| :ref:`SensorType <dexpi-Instrumentation-ProcessSignalGeneratingFunction-SensorType>`                                                                                                           | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                            |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+
+.. rubric:: Attributes (reference)
+
++----------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                                                   | Multiplicity | Type                                                                                                                                   |
++========================================================================================================================================+==============+========================================================================================================================================+
+| :ref:`SensingLocation <dexpi-Instrumentation-ProcessSignalGeneratingFunction-SensingLocation>`                                         | 0..1         | :doc:`SensingLocation </reference/Instrumentation/SensingLocation>`                                                                    |
++----------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`Systems <dexpi-Instrumentation-ProcessSignalGeneratingFunction-Systems>`                                                         | 0..1         | :doc:`ProcessSignalGeneratingSystem </reference/Instrumentation/ProcessSignalGeneratingSystem>`                                        |
++----------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<ProcessSignalGeneratingFunction>``
+
+   RDL reference
+       `PROCESS SIGNAL GENERATING FUNCTION <http://sandbox.dexpi.org/rdl/ProcessSignalGeneratingFunction>`__
+
+   ComponentClass
+       ProcessSignalGeneratingFunction
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/ProcessSignalGeneratingFunction <http://sandbox.dexpi.org/rdl/ProcessSignalGeneratingFunction>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram552.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <ProcessSignalGeneratingFunction
+            ID="processSignalGeneratingFunction1"
+            ComponentClass="ProcessSignalGeneratingFunction"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/ProcessSignalGeneratingFunction" DOTS123="DOTS123">
+          ...
+        </ProcessSignalGeneratingFunction>
+      
+
+
+.. _dexpi-Instrumentation-ProcessSignalGeneratingFunction-ProcessSignalGeneratingFunctionNumber:
+
+ProcessSignalGeneratingFunctionNumber
+=====================================
+
+.. rubric:: Attribute (data)
+
+
+An identifier for the :doc:`ProcessSignalGeneratingFunction </reference/Instrumentation/ProcessSignalGeneratingFunction>`. It usually contains the identifier of the :doc:`ProcessInstrumentationFunction </reference/Instrumentation/ProcessInstrumentationFunction>` that includes the :doc:`ProcessSignalGeneratingFunction </reference/Instrumentation/ProcessSignalGeneratingFunction>` (see :ref:`ProcessInstrumentationFunctionNumber <dexpi-Instrumentation-ProcessInstrumentationFunction-ProcessInstrumentationFunctionNumber>`\ ).
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `PROCESS SIGNAL GENERATING FUNCTION NUMBER ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/ProcessSignalGeneratingFunctionNumberAssignmentClass>`__
+
+   Name
+       ProcessSignalGeneratingFunctionNumberAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/ProcessSignalGeneratingFunctionNumberAssignmentClass <http://sandbox.dexpi.org/rdl/ProcessSignalGeneratingFunctionNumberAssignmentClass>`__
+
+.. admonition:: example
+
+   "TT4750.03" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <ProcessSignalGeneratingFunction
+            ID="processSignalGeneratingFunction1"
+            ComponentClass="ProcessSignalGeneratingFunction"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/ProcessSignalGeneratingFunction" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="ProcessSignalGeneratingFunctionNumberAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/ProcessSignalGeneratingFunctionNumberAssignmentClass"
+              Format="string"
+              Value="TT4750.03" />
+            ...
+          </GenericAttributes>
+          ...
+        </ProcessSignalGeneratingFunction>
+      
+
+
+.. _dexpi-Instrumentation-ProcessSignalGeneratingFunction-SensingLocation:
+
+SensingLocation
+===============
+
+.. rubric:: Attribute (reference)
+
+
+The sensing location of the :doc:`ProcessSignalGeneratingFunction </reference/Instrumentation/ProcessSignalGeneratingFunction>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`SensingLocation </reference/Instrumentation/SensingLocation>`
+
+Opposite multiplicity
+    0..*
+
+.. admonition:: proteus
+
+   The attribute is implemented using :ref:`Proteus \<Association\> elements <proteus-concept-reference-property-association>`.
+
+   Association type for the attribute ower
+       ``"is located in"``
+
+   Opposite association type
+       ``"is the location of"``
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram553.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <ProcessSignalGeneratingFunction
+            ID="processSignalGeneratingFunction1"
+            ComponentClass="ProcessSignalGeneratingFunction"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/ProcessSignalGeneratingFunction" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="is located in"
+            ItemID="nozzle1" />
+          ...
+        <ProcessSignalGeneratingFunction />
+        ...
+        <Nozzle
+            ID="nozzle1"
+            ComponentClass="Nozzle"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS415214" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="is the location of"
+            ItemID="processSignalGeneratingFunction1" />
+          ...
+        <Nozzle />
+      
+
+
+.. _dexpi-Instrumentation-ProcessSignalGeneratingFunction-SensorType:
+
+SensorType
+==========
+
+.. rubric:: Attribute (data)
+
+
+The sensor type of the :doc:`ProcessSignalGeneratingFunction </reference/Instrumentation/ProcessSignalGeneratingFunction>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `SENSOR TYPE ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/SensorTypeAssignmentClass>`__
+
+   Name
+       SensorTypeAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/SensorTypeAssignmentClass <http://sandbox.dexpi.org/rdl/SensorTypeAssignmentClass>`__
+
+.. admonition:: example
+
+   "MDM" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <ProcessSignalGeneratingFunction
+            ID="processSignalGeneratingFunction1"
+            ComponentClass="ProcessSignalGeneratingFunction"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/ProcessSignalGeneratingFunction" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="SensorTypeAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/SensorTypeAssignmentClass"
+              Format="string"
+              Value="MDM" />
+            ...
+          </GenericAttributes>
+          ...
+        </ProcessSignalGeneratingFunction>
+      
+
+
+.. _dexpi-Instrumentation-ProcessSignalGeneratingFunction-Systems:
+
+Systems
+=======
+
+.. rubric:: Attribute (reference)
+
+
+The ProcessSignalGeneratingSystem that implements the :doc:`ProcessSignalGeneratingFunction </reference/Instrumentation/ProcessSignalGeneratingFunction>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`ProcessSignalGeneratingSystem </reference/Instrumentation/ProcessSignalGeneratingSystem>`
+
+Opposite multiplicity
+    0..*
+
+.. admonition:: proteus
+
+   The attribute is implemented using :ref:`Proteus \<Association\> elements <proteus-concept-reference-property-association>`.
+
+   Association type for the attribute ower
+       ``"is fulfilled by"``
+
+   Opposite association type
+       ``"fulfills"``
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram554.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <ProcessSignalGeneratingFunction
+            ID="processSignalGeneratingFunction1"
+            ComponentClass="ProcessSignalGeneratingFunction"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/ProcessSignalGeneratingFunction" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="is fulfilled by"
+            ItemID="processSignalGeneratingSystem1" />
+          ...
+        <ProcessSignalGeneratingFunction />
+        ...
+        <ProcessSignalGeneratingSystem
+            ID="processSignalGeneratingSystem1"
+            ComponentClass="ProcessSignalGeneratingSystem"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/ProcessSignalGeneratingSystem" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="fulfills"
+            ItemID="processSignalGeneratingFunction1" />
+          ...
+        <ProcessSignalGeneratingSystem />
+      
+

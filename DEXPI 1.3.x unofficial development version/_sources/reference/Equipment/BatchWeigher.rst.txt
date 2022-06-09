@@ -1,0 +1,184 @@
+============
+BatchWeigher
+============
+
+Overview
+========
+
+.. rubric:: Class
+
+A :doc:`Weigher </reference/Equipment/Weigher>` that is operating in batch mode.
+
+.. image:: BatchWeigher.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Weigher </reference/Equipment/Weigher>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                                                               | Multiplicity | Type                                                                                                                                       |
++====================================================================================================================================================+==============+============================================================================================================================================+
+| :ref:`DesignCapacityWeighingQuantities <dexpi-Equipment-BatchWeigher-DesignCapacityWeighingQuantities>`                                            | 0..1         | :doc:`NullableNumberPerTimeInterval </reference/PhysicalQuantities/NullableNumberPerTimeInterval>`                                         |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`UpperLimitDesignLoad <dexpi-Equipment-BatchWeigher-UpperLimitDesignLoad>`                                                                    | 0..1         | :doc:`NullableMass </reference/PhysicalQuantities/NullableMass>`                                                                           |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `BATCH WEIGHER <http://sandbox.dexpi.org/rdl/BatchWeigher>`__
+
+   ComponentClass
+       BatchWeigher
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/BatchWeigher <http://sandbox.dexpi.org/rdl/BatchWeigher>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram114.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="batchWeigher1"
+            ComponentClass="BatchWeigher"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/BatchWeigher" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-BatchWeigher-DesignCapacityWeighingQuantities:
+
+DesignCapacityWeighingQuantities
+================================
+
+.. rubric:: Attribute (data)
+
+
+The capacity for the number of weighing quantities per time for which the :doc:`BatchWeigher </reference/Equipment/BatchWeigher>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableNumberPerTimeInterval </reference/PhysicalQuantities/NullableNumberPerTimeInterval>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN CAPACITY WEIGHING QUANTITIES <http://sandbox.dexpi.org/rdl/DesignCapacityWeighingQuantities>`__
+
+   Name
+       DesignCapacityWeighingQuantities
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignCapacityWeighingQuantities <http://sandbox.dexpi.org/rdl/DesignCapacityWeighingQuantities>`__
+
+.. admonition:: example
+
+   The instance batchWeigher1 represents a :doc:`BatchWeigher </reference/Equipment/BatchWeigher>` with a :ref:`DesignCapacityWeighingQuantities <dexpi-Equipment-BatchWeigher-DesignCapacityWeighingQuantities>` of 42.0 s\ :sup:`-1`.
+
+   .. image:: /diagrams/diagram115.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="batchWeigher1"
+            ComponentClass="BatchWeigher"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/BatchWeigher" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignCapacityWeighingQuantities"
+              AttributeURI="http://sandbox.dexpi.org/rdl/DesignCapacityWeighingQuantities"
+              Format="double"
+              Value="42.0"
+              Units="ReciprocalSecond"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1355489" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-BatchWeigher-UpperLimitDesignLoad:
+
+UpperLimitDesignLoad
+====================
+
+.. rubric:: Attribute (data)
+
+
+The upper limit for the load for which the :doc:`BatchWeigher </reference/Equipment/BatchWeigher>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableMass </reference/PhysicalQuantities/NullableMass>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `UPPER LIMIT DESIGN LOAD <http://sandbox.dexpi.org/rdl/UpperLimitDesignLoad>`__
+
+   Name
+       UpperLimitDesignLoad
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/UpperLimitDesignLoad <http://sandbox.dexpi.org/rdl/UpperLimitDesignLoad>`__
+
+.. admonition:: example
+
+   The instance batchWeigher1 represents a :doc:`BatchWeigher </reference/Equipment/BatchWeigher>` with an :ref:`UpperLimitDesignLoad <dexpi-Equipment-BatchWeigher-UpperLimitDesignLoad>` of 900.0 kg.
+
+   .. image:: /diagrams/diagram116.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="batchWeigher1"
+            ComponentClass="BatchWeigher"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/BatchWeigher" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="UpperLimitDesignLoad"
+              AttributeURI="http://sandbox.dexpi.org/rdl/UpperLimitDesignLoad"
+              Format="double"
+              Value="900.0"
+              Units="Kilogram"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1328669" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+

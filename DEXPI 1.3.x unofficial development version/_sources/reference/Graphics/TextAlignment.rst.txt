@@ -1,0 +1,54 @@
+=============
+TextAlignment
+=============
+
+Overview
+========
+
+.. rubric:: Enumeration
+
+.. image:: TextAlignment.*
+
+
+.. rubric:: Literals
+
++------------------------------------------------------------------------+--------------+
+| Name                                                                   | Symbol       |
++========================================================================+==============+
+| .. _dexpi-Graphics-TextAlignment-LeftTop:                              | LeftTop      |
+|                                                                        |              |
+| LeftTop                                                                |              |
++------------------------------------------------------------------------+--------------+
+| .. _dexpi-Graphics-TextAlignment-LeftCenter:                           | LeftCenter   |
+|                                                                        |              |
+| LeftCenter                                                             |              |
++------------------------------------------------------------------------+--------------+
+| .. _dexpi-Graphics-TextAlignment-LeftBottom:                           | LeftBottom   |
+|                                                                        |              |
+| LeftBottom                                                             |              |
++------------------------------------------------------------------------+--------------+
+| .. _dexpi-Graphics-TextAlignment-CenterTop:                            | CenterTop    |
+|                                                                        |              |
+| CenterTop                                                              |              |
++------------------------------------------------------------------------+--------------+
+| .. _dexpi-Graphics-TextAlignment-CenterCenter:                         | CenterCenter |
+|                                                                        |              |
+| CenterCenter                                                           |              |
++------------------------------------------------------------------------+--------------+
+| .. _dexpi-Graphics-TextAlignment-CenterBottom:                         | CenterBottom |
+|                                                                        |              |
+| CenterBottom                                                           |              |
++------------------------------------------------------------------------+--------------+
+| .. _dexpi-Graphics-TextAlignment-RightTop:                             | RightTop     |
+|                                                                        |              |
+| RightTop                                                               |              |
++------------------------------------------------------------------------+--------------+
+| .. _dexpi-Graphics-TextAlignment-RightCenter:                          | RightCenter  |
+|                                                                        |              |
+| RightCenter                                                            |              |
++------------------------------------------------------------------------+--------------+
+| .. _dexpi-Graphics-TextAlignment-RightBottom:                          | RightBottom  |
+|                                                                        |              |
+| RightBottom                                                            |              |
++------------------------------------------------------------------------+--------------+
+

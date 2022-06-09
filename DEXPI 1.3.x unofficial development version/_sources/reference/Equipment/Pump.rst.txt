@@ -1,0 +1,259 @@
+====
+Pump
+====
+
+Overview
+========
+
+.. rubric:: Class
+
+A machine that is capable of pumping but may require parts and subsystems for that capability.
+
+.. image:: Pump.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Equipment </reference/Equipment/Equipment>`
+
+.. rubric:: Subtypes
+
+* :doc:`CentrifugalPump </reference/Equipment/CentrifugalPump>`
+
+* :doc:`CustomPump </reference/Equipment/CustomPump>`
+
+* :doc:`EjectorPump </reference/Equipment/EjectorPump>`
+
+* :doc:`ReciprocatingPump </reference/Equipment/ReciprocatingPump>`
+
+* :doc:`RotaryPump </reference/Equipment/RotaryPump>`
+
+.. rubric:: Attributes (data)
+
++--------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                   | Multiplicity | Type                                                                                                                           |
++========================================================================================================+==============+================================================================================================================================+
+| :ref:`DesignPressureHead <dexpi-Equipment-Pump-DesignPressureHead>`                                    | 0..1         | :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`                                                           |
++--------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`DesignVolumeFlowRate <dexpi-Equipment-Pump-DesignVolumeFlowRate>`                                | 0..1         | :doc:`NullableVolumeFlowRate </reference/PhysicalQuantities/NullableVolumeFlowRate>`                                           |
++--------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`DifferentialPressure <dexpi-Equipment-Pump-DifferentialPressure>`                                | 0..1         | :doc:`NullablePressureAbsolute </reference/PhysicalQuantities/NullablePressureAbsolute>`                                       |
++--------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `PUMP <http://data.posccaesar.org/rdl/RDS327239>`__
+
+   ComponentClass
+       Pump
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS327239 <http://data.posccaesar.org/rdl/RDS327239>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram392.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="pump1"
+            ComponentClass="Pump"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS327239" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-Pump-DesignPressureHead:
+
+DesignPressureHead
+==================
+
+.. rubric:: Attribute (data)
+
+
+The pressure head for which the :doc:`Pump </reference/Equipment/Pump>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN PRESSURE HEAD <http://sandbox.dexpi.org/rdl/DesignPressureHead>`__
+
+   Name
+       DesignPressureHead
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignPressureHead <http://sandbox.dexpi.org/rdl/DesignPressureHead>`__
+
+.. admonition:: example
+
+   The instance pump1 represents a :doc:`Pump </reference/Equipment/Pump>` with a :ref:`DesignPressureHead <dexpi-Equipment-Pump-DesignPressureHead>` of 40.0 m.
+
+   .. image:: /diagrams/diagram393.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="pump1"
+            ComponentClass="Pump"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS327239" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignPressureHead"
+              AttributeURI="http://sandbox.dexpi.org/rdl/DesignPressureHead"
+              Format="double"
+              Value="40.0"
+              Units="Metre"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1332674" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-Pump-DesignVolumeFlowRate:
+
+DesignVolumeFlowRate
+====================
+
+.. rubric:: Attribute (data)
+
+
+The volume flow rate for which the :doc:`Pump </reference/Equipment/Pump>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableVolumeFlowRate </reference/PhysicalQuantities/NullableVolumeFlowRate>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN VOLUME FLOW RATE <http://data.posccaesar.org/rdl/RDS14286227>`__
+
+   Name
+       DesignVolumeFlowRate
+
+   AttributeURI
+       `http://data.posccaesar.org/rdl/RDS14286227 <http://data.posccaesar.org/rdl/RDS14286227>`__
+
+.. admonition:: example
+
+   The instance pump1 represents a :doc:`Pump </reference/Equipment/Pump>` with a :ref:`DesignVolumeFlowRate <dexpi-Equipment-Pump-DesignVolumeFlowRate>` of 420.0 m\ :sup:`3`/h.
+
+   .. image:: /diagrams/diagram394.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="pump1"
+            ComponentClass="Pump"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS327239" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignVolumeFlowRate"
+              AttributeURI="http://data.posccaesar.org/rdl/RDS14286227"
+              Format="double"
+              Value="420.0"
+              Units="MetreCubedPerHour"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1321064" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-Pump-DifferentialPressure:
+
+DifferentialPressure
+====================
+
+.. rubric:: Attribute (data)
+
+
+The differential pressure of the :doc:`Pump </reference/Equipment/Pump>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullablePressureAbsolute </reference/PhysicalQuantities/NullablePressureAbsolute>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DIFFERENTIAL PRESSURE <http://data.posccaesar.org/rdl/RDS361574>`__
+
+   Name
+       DifferentialPressure
+
+   AttributeURI
+       `http://data.posccaesar.org/rdl/RDS361574 <http://data.posccaesar.org/rdl/RDS361574>`__
+
+.. admonition:: example
+
+   The instance pump1 represents a :doc:`Pump </reference/Equipment/Pump>` with a :ref:`DifferentialPressure <dexpi-Equipment-Pump-DifferentialPressure>` of 4.8 bar.
+
+   .. image:: /diagrams/diagram395.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="pump1"
+            ComponentClass="Pump"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS327239" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DifferentialPressure"
+              AttributeURI="http://data.posccaesar.org/rdl/RDS361574"
+              Format="double"
+              Value="4.8"
+              Units="Bar"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1314539" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+

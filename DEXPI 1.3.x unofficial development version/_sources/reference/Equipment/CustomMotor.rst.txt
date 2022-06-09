@@ -1,0 +1,156 @@
+===========
+CustomMotor
+===========
+
+Overview
+========
+
+.. rubric:: Class
+
+A :ref:`custom <dexpi-concept-custom-sibling>` :doc:`Motor </reference/Equipment/Motor>`, i.e., a :doc:`Motor </reference/Equipment/Motor>` that is not covered by any of the other subclasses of :doc:`Motor </reference/Equipment/Motor>` (:doc:`AlternatingCurrentMotor </reference/Equipment/AlternatingCurrentMotor>`, :doc:`CombustionEngine </reference/Equipment/CombustionEngine>`, or :doc:`DirectCurrentMotor </reference/Equipment/DirectCurrentMotor>`\ ).
+
+.. image:: CustomMotor.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`CustomObject </reference/Customization/CustomObject>`
+
+* :doc:`Motor </reference/Equipment/Motor>`
+
+.. rubric:: Attributes (data)
+
++------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                                               | Multiplicity | Type                                                                                                                                   |
++====================================================================================================================================+==============+========================================================================================================================================+
+| :ref:`AlternatingCurrentFrequency <dexpi-Equipment-CustomMotor-AlternatingCurrentFrequency>`                                       | 0..1         | :doc:`NullableElectricalFrequency </reference/PhysicalQuantities/NullableElectricalFrequency>`                                         |
++------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`FuelType <dexpi-Equipment-CustomMotor-FuelType>`                                                                             | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                            |
++------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`NominalVoltage <dexpi-Equipment-CustomMotor-NominalVoltage>`                                                                 | 0..1         | :doc:`NullableVoltage </reference/PhysicalQuantities/NullableVoltage>`                                                                 |
++------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `CUSTOM MOTOR <http://sandbox.dexpi.org/rdl/CustomMotor>`__
+
+   ComponentClass
+       CustomMotor
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/CustomMotor <http://sandbox.dexpi.org/rdl/CustomMotor>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram217.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="customMotor1"
+            ComponentClass="CustomMotor"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/CustomMotor" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-CustomMotor-AlternatingCurrentFrequency:
+
+AlternatingCurrentFrequency
+===========================
+
+.. rubric:: Attribute (data)
+
+
+The alternating current frequency of the :doc:`CustomMotor </reference/Equipment/CustomMotor>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableElectricalFrequency </reference/PhysicalQuantities/NullableElectricalFrequency>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `ALTERNATING CURRENT FREQUENCY <http://sandbox.dexpi.org/rdl/AlternatingCurrentFrequency>`__
+
+   Name
+       AlternatingCurrentFrequency
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/AlternatingCurrentFrequency <http://sandbox.dexpi.org/rdl/AlternatingCurrentFrequency>`__
+
+
+.. _dexpi-Equipment-CustomMotor-FuelType:
+
+FuelType
+========
+
+.. rubric:: Attribute (data)
+
+
+The fuel type of the :doc:`CustomMotor </reference/Equipment/CustomMotor>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `FUEL TYPE <http://sandbox.dexpi.org/rdl/FuelType>`__
+
+   Name
+       FuelType
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/FuelType <http://sandbox.dexpi.org/rdl/FuelType>`__
+
+
+.. _dexpi-Equipment-CustomMotor-NominalVoltage:
+
+NominalVoltage
+==============
+
+.. rubric:: Attribute (data)
+
+
+The nominal voltage of the :doc:`CustomMotor </reference/Equipment/CustomMotor>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableVoltage </reference/PhysicalQuantities/NullableVoltage>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `NOMINAL VOLTAGE <http://data.posccaesar.org/rdl/RDS369449>`__
+
+   Name
+       NominalVoltage
+
+   AttributeURI
+       `http://data.posccaesar.org/rdl/RDS369449 <http://data.posccaesar.org/rdl/RDS369449>`__
+

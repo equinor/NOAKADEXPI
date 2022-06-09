@@ -1,0 +1,52 @@
+===========
+Penetration
+===========
+
+Overview
+========
+
+.. rubric:: Class
+
+A device intended to provide a penetration (from `http://data.posccaesar.org/rdl/RDS13068275 <http://data.posccaesar.org/rdl/RDS13068275>`__).
+
+.. image:: Penetration.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`PipeFitting </reference/Piping/PipeFitting>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingComponent>``
+
+   RDL reference
+       `PENETRATION <http://data.posccaesar.org/rdl/RDS13068275>`__
+
+   ComponentClass
+       Penetration
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS13068275 <http://data.posccaesar.org/rdl/RDS13068275>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram670.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="penetration1"
+            ComponentClass="Penetration"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS13068275" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+

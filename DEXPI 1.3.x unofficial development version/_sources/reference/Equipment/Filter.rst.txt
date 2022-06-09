@@ -1,0 +1,60 @@
+======
+Filter
+======
+
+Overview
+========
+
+.. rubric:: Class
+
+An apparatus or machine that is capable of filtering (from `http://data.15926.org/rdl/RDS300689 <http://data.15926.org/rdl/RDS300689>`__).
+
+.. image:: Filter.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Equipment </reference/Equipment/Equipment>`
+
+.. rubric:: Subtypes
+
+* :doc:`CustomFilter </reference/Equipment/CustomFilter>`
+
+* :doc:`GasFilter </reference/Equipment/GasFilter>`
+
+* :doc:`LiquidFilter </reference/Equipment/LiquidFilter>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `FILTER <http://data.posccaesar.org/rdl/RDS300689>`__
+
+   ComponentClass
+       Filter
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS300689 <http://data.posccaesar.org/rdl/RDS300689>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram279.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="filter1"
+            ComponentClass="Filter"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS300689" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+

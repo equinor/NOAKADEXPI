@@ -1,0 +1,38 @@
+=======================
+NullElectricalFrequency
+=======================
+
+Overview
+========
+
+.. rubric:: Data type
+
+A :ref:`null value <dexpi-concept-null-value>` for a physical quantity of application type :doc:`NullableElectricalFrequency </reference/PhysicalQuantities/NullableElectricalFrequency>`. The only instance of this singleton type is :doc:`NULL_ELECTRICAL_FREQUENCY </reference/PhysicalQuantities/NULL_ELECTRICAL_FREQUENCY>`.
+
+.. image:: NullElectricalFrequency.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`NullableElectricalFrequency </reference/PhysicalQuantities/NullableElectricalFrequency>`
+
+.. admonition:: proteus
+
+   All data attributes with type :doc:`NullableElectricalFrequency </reference/PhysicalQuantities/NullableElectricalFrequency>` (the base type of :doc:`NullElectricalFrequency </reference/PhysicalQuantities/NullElectricalFrequency>`\ ) are implemented as :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram589.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Format="double" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have a ``Name`` and an ``AttributeURI`` attribute. They depend on the data type attribute of the DEXPI class that owns the null instance :doc:`NULL_ELECTRICAL_FREQUENCY </reference/PhysicalQuantities/NULL_ELECTRICAL_FREQUENCY>` (e.g., see the implementation example for the attribute :ref:`AlternatingCurrentFrequency <dexpi-Equipment-AlternatingCurrentGenerator-AlternatingCurrentFrequency>` of the DEXPI class :doc:`AlternatingCurrentGenerator </reference/Equipment/AlternatingCurrentGenerator>`\ )DOTANDSPACEHACKFor a null value, the attributes ``Units``, ``UnitsURI``, and ``Value`` *must not be used*.
+

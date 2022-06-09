@@ -1,0 +1,52 @@
+===============
+AngleGlobeValve
+===============
+
+Overview
+========
+
+.. rubric:: Class
+
+A globe valve that deviates from the in-line design, i.e. with a body shape designed to adjust the flow direction with a specified angle relative to the straight through-flow an in-line valve would have provided for (from `http://data.posccaesar.org/rdl/RDS882944 <http://data.posccaesar.org/rdl/RDS882944>`__).
+
+.. image:: AngleGlobeValve.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`OperatedValve </reference/Piping/OperatedValve>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingComponent>``
+
+   RDL reference
+       `ANGLE GLOBE VALVE <http://data.posccaesar.org/rdl/RDS882944>`__
+
+   ComponentClass
+       AngleGlobeValve
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS882944 <http://data.posccaesar.org/rdl/RDS882944>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram626.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="angleGlobeValve1"
+            ComponentClass="AngleGlobeValve"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS882944" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+

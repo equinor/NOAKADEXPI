@@ -1,0 +1,52 @@
+=============================
+PositiveDisplacementFlowMeter
+=============================
+
+Overview
+========
+
+.. rubric:: Class
+
+A flow meter that measures the volumetric flow rate of a liquid or gas by separating the flow stream into known volumes and counting them over time (from `http://data.posccaesar.org/rdl/RDS418094 <http://data.posccaesar.org/rdl/RDS418094>`__).
+
+.. image:: PositiveDisplacementFlowMeter.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`InlinePrimaryElement </reference/Piping/InlinePrimaryElement>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingComponent>``
+
+   RDL reference
+       `POSITIVE DISPLACEMENT FLOW METER <http://data.posccaesar.org/rdl/RDS418094>`__
+
+   ComponentClass
+       PositiveDisplacementFlowMeter
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS418094 <http://data.posccaesar.org/rdl/RDS418094>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram710.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="positiveDisplacementFlowMeter1"
+            ComponentClass="PositiveDisplacementFlowMeter"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS418094" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+

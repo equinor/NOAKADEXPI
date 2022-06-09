@@ -1,0 +1,32 @@
+===============
+NullableInteger
+===============
+
+Overview
+========
+
+.. rubric:: Abstract data type
+
+An integer number, or a null value. :doc:`NullableInteger </reference/DataTypes/NullableInteger>` is abstract and has two concrete subtypes:
+
+* an :doc:`Integer </reference/DataTypes/Integer>` is an :ref:`actual value <dexpi-concept-actual-value>` for an integer number;
+
+* a :doc:`NullInteger </reference/DataTypes/NullInteger>` is a :ref:`null value <dexpi-concept-null-value>` that explicitly indicates the absence of an integer number.
+
+.. image:: NullableInteger.*
+
+
+.. rubric:: Subtypes
+
+* :doc:`Integer </reference/DataTypes/Integer>`
+
+* :doc:`NullInteger </reference/DataTypes/NullInteger>`
+
+.. admonition:: proteus
+
+   The Proteus Schema implementation of :doc:`NullableInteger </reference/DataTypes/NullableInteger>` depends on the Proteus Schema implementations of the data attributes with type :doc:`NullableInteger </reference/DataTypes/NullableInteger>`.
+
+   * :doc:`NullableInteger </reference/DataTypes/NullableInteger>` is the type of the :ref:`Value <dexpi-Customization-CustomIntegerAttribute-Value>` attribute of :doc:`CustomIntegerAttribute </reference/Customization/CustomIntegerAttribute>`. :doc:`CustomIntegerAttribute </reference/Customization/CustomIntegerAttribute>` is implemented as a :ref:`DEXPI custom generic attribute <proteus-concept-dexpi-custom-generic-attribute>`.
+
+   * All other data attributes with type :doc:`NullableInteger </reference/DataTypes/NullableInteger>` are implemented as :ref:`DEXPI generic attributes <proteus-concept-dexpi-generic-attribute>`. For example, see the :ref:`NumberOfPackings <dexpi-Equipment-ColumnPackingsArrangement-NumberOfPackings>` attribute of :doc:`ColumnPackingsArrangement </reference/Equipment/ColumnPackingsArrangement>`.
+

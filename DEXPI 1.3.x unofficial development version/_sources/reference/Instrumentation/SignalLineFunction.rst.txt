@@ -1,0 +1,52 @@
+==================
+SignalLineFunction
+==================
+
+Overview
+========
+
+.. rubric:: Class
+
+Information flow function for signals.
+
+.. image:: SignalLineFunction.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`SignalConveyingFunction </reference/Instrumentation/SignalConveyingFunction>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<InformationFlow>``
+
+   RDL reference
+       `SIGNAL LINE FUNCTION <http://sandbox.dexpi.org/rdl/SignalLineFunction>`__
+
+   ComponentClass
+       SignalLineFunction
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/SignalLineFunction <http://sandbox.dexpi.org/rdl/SignalLineFunction>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram565.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <InformationFlow
+            ID="signalLineFunction1"
+            ComponentClass="SignalLineFunction"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/SignalLineFunction" DOTS123="DOTS123">
+          ...
+        </InformationFlow>
+      
+

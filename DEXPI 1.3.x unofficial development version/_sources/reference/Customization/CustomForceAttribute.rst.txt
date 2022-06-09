@@ -1,0 +1,102 @@
+====================
+CustomForceAttribute
+====================
+
+Overview
+========
+
+.. rubric:: Class
+
+A :ref:`custom attribute <dexpi-concept-custom-attributes>` with :ref:`Value <dexpi-Customization-CustomForceAttribute-Value>` type :doc:`NullableForce </reference/PhysicalQuantities/NullableForce>`.
+
+.. image:: CustomForceAttribute.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`CustomAttribute </reference/Customization/CustomAttribute>`
+
+.. rubric:: Attributes (data)
+
++--------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------+
+| Name                                                                                       | Multiplicity | Type                                                                                           |
++============================================================================================+==============+================================================================================================+
+| :ref:`Value <dexpi-Customization-CustomForceAttribute-Value>`                              | 1            | :doc:`NullableForce </reference/PhysicalQuantities/NullableForce>`                             |
++--------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   :doc:`CustomForceAttribute </reference/Customization/CustomForceAttribute>` is implemented as a :ref:`custom generic attribute for physical quantities <proteus-concept-dexpi-custom-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `FORCE <http://data.posccaesar.org/rdl/RDS351854>`__
+
+   Type
+       Force
+
+   TypeURI
+       `http://data.posccaesar.org/rdl/RDS351854 <http://data.posccaesar.org/rdl/RDS351854>`__
+
+.. admonition:: example
+
+   As :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>` is abstract, we consider :doc:`Crusher </reference/Equipment/Crusher>` as an arbitrary concrete subclass.
+
+   The :doc:`Crusher </reference/Equipment/Crusher>` crusher1 has a :doc:`CustomForceAttribute </reference/Customization/CustomForceAttribute>` with :ref:`AttributeName <dexpi-Customization-CustomAttribute-AttributeName>` "LowerLimitDesignCrushingForce" and an (arbitrary) :ref:`AttributeURI <dexpi-Customization-CustomAttribute-AttributeURI>` "http://www.example.org/2a14b8a82edc4f"DOTANDSPACEHACKThe :ref:`Value <dexpi-Customization-CustomForceAttribute-Value>` is 20 kN.
+
+   .. image:: /diagrams/diagram18.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="crusher1"
+            ComponentClass="Crusher"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS11589940" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiCustomAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="LowerLimitDesignCrushingForce"
+              AttributeURI="http://www.example.org/2a14b8a82edc4f"
+              Format="double"
+              Type="Force"
+              TypeURI="http://data.posccaesar.org/rdl/RDS351854"
+              Value="20"
+              Units="Kilonewton"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1351034" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Customization-CustomForceAttribute-Value:
+
+Value
+=====
+
+.. rubric:: Attribute (data)
+
+
+The value of the :doc:`CustomForceAttribute </reference/Customization/CustomForceAttribute>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`NullableForce </reference/PhysicalQuantities/NullableForce>`
+
+Redefines
+    :ref:`Value <dexpi-Customization-CustomAttribute-Value>` (inherited from :doc:`CustomAttribute </reference/Customization/CustomAttribute>`\ )
+
+.. admonition:: proteus
+
+   See implementation of :doc:`CustomForceAttribute </reference/Customization/CustomForceAttribute>`.
+
+.. admonition:: example
+
+   See the example for :doc:`CustomForceAttribute </reference/Customization/CustomForceAttribute>`.
+

@@ -1,0 +1,97 @@
+====================
+Package Enumerations
+====================
+
+* :doc:`overview`
+
+.. rubric:: Enumerations
+
+* :doc:`ChamberFunctionClassification </reference/Enumerations/ChamberFunctionClassification>`
+
+* :doc:`CompositionBreakClassification </reference/Enumerations/CompositionBreakClassification>`
+
+* :doc:`ConfidentialityClassification </reference/Enumerations/ConfidentialityClassification>`
+
+* :doc:`DetonationProofArtefactClassification </reference/Enumerations/DetonationProofArtefactClassification>`
+
+* :doc:`ExplosionProofArtefactClassification </reference/Enumerations/ExplosionProofArtefactClassification>`
+
+* :doc:`FailActionClassification </reference/Enumerations/FailActionClassification>`
+
+* :doc:`FireResistantArtefactClassification </reference/Enumerations/FireResistantArtefactClassification>`
+
+* :doc:`GmpRelevanceClassification </reference/Enumerations/GmpRelevanceClassification>`
+
+* :doc:`GuaranteedSupplyFunctionClassification </reference/Enumerations/GuaranteedSupplyFunctionClassification>`
+
+* :doc:`HeatTracingTypeClassification </reference/Enumerations/HeatTracingTypeClassification>`
+
+* :doc:`InsulationBreakClassification </reference/Enumerations/InsulationBreakClassification>`
+
+* :doc:`JacketedPipeClassification </reference/Enumerations/JacketedPipeClassification>`
+
+* :doc:`LocationClassification </reference/Enumerations/LocationClassification>`
+
+* :doc:`NominalDiameterBreakClassification </reference/Enumerations/NominalDiameterBreakClassification>`
+
+* :doc:`NominalDiameterStandardClassification </reference/Enumerations/NominalDiameterStandardClassification>`
+
+* :doc:`NominalPressureStandardClassification </reference/Enumerations/NominalPressureStandardClassification>`
+
+* :doc:`NumberOfPortsClassification </reference/Enumerations/NumberOfPortsClassification>`
+
+* :doc:`OnHoldClassification </reference/Enumerations/OnHoldClassification>`
+
+* :doc:`OperationClassification </reference/Enumerations/OperationClassification>`
+
+* :doc:`PipingClassArtefactClassification </reference/Enumerations/PipingClassArtefactClassification>`
+
+* :doc:`PipingClassBreakClassification </reference/Enumerations/PipingClassBreakClassification>`
+
+* :doc:`PipingNetworkSegmentFlowClassification </reference/Enumerations/PipingNetworkSegmentFlowClassification>`
+
+* :doc:`PipingNetworkSegmentSlopeClassification </reference/Enumerations/PipingNetworkSegmentSlopeClassification>`
+
+* :doc:`PortStatusClassification </reference/Enumerations/PortStatusClassification>`
+
+* :doc:`PrimarySecondaryPipingNetworkSegmentClassification </reference/Enumerations/PrimarySecondaryPipingNetworkSegmentClassification>`
+
+* :doc:`QualityRelevanceClassification </reference/Enumerations/QualityRelevanceClassification>`
+
+* :doc:`SignalConveyingTypeClassification </reference/Enumerations/SignalConveyingTypeClassification>`
+
+* :doc:`SiphonClassification </reference/Enumerations/SiphonClassification>`
+
+
+.. toctree::
+   :hidden:
+
+   overview
+   ChamberFunctionClassification
+   CompositionBreakClassification
+   ConfidentialityClassification
+   DetonationProofArtefactClassification
+   ExplosionProofArtefactClassification
+   FailActionClassification
+   FireResistantArtefactClassification
+   GmpRelevanceClassification
+   GuaranteedSupplyFunctionClassification
+   HeatTracingTypeClassification
+   InsulationBreakClassification
+   JacketedPipeClassification
+   LocationClassification
+   NominalDiameterBreakClassification
+   NominalDiameterStandardClassification
+   NominalPressureStandardClassification
+   NumberOfPortsClassification
+   OnHoldClassification
+   OperationClassification
+   PipingClassArtefactClassification
+   PipingClassBreakClassification
+   PipingNetworkSegmentFlowClassification
+   PipingNetworkSegmentSlopeClassification
+   PortStatusClassification
+   PrimarySecondaryPipingNetworkSegmentClassification
+   QualityRelevanceClassification
+   SignalConveyingTypeClassification
+   SiphonClassification

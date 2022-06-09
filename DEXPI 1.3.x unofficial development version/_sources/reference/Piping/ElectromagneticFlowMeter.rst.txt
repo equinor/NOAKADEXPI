@@ -1,0 +1,52 @@
+========================
+ElectromagneticFlowMeter
+========================
+
+Overview
+========
+
+.. rubric:: Class
+
+A velocity flow meter that is measuring flow rate of a conductive fluid running through a magnetic field by measuring the charge created when fluid interacting with the field (from `http://data.posccaesar.org/rdl/RDS1009664 <http://data.posccaesar.org/rdl/RDS1009664>`__).
+
+.. image:: ElectromagneticFlowMeter.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`InlinePrimaryElement </reference/Piping/InlinePrimaryElement>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingComponent>``
+
+   RDL reference
+       `ELECTROMAGNETIC FLOW METER <http://data.posccaesar.org/rdl/RDS1009664>`__
+
+   ComponentClass
+       ElectromagneticFlowMeter
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS1009664 <http://data.posccaesar.org/rdl/RDS1009664>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram646.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="electromagneticFlowMeter1"
+            ComponentClass="ElectromagneticFlowMeter"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS1009664" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+

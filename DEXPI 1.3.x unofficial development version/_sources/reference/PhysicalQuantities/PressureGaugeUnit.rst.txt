@@ -1,0 +1,65 @@
+=================
+PressureGaugeUnit
+=================
+
+Overview
+========
+
+.. rubric:: Enumeration
+
+A unit of measurement for a physical quantity of application type :doc:`NullablePressureGauge </reference/PhysicalQuantities/NullablePressureGauge>` with dimension L\ :sup:`-1`\MT\ :sup:`-2`.
+
+.. image:: PressureGaugeUnit.*
+
+
+.. rubric:: Literals
+
++--------------------------------------------------------------------------------------------------------+------------------+---------+------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
+| Name                                                                                                   | Symbol           | UN Code | proteus#RDL Reference                                                        | proteus#RDL URI                                                                             |
++========================================================================================================+==================+=========+==============================================================================+=============================================================================================+
+| .. _dexpi-PhysicalQuantities-PressureGaugeUnit-Bar:                                                    | bar              | BAR     | `BAR <http://data.posccaesar.org/rdl/RDS1314539>`__                          | `http://data.posccaesar.org/rdl/RDS1314539 <http://data.posccaesar.org/rdl/RDS1314539>`__   |
+|                                                                                                        |                  |         |                                                                              |                                                                                             |
+| Bar                                                                                                    |                  |         |                                                                              |                                                                                             |
++--------------------------------------------------------------------------------------------------------+------------------+---------+------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
+| .. _dexpi-PhysicalQuantities-PressureGaugeUnit-Kilopascal:                                             | kPa              | KPA     | `KILOPASCAL <http://data.posccaesar.org/rdl/RDS1330559>`__                   | `http://data.posccaesar.org/rdl/RDS1330559 <http://data.posccaesar.org/rdl/RDS1330559>`__   |
+|                                                                                                        |                  |         |                                                                              |                                                                                             |
+| Kilopascal                                                                                             |                  |         |                                                                              |                                                                                             |
++--------------------------------------------------------------------------------------------------------+------------------+---------+------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
+| .. _dexpi-PhysicalQuantities-PressureGaugeUnit-Megapascal:                                             | MPa              | MPA     | `MEGAPASCAL <http://data.posccaesar.org/rdl/RDS1332404>`__                   | `http://data.posccaesar.org/rdl/RDS1332404 <http://data.posccaesar.org/rdl/RDS1332404>`__   |
+|                                                                                                        |                  |         |                                                                              |                                                                                             |
+| Megapascal                                                                                             |                  |         |                                                                              |                                                                                             |
++--------------------------------------------------------------------------------------------------------+------------------+---------+------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
+| .. _dexpi-PhysicalQuantities-PressureGaugeUnit-Millibar:                                               | mbar             | MBR     | `MILLIBAR <http://data.posccaesar.org/rdl/RDS11617875>`__                    | `http://data.posccaesar.org/rdl/RDS11617875 <http://data.posccaesar.org/rdl/RDS11617875>`__ |
+|                                                                                                        |                  |         |                                                                              |                                                                                             |
+| Millibar                                                                                               |                  |         |                                                                              |                                                                                             |
++--------------------------------------------------------------------------------------------------------+------------------+---------+------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
+| .. _dexpi-PhysicalQuantities-PressureGaugeUnit-Pascal:                                                 | Pa               | PAL     | `PASCAL <http://data.posccaesar.org/rdl/RDS1338749>`__                       | `http://data.posccaesar.org/rdl/RDS1338749 <http://data.posccaesar.org/rdl/RDS1338749>`__   |
+|                                                                                                        |                  |         |                                                                              |                                                                                             |
+| Pascal                                                                                                 |                  |         |                                                                              |                                                                                             |
++--------------------------------------------------------------------------------------------------------+------------------+---------+------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
+| .. _dexpi-PhysicalQuantities-PressureGaugeUnit-PoundForcePerInchSquared:                               | lbf/in\ :sup:`2` | PS      | `POUND FORCE PER INCH SQUARED <http://data.posccaesar.org/rdl/RDS1341809>`__ | `http://data.posccaesar.org/rdl/RDS1341809 <http://data.posccaesar.org/rdl/RDS1341809>`__   |
+|                                                                                                        |                  |         |                                                                              |                                                                                             |
+| PoundForcePerInchSquared                                                                               |                  |         |                                                                              |                                                                                             |
++--------------------------------------------------------------------------------------------------------+------------------+---------+------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   :doc:`PressureGaugeUnit </reference/PhysicalQuantities/PressureGaugeUnit>` is only used as the type of the :ref:`Unit <dexpi-PhysicalQuantities-PressureGauge-Unit>` attribute of :doc:`PressureGauge </reference/PhysicalQuantities/PressureGauge>`. :doc:`PressureGauge </reference/PhysicalQuantities/PressureGauge>` is implemented using :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`. In a ``<GenericAttribute>`` element, the :doc:`PressureGaugeUnit </reference/PhysicalQuantities/PressureGaugeUnit>` literal is given by means of its :ref:`RDL reference <proteus-concept-rdl-reference>` in the table above. The ``Units`` attribute of the element is the name of the RDL reference in camel-case; it equals the name of the literal. The ``UnitsURI`` attribute of the element is the URI of the RDL reference.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram614.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Units="Bar"
+          UnitsURI="http://data.posccaesar.org/rdl/RDS1314539" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have further attributes (``Format``, ``Value``, ``Name``, and ``AttributeURI``)DOTANDSPACEHACKSee the implementation examples for :doc:`PressureGauge </reference/PhysicalQuantities/PressureGauge>` and for the :ref:`LowerLimitDesignPressure <dexpi-Equipment-Chamber-LowerLimitDesignPressure>` attribute of :doc:`Chamber </reference/Equipment/Chamber>`.
+

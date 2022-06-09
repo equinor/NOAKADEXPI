@@ -1,0 +1,52 @@
+=========
+GateValve
+=========
+
+Overview
+========
+
+.. rubric:: Class
+
+A valve that is a valve where the closure member is a gate or disc with a linear motion parallel, or nearly parallel, to the plane of flat seats, which are transverse to the direction of flow (from `http://data.posccaesar.org/rdl/RDS416519 <http://data.posccaesar.org/rdl/RDS416519>`__).
+
+.. image:: GateValve.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`OperatedValve </reference/Piping/OperatedValve>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingComponent>``
+
+   RDL reference
+       `GATE VALVE <http://data.posccaesar.org/rdl/RDS416519>`__
+
+   ComponentClass
+       GateValve
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS416519 <http://data.posccaesar.org/rdl/RDS416519>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram655.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="gateValve1"
+            ComponentClass="GateValve"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS416519" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+

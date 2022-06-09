@@ -1,0 +1,156 @@
+=============
+CustomWeigher
+=============
+
+Overview
+========
+
+.. rubric:: Class
+
+A :ref:`custom <dexpi-concept-custom-sibling>` :doc:`Weigher </reference/Equipment/Weigher>`, i.e., a :doc:`Weigher </reference/Equipment/Weigher>` that is not covered by any of the other subclasses of :doc:`Weigher </reference/Equipment/Weigher>` (:doc:`BatchWeigher </reference/Equipment/BatchWeigher>` or :doc:`ContinuousWeigher </reference/Equipment/ContinuousWeigher>`\ ).
+
+.. image:: CustomWeigher.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`CustomObject </reference/Customization/CustomObject>`
+
+* :doc:`Weigher </reference/Equipment/Weigher>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                                                               | Multiplicity | Type                                                                                                                                       |
++====================================================================================================================================================+==============+============================================================================================================================================+
+| :ref:`BeltWidth <dexpi-Equipment-CustomWeigher-BeltWidth>`                                                                                         | 0..1         | :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`                                                                       |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`DesignCapacityWeighingQuantities <dexpi-Equipment-CustomWeigher-DesignCapacityWeighingQuantities>`                                           | 0..1         | :doc:`NullableNumberPerTimeInterval </reference/PhysicalQuantities/NullableNumberPerTimeInterval>`                                         |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`UpperLimitDesignLoad <dexpi-Equipment-CustomWeigher-UpperLimitDesignLoad>`                                                                   | 0..1         | :doc:`NullableMass </reference/PhysicalQuantities/NullableMass>`                                                                           |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `CUSTOM WEIGHER <http://sandbox.dexpi.org/rdl/CustomWeigher>`__
+
+   ComponentClass
+       CustomWeigher
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/CustomWeigher <http://sandbox.dexpi.org/rdl/CustomWeigher>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram227.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="customWeigher1"
+            ComponentClass="CustomWeigher"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/CustomWeigher" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-CustomWeigher-BeltWidth:
+
+BeltWidth
+=========
+
+.. rubric:: Attribute (data)
+
+
+The belt width of the :doc:`CustomWeigher </reference/Equipment/CustomWeigher>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `BELT WIDTH <http://sandbox.dexpi.org/rdl/BeltWidth>`__
+
+   Name
+       BeltWidth
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/BeltWidth <http://sandbox.dexpi.org/rdl/BeltWidth>`__
+
+
+.. _dexpi-Equipment-CustomWeigher-DesignCapacityWeighingQuantities:
+
+DesignCapacityWeighingQuantities
+================================
+
+.. rubric:: Attribute (data)
+
+
+The capacity for the number of weighing quantities per time for which the :doc:`CustomWeigher </reference/Equipment/CustomWeigher>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableNumberPerTimeInterval </reference/PhysicalQuantities/NullableNumberPerTimeInterval>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN CAPACITY WEIGHING QUANTITIES <http://sandbox.dexpi.org/rdl/DesignCapacityWeighingQuantities>`__
+
+   Name
+       DesignCapacityWeighingQuantities
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignCapacityWeighingQuantities <http://sandbox.dexpi.org/rdl/DesignCapacityWeighingQuantities>`__
+
+
+.. _dexpi-Equipment-CustomWeigher-UpperLimitDesignLoad:
+
+UpperLimitDesignLoad
+====================
+
+.. rubric:: Attribute (data)
+
+
+The upper limit for the load for which the :doc:`CustomWeigher </reference/Equipment/CustomWeigher>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableMass </reference/PhysicalQuantities/NullableMass>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `UPPER LIMIT DESIGN LOAD <http://sandbox.dexpi.org/rdl/UpperLimitDesignLoad>`__
+
+   Name
+       UpperLimitDesignLoad
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/UpperLimitDesignLoad <http://sandbox.dexpi.org/rdl/UpperLimitDesignLoad>`__
+

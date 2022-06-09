@@ -1,0 +1,6 @@
+Overview
+========
+
+Until DEXPI 1.2, graphics have not been in the scope of the DEXPI Information Model, but only of Proteus Schema. The purpose of the Graphics package in DEXPI 1.3 is to complete DEXPI Information Model to cover conceptual and graphics information in a single comprehensive model. 
+
+As this is a substantially new approach, the graphics package in DEXPI 1.3 is still informative, i.e., not normative as the other packages. It serves as a documentation of the way how graphics is represented in the official DEXPI Verificator 1.0 for DEXPI 1.3.

@@ -1,0 +1,499 @@
+===============
+ConceptualModel
+===============
+
+Overview
+========
+
+.. rubric:: Class
+
+The conceptual content of a :doc:`DexpiModel </reference/DexpiModel/DexpiModel>`, i.e., engineering information independent from its graphical representation.
+
+.. image:: ConceptualModel.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`ConceptualObject </reference/DexpiModel/ConceptualObject>`
+
+.. rubric:: Attributes (composition)
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                                                               | Multiplicity | Type                                                                                                                                       |
++====================================================================================================================================================+==============+============================================================================================================================================+
+| :ref:`ActuatingSystems <dexpi-DexpiModel-ConceptualModel-ActuatingSystems>`                                                                        | \*           | :doc:`ActuatingSystem </reference/Instrumentation/ActuatingSystem>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`InstrumentationLoopFunctions <dexpi-DexpiModel-ConceptualModel-InstrumentationLoopFunctions>`                                                | \*           | :doc:`InstrumentationLoopFunction </reference/Instrumentation/InstrumentationLoopFunction>`                                                |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`MetaData <dexpi-DexpiModel-ConceptualModel-MetaData>`                                                                                        | 0..1         | :doc:`MetaData </reference/MetaData/MetaData>`                                                                                             |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`PipingNetworkSystems <dexpi-DexpiModel-ConceptualModel-PipingNetworkSystems>`                                                                | \*           | :doc:`PipingNetworkSystem </reference/Piping/PipingNetworkSystem>`                                                                         |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`PlantStructureItems <dexpi-DexpiModel-ConceptualModel-PlantStructureItems>`                                                                  | \*           | :doc:`PlantStructureItem </reference/PlantStructure/PlantStructureItem>`                                                                   |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`ProcessInstrumentationFunctions <dexpi-DexpiModel-ConceptualModel-ProcessInstrumentationFunctions>`                                          | \*           | :doc:`ProcessInstrumentationFunction </reference/Instrumentation/ProcessInstrumentationFunction>`                                          |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`ProcessSignalGeneratingSystems <dexpi-DexpiModel-ConceptualModel-ProcessSignalGeneratingSystems>`                                            | \*           | :doc:`ProcessSignalGeneratingSystem </reference/Instrumentation/ProcessSignalGeneratingSystem>`                                            |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`TaggedPlantItems <dexpi-DexpiModel-ConceptualModel-TaggedPlantItems>`                                                                        | \*           | :doc:`TaggedPlantItem </reference/Equipment/TaggedPlantItem>`                                                                              |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   There is no direct implementation of :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>` in Proteus Schema. A :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>` is a container for the conceptual information in a :doc:`DexpiModel </reference/DexpiModel/DexpiModel>` (as opposed to graphical representation in a :doc:`Diagram </reference/Graphics/Diagram>`\ ), but there is no such distinction in Proteus Schema.
+
+   If and only if the top-level ``<PlantModel>`` element in an XML document contains at least one of these elements,
+
+   * ``<ActuatingSystem>``
+
+   * ``<Drawing>``
+
+   * ``<Equipment>``
+
+   * ``<InstrumentationLoopFunction>``
+
+   * ``<MetaData>``
+
+   * ``<PipingNetworkSystem>``
+
+   * ``<PlantStructureItem>``
+
+   * ``<ProcessInstrumentationFunction>``
+
+   * ``<ProcessSignalGeneratingSystem>``
+
+   then the :doc:`DexpiModel </reference/DexpiModel/DexpiModel>` corresponding to the ``<PlantModel>`` contains a :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram33.*
+
+
+   .. admonition:: proteus-example
+   
+      The XML fragment contains one of the elements listed above. Hence, :doc:`DexpiModel </reference/DexpiModel/DexpiModel>` corresponding to the ``<PlantModel>`` element contains a :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`, which contains a :doc:`PipingNetworkSystem </reference/Piping/PipingNetworkSystem>` corresponding to the ``<PipingNetworkSystem>`` element.
+
+      
+      .. code-block:: xml
+      
+        <PlantModel>
+          ...
+          <PipingNetworkSystem DOTS123="DOTS123">
+            ...
+          </PipingNetworkSystem>
+          ...
+        </PlantModel>
+      
+
+
+.. _dexpi-DexpiModel-ConceptualModel-ActuatingSystems:
+
+ActuatingSystems
+================
+
+.. rubric:: Attribute (composition)
+
+
+The :doc:`ActuatingSystems </reference/Instrumentation/ActuatingSystem>` of the :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`.
+
+Multiplicity
+    \*
+
+Type
+    :doc:`ActuatingSystem </reference/Instrumentation/ActuatingSystem>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   For each :doc:`ActuatingSystem </reference/Instrumentation/ActuatingSystem>`, the corresponding ``<ActuatingSystem>`` element is a child of the ``<PlantModel>`` element that corresponds to the :doc:`DexpiModel </reference/DexpiModel/DexpiModel>` containing the :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`. See also Proteus Schema Implementation of :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram34.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PlantModel>
+          <!--
+            The DexpiModel implemented by this PlantModel element implicitly
+            contains the ConceptualModel conceptualModel1.
+          -->
+          ...
+          <ActuatingSystem
+              ID="actuatingSystem1"
+              ComponentClass="ActuatingSystem"
+              ComponentClassURI="http://sandbox.dexpi.org/rdl/ActuatingSystem"
+              DOTS123="DOTS123">
+            ...
+          </ActuatingSystem>
+          ...
+        </PlantModel>
+      
+
+
+.. _dexpi-DexpiModel-ConceptualModel-InstrumentationLoopFunctions:
+
+InstrumentationLoopFunctions
+============================
+
+.. rubric:: Attribute (composition)
+
+
+The :doc:`InstrumentationLoopFunctions </reference/Instrumentation/InstrumentationLoopFunction>` of the :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`.
+
+Multiplicity
+    \*
+
+Type
+    :doc:`InstrumentationLoopFunction </reference/Instrumentation/InstrumentationLoopFunction>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   For each :doc:`InstrumentationLoopFunction </reference/Instrumentation/InstrumentationLoopFunction>`, the corresponding ``<InstrumentationLoopFunction>`` element is a child of the ``<PlantModel>`` element that corresponds to the :doc:`DexpiModel </reference/DexpiModel/DexpiModel>` containing the :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`. See also Proteus Schema Implementation of :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram35.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PlantModel>
+          <!--
+            The DexpiModel implemented by this PlantModel element implicitly
+            contains the ConceptualModel conceptualModel1.
+          -->
+          ...
+          <InstrumentationLoopFunction
+              ID="instrumentationLoopFunction1"
+              ComponentClass="InstrumentationLoopFunction"
+              ComponentClassURI="http://sandbox.dexpi.org/rdl/InstrumentationLoopFunction"
+              DOTS123="DOTS123">
+            ...
+          </InstrumentationLoopFunction>
+          ...
+        </PlantModel>
+      
+
+
+.. _dexpi-DexpiModel-ConceptualModel-MetaData:
+
+MetaData
+========
+
+.. rubric:: Attribute (composition)
+
+
+The :doc:`MetaData </reference/MetaData/MetaData>` of the :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`MetaData </reference/MetaData/MetaData>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   The ``<MetaData>`` element corresponding to the :doc:`MetaData </reference/MetaData/MetaData>` is a child of the ``<PlantModel>`` element that corresponds to the :doc:`DexpiModel </reference/DexpiModel/DexpiModel>` containing the :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`. See also Proteus Schema Implementation of :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram36.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PlantModel>
+          <!--
+            The DexpiModel implemented by this PlantModel element implicitly
+            contains the ConceptualModel conceptualModel1.
+          -->
+          ...
+          <MetaData
+              ID="metaData1"
+              ComponentClass="MetaData"
+              ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData"
+              DOTS123="DOTS123">
+            ...
+          </MetaData>
+          ...
+        </PlantModel>
+      
+
+
+.. _dexpi-DexpiModel-ConceptualModel-PipingNetworkSystems:
+
+PipingNetworkSystems
+====================
+
+.. rubric:: Attribute (composition)
+
+
+The :doc:`PipingNetworkSystems </reference/Piping/PipingNetworkSystem>` of the :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`.
+
+Multiplicity
+    \*
+
+Type
+    :doc:`PipingNetworkSystem </reference/Piping/PipingNetworkSystem>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   For each :doc:`PipingNetworkSystem </reference/Piping/PipingNetworkSystem>`, the corresponding ``<PipingNetworkSystem>`` element is a child of the ``<PlantModel>`` element that corresponds to the :doc:`DexpiModel </reference/DexpiModel/DexpiModel>` containing the :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`. See also Proteus Schema Implementation of :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram37.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PlantModel>
+          <!--
+            The DexpiModel implemented by this PlantModel element implicitly
+            contains the ConceptualModel conceptualModel1.
+          -->
+          ...
+          <PipingNetworkSystem
+              ID="pipingNetworkSystem1"
+              ComponentClass="PipingNetworkSystem"
+              ComponentClassURI="http://data.posccaesar.org/rdl/RDS270359"
+              DOTS123="DOTS123">
+            ...
+          </PipingNetworkSystem>
+          ...
+        </PlantModel>
+      
+
+
+.. _dexpi-DexpiModel-ConceptualModel-PlantStructureItems:
+
+PlantStructureItems
+===================
+
+.. rubric:: Attribute (composition)
+
+
+The :doc:`PlantStructureItems </reference/PlantStructure/PlantStructureItem>` of the :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`.
+
+Multiplicity
+    \*
+
+Type
+    :doc:`PlantStructureItem </reference/PlantStructure/PlantStructureItem>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   For each :doc:`PlantStructureItem </reference/PlantStructure/PlantStructureItem>`, the corresponding ``<PlantStructureItem>`` element is a child of the ``<PlantModel>`` element that corresponds to the :doc:`DexpiModel </reference/DexpiModel/DexpiModel>` containing the :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`. See also Proteus Schema Implementation of :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`.
+
+.. admonition:: example
+
+   As the value type :doc:`PlantStructureItem </reference/PlantStructure/PlantStructureItem>` is abstract, we consider :doc:`ProcessPlant </reference/PlantStructure/ProcessPlant>` as an arbitrary concrete subclass.
+
+   .. image:: /diagrams/diagram38.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PlantModel>
+          <!--
+            The DexpiModel implemented by this PlantModel element implicitly
+            contains the ConceptualModel conceptualModel1.
+          -->
+          ...
+          <PlantStructureItem
+              ID="processPlant1"
+              ComponentClass="ProcessPlant"
+              ComponentClassURI="http://data.posccaesar.org/rdl/RDS7151859"
+              DOTS123="DOTS123">
+            ...
+          </PlantStructureItem>
+          ...
+        </PlantModel>
+      
+
+
+.. _dexpi-DexpiModel-ConceptualModel-ProcessInstrumentationFunctions:
+
+ProcessInstrumentationFunctions
+===============================
+
+.. rubric:: Attribute (composition)
+
+
+The :doc:`ProcessInstrumentationFunctions </reference/Instrumentation/ProcessInstrumentationFunction>` of the :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`.
+
+Multiplicity
+    \*
+
+Type
+    :doc:`ProcessInstrumentationFunction </reference/Instrumentation/ProcessInstrumentationFunction>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   For each :doc:`ProcessInstrumentationFunction </reference/Instrumentation/ProcessInstrumentationFunction>`, the corresponding ``<ProcessInstrumentationFunction>`` element is a child of the ``<PlantModel>`` element that corresponds to the :doc:`DexpiModel </reference/DexpiModel/DexpiModel>` containing the :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`. See also Proteus Schema Implementation of :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram39.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PlantModel>
+          <!--
+            The DexpiModel implemented by this PlantModel element implicitly
+            contains the ConceptualModel conceptualModel1.
+          -->
+          ...
+          <ProcessInstrumentationFunction
+              ID="processInstrumentationFunction1"
+              ComponentClass="ProcessInstrumentationFunction"
+              ComponentClassURI="http://sandbox.dexpi.org/rdl/ProcessInstrumentationFunction"
+              DOTS123="DOTS123">
+            ...
+          </ProcessInstrumentationFunction>
+          ...
+        </PlantModel>
+      
+
+
+.. _dexpi-DexpiModel-ConceptualModel-ProcessSignalGeneratingSystems:
+
+ProcessSignalGeneratingSystems
+==============================
+
+.. rubric:: Attribute (composition)
+
+
+The :doc:`ProcessSignalGeneratingSystems </reference/Instrumentation/ProcessSignalGeneratingSystem>` of the :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`.
+
+Multiplicity
+    \*
+
+Type
+    :doc:`ProcessSignalGeneratingSystem </reference/Instrumentation/ProcessSignalGeneratingSystem>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   For each :doc:`ProcessSignalGeneratingSystem </reference/Instrumentation/ProcessSignalGeneratingSystem>`, the corresponding ``<ProcessSignalGeneratingSystem>`` element is a child of the ``<PlantModel>`` element that corresponds to the :doc:`DexpiModel </reference/DexpiModel/DexpiModel>` containing the :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`. See also Proteus Schema Implementation of :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram40.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PlantModel>
+          <!--
+            The DexpiModel implemented by this PlantModel element implicitly
+            contains the ConceptualModel conceptualModel1.
+          -->
+          ...
+          <ProcessSignalGeneratingSystem
+              ID="processSignalGeneratingSystem1"
+              ComponentClass="ProcessSignalGeneratingSystem"
+              ComponentClassURI="http://sandbox.dexpi.org/rdl/ProcessSignalGeneratingSystem"
+              DOTS123="DOTS123">
+            ...
+          </ProcessSignalGeneratingSystem>
+          ...
+        </PlantModel>
+      
+
+
+.. _dexpi-DexpiModel-ConceptualModel-TaggedPlantItems:
+
+TaggedPlantItems
+================
+
+.. rubric:: Attribute (composition)
+
+
+The :doc:`TaggedPlantItems </reference/Equipment/TaggedPlantItem>` of the :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`.
+
+Multiplicity
+    \*
+
+Type
+    :doc:`TaggedPlantItem </reference/Equipment/TaggedPlantItem>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   For each :doc:`TaggedPlantItem </reference/Equipment/TaggedPlantItem>`, the corresponding ``<Equipment>`` element is a child of the ``<PlantModel>`` element that corresponds to the :doc:`DexpiModel </reference/DexpiModel/DexpiModel>` containing the :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`. See also Proteus Schema Implementation of :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`.
+
+.. admonition:: example
+
+   As the value type :doc:`TaggedPlantItem </reference/Equipment/TaggedPlantItem>` is abstract, we consider :doc:`Vessel </reference/Equipment/Vessel>` as an arbitrary concrete subclass.
+
+   .. image:: /diagrams/diagram41.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PlantModel>
+          <!--
+            The DexpiModel implemented by this PlantModel element implicitly
+            contains the ConceptualModel conceptualModel1.
+          -->
+          ...
+          <Equipment
+              ID="vessel1"
+              ComponentClass="Vessel"
+              ComponentClassURI="http://data.posccaesar.org/rdl/RDS414674"
+              DOTS123="DOTS123">
+            ...
+          </Equipment>
+          ...
+        </PlantModel>
+      
+

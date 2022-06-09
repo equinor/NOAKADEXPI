@@ -1,0 +1,176 @@
+===========
+Transmitter
+===========
+
+Overview
+========
+
+.. rubric:: Class
+
+A detecting instrument that generates a process variable signal and converts it into an output signal.
+
+.. image:: Transmitter.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`ConceptualObject </reference/DexpiModel/ConceptualObject>`
+
+* :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>`
+
+.. rubric:: Attributes (data)
+
++--------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+| Name                                                                                                   | Multiplicity | Type                                                                                   |
++========================================================================================================+==============+========================================================================================+
+| :ref:`DeviceTypeName <dexpi-Instrumentation-Transmitter-DeviceTypeName>`                               | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                            |
++--------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+| :ref:`SubTagName <dexpi-Instrumentation-Transmitter-SubTagName>`                                       | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                            |
++--------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<ProcessSignalGeneratingSystemComponent>``
+
+   RDL reference
+       `TRANSMITTER <http://data.posccaesar.org/rdl/RDS267929>`__
+
+   ComponentClass
+       Transmitter
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS267929 <http://data.posccaesar.org/rdl/RDS267929>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram572.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <ProcessSignalGeneratingSystemComponent
+            ID="transmitter1"
+            ComponentClass="Transmitter"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267929" DOTS123="DOTS123">
+          ...
+        </ProcessSignalGeneratingSystemComponent>
+      
+
+
+.. _dexpi-Instrumentation-Transmitter-DeviceTypeName:
+
+DeviceTypeName
+==============
+
+.. rubric:: Attribute (data)
+
+
+The device type of the :doc:`Transmitter </reference/Instrumentation/Transmitter>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `DEVICE TYPE NAME ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/DeviceTypeNameAssignmentClass>`__
+
+   Name
+       DeviceTypeNameAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DeviceTypeNameAssignmentClass <http://sandbox.dexpi.org/rdl/DeviceTypeNameAssignmentClass>`__
+
+.. admonition:: example
+
+   "pressure transmitter" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <ProcessSignalGeneratingSystemComponent
+            ID="transmitter1"
+            ComponentClass="Transmitter"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267929" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DeviceTypeNameAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/DeviceTypeNameAssignmentClass"
+              Format="string"
+              Value="pressure transmitter" />
+            ...
+          </GenericAttributes>
+          ...
+        </ProcessSignalGeneratingSystemComponent>
+      
+
+
+.. _dexpi-Instrumentation-Transmitter-SubTagName:
+
+SubTagName
+==========
+
+.. rubric:: Attribute (data)
+
+
+The sub tag name of the :doc:`Transmitter </reference/Instrumentation/Transmitter>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `SUB TAG NAME ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/SubTagNameAssignmentClass>`__
+
+   Name
+       SubTagNameAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/SubTagNameAssignmentClass <http://sandbox.dexpi.org/rdl/SubTagNameAssignmentClass>`__
+
+.. admonition:: example
+
+   "ST1" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <ProcessSignalGeneratingSystemComponent
+            ID="transmitter1"
+            ComponentClass="Transmitter"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267929" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="SubTagNameAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/SubTagNameAssignmentClass"
+              Format="string"
+              Value="ST1" />
+            ...
+          </GenericAttributes>
+          ...
+        </ProcessSignalGeneratingSystemComponent>
+      
+

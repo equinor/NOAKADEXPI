@@ -1,0 +1,28 @@
+================
+NullableDateTime
+================
+
+Overview
+========
+
+.. rubric:: Abstract data type
+
+A date time, or a null value. :doc:`NullableDateTime </reference/DataTypes/NullableDateTime>` is abstract and has two concrete subtypes:
+
+* a :doc:`DateTime </reference/DataTypes/DateTime>` is an :ref:`actual value <dexpi-concept-actual-value>` for a date time;
+
+* a :doc:`NullDateTime </reference/DataTypes/NullDateTime>` is a :ref:`null value <dexpi-concept-null-value>` that explicitly indicates the absence of a date time.
+
+.. image:: NullableDateTime.*
+
+
+.. rubric:: Subtypes
+
+* :doc:`DateTime </reference/DataTypes/DateTime>`
+
+* :doc:`NullDateTime </reference/DataTypes/NullDateTime>`
+
+.. admonition:: proteus
+
+   :doc:`NullableDateTime </reference/DataTypes/NullableDateTime>` is only used as the type of the :ref:`ExportDateTime <dexpi-DexpiModel-DexpiModel-ExportDateTime>` attribute of :doc:`DexpiModel </reference/DexpiModel/DexpiModel>`. For this attribute, special rules apply; see Proteus Schema implementation of :ref:`ExportDateTime <dexpi-DexpiModel-DexpiModel-ExportDateTime>`.
+

@@ -1,0 +1,32 @@
+==============
+NullableVolume
+==============
+
+Overview
+========
+
+.. rubric:: Abstract data type
+
+:doc:`NullableVolume </reference/PhysicalQuantities/NullableVolume>` is a :ref:`simple physical quantity type <dexpi-concept-simple-physical-quantity-type>` for the dimension L\ :sup:`3`. :doc:`NullableVolume </reference/PhysicalQuantities/NullableVolume>` is abstract and has two concrete subtypes:
+
+* a :doc:`Volume </reference/PhysicalQuantities/Volume>` is an :ref:`actual value <dexpi-concept-actual-value>` for a physical quantity with a numerical value and a unit of measurement;
+
+* a :doc:`NullVolume </reference/PhysicalQuantities/NullVolume>` is a :ref:`null value <dexpi-concept-null-value>` that explicitly indicates the absence of an actual physical quantity.
+
+.. image:: NullableVolume.*
+
+
+.. rubric:: Subtypes
+
+* :doc:`NullVolume </reference/PhysicalQuantities/NullVolume>`
+
+* :doc:`Volume </reference/PhysicalQuantities/Volume>`
+
+.. admonition:: proteus
+
+   All data attributes with type :doc:`NullableVolume </reference/PhysicalQuantities/NullableVolume>` are implemented as :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+.. admonition:: example
+
+   See the examples for :doc:`Volume </reference/PhysicalQuantities/Volume>` and :doc:`NullVolume </reference/PhysicalQuantities/NullVolume>`.
+

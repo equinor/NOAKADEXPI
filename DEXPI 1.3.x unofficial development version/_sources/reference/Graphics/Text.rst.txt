@@ -1,0 +1,169 @@
+====
+Text
+====
+
+Overview
+========
+
+.. rubric:: Class
+
+.. image:: Text.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`GraphicalPrimitive </reference/Graphics/GraphicalPrimitive>`
+
+.. rubric:: Attributes (data)
+
++------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------+
+| Name                                                                   | Multiplicity | Type                                                                               |
++========================================================================+==============+====================================================================================+
+| :ref:`Alignment <dexpi-Graphics-Text-Alignment>`                       | 1            | :doc:`TextAlignment </reference/Graphics/TextAlignment>`                           |
++------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------+
+| :ref:`Color <dexpi-Graphics-Text-Color>`                               | 1            | :doc:`Color </reference/Graphics/Color>`                                           |
++------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------+
+| :ref:`Font <dexpi-Graphics-Text-Font>`                                 | 1            | :doc:`String </reference/DataTypes/String>`                                        |
++------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------+
+| :ref:`Position <dexpi-Graphics-Text-Position>`                         | 1            | :doc:`Point </reference/Graphics/Point>`                                           |
++------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------+
+| :ref:`Rotation <dexpi-Graphics-Text-Rotation>`                         | 1            | :doc:`Double </reference/DataTypes/Double>`                                        |
++------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------+
+| :ref:`Size <dexpi-Graphics-Text-Size>`                                 | 1            | :doc:`Double </reference/DataTypes/Double>`                                        |
++------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------+
+| :ref:`Text <dexpi-Graphics-Text-Text>`                                 | 1            | :doc:`String </reference/DataTypes/String>`                                        |
++------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------+
+
+.. rubric:: Attributes (composition)
+
++------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------+
+| Name                                                                   | Multiplicity | Type                                                                           |
++========================================================================+==============+================================================================================+
+| :ref:`Template <dexpi-Graphics-Text-Template>`                         | 0..1         | :doc:`TextTemplate </reference/Graphics/TextTemplate>`                         |
++------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------+
+
+
+.. _dexpi-Graphics-Text-Alignment:
+
+Alignment
+=========
+
+.. rubric:: Attribute (data)
+
+
+Multiplicity
+    1
+
+Type
+    :doc:`TextAlignment </reference/Graphics/TextAlignment>`
+
+
+.. _dexpi-Graphics-Text-Color:
+
+Color
+=====
+
+.. rubric:: Attribute (data)
+
+
+Multiplicity
+    1
+
+Type
+    :doc:`Color </reference/Graphics/Color>`
+
+
+.. _dexpi-Graphics-Text-Font:
+
+Font
+====
+
+.. rubric:: Attribute (data)
+
+
+Multiplicity
+    1
+
+Type
+    :doc:`String </reference/DataTypes/String>`
+
+
+.. _dexpi-Graphics-Text-Position:
+
+Position
+========
+
+.. rubric:: Attribute (data)
+
+
+Multiplicity
+    1
+
+Type
+    :doc:`Point </reference/Graphics/Point>`
+
+
+.. _dexpi-Graphics-Text-Rotation:
+
+Rotation
+========
+
+.. rubric:: Attribute (data)
+
+
+Multiplicity
+    1
+
+Type
+    :doc:`Double </reference/DataTypes/Double>`
+
+
+.. _dexpi-Graphics-Text-Size:
+
+Size
+====
+
+.. rubric:: Attribute (data)
+
+
+Multiplicity
+    1
+
+Type
+    :doc:`Double </reference/DataTypes/Double>`
+
+
+.. _dexpi-Graphics-Text-Template:
+
+Template
+========
+
+.. rubric:: Attribute (composition)
+
+
+TODO
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`TextTemplate </reference/Graphics/TextTemplate>`
+
+Opposite multiplicity
+    0..1
+
+
+.. _dexpi-Graphics-Text-Text:
+
+Text
+====
+
+.. rubric:: Attribute (data)
+
+
+Multiplicity
+    1
+
+Type
+    :doc:`String </reference/DataTypes/String>`
+

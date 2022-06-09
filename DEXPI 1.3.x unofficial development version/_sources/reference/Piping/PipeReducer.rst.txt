@@ -1,0 +1,52 @@
+===========
+PipeReducer
+===========
+
+Overview
+========
+
+.. rubric:: Class
+
+An 'artefact' that has different nominal pipe size at the two ends, intended to connect pipes or piping components (from `http://data.posccaesar.org/rdl/RDS416294 <http://data.posccaesar.org/rdl/RDS416294>`__).
+
+.. image:: PipeReducer.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`PipeFitting </reference/Piping/PipeFitting>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingComponent>``
+
+   RDL reference
+       `PIPE REDUCER <http://data.posccaesar.org/rdl/RDS416294>`__
+
+   ComponentClass
+       PipeReducer
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS416294 <http://data.posccaesar.org/rdl/RDS416294>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram684.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="pipeReducer1"
+            ComponentClass="PipeReducer"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS416294" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+

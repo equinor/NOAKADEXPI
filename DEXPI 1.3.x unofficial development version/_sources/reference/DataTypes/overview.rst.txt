@@ -1,0 +1,63 @@
+Overview
+========
+
+The :doc:`DataTypes </reference/DataTypes/index>` package contains fundamental data types. Note that further data types that are specific to engineering information in P\&IDs are provided by the :doc:`Enumerations </reference/Enumerations/index>` and :doc:`PhysicalQuantities </reference/PhysicalQuantities/index>` packages. Finally, the :doc:`Graphics </reference/Graphics/index>` package contains data types required for P\&ID graphics.
+
+Simple Data Types
+-----------------
+
+Simple data types such as :doc:`Double </reference/DataTypes/Double>` correspond to conventional data types in programming languages or data formats.
+
+.. image:: /diagrams/diagram6.*
+
+
+
+There are 3 simple data types:
+
+* :doc:`Boolean </reference/DataTypes/Boolean>`
+
+* :doc:`Double </reference/DataTypes/Double>`
+
+* :doc:`UnsignedByte </reference/DataTypes/UnsignedByte>`
+
+
+
+
+Nullable Data Types
+-------------------
+
+Nullable data types are similar to simple data types, but they provide an additional :ref:`null value <dexpi-concept-null-value>`. A nullable data type such as :doc:`NullableString </reference/DataTypes/NullableString>` is always abstract. It has two concrete sub types: a type for actual values (e.g., :doc:`String </reference/DataTypes/String>`), and a type for the :ref:`null value <dexpi-concept-null-value>` (e.g., :doc:`NullString </reference/DataTypes/NullString>`). The latter is a singleton type, i.e., there is only one instance of this type (e.g., :doc:`NULL_STRING </reference/DataTypes/NULL_STRING>`).
+
+.. image:: /diagrams/diagram7.*
+
+
+
+There are 4 nullable data types:
+
+* :doc:`NullableAnyURI </reference/DataTypes/NullableAnyURI>`
+
+* :doc:`NullableDateTime </reference/DataTypes/NullableDateTime>`
+
+* :doc:`NullableInteger </reference/DataTypes/NullableInteger>`
+
+* :doc:`NullableString </reference/DataTypes/NullableString>`
+
+
+
+
+Complex Data Types
+------------------
+
+Complex data types are aggregations of other data types.
+
+.. image:: /diagrams/diagram8.*
+
+
+
+There are 2 complex data types:
+
+* :doc:`MultiLanguageString </reference/DataTypes/MultiLanguageString>`
+
+* :doc:`SingleLanguageString </reference/DataTypes/SingleLanguageString>`
+
+

@@ -1,0 +1,38 @@
+================
+NullMassFlowRate
+================
+
+Overview
+========
+
+.. rubric:: Data type
+
+A :ref:`null value <dexpi-concept-null-value>` for a physical quantity of type :doc:`NullableMassFlowRate </reference/PhysicalQuantities/NullableMassFlowRate>`. The only instance of this singleton type is :doc:`NULL_MASS_FLOW_RATE </reference/PhysicalQuantities/NULL_MASS_FLOW_RATE>`.
+
+.. image:: NullMassFlowRate.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`NullableMassFlowRate </reference/PhysicalQuantities/NullableMassFlowRate>`
+
+.. admonition:: proteus
+
+   All data attributes with type :doc:`NullableMassFlowRate </reference/PhysicalQuantities/NullableMassFlowRate>` (the base type of :doc:`NullMassFlowRate </reference/PhysicalQuantities/NullMassFlowRate>`\ ) are implemented as :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram594.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Format="double" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have a ``Name`` and an ``AttributeURI`` attribute. They depend on the data type attribute of the DEXPI class that owns the null instance :doc:`NULL_MASS_FLOW_RATE </reference/PhysicalQuantities/NULL_MASS_FLOW_RATE>` (e.g., see the implementation example for the attribute :ref:`DesignLiquidFeedMassFlowRate <dexpi-Equipment-Agglomerator-DesignLiquidFeedMassFlowRate>` of the DEXPI class :doc:`Agglomerator </reference/Equipment/Agglomerator>`\ )DOTANDSPACEHACKFor a null value, the attributes ``Units``, ``UnitsURI``, and ``Value`` *must not be used*.
+

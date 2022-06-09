@@ -1,0 +1,18 @@
+=============
+GraphicsGroup
+=============
+
+Overview
+========
+
+.. rubric:: Abstract class
+
+.. image:: GraphicsGroup.*
+
+
+.. rubric:: Subtypes
+
+* :doc:`RepresentationGroup </reference/Graphics/RepresentationGroup>`
+
+* :doc:`RepresentationTypeGroup </reference/Graphics/RepresentationTypeGroup>`
+

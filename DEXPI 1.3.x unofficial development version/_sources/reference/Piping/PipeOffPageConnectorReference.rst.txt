@@ -1,0 +1,59 @@
+=============================
+PipeOffPageConnectorReference
+=============================
+
+Overview
+========
+
+.. rubric:: Abstract class
+
+A reference to a :doc:`PipeOffPageConnector </reference/Piping/PipeOffPageConnector>`.
+
+.. image:: PipeOffPageConnectorReference.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`ConceptualObject </reference/DexpiModel/ConceptualObject>`
+
+* :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>`
+
+.. rubric:: Subtypes
+
+* :doc:`PipeOffPageConnectorObjectReference </reference/Piping/PipeOffPageConnectorObjectReference>`
+
+* :doc:`PipeOffPageConnectorReferenceByNumber </reference/Piping/PipeOffPageConnectorReferenceByNumber>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl-abstract>`. As :doc:`PipeOffPageConnectorReference </reference/Piping/PipeOffPageConnectorReference>` is abstract, there is no RDL reference for the class itself;  the RDL reference depends on the concrete subclass.
+
+   Tag
+       ``<PipeOffPageConnectorReference>``
+
+   ComponentClass
+       *depending on subclass*
+
+   ComponentClassURI
+       *depending on subclass*
+
+.. admonition:: example
+
+   As :doc:`PipeOffPageConnectorReference </reference/Piping/PipeOffPageConnectorReference>` is abstract, we consider :doc:`PipeOffPageConnectorObjectReference </reference/Piping/PipeOffPageConnectorObjectReference>` as an arbitrary concrete subclass.
+
+   .. image:: /diagrams/diagram682.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipeOffPageConnectorReference
+            ID="pipeOffPageConnectorObjectReference1"
+            ComponentClass="PipeOffPageConnectorObjectReference"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/PipeOffPageConnectorObjectReference" DOTS123="DOTS123">
+          ...
+        </PipeOffPageConnectorReference>
+      
+

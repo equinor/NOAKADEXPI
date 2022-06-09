@@ -1,0 +1,52 @@
+================
+TurbineFlowMeter
+================
+
+Overview
+========
+
+.. rubric:: Class
+
+A velocity flow meter that uses a multi bladed rotor to measure fluid flow rate in units of volumetric flow through a closed conduit (from `http://data.posccaesar.org/rdl/RDS417914 <http://data.posccaesar.org/rdl/RDS417914>`__).
+
+.. image:: TurbineFlowMeter.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`InlinePrimaryElement </reference/Piping/InlinePrimaryElement>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingComponent>``
+
+   RDL reference
+       `TURBINE FLOW METER <http://data.posccaesar.org/rdl/RDS417914>`__
+
+   ComponentClass
+       TurbineFlowMeter
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS417914 <http://data.posccaesar.org/rdl/RDS417914>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram725.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="turbineFlowMeter1"
+            ComponentClass="TurbineFlowMeter"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS417914" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+

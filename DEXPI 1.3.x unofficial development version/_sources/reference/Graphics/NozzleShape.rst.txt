@@ -1,0 +1,16 @@
+===========
+NozzleShape
+===========
+
+Overview
+========
+
+.. rubric:: Class
+
+.. image:: NozzleShape.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Shape </reference/Graphics/Shape>`
+

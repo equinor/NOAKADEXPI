@@ -1,0 +1,38 @@
+===========
+NullVoltage
+===========
+
+Overview
+========
+
+.. rubric:: Data type
+
+A :ref:`null value <dexpi-concept-null-value>` for a physical quantity of type :doc:`NullableVoltage </reference/PhysicalQuantities/NullableVoltage>`. The only instance of this singleton type is :doc:`NULL_VOLTAGE </reference/PhysicalQuantities/NULL_VOLTAGE>`.
+
+.. image:: NullVoltage.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`NullableVoltage </reference/PhysicalQuantities/NullableVoltage>`
+
+.. admonition:: proteus
+
+   All data attributes with type :doc:`NullableVoltage </reference/PhysicalQuantities/NullableVoltage>` (the base type of :doc:`NullVoltage </reference/PhysicalQuantities/NullVoltage>`\ ) are implemented as :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram602.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Format="double" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have a ``Name`` and an ``AttributeURI`` attribute. They depend on the data type attribute of the DEXPI class that owns the null instance :doc:`NULL_VOLTAGE </reference/PhysicalQuantities/NULL_VOLTAGE>` (e.g., see the implementation example for the attribute :ref:`NominalVoltage <dexpi-Equipment-AlternatingCurrentMotor-NominalVoltage>` of the DEXPI class :doc:`AlternatingCurrentMotor </reference/Equipment/AlternatingCurrentMotor>`\ )DOTANDSPACEHACKFor a null value, the attributes ``Units``, ``UnitsURI``, and ``Value`` *must not be used*.
+

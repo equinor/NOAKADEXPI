@@ -1,0 +1,16 @@
+====================
+TaggedPlantItemShape
+====================
+
+Overview
+========
+
+.. rubric:: Class
+
+.. image:: TaggedPlantItemShape.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Shape </reference/Graphics/Shape>`
+

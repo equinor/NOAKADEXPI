@@ -1,0 +1,22 @@
+==========
+NULL_FORCE
+==========
+
+Overview
+========
+
+.. rubric:: Instance
+
+The only instance of the singleton type :doc:`NullForce </reference/PhysicalQuantities/NullForce>`. This instance represents the :ref:`null value <dexpi-concept-null-value>` of the physical quantity type :doc:`NullableForce </reference/PhysicalQuantities/NullableForce>`.
+
+.. image:: NULL_FORCE.*
+
+
+.. rubric:: Type
+
+* :doc:`NullForce </reference/PhysicalQuantities/NullForce>`
+
+.. admonition:: proteus
+
+   See implementation of :doc:`NullForce </reference/PhysicalQuantities/NullForce>`.
+

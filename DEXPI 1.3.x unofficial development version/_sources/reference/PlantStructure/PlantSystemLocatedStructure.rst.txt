@@ -1,0 +1,113 @@
+===========================
+PlantSystemLocatedStructure
+===========================
+
+Overview
+========
+
+.. rubric:: Abstract class
+
+A structure that can be located in a :doc:`PlantSystem </reference/PlantStructure/PlantSystem>`.
+
+.. image:: PlantSystemLocatedStructure.*
+
+
+.. rubric:: Subtypes
+
+* :doc:`TechnicalItem </reference/PlantStructure/TechnicalItem>`
+
+.. rubric:: Attributes (reference)
+
++--------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+| Name                                                                                                               | Multiplicity | Type                                                                                   |
++====================================================================================================================+==============+========================================================================================+
+| :ref:`PlantSystem <dexpi-PlantStructure-PlantSystemLocatedStructure-PlantSystem>`                                  | 0..1         | :doc:`PlantSystem </reference/PlantStructure/PlantSystem>`                             |
++--------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   Implementation is subclass-specific.
+
+.. admonition:: example
+
+   As :doc:`PlantSystemLocatedStructure </reference/PlantStructure/PlantSystemLocatedStructure>` is abstract, we consider :doc:`ActuatingElectricalFunction </reference/Instrumentation/ActuatingElectricalFunction>` as an arbitrary concrete subclass.
+
+   .. image:: /diagrams/diagram742.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <ActuatingElectricalFunction
+            ID="actuatingElectricalFunction1"
+            ComponentClass="ActuatingElectricalFunction"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/ActuatingElectricalFunction" DOTS123="DOTS123">
+          ...
+        </ActuatingElectricalFunction>
+      
+
+
+.. _dexpi-PlantStructure-PlantSystemLocatedStructure-PlantSystem:
+
+PlantSystem
+===========
+
+.. rubric:: Attribute (reference)
+
+
+The :doc:`PlantSystem </reference/PlantStructure/PlantSystem>` in which the :doc:`PlantSystemLocatedStructure </reference/PlantStructure/PlantSystemLocatedStructure>` is located.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`PlantSystem </reference/PlantStructure/PlantSystem>`
+
+Opposite multiplicity
+    0..*
+
+.. admonition:: proteus
+
+   The attribute is implemented using :ref:`Proteus \<Association\> elements <proteus-concept-reference-property-association>`.
+
+   Association type for the attribute ower
+       ``"is located in"``
+
+   Opposite association type
+       ``"is the location of"``
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram743.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="tank1"
+            ComponentClass="Tank"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS445139" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="is located in"
+            ItemID="plantSystem1" />
+          ...
+        <Equipment />
+        ...
+        <PlantStructureItem
+            ID="plantSystem1"
+            ComponentClass="PlantSystem"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/PlantSystem" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="is the location of"
+            ItemID="tank1" />
+          ...
+        <PlantStructureItem />
+      
+

@@ -1,0 +1,52 @@
+======================
+ProcessControlFunction
+======================
+
+Overview
+========
+
+.. rubric:: Class
+
+A requirement for control structures relating to Process Engineering.
+
+.. image:: ProcessControlFunction.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`ProcessInstrumentationFunction </reference/Instrumentation/ProcessInstrumentationFunction>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<ProcessInstrumentationFunction>``
+
+   RDL reference
+       `PROCESS CONTROL FUNCTION <http://sandbox.dexpi.org/rdl/ProcessControlFunction>`__
+
+   ComponentClass
+       ProcessControlFunction
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/ProcessControlFunction <http://sandbox.dexpi.org/rdl/ProcessControlFunction>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram545.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <ProcessInstrumentationFunction
+            ID="processControlFunction1"
+            ComponentClass="ProcessControlFunction"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/ProcessControlFunction" DOTS123="DOTS123">
+          ...
+        </ProcessInstrumentationFunction>
+      
+

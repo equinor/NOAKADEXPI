@@ -1,0 +1,16 @@
+=============
+PipeFlowArrow
+=============
+
+Overview
+========
+
+.. rubric:: Class
+
+.. image:: PipeFlowArrow.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Symbol </reference/Graphics/Symbol>`
+

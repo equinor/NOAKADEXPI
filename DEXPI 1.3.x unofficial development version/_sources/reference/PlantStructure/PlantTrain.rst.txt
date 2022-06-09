@@ -1,0 +1,174 @@
+==========
+PlantTrain
+==========
+
+Overview
+========
+
+.. rubric:: Class
+
+A plant train.
+
+.. image:: PlantTrain.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`PlantStructureItem </reference/PlantStructure/PlantStructureItem>`
+
+.. rubric:: Attributes (data)
+
++--------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+| Name                                                                                                                                       | Multiplicity | Type                                                                                   |
++============================================================================================================================================+==============+========================================================================================+
+| :ref:`PlantTrainIdentificationCode <dexpi-PlantStructure-PlantTrain-PlantTrainIdentificationCode>`                                         | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                            |
++--------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+| :ref:`PlantTrainName <dexpi-PlantStructure-PlantTrain-PlantTrainName>`                                                                     | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                            |
++--------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PlantStructureItem>``
+
+   RDL reference
+       `PLANT TRAIN <http://sandbox.dexpi.org/rdl/PlantTrain>`__
+
+   ComponentClass
+       PlantTrain
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/PlantTrain <http://sandbox.dexpi.org/rdl/PlantTrain>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram744.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PlantStructureItem
+            ID="plantTrain1"
+            ComponentClass="PlantTrain"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/PlantTrain" DOTS123="DOTS123">
+          ...
+        </PlantStructureItem>
+      
+
+
+.. _dexpi-PlantStructure-PlantTrain-PlantTrainIdentificationCode:
+
+PlantTrainIdentificationCode
+============================
+
+.. rubric:: Attribute (data)
+
+
+The identification code of the plant train.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `PLANT TRAIN IDENTIFICATION CODE ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/PlantTrainIdentificationCodeAssignmentClass>`__
+
+   Name
+       PlantTrainIdentificationCodeAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/PlantTrainIdentificationCodeAssignmentClass <http://sandbox.dexpi.org/rdl/PlantTrainIdentificationCodeAssignmentClass>`__
+
+.. admonition:: example
+
+   "T456" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PlantStructureItem
+            ID="plantTrain1"
+            ComponentClass="PlantTrain"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/PlantTrain" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="PlantTrainIdentificationCodeAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/PlantTrainIdentificationCodeAssignmentClass"
+              Format="string"
+              Value="T456" />
+            ...
+          </GenericAttributes>
+          ...
+        </PlantStructureItem>
+      
+
+
+.. _dexpi-PlantStructure-PlantTrain-PlantTrainName:
+
+PlantTrainName
+==============
+
+.. rubric:: Attribute (data)
+
+
+The name of the plant train.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `PLANT TRAIN NAME ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/PlantTrainNameAssignmentClass>`__
+
+   Name
+       PlantTrainNameAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/PlantTrainNameAssignmentClass <http://sandbox.dexpi.org/rdl/PlantTrainNameAssignmentClass>`__
+
+.. admonition:: example
+
+   "Train T456" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PlantStructureItem
+            ID="plantTrain1"
+            ComponentClass="PlantTrain"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/PlantTrain" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="PlantTrainNameAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/PlantTrainNameAssignmentClass"
+              Format="string"
+              Value="Train T456" />
+            ...
+          </GenericAttributes>
+          ...
+        </PlantStructureItem>
+      
+

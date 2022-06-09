@@ -1,0 +1,16 @@
+=====================
+EquipmentTagNameLabel
+=====================
+
+Overview
+========
+
+.. rubric:: Class
+
+.. image:: EquipmentTagNameLabel.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Label </reference/Graphics/Label>`
+

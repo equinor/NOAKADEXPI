@@ -1,0 +1,22 @@
+=========
+NULL_MASS
+=========
+
+Overview
+========
+
+.. rubric:: Instance
+
+The only instance of the singleton type :doc:`NullMass </reference/PhysicalQuantities/NullMass>`. This instance represents the :ref:`null value <dexpi-concept-null-value>` of the physical quantity type :doc:`NullableMass </reference/PhysicalQuantities/NullableMass>`.
+
+.. image:: NULL_MASS.*
+
+
+.. rubric:: Type
+
+* :doc:`NullMass </reference/PhysicalQuantities/NullMass>`
+
+.. admonition:: proteus
+
+   See implementation of :doc:`NullMass </reference/PhysicalQuantities/NullMass>`.
+

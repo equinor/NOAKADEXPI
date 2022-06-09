@@ -1,0 +1,56 @@
+==============================
+CustomActuatingSystemComponent
+==============================
+
+Overview
+========
+
+.. rubric:: Class
+
+A :ref:`custom component <dexpi-concept-custom-component>` of an :doc:`ActuatingSystem </reference/Instrumentation/ActuatingSystem>`, i.e., a component other than a :doc:`ControlledActuator </reference/Instrumentation/ControlledActuator>`, an :doc:`OperatedValveReference </reference/Instrumentation/OperatedValveReference>`,  or  a :doc:`Positioner </reference/Instrumentation/Positioner>`.
+
+.. image:: CustomActuatingSystemComponent.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`ConceptualObject </reference/DexpiModel/ConceptualObject>`
+
+* :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>`
+
+* :doc:`CustomObject </reference/Customization/CustomObject>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<ActuatingSystemComponent>``
+
+   RDL reference
+       `CUSTOM ACTUATING SYSTEM COMPONENT <http://sandbox.dexpi.org/rdl/CustomActuatingSystemComponent>`__
+
+   ComponentClass
+       CustomActuatingSystemComponent
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/CustomActuatingSystemComponent <http://sandbox.dexpi.org/rdl/CustomActuatingSystemComponent>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram527.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <ActuatingSystemComponent
+            ID="customActuatingSystemComponent1"
+            ComponentClass="CustomActuatingSystemComponent"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/CustomActuatingSystemComponent" DOTS123="DOTS123">
+          ...
+        </ActuatingSystemComponent>
+      
+

@@ -1,0 +1,22 @@
+=========
+NULL_AREA
+=========
+
+Overview
+========
+
+.. rubric:: Instance
+
+The only instance of the singleton type :doc:`NullArea </reference/PhysicalQuantities/NullArea>`. This instance represents the :ref:`null value <dexpi-concept-null-value>` of the physical quantity type :doc:`NullableArea </reference/PhysicalQuantities/NullableArea>`.
+
+.. image:: NULL_AREA.*
+
+
+.. rubric:: Type
+
+* :doc:`NullArea </reference/PhysicalQuantities/NullArea>`
+
+.. admonition:: proteus
+
+   See implementation of :doc:`NullArea </reference/PhysicalQuantities/NullArea>`.
+

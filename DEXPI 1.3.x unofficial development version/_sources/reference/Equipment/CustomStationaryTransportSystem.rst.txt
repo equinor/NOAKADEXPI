@@ -1,0 +1,348 @@
+===============================
+CustomStationaryTransportSystem
+===============================
+
+Overview
+========
+
+.. rubric:: Class
+
+A :ref:`custom <dexpi-concept-custom-sibling>` :doc:`StationaryTransportSystem </reference/Equipment/StationaryTransportSystem>`, i.e., a :doc:`StationaryTransportSystem </reference/Equipment/StationaryTransportSystem>` that is not covered by any of the other subclasses of :doc:`StationaryTransportSystem </reference/Equipment/StationaryTransportSystem>` (:doc:`Conveyor </reference/Equipment/Conveyor>`, :doc:`Lift </reference/Equipment/Lift>`, or :doc:`LoadingUnloadingSystem </reference/Equipment/LoadingUnloadingSystem>`\ ).
+
+.. image:: CustomStationaryTransportSystem.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`CustomObject </reference/Customization/CustomObject>`
+
+* :doc:`StationaryTransportSystem </reference/Equipment/StationaryTransportSystem>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                                                                           | Multiplicity | Type                                                                                                                                   |
++================================================================================================================================================================+==============+========================================================================================================================================+
+| :ref:`ConveyingDistance <dexpi-Equipment-CustomStationaryTransportSystem-ConveyingDistance>`                                                                   | 0..1         | :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`                                                                   |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`ConveyorType <dexpi-Equipment-CustomStationaryTransportSystem-ConveyorType>`                                                                             | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                            |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`DesignCapacityMassFlowRate <dexpi-Equipment-CustomStationaryTransportSystem-DesignCapacityMassFlowRate>`                                                 | 0..1         | :doc:`NullableMassFlowRate </reference/PhysicalQuantities/NullableMassFlowRate>`                                                       |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`DesignRotationalSpeed <dexpi-Equipment-CustomStationaryTransportSystem-DesignRotationalSpeed>`                                                           | 0..1         | :doc:`NullableRotationalFrequency </reference/PhysicalQuantities/NullableRotationalFrequency>`                                         |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`DischargeHead <dexpi-Equipment-CustomStationaryTransportSystem-DischargeHead>`                                                                           | 0..1         | :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`                                                                   |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`UpperLimitConveyingDistance <dexpi-Equipment-CustomStationaryTransportSystem-UpperLimitConveyingDistance>`                                               | 0..1         | :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`                                                                   |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`UpperLimitDischargeHead <dexpi-Equipment-CustomStationaryTransportSystem-UpperLimitDischargeHead>`                                                       | 0..1         | :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`                                                                   |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`UpperLimitLoadCapacity <dexpi-Equipment-CustomStationaryTransportSystem-UpperLimitLoadCapacity>`                                                         | 0..1         | :doc:`NullableMass </reference/PhysicalQuantities/NullableMass>`                                                                       |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`UpperLimitVolumeCapacity <dexpi-Equipment-CustomStationaryTransportSystem-UpperLimitVolumeCapacity>`                                                     | 0..1         | :doc:`NullableVolume </reference/PhysicalQuantities/NullableVolume>`                                                                   |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `CUSTOM STATIONARY TRANSPORT SYSTEM <http://sandbox.dexpi.org/rdl/CustomStationaryTransportSystem>`__
+
+   ComponentClass
+       CustomStationaryTransportSystem
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/CustomStationaryTransportSystem <http://sandbox.dexpi.org/rdl/CustomStationaryTransportSystem>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram223.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="customStationaryTransportSystem1"
+            ComponentClass="CustomStationaryTransportSystem"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/CustomStationaryTransportSystem" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-CustomStationaryTransportSystem-ConveyingDistance:
+
+ConveyingDistance
+=================
+
+.. rubric:: Attribute (data)
+
+
+The conveying distance of the :doc:`CustomStationaryTransportSystem </reference/Equipment/CustomStationaryTransportSystem>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `CONVEYING DISTANCE <http://sandbox.dexpi.org/rdl/ConveyingDistance>`__
+
+   Name
+       ConveyingDistance
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/ConveyingDistance <http://sandbox.dexpi.org/rdl/ConveyingDistance>`__
+
+
+.. _dexpi-Equipment-CustomStationaryTransportSystem-ConveyorType:
+
+ConveyorType
+============
+
+.. rubric:: Attribute (data)
+
+
+The type of the conveyor.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `CONVEYOR TYPE ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/ConveyorTypeAssignmentClass>`__
+
+   Name
+       ConveyorTypeAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/ConveyorTypeAssignmentClass <http://sandbox.dexpi.org/rdl/ConveyorTypeAssignmentClass>`__
+
+
+.. _dexpi-Equipment-CustomStationaryTransportSystem-DesignCapacityMassFlowRate:
+
+DesignCapacityMassFlowRate
+==========================
+
+.. rubric:: Attribute (data)
+
+
+The capacity for the mass flow rate for which the :doc:`CustomStationaryTransportSystem </reference/Equipment/CustomStationaryTransportSystem>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableMassFlowRate </reference/PhysicalQuantities/NullableMassFlowRate>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN CAPACITY MASS FLOW RATE <http://sandbox.dexpi.org/rdl/DesignCapacityMassFlowRate>`__
+
+   Name
+       DesignCapacityMassFlowRate
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignCapacityMassFlowRate <http://sandbox.dexpi.org/rdl/DesignCapacityMassFlowRate>`__
+
+
+.. _dexpi-Equipment-CustomStationaryTransportSystem-DesignRotationalSpeed:
+
+DesignRotationalSpeed
+=====================
+
+.. rubric:: Attribute (data)
+
+
+The rotational speed for which the :doc:`CustomStationaryTransportSystem </reference/Equipment/CustomStationaryTransportSystem>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableRotationalFrequency </reference/PhysicalQuantities/NullableRotationalFrequency>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN ROTATIONAL SPEED <http://sandbox.dexpi.org/rdl/DesignRotationalSpeed>`__
+
+   Name
+       DesignRotationalSpeed
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignRotationalSpeed <http://sandbox.dexpi.org/rdl/DesignRotationalSpeed>`__
+
+
+.. _dexpi-Equipment-CustomStationaryTransportSystem-DischargeHead:
+
+DischargeHead
+=============
+
+.. rubric:: Attribute (data)
+
+
+The length of the :doc:`CustomStationaryTransportSystem </reference/Equipment/CustomStationaryTransportSystem>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DISCHARGE HEAD <http://sandbox.dexpi.org/rdl/DischargeHead>`__
+
+   Name
+       DischargeHead
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DischargeHead <http://sandbox.dexpi.org/rdl/DischargeHead>`__
+
+
+.. _dexpi-Equipment-CustomStationaryTransportSystem-UpperLimitConveyingDistance:
+
+UpperLimitConveyingDistance
+===========================
+
+.. rubric:: Attribute (data)
+
+
+The upper limit for the conveying distance of the :doc:`CustomStationaryTransportSystem </reference/Equipment/CustomStationaryTransportSystem>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `UPPER LIMIT CONVEYING DISTANCE <http://sandbox.dexpi.org/rdl/UpperLimitConveyingDistance>`__
+
+   Name
+       UpperLimitConveyingDistance
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/UpperLimitConveyingDistance <http://sandbox.dexpi.org/rdl/UpperLimitConveyingDistance>`__
+
+
+.. _dexpi-Equipment-CustomStationaryTransportSystem-UpperLimitDischargeHead:
+
+UpperLimitDischargeHead
+=======================
+
+.. rubric:: Attribute (data)
+
+
+The upper limit for the discharge head of the :doc:`CustomStationaryTransportSystem </reference/Equipment/CustomStationaryTransportSystem>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `UPPER LIMIT DISCHARGE HEAD <http://sandbox.dexpi.org/rdl/UpperLimitDischargeHead>`__
+
+   Name
+       UpperLimitDischargeHead
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/UpperLimitDischargeHead <http://sandbox.dexpi.org/rdl/UpperLimitDischargeHead>`__
+
+
+.. _dexpi-Equipment-CustomStationaryTransportSystem-UpperLimitLoadCapacity:
+
+UpperLimitLoadCapacity
+======================
+
+.. rubric:: Attribute (data)
+
+
+The highest mass to transport for which the :doc:`CustomStationaryTransportSystem </reference/Equipment/CustomStationaryTransportSystem>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableMass </reference/PhysicalQuantities/NullableMass>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `UPPER LIMIT LOAD CAPACITY <http://sandbox.dexpi.org/rdl/UpperLimitLoadCapacity>`__
+
+   Name
+       UpperLimitLoadCapacity
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/UpperLimitLoadCapacity <http://sandbox.dexpi.org/rdl/UpperLimitLoadCapacity>`__
+
+
+.. _dexpi-Equipment-CustomStationaryTransportSystem-UpperLimitVolumeCapacity:
+
+UpperLimitVolumeCapacity
+========================
+
+.. rubric:: Attribute (data)
+
+
+The highest volume to transport for which the :doc:`CustomStationaryTransportSystem </reference/Equipment/CustomStationaryTransportSystem>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableVolume </reference/PhysicalQuantities/NullableVolume>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `UPPER LIMIT VOLUME CAPACITY <http://sandbox.dexpi.org/rdl/UpperLimitVolumeCapacity>`__
+
+   Name
+       UpperLimitVolumeCapacity
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/UpperLimitVolumeCapacity <http://sandbox.dexpi.org/rdl/UpperLimitVolumeCapacity>`__
+

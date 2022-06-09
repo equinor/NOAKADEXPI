@@ -1,0 +1,156 @@
+===========
+CustomSieve
+===========
+
+Overview
+========
+
+.. rubric:: Class
+
+A :ref:`custom <dexpi-concept-custom-sibling>` :doc:`Sieve </reference/Equipment/Sieve>`, i.e., a :doc:`Sieve </reference/Equipment/Sieve>` that is not covered by any of the other subclasses of :doc:`Sieve </reference/Equipment/Sieve>` (:doc:`RevolvingSieve </reference/Equipment/RevolvingSieve>`, :doc:`StationarySieve </reference/Equipment/StationarySieve>`, or :doc:`VibratingSieve </reference/Equipment/VibratingSieve>`\ ).
+
+.. image:: CustomSieve.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`CustomObject </reference/Customization/CustomObject>`
+
+* :doc:`Sieve </reference/Equipment/Sieve>`
+
+.. rubric:: Attributes (data)
+
++--------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                                           | Multiplicity | Type                                                                                                                                   |
++================================================================================================================================+==============+========================================================================================================================================+
+| :ref:`DesignPower <dexpi-Equipment-CustomSieve-DesignPower>`                                                                   | 0..1         | :doc:`NullablePower </reference/PhysicalQuantities/NullablePower>`                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`DesignRotationalFrequency <dexpi-Equipment-CustomSieve-DesignRotationalFrequency>`                                       | 0..1         | :doc:`NullableRotationalFrequency </reference/PhysicalQuantities/NullableRotationalFrequency>`                                         |
++--------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`DesignShaftPower <dexpi-Equipment-CustomSieve-DesignShaftPower>`                                                         | 0..1         | :doc:`NullablePower </reference/PhysicalQuantities/NullablePower>`                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `CUSTOM SIEVE <http://sandbox.dexpi.org/rdl/CustomSieve>`__
+
+   ComponentClass
+       CustomSieve
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/CustomSieve <http://sandbox.dexpi.org/rdl/CustomSieve>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram222.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="customSieve1"
+            ComponentClass="CustomSieve"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/CustomSieve" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-CustomSieve-DesignPower:
+
+DesignPower
+===========
+
+.. rubric:: Attribute (data)
+
+
+The power for which the :doc:`CustomSieve </reference/Equipment/CustomSieve>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullablePower </reference/PhysicalQuantities/NullablePower>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN POWER <http://sandbox.dexpi.org/rdl/DesignPower>`__
+
+   Name
+       DesignPower
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignPower <http://sandbox.dexpi.org/rdl/DesignPower>`__
+
+
+.. _dexpi-Equipment-CustomSieve-DesignRotationalFrequency:
+
+DesignRotationalFrequency
+=========================
+
+.. rubric:: Attribute (data)
+
+
+The rotational frequency for which the :doc:`CustomSieve </reference/Equipment/CustomSieve>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableRotationalFrequency </reference/PhysicalQuantities/NullableRotationalFrequency>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN ROTATIONAL FREQUENCY <http://sandbox.dexpi.org/rdl/DesignRotationalFrequency>`__
+
+   Name
+       DesignRotationalFrequency
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignRotationalFrequency <http://sandbox.dexpi.org/rdl/DesignRotationalFrequency>`__
+
+
+.. _dexpi-Equipment-CustomSieve-DesignShaftPower:
+
+DesignShaftPower
+================
+
+.. rubric:: Attribute (data)
+
+
+The shaft power for which the :doc:`CustomSieve </reference/Equipment/CustomSieve>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullablePower </reference/PhysicalQuantities/NullablePower>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN SHAFT POWER <http://sandbox.dexpi.org/rdl/DesignShaftPower>`__
+
+   Name
+       DesignShaftPower
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignShaftPower <http://sandbox.dexpi.org/rdl/DesignShaftPower>`__
+

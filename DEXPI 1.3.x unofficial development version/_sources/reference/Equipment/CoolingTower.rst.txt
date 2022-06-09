@@ -1,0 +1,194 @@
+============
+CoolingTower
+============
+
+Overview
+========
+
+.. rubric:: Class
+
+A cooler and an air cooled heat exchanger that is a tall structure through which air circulates by convection (from `http://data.posccaesar.org/rdl/RDS14072341 <http://data.posccaesar.org/rdl/RDS14072341>`__).
+
+.. image:: CoolingTower.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Equipment </reference/Equipment/Equipment>`
+
+.. rubric:: Subtypes
+
+* :doc:`CustomCoolingTower </reference/Equipment/CustomCoolingTower>`
+
+* :doc:`DryCoolingTower </reference/Equipment/DryCoolingTower>`
+
+* :doc:`SprayCooler </reference/Equipment/SprayCooler>`
+
+* :doc:`WetCoolingTower </reference/Equipment/WetCoolingTower>`
+
+.. rubric:: Attributes (data)
+
++--------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                               | Multiplicity | Type                                                                                                                   |
++====================================================================================================================+==============+========================================================================================================================+
+| :ref:`DesignHeatFlowRate <dexpi-Equipment-CoolingTower-DesignHeatFlowRate>`                                        | 0..1         | :doc:`NullablePower </reference/PhysicalQuantities/NullablePower>`                                                     |
++--------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------+
+| :ref:`DesignVolumeFlowRate <dexpi-Equipment-CoolingTower-DesignVolumeFlowRate>`                                    | 0..1         | :doc:`NullableVolumeFlowRate </reference/PhysicalQuantities/NullableVolumeFlowRate>`                                   |
++--------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `COOLING TOWER <http://data.posccaesar.org/rdl/RDS14072341>`__
+
+   ComponentClass
+       CoolingTower
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS14072341 <http://data.posccaesar.org/rdl/RDS14072341>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram175.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="coolingTower1"
+            ComponentClass="CoolingTower"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS14072341" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-CoolingTower-DesignHeatFlowRate:
+
+DesignHeatFlowRate
+==================
+
+.. rubric:: Attribute (data)
+
+
+The heat flow rate for which the :doc:`CoolingTower </reference/Equipment/CoolingTower>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullablePower </reference/PhysicalQuantities/NullablePower>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN HEAT FLOW RATE <http://sandbox.dexpi.org/rdl/DesignHeatFlowRate>`__
+
+   Name
+       DesignHeatFlowRate
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignHeatFlowRate <http://sandbox.dexpi.org/rdl/DesignHeatFlowRate>`__
+
+.. admonition:: example
+
+   The instance coolingTower1 represents a :doc:`CoolingTower </reference/Equipment/CoolingTower>` with a :ref:`DesignHeatFlowRate <dexpi-Equipment-CoolingTower-DesignHeatFlowRate>` of 313.0 kW.
+
+   .. image:: /diagrams/diagram176.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="coolingTower1"
+            ComponentClass="CoolingTower"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS14072341" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignHeatFlowRate"
+              AttributeURI="http://sandbox.dexpi.org/rdl/DesignHeatFlowRate"
+              Format="double"
+              Value="313.0"
+              Units="Kilowatt"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1330919" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-CoolingTower-DesignVolumeFlowRate:
+
+DesignVolumeFlowRate
+====================
+
+.. rubric:: Attribute (data)
+
+
+The volume flow rate for which the :doc:`CoolingTower </reference/Equipment/CoolingTower>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableVolumeFlowRate </reference/PhysicalQuantities/NullableVolumeFlowRate>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN VOLUME FLOW RATE <http://data.posccaesar.org/rdl/RDS14286227>`__
+
+   Name
+       DesignVolumeFlowRate
+
+   AttributeURI
+       `http://data.posccaesar.org/rdl/RDS14286227 <http://data.posccaesar.org/rdl/RDS14286227>`__
+
+.. admonition:: example
+
+   The instance coolingTower1 represents a :doc:`CoolingTower </reference/Equipment/CoolingTower>` with a :ref:`DesignVolumeFlowRate <dexpi-Equipment-CoolingTower-DesignVolumeFlowRate>` of 420.0 m\ :sup:`3`/h.
+
+   .. image:: /diagrams/diagram177.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="coolingTower1"
+            ComponentClass="CoolingTower"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS14072341" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignVolumeFlowRate"
+              AttributeURI="http://data.posccaesar.org/rdl/RDS14286227"
+              Format="double"
+              Value="420.0"
+              Units="MetreCubedPerHour"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1321064" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+

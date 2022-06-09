@@ -1,0 +1,430 @@
+====================
+SafetyValveOrFitting
+====================
+
+Overview
+========
+
+.. rubric:: Class
+
+A safety valve or fitting.
+
+.. image:: SafetyValveOrFitting.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`PipingComponent </reference/Piping/PipingComponent>`
+
+.. rubric:: Subtypes
+
+* :doc:`BreatherValve </reference/Piping/BreatherValve>`
+
+* :doc:`CustomSafetyValveOrFitting </reference/Piping/CustomSafetyValveOrFitting>`
+
+* :doc:`FlameArrestor </reference/Piping/FlameArrestor>`
+
+* :doc:`RuptureDisc </reference/Piping/RuptureDisc>`
+
+* :doc:`SpringLoadedAngleGlobeSafetyValve </reference/Piping/SpringLoadedAngleGlobeSafetyValve>`
+
+* :doc:`SpringLoadedGlobeSafetyValve </reference/Piping/SpringLoadedGlobeSafetyValve>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                                                   | Multiplicity | Type                                                                                                                   |
++========================================================================================================================================+==============+========================================================================================================================+
+| :ref:`FlowInPipingClassCode <dexpi-Piping-SafetyValveOrFitting-FlowInPipingClassCode>`                                                 | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                            |
++----------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------+
+| :ref:`FlowOutPipingClassCode <dexpi-Piping-SafetyValveOrFitting-FlowOutPipingClassCode>`                                               | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                            |
++----------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------+
+| :ref:`LocationRegistrationNumber <dexpi-Piping-SafetyValveOrFitting-LocationRegistrationNumber>`                                       | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                            |
++----------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------+
+| :ref:`PositionNumber <dexpi-Piping-SafetyValveOrFitting-PositionNumber>`                                                               | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                            |
++----------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------+
+| :ref:`SetPressureHigh <dexpi-Piping-SafetyValveOrFitting-SetPressureHigh>`                                                             | 0..1         | :doc:`NullablePressureGauge </reference/PhysicalQuantities/NullablePressureGauge>`                                     |
++----------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------+
+| :ref:`SetPressureLow <dexpi-Piping-SafetyValveOrFitting-SetPressureLow>`                                                               | 0..1         | :doc:`NullablePressureGauge </reference/PhysicalQuantities/NullablePressureGauge>`                                     |
++----------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingComponent>``
+
+   RDL reference
+       `SAFETY VALVE OR FITTING <http://sandbox.dexpi.org/rdl/SafetyValveOrFitting>`__
+
+   ComponentClass
+       SafetyValveOrFitting
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/SafetyValveOrFitting <http://sandbox.dexpi.org/rdl/SafetyValveOrFitting>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram714.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="safetyValveOrFitting1"
+            ComponentClass="SafetyValveOrFitting"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/SafetyValveOrFitting" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+
+
+.. _dexpi-Piping-SafetyValveOrFitting-FlowInPipingClassCode:
+
+FlowInPipingClassCode
+=====================
+
+.. rubric:: Attribute (data)
+
+
+The code of the piping class at the flow in side of :doc:`SafetyValveOrFitting </reference/Piping/SafetyValveOrFitting>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `FLOW IN PIPING CLASS CODE ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/FlowInPipingClassCodeAssignmentClass>`__
+
+   Name
+       FlowInPipingClassCodeAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/FlowInPipingClassCodeAssignmentClass <http://sandbox.dexpi.org/rdl/FlowInPipingClassCodeAssignmentClass>`__
+
+.. admonition:: example
+
+   "75HB13" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="safetyValveOrFitting1"
+            ComponentClass="SafetyValveOrFitting"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/SafetyValveOrFitting" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="FlowInPipingClassCodeAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/FlowInPipingClassCodeAssignmentClass"
+              Format="string"
+              Value="75HB13" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingComponent>
+      
+
+
+.. _dexpi-Piping-SafetyValveOrFitting-FlowOutPipingClassCode:
+
+FlowOutPipingClassCode
+======================
+
+.. rubric:: Attribute (data)
+
+
+The code of the piping class at the flow out side of :doc:`SafetyValveOrFitting </reference/Piping/SafetyValveOrFitting>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `FLOW OUT PIPING CLASS CODE ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/FlowOutPipingClassCodeAssignmentClass>`__
+
+   Name
+       FlowOutPipingClassCodeAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/FlowOutPipingClassCodeAssignmentClass <http://sandbox.dexpi.org/rdl/FlowOutPipingClassCodeAssignmentClass>`__
+
+.. admonition:: example
+
+   "75HB13" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="safetyValveOrFitting1"
+            ComponentClass="SafetyValveOrFitting"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/SafetyValveOrFitting" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="FlowOutPipingClassCodeAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/FlowOutPipingClassCodeAssignmentClass"
+              Format="string"
+              Value="75HB13" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingComponent>
+      
+
+
+.. _dexpi-Piping-SafetyValveOrFitting-LocationRegistrationNumber:
+
+LocationRegistrationNumber
+==========================
+
+.. rubric:: Attribute (data)
+
+
+The location registration number of the :doc:`SafetyValveOrFitting </reference/Piping/SafetyValveOrFitting>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `LOCATION REGISTRATION NUMBER ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/LocationRegistrationNumberAssignmentClass>`__
+
+   Name
+       LocationRegistrationNumberAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/LocationRegistrationNumberAssignmentClass <http://sandbox.dexpi.org/rdl/LocationRegistrationNumberAssignmentClass>`__
+
+.. admonition:: example
+
+   "L-N123" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="safetyValveOrFitting1"
+            ComponentClass="SafetyValveOrFitting"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/SafetyValveOrFitting" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="LocationRegistrationNumberAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/LocationRegistrationNumberAssignmentClass"
+              Format="string"
+              Value="L-N123" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingComponent>
+      
+
+
+.. _dexpi-Piping-SafetyValveOrFitting-PositionNumber:
+
+PositionNumber
+==============
+
+.. rubric:: Attribute (data)
+
+
+The position number of the :doc:`SafetyValveOrFitting </reference/Piping/SafetyValveOrFitting>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `POSITION NUMBER ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/PositionNumberAssignmentClass>`__
+
+   Name
+       PositionNumberAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/PositionNumberAssignmentClass <http://sandbox.dexpi.org/rdl/PositionNumberAssignmentClass>`__
+
+.. admonition:: example
+
+   "SV 104.01" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="safetyValveOrFitting1"
+            ComponentClass="SafetyValveOrFitting"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/SafetyValveOrFitting" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="PositionNumberAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/PositionNumberAssignmentClass"
+              Format="string"
+              Value="SV 104.01" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingComponent>
+      
+
+
+.. _dexpi-Piping-SafetyValveOrFitting-SetPressureHigh:
+
+SetPressureHigh
+===============
+
+.. rubric:: Attribute (data)
+
+
+The high pressure at which the :doc:`SafetyValveOrFitting </reference/Piping/SafetyValveOrFitting>` is activated.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullablePressureGauge </reference/PhysicalQuantities/NullablePressureGauge>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `SET PRESSURE HIGH <http://sandbox.dexpi.org/rdl/SetPressureHigh>`__
+
+   Name
+       SetPressureHigh
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/SetPressureHigh <http://sandbox.dexpi.org/rdl/SetPressureHigh>`__
+
+.. admonition:: example
+
+   The instance safetyValveOrFitting1 represents a :doc:`SafetyValveOrFitting </reference/Piping/SafetyValveOrFitting>` with a :ref:`SetPressureHigh <dexpi-Piping-SafetyValveOrFitting-SetPressureHigh>` of 30.0 bar.
+
+   .. image:: /diagrams/diagram715.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="safetyValveOrFitting1"
+            ComponentClass="SafetyValveOrFitting"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/SafetyValveOrFitting" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="SetPressureHigh"
+              AttributeURI="http://sandbox.dexpi.org/rdl/SetPressureHigh"
+              Format="double"
+              Value="30.0"
+              Units="Bar"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1314539" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingComponent>
+      
+
+
+.. _dexpi-Piping-SafetyValveOrFitting-SetPressureLow:
+
+SetPressureLow
+==============
+
+.. rubric:: Attribute (data)
+
+
+The low pressure at which the :doc:`SafetyValveOrFitting </reference/Piping/SafetyValveOrFitting>` is activated.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullablePressureGauge </reference/PhysicalQuantities/NullablePressureGauge>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `SET PRESSURE LOW <http://sandbox.dexpi.org/rdl/SetPressureLow>`__
+
+   Name
+       SetPressureLow
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/SetPressureLow <http://sandbox.dexpi.org/rdl/SetPressureLow>`__
+
+.. admonition:: example
+
+   The instance safetyValveOrFitting1 represents a :doc:`SafetyValveOrFitting </reference/Piping/SafetyValveOrFitting>` with a :ref:`SetPressureLow <dexpi-Piping-SafetyValveOrFitting-SetPressureLow>` of 0.0 bar.
+
+   .. image:: /diagrams/diagram716.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="safetyValveOrFitting1"
+            ComponentClass="SafetyValveOrFitting"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/SafetyValveOrFitting" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="SetPressureLow"
+              AttributeURI="http://sandbox.dexpi.org/rdl/SetPressureLow"
+              Format="double"
+              Value="0.0"
+              Units="Bar"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1314539" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingComponent>
+      
+

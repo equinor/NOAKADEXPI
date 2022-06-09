@@ -1,0 +1,241 @@
+========
+Agitator
+========
+
+Overview
+========
+
+.. rubric:: Class
+
+An Agitator is a dynamic mixer that stirs or shakes fluids by reaction force from moving vanes.
+
+.. image:: Agitator.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Equipment </reference/Equipment/Equipment>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                           | Multiplicity | Type                                                                                                                                   |
++================================================================================================================+==============+========================================================================================================================================+
+| :ref:`DesignRotationalSpeed <dexpi-Equipment-Agitator-DesignRotationalSpeed>`                                  | 0..1         | :doc:`NullableRotationalFrequency </reference/PhysicalQuantities/NullableRotationalFrequency>`                                         |
++----------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`DesignShaftPower <dexpi-Equipment-Agitator-DesignShaftPower>`                                            | 0..1         | :doc:`NullablePower </reference/PhysicalQuantities/NullablePower>`                                                                     |
++----------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+
+.. rubric:: Attributes (composition)
+
++--------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------+
+| Name                                                               | Multiplicity | Type                                                                               |
++====================================================================+==============+====================================================================================+
+| :ref:`Rotor <dexpi-Equipment-Agitator-Rotor>`                      | 0..1         | :doc:`AgitatorRotor </reference/Equipment/AgitatorRotor>`                          |
++--------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `AGITATOR <http://data.posccaesar.org/rdl/RDS16045622>`__
+
+   ComponentClass
+       Agitator
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS16045622 <http://data.posccaesar.org/rdl/RDS16045622>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram82.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="agitator1"
+            ComponentClass="Agitator"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS16045622" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-Agitator-DesignRotationalSpeed:
+
+DesignRotationalSpeed
+=====================
+
+.. rubric:: Attribute (data)
+
+
+The rotational speed for which the :doc:`Agitator </reference/Equipment/Agitator>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableRotationalFrequency </reference/PhysicalQuantities/NullableRotationalFrequency>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN ROTATIONAL SPEED <http://sandbox.dexpi.org/rdl/DesignRotationalSpeed>`__
+
+   Name
+       DesignRotationalSpeed
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignRotationalSpeed <http://sandbox.dexpi.org/rdl/DesignRotationalSpeed>`__
+
+.. admonition:: example
+
+   The instance agitator1 represents an :doc:`Agitator </reference/Equipment/Agitator>` with a :ref:`DesignRotationalSpeed <dexpi-Equipment-Agitator-DesignRotationalSpeed>` of 180.0 min\ :sup:`-1`.
+
+   .. image:: /diagrams/diagram83.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="agitator1"
+            ComponentClass="Agitator"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS16045622" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignRotationalSpeed"
+              AttributeURI="http://sandbox.dexpi.org/rdl/DesignRotationalSpeed"
+              Format="double"
+              Value="180.0"
+              Units="ReciprocalMinute"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS4316851589" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-Agitator-DesignShaftPower:
+
+DesignShaftPower
+================
+
+.. rubric:: Attribute (data)
+
+
+The shaft power for which the :doc:`Agitator </reference/Equipment/Agitator>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullablePower </reference/PhysicalQuantities/NullablePower>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN SHAFT POWER <http://sandbox.dexpi.org/rdl/DesignShaftPower>`__
+
+   Name
+       DesignShaftPower
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignShaftPower <http://sandbox.dexpi.org/rdl/DesignShaftPower>`__
+
+.. admonition:: example
+
+   The instance agitator1 represents an :doc:`Agitator </reference/Equipment/Agitator>` with a :ref:`DesignShaftPower <dexpi-Equipment-Agitator-DesignShaftPower>` of 400.0 kW.
+
+   .. image:: /diagrams/diagram84.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="agitator1"
+            ComponentClass="Agitator"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS16045622" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignShaftPower"
+              AttributeURI="http://sandbox.dexpi.org/rdl/DesignShaftPower"
+              Format="double"
+              Value="400.0"
+              Units="Kilowatt"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1330919" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-Agitator-Rotor:
+
+Rotor
+=====
+
+.. rubric:: Attribute (composition)
+
+
+The rotor of the :doc:`Agitator </reference/Equipment/Agitator>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`AgitatorRotor </reference/Equipment/AgitatorRotor>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   The attribute is implemented using the :ref:`XML hierarchy of the Proteus file <proteus-concept-composition-property-xml-child>`: The  element for the attribute value (an :doc:`AgitatorRotor </reference/Equipment/AgitatorRotor>`\ ) is a child of the ``<Equipment>`` element for the attribute owner (an :doc:`Agitator </reference/Equipment/Agitator>`\ ).
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram85.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="agitator1"
+            ComponentClass="Agitator"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS16045622" DOTS123="DOTS123">
+          ...
+          <Equipment
+              ID="agitatorRotor1"
+              ComponentClass="AgitatorRotor"
+              ComponentClassURI="http://sandbox.dexpi.org/rdl/AgitatorRotor" DOTS123="DOTS123">
+            ...
+          <Equipment />
+          ...
+        <Equipment />
+      
+

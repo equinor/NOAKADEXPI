@@ -1,0 +1,16 @@
+======================
+InsulationSymbolSymbol
+======================
+
+Overview
+========
+
+.. rubric:: Class
+
+.. image:: InsulationSymbolSymbol.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Symbol </reference/Graphics/Symbol>`
+

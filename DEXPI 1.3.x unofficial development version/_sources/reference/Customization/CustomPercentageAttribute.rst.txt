@@ -1,0 +1,102 @@
+=========================
+CustomPercentageAttribute
+=========================
+
+Overview
+========
+
+.. rubric:: Class
+
+A :ref:`custom attribute <dexpi-concept-custom-attributes>` with :ref:`Value <dexpi-Customization-CustomPercentageAttribute-Value>` type :doc:`NullablePercentage </reference/PhysicalQuantities/NullablePercentage>`.
+
+.. image:: CustomPercentageAttribute.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`CustomAttribute </reference/Customization/CustomAttribute>`
+
+.. rubric:: Attributes (data)
+
++------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------+
+| Name                                                                                           | Multiplicity | Type                                                                                                           |
++================================================================================================+==============+================================================================================================================+
+| :ref:`Value <dexpi-Customization-CustomPercentageAttribute-Value>`                             | 1            | :doc:`NullablePercentage </reference/PhysicalQuantities/NullablePercentage>`                                   |
++------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   :doc:`CustomPercentageAttribute </reference/Customization/CustomPercentageAttribute>` is implemented as a :ref:`custom generic attribute for physical quantities <proteus-concept-dexpi-custom-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `PERCENTAGE <http://data.posccaesar.org/rdl/RDS13657820>`__
+
+   Type
+       Percentage
+
+   TypeURI
+       `http://data.posccaesar.org/rdl/RDS13657820 <http://data.posccaesar.org/rdl/RDS13657820>`__
+
+.. admonition:: example
+
+   As :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>` is abstract, we consider :doc:`PipingNetworkSystem </reference/Piping/PipingNetworkSystem>` as an arbitrary concrete subclass.
+
+   The :doc:`PipingNetworkSystem </reference/Piping/PipingNetworkSystem>` pipingNetworkSystem1 has a :doc:`CustomPercentageAttribute </reference/Customization/CustomPercentageAttribute>` with :ref:`AttributeName <dexpi-Customization-CustomAttribute-AttributeName>` "MaximumInclination" and an (arbitrary) :ref:`AttributeURI <dexpi-Customization-CustomAttribute-AttributeURI>` "http://www.example.org/bda06a11dcd736"DOTANDSPACEHACKThe :ref:`Value <dexpi-Customization-CustomPercentageAttribute-Value>` is 10 ???.
+
+   .. image:: /diagrams/diagram24.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingNetworkSystem
+            ID="pipingNetworkSystem1"
+            ComponentClass="PipingNetworkSystem"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS270359" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiCustomAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="MaximumInclination"
+              AttributeURI="http://www.example.org/bda06a11dcd736"
+              Format="double"
+              Type="Percentage"
+              TypeURI="http://data.posccaesar.org/rdl/RDS13657820"
+              Value="10"
+              Units="Percent"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1317959" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingNetworkSystem>
+      
+
+
+.. _dexpi-Customization-CustomPercentageAttribute-Value:
+
+Value
+=====
+
+.. rubric:: Attribute (data)
+
+
+The value of the :doc:`CustomPercentageAttribute </reference/Customization/CustomPercentageAttribute>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`NullablePercentage </reference/PhysicalQuantities/NullablePercentage>`
+
+Redefines
+    :ref:`Value <dexpi-Customization-CustomAttribute-Value>` (inherited from :doc:`CustomAttribute </reference/Customization/CustomAttribute>`\ )
+
+.. admonition:: proteus
+
+   See implementation of :doc:`CustomPercentageAttribute </reference/Customization/CustomPercentageAttribute>`.
+
+.. admonition:: example
+
+   See the example for :doc:`CustomPercentageAttribute </reference/Customization/CustomPercentageAttribute>`.
+

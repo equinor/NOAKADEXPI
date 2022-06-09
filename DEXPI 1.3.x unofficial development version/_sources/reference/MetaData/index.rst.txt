@@ -1,0 +1,16 @@
+================
+Package MetaData
+================
+
+* :doc:`overview`
+
+.. rubric:: Classes
+
+* :doc:`MetaData </reference/MetaData/MetaData>`
+
+
+.. toctree::
+   :hidden:
+
+   overview
+   MetaData

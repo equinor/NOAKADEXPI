@@ -1,0 +1,52 @@
+=================================
+SpringLoadedAngleGlobeSafetyValve
+=================================
+
+Overview
+========
+
+.. rubric:: Class
+
+A spring-loaded angle globe safety valve.
+
+.. image:: SpringLoadedAngleGlobeSafetyValve.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`SafetyValveOrFitting </reference/Piping/SafetyValveOrFitting>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingComponent>``
+
+   RDL reference
+       `SPRING LOADED ANGLE GLOBE SAFETY VALVE <http://sandbox.dexpi.org/rdl/SpringLoadedAngleGlobeSafetyValve>`__
+
+   ComponentClass
+       SpringLoadedAngleGlobeSafetyValve
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/SpringLoadedAngleGlobeSafetyValve <http://sandbox.dexpi.org/rdl/SpringLoadedAngleGlobeSafetyValve>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram719.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="springLoadedAngleGlobeSafetyValve1"
+            ComponentClass="SpringLoadedAngleGlobeSafetyValve"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/SpringLoadedAngleGlobeSafetyValve" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+

@@ -1,0 +1,16 @@
+==================
+PropertyBreakShape
+==================
+
+Overview
+========
+
+.. rubric:: Class
+
+.. image:: PropertyBreakShape.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Shape </reference/Graphics/Shape>`
+

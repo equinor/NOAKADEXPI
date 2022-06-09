@@ -1,0 +1,38 @@
+==========
+NullVolume
+==========
+
+Overview
+========
+
+.. rubric:: Data type
+
+A :ref:`null value <dexpi-concept-null-value>` for a physical quantity of type :doc:`NullableVolume </reference/PhysicalQuantities/NullableVolume>`. The only instance of this singleton type is :doc:`NULL_VOLUME </reference/PhysicalQuantities/NULL_VOLUME>`.
+
+.. image:: NullVolume.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`NullableVolume </reference/PhysicalQuantities/NullableVolume>`
+
+.. admonition:: proteus
+
+   All data attributes with type :doc:`NullableVolume </reference/PhysicalQuantities/NullableVolume>` (the base type of :doc:`NullVolume </reference/PhysicalQuantities/NullVolume>`\ ) are implemented as :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram603.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Format="double" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have a ``Name`` and an ``AttributeURI`` attribute. They depend on the data type attribute of the DEXPI class that owns the null instance :doc:`NULL_VOLUME </reference/PhysicalQuantities/NULL_VOLUME>` (e.g., see the implementation example for the attribute :ref:`VolumePerStroke <dexpi-Equipment-Displacer-VolumePerStroke>` of the DEXPI class :doc:`Displacer </reference/Equipment/Displacer>`\ )DOTANDSPACEHACKFor a null value, the attributes ``Units``, ``UnitsURI``, and ``Value`` *must not be used*.
+

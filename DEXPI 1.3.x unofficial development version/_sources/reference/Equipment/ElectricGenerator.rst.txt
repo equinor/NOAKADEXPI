@@ -1,0 +1,318 @@
+=================
+ElectricGenerator
+=================
+
+Overview
+========
+
+.. rubric:: Class
+
+An electric rotating machine that transforms non-electric energy into electric energy (from `http://data.posccaesar.org/rdl/RDS415709 <http://data.posccaesar.org/rdl/RDS415709>`__).
+
+.. image:: ElectricGenerator.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Equipment </reference/Equipment/Equipment>`
+
+.. rubric:: Subtypes
+
+* :doc:`AlternatingCurrentGenerator </reference/Equipment/AlternatingCurrentGenerator>`
+
+* :doc:`CustomElectricGenerator </reference/Equipment/CustomElectricGenerator>`
+
+* :doc:`DirectCurrentGenerator </reference/Equipment/DirectCurrentGenerator>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                                                               | Multiplicity | Type                                                                                                                                   |
++====================================================================================================================================================+==============+========================================================================================================================================+
+| :ref:`DesignInletPower <dexpi-Equipment-ElectricGenerator-DesignInletPower>`                                                                       | 0..1         | :doc:`NullablePower </reference/PhysicalQuantities/NullablePower>`                                                                     |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`DesignInletRotationalFrequency <dexpi-Equipment-ElectricGenerator-DesignInletRotationalFrequency>`                                           | 0..1         | :doc:`NullableRotationalFrequency </reference/PhysicalQuantities/NullableRotationalFrequency>`                                         |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`DesignOutletPower <dexpi-Equipment-ElectricGenerator-DesignOutletPower>`                                                                     | 0..1         | :doc:`NullablePower </reference/PhysicalQuantities/NullablePower>`                                                                     |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`DesignOutletVoltage <dexpi-Equipment-ElectricGenerator-DesignOutletVoltage>`                                                                 | 0..1         | :doc:`NullableVoltage </reference/PhysicalQuantities/NullableVoltage>`                                                                 |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `ELECTRIC GENERATOR <http://data.posccaesar.org/rdl/RDS415709>`__
+
+   ComponentClass
+       ElectricGenerator
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS415709 <http://data.posccaesar.org/rdl/RDS415709>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram250.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="electricGenerator1"
+            ComponentClass="ElectricGenerator"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS415709" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-ElectricGenerator-DesignInletPower:
+
+DesignInletPower
+================
+
+.. rubric:: Attribute (data)
+
+
+The inlet power for which the :doc:`ElectricGenerator </reference/Equipment/ElectricGenerator>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullablePower </reference/PhysicalQuantities/NullablePower>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN INLET POWER <http://sandbox.dexpi.org/rdl/DesignInletPower>`__
+
+   Name
+       DesignInletPower
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignInletPower <http://sandbox.dexpi.org/rdl/DesignInletPower>`__
+
+.. admonition:: example
+
+   The instance electricGenerator1 represents an :doc:`ElectricGenerator </reference/Equipment/ElectricGenerator>` with a :ref:`DesignInletPower <dexpi-Equipment-ElectricGenerator-DesignInletPower>` of 300.0 kW.
+
+   .. image:: /diagrams/diagram251.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="electricGenerator1"
+            ComponentClass="ElectricGenerator"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS415709" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignInletPower"
+              AttributeURI="http://sandbox.dexpi.org/rdl/DesignInletPower"
+              Format="double"
+              Value="300.0"
+              Units="Kilowatt"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1330919" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-ElectricGenerator-DesignInletRotationalFrequency:
+
+DesignInletRotationalFrequency
+==============================
+
+.. rubric:: Attribute (data)
+
+
+The inlet rotational frequency for which the :doc:`ElectricGenerator </reference/Equipment/ElectricGenerator>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableRotationalFrequency </reference/PhysicalQuantities/NullableRotationalFrequency>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN INLET ROTATIONAL FREQUENCY <http://sandbox.dexpi.org/rdl/DesignInletRotationalFrequency>`__
+
+   Name
+       DesignInletRotationalFrequency
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignInletRotationalFrequency <http://sandbox.dexpi.org/rdl/DesignInletRotationalFrequency>`__
+
+.. admonition:: example
+
+   The instance electricGenerator1 represents an :doc:`ElectricGenerator </reference/Equipment/ElectricGenerator>` with a :ref:`DesignInletRotationalFrequency <dexpi-Equipment-ElectricGenerator-DesignInletRotationalFrequency>` of 180.0 min\ :sup:`-1`.
+
+   .. image:: /diagrams/diagram252.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="electricGenerator1"
+            ComponentClass="ElectricGenerator"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS415709" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignInletRotationalFrequency"
+              AttributeURI="http://sandbox.dexpi.org/rdl/DesignInletRotationalFrequency"
+              Format="double"
+              Value="180.0"
+              Units="ReciprocalMinute"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS4316851589" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-ElectricGenerator-DesignOutletPower:
+
+DesignOutletPower
+=================
+
+.. rubric:: Attribute (data)
+
+
+The outlet power for which the :doc:`ElectricGenerator </reference/Equipment/ElectricGenerator>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullablePower </reference/PhysicalQuantities/NullablePower>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN OUTLET POWER <http://sandbox.dexpi.org/rdl/DesignOutletPower>`__
+
+   Name
+       DesignOutletPower
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignOutletPower <http://sandbox.dexpi.org/rdl/DesignOutletPower>`__
+
+.. admonition:: example
+
+   The instance electricGenerator1 represents an :doc:`ElectricGenerator </reference/Equipment/ElectricGenerator>` with a :ref:`DesignOutletPower <dexpi-Equipment-ElectricGenerator-DesignOutletPower>` of 500.0 kW.
+
+   .. image:: /diagrams/diagram253.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="electricGenerator1"
+            ComponentClass="ElectricGenerator"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS415709" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignOutletPower"
+              AttributeURI="http://sandbox.dexpi.org/rdl/DesignOutletPower"
+              Format="double"
+              Value="500.0"
+              Units="Kilowatt"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1330919" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-ElectricGenerator-DesignOutletVoltage:
+
+DesignOutletVoltage
+===================
+
+.. rubric:: Attribute (data)
+
+
+The outlet voltage for which the :doc:`ElectricGenerator </reference/Equipment/ElectricGenerator>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableVoltage </reference/PhysicalQuantities/NullableVoltage>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN OUTLET VOLTAGE <http://sandbox.dexpi.org/rdl/DesignOutletVoltage>`__
+
+   Name
+       DesignOutletVoltage
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignOutletVoltage <http://sandbox.dexpi.org/rdl/DesignOutletVoltage>`__
+
+.. admonition:: example
+
+   The instance electricGenerator1 represents an :doc:`ElectricGenerator </reference/Equipment/ElectricGenerator>` with a :ref:`DesignOutletVoltage <dexpi-Equipment-ElectricGenerator-DesignOutletVoltage>` of 600.0 V.
+
+   .. image:: /diagrams/diagram254.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="electricGenerator1"
+            ComponentClass="ElectricGenerator"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS415709" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignOutletVoltage"
+              AttributeURI="http://sandbox.dexpi.org/rdl/DesignOutletVoltage"
+              Format="double"
+              Value="600.0"
+              Units="Volt"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1347974" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+

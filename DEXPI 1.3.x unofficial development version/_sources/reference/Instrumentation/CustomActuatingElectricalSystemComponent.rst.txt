@@ -1,0 +1,56 @@
+========================================
+CustomActuatingElectricalSystemComponent
+========================================
+
+Overview
+========
+
+.. rubric:: Class
+
+A :ref:`custom component <dexpi-concept-custom-component>` of an :doc:`ActuatingElectricalSystem </reference/Instrumentation/ActuatingElectricalSystem>`, i.e., a component other than .
+
+.. image:: CustomActuatingElectricalSystemComponent.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`ConceptualObject </reference/DexpiModel/ConceptualObject>`
+
+* :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>`
+
+* :doc:`CustomObject </reference/Customization/CustomObject>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<ActuatingElectricalSystemComponent>``
+
+   RDL reference
+       `CUSTOM ACTUATING ELECTRICAL SYSTEM COMPONENT <http://sandbox.dexpi.org/rdl/CustomActuatingElectricalSystemComponent>`__
+
+   ComponentClass
+       CustomActuatingElectricalSystemComponent
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/CustomActuatingElectricalSystemComponent <http://sandbox.dexpi.org/rdl/CustomActuatingElectricalSystemComponent>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram526.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <ActuatingElectricalSystemComponent
+            ID="customActuatingElectricalSystemComponent1"
+            ComponentClass="CustomActuatingElectricalSystemComponent"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/CustomActuatingElectricalSystemComponent" DOTS123="DOTS123">
+          ...
+        </ActuatingElectricalSystemComponent>
+      
+

@@ -1,0 +1,9 @@
+=======
+Boolean
+=======
+
+Overview
+========
+
+.. rubric:: Data type
+

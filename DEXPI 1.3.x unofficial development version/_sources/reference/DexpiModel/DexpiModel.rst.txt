@@ -1,0 +1,377 @@
+==========
+DexpiModel
+==========
+
+Overview
+========
+
+.. rubric:: Class
+
+An entire DEXPI model. A :doc:`DexpiModel </reference/DexpiModel/DexpiModel>` is the root of the :ref:`composition hierarchy <dexpi-concept-composition-hierarchy>`.
+
+.. image:: DexpiModel.*
+
+
+.. rubric:: Attributes (data)
+
++------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------+
+| Name                                                                                                                               | Multiplicity | Type                                                                                       |
++====================================================================================================================================+==============+============================================================================================+
+| :ref:`ExportDateTime <dexpi-DexpiModel-DexpiModel-ExportDateTime>`                                                                 | 1            | :doc:`NullableDateTime </reference/DataTypes/NullableDateTime>`                            |
++------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------+
+| :ref:`OriginatingSystemName <dexpi-DexpiModel-DexpiModel-OriginatingSystemName>`                                                   | 1            | :doc:`NullableString </reference/DataTypes/NullableString>`                                |
++------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------+
+| :ref:`OriginatingSystemVendorName <dexpi-DexpiModel-DexpiModel-OriginatingSystemVendorName>`                                       | 1            | :doc:`NullableString </reference/DataTypes/NullableString>`                                |
++------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------+
+| :ref:`OriginatingSystemVersion <dexpi-DexpiModel-DexpiModel-OriginatingSystemVersion>`                                             | 1            | :doc:`NullableString </reference/DataTypes/NullableString>`                                |
++------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------+
+
+.. rubric:: Attributes (composition)
+
++----------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------+
+| Name                                                                                               | Multiplicity | Type                                                                                       |
++====================================================================================================+==============+============================================================================================+
+| :ref:`ConceptualModel <dexpi-DexpiModel-DexpiModel-ConceptualModel>`                               | 0..1         | :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`                             |
++----------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------+
+| :ref:`Diagram <dexpi-DexpiModel-DexpiModel-Diagram>`                                               | 0..1         | :doc:`Diagram </reference/Graphics/Diagram>`                                               |
++----------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------+
+| :ref:`ShapeCatalogues <dexpi-DexpiModel-DexpiModel-ShapeCatalogues>`                               | \*           | :doc:`ShapeCatalogue </reference/Graphics/ShapeCatalogue>`                                 |
++----------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented using the Proteus root element ``<PlantModel>``, i.e., a :doc:`DexpiModel </reference/DexpiModel/DexpiModel>` corresponds to an entire Proteus XML document.
+
+   Note that Proteus Schema requires that the ``<PlantModel>`` element contains a ``<PlantInformation>`` element. The latter has several required attributes:
+
+   * ``Application``: fixed value ``Dexpi`` (optional in Proteus Schema, but required by DEXPI);
+
+   * ``ApplicationVersion``: fixed value ``1.3`` (optional in Proteus Schema, but required by DEXPI);
+
+   * ``Date``: see :ref:`ExportDateTime <dexpi-DexpiModel-DexpiModel-ExportDateTime>`;
+
+   * ``Discipline``: fixed value ``PID``;
+
+   * ``Is3D``: fixed value ``no``;
+
+   * ``OriginatingSystem``: see :ref:`OriginatingSystemName <dexpi-DexpiModel-DexpiModel-OriginatingSystemName>`;
+
+   * ``SchemaVersion``: fixed value ``4.1``;
+
+   * ``Time``: see :ref:`ExportDateTime <dexpi-DexpiModel-DexpiModel-ExportDateTime>`;
+
+   The ``<PlantInformation>`` element must contain a ``<UnitsOfMeasure>`` element. However, none of the attributes of ``<UnitsOfMeasure>`` is relevant for DEXPI.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram43.*
+
+
+   .. admonition:: proteus-example
+   
+      The XML fragment below only shows the fixed XML attributes of the ``<PlantInformation>`` element. For the other required XML attributes ``Date``, ``OriginatingSystem``, ``Time``, and ``Units``, see the Proteus Schema implementations of the DEXPI attributes given above.
+
+      
+      .. code-block:: xml
+      
+        <PlantModel>
+          <PlantInformation
+              Discipline="PID"
+              Is3D="no"
+              SchemaVersion="4.1"
+              DOTS123="DOTS123">
+            <UnitsOfMeasure/>
+          </PlantInformation>
+        </PlantModel>
+      
+
+
+.. _dexpi-DexpiModel-DexpiModel-ConceptualModel:
+
+ConceptualModel
+===============
+
+.. rubric:: Attribute (composition)
+
+
+The conceptual model of the :doc:`DexpiModel </reference/DexpiModel/DexpiModel>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   See Proteus Schema Implementation of :doc:`ConceptualModel </reference/DexpiModel/ConceptualModel>`.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram44.*
+
+
+
+.. _dexpi-DexpiModel-DexpiModel-Diagram:
+
+Diagram
+=======
+
+.. rubric:: Attribute (composition)
+
+
+The diagram of the :doc:`DexpiModel </reference/DexpiModel/DexpiModel>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`Diagram </reference/Graphics/Diagram>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   The ``<Drawing>`` element that represents the :doc:`Diagram </reference/Graphics/Diagram>` is a child of the ``<PlantModel>`` element that represents the :doc:`DexpiModel </reference/DexpiModel/DexpiModel>`.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram45.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PlantModel>
+          <!-- dexpiModel1 -->
+          ...
+          <Drawing DOTS123="DOTS123">
+            <!-- diagram1 -->
+            ...
+          </Drawing>
+          ...
+        <PlantModel>
+      
+
+
+.. _dexpi-DexpiModel-DexpiModel-ExportDateTime:
+
+ExportDateTime
+==============
+
+.. rubric:: Attribute (data)
+
+
+The date time at which the :doc:`DexpiModel </reference/DexpiModel/DexpiModel>` was exported by the originating system (see :ref:`OriginatingSystemName <dexpi-DexpiModel-DexpiModel-OriginatingSystemName>`\ ).
+
+Multiplicity
+    1
+
+Type
+    :doc:`NullableDateTime </reference/DataTypes/NullableDateTime>`
+
+.. admonition:: proteus
+
+   The attribute is implemented using the XML attributes ``Date`` and ``Time`` of the ``<PlantInformation>`` element in the ``<PlantModel>`` element that corresponds to the :doc:`DexpiModel </reference/DexpiModel/DexpiModel>` (see Proteus Schema implementation of :doc:`DexpiModel </reference/DexpiModel/DexpiModel>`\ ):
+
+   * The date part of the :ref:`ExportDateTime <dexpi-DexpiModel-DexpiModel-ExportDateTime>` is implemented as the XML attribute ``Date`` according to the rules for the lexical representation of the XML Schema datatype `date <https://www.w3.org/TR/xmlschema-2/#date>`__ as specified by the W3C Recommendation `XML Schema Part 2: Datatypes Second Edition <https://www.w3.org/TR/xmlschema-2>`__ from October 28, 2004.
+
+   * The time part of the :ref:`ExportDateTime <dexpi-DexpiModel-DexpiModel-ExportDateTime>` is implemented as the XML attribute ``Time`` according to the rules for the lexical representation of the XML Schema datatype `time <https://www.w3.org/TR/xmlschema-2/#time>`__ as specified by the W3C Recommendation `XML Schema Part 2: Datatypes Second Edition <https://www.w3.org/TR/xmlschema-2>`__ from October 28, 2004.
+
+   Note that these two attribute are required by Proteus Schema, i.e., it is not possible to transfer the :ref:`null value <dexpi-concept-null-value>` :doc:`NULL_DATE_TIME </reference/DataTypes/NULL_DATE_TIME>`. Also note that the DEXPI type :doc:`DateTime </reference/DataTypes/DateTime>` does not allow timezone information. In consequence, the values of the XML attributes ``Date`` and ``Time`` must not contain timezone information.
+
+.. admonition:: example
+
+   December 7, 2020, 15:32:42 (:doc:`DateTime </reference/DataTypes/DateTime>` ``"2020-12-07T15:32:42"``)
+
+   .. admonition:: proteus-example
+   
+      The XML fragment below only contains the ``Date`` and ``Time`` attributes of the ``<PlantInformation>`` element. This element has further required attributes (see Proteus Schema implementation of :doc:`DexpiModel </reference/DexpiModel/DexpiModel>`\ ).
+
+      
+      .. code-block:: xml
+      
+        <PlantModel>
+          <PlantInformation
+              Date="2020-12-07"
+              Time="15:32:42"
+              DOTS123="DOTS123">
+            ...
+          </PlantInformation>
+        </PlantModel>
+      
+
+
+.. _dexpi-DexpiModel-DexpiModel-OriginatingSystemName:
+
+OriginatingSystemName
+=====================
+
+.. rubric:: Attribute (data)
+
+
+The name of the system from which the :doc:`DexpiModel </reference/DexpiModel/DexpiModel>` originates, e.g., the name of a P&ID tool.
+
+Multiplicity
+    1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as the XML attribute ``OriginatingSystem`` of the ``<PlantInformation>`` element in the ``<PlantModel>`` element that corresponds to the :doc:`DexpiModel </reference/DexpiModel/DexpiModel>` (see Proteus Schema implementation of :doc:`DexpiModel </reference/DexpiModel/DexpiModel>`\ )DOTANDSPACEHACKNote that this attribute is required by Proteus Schema, i.e., it is not possible to transfer the :ref:`null value <dexpi-concept-null-value>` :doc:`NULL_STRING </reference/DataTypes/NULL_STRING>`.
+
+.. admonition:: example
+
+   "PID Kit Professional" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      The XML fragment below only contains the ``OriginatingSystem`` attribute of the ``<PlantInformation>`` element. This element has further required attributes (see Proteus Schema implementation of :doc:`DexpiModel </reference/DexpiModel/DexpiModel>`\ ).
+
+      
+      .. code-block:: xml
+      
+        <PlantModel>
+          <PlantInformation
+              OriginatingSystem="PID Kit Professional"
+              DOTS123="DOTS123">
+            ...
+          </PlantInformation>
+        </PlantModel>
+      
+
+
+.. _dexpi-DexpiModel-DexpiModel-OriginatingSystemVendorName:
+
+OriginatingSystemVendorName
+===========================
+
+.. rubric:: Attribute (data)
+
+
+The name of the vendor of the system from which the :doc:`DexpiModel </reference/DexpiModel/DexpiModel>` originates, e.g., the name of a software company.
+
+Multiplicity
+    1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as the XML attribute ``OriginatingSystemVendor`` of the ``<PlantInformation>`` element in the ``<PlantModel>`` element that corresponds to the :doc:`DexpiModel </reference/DexpiModel/DexpiModel>` (see Proteus Schema implementation of :doc:`DexpiModel </reference/DexpiModel/DexpiModel>`\ ).
+
+.. admonition:: example
+
+   "Smart and Clever Systems, Inc." (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      The XML fragment below only contains the ``OriginatingSystemVendor`` attribute of the ``<PlantInformation>`` element. This element has further required attributes (see Proteus Schema implementation of :doc:`DexpiModel </reference/DexpiModel/DexpiModel>`\ ).
+
+      
+      .. code-block:: xml
+      
+        <PlantModel>
+          <PlantInformation
+              OriginatingSystemVendor="Smart and Clever Systems, Inc."
+              DOTS123="DOTS123">
+            ...
+          </PlantInformation>
+        </PlantModel>
+      
+
+
+.. _dexpi-DexpiModel-DexpiModel-OriginatingSystemVersion:
+
+OriginatingSystemVersion
+========================
+
+.. rubric:: Attribute (data)
+
+
+The version of the the system from which the :doc:`DexpiModel </reference/DexpiModel/DexpiModel>` originates, e.g., the version number of a tool.
+
+Multiplicity
+    1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as the XML attribute ``OriginatingSystemVersion`` of the ``<PlantInformation>`` element in the ``<PlantModel>`` element that corresponds to the :doc:`DexpiModel </reference/DexpiModel/DexpiModel>` (see Proteus Schema implementation of :doc:`DexpiModel </reference/DexpiModel/DexpiModel>`\ ).
+
+.. admonition:: example
+
+   "1.1" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      The XML fragment below only contains the ``OriginatingSystemVersion`` attribute of the ``<PlantInformation>`` element. This element has further required attributes (see Proteus Schema implementation of :doc:`DexpiModel </reference/DexpiModel/DexpiModel>`\ ).
+
+      
+      .. code-block:: xml
+      
+        <PlantModel>
+          <PlantInformation
+              OriginatingSystemVersion="1.1"
+              DOTS123="DOTS123">
+            ...
+          </PlantInformation>
+        </PlantModel>
+      
+
+
+.. _dexpi-DexpiModel-DexpiModel-ShapeCatalogues:
+
+ShapeCatalogues
+===============
+
+.. rubric:: Attribute (composition)
+
+
+The shape catalogues of the :doc:`DexpiModel </reference/DexpiModel/DexpiModel>`.
+
+Multiplicity
+    \*
+
+Type
+    :doc:`ShapeCatalogue </reference/Graphics/ShapeCatalogue>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   The ``<ShapeCatalogue>`` element that represents the :doc:`ShapeCatalogue </reference/Graphics/ShapeCatalogue>` is a child of the ``<PlantModel>`` element that represents the :doc:`DexpiModel </reference/DexpiModel/DexpiModel>`.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram46.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PlantModel>
+          <!-- dexpiModel1 -->
+          ...
+          <ShapeCatalogue DOTS123="DOTS123">
+            <!-- shapeCatalogue1 -->
+            ...
+           </ShapeCatalogue>
+          ...
+        <PlantModel>
+      
+

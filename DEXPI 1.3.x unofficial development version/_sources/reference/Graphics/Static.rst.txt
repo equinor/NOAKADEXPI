@@ -1,0 +1,16 @@
+======
+Static
+======
+
+Overview
+========
+
+.. rubric:: Class
+
+.. image:: Static.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`RepresentationTypeGroup </reference/Graphics/RepresentationTypeGroup>`
+

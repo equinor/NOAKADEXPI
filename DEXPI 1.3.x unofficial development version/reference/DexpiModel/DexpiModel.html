@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="lang:clipboard.copy" content="Copy to clipboard">
+  <meta name="lang:clipboard.copied" content="Copied to clipboard">
+  <meta name="lang:search.language" content="en">
+  <meta name="lang:search.pipeline.stopwords" content="True">
+  <meta name="lang:search.pipeline.trimmer" content="True">
+  <meta name="lang:search.result.none" content="No matching documents">
+  <meta name="lang:search.result.one" content="1 matching document">
+  <meta name="lang:search.result.other" content="# matching documents">
+  <meta name="lang:search.tokenizer" content="[\s\-]+">
+
+  
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700%7CRoboto:300,400,400i,700&amp;display=fallback" rel="stylesheet">
+
+    <style>
+      body,
+      input {
+        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif
+      }
+
+      code,
+      kbd,
+      pre {
+        font-family: "Roboto Mono", "Courier New", Courier, monospace
+      }
+    </style>
+  
+
+  <link rel="stylesheet" href="../../_static/stylesheets/application.css">
+  <link rel="stylesheet" href="../../_static/stylesheets/application-palette.css">
+  <link rel="stylesheet" href="../../_static/stylesheets/application-fixes.css">
+  
+  <link rel="stylesheet" href="../../_static/fonts/material-icons.css">
+  
+  <meta name="theme-color" content="#3f51b5">
+  <script src="../../_static/javascripts/modernizr.js"></script>
+  
+  
+  
+    <title>DexpiModel &#8212; DEXPI P&amp;ID Specification Version 1.3</title>
+    <link rel="stylesheet" href="../../_static/material.css" type="text/css">
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../../_static/stylesheets/custom.css">
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/javascripts/features.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html">
+    <link rel="search" title="Search" href="../../search.html">
+    <link rel="next" title="Package MetaData" href="../MetaData/index.html">
+    <link rel="prev" title="ConceptualObject" href="ConceptualObject.html">
+  
+   
+
+  </head>
+  <body dir="ltr" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+  <svg class="md-svg">
+    <defs data-children-count="0">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewbox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"></path></svg>
+      
+    </defs>
+  </svg>
+  
+  <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer">
+  <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search">
+  <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+  <a href="#reference/DexpiModel/DexpiModel" tabindex="1" class="md-skip"> Skip to content </a>
+  <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex navheader">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../index.html" title="DEXPI P&amp;ID Specification Version 1.3" class="md-header-nav__button md-logo">
+          
+            &#160;
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          <span class="md-header-nav__topic">DEXPI P&amp;ID Specification 1.3</span>
+          <span class="md-header-nav__topic"> DexpiModel </span>
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+        
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" action="../../search.html" method="GET" name="search">
+      <input type="text" class="md-search__input" name="q" placeholder="Search" autocapitalize="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#58829;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      
+      
+  
+  <script src="../../_static/javascripts/version_dropdown.js"></script>
+  <script>
+    var json_loc = "../../"versions.json"",
+        target_loc = "../../../",
+        text = "Versions";
+    $( document ).ready( add_version_dropdown(json_loc, target_loc, text));
+  </script>
+  
+
+    </div>
+  </nav>
+</header>
+
+  
+  <div class="md-container">
+    
+    
+    
+  <nav class="md-tabs" data-md-component="tabs">
+    <div class="md-tabs__inner md-grid">
+      <ul class="md-tabs__list">
+          <li class="md-tabs__item"><a href="../../index.html" class="md-tabs__link">DEXPI P&amp;ID Specification Version 1.3</a></li>
+          <li class="md-tabs__item"><a href="../index.html" class="md-tabs__link">DEXPI Information Model</a></li>
+          <li class="md-tabs__item"><a href="index.html" class="md-tabs__link">Package DexpiModel</a></li>
+      </ul>
+    </div>
+  </nav>
+    <main class="md-main">
+      <div class="md-main__inner md-grid" data-md-component="container">
+        
+          <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                <nav class="md-nav md-nav--primary" data-md-level="0">
+  <div class="feature-selection">
+<label for="examples" title="Show examples in reference reference part."><input checked id="show-examples" name="examples" type="checkbox">Show Examples</label><label for="proteus" title="Show proteus implementation in reference part."><input checked id="show-proteus" name="proteus" type="checkbox">Show Proteus</label>
+</div>
+<label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../index.html" title="DEXPI P&amp;ID Specification Version 1.3" class="md-nav__button md-logo">
+      
+        <img src="../../_static/" alt=" logo" width="48" height="48">
+      
+    </a>
+    <a href="../../index.html" title="DEXPI P&amp;ID Specification Version 1.3">DEXPI P&amp;ID Specification 1.3</a>
+  </label>
+  
+
+  
+  <ul class="md-nav__list">
+    <li class="md-nav__item">
+    
+    
+      <a href="../../concepts/index.html" class="md-nav__link">Overview and Concepts</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../index.html" class="md-nav__link">DEXPI Information Model</a>
+      <ul class="md-nav__list"> 
+    <li class="md-nav__item">
+    
+    
+      <a href="index.html" class="md-nav__link">Package DexpiModel</a>
+      <ul class="md-nav__list"> 
+    <li class="md-nav__item">
+    
+    
+      <a href="overview.html" class="md-nav__link">Overview</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="ConceptualModel.html" class="md-nav__link">ConceptualModel</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="ConceptualObject.html" class="md-nav__link">ConceptualObject</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    <label class="md-nav__link md-nav__link--active" for="__toc"> DexpiModel </label>
+    
+      <a href="#" class="md-nav__link md-nav__link--active">DexpiModel</a>
+      
+        
+<nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">DexpiModel</label>
+  <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item">
+<nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item">
+<a href="#overview" class="md-nav__link">Overview</a>
+        </li>
+        <li class="md-nav__item">
+<a href="#conceptualmodel" class="md-nav__link">ConceptualModel</a>
+        </li>
+        <li class="md-nav__item">
+<a href="#diagram" class="md-nav__link">Diagram</a>
+        </li>
+        <li class="md-nav__item">
+<a href="#exportdatetime" class="md-nav__link">ExportDateTime</a>
+        </li>
+        <li class="md-nav__item">
+<a href="#originatingsystemname" class="md-nav__link">OriginatingSystemName</a>
+        </li>
+        <li class="md-nav__item">
+<a href="#originatingsystemvendorname" class="md-nav__link">OriginatingSystemVendorName</a>
+        </li>
+        <li class="md-nav__item">
+<a href="#originatingsystemversion" class="md-nav__link">OriginatingSystemVersion</a>
+        </li>
+        <li class="md-nav__item">
+<a href="#shapecatalogues" class="md-nav__link">ShapeCatalogues</a>
+        </li>
+</ul>
+            </nav>
+        </li>
+  </ul>
+</nav>
+      </li>
+</ul>
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../MetaData/index.html" class="md-nav__link">Package MetaData</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../PlantStructure/index.html" class="md-nav__link">Package PlantStructure</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../Equipment/index.html" class="md-nav__link">Package Equipment</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../Piping/index.html" class="md-nav__link">Package Piping</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../Instrumentation/index.html" class="md-nav__link">Package Instrumentation</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../Customization/index.html" class="md-nav__link">Package Customization</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../Enumerations/index.html" class="md-nav__link">Package Enumerations</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../PhysicalQuantities/index.html" class="md-nav__link">Package PhysicalQuantities</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../Graphics/index.html" class="md-nav__link">Package Graphics</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../DataTypes/index.html" class="md-nav__link">Package DataTypes</a>
+      
+    
+    </li>
+</ul>
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../../appendix/index.html" class="md-nav__link">Appendix</a>
+      
+    
+    </li>
+  </ul>
+  
+
+</nav>
+              </div>
+            </div>
+          </div>
+          <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                
+<nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">DexpiModel</label>
+  <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item">
+<nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item">
+<a href="#overview" class="md-nav__link">Overview</a>
+        </li>
+        <li class="md-nav__item">
+<a href="#conceptualmodel" class="md-nav__link">ConceptualModel</a>
+        </li>
+        <li class="md-nav__item">
+<a href="#diagram" class="md-nav__link">Diagram</a>
+        </li>
+        <li class="md-nav__item">
+<a href="#exportdatetime" class="md-nav__link">ExportDateTime</a>
+        </li>
+        <li class="md-nav__item">
+<a href="#originatingsystemname" class="md-nav__link">OriginatingSystemName</a>
+        </li>
+        <li class="md-nav__item">
+<a href="#originatingsystemvendorname" class="md-nav__link">OriginatingSystemVendorName</a>
+        </li>
+        <li class="md-nav__item">
+<a href="#originatingsystemversion" class="md-nav__link">OriginatingSystemVersion</a>
+        </li>
+        <li class="md-nav__item">
+<a href="#shapecatalogues" class="md-nav__link">ShapeCatalogues</a>
+        </li>
+</ul>
+            </nav>
+        </li>
+  </ul>
+</nav>
+              </div>
+            </div>
+          </div>
+        
+        <div class="md-content">
+          <article class="md-content__inner md-typeset" role="main">
+            
+  
+<h1 id="reference-dexpimodel-dexpimodel--page-root">DexpiModel<a class="headerlink" href="#reference-dexpimodel-dexpimodel--page-root" title="Permalink to this headline">&#182;</a>
+</h1>
+
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permalink to this headline">&#182;</a>
+</h2>
+<p class="rubric">Class</p>
+<p>An entire DEXPI model. A <a class="reference internal" href="#"><span class="doc">DexpiModel</span></a> is the root of the <span class="xref std std-ref">composition hierarchy</span>.</p>
+<object class="max-width-100" data="../../_images/DexpiModel.svg" type="image/svg+xml"></object><p class="rubric">Attributes (data)</p>
+<table>
+<thead>
+<tr class="row-odd">
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Multiplicity</p></th>
+<th class="head"><p>Type</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even">
+<td><p><a class="reference internal" href="#dexpi-dexpimodel-dexpimodel-exportdatetime"><span class="std std-ref">ExportDateTime</span></a></p></td>
+<td><p>1</p></td>
+<td><p><a class="reference internal" href="../DataTypes/NullableDateTime.html"><span class="doc">NullableDateTime</span></a></p></td>
+</tr>
+<tr class="row-odd">
+<td><p><a class="reference internal" href="#dexpi-dexpimodel-dexpimodel-originatingsystemname"><span class="std std-ref">OriginatingSystemName</span></a></p></td>
+<td><p>1</p></td>
+<td><p><a class="reference internal" href="../DataTypes/NullableString.html"><span class="doc">NullableString</span></a></p></td>
+</tr>
+<tr class="row-even">
+<td><p><a class="reference internal" href="#dexpi-dexpimodel-dexpimodel-originatingsystemvendorname"><span class="std std-ref">OriginatingSystemVendorName</span></a></p></td>
+<td><p>1</p></td>
+<td><p><a class="reference internal" href="../DataTypes/NullableString.html"><span class="doc">NullableString</span></a></p></td>
+</tr>
+<tr class="row-odd">
+<td><p><a class="reference internal" href="#dexpi-dexpimodel-dexpimodel-originatingsystemversion"><span class="std std-ref">OriginatingSystemVersion</span></a></p></td>
+<td><p>1</p></td>
+<td><p><a class="reference internal" href="../DataTypes/NullableString.html"><span class="doc">NullableString</span></a></p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes (composition)</p>
+<table>
+<thead>
+<tr class="row-odd">
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Multiplicity</p></th>
+<th class="head"><p>Type</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even">
+<td><p><a class="reference internal" href="#dexpi-dexpimodel-dexpimodel-conceptualmodel"><span class="std std-ref">ConceptualModel</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="reference internal" href="ConceptualModel.html"><span class="doc">ConceptualModel</span></a></p></td>
+</tr>
+<tr class="row-odd">
+<td><p><a class="reference internal" href="#dexpi-dexpimodel-dexpimodel-diagram"><span class="std std-ref">Diagram</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="reference internal" href="../Graphics/Diagram.html"><span class="doc">Diagram</span></a></p></td>
+</tr>
+<tr class="row-even">
+<td><p><a class="reference internal" href="#dexpi-dexpimodel-dexpimodel-shapecatalogues"><span class="std std-ref">ShapeCatalogues</span></a></p></td>
+<td><p>*</p></td>
+<td><p><a class="reference internal" href="../Graphics/ShapeCatalogue.html"><span class="doc">ShapeCatalogue</span></a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="feature-proteus proteus admonition tip">
+<p class="admonition-title">Implementation in Proteus Schema</p>
+<p>The class is implemented using the Proteus root element <code class="docutils literal notranslate"><span class="pre">&lt;PlantModel&gt;</span></code>, i.e., a <a class="reference internal" href="#"><span class="doc">DexpiModel</span></a> corresponds to an entire Proteus XML document.</p>
+<p>Note that Proteus Schema requires that the <code class="docutils literal notranslate"><span class="pre">&lt;PlantModel&gt;</span></code> element contains a <code class="docutils literal notranslate"><span class="pre">&lt;PlantInformation&gt;</span></code> element. The latter has several required attributes:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Application</span></code>: fixed value <code class="docutils literal notranslate"><span class="pre">Dexpi</span></code> (optional in Proteus Schema, but required by DEXPI);</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ApplicationVersion</span></code>: fixed value <code class="docutils literal notranslate"><span class="pre">1.3</span></code> (optional in Proteus Schema, but required by DEXPI);</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Date</span></code>: see <a class="reference internal" href="#dexpi-dexpimodel-dexpimodel-exportdatetime"><span class="std std-ref">ExportDateTime</span></a>;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Discipline</span></code>: fixed value <code class="docutils literal notranslate"><span class="pre">PID</span></code>;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Is3D</span></code>: fixed value <code class="docutils literal notranslate"><span class="pre">no</span></code>;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">OriginatingSystem</span></code>: see <a class="reference internal" href="#dexpi-dexpimodel-dexpimodel-originatingsystemname"><span class="std std-ref">OriginatingSystemName</span></a>;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SchemaVersion</span></code>: fixed value <code class="docutils literal notranslate"><span class="pre">4.1</span></code>;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Time</span></code>: see <a class="reference internal" href="#dexpi-dexpimodel-dexpimodel-exportdatetime"><span class="std std-ref">ExportDateTime</span></a>;</p></li>
+</ul>
+<p>The <code class="docutils literal notranslate"><span class="pre">&lt;PlantInformation&gt;</span></code> element must contain a <code class="docutils literal notranslate"><span class="pre">&lt;UnitsOfMeasure&gt;</span></code> element. However, none of the attributes of <code class="docutils literal notranslate"><span class="pre">&lt;UnitsOfMeasure&gt;</span></code> is relevant for DEXPI.</p>
+</div>
+<div class="feature-examples examples admonition">
+<p class="admonition-title">Example</p>
+<object class="max-width-100" data="../../_images/diagram43.svg" type="image/svg+xml"></object><div class="feature-proteus proteus admonition tip">
+<p class="admonition-title">Implementation in Proteus Schema</p>
+<p>The XML fragment below only shows the fixed XML attributes of the <code class="docutils literal notranslate"><span class="pre">&lt;PlantInformation&gt;</span></code> element. For the other required XML attributes <code class="docutils literal notranslate"><span class="pre">Date</span></code>, <code class="docutils literal notranslate"><span class="pre">OriginatingSystem</span></code>, <code class="docutils literal notranslate"><span class="pre">Time</span></code>, and <code class="docutils literal notranslate"><span class="pre">Units</span></code>, see the Proteus Schema implementations of the DEXPI attributes given above.</p>
+<div class="highlight-xml notranslate">
+<div class="highlight"><pre><span></span><span class="nt">&lt;PlantModel&gt;</span>
+  <span class="nt">&lt;PlantInformation</span>
+      <span class="na">Discipline=</span><span class="s">"PID"</span>
+      <span class="na">Is3D=</span><span class="s">"no"</span>
+      <span class="na">SchemaVersion=</span><span class="s">"4.1"</span>
+      <span class="na">...</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;UnitsOfMeasure/&gt;</span>
+  <span class="nt">&lt;/PlantInformation&gt;</span>
+<span class="nt">&lt;/PlantModel&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+<span id="dexpi-dexpimodel-dexpimodel-conceptualmodel"></span><h2 id="conceptualmodel">ConceptualModel<a class="headerlink" href="#conceptualmodel" title="Permalink to this headline">&#182;</a>
+</h2>
+<p class="rubric">Attribute (composition)</p>
+<p>The conceptual model of the <a class="reference internal" href="#"><span class="doc">DexpiModel</span></a>.</p>
+<div class="terms">
+<div class="term-def"><p><span class="term">Multiplicity: </span>0..1</p></div>
+<div class="term-def"><p><span class="term">Type: </span><a class="reference internal" href="ConceptualModel.html"><span class="doc">ConceptualModel</span></a></p></div>
+<div class="term-def"><p><span class="term">Opposite multiplicity: </span>0..1</p></div>
+</div>
+<div class="feature-proteus proteus admonition tip">
+<p class="admonition-title">Implementation in Proteus Schema</p>
+<p>See Proteus Schema Implementation of <a class="reference internal" href="ConceptualModel.html"><span class="doc">ConceptualModel</span></a>.</p>
+</div>
+<div class="feature-examples examples admonition">
+<p class="admonition-title">Example</p>
+<object class="max-width-100" data="../../_images/diagram44.svg" type="image/svg+xml"></object>
+</div>
+
+
+<span id="dexpi-dexpimodel-dexpimodel-diagram"></span><h2 id="diagram">Diagram<a class="headerlink" href="#diagram" title="Permalink to this headline">&#182;</a>
+</h2>
+<p class="rubric">Attribute (composition)</p>
+<p>The diagram of the <a class="reference internal" href="#"><span class="doc">DexpiModel</span></a>.</p>
+<div class="terms">
+<div class="term-def"><p><span class="term">Multiplicity: </span>0..1</p></div>
+<div class="term-def"><p><span class="term">Type: </span><a class="reference internal" href="../Graphics/Diagram.html"><span class="doc">Diagram</span></a></p></div>
+<div class="term-def"><p><span class="term">Opposite multiplicity: </span>0..1</p></div>
+</div>
+<div class="feature-proteus proteus admonition tip">
+<p class="admonition-title">Implementation in Proteus Schema</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">&lt;Drawing&gt;</span></code> element that represents the <a class="reference internal" href="../Graphics/Diagram.html"><span class="doc">Diagram</span></a> is a child of the <code class="docutils literal notranslate"><span class="pre">&lt;PlantModel&gt;</span></code> element that represents the <a class="reference internal" href="#"><span class="doc">DexpiModel</span></a>.</p>
+</div>
+<div class="feature-examples examples admonition">
+<p class="admonition-title">Example</p>
+<object class="max-width-100" data="../../_images/diagram45.svg" type="image/svg+xml"></object><div class="feature-proteus proteus admonition tip">
+<p class="admonition-title">Implementation in Proteus Schema</p>
+<div class="highlight-xml notranslate">
+<div class="highlight"><pre><span></span><span class="nt">&lt;PlantModel&gt;</span>
+  <span class="c">&lt;!-- dexpiModel1 --&gt;</span>
+  ...
+  <span class="nt">&lt;Drawing</span> <span class="na">...</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- diagram1 --&gt;</span>
+    ...
+  <span class="nt">&lt;/Drawing&gt;</span>
+  ...
+<span class="nt">&lt;PlantModel&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+<span id="dexpi-dexpimodel-dexpimodel-exportdatetime"></span><h2 id="exportdatetime">ExportDateTime<a class="headerlink" href="#exportdatetime" title="Permalink to this headline">&#182;</a>
+</h2>
+<p class="rubric">Attribute (data)</p>
+<p>The date time at which the <a class="reference internal" href="#"><span class="doc">DexpiModel</span></a> was exported by the originating system (see <a class="reference internal" href="#dexpi-dexpimodel-dexpimodel-originatingsystemname"><span class="std std-ref">OriginatingSystemName</span></a>).</p>
+<div class="terms">
+<div class="term-def"><p><span class="term">Multiplicity: </span>1</p></div>
+<div class="term-def"><p><span class="term">Type: </span><a class="reference internal" href="../DataTypes/NullableDateTime.html"><span class="doc">NullableDateTime</span></a></p></div>
+</div>
+<div class="feature-proteus proteus admonition tip">
+<p class="admonition-title">Implementation in Proteus Schema</p>
+<p>The attribute is implemented using the XML attributes <code class="docutils literal notranslate"><span class="pre">Date</span></code> and <code class="docutils literal notranslate"><span class="pre">Time</span></code> of the <code class="docutils literal notranslate"><span class="pre">&lt;PlantInformation&gt;</span></code> element in the <code class="docutils literal notranslate"><span class="pre">&lt;PlantModel&gt;</span></code> element that corresponds to the <a class="reference internal" href="#"><span class="doc">DexpiModel</span></a> (see Proteus Schema implementation of <a class="reference internal" href="#"><span class="doc">DexpiModel</span></a>):</p>
+<ul class="simple">
+<li><p>The date part of the <a class="reference internal" href="#dexpi-dexpimodel-dexpimodel-exportdatetime"><span class="std std-ref">ExportDateTime</span></a> is implemented as the XML attribute <code class="docutils literal notranslate"><span class="pre">Date</span></code> according to the rules for the lexical representation of the XML Schema datatype <a class="reference external" href="https://www.w3.org/TR/xmlschema-2/#date">date</a> as specified by the W3C Recommendation <a class="reference external" href="https://www.w3.org/TR/xmlschema-2">XML Schema Part 2: Datatypes Second Edition</a> from October 28, 2004.</p></li>
+<li><p>The time part of the <a class="reference internal" href="#dexpi-dexpimodel-dexpimodel-exportdatetime"><span class="std std-ref">ExportDateTime</span></a> is implemented as the XML attribute <code class="docutils literal notranslate"><span class="pre">Time</span></code> according to the rules for the lexical representation of the XML Schema datatype <a class="reference external" href="https://www.w3.org/TR/xmlschema-2/#time">time</a> as specified by the W3C Recommendation <a class="reference external" href="https://www.w3.org/TR/xmlschema-2">XML Schema Part 2: Datatypes Second Edition</a> from October 28, 2004.</p></li>
+</ul>
+<p>Note that these two attribute are required by Proteus Schema, i.e., it is not possible to transfer the <a class="reference internal" href="../../concepts/modeling_concepts.html#dexpi-concept-null-value"><span class="std std-ref">null value</span></a> <a class="reference internal" href="../DataTypes/NULL_DATE_TIME.html"><span class="doc">NULL_DATE_TIME</span></a>. Also note that the DEXPI type <a class="reference internal" href="../DataTypes/DateTime.html"><span class="doc">DateTime</span></a> does not allow timezone information. In consequence, the values of the XML attributes <code class="docutils literal notranslate"><span class="pre">Date</span></code> and <code class="docutils literal notranslate"><span class="pre">Time</span></code> must not contain timezone information.</p>
+</div>
+<div class="feature-examples examples admonition">
+<p class="admonition-title">Example</p>
+<p>December 7, 2020, 15:32:42 (<a class="reference internal" href="../DataTypes/DateTime.html"><span class="doc">DateTime</span></a> <code class="docutils literal notranslate"><span class="pre">"2020-12-07T15:32:42"</span></code>)</p>
+<div class="feature-proteus proteus admonition tip">
+<p class="admonition-title">Implementation in Proteus Schema</p>
+<p>The XML fragment below only contains the <code class="docutils literal notranslate"><span class="pre">Date</span></code> and <code class="docutils literal notranslate"><span class="pre">Time</span></code> attributes of the <code class="docutils literal notranslate"><span class="pre">&lt;PlantInformation&gt;</span></code> element. This element has further required attributes (see Proteus Schema implementation of <a class="reference internal" href="#"><span class="doc">DexpiModel</span></a>).</p>
+<div class="highlight-xml notranslate">
+<div class="highlight"><pre><span></span><span class="nt">&lt;PlantModel&gt;</span>
+  <span class="nt">&lt;PlantInformation</span>
+      <span class="na">Date=</span><span class="s">"2020-12-07"</span>
+      <span class="na">Time=</span><span class="s">"15:32:42"</span>
+      <span class="na">...</span><span class="nt">&gt;</span>
+    ...
+  <span class="nt">&lt;/PlantInformation&gt;</span>
+<span class="nt">&lt;/PlantModel&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+<span id="dexpi-dexpimodel-dexpimodel-originatingsystemname"></span><h2 id="originatingsystemname">OriginatingSystemName<a class="headerlink" href="#originatingsystemname" title="Permalink to this headline">&#182;</a>
+</h2>
+<p class="rubric">Attribute (data)</p>
+<p>The name of the system from which the <a class="reference internal" href="#"><span class="doc">DexpiModel</span></a> originates, e.g., the name of a P&amp;ID tool.</p>
+<div class="terms">
+<div class="term-def"><p><span class="term">Multiplicity: </span>1</p></div>
+<div class="term-def"><p><span class="term">Type: </span><a class="reference internal" href="../DataTypes/NullableString.html"><span class="doc">NullableString</span></a></p></div>
+</div>
+<div class="feature-proteus proteus admonition tip">
+<p class="admonition-title">Implementation in Proteus Schema</p>
+<p>The attribute is implemented as the XML attribute <code class="docutils literal notranslate"><span class="pre">OriginatingSystem</span></code> of the <code class="docutils literal notranslate"><span class="pre">&lt;PlantInformation&gt;</span></code> element in the <code class="docutils literal notranslate"><span class="pre">&lt;PlantModel&gt;</span></code> element that corresponds to the <a class="reference internal" href="#"><span class="doc">DexpiModel</span></a> (see Proteus Schema implementation of <a class="reference internal" href="#"><span class="doc">DexpiModel</span></a>). Note that this attribute is required by Proteus Schema, i.e., it is not possible to transfer the <a class="reference internal" href="../../concepts/modeling_concepts.html#dexpi-concept-null-value"><span class="std std-ref">null value</span></a> <a class="reference internal" href="../DataTypes/NULL_STRING.html"><span class="doc">NULL_STRING</span></a>.</p>
+</div>
+<div class="feature-examples examples admonition">
+<p class="admonition-title">Example</p>
+<p>&#8220;PID Kit Professional&#8221; (<a class="reference internal" href="../DataTypes/String.html"><span class="doc">String</span></a>)</p>
+<div class="feature-proteus proteus admonition tip">
+<p class="admonition-title">Implementation in Proteus Schema</p>
+<p>The XML fragment below only contains the <code class="docutils literal notranslate"><span class="pre">OriginatingSystem</span></code> attribute of the <code class="docutils literal notranslate"><span class="pre">&lt;PlantInformation&gt;</span></code> element. This element has further required attributes (see Proteus Schema implementation of <a class="reference internal" href="#"><span class="doc">DexpiModel</span></a>).</p>
+<div class="highlight-xml notranslate">
+<div class="highlight"><pre><span></span><span class="nt">&lt;PlantModel&gt;</span>
+  <span class="nt">&lt;PlantInformation</span>
+      <span class="na">OriginatingSystem=</span><span class="s">"PID Kit Professional"</span>
+      <span class="na">...</span><span class="nt">&gt;</span>
+    ...
+  <span class="nt">&lt;/PlantInformation&gt;</span>
+<span class="nt">&lt;/PlantModel&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+<span id="dexpi-dexpimodel-dexpimodel-originatingsystemvendorname"></span><h2 id="originatingsystemvendorname">OriginatingSystemVendorName<a class="headerlink" href="#originatingsystemvendorname" title="Permalink to this headline">&#182;</a>
+</h2>
+<p class="rubric">Attribute (data)</p>
+<p>The name of the vendor of the system from which the <a class="reference internal" href="#"><span class="doc">DexpiModel</span></a> originates, e.g., the name of a software company.</p>
+<div class="terms">
+<div class="term-def"><p><span class="term">Multiplicity: </span>1</p></div>
+<div class="term-def"><p><span class="term">Type: </span><a class="reference internal" href="../DataTypes/NullableString.html"><span class="doc">NullableString</span></a></p></div>
+</div>
+<div class="feature-proteus proteus admonition tip">
+<p class="admonition-title">Implementation in Proteus Schema</p>
+<p>The attribute is implemented as the XML attribute <code class="docutils literal notranslate"><span class="pre">OriginatingSystemVendor</span></code> of the <code class="docutils literal notranslate"><span class="pre">&lt;PlantInformation&gt;</span></code> element in the <code class="docutils literal notranslate"><span class="pre">&lt;PlantModel&gt;</span></code> element that corresponds to the <a class="reference internal" href="#"><span class="doc">DexpiModel</span></a> (see Proteus Schema implementation of <a class="reference internal" href="#"><span class="doc">DexpiModel</span></a>).</p>
+</div>
+<div class="feature-examples examples admonition">
+<p class="admonition-title">Example</p>
+<p>&#8220;Smart and Clever Systems, Inc.&#8221; (<a class="reference internal" href="../DataTypes/String.html"><span class="doc">String</span></a>)</p>
+<div class="feature-proteus proteus admonition tip">
+<p class="admonition-title">Implementation in Proteus Schema</p>
+<p>The XML fragment below only contains the <code class="docutils literal notranslate"><span class="pre">OriginatingSystemVendor</span></code> attribute of the <code class="docutils literal notranslate"><span class="pre">&lt;PlantInformation&gt;</span></code> element. This element has further required attributes (see Proteus Schema implementation of <a class="reference internal" href="#"><span class="doc">DexpiModel</span></a>).</p>
+<div class="highlight-xml notranslate">
+<div class="highlight"><pre><span></span><span class="nt">&lt;PlantModel&gt;</span>
+  <span class="nt">&lt;PlantInformation</span>
+      <span class="na">OriginatingSystemVendor=</span><span class="s">"Smart and Clever Systems, Inc."</span>
+      <span class="na">...</span><span class="nt">&gt;</span>
+    ...
+  <span class="nt">&lt;/PlantInformation&gt;</span>
+<span class="nt">&lt;/PlantModel&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+<span id="dexpi-dexpimodel-dexpimodel-originatingsystemversion"></span><h2 id="originatingsystemversion">OriginatingSystemVersion<a class="headerlink" href="#originatingsystemversion" title="Permalink to this headline">&#182;</a>
+</h2>
+<p class="rubric">Attribute (data)</p>
+<p>The version of the the system from which the <a class="reference internal" href="#"><span class="doc">DexpiModel</span></a> originates, e.g., the version number of a tool.</p>
+<div class="terms">
+<div class="term-def"><p><span class="term">Multiplicity: </span>1</p></div>
+<div class="term-def"><p><span class="term">Type: </span><a class="reference internal" href="../DataTypes/NullableString.html"><span class="doc">NullableString</span></a></p></div>
+</div>
+<div class="feature-proteus proteus admonition tip">
+<p class="admonition-title">Implementation in Proteus Schema</p>
+<p>The attribute is implemented as the XML attribute <code class="docutils literal notranslate"><span class="pre">OriginatingSystemVersion</span></code> of the <code class="docutils literal notranslate"><span class="pre">&lt;PlantInformation&gt;</span></code> element in the <code class="docutils literal notranslate"><span class="pre">&lt;PlantModel&gt;</span></code> element that corresponds to the <a class="reference internal" href="#"><span class="doc">DexpiModel</span></a> (see Proteus Schema implementation of <a class="reference internal" href="#"><span class="doc">DexpiModel</span></a>).</p>
+</div>
+<div class="feature-examples examples admonition">
+<p class="admonition-title">Example</p>
+<p>&#8220;1.1&#8221; (<a class="reference internal" href="../DataTypes/String.html"><span class="doc">String</span></a>)</p>
+<div class="feature-proteus proteus admonition tip">
+<p class="admonition-title">Implementation in Proteus Schema</p>
+<p>The XML fragment below only contains the <code class="docutils literal notranslate"><span class="pre">OriginatingSystemVersion</span></code> attribute of the <code class="docutils literal notranslate"><span class="pre">&lt;PlantInformation&gt;</span></code> element. This element has further required attributes (see Proteus Schema implementation of <a class="reference internal" href="#"><span class="doc">DexpiModel</span></a>).</p>
+<div class="highlight-xml notranslate">
+<div class="highlight"><pre><span></span><span class="nt">&lt;PlantModel&gt;</span>
+  <span class="nt">&lt;PlantInformation</span>
+      <span class="na">OriginatingSystemVersion=</span><span class="s">"1.1"</span>
+      <span class="na">...</span><span class="nt">&gt;</span>
+    ...
+  <span class="nt">&lt;/PlantInformation&gt;</span>
+<span class="nt">&lt;/PlantModel&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+<span id="dexpi-dexpimodel-dexpimodel-shapecatalogues"></span><h2 id="shapecatalogues">ShapeCatalogues<a class="headerlink" href="#shapecatalogues" title="Permalink to this headline">&#182;</a>
+</h2>
+<p class="rubric">Attribute (composition)</p>
+<p>The shape catalogues of the <a class="reference internal" href="#"><span class="doc">DexpiModel</span></a>.</p>
+<div class="terms">
+<div class="term-def"><p><span class="term">Multiplicity: </span>*</p></div>
+<div class="term-def"><p><span class="term">Type: </span><a class="reference internal" href="../Graphics/ShapeCatalogue.html"><span class="doc">ShapeCatalogue</span></a></p></div>
+<div class="term-def"><p><span class="term">Opposite multiplicity: </span>0..1</p></div>
+</div>
+<div class="feature-proteus proteus admonition tip">
+<p class="admonition-title">Implementation in Proteus Schema</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">&lt;ShapeCatalogue&gt;</span></code> element that represents the <a class="reference internal" href="../Graphics/ShapeCatalogue.html"><span class="doc">ShapeCatalogue</span></a> is a child of the <code class="docutils literal notranslate"><span class="pre">&lt;PlantModel&gt;</span></code> element that represents the <a class="reference internal" href="#"><span class="doc">DexpiModel</span></a>.</p>
+</div>
+<div class="feature-examples examples admonition">
+<p class="admonition-title">Example</p>
+<object class="max-width-100" data="../../_images/diagram46.svg" type="image/svg+xml"></object><div class="feature-proteus proteus admonition tip">
+<p class="admonition-title">Implementation in Proteus Schema</p>
+<div class="highlight-xml notranslate">
+<div class="highlight"><pre><span></span><span class="nt">&lt;PlantModel&gt;</span>
+  <span class="c">&lt;!-- dexpiModel1 --&gt;</span>
+  ...
+  <span class="nt">&lt;ShapeCatalogue</span> <span class="na">...</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- shapeCatalogue1 --&gt;</span>
+    ...
+   <span class="nt">&lt;/ShapeCatalogue&gt;</span>
+  ...
+<span class="nt">&lt;PlantModel&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+
+
+          </article>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="md-footer">
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+          
+            <a href="ConceptualObject.html" title="ConceptualObject" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+              </div>
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span class="md-footer-nav__direction"> Previous </span> ConceptualObject </span>
+              </div>
+            </a>
+          
+          
+            <a href="../MetaData/index.html" title="Package MetaData" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+<span class="md-flex__ellipsis"> <span class="md-footer-nav__direction"> Next </span> Package MetaData </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+<i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          
+        </a>
+        
+      </nav>
+    </div>
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <div class="md-footer-copyright">
+          <div style="font-size:0.9rem" class="md-footer-copyright__highlight">
+<a href="http://creativecommons.org/licenses/by/4.0/" rel="license"><img src="https://i.creativecommons.org/l/by/4.0/88x31.png" style="border-width:0; margin-right: 1rem; vertical-align: middle" alt="Creative Commons License"></a>This work is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International License</a>.</div>
+</div>
+      </div>
+    </div>
+  </footer>
+  <script src="../../_static/javascripts/application.js"></script>
+  <script>app.initialize({version: "1.0.4", url: {base: ".."}})</script>
+  <script>initializeFeatures(["examples", "proteus"]);</script>
+  </body>
+</html>

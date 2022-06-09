@@ -1,0 +1,48 @@
+================
+PipingSourceItem
+================
+
+Overview
+========
+
+.. rubric:: Abstract class
+
+An item that can be the source of a :doc:`PipingConnection </reference/Piping/PipingConnection>` (attribute :ref:`SourceItem <dexpi-Piping-PipingConnection-SourceItem>`\ ) or a :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>` (attribute :ref:`SourceItem <dexpi-Piping-PipingNetworkSegment-SourceItem>`\ ).
+
+.. image:: PipingSourceItem.*
+
+
+.. rubric:: Subtypes
+
+* :doc:`FlowInPipeOffPageConnector </reference/Piping/FlowInPipeOffPageConnector>`
+
+* :doc:`Nozzle </reference/Equipment/Nozzle>`
+
+* :doc:`PipingComponent </reference/Piping/PipingComponent>`
+
+* :doc:`PropertyBreak </reference/Piping/PropertyBreak>`
+
+.. admonition:: proteus
+
+   Implementation is subclass-specific.
+
+.. admonition:: example
+
+   As :doc:`PipingSourceItem </reference/Piping/PipingSourceItem>` is abstract, we consider :doc:`CheckValve </reference/Piping/CheckValve>` as an arbitrary concrete subclass.
+
+   .. image:: /diagrams/diagram707.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="checkValve1"
+            ComponentClass="CheckValve"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS292229" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+

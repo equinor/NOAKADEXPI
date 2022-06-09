@@ -1,0 +1,28 @@
+================
+NullablePressure
+================
+
+Overview
+========
+
+.. rubric:: Abstract data type
+
+:doc:`NullablePressure </reference/PhysicalQuantities/NullablePressure>` is an :ref:`application-dependent physical quantity type <dexpi-concept-application-dependent-physical-quantity-type>` for the dimension L\ :sup:`-1`\MT\ :sup:`-2`. It has 2 subtypes for different application areas.
+
+.. image:: NullablePressure.*
+
+
+.. rubric:: Subtypes
+
+* :doc:`NullablePressureAbsolute </reference/PhysicalQuantities/NullablePressureAbsolute>`
+
+* :doc:`NullablePressureGauge </reference/PhysicalQuantities/NullablePressureGauge>`
+
+.. admonition:: proteus
+
+   All data attributes with a type derived from :doc:`NullablePressure </reference/PhysicalQuantities/NullablePressure>` are implemented as :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+.. admonition:: example
+
+   See the examples for :doc:`PressureAbsolute </reference/PhysicalQuantities/PressureAbsolute>`, :doc:`NullPressureAbsolute </reference/PhysicalQuantities/NullPressureAbsolute>`, :doc:`PressureGauge </reference/PhysicalQuantities/PressureGauge>`, and :doc:`NullPressureGauge </reference/PhysicalQuantities/NullPressureGauge>`.
+

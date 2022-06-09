@@ -1,0 +1,65 @@
+==============
+ShapeCatalogue
+==============
+
+Overview
+========
+
+.. rubric:: Class
+
+.. image:: ShapeCatalogue.*
+
+
+.. rubric:: Attributes (data)
+
++------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+| Name                                                                   | Multiplicity | Type                                                               |
++========================================================================+==============+====================================================================+
+| :ref:`Name <dexpi-Graphics-ShapeCatalogue-Name>`                       | 1            | :doc:`String </reference/DataTypes/String>`                        |
++------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+
+.. rubric:: Attributes (composition)
+
++--------------------------------------------------------------------------------+--------------+----------------------------------------------------------------+
+| Name                                                                           | Multiplicity | Type                                                           |
++================================================================================+==============+================================================================+
+| :ref:`Shapes <dexpi-Graphics-ShapeCatalogue-Shapes>`                           | \*           | :doc:`Shape </reference/Graphics/Shape>`                       |
++--------------------------------------------------------------------------------+--------------+----------------------------------------------------------------+
+
+
+.. _dexpi-Graphics-ShapeCatalogue-Name:
+
+Name
+====
+
+.. rubric:: Attribute (data)
+
+
+The name of the :doc:`ShapeCatalogue </reference/Graphics/ShapeCatalogue>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`String </reference/DataTypes/String>`
+
+
+.. _dexpi-Graphics-ShapeCatalogue-Shapes:
+
+Shapes
+======
+
+.. rubric:: Attribute (composition)
+
+
+The shapes of the :doc:`ShapeCatalogue </reference/Graphics/ShapeCatalogue>`.
+
+Multiplicity
+    \*
+
+Type
+    :doc:`Shape </reference/Graphics/Shape>`
+
+Opposite multiplicity
+    0..1
+

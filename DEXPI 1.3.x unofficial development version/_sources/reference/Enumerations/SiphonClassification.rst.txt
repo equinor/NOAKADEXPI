@@ -1,0 +1,52 @@
+====================
+SiphonClassification
+====================
+
+Overview
+========
+
+.. rubric:: Enumeration
+
+.. image:: SiphonClassification.*
+
+
+.. rubric:: Literals
+
++--------------------------------------------------------------------------------+------------------------------------------------------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| Name                                                                           | Symbol                                                     | proteus#RDL Reference                                 | proteus#RDL URI                                                                         |
++================================================================================+============================================================+=======================================================+=========================================================================================+
+| .. _dexpi-Enumerations-SiphonClassification-NULL:                              | :ref:`null <dexpi-concept-null-value>`                     |                                                       |                                                                                         |
+|                                                                                |                                                            |                                                       |                                                                                         |
+| NULL                                                                           |                                                            |                                                       |                                                                                         |
++--------------------------------------------------------------------------------+------------------------------------------------------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| .. _dexpi-Enumerations-SiphonClassification-NoSiphon:                          | no siphon                                                  | `NO SIPHON <http://sandbox.dexpi.org/rdl/NoSiphon>`__ | `http://sandbox.dexpi.org/rdl/NoSiphon <http://sandbox.dexpi.org/rdl/NoSiphon>`__       |
+|                                                                                |                                                            |                                                       |                                                                                         |
+| NoSiphon                                                                       |                                                            |                                                       |                                                                                         |
++--------------------------------------------------------------------------------+------------------------------------------------------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| .. _dexpi-Enumerations-SiphonClassification-Siphon:                            | siphon                                                     | `SIPHON <http://data.posccaesar.org/rdl/RDS311084>`__ | `http://data.posccaesar.org/rdl/RDS311084 <http://data.posccaesar.org/rdl/RDS311084>`__ |
+|                                                                                |                                                            |                                                       |                                                                                         |
+| Siphon                                                                         |                                                            |                                                       |                                                                                         |
++--------------------------------------------------------------------------------+------------------------------------------------------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   All data attributes with type :doc:`SiphonClassification </reference/Enumerations/SiphonClassification>` are implemented as :ref:`DEXPI generic attributes for enumeration values <proteus-concept-dexpi-generic-attribute-enumeration>`. In a ``<GenericAttribute>`` element, the :doc:`SiphonClassification </reference/Enumerations/SiphonClassification>` literal is given by means of its :ref:`RDL reference <proteus-concept-rdl-reference>` in the table above. The ``Value`` attribute of the element is the name of the RDL reference in camel-case; it equals the name of the literal. The ``ValueURI`` attribute of the element is the URI of the RDL reference.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram74.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Format="anyURI"
+          Value="Siphon"
+          ValueURI="http://data.posccaesar.org/rdl/RDS311084" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have a ``Name`` and an ``AttributeURI`` attribute. They depend on the data type attribute of the DEXPI class that owns the instance :ref:`Siphon <dexpi-Enumerations-SiphonClassification-Siphon>`. For a complete example, see the attribute :ref:`Siphon <dexpi-Piping-PipingNetworkSegment-Siphon>` of the DEXPI class :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>`.
+

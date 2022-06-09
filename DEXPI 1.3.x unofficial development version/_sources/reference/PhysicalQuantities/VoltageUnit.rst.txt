@@ -1,0 +1,53 @@
+===========
+VoltageUnit
+===========
+
+Overview
+========
+
+.. rubric:: Enumeration
+
+A unit of measurement for a physical quantity of type :doc:`NullableVoltage </reference/PhysicalQuantities/NullableVoltage>` with :ref:`dimension <dexpi-glossary-physical-dimension>` L\ :sup:`2`\MT\ :sup:`-3`\I\ :sup:`-1`.
+
+.. image:: VoltageUnit.*
+
+
+.. rubric:: Literals
+
++----------------------------------------------------------------------------+--------+---------+-------------------------------------------------------------+-------------------------------------------------------------------------------------------------+
+| Name                                                                       | Symbol | UN Code | proteus#RDL Reference                                       | proteus#RDL URI                                                                                 |
++============================================================================+========+=========+=============================================================+=================================================================================================+
+| .. _dexpi-PhysicalQuantities-VoltageUnit-Kilovolt:                         | kV     | KVT     | `KILOVOLT <http://data.posccaesar.org/rdl/RDS1359653041>`__ | `http://data.posccaesar.org/rdl/RDS1359653041 <http://data.posccaesar.org/rdl/RDS1359653041>`__ |
+|                                                                            |        |         |                                                             |                                                                                                 |
+| Kilovolt                                                                   |        |         |                                                             |                                                                                                 |
++----------------------------------------------------------------------------+--------+---------+-------------------------------------------------------------+-------------------------------------------------------------------------------------------------+
+| .. _dexpi-PhysicalQuantities-VoltageUnit-Megavolt:                         | MV     | B78     | `MEGAVOLT <http://data.posccaesar.org/rdl/RDS1359661910>`__ | `http://data.posccaesar.org/rdl/RDS1359661910 <http://data.posccaesar.org/rdl/RDS1359661910>`__ |
+|                                                                            |        |         |                                                             |                                                                                                 |
+| Megavolt                                                                   |        |         |                                                             |                                                                                                 |
++----------------------------------------------------------------------------+--------+---------+-------------------------------------------------------------+-------------------------------------------------------------------------------------------------+
+| .. _dexpi-PhysicalQuantities-VoltageUnit-Volt:                             | V      | VLT     | `VOLT <http://data.posccaesar.org/rdl/RDS1347974>`__        | `http://data.posccaesar.org/rdl/RDS1347974 <http://data.posccaesar.org/rdl/RDS1347974>`__       |
+|                                                                            |        |         |                                                             |                                                                                                 |
+| Volt                                                                       |        |         |                                                             |                                                                                                 |
++----------------------------------------------------------------------------+--------+---------+-------------------------------------------------------------+-------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   :doc:`VoltageUnit </reference/PhysicalQuantities/VoltageUnit>` is only used as the type of the :ref:`Unit <dexpi-PhysicalQuantities-Voltage-Unit>` attribute of :doc:`Voltage </reference/PhysicalQuantities/Voltage>`. :doc:`Voltage </reference/PhysicalQuantities/Voltage>` is implemented using :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`. In a ``<GenericAttribute>`` element, the :doc:`VoltageUnit </reference/PhysicalQuantities/VoltageUnit>` literal is given by means of its :ref:`RDL reference <proteus-concept-rdl-reference>` in the table above. The ``Units`` attribute of the element is the name of the RDL reference in camel-case; it equals the name of the literal. The ``UnitsURI`` attribute of the element is the URI of the RDL reference.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram620.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Units="Volt"
+          UnitsURI="http://data.posccaesar.org/rdl/RDS1347974" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have further attributes (``Format``, ``Value``, ``Name``, and ``AttributeURI``)DOTANDSPACEHACKSee the implementation examples for :doc:`Voltage </reference/PhysicalQuantities/Voltage>` and for the :ref:`NominalVoltage <dexpi-Equipment-AlternatingCurrentMotor-NominalVoltage>` attribute of :doc:`AlternatingCurrentMotor </reference/Equipment/AlternatingCurrentMotor>`.
+

@@ -1,0 +1,325 @@
+===============
+PipingComponent
+===============
+
+Overview
+========
+
+.. rubric:: Abstract class
+
+A piping component
+
+.. image:: PipingComponent.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`ConceptualObject </reference/DexpiModel/ConceptualObject>`
+
+* :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>`
+
+* :doc:`PipingNetworkSegmentItem </reference/Piping/PipingNetworkSegmentItem>`
+
+* :doc:`PipingNodeOwner </reference/Piping/PipingNodeOwner>`
+
+* :doc:`PipingSourceItem </reference/Piping/PipingSourceItem>`
+
+* :doc:`PipingTargetItem </reference/Piping/PipingTargetItem>`
+
+* :doc:`SensingLocation </reference/Instrumentation/SensingLocation>`
+
+.. rubric:: Subtypes
+
+* :doc:`CheckValve </reference/Piping/CheckValve>`
+
+* :doc:`CustomPipingComponent </reference/Piping/CustomPipingComponent>`
+
+* :doc:`InlinePrimaryElement </reference/Piping/InlinePrimaryElement>`
+
+* :doc:`OperatedValve </reference/Piping/OperatedValve>`
+
+* :doc:`PipeFitting </reference/Piping/PipeFitting>`
+
+* :doc:`SafetyValveOrFitting </reference/Piping/SafetyValveOrFitting>`
+
+.. rubric:: Attributes (data)
+
++--------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                                           | Multiplicity | Type                                                                                                                                           |
++================================================================================================================================+==============+================================================================================================================================================+
+| :ref:`FluidCode <dexpi-Piping-PipingComponent-FluidCode>`                                                                      | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`OnHold <dexpi-Piping-PipingComponent-OnHold>`                                                                            | 0..1         | :doc:`OnHoldClassification </reference/Enumerations/OnHoldClassification>`                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`PipingClassArtefact <dexpi-Piping-PipingComponent-PipingClassArtefact>`                                                  | 0..1         | :doc:`PipingClassArtefactClassification </reference/Enumerations/PipingClassArtefactClassification>`                                           |
++--------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`PressureTestCircuitNumber <dexpi-Piping-PipingComponent-PressureTestCircuitNumber>`                                      | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl-abstract>`. As :doc:`PipingComponent </reference/Piping/PipingComponent>` is abstract, there is no RDL reference for the class itself;  the RDL reference depends on the concrete subclass.
+
+   Tag
+       ``<PipingComponent>``
+
+   ComponentClass
+       *depending on subclass*
+
+   ComponentClassURI
+       *depending on subclass*
+
+.. admonition:: example
+
+   As :doc:`PipingComponent </reference/Piping/PipingComponent>` is abstract, we consider :doc:`CheckValve </reference/Piping/CheckValve>` as an arbitrary concrete subclass.
+
+   .. image:: /diagrams/diagram686.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="checkValve1"
+            ComponentClass="CheckValve"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS292229" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+
+
+.. _dexpi-Piping-PipingComponent-FluidCode:
+
+FluidCode
+=========
+
+.. rubric:: Attribute (data)
+
+
+The identification code of the fluid related to the :doc:`PipingComponent </reference/Piping/PipingComponent>`. So far, DEXPI does not define restrictions for valid values.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `FLUID CODE ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/FluidCodeAssignmentClass>`__
+
+   Name
+       FluidCodeAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/FluidCodeAssignmentClass <http://sandbox.dexpi.org/rdl/FluidCodeAssignmentClass>`__
+
+.. admonition:: example
+
+   As the owning class :doc:`PipingComponent </reference/Piping/PipingComponent>` is abstract, we consider :doc:`CheckValve </reference/Piping/CheckValve>` as an arbitrary concrete subclass.
+
+   "MNb" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="checkValve1"
+            ComponentClass="CheckValve"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS292229" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="FluidCodeAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/FluidCodeAssignmentClass"
+              Format="string"
+              Value="MNb" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingComponent>
+      
+
+
+.. _dexpi-Piping-PipingComponent-OnHold:
+
+OnHold
+======
+
+.. rubric:: Attribute (data)
+
+
+A specialization indicating if the :doc:`PipingComponent </reference/Piping/PipingComponent>` is on hold or not.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`OnHoldClassification </reference/Enumerations/OnHoldClassification>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for enumeration values <proteus-concept-dexpi-generic-attribute-enumeration>`.
+
+   RDL reference
+       `ON HOLD SPECIALIZATION <http://sandbox.dexpi.org/rdl/OnHoldSpecialization>`__
+
+   Name
+       OnHoldSpecialization
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/OnHoldSpecialization <http://sandbox.dexpi.org/rdl/OnHoldSpecialization>`__
+
+.. admonition:: example
+
+   As the owning class :doc:`PipingComponent </reference/Piping/PipingComponent>` is abstract, we consider :doc:`CheckValve </reference/Piping/CheckValve>` as an arbitrary concrete subclass.
+
+   on hold (:ref:`OnHoldClassification::OnHold <dexpi-Enumerations-OnHoldClassification-OnHold>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="checkValve1"
+            ComponentClass="CheckValve"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS292229" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="OnHoldSpecialization"
+              AttributeURI="http://sandbox.dexpi.org/rdl/OnHoldSpecialization"
+              Format="anyURI"
+              Value="OnHold"
+              ValueURI="http://sandbox.dexpi.org/rdl/OnHold" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingComponent>
+      
+
+
+.. _dexpi-Piping-PipingComponent-PipingClassArtefact:
+
+PipingClassArtefact
+===================
+
+.. rubric:: Attribute (data)
+
+
+A specialization indicating if the :doc:`PipingComponent </reference/Piping/PipingComponent>` is an artefact that is described by a piping class.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`PipingClassArtefactClassification </reference/Enumerations/PipingClassArtefactClassification>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for enumeration values <proteus-concept-dexpi-generic-attribute-enumeration>`.
+
+   RDL reference
+       `PIPING CLASS ARTEFACT SPECIALIZATION <http://sandbox.dexpi.org/rdl/PipingClassArtefactSpecialization>`__
+
+   Name
+       PipingClassArtefactSpecialization
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/PipingClassArtefactSpecialization <http://sandbox.dexpi.org/rdl/PipingClassArtefactSpecialization>`__
+
+.. admonition:: example
+
+   As the owning class :doc:`PipingComponent </reference/Piping/PipingComponent>` is abstract, we consider :doc:`CheckValve </reference/Piping/CheckValve>` as an arbitrary concrete subclass.
+
+   piping class artefact (:ref:`PipingClassArtefactClassification::PipingClassArtefact <dexpi-Enumerations-PipingClassArtefactClassification-PipingClassArtefact>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="checkValve1"
+            ComponentClass="CheckValve"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS292229" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="PipingClassArtefactSpecialization"
+              AttributeURI="http://sandbox.dexpi.org/rdl/PipingClassArtefactSpecialization"
+              Format="anyURI"
+              Value="PipingClassArtefact"
+              ValueURI="http://sandbox.dexpi.org/rdl/PipingClassArtefact" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingComponent>
+      
+
+
+.. _dexpi-Piping-PipingComponent-PressureTestCircuitNumber:
+
+PressureTestCircuitNumber
+=========================
+
+.. rubric:: Attribute (data)
+
+
+The number of the pressure test circuit of the :doc:`PipingComponent </reference/Piping/PipingComponent>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `PRESSURE TEST CIRCUIT NUMBER ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/PressureTestCircuitNumberAssignmentClass>`__
+
+   Name
+       PressureTestCircuitNumberAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/PressureTestCircuitNumberAssignmentClass <http://sandbox.dexpi.org/rdl/PressureTestCircuitNumberAssignmentClass>`__
+
+.. admonition:: example
+
+   As the owning class :doc:`PipingComponent </reference/Piping/PipingComponent>` is abstract, we consider :doc:`CheckValve </reference/Piping/CheckValve>` as an arbitrary concrete subclass.
+
+   "TC123" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="checkValve1"
+            ComponentClass="CheckValve"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS292229" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="PressureTestCircuitNumberAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/PressureTestCircuitNumberAssignmentClass"
+              Format="string"
+              Value="TC123" />
+            ...
+          </GenericAttributes>
+          ...
+        </PipingComponent>
+      
+

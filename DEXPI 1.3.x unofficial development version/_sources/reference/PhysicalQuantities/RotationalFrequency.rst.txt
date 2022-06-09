@@ -1,0 +1,103 @@
+===================
+RotationalFrequency
+===================
+
+Overview
+========
+
+.. rubric:: Data type
+
+An :ref:`actual value <dexpi-concept-actual-value>` for a physical quantity of type :doc:`NullableRotationalFrequency </reference/PhysicalQuantities/NullableRotationalFrequency>`, i.e., a physical quantity that has a numerical value and a unit of measurement.
+
+.. image:: RotationalFrequency.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`NullableRotationalFrequency </reference/PhysicalQuantities/NullableRotationalFrequency>`
+
+.. rubric:: Attributes (data)
+
++------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                           | Multiplicity | Type                                                                                                                       |
++================================================================================================+==============+============================================================================================================================+
+| :ref:`Unit <dexpi-PhysicalQuantities-RotationalFrequency-Unit>`                                | 1            | :doc:`RotationalFrequencyUnit </reference/PhysicalQuantities/RotationalFrequencyUnit>`                                     |
++------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------+
+| :ref:`Value <dexpi-PhysicalQuantities-RotationalFrequency-Value>`                              | 1            | :doc:`Double </reference/DataTypes/Double>`                                                                                |
++------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   All data attributes with type :doc:`NullableRotationalFrequency </reference/PhysicalQuantities/NullableRotationalFrequency>` (the base type of :doc:`RotationalFrequency </reference/PhysicalQuantities/RotationalFrequency>`\ ) are implemented as :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+.. admonition:: example
+
+   The instance rotationalFrequency1 represents a :doc:`RotationalFrequency </reference/PhysicalQuantities/RotationalFrequency>` of 180.0 min\ :sup:`-1`.
+
+   .. image:: /diagrams/diagram615.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Format="double"
+          Value="180.0"
+          Units="ReciprocalMinute"
+          UnitsURI="http://data.posccaesar.org/rdl/RDS4316851589" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have a ``Name`` and an ``AttributeURI`` attribute. They depend on the data type attribute of the DEXPI class that owns the instance rotationalFrequency1. For a complete example, see the attribute :ref:`DesignRotationalSpeed <dexpi-Equipment-Agglomerator-DesignRotationalSpeed>` of the DEXPI class :doc:`Agglomerator </reference/Equipment/Agglomerator>`.
+
+
+.. _dexpi-PhysicalQuantities-RotationalFrequency-Unit:
+
+Unit
+====
+
+.. rubric:: Attribute (data)
+
+
+The unit of measurement of the :doc:`RotationalFrequency </reference/PhysicalQuantities/RotationalFrequency>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`RotationalFrequencyUnit </reference/PhysicalQuantities/RotationalFrequencyUnit>`
+
+.. admonition:: proteus
+
+   See implementation of :doc:`RotationalFrequency </reference/PhysicalQuantities/RotationalFrequency>`.
+
+.. admonition:: example
+
+   See example for :doc:`RotationalFrequency </reference/PhysicalQuantities/RotationalFrequency>`.
+
+
+.. _dexpi-PhysicalQuantities-RotationalFrequency-Value:
+
+Value
+=====
+
+.. rubric:: Attribute (data)
+
+
+The numerical value of the :doc:`RotationalFrequency </reference/PhysicalQuantities/RotationalFrequency>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Double </reference/DataTypes/Double>`
+
+.. admonition:: proteus
+
+   See implementation of :doc:`RotationalFrequency </reference/PhysicalQuantities/RotationalFrequency>`.
+
+.. admonition:: example
+
+   See example for :doc:`RotationalFrequency </reference/PhysicalQuantities/RotationalFrequency>`.
+

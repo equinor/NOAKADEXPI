@@ -1,0 +1,103 @@
+==============
+VolumeFlowRate
+==============
+
+Overview
+========
+
+.. rubric:: Data type
+
+An :ref:`actual value <dexpi-concept-actual-value>` for a physical quantity of type :doc:`NullableVolumeFlowRate </reference/PhysicalQuantities/NullableVolumeFlowRate>`, i.e., a physical quantity that has a numerical value and a unit of measurement.
+
+.. image:: VolumeFlowRate.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`NullableVolumeFlowRate </reference/PhysicalQuantities/NullableVolumeFlowRate>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------+
+| Name                                                                                   | Multiplicity | Type                                                                                                           |
++========================================================================================+==============+================================================================================================================+
+| :ref:`Unit <dexpi-PhysicalQuantities-VolumeFlowRate-Unit>`                             | 1            | :doc:`VolumeFlowRateUnit </reference/PhysicalQuantities/VolumeFlowRateUnit>`                                   |
++----------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------+
+| :ref:`Value <dexpi-PhysicalQuantities-VolumeFlowRate-Value>`                           | 1            | :doc:`Double </reference/DataTypes/Double>`                                                                    |
++----------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   All data attributes with type :doc:`NullableVolumeFlowRate </reference/PhysicalQuantities/NullableVolumeFlowRate>` (the base type of :doc:`VolumeFlowRate </reference/PhysicalQuantities/VolumeFlowRate>`\ ) are implemented as :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+.. admonition:: example
+
+   The instance volumeFlowRate1 represents a :doc:`VolumeFlowRate </reference/PhysicalQuantities/VolumeFlowRate>` of 420.0 m\ :sup:`3`/h.
+
+   .. image:: /diagrams/diagram622.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Format="double"
+          Value="420.0"
+          Units="MetreCubedPerHour"
+          UnitsURI="http://data.posccaesar.org/rdl/RDS1321064" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have a ``Name`` and an ``AttributeURI`` attribute. They depend on the data type attribute of the DEXPI class that owns the instance volumeFlowRate1. For a complete example, see the attribute :ref:`DesignVolumeFlowRate <dexpi-Equipment-Agglomerator-DesignVolumeFlowRate>` of the DEXPI class :doc:`Agglomerator </reference/Equipment/Agglomerator>`.
+
+
+.. _dexpi-PhysicalQuantities-VolumeFlowRate-Unit:
+
+Unit
+====
+
+.. rubric:: Attribute (data)
+
+
+The unit of measurement of the :doc:`VolumeFlowRate </reference/PhysicalQuantities/VolumeFlowRate>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`VolumeFlowRateUnit </reference/PhysicalQuantities/VolumeFlowRateUnit>`
+
+.. admonition:: proteus
+
+   See implementation of :doc:`VolumeFlowRate </reference/PhysicalQuantities/VolumeFlowRate>`.
+
+.. admonition:: example
+
+   See example for :doc:`VolumeFlowRate </reference/PhysicalQuantities/VolumeFlowRate>`.
+
+
+.. _dexpi-PhysicalQuantities-VolumeFlowRate-Value:
+
+Value
+=====
+
+.. rubric:: Attribute (data)
+
+
+The numerical value of the :doc:`VolumeFlowRate </reference/PhysicalQuantities/VolumeFlowRate>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Double </reference/DataTypes/Double>`
+
+.. admonition:: proteus
+
+   See implementation of :doc:`VolumeFlowRate </reference/PhysicalQuantities/VolumeFlowRate>`.
+
+.. admonition:: example
+
+   See example for :doc:`VolumeFlowRate </reference/PhysicalQuantities/VolumeFlowRate>`.
+

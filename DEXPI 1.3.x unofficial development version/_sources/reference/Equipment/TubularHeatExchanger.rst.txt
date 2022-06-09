@@ -1,0 +1,173 @@
+====================
+TubularHeatExchanger
+====================
+
+Overview
+========
+
+.. rubric:: Class
+
+An indirect contact heat exchanger that separates the hot and cold fluids by tubes (from `http://data.posccaesar.org/rdl/RDS13971182 <http://data.posccaesar.org/rdl/RDS13971182>`__).
+
+.. image:: TubularHeatExchanger.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`HeatExchanger </reference/Equipment/HeatExchanger>`
+
+.. rubric:: Attributes (data)
+
++--------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+| Name                                                                                                               | Multiplicity | Type                                                                                   |
++====================================================================================================================+==============+========================================================================================+
+| :ref:`TemaStandardType <dexpi-Equipment-TubularHeatExchanger-TemaStandardType>`                                    | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                            |
++--------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+
+.. rubric:: Attributes (composition)
+
++----------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------+
+| Name                                                                                               | Multiplicity | Type                                                                       |
++====================================================================================================+==============+============================================================================+
+| :ref:`TubeBundle <dexpi-Equipment-TubularHeatExchanger-TubeBundle>`                                | 0..1         | :doc:`TubeBundle </reference/Equipment/TubeBundle>`                        |
++----------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `TUBULAR HEAT EXCHANGER <http://data.posccaesar.org/rdl/RDS13971182>`__
+
+   ComponentClass
+       TubularHeatExchanger
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS13971182 <http://data.posccaesar.org/rdl/RDS13971182>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram489.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="tubularHeatExchanger1"
+            ComponentClass="TubularHeatExchanger"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS13971182" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-TubularHeatExchanger-TemaStandardType:
+
+TemaStandardType
+================
+
+.. rubric:: Attribute (data)
+
+
+The type of the :doc:`TubularHeatExchanger </reference/Equipment/TubularHeatExchanger>` according to the Tubular Exchanger Manufacturers Association, Inc. (TEMA, `http://www.tema.org <http://www.tema.org>`__)DOTANDSPACEHACKThis is a three-letter code.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `TEMA STANDARD TYPE ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/TemaStandardTypeAssignmentClass>`__
+
+   Name
+       TemaStandardTypeAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/TemaStandardTypeAssignmentClass <http://sandbox.dexpi.org/rdl/TemaStandardTypeAssignmentClass>`__
+
+.. admonition:: example
+
+   "AEL" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="tubularHeatExchanger1"
+            ComponentClass="TubularHeatExchanger"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS13971182" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="TemaStandardTypeAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/TemaStandardTypeAssignmentClass"
+              Format="string"
+              Value="AEL" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-TubularHeatExchanger-TubeBundle:
+
+TubeBundle
+==========
+
+.. rubric:: Attribute (composition)
+
+
+The tube bundle of the :doc:`TubularHeatExchanger </reference/Equipment/TubularHeatExchanger>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`TubeBundle </reference/Equipment/TubeBundle>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   The attribute is implemented using the :ref:`XML hierarchy of the Proteus file <proteus-concept-composition-property-xml-child>`: The  element for the attribute value (a :doc:`TubeBundle </reference/Equipment/TubeBundle>`\ ) is a child of the ``<Equipment>`` element for the attribute owner (a :doc:`TubularHeatExchanger </reference/Equipment/TubularHeatExchanger>`\ ).
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram490.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="tubularHeatExchanger1"
+            ComponentClass="TubularHeatExchanger"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS13971182" DOTS123="DOTS123">
+          ...
+          <Equipment
+              ID="tubeBundle1"
+              ComponentClass="TubeBundle"
+              ComponentClassURI="http://data.posccaesar.org/rdl/RDS415259" DOTS123="DOTS123">
+            ...
+          <Equipment />
+          ...
+        <Equipment />
+      
+

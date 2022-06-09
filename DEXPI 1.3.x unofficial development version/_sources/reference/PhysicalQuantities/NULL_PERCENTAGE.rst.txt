@@ -1,0 +1,22 @@
+===============
+NULL_PERCENTAGE
+===============
+
+Overview
+========
+
+.. rubric:: Instance
+
+The only instance of the singleton type :doc:`NullPercentage </reference/PhysicalQuantities/NullPercentage>`. This instance represents the :ref:`null value <dexpi-concept-null-value>` of the physical quantity type :doc:`NullablePercentage </reference/PhysicalQuantities/NullablePercentage>`.
+
+.. image:: NULL_PERCENTAGE.*
+
+
+.. rubric:: Type
+
+* :doc:`NullPercentage </reference/PhysicalQuantities/NullPercentage>`
+
+.. admonition:: proteus
+
+   See implementation of :doc:`NullPercentage </reference/PhysicalQuantities/NullPercentage>`.
+

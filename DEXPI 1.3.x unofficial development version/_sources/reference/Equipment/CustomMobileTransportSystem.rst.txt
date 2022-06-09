@@ -1,0 +1,92 @@
+===========================
+CustomMobileTransportSystem
+===========================
+
+Overview
+========
+
+.. rubric:: Class
+
+A :ref:`custom <dexpi-concept-custom-sibling>` :doc:`MobileTransportSystem </reference/Equipment/MobileTransportSystem>`, i.e., a :doc:`MobileTransportSystem </reference/Equipment/MobileTransportSystem>` that is not covered by any of the other subclasses of :doc:`MobileTransportSystem </reference/Equipment/MobileTransportSystem>` (:doc:`ForkliftTruck </reference/Equipment/ForkliftTruck>`, :doc:`RailWaggon </reference/Equipment/RailWaggon>`, :doc:`Ship </reference/Equipment/Ship>`, :doc:`TransportableContainer </reference/Equipment/TransportableContainer>`, or :doc:`Truck </reference/Equipment/Truck>`\ ).
+
+.. image:: CustomMobileTransportSystem.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`CustomObject </reference/Customization/CustomObject>`
+
+* :doc:`MobileTransportSystem </reference/Equipment/MobileTransportSystem>`
+
+.. rubric:: Attributes (data)
+
++------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+| Name                                                                                                                                           | Multiplicity | Type                                                                                               |
++================================================================================================================================================+==============+====================================================================================================+
+| :ref:`UpperLimitDischargeHead <dexpi-Equipment-CustomMobileTransportSystem-UpperLimitDischargeHead>`                                           | 0..1         | :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`                               |
++------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `CUSTOM MOBILE TRANSPORT SYSTEM <http://sandbox.dexpi.org/rdl/CustomMobileTransportSystem>`__
+
+   ComponentClass
+       CustomMobileTransportSystem
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/CustomMobileTransportSystem <http://sandbox.dexpi.org/rdl/CustomMobileTransportSystem>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram216.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="customMobileTransportSystem1"
+            ComponentClass="CustomMobileTransportSystem"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/CustomMobileTransportSystem" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-CustomMobileTransportSystem-UpperLimitDischargeHead:
+
+UpperLimitDischargeHead
+=======================
+
+.. rubric:: Attribute (data)
+
+
+The upper limit for the discharge head of the :doc:`CustomMobileTransportSystem </reference/Equipment/CustomMobileTransportSystem>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `UPPER LIMIT DISCHARGE HEAD <http://sandbox.dexpi.org/rdl/UpperLimitDischargeHead>`__
+
+   Name
+       UpperLimitDischargeHead
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/UpperLimitDischargeHead <http://sandbox.dexpi.org/rdl/UpperLimitDischargeHead>`__
+

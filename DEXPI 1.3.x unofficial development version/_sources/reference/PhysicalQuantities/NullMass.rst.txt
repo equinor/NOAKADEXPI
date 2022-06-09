@@ -1,0 +1,38 @@
+========
+NullMass
+========
+
+Overview
+========
+
+.. rubric:: Data type
+
+A :ref:`null value <dexpi-concept-null-value>` for a physical quantity of type :doc:`NullableMass </reference/PhysicalQuantities/NullableMass>`. The only instance of this singleton type is :doc:`NULL_MASS </reference/PhysicalQuantities/NULL_MASS>`.
+
+.. image:: NullMass.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`NullableMass </reference/PhysicalQuantities/NullableMass>`
+
+.. admonition:: proteus
+
+   All data attributes with type :doc:`NullableMass </reference/PhysicalQuantities/NullableMass>` (the base type of :doc:`NullMass </reference/PhysicalQuantities/NullMass>`\ ) are implemented as :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram593.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Format="double" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have a ``Name`` and an ``AttributeURI`` attribute. They depend on the data type attribute of the DEXPI class that owns the null instance :doc:`NULL_MASS </reference/PhysicalQuantities/NULL_MASS>` (e.g., see the implementation example for the attribute :ref:`UpperLimitDesignLoad <dexpi-Equipment-BatchWeigher-UpperLimitDesignLoad>` of the DEXPI class :doc:`BatchWeigher </reference/Equipment/BatchWeigher>`\ )DOTANDSPACEHACKFor a null value, the attributes ``Units``, ``UnitsURI``, and ``Value`` *must not be used*.
+

@@ -1,0 +1,38 @@
+========
+NullArea
+========
+
+Overview
+========
+
+.. rubric:: Data type
+
+A :ref:`null value <dexpi-concept-null-value>` for a physical quantity of type :doc:`NullableArea </reference/PhysicalQuantities/NullableArea>`. The only instance of this singleton type is :doc:`NULL_AREA </reference/PhysicalQuantities/NULL_AREA>`.
+
+.. image:: NullArea.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`NullableArea </reference/PhysicalQuantities/NullableArea>`
+
+.. admonition:: proteus
+
+   All data attributes with type :doc:`NullableArea </reference/PhysicalQuantities/NullableArea>` (the base type of :doc:`NullArea </reference/PhysicalQuantities/NullArea>`\ ) are implemented as :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram588.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Format="double" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have a ``Name`` and an ``AttributeURI`` attribute. They depend on the data type attribute of the DEXPI class that owns the null instance :doc:`NULL_AREA </reference/PhysicalQuantities/NULL_AREA>` (e.g., see the implementation example for the attribute :ref:`FilterArea <dexpi-Equipment-FilterUnit-FilterArea>` of the DEXPI class :doc:`FilterUnit </reference/Equipment/FilterUnit>`\ )DOTANDSPACEHACKFor a null value, the attributes ``Units``, ``UnitsURI``, and ``Value`` *must not be used*.
+

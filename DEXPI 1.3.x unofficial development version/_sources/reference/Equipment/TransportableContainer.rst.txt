@@ -1,0 +1,52 @@
+======================
+TransportableContainer
+======================
+
+Overview
+========
+
+.. rubric:: Class
+
+A 'container' that is a transportable, with strength suitable to withstand shipment, storage, and handling (from `http://data.posccaesar.org/rdl/RDS22164402859 <http://data.posccaesar.org/rdl/RDS22164402859>`__).
+
+.. image:: TransportableContainer.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`MobileTransportSystem </reference/Equipment/MobileTransportSystem>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `TRANSPORTABLE CONTAINER <http://data.posccaesar.org/rdl/RDS22164402859>`__
+
+   ComponentClass
+       TransportableContainer
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS22164402859 <http://data.posccaesar.org/rdl/RDS22164402859>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram484.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="transportableContainer1"
+            ComponentClass="TransportableContainer"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS22164402859" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+

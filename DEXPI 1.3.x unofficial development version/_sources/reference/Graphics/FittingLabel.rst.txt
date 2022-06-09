@@ -1,0 +1,16 @@
+============
+FittingLabel
+============
+
+Overview
+========
+
+.. rubric:: Class
+
+.. image:: FittingLabel.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Label </reference/Graphics/Label>`
+

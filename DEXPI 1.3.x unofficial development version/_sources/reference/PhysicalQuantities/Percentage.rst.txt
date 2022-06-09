@@ -1,0 +1,103 @@
+==========
+Percentage
+==========
+
+Overview
+========
+
+.. rubric:: Data type
+
+An :ref:`actual value <dexpi-concept-actual-value>` for a physical quantity of type :doc:`NullablePercentage </reference/PhysicalQuantities/NullablePercentage>`, i.e., a physical quantity that has a numerical value and a unit of measurement.
+
+.. image:: Percentage.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`NullablePercentage </reference/PhysicalQuantities/NullablePercentage>`
+
+.. rubric:: Attributes (data)
+
++------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+| Name                                                                               | Multiplicity | Type                                                                                               |
++====================================================================================+==============+====================================================================================================+
+| :ref:`Unit <dexpi-PhysicalQuantities-Percentage-Unit>`                             | 1            | :doc:`PercentageUnit </reference/PhysicalQuantities/PercentageUnit>`                               |
++------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+| :ref:`Value <dexpi-PhysicalQuantities-Percentage-Value>`                           | 1            | :doc:`Double </reference/DataTypes/Double>`                                                        |
++------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   All data attributes with type :doc:`NullablePercentage </reference/PhysicalQuantities/NullablePercentage>` (the base type of :doc:`Percentage </reference/PhysicalQuantities/Percentage>`\ ) are implemented as :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+.. admonition:: example
+
+   The instance percentage1 represents a :doc:`Percentage </reference/PhysicalQuantities/Percentage>` of 90.0 ???.
+
+   .. image:: /diagrams/diagram607.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Format="double"
+          Value="90.0"
+          Units="Percent"
+          UnitsURI="http://data.posccaesar.org/rdl/RDS1317959" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have a ``Name`` and an ``AttributeURI`` attribute. They depend on the data type attribute of the DEXPI class that owns the instance percentage1. For a complete example, see the attribute :ref:`Efficiency <dexpi-Equipment-FilterUnit-Efficiency>` of the DEXPI class :doc:`FilterUnit </reference/Equipment/FilterUnit>`.
+
+
+.. _dexpi-PhysicalQuantities-Percentage-Unit:
+
+Unit
+====
+
+.. rubric:: Attribute (data)
+
+
+The unit of measurement of the :doc:`Percentage </reference/PhysicalQuantities/Percentage>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`PercentageUnit </reference/PhysicalQuantities/PercentageUnit>`
+
+.. admonition:: proteus
+
+   See implementation of :doc:`Percentage </reference/PhysicalQuantities/Percentage>`.
+
+.. admonition:: example
+
+   See example for :doc:`Percentage </reference/PhysicalQuantities/Percentage>`.
+
+
+.. _dexpi-PhysicalQuantities-Percentage-Value:
+
+Value
+=====
+
+.. rubric:: Attribute (data)
+
+
+The numerical value of the :doc:`Percentage </reference/PhysicalQuantities/Percentage>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Double </reference/DataTypes/Double>`
+
+.. admonition:: proteus
+
+   See implementation of :doc:`Percentage </reference/PhysicalQuantities/Percentage>`.
+
+.. admonition:: example
+
+   See example for :doc:`Percentage </reference/PhysicalQuantities/Percentage>`.
+

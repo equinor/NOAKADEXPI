@@ -1,0 +1,109 @@
+================
+RotatingExtruder
+================
+
+Overview
+========
+
+.. rubric:: Class
+
+An extruder that operates in a continuous process. Typically using a screw to build up pressure in the melt. It can incorporate a mixing stage with a forming stage (from `http://data.posccaesar.org/rdl/RDS394045941 <http://data.posccaesar.org/rdl/RDS394045941>`__).
+
+.. image:: RotatingExtruder.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Extruder </reference/Equipment/Extruder>`
+
+.. rubric:: Attributes (composition)
+
++------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------+
+| Name                                                                               | Multiplicity | Type                                                           |
++====================================================================================+==============+================================================================+
+| :ref:`Screws <dexpi-Equipment-RotatingExtruder-Screws>`                            | \*           | :doc:`Screw </reference/Equipment/Screw>`                      |
++------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `AUGER EXTRUDER <http://data.posccaesar.org/rdl/RDS394045941>`__
+
+   ComponentClass
+       AugerExtruder
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS394045941 <http://data.posccaesar.org/rdl/RDS394045941>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram428.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="rotatingExtruder1"
+            ComponentClass="AugerExtruder"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS394045941" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-RotatingExtruder-Screws:
+
+Screws
+======
+
+.. rubric:: Attribute (composition)
+
+
+The screws of the :doc:`RotatingExtruder </reference/Equipment/RotatingExtruder>`.
+
+Multiplicity
+    \*
+
+Type
+    :doc:`Screw </reference/Equipment/Screw>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   The attribute is implemented using the :ref:`XML hierarchy of the Proteus file <proteus-concept-composition-property-xml-child>`: The  element for the attribute value (a :doc:`Screw </reference/Equipment/Screw>`\ ) is a child of the ``<Equipment>`` element for the attribute owner (a :doc:`RotatingExtruder </reference/Equipment/RotatingExtruder>`\ ).
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram429.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="rotatingExtruder1"
+            ComponentClass="AugerExtruder"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS394045941" DOTS123="DOTS123">
+          ...
+          <Equipment
+              ID="screw1"
+              ComponentClass="Screw"
+              ComponentClassURI="http://data.posccaesar.org/rdl/RDS7219994" DOTS123="DOTS123">
+            ...
+          <Equipment />
+          ...
+        <Equipment />
+      
+

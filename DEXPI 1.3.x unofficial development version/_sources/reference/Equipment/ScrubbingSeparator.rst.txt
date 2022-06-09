@@ -1,0 +1,52 @@
+==================
+ScrubbingSeparator
+==================
+
+Overview
+========
+
+.. rubric:: Class
+
+A separator that is intended to clean gas by washing the gas flow with water or with another liquid entering at the top of the vessel.
+
+.. image:: ScrubbingSeparator.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Separator </reference/Equipment/Separator>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `SCRUBBING SEPARATOR <http://sandbox.dexpi.org/rdl/ScrubbingSeparator>`__
+
+   ComponentClass
+       ScrubbingSeparator
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/ScrubbingSeparator <http://sandbox.dexpi.org/rdl/ScrubbingSeparator>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram438.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="scrubbingSeparator1"
+            ComponentClass="ScrubbingSeparator"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/ScrubbingSeparator" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+

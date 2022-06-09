@@ -1,0 +1,7 @@
+===============
+Reference P\&ID
+===============
+
+.. only:: pdf
+
+  .. image:: DEXPI_Reference_PID.pdf

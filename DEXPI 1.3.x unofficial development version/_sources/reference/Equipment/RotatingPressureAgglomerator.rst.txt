@@ -1,0 +1,241 @@
+============================
+RotatingPressureAgglomerator
+============================
+
+Overview
+========
+
+.. rubric:: Class
+
+An agglomerator which uses briquetting rollers to produce pressure and to form material.
+
+.. image:: RotatingPressureAgglomerator.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Agglomerator </reference/Equipment/Agglomerator>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------+
+| Name                                                                                                                                                           | Multiplicity | Type                                                                                           |
++================================================================================================================================================================+==============+================================================================================================+
+| :ref:`LowerLimitDesignPressingForce <dexpi-Equipment-RotatingPressureAgglomerator-LowerLimitDesignPressingForce>`                                              | 0..1         | :doc:`NullableForce </reference/PhysicalQuantities/NullableForce>`                             |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------+
+| :ref:`UpperLimitDesignPressingForce <dexpi-Equipment-RotatingPressureAgglomerator-UpperLimitDesignPressingForce>`                                              | 0..1         | :doc:`NullableForce </reference/PhysicalQuantities/NullableForce>`                             |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------+
+
+.. rubric:: Attributes (composition)
+
++------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------+
+| Name                                                                                                                               | Multiplicity | Type                                                                                           |
++====================================================================================================================================+==============+================================================================================================+
+| :ref:`BriquettingRollers <dexpi-Equipment-RotatingPressureAgglomerator-BriquettingRollers>`                                        | \*           | :doc:`BriquettingRoller </reference/Equipment/BriquettingRoller>`                              |
++------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `ROTATING PRESSURE AGGLOMERATOR <http://sandbox.dexpi.org/rdl/RotatingPressureAgglomerator>`__
+
+   ComponentClass
+       RotatingPressureAgglomerator
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/RotatingPressureAgglomerator <http://sandbox.dexpi.org/rdl/RotatingPressureAgglomerator>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram432.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="rotatingPressureAgglomerator1"
+            ComponentClass="RotatingPressureAgglomerator"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/RotatingPressureAgglomerator" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-RotatingPressureAgglomerator-BriquettingRollers:
+
+BriquettingRollers
+==================
+
+.. rubric:: Attribute (composition)
+
+
+The briquetting rollers of the :doc:`RotatingPressureAgglomerator </reference/Equipment/RotatingPressureAgglomerator>`.
+
+Multiplicity
+    \*
+
+Type
+    :doc:`BriquettingRoller </reference/Equipment/BriquettingRoller>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   The attribute is implemented using the :ref:`XML hierarchy of the Proteus file <proteus-concept-composition-property-xml-child>`: The  element for the attribute value (a :doc:`BriquettingRoller </reference/Equipment/BriquettingRoller>`\ ) is a child of the ``<Equipment>`` element for the attribute owner (a :doc:`RotatingPressureAgglomerator </reference/Equipment/RotatingPressureAgglomerator>`\ ).
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram433.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="rotatingPressureAgglomerator1"
+            ComponentClass="RotatingPressureAgglomerator"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/RotatingPressureAgglomerator" DOTS123="DOTS123">
+          ...
+          <Equipment
+              ID="briquettingRoller1"
+              ComponentClass="BriquettingRoller"
+              ComponentClassURI="http://sandbox.dexpi.org/rdl/BriquettingRoller" DOTS123="DOTS123">
+            ...
+          <Equipment />
+          ...
+        <Equipment />
+      
+
+
+.. _dexpi-Equipment-RotatingPressureAgglomerator-LowerLimitDesignPressingForce:
+
+LowerLimitDesignPressingForce
+=============================
+
+.. rubric:: Attribute (data)
+
+
+The lower limit for the pressing force for which the :doc:`RotatingPressureAgglomerator </reference/Equipment/RotatingPressureAgglomerator>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableForce </reference/PhysicalQuantities/NullableForce>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `LOWER LIMIT DESIGN PRESSING FORCE <http://sandbox.dexpi.org/rdl/LowerLimitDesignPressingForce>`__
+
+   Name
+       LowerLimitDesignPressingForce
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/LowerLimitDesignPressingForce <http://sandbox.dexpi.org/rdl/LowerLimitDesignPressingForce>`__
+
+.. admonition:: example
+
+   The instance rotatingPressureAgglomerator1 represents a :doc:`RotatingPressureAgglomerator </reference/Equipment/RotatingPressureAgglomerator>` with a :ref:`LowerLimitDesignPressingForce <dexpi-Equipment-RotatingPressureAgglomerator-LowerLimitDesignPressingForce>` of 20.0 N.
+
+   .. image:: /diagrams/diagram434.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="rotatingPressureAgglomerator1"
+            ComponentClass="RotatingPressureAgglomerator"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/RotatingPressureAgglomerator" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="LowerLimitDesignPressingForce"
+              AttributeURI="http://sandbox.dexpi.org/rdl/LowerLimitDesignPressingForce"
+              Format="double"
+              Value="20.0"
+              Units="Newton"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1337939" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-RotatingPressureAgglomerator-UpperLimitDesignPressingForce:
+
+UpperLimitDesignPressingForce
+=============================
+
+.. rubric:: Attribute (data)
+
+
+The upper limit for the pressing force for which the :doc:`RotatingPressureAgglomerator </reference/Equipment/RotatingPressureAgglomerator>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableForce </reference/PhysicalQuantities/NullableForce>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `UPPER LIMIT DESIGN PRESSING FORCE <http://sandbox.dexpi.org/rdl/UpperLimitDesignPressingForce>`__
+
+   Name
+       UpperLimitDesignPressingForce
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/UpperLimitDesignPressingForce <http://sandbox.dexpi.org/rdl/UpperLimitDesignPressingForce>`__
+
+.. admonition:: example
+
+   The instance rotatingPressureAgglomerator1 represents a :doc:`RotatingPressureAgglomerator </reference/Equipment/RotatingPressureAgglomerator>` with an :ref:`UpperLimitDesignPressingForce <dexpi-Equipment-RotatingPressureAgglomerator-UpperLimitDesignPressingForce>` of 70.0 N.
+
+   .. image:: /diagrams/diagram435.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="rotatingPressureAgglomerator1"
+            ComponentClass="RotatingPressureAgglomerator"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/RotatingPressureAgglomerator" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="UpperLimitDesignPressingForce"
+              AttributeURI="http://sandbox.dexpi.org/rdl/UpperLimitDesignPressingForce"
+              Format="double"
+              Value="70.0"
+              Units="Newton"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1337939" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+

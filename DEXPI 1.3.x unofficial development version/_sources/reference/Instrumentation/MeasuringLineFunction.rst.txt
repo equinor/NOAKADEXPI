@@ -1,0 +1,52 @@
+=====================
+MeasuringLineFunction
+=====================
+
+Overview
+========
+
+.. rubric:: Class
+
+Information flow function for measured values.
+
+.. image:: MeasuringLineFunction.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`SignalConveyingFunction </reference/Instrumentation/SignalConveyingFunction>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<InformationFlow>``
+
+   RDL reference
+       `MEASURING LINE FUNCTION <http://sandbox.dexpi.org/rdl/MeasuringLineFunction>`__
+
+   ComponentClass
+       MeasuringLineFunction
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/MeasuringLineFunction <http://sandbox.dexpi.org/rdl/MeasuringLineFunction>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram537.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <InformationFlow
+            ID="measuringLineFunction1"
+            ComponentClass="MeasuringLineFunction"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MeasuringLineFunction" DOTS123="DOTS123">
+          ...
+        </InformationFlow>
+      
+

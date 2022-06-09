@@ -1,0 +1,121 @@
+===============
+ConvectionDryer
+===============
+
+Overview
+========
+
+.. rubric:: Class
+
+A :doc:`Dryer </reference/Equipment/Dryer>` that dries a material by bringing it in contact with a drying gas.
+
+.. image:: ConvectionDryer.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Dryer </reference/Equipment/Dryer>`
+
+.. rubric:: Attributes (data)
+
++--------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                   | Multiplicity | Type                                                                                                                   |
++========================================================================================================+==============+========================================================================================================================+
+| :ref:`AirConsumption <dexpi-Equipment-ConvectionDryer-AirConsumption>`                                 | 0..1         | :doc:`NullableVolumeFlowRate </reference/PhysicalQuantities/NullableVolumeFlowRate>`                                   |
++--------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `CONVECTION DRYER <http://sandbox.dexpi.org/rdl/ConvectionDryer>`__
+
+   ComponentClass
+       ConvectionDryer
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/ConvectionDryer <http://sandbox.dexpi.org/rdl/ConvectionDryer>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram169.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="convectionDryer1"
+            ComponentClass="ConvectionDryer"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/ConvectionDryer" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-ConvectionDryer-AirConsumption:
+
+AirConsumption
+==============
+
+.. rubric:: Attribute (data)
+
+
+The consumed air flow of the :doc:`ConvectionDryer </reference/Equipment/ConvectionDryer>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableVolumeFlowRate </reference/PhysicalQuantities/NullableVolumeFlowRate>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `AIR CONSUMPTION <http://data.posccaesar.org/rdl/RDS5875300>`__
+
+   Name
+       AirConsumption
+
+   AttributeURI
+       `http://data.posccaesar.org/rdl/RDS5875300 <http://data.posccaesar.org/rdl/RDS5875300>`__
+
+.. admonition:: example
+
+   The instance convectionDryer1 represents a :doc:`ConvectionDryer </reference/Equipment/ConvectionDryer>` with an :ref:`AirConsumption <dexpi-Equipment-ConvectionDryer-AirConsumption>` of 40.0 m\ :sup:`3`/h.
+
+   .. image:: /diagrams/diagram170.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="convectionDryer1"
+            ComponentClass="ConvectionDryer"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/ConvectionDryer" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="AirConsumption"
+              AttributeURI="http://data.posccaesar.org/rdl/RDS5875300"
+              Format="double"
+              Value="40.0"
+              Units="MetreCubedPerHour"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1321064" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+

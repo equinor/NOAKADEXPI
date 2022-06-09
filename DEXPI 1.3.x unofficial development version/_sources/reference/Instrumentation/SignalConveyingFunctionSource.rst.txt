@@ -1,0 +1,48 @@
+=============================
+SignalConveyingFunctionSource
+=============================
+
+Overview
+========
+
+.. rubric:: Abstract class
+
+An object than can act as the :ref:`Source <dexpi-Instrumentation-SignalConveyingFunction-Source>` of a :doc:`SignalConveyingFunction </reference/Instrumentation/SignalConveyingFunction>`.
+
+.. image:: SignalConveyingFunctionSource.*
+
+
+.. rubric:: Subtypes
+
+* :doc:`ActuatingFunction </reference/Instrumentation/ActuatingFunction>`
+
+* :doc:`FlowInSignalOffPageConnector </reference/Instrumentation/FlowInSignalOffPageConnector>`
+
+* :doc:`ProcessInstrumentationFunction </reference/Instrumentation/ProcessInstrumentationFunction>`
+
+* :doc:`ProcessSignalGeneratingFunction </reference/Instrumentation/ProcessSignalGeneratingFunction>`
+
+.. admonition:: proteus
+
+   Implementation is subclass-specific.
+
+.. admonition:: example
+
+   As :doc:`SignalConveyingFunctionSource </reference/Instrumentation/SignalConveyingFunctionSource>` is abstract, we consider :doc:`ActuatingFunction </reference/Instrumentation/ActuatingFunction>` as an arbitrary concrete subclass.
+
+   .. image:: /diagrams/diagram563.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <ActuatingFunction
+            ID="actuatingFunction1"
+            ComponentClass="ActuatingFunction"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/ActuatingFunction" DOTS123="DOTS123">
+          ...
+        </ActuatingFunction>
+      
+

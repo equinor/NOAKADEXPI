@@ -1,0 +1,178 @@
+==========
+AirEjector
+==========
+
+Overview
+========
+
+.. rubric:: Class
+
+An ejector intended to create vacuum using compressed air (from `http://data.posccaesar.org/rdl/RDS5770157 <http://data.posccaesar.org/rdl/RDS5770157>`__).
+
+.. image:: AirEjector.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Compressor </reference/Equipment/Compressor>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                                       | Multiplicity | Type                                                                                                                   |
++============================================================================================================================+==============+========================================================================================================================+
+| :ref:`DesignCapacityMotiveFluid <dexpi-Equipment-AirEjector-DesignCapacityMotiveFluid>`                                    | 0..1         | :doc:`NullableVolumeFlowRate </reference/PhysicalQuantities/NullableVolumeFlowRate>`                                   |
++----------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------+
+
+.. rubric:: Attributes (composition)
+
++------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------+
+| Name                                                                               | Multiplicity | Type                                                                   |
++====================================================================================+==============+========================================================================+
+| :ref:`Impellers <dexpi-Equipment-AirEjector-Impellers>`                            | \*           | :doc:`Impeller </reference/Equipment/Impeller>`                        |
++------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `AIR EJECTOR <http://data.posccaesar.org/rdl/RDS5770157>`__
+
+   ComponentClass
+       AirEjector
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS5770157 <http://data.posccaesar.org/rdl/RDS5770157>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram95.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="airEjector1"
+            ComponentClass="AirEjector"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS5770157" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-AirEjector-DesignCapacityMotiveFluid:
+
+DesignCapacityMotiveFluid
+=========================
+
+.. rubric:: Attribute (data)
+
+
+The capacity of the volume flow rate for the motive fluid for which the :doc:`AirEjector </reference/Equipment/AirEjector>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableVolumeFlowRate </reference/PhysicalQuantities/NullableVolumeFlowRate>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN CAPACITY MOTIVE FLUID <http://sandbox.dexpi.org/rdl/DesignCapacityMotiveFluid>`__
+
+   Name
+       DesignCapacityMotiveFluid
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignCapacityMotiveFluid <http://sandbox.dexpi.org/rdl/DesignCapacityMotiveFluid>`__
+
+.. admonition:: example
+
+   The instance airEjector1 represents an :doc:`AirEjector </reference/Equipment/AirEjector>` with a :ref:`DesignCapacityMotiveFluid <dexpi-Equipment-AirEjector-DesignCapacityMotiveFluid>` of 40.0 m\ :sup:`3`/h.
+
+   .. image:: /diagrams/diagram96.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="airEjector1"
+            ComponentClass="AirEjector"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS5770157" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignCapacityMotiveFluid"
+              AttributeURI="http://sandbox.dexpi.org/rdl/DesignCapacityMotiveFluid"
+              Format="double"
+              Value="40.0"
+              Units="MetreCubedPerHour"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1321064" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-AirEjector-Impellers:
+
+Impellers
+=========
+
+.. rubric:: Attribute (composition)
+
+
+The impellers of the :doc:`AirEjector </reference/Equipment/AirEjector>`.
+
+Multiplicity
+    \*
+
+Type
+    :doc:`Impeller </reference/Equipment/Impeller>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   The attribute is implemented using the :ref:`XML hierarchy of the Proteus file <proteus-concept-composition-property-xml-child>`: The  element for the attribute value (an :doc:`Impeller </reference/Equipment/Impeller>`\ ) is a child of the ``<Equipment>`` element for the attribute owner (an :doc:`AirEjector </reference/Equipment/AirEjector>`\ ).
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram97.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="airEjector1"
+            ComponentClass="AirEjector"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS5770157" DOTS123="DOTS123">
+          ...
+          <Equipment
+              ID="impeller1"
+              ComponentClass="Impeller"
+              ComponentClassURI="http://data.posccaesar.org/rdl/RDS414539" DOTS123="DOTS123">
+            ...
+          <Equipment />
+          ...
+        <Equipment />
+      
+

@@ -1,0 +1,102 @@
+======================
+CustomVoltageAttribute
+======================
+
+Overview
+========
+
+.. rubric:: Class
+
+A :ref:`custom attribute <dexpi-concept-custom-attributes>` with :ref:`Value <dexpi-Customization-CustomVoltageAttribute-Value>` type :doc:`NullableVoltage </reference/PhysicalQuantities/NullableVoltage>`.
+
+.. image:: CustomVoltageAttribute.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`CustomAttribute </reference/Customization/CustomAttribute>`
+
+.. rubric:: Attributes (data)
+
++--------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------+
+| Name                                                                                       | Multiplicity | Type                                                                                                   |
++============================================================================================+==============+========================================================================================================+
+| :ref:`Value <dexpi-Customization-CustomVoltageAttribute-Value>`                            | 1            | :doc:`NullableVoltage </reference/PhysicalQuantities/NullableVoltage>`                                 |
++--------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   :doc:`CustomVoltageAttribute </reference/Customization/CustomVoltageAttribute>` is implemented as a :ref:`custom generic attribute for physical quantities <proteus-concept-dexpi-custom-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `VOLTAGE <http://data.posccaesar.org/rdl/RDS372374>`__
+
+   Type
+       Voltage
+
+   TypeURI
+       `http://data.posccaesar.org/rdl/RDS372374 <http://data.posccaesar.org/rdl/RDS372374>`__
+
+.. admonition:: example
+
+   As :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>` is abstract, we consider :doc:`CustomEquipment </reference/Equipment/CustomEquipment>` as an arbitrary concrete subclass.
+
+   The :doc:`CustomEquipment </reference/Equipment/CustomEquipment>` customEquipment1 has a :doc:`CustomVoltageAttribute </reference/Customization/CustomVoltageAttribute>` with :ref:`AttributeName <dexpi-Customization-CustomAttribute-AttributeName>` "NominalVoltage" and :ref:`AttributeURI <dexpi-Customization-CustomAttribute-AttributeURI>` "http://data.posccaesar.org/rdl/RDS369449"DOTANDSPACEHACKThe :ref:`Value <dexpi-Customization-CustomVoltageAttribute-Value>` is 230 V.
+
+   .. image:: /diagrams/diagram30.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="customEquipment1"
+            ComponentClass="CustomEquipment"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/CustomEquipment" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiCustomAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="NominalVoltage"
+              AttributeURI="http://data.posccaesar.org/rdl/RDS369449"
+              Format="double"
+              Type="Voltage"
+              TypeURI="http://data.posccaesar.org/rdl/RDS372374"
+              Value="230"
+              Units="Volt"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1347974" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Customization-CustomVoltageAttribute-Value:
+
+Value
+=====
+
+.. rubric:: Attribute (data)
+
+
+The value of the :doc:`CustomVoltageAttribute </reference/Customization/CustomVoltageAttribute>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`NullableVoltage </reference/PhysicalQuantities/NullableVoltage>`
+
+Redefines
+    :ref:`Value <dexpi-Customization-CustomAttribute-Value>` (inherited from :doc:`CustomAttribute </reference/Customization/CustomAttribute>`\ )
+
+.. admonition:: proteus
+
+   See implementation of :doc:`CustomVoltageAttribute </reference/Customization/CustomVoltageAttribute>`.
+
+.. admonition:: example
+
+   See the example for :doc:`CustomVoltageAttribute </reference/Customization/CustomVoltageAttribute>`.
+

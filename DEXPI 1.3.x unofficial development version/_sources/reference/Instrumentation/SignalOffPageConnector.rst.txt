@@ -1,0 +1,118 @@
+======================
+SignalOffPageConnector
+======================
+
+Overview
+========
+
+.. rubric:: Abstract class
+
+A signal connector that indicates that a :doc:`SignalConveyingFunction </reference/Instrumentation/SignalConveyingFunction>` is continued elsewhere, either on the same P&ID or on another P&ID. Graphically, it is usually represented as an arrow.
+
+.. image:: SignalOffPageConnector.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`ConceptualObject </reference/DexpiModel/ConceptualObject>`
+
+* :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>`
+
+.. rubric:: Subtypes
+
+* :doc:`FlowInSignalOffPageConnector </reference/Instrumentation/FlowInSignalOffPageConnector>`
+
+* :doc:`FlowOutSignalOffPageConnector </reference/Instrumentation/FlowOutSignalOffPageConnector>`
+
+.. rubric:: Attributes (composition)
+
++------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                                               | Multiplicity | Type                                                                                                                                       |
++====================================================================================================================================+==============+============================================================================================================================================+
+| :ref:`ConnectorReference <dexpi-Instrumentation-SignalOffPageConnector-ConnectorReference>`                                        | 0..1         | :doc:`SignalOffPageConnectorReference </reference/Instrumentation/SignalOffPageConnectorReference>`                                        |
++------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl-abstract>`. As :doc:`SignalOffPageConnector </reference/Instrumentation/SignalOffPageConnector>` is abstract, there is no RDL reference for the class itself;  the RDL reference depends on the concrete subclass.
+
+   Tag
+       ``<InformationFlowOffPageConnector>``
+
+   ComponentClass
+       *depending on subclass*
+
+   ComponentClassURI
+       *depending on subclass*
+
+.. admonition:: example
+
+   As :doc:`SignalOffPageConnector </reference/Instrumentation/SignalOffPageConnector>` is abstract, we consider :doc:`FlowInSignalOffPageConnector </reference/Instrumentation/FlowInSignalOffPageConnector>` as an arbitrary concrete subclass.
+
+   .. image:: /diagrams/diagram566.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <InformationFlowOffPageConnector
+            ID="flowInSignalOffPageConnector1"
+            ComponentClass="FlowInSignalOffPageConnector"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/FlowInSignalOffPageConnector" DOTS123="DOTS123">
+          ...
+        </InformationFlowOffPageConnector>
+      
+
+
+.. _dexpi-Instrumentation-SignalOffPageConnector-ConnectorReference:
+
+ConnectorReference
+==================
+
+.. rubric:: Attribute (composition)
+
+
+A reference indicating to which other :doc:`SignalOffPageConnector </reference/Instrumentation/SignalOffPageConnector>` this :doc:`SignalOffPageConnector </reference/Instrumentation/SignalOffPageConnector>` is connected.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`SignalOffPageConnectorReference </reference/Instrumentation/SignalOffPageConnectorReference>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   The attribute is implemented using the :ref:`XML hierarchy of the Proteus file <proteus-concept-composition-property-xml-child>`: The  element for the attribute value (a :doc:`SignalOffPageConnectorReference </reference/Instrumentation/SignalOffPageConnectorReference>`\ ) is a child of the ``<InformationFlowOffPageConnector>`` element for the attribute owner (a :doc:`SignalOffPageConnector </reference/Instrumentation/SignalOffPageConnector>`\ ).
+
+.. admonition:: example
+
+   As the owner type :doc:`SignalOffPageConnector </reference/Instrumentation/SignalOffPageConnector>` is abstract, we consider :doc:`FlowInSignalOffPageConnector </reference/Instrumentation/FlowInSignalOffPageConnector>` as an arbitrary concrete subclass. As the value type :doc:`SignalOffPageConnectorReference </reference/Instrumentation/SignalOffPageConnectorReference>` is abstract, we consider :doc:`SignalOffPageConnectorObjectReference </reference/Instrumentation/SignalOffPageConnectorObjectReference>` as an arbitrary concrete subclass.
+
+   .. image:: /diagrams/diagram567.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <InformationFlowOffPageConnector
+            ID="flowInSignalOffPageConnector1"
+            ComponentClass="FlowInSignalOffPageConnector"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/FlowInSignalOffPageConnector" DOTS123="DOTS123">
+          ...
+          <InformationFlowOffPageConnectorReference
+              ID="signalOffPageConnectorObjectReference1"
+              ComponentClass="SignalOffPageConnectorObjectReference"
+              ComponentClassURI="http://sandbox.dexpi.org/rdl/SignalOffPageConnectorObjectReference" DOTS123="DOTS123">
+            ...
+          <InformationFlowOffPageConnectorReference />
+          ...
+        <InformationFlowOffPageConnector />
+      
+

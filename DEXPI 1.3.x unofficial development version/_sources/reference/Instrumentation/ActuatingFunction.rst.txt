@@ -1,0 +1,260 @@
+=================
+ActuatingFunction
+=================
+
+Overview
+========
+
+.. rubric:: Class
+
+A function for acting control structures relating to the process.
+
+.. image:: ActuatingFunction.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`ConceptualObject </reference/DexpiModel/ConceptualObject>`
+
+* :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>`
+
+* :doc:`SignalConveyingFunctionSource </reference/Instrumentation/SignalConveyingFunctionSource>`
+
+* :doc:`SignalConveyingFunctionTarget </reference/Instrumentation/SignalConveyingFunctionTarget>`
+
+* :doc:`TechnicalItem </reference/PlantStructure/TechnicalItem>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+| Name                                                                                                                                   | Multiplicity | Type                                                                                   |
++========================================================================================================================================+==============+========================================================================================+
+| :ref:`ActuatingFunctionNumber <dexpi-Instrumentation-ActuatingFunction-ActuatingFunctionNumber>`                                       | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                            |
++----------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------+
+
+.. rubric:: Attributes (reference)
+
++------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+| Name                                                                                                                   | Multiplicity | Type                                                                                               |
++========================================================================================================================+==============+====================================================================================================+
+| :ref:`ActuatingLocation <dexpi-Instrumentation-ActuatingFunction-ActuatingLocation>`                                   | 0..1         | :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>`                               |
++------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+| :ref:`Systems <dexpi-Instrumentation-ActuatingFunction-Systems>`                                                       | 0..1         | :doc:`ActuatingSystem </reference/Instrumentation/ActuatingSystem>`                                |
++------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<ActuatingFunction>``
+
+   RDL reference
+       `ACTUATING FUNCTION <http://sandbox.dexpi.org/rdl/ActuatingFunction>`__
+
+   ComponentClass
+       ActuatingFunction
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/ActuatingFunction <http://sandbox.dexpi.org/rdl/ActuatingFunction>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram517.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <ActuatingFunction
+            ID="actuatingFunction1"
+            ComponentClass="ActuatingFunction"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/ActuatingFunction" DOTS123="DOTS123">
+          ...
+        </ActuatingFunction>
+      
+
+
+.. _dexpi-Instrumentation-ActuatingFunction-ActuatingFunctionNumber:
+
+ActuatingFunctionNumber
+=======================
+
+.. rubric:: Attribute (data)
+
+
+An identifier for the :doc:`ActuatingFunction </reference/Instrumentation/ActuatingFunction>`. It usually contains the identifier of the :doc:`ProcessInstrumentationFunction </reference/Instrumentation/ProcessInstrumentationFunction>` that includes the :doc:`ActuatingFunction </reference/Instrumentation/ActuatingFunction>` (see :ref:`ProcessInstrumentationFunctionNumber <dexpi-Instrumentation-ProcessInstrumentationFunction-ProcessInstrumentationFunctionNumber>`\ ).
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `ACTUATING FUNCTION NUMBER ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/ActuatingFunctionNumberAssignmentClass>`__
+
+   Name
+       ActuatingFunctionNumberAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/ActuatingFunctionNumberAssignmentClass <http://sandbox.dexpi.org/rdl/ActuatingFunctionNumberAssignmentClass>`__
+
+.. admonition:: example
+
+   "HV4750.01" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <ActuatingFunction
+            ID="actuatingFunction1"
+            ComponentClass="ActuatingFunction"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/ActuatingFunction" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="ActuatingFunctionNumberAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/ActuatingFunctionNumberAssignmentClass"
+              Format="string"
+              Value="HV4750.01" />
+            ...
+          </GenericAttributes>
+          ...
+        </ActuatingFunction>
+      
+
+
+.. _dexpi-Instrumentation-ActuatingFunction-ActuatingLocation:
+
+ActuatingLocation
+=================
+
+.. rubric:: Attribute (reference)
+
+
+The actuating location of the :doc:`ActuatingFunction </reference/Instrumentation/ActuatingFunction>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`PipingNetworkSegment </reference/Piping/PipingNetworkSegment>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   The attribute is implemented using :ref:`Proteus \<Association\> elements <proteus-concept-reference-property-association>`.
+
+   Association type for the attribute ower
+       ``"is located in"``
+
+   Opposite association type
+       ``"is the location of"``
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram518.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <ActuatingFunction
+            ID="actuatingFunction1"
+            ComponentClass="ActuatingFunction"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/ActuatingFunction" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="is located in"
+            ItemID="pipingNetworkSegment1" />
+          ...
+        <ActuatingFunction />
+        ...
+        <PipingNetworkSegment
+            ID="pipingNetworkSegment1"
+            ComponentClass="PipingNetworkSegment"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="is the location of"
+            ItemID="actuatingFunction1" />
+          ...
+        <PipingNetworkSegment />
+      
+
+
+.. _dexpi-Instrumentation-ActuatingFunction-Systems:
+
+Systems
+=======
+
+.. rubric:: Attribute (reference)
+
+
+The ActuatingSystem that implements the :doc:`ActuatingFunction </reference/Instrumentation/ActuatingFunction>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`ActuatingSystem </reference/Instrumentation/ActuatingSystem>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   The attribute is implemented using :ref:`Proteus \<Association\> elements <proteus-concept-reference-property-association>`.
+
+   Association type for the attribute ower
+       ``"is fulfilled by"``
+
+   Opposite association type
+       ``"fulfills"``
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram519.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <ActuatingFunction
+            ID="actuatingFunction1"
+            ComponentClass="ActuatingFunction"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/ActuatingFunction" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="is fulfilled by"
+            ItemID="actuatingSystem1" />
+          ...
+        <ActuatingFunction />
+        ...
+        <ActuatingSystem
+            ID="actuatingSystem1"
+            ComponentClass="ActuatingSystem"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/ActuatingSystem" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="fulfills"
+            ItemID="actuatingFunction1" />
+          ...
+        <ActuatingSystem />
+      
+

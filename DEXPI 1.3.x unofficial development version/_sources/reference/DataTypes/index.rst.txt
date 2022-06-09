@@ -1,0 +1,78 @@
+=================
+Package DataTypes
+=================
+
+* :doc:`overview`
+
+.. rubric:: Data Types
+
+* :doc:`AnyURI </reference/DataTypes/AnyURI>`
+
+* :doc:`Boolean </reference/DataTypes/Boolean>`
+
+* :doc:`DateTime </reference/DataTypes/DateTime>`
+
+* :doc:`Double </reference/DataTypes/Double>`
+
+* :doc:`Integer </reference/DataTypes/Integer>`
+
+* :doc:`MultiLanguageString </reference/DataTypes/MultiLanguageString>`
+
+* :doc:`NullAnyURI </reference/DataTypes/NullAnyURI>`
+
+* :doc:`NullDateTime </reference/DataTypes/NullDateTime>`
+
+* :doc:`NullInteger </reference/DataTypes/NullInteger>`
+
+* :doc:`NullString </reference/DataTypes/NullString>`
+
+* :doc:`NullableAnyURI </reference/DataTypes/NullableAnyURI>`
+
+* :doc:`NullableDateTime </reference/DataTypes/NullableDateTime>`
+
+* :doc:`NullableInteger </reference/DataTypes/NullableInteger>`
+
+* :doc:`NullableString </reference/DataTypes/NullableString>`
+
+* :doc:`SingleLanguageString </reference/DataTypes/SingleLanguageString>`
+
+* :doc:`String </reference/DataTypes/String>`
+
+* :doc:`UnsignedByte </reference/DataTypes/UnsignedByte>`
+
+.. rubric:: Instances
+
+* :doc:`NULL_ANY_URI </reference/DataTypes/NULL_ANY_URI>`
+
+* :doc:`NULL_DATE_TIME </reference/DataTypes/NULL_DATE_TIME>`
+
+* :doc:`NULL_INTEGER </reference/DataTypes/NULL_INTEGER>`
+
+* :doc:`NULL_STRING </reference/DataTypes/NULL_STRING>`
+
+
+.. toctree::
+   :hidden:
+
+   overview
+   AnyURI
+   Boolean
+   DateTime
+   Double
+   Integer
+   MultiLanguageString
+   NULL_ANY_URI
+   NULL_DATE_TIME
+   NULL_INTEGER
+   NULL_STRING
+   NullAnyURI
+   NullDateTime
+   NullInteger
+   NullString
+   NullableAnyURI
+   NullableDateTime
+   NullableInteger
+   NullableString
+   SingleLanguageString
+   String
+   UnsignedByte

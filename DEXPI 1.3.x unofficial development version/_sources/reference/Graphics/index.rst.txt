@@ -1,0 +1,209 @@
+================
+Package Graphics
+================
+
+* :doc:`overview`
+
+.. rubric:: Classes
+
+* :doc:`ActuatingSystemComponentShape </reference/Graphics/ActuatingSystemComponentShape>`
+
+* :doc:`ActuatingSystemNumberLabel </reference/Graphics/ActuatingSystemNumberLabel>`
+
+* :doc:`AttributeRepresentation </reference/Graphics/AttributeRepresentation>`
+
+* :doc:`Border </reference/Graphics/Border>`
+
+* :doc:`Circle </reference/Graphics/Circle>`
+
+* :doc:`CircleArc </reference/Graphics/CircleArc>`
+
+* :doc:`ConnectorLine </reference/Graphics/ConnectorLine>`
+
+* :doc:`Diagram </reference/Graphics/Diagram>`
+
+* :doc:`Ellipse </reference/Graphics/Ellipse>`
+
+* :doc:`EllipseArc </reference/Graphics/EllipseArc>`
+
+* :doc:`EquipmentBarLabel </reference/Graphics/EquipmentBarLabel>`
+
+* :doc:`EquipmentTagNameLabel </reference/Graphics/EquipmentTagNameLabel>`
+
+* :doc:`FailActionLabel </reference/Graphics/FailActionLabel>`
+
+* :doc:`FittingLabel </reference/Graphics/FittingLabel>`
+
+* :doc:`GraphicalElement </reference/Graphics/GraphicalElement>`
+
+* :doc:`GraphicalPrimitive </reference/Graphics/GraphicalPrimitive>`
+
+* :doc:`GraphicsGroup </reference/Graphics/GraphicsGroup>`
+
+* :doc:`InstrumentationNodePosition </reference/Graphics/InstrumentationNodePosition>`
+
+* :doc:`InsulationLabel </reference/Graphics/InsulationLabel>`
+
+* :doc:`InsulationSymbol </reference/Graphics/InsulationSymbol>`
+
+* :doc:`InsulationSymbolShape </reference/Graphics/InsulationSymbolShape>`
+
+* :doc:`Label </reference/Graphics/Label>`
+
+* :doc:`LiteralText </reference/Graphics/LiteralText>`
+
+* :doc:`NodePosition </reference/Graphics/NodePosition>`
+
+* :doc:`NozzleShape </reference/Graphics/NozzleShape>`
+
+* :doc:`NozzleStandardLabel </reference/Graphics/NozzleStandardLabel>`
+
+* :doc:`PipeFlowArrow </reference/Graphics/PipeFlowArrow>`
+
+* :doc:`PipeFlowArrowShape </reference/Graphics/PipeFlowArrowShape>`
+
+* :doc:`PipeOffPageConnectorShape </reference/Graphics/PipeOffPageConnectorShape>`
+
+* :doc:`PipeSlopeSymbol </reference/Graphics/PipeSlopeSymbol>`
+
+* :doc:`PipeSlopeSymbolShape </reference/Graphics/PipeSlopeSymbolShape>`
+
+* :doc:`PipingClassBreakLabel </reference/Graphics/PipingClassBreakLabel>`
+
+* :doc:`PipingComponentShape </reference/Graphics/PipingComponentShape>`
+
+* :doc:`PipingNetworkSegmentLabel </reference/Graphics/PipingNetworkSegmentLabel>`
+
+* :doc:`PipingNetworkSystemLabel </reference/Graphics/PipingNetworkSystemLabel>`
+
+* :doc:`PipingNodePosition </reference/Graphics/PipingNodePosition>`
+
+* :doc:`PolyLine </reference/Graphics/PolyLine>`
+
+* :doc:`Polygon </reference/Graphics/Polygon>`
+
+* :doc:`ProcessInstrumentationFunctionLabel </reference/Graphics/ProcessInstrumentationFunctionLabel>`
+
+* :doc:`ProcessInstrumentationFunctionShape </reference/Graphics/ProcessInstrumentationFunctionShape>`
+
+* :doc:`ProcessInstrumentationFunctionSignalConveyingFunctionLabel </reference/Graphics/ProcessInstrumentationFunctionSignalConveyingFunctionLabel>`
+
+* :doc:`PropertyBreakShape </reference/Graphics/PropertyBreakShape>`
+
+* :doc:`RepresentationGroup </reference/Graphics/RepresentationGroup>`
+
+* :doc:`RepresentationTypeGroup </reference/Graphics/RepresentationTypeGroup>`
+
+* :doc:`SafetyValveOrFittingLabel </reference/Graphics/SafetyValveOrFittingLabel>`
+
+* :doc:`Shape </reference/Graphics/Shape>`
+
+* :doc:`ShapeCatalogue </reference/Graphics/ShapeCatalogue>`
+
+* :doc:`ShapeUsage </reference/Graphics/ShapeUsage>`
+
+* :doc:`SignalOffPageConnectorShape </reference/Graphics/SignalOffPageConnectorShape>`
+
+* :doc:`Static </reference/Graphics/Static>`
+
+* :doc:`Symbol </reference/Graphics/Symbol>`
+
+* :doc:`SymbolShape </reference/Graphics/SymbolShape>`
+
+* :doc:`TaggedPlantItemShape </reference/Graphics/TaggedPlantItemShape>`
+
+* :doc:`Text </reference/Graphics/Text>`
+
+* :doc:`TextTemplate </reference/Graphics/TextTemplate>`
+
+* :doc:`TextTemplateFragment </reference/Graphics/TextTemplateFragment>`
+
+* :doc:`ValveLabel </reference/Graphics/ValveLabel>`
+
+.. rubric:: Data Types
+
+* :doc:`Color </reference/Graphics/Color>`
+
+* :doc:`Point </reference/Graphics/Point>`
+
+* :doc:`Stroke </reference/Graphics/Stroke>`
+
+.. rubric:: Enumerations
+
+* :doc:`AttributeRepresentationType </reference/Graphics/AttributeRepresentationType>`
+
+* :doc:`DashStyle </reference/Graphics/DashStyle>`
+
+* :doc:`FillStyle </reference/Graphics/FillStyle>`
+
+* :doc:`TextAlignment </reference/Graphics/TextAlignment>`
+
+
+.. toctree::
+   :hidden:
+
+   overview
+   ActuatingSystemComponentShape
+   ActuatingSystemNumberLabel
+   AttributeRepresentation
+   AttributeRepresentationType
+   Border
+   Circle
+   CircleArc
+   Color
+   ConnectorLine
+   DashStyle
+   Diagram
+   Ellipse
+   EllipseArc
+   EquipmentBarLabel
+   EquipmentTagNameLabel
+   FailActionLabel
+   FillStyle
+   FittingLabel
+   GraphicalElement
+   GraphicalPrimitive
+   GraphicsGroup
+   InstrumentationNodePosition
+   InsulationLabel
+   InsulationSymbol
+   InsulationSymbolShape
+   Label
+   LiteralText
+   NodePosition
+   NozzleShape
+   NozzleStandardLabel
+   PipeFlowArrow
+   PipeFlowArrowShape
+   PipeOffPageConnectorShape
+   PipeSlopeSymbol
+   PipeSlopeSymbolShape
+   PipingClassBreakLabel
+   PipingComponentShape
+   PipingNetworkSegmentLabel
+   PipingNetworkSystemLabel
+   PipingNodePosition
+   Point
+   PolyLine
+   Polygon
+   ProcessInstrumentationFunctionLabel
+   ProcessInstrumentationFunctionShape
+   ProcessInstrumentationFunctionSignalConveyingFunctionLabel
+   PropertyBreakShape
+   RepresentationGroup
+   RepresentationTypeGroup
+   SafetyValveOrFittingLabel
+   Shape
+   ShapeCatalogue
+   ShapeUsage
+   SignalOffPageConnectorShape
+   Static
+   Stroke
+   Symbol
+   SymbolShape
+   TaggedPlantItemShape
+   Text
+   TextAlignment
+   TextTemplate
+   TextTemplateFragment
+   ValveLabel

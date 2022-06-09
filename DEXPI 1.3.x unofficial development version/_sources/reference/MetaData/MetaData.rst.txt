@@ -1,0 +1,2933 @@
+========
+MetaData
+========
+
+Overview
+========
+
+.. rubric:: Class
+
+A container for meta data about a :doc:`DexpiModel </reference/DexpiModel/DexpiModel>`.
+
+.. image:: MetaData.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`ConceptualObject </reference/DexpiModel/ConceptualObject>`
+
+* :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                                                               | Multiplicity | Type                                                                                                                               |
++====================================================================================================================================================+==============+====================================================================================================================================+
+| :ref:`ApprovalDateRepresentation <dexpi-MetaData-MetaData-ApprovalDateRepresentation>`                                                             | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`ApprovalDescription <dexpi-MetaData-MetaData-ApprovalDescription>`                                                                           | 0..1         | :doc:`MultiLanguageString </reference/DataTypes/MultiLanguageString>`                                                              |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`ApproverName <dexpi-MetaData-MetaData-ApproverName>`                                                                                         | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`ArchiveNumber <dexpi-MetaData-MetaData-ArchiveNumber>`                                                                                       | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`BlockName <dexpi-MetaData-MetaData-BlockName>`                                                                                               | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`BlockNumber <dexpi-MetaData-MetaData-BlockNumber>`                                                                                           | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`CheckerName <dexpi-MetaData-MetaData-CheckerName>`                                                                                           | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`Confidentiality <dexpi-MetaData-MetaData-Confidentiality>`                                                                                   | 0..1         | :doc:`ConfidentialityClassification </reference/Enumerations/ConfidentialityClassification>`                                       |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`CreationDateRepresentation <dexpi-MetaData-MetaData-CreationDateRepresentation>`                                                             | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`CreatorName <dexpi-MetaData-MetaData-CreatorName>`                                                                                           | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`DesignerName <dexpi-MetaData-MetaData-DesignerName>`                                                                                         | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`DrafterName <dexpi-MetaData-MetaData-DrafterName>`                                                                                           | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`DrawingName <dexpi-MetaData-MetaData-DrawingName>`                                                                                           | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`DrawingNumber <dexpi-MetaData-MetaData-DrawingNumber>`                                                                                       | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`DrawingSubTitle <dexpi-MetaData-MetaData-DrawingSubTitle>`                                                                                   | 0..1         | :doc:`MultiLanguageString </reference/DataTypes/MultiLanguageString>`                                                              |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`EnterpriseIdentificationCode <dexpi-MetaData-MetaData-EnterpriseIdentificationCode>`                                                         | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`EnterpriseName <dexpi-MetaData-MetaData-EnterpriseName>`                                                                                     | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`FileName <dexpi-MetaData-MetaData-FileName>`                                                                                                 | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`IndustrialComplexIdentificationCode <dexpi-MetaData-MetaData-IndustrialComplexIdentificationCode>`                                           | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`IndustrialComplexName <dexpi-MetaData-MetaData-IndustrialComplexName>`                                                                       | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`LastModificationDateRepresentation <dexpi-MetaData-MetaData-LastModificationDateRepresentation>`                                             | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`LocationName <dexpi-MetaData-MetaData-LocationName>`                                                                                         | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`PlantAreaIdentificationCode <dexpi-MetaData-MetaData-PlantAreaIdentificationCode>`                                                           | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`PlantAreaName <dexpi-MetaData-MetaData-PlantAreaName>`                                                                                       | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`PlantSectionIdentificationCode <dexpi-MetaData-MetaData-PlantSectionIdentificationCode>`                                                     | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`PlantSectionName <dexpi-MetaData-MetaData-PlantSectionName>`                                                                                 | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`PlantSystemIdentificationCode <dexpi-MetaData-MetaData-PlantSystemIdentificationCode>`                                                       | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`PlantSystemName <dexpi-MetaData-MetaData-PlantSystemName>`                                                                                   | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`PlantTrainIdentificationCode <dexpi-MetaData-MetaData-PlantTrainIdentificationCode>`                                                         | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`PlantTrainName <dexpi-MetaData-MetaData-PlantTrainName>`                                                                                     | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`ProcessCellIdentificationCode <dexpi-MetaData-MetaData-ProcessCellIdentificationCode>`                                                       | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`ProcessCellName <dexpi-MetaData-MetaData-ProcessCellName>`                                                                                   | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`ProcessPlantIdentificationCode <dexpi-MetaData-MetaData-ProcessPlantIdentificationCode>`                                                     | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`ProcessPlantName <dexpi-MetaData-MetaData-ProcessPlantName>`                                                                                 | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`ProjectName <dexpi-MetaData-MetaData-ProjectName>`                                                                                           | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`ProjectNumber <dexpi-MetaData-MetaData-ProjectNumber>`                                                                                       | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`ProjectRangeNumber <dexpi-MetaData-MetaData-ProjectRangeNumber>`                                                                             | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`ReplacedDrawing <dexpi-MetaData-MetaData-ReplacedDrawing>`                                                                                   | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`ResponsibleDepartmentName <dexpi-MetaData-MetaData-ResponsibleDepartmentName>`                                                               | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`RevisionNumber <dexpi-MetaData-MetaData-RevisionNumber>`                                                                                     | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`SheetFormat <dexpi-MetaData-MetaData-SheetFormat>`                                                                                           | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`SheetNumber <dexpi-MetaData-MetaData-SheetNumber>`                                                                                           | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`SiteIdentificationCode <dexpi-MetaData-MetaData-SiteIdentificationCode>`                                                                     | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`SiteName <dexpi-MetaData-MetaData-SiteName>`                                                                                                 | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`SubProjectName <dexpi-MetaData-MetaData-SubProjectName>`                                                                                     | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`SubProjectNumber <dexpi-MetaData-MetaData-SubProjectNumber>`                                                                                 | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`TotalNumberOfSheets <dexpi-MetaData-MetaData-TotalNumberOfSheets>`                                                                           | 0..1         | :doc:`NullableInteger </reference/DataTypes/NullableInteger>`                                                                      |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`UnitIdentificationCode <dexpi-MetaData-MetaData-UnitIdentificationCode>`                                                                     | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`UnitName <dexpi-MetaData-MetaData-UnitName>`                                                                                                 | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<MetaData>``
+
+   RDL reference
+       `META DATA <http://sandbox.dexpi.org/rdl/MetaData>`__
+
+   ComponentClass
+       MetaData
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/MetaData <http://sandbox.dexpi.org/rdl/MetaData>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram573.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-ApprovalDateRepresentation:
+
+ApprovalDateRepresentation
+==========================
+
+.. rubric:: Attribute (data)
+
+
+A representation of the approval date of the drawing. The format of the representation is not prescribed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `APPROVAL DATE REPRESENTATION ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/ApprovalDateRepresentationAssignmentClass>`__
+
+   Name
+       ApprovalDateRepresentationAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/ApprovalDateRepresentationAssignmentClass <http://sandbox.dexpi.org/rdl/ApprovalDateRepresentationAssignmentClass>`__
+
+.. admonition:: example
+
+   "2016-04-01" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="ApprovalDateRepresentationAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/ApprovalDateRepresentationAssignmentClass"
+              Format="string"
+              Value="2016-04-01" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-ApprovalDescription:
+
+ApprovalDescription
+===================
+
+.. rubric:: Attribute (data)
+
+
+A description of the approval of the drawing.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`MultiLanguageString </reference/DataTypes/MultiLanguageString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`set of DEXPI generic attributes for multi-language string values <proteus-concept-dexpi-generic-attribute-multi-language-string>`.
+
+   RDL reference
+       `APPROVAL DESCRIPTION ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/ApprovalDescriptionAssignmentClass>`__
+
+   Name
+       ApprovalDescriptionAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/ApprovalDescriptionAssignmentClass <http://sandbox.dexpi.org/rdl/ApprovalDescriptionAssignmentClass>`__
+
+.. admonition:: example
+
+   +----------+-----------+
+   | Language | Value     |
+   +==========+===========+
+   | en       | approved  |
+   +----------+-----------+
+   | de       | genehmigt |
+   +----------+-----------+
+
+   (:doc:`MultiLanguageString </reference/DataTypes/MultiLanguageString>` with 2 :doc:`SingleLanguageString </reference/DataTypes/SingleLanguageString>`\ s)
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="ApprovalDescriptionAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/ApprovalDescriptionAssignmentClass"
+              Format="string"
+              Language="en"
+              Value="approved" />
+            <GenericAttribute
+              Name="ApprovalDescriptionAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/ApprovalDescriptionAssignmentClass"
+              Format="string"
+              Language="de"
+              Value="genehmigt" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-ApproverName:
+
+ApproverName
+============
+
+.. rubric:: Attribute (data)
+
+
+The name of the approver of the drawing.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `APPROVER NAME ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/ApproverNameAssignmentClass>`__
+
+   Name
+       ApproverNameAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/ApproverNameAssignmentClass <http://sandbox.dexpi.org/rdl/ApproverNameAssignmentClass>`__
+
+.. admonition:: example
+
+   "A. P. Prover" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="ApproverNameAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/ApproverNameAssignmentClass"
+              Format="string"
+              Value="A. P. Prover" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-ArchiveNumber:
+
+ArchiveNumber
+=============
+
+.. rubric:: Attribute (data)
+
+
+The archive number of the drawing.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `ARCHIVE NUMBER ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/ArchiveNumberAssignmentClass>`__
+
+   Name
+       ArchiveNumberAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/ArchiveNumberAssignmentClass <http://sandbox.dexpi.org/rdl/ArchiveNumberAssignmentClass>`__
+
+.. admonition:: example
+
+   "XY923-463" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="ArchiveNumberAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/ArchiveNumberAssignmentClass"
+              Format="string"
+              Value="XY923-463" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-BlockName:
+
+BlockName
+=========
+
+.. rubric:: Attribute (data)
+
+
+The name of the related block.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `BLOCK NAME ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/BlockNameAssignmentClass>`__
+
+   Name
+       BlockNameAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/BlockNameAssignmentClass <http://sandbox.dexpi.org/rdl/BlockNameAssignmentClass>`__
+
+.. admonition:: example
+
+   "a block" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="BlockNameAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/BlockNameAssignmentClass"
+              Format="string"
+              Value="a block" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-BlockNumber:
+
+BlockNumber
+===========
+
+.. rubric:: Attribute (data)
+
+
+The number of the related block.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `BLOCK NUMBER ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/BlockNumberAssignmentClass>`__
+
+   Name
+       BlockNumberAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/BlockNumberAssignmentClass <http://sandbox.dexpi.org/rdl/BlockNumberAssignmentClass>`__
+
+.. admonition:: example
+
+   "B987-654" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="BlockNumberAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/BlockNumberAssignmentClass"
+              Format="string"
+              Value="B987-654" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-CheckerName:
+
+CheckerName
+===========
+
+.. rubric:: Attribute (data)
+
+
+The name of the checker of the drawing.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `CHECKER NAME ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/CheckerNameAssignmentClass>`__
+
+   Name
+       CheckerNameAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/CheckerNameAssignmentClass <http://sandbox.dexpi.org/rdl/CheckerNameAssignmentClass>`__
+
+.. admonition:: example
+
+   "C. Hecker" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="CheckerNameAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/CheckerNameAssignmentClass"
+              Format="string"
+              Value="C. Hecker" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-Confidentiality:
+
+Confidentiality
+===============
+
+.. rubric:: Attribute (data)
+
+
+The confidentiality classification of the drawing.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`ConfidentialityClassification </reference/Enumerations/ConfidentialityClassification>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for enumeration values <proteus-concept-dexpi-generic-attribute-enumeration>`.
+
+   RDL reference
+       `CONFIDENTIALITY SPECIALIZATION <http://sandbox.dexpi.org/rdl/ConfidentialitySpecialization>`__
+
+   Name
+       ConfidentialitySpecialization
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/ConfidentialitySpecialization <http://sandbox.dexpi.org/rdl/ConfidentialitySpecialization>`__
+
+.. admonition:: example
+
+   confidential (:ref:`ConfidentialityClassification::ConfidentialInformation <dexpi-Enumerations-ConfidentialityClassification-ConfidentialInformation>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="ConfidentialitySpecialization"
+              AttributeURI="http://sandbox.dexpi.org/rdl/ConfidentialitySpecialization"
+              Format="anyURI"
+              Value="ConfidentialInformation"
+              ValueURI="http://data.posccaesar.org/rdl/RDS4316590816" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-CreationDateRepresentation:
+
+CreationDateRepresentation
+==========================
+
+.. rubric:: Attribute (data)
+
+
+A representation of the creation date of the drawing. The format of the representation is not prescribed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `CREATION DATE REPRESENTATION ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/CreationDateRepresentationAssignmentClass>`__
+
+   Name
+       CreationDateRepresentationAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/CreationDateRepresentationAssignmentClass <http://sandbox.dexpi.org/rdl/CreationDateRepresentationAssignmentClass>`__
+
+.. admonition:: example
+
+   "2016-04-01" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="CreationDateRepresentationAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/CreationDateRepresentationAssignmentClass"
+              Format="string"
+              Value="2016-04-01" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-CreatorName:
+
+CreatorName
+===========
+
+.. rubric:: Attribute (data)
+
+
+The name of the creator of the drawing.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `CREATOR NAME ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/CreatorNameAssignmentClass>`__
+
+   Name
+       CreatorNameAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/CreatorNameAssignmentClass <http://sandbox.dexpi.org/rdl/CreatorNameAssignmentClass>`__
+
+.. admonition:: example
+
+   "A. Creator" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="CreatorNameAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/CreatorNameAssignmentClass"
+              Format="string"
+              Value="A. Creator" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-DesignerName:
+
+DesignerName
+============
+
+.. rubric:: Attribute (data)
+
+
+The name of the designer of the drawing.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `DESIGNER NAME ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/DesignerNameAssignmentClass>`__
+
+   Name
+       DesignerNameAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignerNameAssignmentClass <http://sandbox.dexpi.org/rdl/DesignerNameAssignmentClass>`__
+
+.. admonition:: example
+
+   "D. E. Signer" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignerNameAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/DesignerNameAssignmentClass"
+              Format="string"
+              Value="D. E. Signer" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-DrafterName:
+
+DrafterName
+===========
+
+.. rubric:: Attribute (data)
+
+
+The name of the drafter of the drawing.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `DRAFTER NAME ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/DrafterNameAssignmentClass>`__
+
+   Name
+       DrafterNameAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DrafterNameAssignmentClass <http://sandbox.dexpi.org/rdl/DrafterNameAssignmentClass>`__
+
+.. admonition:: example
+
+   "D. Rafter" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DrafterNameAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/DrafterNameAssignmentClass"
+              Format="string"
+              Value="D. Rafter" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-DrawingName:
+
+DrawingName
+===========
+
+.. rubric:: Attribute (data)
+
+
+The drawing name.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `DRAWING NAME ASSIGNMENT CLASS <http://data.posccaesar.org/rdl/RDS2102503531>`__
+
+   Name
+       DrawingNameAssignmentClass
+
+   AttributeURI
+       `http://data.posccaesar.org/rdl/RDS2102503531 <http://data.posccaesar.org/rdl/RDS2102503531>`__
+
+.. admonition:: example
+
+   "DEXPI example PID" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DrawingNameAssignmentClass"
+              AttributeURI="http://data.posccaesar.org/rdl/RDS2102503531"
+              Format="string"
+              Value="DEXPI example PID" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-DrawingNumber:
+
+DrawingNumber
+=============
+
+.. rubric:: Attribute (data)
+
+
+The drawing number.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `DRAWING NUMBER ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/DrawingNumberAssignmentClass>`__
+
+   Name
+       DrawingNumberAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DrawingNumberAssignmentClass <http://sandbox.dexpi.org/rdl/DrawingNumberAssignmentClass>`__
+
+.. admonition:: example
+
+   "123/A93" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DrawingNumberAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/DrawingNumberAssignmentClass"
+              Format="string"
+              Value="123/A93" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-DrawingSubTitle:
+
+DrawingSubTitle
+===============
+
+.. rubric:: Attribute (data)
+
+
+The subtitle of the drawing.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`MultiLanguageString </reference/DataTypes/MultiLanguageString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`set of DEXPI generic attributes for multi-language string values <proteus-concept-dexpi-generic-attribute-multi-language-string>`.
+
+   RDL reference
+       `DRAWING SUB TITLE ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/DrawingSubTitleAssignmentClass>`__
+
+   Name
+       DrawingSubTitleAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DrawingSubTitleAssignmentClass <http://sandbox.dexpi.org/rdl/DrawingSubTitleAssignmentClass>`__
+
+.. admonition:: example
+
+   +----------+--------------------+
+   | Language | Value              |
+   +==========+====================+
+   | en       | DEXPI Example PID  |
+   +----------+--------------------+
+   | de       | DEXPI Beispiel-R&I |
+   +----------+--------------------+
+
+   (:doc:`MultiLanguageString </reference/DataTypes/MultiLanguageString>` with 2 :doc:`SingleLanguageString </reference/DataTypes/SingleLanguageString>`\ s)
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DrawingSubTitleAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/DrawingSubTitleAssignmentClass"
+              Format="string"
+              Language="en"
+              Value="DEXPI Example PID" />
+            <GenericAttribute
+              Name="DrawingSubTitleAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/DrawingSubTitleAssignmentClass"
+              Format="string"
+              Language="de"
+              Value="DEXPI Beispiel-R&amp;I" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-EnterpriseIdentificationCode:
+
+EnterpriseIdentificationCode
+============================
+
+.. rubric:: Attribute (data)
+
+
+The identification code of the enterprise.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `ENTERPRISE IDENTIFICATION CODE ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/EnterpriseIdentificationCodeAssignmentClass>`__
+
+   Name
+       EnterpriseIdentificationCodeAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/EnterpriseIdentificationCodeAssignmentClass <http://sandbox.dexpi.org/rdl/EnterpriseIdentificationCodeAssignmentClass>`__
+
+.. admonition:: example
+
+   "C1248" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="EnterpriseIdentificationCodeAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/EnterpriseIdentificationCodeAssignmentClass"
+              Format="string"
+              Value="C1248" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-EnterpriseName:
+
+EnterpriseName
+==============
+
+.. rubric:: Attribute (data)
+
+
+The name of the enterprise.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `ENTERPRISE NAME ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/EnterpriseNameAssignmentClass>`__
+
+   Name
+       EnterpriseNameAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/EnterpriseNameAssignmentClass <http://sandbox.dexpi.org/rdl/EnterpriseNameAssignmentClass>`__
+
+.. admonition:: example
+
+   "CompAny Ltd." (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="EnterpriseNameAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/EnterpriseNameAssignmentClass"
+              Format="string"
+              Value="CompAny Ltd." />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-FileName:
+
+FileName
+========
+
+.. rubric:: Attribute (data)
+
+
+The file name of the drawing.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `FILE NAME ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/FileNameAssignmentClass>`__
+
+   Name
+       FileNameAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/FileNameAssignmentClass <http://sandbox.dexpi.org/rdl/FileNameAssignmentClass>`__
+
+.. admonition:: example
+
+   "DEXPI_example_PID.xml." (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="FileNameAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/FileNameAssignmentClass"
+              Format="string"
+              Value="DEXPI_example_PID.xml." />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-IndustrialComplexIdentificationCode:
+
+IndustrialComplexIdentificationCode
+===================================
+
+.. rubric:: Attribute (data)
+
+
+The identification code of the industrial complex.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `INDUSTRIAL COMPLEX IDENTIFICATION CODE ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/IndustrialComplexIdentificationCodeAssignmentClass>`__
+
+   Name
+       IndustrialComplexIdentificationCodeAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/IndustrialComplexIdentificationCodeAssignmentClass <http://sandbox.dexpi.org/rdl/IndustrialComplexIdentificationCodeAssignmentClass>`__
+
+.. admonition:: example
+
+   "I-Chain" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="IndustrialComplexIdentificationCodeAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/IndustrialComplexIdentificationCodeAssignmentClass"
+              Format="string"
+              Value="I-Chain" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-IndustrialComplexName:
+
+IndustrialComplexName
+=====================
+
+.. rubric:: Attribute (data)
+
+
+The name of the industrial complex.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `INDUSTRIAL COMPLEX NAME ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/IndustrialComplexNameAssignmentClass>`__
+
+   Name
+       IndustrialComplexNameAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/IndustrialComplexNameAssignmentClass <http://sandbox.dexpi.org/rdl/IndustrialComplexNameAssignmentClass>`__
+
+.. admonition:: example
+
+   "Isophorone Chain" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="IndustrialComplexNameAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/IndustrialComplexNameAssignmentClass"
+              Format="string"
+              Value="Isophorone Chain" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-LastModificationDateRepresentation:
+
+LastModificationDateRepresentation
+==================================
+
+.. rubric:: Attribute (data)
+
+
+A representation of the last modification date of the drawing. The format of the representation is not prescribed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `LAST MODIFICATION DATE REPRESENTATION ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/LastModificationDateRepresentationAssignmentClass>`__
+
+   Name
+       LastModificationDateRepresentationAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/LastModificationDateRepresentationAssignmentClass <http://sandbox.dexpi.org/rdl/LastModificationDateRepresentationAssignmentClass>`__
+
+.. admonition:: example
+
+   "2016-04-02" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="LastModificationDateRepresentationAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/LastModificationDateRepresentationAssignmentClass"
+              Format="string"
+              Value="2016-04-02" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-LocationName:
+
+LocationName
+============
+
+.. rubric:: Attribute (data)
+
+
+The location name.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `LOCATION NAME ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/LocationNameAssignmentClass>`__
+
+   Name
+       LocationNameAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/LocationNameAssignmentClass <http://sandbox.dexpi.org/rdl/LocationNameAssignmentClass>`__
+
+.. admonition:: example
+
+   "C1248." (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="LocationNameAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/LocationNameAssignmentClass"
+              Format="string"
+              Value="C1248." />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-PlantAreaIdentificationCode:
+
+PlantAreaIdentificationCode
+===========================
+
+.. rubric:: Attribute (data)
+
+
+The identification code of the plant area according to ISA-95..
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `PLANT AREA IDENTIFICATION CODE ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/PlantAreaIdentificationCodeAssignmentClass>`__
+
+   Name
+       PlantAreaIdentificationCodeAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/PlantAreaIdentificationCodeAssignmentClass <http://sandbox.dexpi.org/rdl/PlantAreaIdentificationCodeAssignmentClass>`__
+
+.. admonition:: example
+
+   "F4" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="PlantAreaIdentificationCodeAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/PlantAreaIdentificationCodeAssignmentClass"
+              Format="string"
+              Value="F4" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-PlantAreaName:
+
+PlantAreaName
+=============
+
+.. rubric:: Attribute (data)
+
+
+The name of the plant area according to ISA-95.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `AREA ISA95 NAME ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/AreaIsa95NameAssignmentClass>`__
+
+   Name
+       AreaIsa95NameAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/AreaIsa95NameAssignmentClass <http://sandbox.dexpi.org/rdl/AreaIsa95NameAssignmentClass>`__
+
+.. admonition:: example
+
+   "Area F4" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="AreaIsa95NameAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/AreaIsa95NameAssignmentClass"
+              Format="string"
+              Value="Area F4" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-PlantSectionIdentificationCode:
+
+PlantSectionIdentificationCode
+==============================
+
+.. rubric:: Attribute (data)
+
+
+The identification code of the plant section.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `PLANT SECTION IDENTIFICATION CODE ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/PlantSectionIdentificationCodeAssignmentClass>`__
+
+   Name
+       PlantSectionIdentificationCodeAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/PlantSectionIdentificationCodeAssignmentClass <http://sandbox.dexpi.org/rdl/PlantSectionIdentificationCodeAssignmentClass>`__
+
+.. admonition:: example
+
+   "10" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="PlantSectionIdentificationCodeAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/PlantSectionIdentificationCodeAssignmentClass"
+              Format="string"
+              Value="10" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-PlantSectionName:
+
+PlantSectionName
+================
+
+.. rubric:: Attribute (data)
+
+
+The name of the plant section.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `PLANT SECTION NAME ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/PlantSectionNameAssignmentClass>`__
+
+   Name
+       PlantSectionNameAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/PlantSectionNameAssignmentClass <http://sandbox.dexpi.org/rdl/PlantSectionNameAssignmentClass>`__
+
+.. admonition:: example
+
+   "Utilities" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="PlantSectionNameAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/PlantSectionNameAssignmentClass"
+              Format="string"
+              Value="Utilities" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-PlantSystemIdentificationCode:
+
+PlantSystemIdentificationCode
+=============================
+
+.. rubric:: Attribute (data)
+
+
+The identification code of the plant system.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `PLANT SYSTEM IDENTIFICATION CODE ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/PlantSystemIdentificationCodeAssignmentClass>`__
+
+   Name
+       PlantSystemIdentificationCodeAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/PlantSystemIdentificationCodeAssignmentClass <http://sandbox.dexpi.org/rdl/PlantSystemIdentificationCodeAssignmentClass>`__
+
+.. admonition:: example
+
+   "X123" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="PlantSystemIdentificationCodeAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/PlantSystemIdentificationCodeAssignmentClass"
+              Format="string"
+              Value="X123" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-PlantSystemName:
+
+PlantSystemName
+===============
+
+.. rubric:: Attribute (data)
+
+
+The name of the plant system.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `PLANT SYSTEM NAME ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/PlantSystemNameAssignmentClass>`__
+
+   Name
+       PlantSystemNameAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/PlantSystemNameAssignmentClass <http://sandbox.dexpi.org/rdl/PlantSystemNameAssignmentClass>`__
+
+.. admonition:: example
+
+   "System X123" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="PlantSystemNameAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/PlantSystemNameAssignmentClass"
+              Format="string"
+              Value="System X123" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-PlantTrainIdentificationCode:
+
+PlantTrainIdentificationCode
+============================
+
+.. rubric:: Attribute (data)
+
+
+The identification code of the plant train.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `PLANT TRAIN IDENTIFICATION CODE ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/PlantTrainIdentificationCodeAssignmentClass>`__
+
+   Name
+       PlantTrainIdentificationCodeAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/PlantTrainIdentificationCodeAssignmentClass <http://sandbox.dexpi.org/rdl/PlantTrainIdentificationCodeAssignmentClass>`__
+
+.. admonition:: example
+
+   "T456" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="PlantTrainIdentificationCodeAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/PlantTrainIdentificationCodeAssignmentClass"
+              Format="string"
+              Value="T456" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-PlantTrainName:
+
+PlantTrainName
+==============
+
+.. rubric:: Attribute (data)
+
+
+The name of the plant train.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `PLANT TRAIN NAME ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/PlantTrainNameAssignmentClass>`__
+
+   Name
+       PlantTrainNameAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/PlantTrainNameAssignmentClass <http://sandbox.dexpi.org/rdl/PlantTrainNameAssignmentClass>`__
+
+.. admonition:: example
+
+   "Train T456" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="PlantTrainNameAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/PlantTrainNameAssignmentClass"
+              Format="string"
+              Value="Train T456" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-ProcessCellIdentificationCode:
+
+ProcessCellIdentificationCode
+=============================
+
+.. rubric:: Attribute (data)
+
+
+The identification code of the related process cell according to ISA-95.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `PROCESS CELL IDENTIFICATION CODE ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/ProcessCellIdentificationCodeAssignmentClass>`__
+
+   Name
+       ProcessCellIdentificationCodeAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/ProcessCellIdentificationCodeAssignmentClass <http://sandbox.dexpi.org/rdl/ProcessCellIdentificationCodeAssignmentClass>`__
+
+.. admonition:: example
+
+   "PC123" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="ProcessCellIdentificationCodeAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/ProcessCellIdentificationCodeAssignmentClass"
+              Format="string"
+              Value="PC123" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-ProcessCellName:
+
+ProcessCellName
+===============
+
+.. rubric:: Attribute (data)
+
+
+The name of the related process cell according to ISA-95.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `PROCESS CELL NAME ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/ProcessCellNameAssignmentClass>`__
+
+   Name
+       ProcessCellNameAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/ProcessCellNameAssignmentClass <http://sandbox.dexpi.org/rdl/ProcessCellNameAssignmentClass>`__
+
+.. admonition:: example
+
+   "a process cell" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="ProcessCellNameAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/ProcessCellNameAssignmentClass"
+              Format="string"
+              Value="a process cell" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-ProcessPlantIdentificationCode:
+
+ProcessPlantIdentificationCode
+==============================
+
+.. rubric:: Attribute (data)
+
+
+The identification code of the process plant.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `PROCESS PLANT IDENTIFICATION CODE ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/ProcessPlantIdentificationCodeAssignmentClass>`__
+
+   Name
+       ProcessPlantIdentificationCodeAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/ProcessPlantIdentificationCodeAssignmentClass <http://sandbox.dexpi.org/rdl/ProcessPlantIdentificationCodeAssignmentClass>`__
+
+.. admonition:: example
+
+   "ABC" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="ProcessPlantIdentificationCodeAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/ProcessPlantIdentificationCodeAssignmentClass"
+              Format="string"
+              Value="ABC" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-ProcessPlantName:
+
+ProcessPlantName
+================
+
+.. rubric:: Attribute (data)
+
+
+The name of the process plant.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `PROCESS PLANT NAME ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/ProcessPlantNameAssignmentClass>`__
+
+   Name
+       ProcessPlantNameAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/ProcessPlantNameAssignmentClass <http://sandbox.dexpi.org/rdl/ProcessPlantNameAssignmentClass>`__
+
+.. admonition:: example
+
+   "ABC Plant" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="ProcessPlantNameAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/ProcessPlantNameAssignmentClass"
+              Format="string"
+              Value="ABC Plant" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-ProjectName:
+
+ProjectName
+===========
+
+.. rubric:: Attribute (data)
+
+
+The name of the related project.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `PROJECT NAME ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/ProjectNameAssignmentClass>`__
+
+   Name
+       ProjectNameAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/ProjectNameAssignmentClass <http://sandbox.dexpi.org/rdl/ProjectNameAssignmentClass>`__
+
+.. admonition:: example
+
+   "a project" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="ProjectNameAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/ProjectNameAssignmentClass"
+              Format="string"
+              Value="a project" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-ProjectNumber:
+
+ProjectNumber
+=============
+
+.. rubric:: Attribute (data)
+
+
+The number of the related project.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `PROJECT NUMBER ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/ProjectNumberAssignmentClass>`__
+
+   Name
+       ProjectNumberAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/ProjectNumberAssignmentClass <http://sandbox.dexpi.org/rdl/ProjectNumberAssignmentClass>`__
+
+.. admonition:: example
+
+   "P3.1415" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="ProjectNumberAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/ProjectNumberAssignmentClass"
+              Format="string"
+              Value="P3.1415" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-ProjectRangeNumber:
+
+ProjectRangeNumber
+==================
+
+.. rubric:: Attribute (data)
+
+
+The range number of the related project.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `PROJECT RANGE NUMBER ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/ProjectRangeNumberAssignmentClass>`__
+
+   Name
+       ProjectRangeNumberAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/ProjectRangeNumberAssignmentClass <http://sandbox.dexpi.org/rdl/ProjectRangeNumberAssignmentClass>`__
+
+.. admonition:: example
+
+   "PR321" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="ProjectRangeNumberAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/ProjectRangeNumberAssignmentClass"
+              Format="string"
+              Value="PR321" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-ReplacedDrawing:
+
+ReplacedDrawing
+===============
+
+.. rubric:: Attribute (data)
+
+
+The drawing replaced by this drawing.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `REPLACED DRAWING ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/ReplacedDrawingAssignmentClass>`__
+
+   Name
+       ReplacedDrawingAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/ReplacedDrawingAssignmentClass <http://sandbox.dexpi.org/rdl/ReplacedDrawingAssignmentClass>`__
+
+.. admonition:: example
+
+   "D321" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="ReplacedDrawingAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/ReplacedDrawingAssignmentClass"
+              Format="string"
+              Value="D321" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-ResponsibleDepartmentName:
+
+ResponsibleDepartmentName
+=========================
+
+.. rubric:: Attribute (data)
+
+
+The name of the department responsible for the drawing.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `RESPONSIBLE DEPARTMENT NAME ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/ResponsibleDepartmentNameAssignmentClass>`__
+
+   Name
+       ResponsibleDepartmentNameAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/ResponsibleDepartmentNameAssignmentClass <http://sandbox.dexpi.org/rdl/ResponsibleDepartmentNameAssignmentClass>`__
+
+.. admonition:: example
+
+   "R2-D2" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="ResponsibleDepartmentNameAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/ResponsibleDepartmentNameAssignmentClass"
+              Format="string"
+              Value="R2-D2" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-RevisionNumber:
+
+RevisionNumber
+==============
+
+.. rubric:: Attribute (data)
+
+
+The revision number of the drawing.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `REVISION NUMBER ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/RevisionNumberAssignmentClass>`__
+
+   Name
+       RevisionNumberAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/RevisionNumberAssignmentClass <http://sandbox.dexpi.org/rdl/RevisionNumberAssignmentClass>`__
+
+.. admonition:: example
+
+   "R2.2" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="RevisionNumberAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/RevisionNumberAssignmentClass"
+              Format="string"
+              Value="R2.2" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-SheetFormat:
+
+SheetFormat
+===========
+
+.. rubric:: Attribute (data)
+
+
+The sheet format.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `SHEET FORMAT ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/SheetFormatAssignmentClass>`__
+
+   Name
+       SheetFormatAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/SheetFormatAssignmentClass <http://sandbox.dexpi.org/rdl/SheetFormatAssignmentClass>`__
+
+.. admonition:: example
+
+   "DIN A3" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="SheetFormatAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/SheetFormatAssignmentClass"
+              Format="string"
+              Value="DIN A3" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-SheetNumber:
+
+SheetNumber
+===========
+
+.. rubric:: Attribute (data)
+
+
+The sheet number of the drawing.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `SHEET NUMBER ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/SheetNumberAssignmentClass>`__
+
+   Name
+       SheetNumberAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/SheetNumberAssignmentClass <http://sandbox.dexpi.org/rdl/SheetNumberAssignmentClass>`__
+
+.. admonition:: example
+
+   "2a" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="SheetNumberAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/SheetNumberAssignmentClass"
+              Format="string"
+              Value="2a" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-SiteIdentificationCode:
+
+SiteIdentificationCode
+======================
+
+.. rubric:: Attribute (data)
+
+
+The identification code of the site.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `SITE IDENTIFICATION CODE ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/SiteIdentificationCodeAssignmentClass>`__
+
+   Name
+       SiteIdentificationCodeAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/SiteIdentificationCodeAssignmentClass <http://sandbox.dexpi.org/rdl/SiteIdentificationCodeAssignmentClass>`__
+
+.. admonition:: example
+
+   "DC" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="SiteIdentificationCodeAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/SiteIdentificationCodeAssignmentClass"
+              Format="string"
+              Value="DC" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-SiteName:
+
+SiteName
+========
+
+.. rubric:: Attribute (data)
+
+
+The name of the site.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `SITE NAME ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/SiteNameAssignmentClass>`__
+
+   Name
+       SiteNameAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/SiteNameAssignmentClass <http://sandbox.dexpi.org/rdl/SiteNameAssignmentClass>`__
+
+.. admonition:: example
+
+   "Dexpi City" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="SiteNameAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/SiteNameAssignmentClass"
+              Format="string"
+              Value="Dexpi City" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-SubProjectName:
+
+SubProjectName
+==============
+
+.. rubric:: Attribute (data)
+
+
+The name of the related sub-project.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `SUB PROJECT NAME ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/SubProjectNameAssignmentClass>`__
+
+   Name
+       SubProjectNameAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/SubProjectNameAssignmentClass <http://sandbox.dexpi.org/rdl/SubProjectNameAssignmentClass>`__
+
+.. admonition:: example
+
+   "a sub-project" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="SubProjectNameAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/SubProjectNameAssignmentClass"
+              Format="string"
+              Value="a sub-project" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-SubProjectNumber:
+
+SubProjectNumber
+================
+
+.. rubric:: Attribute (data)
+
+
+The number of the related sub-project.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `SUB PROJECT NUMBER ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/SubProjectNumberAssignmentClass>`__
+
+   Name
+       SubProjectNumberAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/SubProjectNumberAssignmentClass <http://sandbox.dexpi.org/rdl/SubProjectNumberAssignmentClass>`__
+
+.. admonition:: example
+
+   "P3.1415-SP2" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="SubProjectNumberAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/SubProjectNumberAssignmentClass"
+              Format="string"
+              Value="P3.1415-SP2" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-TotalNumberOfSheets:
+
+TotalNumberOfSheets
+===================
+
+.. rubric:: Attribute (data)
+
+
+The total number of sheets.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableInteger </reference/DataTypes/NullableInteger>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for integer values <proteus-concept-dexpi-generic-attribute-integer>`.
+
+   RDL reference
+       `TOTAL NUMBER OF SHEETS <http://sandbox.dexpi.org/rdl/TotalNumberOfSheets>`__
+
+   Name
+       TotalNumberOfSheets
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/TotalNumberOfSheets <http://sandbox.dexpi.org/rdl/TotalNumberOfSheets>`__
+
+.. admonition:: example
+
+   4 (:doc:`Integer </reference/DataTypes/Integer>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="TotalNumberOfSheets"
+              AttributeURI="http://sandbox.dexpi.org/rdl/TotalNumberOfSheets"
+              Format="integer"
+              Value="4" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-UnitIdentificationCode:
+
+UnitIdentificationCode
+======================
+
+.. rubric:: Attribute (data)
+
+
+The identification code of the related unit according to ISA-95.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `UNIT IDENTIFICATION CODE ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/UnitIdentificationCodeAssignmentClass>`__
+
+   Name
+       UnitIdentificationCodeAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/UnitIdentificationCodeAssignmentClass <http://sandbox.dexpi.org/rdl/UnitIdentificationCodeAssignmentClass>`__
+
+.. admonition:: example
+
+   "U-923-463" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="UnitIdentificationCodeAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/UnitIdentificationCodeAssignmentClass"
+              Format="string"
+              Value="U-923-463" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+
+
+.. _dexpi-MetaData-MetaData-UnitName:
+
+UnitName
+========
+
+.. rubric:: Attribute (data)
+
+
+The name of the related unit according to ISA-95.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `UNIT ISA95 NAME ASSIGNMENT CLASS <http://sandbox.dexpi.org/rdl/UnitIsa95NameAssignmentClass>`__
+
+   Name
+       UnitIsa95NameAssignmentClass
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/UnitIsa95NameAssignmentClass <http://sandbox.dexpi.org/rdl/UnitIsa95NameAssignmentClass>`__
+
+.. admonition:: example
+
+   "a unit" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <MetaData
+            ID="metaData1"
+            ComponentClass="MetaData"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="UnitIsa95NameAssignmentClass"
+              AttributeURI="http://sandbox.dexpi.org/rdl/UnitIsa95NameAssignmentClass"
+              Format="string"
+              Value="a unit" />
+            ...
+          </GenericAttributes>
+          ...
+        </MetaData>
+      
+

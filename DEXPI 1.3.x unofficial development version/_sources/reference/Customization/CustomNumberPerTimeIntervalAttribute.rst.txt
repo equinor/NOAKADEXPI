@@ -1,0 +1,102 @@
+====================================
+CustomNumberPerTimeIntervalAttribute
+====================================
+
+Overview
+========
+
+.. rubric:: Class
+
+A :ref:`custom attribute <dexpi-concept-custom-attributes>` with :ref:`Value <dexpi-Customization-CustomNumberPerTimeIntervalAttribute-Value>` type :doc:`NullableNumberPerTimeInterval </reference/PhysicalQuantities/NullableNumberPerTimeInterval>`.
+
+.. image:: CustomNumberPerTimeIntervalAttribute.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`CustomAttribute </reference/Customization/CustomAttribute>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                           | Multiplicity | Type                                                                                                                                       |
++================================================================================================================+==============+============================================================================================================================================+
+| :ref:`Value <dexpi-Customization-CustomNumberPerTimeIntervalAttribute-Value>`                                  | 1            | :doc:`NullableNumberPerTimeInterval </reference/PhysicalQuantities/NullableNumberPerTimeInterval>`                                         |
++----------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   :doc:`CustomNumberPerTimeIntervalAttribute </reference/Customization/CustomNumberPerTimeIntervalAttribute>` is implemented as a :ref:`custom generic attribute for physical quantities <proteus-concept-dexpi-custom-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `NUMBER PER TIME INTERVAL <http://sandbox.dexpi.org/rdl/NumberPerTimeInterval>`__
+
+   Type
+       NumberPerTimeInterval
+
+   TypeURI
+       `http://sandbox.dexpi.org/rdl/NumberPerTimeInterval <http://sandbox.dexpi.org/rdl/NumberPerTimeInterval>`__
+
+.. admonition:: example
+
+   As :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>` is abstract, we consider :doc:`Ship </reference/Equipment/Ship>` as an arbitrary concrete subclass.
+
+   The :doc:`Ship </reference/Equipment/Ship>` ship1 has a :doc:`CustomNumberPerTimeIntervalAttribute </reference/Customization/CustomNumberPerTimeIntervalAttribute>` with :ref:`AttributeName <dexpi-Customization-CustomAttribute-AttributeName>` "LowerLimitNumberOfJourneysPerTime" and an (arbitrary) :ref:`AttributeURI <dexpi-Customization-CustomAttribute-AttributeURI>` "http://www.example.org/b0f7d045d243e4"DOTANDSPACEHACKThe :ref:`Value <dexpi-Customization-CustomNumberPerTimeIntervalAttribute-Value>` is 1.1e-05 min\ :sup:`-1`.
+
+   .. image:: /diagrams/diagram23.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="ship1"
+            ComponentClass="Ship"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS11523932" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiCustomAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="LowerLimitNumberOfJourneysPerTime"
+              AttributeURI="http://www.example.org/b0f7d045d243e4"
+              Format="double"
+              Type="NumberPerTimeInterval"
+              TypeURI="http://sandbox.dexpi.org/rdl/NumberPerTimeInterval"
+              Value="1.1e-05"
+              Units="ReciprocalMinute"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS4316851589" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Customization-CustomNumberPerTimeIntervalAttribute-Value:
+
+Value
+=====
+
+.. rubric:: Attribute (data)
+
+
+The value of the :doc:`CustomNumberPerTimeIntervalAttribute </reference/Customization/CustomNumberPerTimeIntervalAttribute>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`NullableNumberPerTimeInterval </reference/PhysicalQuantities/NullableNumberPerTimeInterval>`
+
+Redefines
+    :ref:`Value <dexpi-Customization-CustomAttribute-Value>` (inherited from :doc:`CustomAttribute </reference/Customization/CustomAttribute>`\ )
+
+.. admonition:: proteus
+
+   See implementation of :doc:`CustomNumberPerTimeIntervalAttribute </reference/Customization/CustomNumberPerTimeIntervalAttribute>`.
+
+.. admonition:: example
+
+   See the example for :doc:`CustomNumberPerTimeIntervalAttribute </reference/Customization/CustomNumberPerTimeIntervalAttribute>`.
+

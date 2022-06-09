@@ -1,0 +1,52 @@
+===========
+Compensator
+===========
+
+Overview
+========
+
+.. rubric:: Class
+
+A device compensating for axial or radial movement between two elements that is connected (from `http://data.posccaesar.org/rdl/RDS1280084541 <http://data.posccaesar.org/rdl/RDS1280084541>`__).
+
+.. image:: Compensator.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`PipeFitting </reference/Piping/PipeFitting>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingComponent>``
+
+   RDL reference
+       `COMPENSATOR <http://data.posccaesar.org/rdl/RDS1280084541>`__
+
+   ComponentClass
+       Compensator
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS1280084541 <http://data.posccaesar.org/rdl/RDS1280084541>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram637.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="compensator1"
+            ComponentClass="Compensator"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS1280084541" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+

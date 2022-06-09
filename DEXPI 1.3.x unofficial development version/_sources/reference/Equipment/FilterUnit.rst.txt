@@ -1,0 +1,625 @@
+==========
+FilterUnit
+==========
+
+Overview
+========
+
+.. rubric:: Class
+
+The filtering unit as part of a filter.
+
+.. image:: FilterUnit.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`ConceptualObject </reference/DexpiModel/ConceptualObject>`
+
+* :doc:`CustomAttributeOwner </reference/Customization/CustomAttributeOwner>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                                                                           | Multiplicity | Type                                                                                                           |
++================================================================================================================================================================+==============+================================================================================================================+
+| :ref:`Efficiency <dexpi-Equipment-FilterUnit-Efficiency>`                                                                                                      | 0..1         | :doc:`NullablePercentage </reference/PhysicalQuantities/NullablePercentage>`                                   |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------+
+| :ref:`FilterArea <dexpi-Equipment-FilterUnit-FilterArea>`                                                                                                      | 0..1         | :doc:`NullableArea </reference/PhysicalQuantities/NullableArea>`                                               |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------+
+| :ref:`LowerLimitAllowableSolidsConcentration <dexpi-Equipment-FilterUnit-LowerLimitAllowableSolidsConcentration>`                                              | 0..1         | :doc:`NullablePercentage </reference/PhysicalQuantities/NullablePercentage>`                                   |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------+
+| :ref:`LowerLimitPermeableParticleDiameter <dexpi-Equipment-FilterUnit-LowerLimitPermeableParticleDiameter>`                                                    | 0..1         | :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`                                           |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------+
+| :ref:`MaterialOfConstructionCode <dexpi-Equipment-FilterUnit-MaterialOfConstructionCode>`                                                                      | 0..1         | :doc:`NullableString </reference/DataTypes/NullableString>`                                                    |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------+
+| :ref:`NumberOfFilterElements <dexpi-Equipment-FilterUnit-NumberOfFilterElements>`                                                                              | 0..1         | :doc:`NullableInteger </reference/DataTypes/NullableInteger>`                                                  |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------+
+| :ref:`UpperLimitAllowableSolidsConcentration <dexpi-Equipment-FilterUnit-UpperLimitAllowableSolidsConcentration>`                                              | 0..1         | :doc:`NullablePercentage </reference/PhysicalQuantities/NullablePercentage>`                                   |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------+
+| :ref:`UpperLimitPermeableParticleDiameter <dexpi-Equipment-FilterUnit-UpperLimitPermeableParticleDiameter>`                                                    | 0..1         | :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`                                           |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------+
+
+.. rubric:: Attributes (reference)
+
++----------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+| Name                                                                       | Multiplicity | Type                                                               |
++============================================================================+==============+====================================================================+
+| :ref:`Chamber <dexpi-Equipment-FilterUnit-Chamber>`                        | 0..1         | :doc:`Chamber </reference/Equipment/Chamber>`                      |
++----------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `FILTER UNIT <http://sandbox.dexpi.org/rdl/FilterUnit>`__
+
+   ComponentClass
+       FilterUnit
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/FilterUnit <http://sandbox.dexpi.org/rdl/FilterUnit>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram280.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="filterUnit1"
+            ComponentClass="FilterUnit"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/FilterUnit" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-FilterUnit-Chamber:
+
+Chamber
+=======
+
+.. rubric:: Attribute (reference)
+
+
+The :doc:`Chamber </reference/Equipment/Chamber>` in which the :doc:`FilterUnit </reference/Equipment/FilterUnit>` is located, if applicable. The Chamber must be a component of the same object as the FilterUnit.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`Chamber </reference/Equipment/Chamber>`
+
+Opposite multiplicity
+    0..*
+
+.. admonition:: proteus
+
+   The attribute is implemented using :ref:`Proteus \<Association\> elements <proteus-concept-reference-property-association>`.
+
+   Association type for the attribute ower
+       ``"is located in"``
+
+   Opposite association type
+       ``"is the location of"``
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram281.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="filterUnit1"
+            ComponentClass="FilterUnit"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/FilterUnit" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="is located in"
+            ItemID="chamber1" />
+          ...
+        <Equipment />
+        ...
+        <Equipment
+            ID="chamber1"
+            ComponentClass="Chamber"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS903151421" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="is the location of"
+            ItemID="filterUnit1" />
+          ...
+        <Equipment />
+      
+
+
+.. _dexpi-Equipment-FilterUnit-Efficiency:
+
+Efficiency
+==========
+
+.. rubric:: Attribute (data)
+
+
+The efficiency of the :doc:`FilterUnit </reference/Equipment/FilterUnit>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullablePercentage </reference/PhysicalQuantities/NullablePercentage>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `EFFICIENCY <http://data.posccaesar.org/rdl/RDS362654>`__
+
+   Name
+       Efficiency
+
+   AttributeURI
+       `http://data.posccaesar.org/rdl/RDS362654 <http://data.posccaesar.org/rdl/RDS362654>`__
+
+.. admonition:: example
+
+   The instance filterUnit1 represents a :doc:`FilterUnit </reference/Equipment/FilterUnit>` with an :ref:`Efficiency <dexpi-Equipment-FilterUnit-Efficiency>` of 90.0 ???.
+
+   .. image:: /diagrams/diagram282.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="filterUnit1"
+            ComponentClass="FilterUnit"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/FilterUnit" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="Efficiency"
+              AttributeURI="http://data.posccaesar.org/rdl/RDS362654"
+              Format="double"
+              Value="90.0"
+              Units="Percent"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1317959" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-FilterUnit-FilterArea:
+
+FilterArea
+==========
+
+.. rubric:: Attribute (data)
+
+
+The filter area of the :doc:`FilterUnit </reference/Equipment/FilterUnit>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableArea </reference/PhysicalQuantities/NullableArea>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `FILTER AREA <http://sandbox.dexpi.org/rdl/FilterArea>`__
+
+   Name
+       FilterArea
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/FilterArea <http://sandbox.dexpi.org/rdl/FilterArea>`__
+
+.. admonition:: example
+
+   The instance filterUnit1 represents a :doc:`FilterUnit </reference/Equipment/FilterUnit>` with a :ref:`FilterArea <dexpi-Equipment-FilterUnit-FilterArea>` of 6.0 m\ :sup:`2`.
+
+   .. image:: /diagrams/diagram283.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="filterUnit1"
+            ComponentClass="FilterUnit"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/FilterUnit" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="FilterArea"
+              AttributeURI="http://sandbox.dexpi.org/rdl/FilterArea"
+              Format="double"
+              Value="6.0"
+              Units="MetreSquared"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1358009" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-FilterUnit-LowerLimitAllowableSolidsConcentration:
+
+LowerLimitAllowableSolidsConcentration
+======================================
+
+.. rubric:: Attribute (data)
+
+
+The lower limit for the concentration for solids.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullablePercentage </reference/PhysicalQuantities/NullablePercentage>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `LOWER LIMIT ALLOWABLE SOLIDS CONCENTRATION <http://sandbox.dexpi.org/rdl/LowerLimitAllowableSolidsConcentration>`__
+
+   Name
+       LowerLimitAllowableSolidsConcentration
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/LowerLimitAllowableSolidsConcentration <http://sandbox.dexpi.org/rdl/LowerLimitAllowableSolidsConcentration>`__
+
+.. admonition:: example
+
+   The instance filterUnit1 represents a :doc:`FilterUnit </reference/Equipment/FilterUnit>` with a :ref:`LowerLimitAllowableSolidsConcentration <dexpi-Equipment-FilterUnit-LowerLimitAllowableSolidsConcentration>` of 10.0 ???.
+
+   .. image:: /diagrams/diagram284.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="filterUnit1"
+            ComponentClass="FilterUnit"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/FilterUnit" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="LowerLimitAllowableSolidsConcentration"
+              AttributeURI="http://sandbox.dexpi.org/rdl/LowerLimitAllowableSolidsConcentration"
+              Format="double"
+              Value="10.0"
+              Units="Percent"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1317959" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-FilterUnit-LowerLimitPermeableParticleDiameter:
+
+LowerLimitPermeableParticleDiameter
+===================================
+
+.. rubric:: Attribute (data)
+
+
+The lower limit for the particle size.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `LOWER LIMIT PERMEABLE PARTICLE DIAMETER <http://sandbox.dexpi.org/rdl/LowerLimitPermeableParticleDiameter>`__
+
+   Name
+       LowerLimitPermeableParticleDiameter
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/LowerLimitPermeableParticleDiameter <http://sandbox.dexpi.org/rdl/LowerLimitPermeableParticleDiameter>`__
+
+.. admonition:: example
+
+   The instance filterUnit1 represents a :doc:`FilterUnit </reference/Equipment/FilterUnit>` with a :ref:`LowerLimitPermeableParticleDiameter <dexpi-Equipment-FilterUnit-LowerLimitPermeableParticleDiameter>` of 50.0 µm.
+
+   .. image:: /diagrams/diagram285.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="filterUnit1"
+            ComponentClass="FilterUnit"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/FilterUnit" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="LowerLimitPermeableParticleDiameter"
+              AttributeURI="http://sandbox.dexpi.org/rdl/LowerLimitPermeableParticleDiameter"
+              Format="double"
+              Value="50.0"
+              Units="Micrometre"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1351529" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-FilterUnit-MaterialOfConstructionCode:
+
+MaterialOfConstructionCode
+==========================
+
+.. rubric:: Attribute (data)
+
+
+A code that gives the material of construction of the :doc:`FilterUnit </reference/Equipment/FilterUnit>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableString </reference/DataTypes/NullableString>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for string values <proteus-concept-dexpi-generic-attribute-string>`.
+
+   RDL reference
+       `MATERIAL OF CONSTRUCTION CODE ASSIGNMENT CLASS <http://data.posccaesar.org/rdl/RDS1460719741>`__
+
+   Name
+       MaterialOfConstructionCodeAssignmentClass
+
+   AttributeURI
+       `http://data.posccaesar.org/rdl/RDS1460719741 <http://data.posccaesar.org/rdl/RDS1460719741>`__
+
+.. admonition:: example
+
+   "1.4306" (:doc:`String </reference/DataTypes/String>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="filterUnit1"
+            ComponentClass="FilterUnit"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/FilterUnit" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="MaterialOfConstructionCodeAssignmentClass"
+              AttributeURI="http://data.posccaesar.org/rdl/RDS1460719741"
+              Format="string"
+              Value="1.4306" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-FilterUnit-NumberOfFilterElements:
+
+NumberOfFilterElements
+======================
+
+.. rubric:: Attribute (data)
+
+
+The number of filter elements in the :doc:`FilterUnit </reference/Equipment/FilterUnit>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableInteger </reference/DataTypes/NullableInteger>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for integer values <proteus-concept-dexpi-generic-attribute-integer>`.
+
+   RDL reference
+       `NUMBER OF FILTER ELEMENTS <http://sandbox.dexpi.org/rdl/NumberOfFilterElements>`__
+
+   Name
+       NumberOfFilterElements
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/NumberOfFilterElements <http://sandbox.dexpi.org/rdl/NumberOfFilterElements>`__
+
+.. admonition:: example
+
+   36 (:doc:`Integer </reference/DataTypes/Integer>`\ )
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="filterUnit1"
+            ComponentClass="FilterUnit"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/FilterUnit" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="NumberOfFilterElements"
+              AttributeURI="http://sandbox.dexpi.org/rdl/NumberOfFilterElements"
+              Format="integer"
+              Value="36" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-FilterUnit-UpperLimitAllowableSolidsConcentration:
+
+UpperLimitAllowableSolidsConcentration
+======================================
+
+.. rubric:: Attribute (data)
+
+
+The upper limit for the concentration for solids.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullablePercentage </reference/PhysicalQuantities/NullablePercentage>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `UPPER LIMIT ALLOWABLE SOLIDS CONCENTRATION <http://sandbox.dexpi.org/rdl/UpperLimitAllowableSolidsConcentration>`__
+
+   Name
+       UpperLimitAllowableSolidsConcentration
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/UpperLimitAllowableSolidsConcentration <http://sandbox.dexpi.org/rdl/UpperLimitAllowableSolidsConcentration>`__
+
+.. admonition:: example
+
+   The instance filterUnit1 represents a :doc:`FilterUnit </reference/Equipment/FilterUnit>` with an :ref:`UpperLimitAllowableSolidsConcentration <dexpi-Equipment-FilterUnit-UpperLimitAllowableSolidsConcentration>` of 30.0 ???.
+
+   .. image:: /diagrams/diagram286.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="filterUnit1"
+            ComponentClass="FilterUnit"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/FilterUnit" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="UpperLimitAllowableSolidsConcentration"
+              AttributeURI="http://sandbox.dexpi.org/rdl/UpperLimitAllowableSolidsConcentration"
+              Format="double"
+              Value="30.0"
+              Units="Percent"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1317959" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-FilterUnit-UpperLimitPermeableParticleDiameter:
+
+UpperLimitPermeableParticleDiameter
+===================================
+
+.. rubric:: Attribute (data)
+
+
+The maximum of the particle size passing through the :doc:`FilterUnit </reference/Equipment/FilterUnit>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableLength </reference/PhysicalQuantities/NullableLength>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `UPPER LIMIT PERMEABLE PARTICLE DIAMETER <http://sandbox.dexpi.org/rdl/UpperLimitPermeableParticleDiameter>`__
+
+   Name
+       UpperLimitPermeableParticleDiameter
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/UpperLimitPermeableParticleDiameter <http://sandbox.dexpi.org/rdl/UpperLimitPermeableParticleDiameter>`__
+
+.. admonition:: example
+
+   The instance filterUnit1 represents a :doc:`FilterUnit </reference/Equipment/FilterUnit>` with an :ref:`UpperLimitPermeableParticleDiameter <dexpi-Equipment-FilterUnit-UpperLimitPermeableParticleDiameter>` of 400.0 µm.
+
+   .. image:: /diagrams/diagram287.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="filterUnit1"
+            ComponentClass="FilterUnit"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/FilterUnit" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="UpperLimitPermeableParticleDiameter"
+              AttributeURI="http://sandbox.dexpi.org/rdl/UpperLimitPermeableParticleDiameter"
+              Format="double"
+              Value="400.0"
+              Units="Micrometre"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1351529" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+

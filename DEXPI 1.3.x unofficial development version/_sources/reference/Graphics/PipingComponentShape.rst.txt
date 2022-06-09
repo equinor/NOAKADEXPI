@@ -1,0 +1,16 @@
+====================
+PipingComponentShape
+====================
+
+Overview
+========
+
+.. rubric:: Class
+
+.. image:: PipingComponentShape.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Shape </reference/Graphics/Shape>`
+

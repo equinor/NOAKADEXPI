@@ -1,0 +1,16 @@
+===================================
+ProcessInstrumentationFunctionLabel
+===================================
+
+Overview
+========
+
+.. rubric:: Class
+
+.. image:: ProcessInstrumentationFunctionLabel.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Label </reference/Graphics/Label>`
+

@@ -1,0 +1,124 @@
+=======
+Diagram
+=======
+
+Overview
+========
+
+.. rubric:: Class
+
+.. image:: Diagram.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`RepresentationGroup </reference/Graphics/RepresentationGroup>`
+
+.. rubric:: Attributes (data)
+
++--------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+| Name                                                                                       | Multiplicity | Type                                                               |
++============================================================================================+==============+====================================================================+
+| :ref:`BackgroundColor <dexpi-Graphics-Diagram-BackgroundColor>`                            | 1            | :doc:`Color </reference/Graphics/Color>`                           |
++--------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+| :ref:`MaxX <dexpi-Graphics-Diagram-MaxX>`                                                  | 1            | :doc:`Double </reference/DataTypes/Double>`                        |
++--------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+| :ref:`MaxY <dexpi-Graphics-Diagram-MaxY>`                                                  | 1            | :doc:`Double </reference/DataTypes/Double>`                        |
++--------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+| :ref:`MinX <dexpi-Graphics-Diagram-MinX>`                                                  | 1            | :doc:`Double </reference/DataTypes/Double>`                        |
++--------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+| :ref:`MinY <dexpi-Graphics-Diagram-MinY>`                                                  | 1            | :doc:`Double </reference/DataTypes/Double>`                        |
++--------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+| :ref:`Name <dexpi-Graphics-Diagram-Name>`                                                  | 1            | :doc:`String </reference/DataTypes/String>`                        |
++--------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+
+
+.. _dexpi-Graphics-Diagram-BackgroundColor:
+
+BackgroundColor
+===============
+
+.. rubric:: Attribute (data)
+
+
+Multiplicity
+    1
+
+Type
+    :doc:`Color </reference/Graphics/Color>`
+
+
+.. _dexpi-Graphics-Diagram-MaxX:
+
+MaxX
+====
+
+.. rubric:: Attribute (data)
+
+
+Multiplicity
+    1
+
+Type
+    :doc:`Double </reference/DataTypes/Double>`
+
+
+.. _dexpi-Graphics-Diagram-MaxY:
+
+MaxY
+====
+
+.. rubric:: Attribute (data)
+
+
+Multiplicity
+    1
+
+Type
+    :doc:`Double </reference/DataTypes/Double>`
+
+
+.. _dexpi-Graphics-Diagram-MinX:
+
+MinX
+====
+
+.. rubric:: Attribute (data)
+
+
+Multiplicity
+    1
+
+Type
+    :doc:`Double </reference/DataTypes/Double>`
+
+
+.. _dexpi-Graphics-Diagram-MinY:
+
+MinY
+====
+
+.. rubric:: Attribute (data)
+
+
+Multiplicity
+    1
+
+Type
+    :doc:`Double </reference/DataTypes/Double>`
+
+
+.. _dexpi-Graphics-Diagram-Name:
+
+Name
+====
+
+.. rubric:: Attribute (data)
+
+
+Multiplicity
+    1
+
+Type
+    :doc:`String </reference/DataTypes/String>`
+

@@ -1,0 +1,52 @@
+===============
+StationarySieve
+===============
+
+Overview
+========
+
+.. rubric:: Class
+
+A :doc:`Sieve </reference/Equipment/Sieve>` consisting of rakes or sieves, that, during operation, remains in a fixed position (from `http://data.15926.org/rdl/RDS2226669 <http://data.15926.org/rdl/RDS2226669>`__).
+
+.. image:: StationarySieve.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Sieve </reference/Equipment/Sieve>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `STATIONARY SCREEN <http://sandbox.dexpi.org/rdl/StationaryScreen>`__
+
+   ComponentClass
+       StationaryScreen
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/StationaryScreen <http://sandbox.dexpi.org/rdl/StationaryScreen>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram467.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="stationarySieve1"
+            ComponentClass="StationaryScreen"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/StationaryScreen" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+

@@ -1,0 +1,46 @@
+===========================
+ProcessPlantParentStructure
+===========================
+
+Overview
+========
+
+.. rubric:: Abstract class
+
+A :doc:`PlantStructureItem </reference/PlantStructure/PlantStructureItem>` that is a suitable :ref:`ParentStructure <dexpi-PlantStructure-ProcessPlant-ParentStructure>` of a :doc:`ProcessPlant </reference/PlantStructure/ProcessPlant>`.
+
+.. image:: ProcessPlantParentStructure.*
+
+
+.. rubric:: Subtypes
+
+* :doc:`Enterprise </reference/PlantStructure/Enterprise>`
+
+* :doc:`IndustrialComplex </reference/PlantStructure/IndustrialComplex>`
+
+* :doc:`Site </reference/PlantStructure/Site>`
+
+.. admonition:: proteus
+
+   Implementation is subclass-specific.
+
+.. admonition:: example
+
+   As :doc:`ProcessPlantParentStructure </reference/PlantStructure/ProcessPlantParentStructure>` is abstract, we consider :doc:`Enterprise </reference/PlantStructure/Enterprise>` as an arbitrary concrete subclass.
+
+   .. image:: /diagrams/diagram749.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PlantStructureItem
+            ID="enterprise1"
+            ComponentClass="Isa95Enterprise"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS10418236543" DOTS123="DOTS123">
+          ...
+        </PlantStructureItem>
+      
+

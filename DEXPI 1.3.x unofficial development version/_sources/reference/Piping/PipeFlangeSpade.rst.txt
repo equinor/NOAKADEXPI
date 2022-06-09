@@ -1,0 +1,52 @@
+===============
+PipeFlangeSpade
+===============
+
+Overview
+========
+
+.. rubric:: Class
+
+A 'line blind' and an 'artefact' that is a circular plate with no central opening and holes to match mating flanged ends. It is also equipped with a handle (from `http://data.posccaesar.org/rdl/RDS472679 <http://data.posccaesar.org/rdl/RDS472679>`__).
+
+.. image:: PipeFlangeSpade.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`PipeFitting </reference/Piping/PipeFitting>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingComponent>``
+
+   RDL reference
+       `PIPE FLANGE SPADE <http://data.posccaesar.org/rdl/RDS472679>`__
+
+   ComponentClass
+       PipeFlangeSpade
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS472679 <http://data.posccaesar.org/rdl/RDS472679>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram677.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="pipeFlangeSpade1"
+            ComponentClass="PipeFlangeSpade"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS472679" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+

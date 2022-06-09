@@ -1,0 +1,178 @@
+=============
+ProcessColumn
+=============
+
+Overview
+========
+
+.. rubric:: Class
+
+A vertical vessel intended to enable chemical reactions or physical processes utilising differences in density of fluids and/or forced flow of fluid (from `http://data.posccaesar.org/rdl/RDS4316825224 <http://data.posccaesar.org/rdl/RDS4316825224>`__).
+
+.. image:: ProcessColumn.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Equipment </reference/Equipment/Equipment>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+| Name                                                                                                                       | Multiplicity | Type                                                                                               |
++============================================================================================================================+==============+====================================================================================================+
+| :ref:`NominalCapacity(Volume) <dexpi-Equipment-ProcessColumn-NominalCapacity(Volume)>`                                     | 0..1         | :doc:`NullableVolume </reference/PhysicalQuantities/NullableVolume>`                               |
++----------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------+
+
+.. rubric:: Attributes (composition)
+
++----------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------+
+| Name                                                                                               | Multiplicity | Type                                                                                                       |
++====================================================================================================+==============+============================================================================================================+
+| :ref:`ColumnSections <dexpi-Equipment-ProcessColumn-ColumnSections>`                               | \*           | :doc:`SubTaggedColumnSection </reference/Equipment/SubTaggedColumnSection>`                                |
++----------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `PROCESS COLUMN <http://data.posccaesar.org/rdl/RDS4316825224>`__
+
+   ComponentClass
+       ProcessColumn
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS4316825224 <http://data.posccaesar.org/rdl/RDS4316825224>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram389.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="processColumn1"
+            ComponentClass="ProcessColumn"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS4316825224" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-ProcessColumn-ColumnSections:
+
+ColumnSections
+==============
+
+.. rubric:: Attribute (composition)
+
+
+The column sections of the :doc:`ProcessColumn </reference/Equipment/ProcessColumn>`.
+
+Multiplicity
+    \*
+
+Type
+    :doc:`SubTaggedColumnSection </reference/Equipment/SubTaggedColumnSection>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   The attribute is implemented using the :ref:`XML hierarchy of the Proteus file <proteus-concept-composition-property-xml-child>`: The  element for the attribute value (a :doc:`SubTaggedColumnSection </reference/Equipment/SubTaggedColumnSection>`\ ) is a child of the ``<Equipment>`` element for the attribute owner (a :doc:`ProcessColumn </reference/Equipment/ProcessColumn>`\ ).
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram390.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="processColumn1"
+            ComponentClass="ProcessColumn"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS4316825224" DOTS123="DOTS123">
+          ...
+          <Equipment
+              ID="subTaggedColumnSection1"
+              ComponentClass="ColumnSection"
+              ComponentClassURI="http://sandbox.dexpi.org/rdl/ColumnSection" DOTS123="DOTS123">
+            ...
+          <Equipment />
+          ...
+        <Equipment />
+      
+
+
+.. _dexpi-Equipment-ProcessColumn-NominalCapacity(Volume):
+
+NominalCapacity(Volume)
+=======================
+
+.. rubric:: Attribute (data)
+
+
+The nominal volumetric capacity of the :doc:`ProcessColumn </reference/Equipment/ProcessColumn>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableVolume </reference/PhysicalQuantities/NullableVolume>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `NOMINAL CAPACITY VOLUME <http://sandbox.dexpi.org/rdl/NominalCapacityVolume>`__
+
+   Name
+       NominalCapacityVolume
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/NominalCapacityVolume <http://sandbox.dexpi.org/rdl/NominalCapacityVolume>`__
+
+.. admonition:: example
+
+   The instance processColumn1 represents a :doc:`ProcessColumn </reference/Equipment/ProcessColumn>` with a :ref:`NominalCapacity(Volume) <dexpi-Equipment-ProcessColumn-NominalCapacity(Volume)>` of 7.2 m\ :sup:`3`.
+
+   .. image:: /diagrams/diagram391.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="processColumn1"
+            ComponentClass="ProcessColumn"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS4316825224" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="NominalCapacityVolume"
+              AttributeURI="http://sandbox.dexpi.org/rdl/NominalCapacityVolume"
+              Format="double"
+              Value="7.2"
+              Units="MetreCubed"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1349099" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+

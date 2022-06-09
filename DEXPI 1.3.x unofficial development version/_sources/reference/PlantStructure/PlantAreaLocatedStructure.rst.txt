@@ -1,0 +1,119 @@
+=========================
+PlantAreaLocatedStructure
+=========================
+
+Overview
+========
+
+.. rubric:: Abstract class
+
+A structure that can be located in an :doc:`PlantArea </reference/PlantStructure/PlantArea>`.
+
+.. image:: PlantAreaLocatedStructure.*
+
+
+.. rubric:: Subtypes
+
+* :doc:`IndustrialComplex </reference/PlantStructure/IndustrialComplex>`
+
+* :doc:`PlantSection </reference/PlantStructure/PlantSection>`
+
+* :doc:`ProcessPlant </reference/PlantStructure/ProcessPlant>`
+
+* :doc:`TechnicalItem </reference/PlantStructure/TechnicalItem>`
+
+.. rubric:: Attributes (reference)
+
++------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------+
+| Name                                                                                                       | Multiplicity | Type                                                                           |
++============================================================================================================+==============+================================================================================+
+| :ref:`PlantArea <dexpi-PlantStructure-PlantAreaLocatedStructure-PlantArea>`                                | 0..1         | :doc:`PlantArea </reference/PlantStructure/PlantArea>`                         |
++------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   Implementation is subclass-specific.
+
+.. admonition:: example
+
+   As :doc:`PlantAreaLocatedStructure </reference/PlantStructure/PlantAreaLocatedStructure>` is abstract, we consider :doc:`ProcessPlant </reference/PlantStructure/ProcessPlant>` as an arbitrary concrete subclass.
+
+   .. image:: /diagrams/diagram735.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PlantStructureItem
+            ID="processPlant1"
+            ComponentClass="ProcessPlant"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS7151859" DOTS123="DOTS123">
+          ...
+        </PlantStructureItem>
+      
+
+
+.. _dexpi-PlantStructure-PlantAreaLocatedStructure-PlantArea:
+
+PlantArea
+=========
+
+.. rubric:: Attribute (reference)
+
+
+The :doc:`PlantArea </reference/PlantStructure/PlantArea>` in which the :doc:`PlantAreaLocatedStructure </reference/PlantStructure/PlantAreaLocatedStructure>` is located.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`PlantArea </reference/PlantStructure/PlantArea>`
+
+Opposite multiplicity
+    0..*
+
+.. admonition:: proteus
+
+   The attribute is implemented using :ref:`Proteus \<Association\> elements <proteus-concept-reference-property-association>`.
+
+   Association type for the attribute ower
+       ``"is located in"``
+
+   Opposite association type
+       ``"is the location of"``
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram736.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="tank1"
+            ComponentClass="Tank"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS445139" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="is located in"
+            ItemID="plantArea1" />
+          ...
+        <Equipment />
+        ...
+        <PlantStructureItem
+            ID="plantArea1"
+            ComponentClass="AreaIsa95"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS10418236534" DOTS123="DOTS123">
+          ...
+          <Association
+            Type="is the location of"
+            ItemID="tank1" />
+          ...
+        <PlantStructureItem />
+      
+

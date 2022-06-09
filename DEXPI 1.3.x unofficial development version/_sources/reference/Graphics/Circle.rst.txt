@@ -1,0 +1,100 @@
+======
+Circle
+======
+
+Overview
+========
+
+.. rubric:: Class
+
+A circle.
+
+.. image:: Circle.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`GraphicalPrimitive </reference/Graphics/GraphicalPrimitive>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------+--------------+------------------------------------------------------------------------+
+| Name                                                                       | Multiplicity | Type                                                                   |
++============================================================================+==============+========================================================================+
+| :ref:`Center <dexpi-Graphics-Circle-Center>`                               | 1            | :doc:`Point </reference/Graphics/Point>`                               |
++----------------------------------------------------------------------------+--------------+------------------------------------------------------------------------+
+| :ref:`FillStyle <dexpi-Graphics-Circle-FillStyle>`                         | 1            | :doc:`FillStyle </reference/Graphics/FillStyle>`                       |
++----------------------------------------------------------------------------+--------------+------------------------------------------------------------------------+
+| :ref:`Radius <dexpi-Graphics-Circle-Radius>`                               | 1            | :doc:`Double </reference/DataTypes/Double>`                            |
++----------------------------------------------------------------------------+--------------+------------------------------------------------------------------------+
+| :ref:`Stroke <dexpi-Graphics-Circle-Stroke>`                               | 1            | :doc:`Stroke </reference/Graphics/Stroke>`                             |
++----------------------------------------------------------------------------+--------------+------------------------------------------------------------------------+
+
+
+.. _dexpi-Graphics-Circle-Center:
+
+Center
+======
+
+.. rubric:: Attribute (data)
+
+
+The center position of the :doc:`Circle </reference/Graphics/Circle>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Point </reference/Graphics/Point>`
+
+
+.. _dexpi-Graphics-Circle-FillStyle:
+
+FillStyle
+=========
+
+.. rubric:: Attribute (data)
+
+
+The fill style of the :doc:`Circle </reference/Graphics/Circle>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`FillStyle </reference/Graphics/FillStyle>`
+
+
+.. _dexpi-Graphics-Circle-Radius:
+
+Radius
+======
+
+.. rubric:: Attribute (data)
+
+
+The radius of the :doc:`Circle </reference/Graphics/Circle>` in mm.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Double </reference/DataTypes/Double>`
+
+
+.. _dexpi-Graphics-Circle-Stroke:
+
+Stroke
+======
+
+.. rubric:: Attribute (data)
+
+
+The stroke of the :doc:`Circle </reference/Graphics/Circle>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Stroke </reference/Graphics/Stroke>`
+

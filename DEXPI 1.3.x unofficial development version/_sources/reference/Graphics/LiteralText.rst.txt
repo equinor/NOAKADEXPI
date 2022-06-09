@@ -1,0 +1,39 @@
+===========
+LiteralText
+===========
+
+Overview
+========
+
+.. rubric:: Class
+
+.. image:: LiteralText.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`TextTemplateFragment </reference/Graphics/TextTemplateFragment>`
+
+.. rubric:: Attributes (data)
+
++--------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+| Name                                                               | Multiplicity | Type                                                               |
++====================================================================+==============+====================================================================+
+| :ref:`Text <dexpi-Graphics-LiteralText-Text>`                      | 1            | :doc:`String </reference/DataTypes/String>`                        |
++--------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+
+
+.. _dexpi-Graphics-LiteralText-Text:
+
+Text
+====
+
+.. rubric:: Attribute (data)
+
+
+Multiplicity
+    1
+
+Type
+    :doc:`String </reference/DataTypes/String>`
+

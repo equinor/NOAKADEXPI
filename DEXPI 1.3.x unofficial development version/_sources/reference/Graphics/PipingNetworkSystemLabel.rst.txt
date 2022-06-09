@@ -1,0 +1,16 @@
+========================
+PipingNetworkSystemLabel
+========================
+
+Overview
+========
+
+.. rubric:: Class
+
+.. image:: PipingNetworkSystemLabel.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Label </reference/Graphics/Label>`
+

@@ -1,0 +1,109 @@
+=============
+ConnectorLine
+=============
+
+Overview
+========
+
+.. rubric:: Class
+
+.. image:: ConnectorLine.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`GraphicalPrimitive </reference/Graphics/GraphicalPrimitive>`
+
+.. rubric:: Attributes (data)
+
++--------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------+
+| Name                                                                                       | Multiplicity | Type                                                           |
++============================================================================================+==============+================================================================+
+| :ref:`InnerPoints <dexpi-Graphics-ConnectorLine-InnerPoints>`                              | \*           | :doc:`Point </reference/Graphics/Point>`                       |
++--------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------+
+| :ref:`Stroke <dexpi-Graphics-ConnectorLine-Stroke>`                                        | 1            | :doc:`Stroke </reference/Graphics/Stroke>`                     |
++--------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------+
+
+.. rubric:: Attributes (reference)
+
++----------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------+
+| Name                                                                       | Multiplicity | Type                                                                           |
++============================================================================+==============+================================================================================+
+| :ref:`Source <dexpi-Graphics-ConnectorLine-Source>`                        | 0..1         | :doc:`NodePosition </reference/Graphics/NodePosition>`                         |
++----------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------+
+| :ref:`Target <dexpi-Graphics-ConnectorLine-Target>`                        | 0..1         | :doc:`NodePosition </reference/Graphics/NodePosition>`                         |
++----------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------+
+
+
+.. _dexpi-Graphics-ConnectorLine-InnerPoints:
+
+InnerPoints
+===========
+
+.. rubric:: Attribute (data)
+
+
+The inner points of the :doc:`ConnectorLine </reference/Graphics/ConnectorLine>`.
+
+Multiplicity
+    \*
+
+Type
+    :doc:`Point </reference/Graphics/Point>`
+
+Modifiers
+    :ref:`ordered <dexpi-concept-ordered-attribute>`, :ref:`nonunique <dexpi-concept-nonunique-attribute>`
+
+
+.. _dexpi-Graphics-ConnectorLine-Source:
+
+Source
+======
+
+.. rubric:: Attribute (reference)
+
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NodePosition </reference/Graphics/NodePosition>`
+
+Opposite multiplicity
+    0..1
+
+
+.. _dexpi-Graphics-ConnectorLine-Stroke:
+
+Stroke
+======
+
+.. rubric:: Attribute (data)
+
+
+The stroke of the :doc:`ConnectorLine </reference/Graphics/ConnectorLine>`.
+
+Multiplicity
+    1
+
+Type
+    :doc:`Stroke </reference/Graphics/Stroke>`
+
+
+.. _dexpi-Graphics-ConnectorLine-Target:
+
+Target
+======
+
+.. rubric:: Attribute (reference)
+
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NodePosition </reference/Graphics/NodePosition>`
+
+Opposite multiplicity
+    0..1
+

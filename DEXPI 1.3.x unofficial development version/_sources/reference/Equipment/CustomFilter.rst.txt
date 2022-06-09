@@ -1,0 +1,245 @@
+============
+CustomFilter
+============
+
+Overview
+========
+
+.. rubric:: Class
+
+A :ref:`custom <dexpi-concept-custom-sibling>` :doc:`Filter </reference/Equipment/Filter>`, i.e., a :doc:`Filter </reference/Equipment/Filter>` that is not covered by any of the other subclasses of :doc:`Filter </reference/Equipment/Filter>` (:doc:`GasFilter </reference/Equipment/GasFilter>` or :doc:`LiquidFilter </reference/Equipment/LiquidFilter>`\ ).
+
+.. image:: CustomFilter.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`CustomObject </reference/Customization/CustomObject>`
+
+* :doc:`Filter </reference/Equipment/Filter>`
+
+.. rubric:: Attributes (data)
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                                                                           | Multiplicity | Type                                                                                                                                   |
++================================================================================================================================================================+==============+========================================================================================================================================+
+| :ref:`DesignCapacityVolumeFlowRate <dexpi-Equipment-CustomFilter-DesignCapacityVolumeFlowRate>`                                                                | 0..1         | :doc:`NullableVolumeFlowRate </reference/PhysicalQuantities/NullableVolumeFlowRate>`                                                   |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`DesignRotationalSpeed <dexpi-Equipment-CustomFilter-DesignRotationalSpeed>`                                                                              | 0..1         | :doc:`NullableRotationalFrequency </reference/PhysicalQuantities/NullableRotationalFrequency>`                                         |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`DesignShaftPower <dexpi-Equipment-CustomFilter-DesignShaftPower>`                                                                                        | 0..1         | :doc:`NullablePower </reference/PhysicalQuantities/NullablePower>`                                                                     |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`UpperLimitAllowableDesignPressureDrop <dexpi-Equipment-CustomFilter-UpperLimitAllowableDesignPressureDrop>`                                              | 0..1         | :doc:`NullablePressureAbsolute </reference/PhysicalQuantities/NullablePressureAbsolute>`                                               |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+
+
+.. rubric:: Attributes (composition)
+
++----------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------+
+| Name                                                                                   | Multiplicity | Type                                                                       |
++========================================================================================+==============+============================================================================+
+| :ref:`FilterUnit <dexpi-Equipment-CustomFilter-FilterUnit>`                            | 0..1         | :doc:`FilterUnit </reference/Equipment/FilterUnit>`                        |
++----------------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `CUSTOM FILTER <http://sandbox.dexpi.org/rdl/CustomFilter>`__
+
+   ComponentClass
+       CustomFilter
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/CustomFilter <http://sandbox.dexpi.org/rdl/CustomFilter>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram206.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="customFilter1"
+            ComponentClass="CustomFilter"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/CustomFilter" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-CustomFilter-DesignCapacityVolumeFlowRate:
+
+DesignCapacityVolumeFlowRate
+============================
+
+.. rubric:: Attribute (data)
+
+
+The volume flow rate for which the :doc:`CustomFilter </reference/Equipment/CustomFilter>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableVolumeFlowRate </reference/PhysicalQuantities/NullableVolumeFlowRate>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN CAPACITY VOLUME FLOW RATE <http://sandbox.dexpi.org/rdl/DesignCapacityVolumeFlowRate>`__
+
+   Name
+       DesignCapacityVolumeFlowRate
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignCapacityVolumeFlowRate <http://sandbox.dexpi.org/rdl/DesignCapacityVolumeFlowRate>`__
+
+
+.. _dexpi-Equipment-CustomFilter-DesignRotationalSpeed:
+
+DesignRotationalSpeed
+=====================
+
+.. rubric:: Attribute (data)
+
+
+The rotational speed for which the :doc:`CustomFilter </reference/Equipment/CustomFilter>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableRotationalFrequency </reference/PhysicalQuantities/NullableRotationalFrequency>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN ROTATIONAL SPEED <http://sandbox.dexpi.org/rdl/DesignRotationalSpeed>`__
+
+   Name
+       DesignRotationalSpeed
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignRotationalSpeed <http://sandbox.dexpi.org/rdl/DesignRotationalSpeed>`__
+
+
+.. _dexpi-Equipment-CustomFilter-DesignShaftPower:
+
+DesignShaftPower
+================
+
+.. rubric:: Attribute (data)
+
+
+The shaft power for which the :doc:`CustomFilter </reference/Equipment/CustomFilter>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullablePower </reference/PhysicalQuantities/NullablePower>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN SHAFT POWER <http://sandbox.dexpi.org/rdl/DesignShaftPower>`__
+
+   Name
+       DesignShaftPower
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignShaftPower <http://sandbox.dexpi.org/rdl/DesignShaftPower>`__
+
+
+.. _dexpi-Equipment-CustomFilter-FilterUnit:
+
+FilterUnit
+==========
+
+.. rubric:: Attribute (composition)
+
+
+The filter unit of the :doc:`CustomFilter </reference/Equipment/CustomFilter>`.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`FilterUnit </reference/Equipment/FilterUnit>`
+
+Opposite multiplicity
+    0..1
+
+.. admonition:: proteus
+
+   The attribute is implemented using the :ref:`XML hierarchy of the Proteus file <proteus-concept-composition-property-xml-child>`: The  element for the attribute value (a :doc:`FilterUnit </reference/Equipment/FilterUnit>`\ ) is a child of the ``<Equipment>`` element for the attribute owner (a :doc:`CustomFilter </reference/Equipment/CustomFilter>`\ ).
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram207.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="customFilter1"
+            ComponentClass="CustomFilter"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/CustomFilter" DOTS123="DOTS123">
+          ...
+          <Equipment
+              ID="filterUnit1"
+              ComponentClass="FilterUnit"
+              ComponentClassURI="http://sandbox.dexpi.org/rdl/FilterUnit" DOTS123="DOTS123">
+            ...
+          <Equipment />
+          ...
+        <Equipment />
+      
+
+
+.. _dexpi-Equipment-CustomFilter-UpperLimitAllowableDesignPressureDrop:
+
+UpperLimitAllowableDesignPressureDrop
+=====================================
+
+.. rubric:: Attribute (data)
+
+
+The upper limit for the pressure drop for which the :doc:`CustomFilter </reference/Equipment/CustomFilter>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullablePressureAbsolute </reference/PhysicalQuantities/NullablePressureAbsolute>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `UPPER LIMIT ALLOWABLE DESIGN PRESSURE DROP <http://sandbox.dexpi.org/rdl/UpperLimitAllowableDesignPressureDrop>`__
+
+   Name
+       UpperLimitAllowableDesignPressureDrop
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/UpperLimitAllowableDesignPressureDrop <http://sandbox.dexpi.org/rdl/UpperLimitAllowableDesignPressureDrop>`__
+

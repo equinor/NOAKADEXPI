@@ -1,0 +1,52 @@
+=======================
+OperationClassification
+=======================
+
+Overview
+========
+
+.. rubric:: Enumeration
+
+.. image:: OperationClassification.*
+
+
+.. rubric:: Literals
+
++----------------------------------------------------------------------------------------------------+------------------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+| Name                                                                                               | Symbol                                                     | proteus#RDL Reference                                                  | proteus#RDL URI                                                                           |
++====================================================================================================+============================================================+========================================================================+===========================================================================================+
+| .. _dexpi-Enumerations-OperationClassification-NULL:                                               | :ref:`null <dexpi-concept-null-value>`                     |                                                                        |                                                                                           |
+|                                                                                                    |                                                            |                                                                        |                                                                                           |
+| NULL                                                                                               |                                                            |                                                                        |                                                                                           |
++----------------------------------------------------------------------------------------------------+------------------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+| .. _dexpi-Enumerations-OperationClassification-ContinuousOperation:                                | continuous operation                                       | `CONTINUOUS OPERATION <http://data.posccaesar.org/rdl/RDS9710162>`__   | `http://data.posccaesar.org/rdl/RDS9710162 <http://data.posccaesar.org/rdl/RDS9710162>`__ |
+|                                                                                                    |                                                            |                                                                        |                                                                                           |
+| ContinuousOperation                                                                                |                                                            |                                                                        |                                                                                           |
++----------------------------------------------------------------------------------------------------+------------------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+| .. _dexpi-Enumerations-OperationClassification-IntermittentOperation:                              | intermittent operation                                     | `INTERMITTENT OPERATION <http://data.posccaesar.org/rdl/RDS9705752>`__ | `http://data.posccaesar.org/rdl/RDS9705752 <http://data.posccaesar.org/rdl/RDS9705752>`__ |
+|                                                                                                    |                                                            |                                                                        |                                                                                           |
+| IntermittentOperation                                                                              |                                                            |                                                                        |                                                                                           |
++----------------------------------------------------------------------------------------------------+------------------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   All data attributes with type :doc:`OperationClassification </reference/Enumerations/OperationClassification>` are implemented as :ref:`DEXPI generic attributes for enumeration values <proteus-concept-dexpi-generic-attribute-enumeration>`. In a ``<GenericAttribute>`` element, the :doc:`OperationClassification </reference/Enumerations/OperationClassification>` literal is given by means of its :ref:`RDL reference <proteus-concept-rdl-reference>` in the table above. The ``Value`` attribute of the element is the name of the RDL reference in camel-case; it equals the name of the literal. The ``ValueURI`` attribute of the element is the URI of the RDL reference.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram65.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Format="anyURI"
+          Value="ContinuousOperation"
+          ValueURI="http://data.posccaesar.org/rdl/RDS9710162" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have a ``Name`` and an ``AttributeURI`` attribute. They depend on the data type attribute of the DEXPI class that owns the instance :ref:`ContinuousOperation <dexpi-Enumerations-OperationClassification-ContinuousOperation>`. For a complete example, see the attribute :ref:`Operation <dexpi-Piping-OperatedValve-Operation>` of the DEXPI class :doc:`OperatedValve </reference/Piping/OperatedValve>`.
+

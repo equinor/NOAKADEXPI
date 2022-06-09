@@ -1,0 +1,32 @@
+=========
+FillStyle
+=========
+
+Overview
+========
+
+.. rubric:: Enumeration
+
+The fill style used for certain :doc:`GraphicalPrimitives </reference/Graphics/GraphicalPrimitive>`.
+
+.. image:: FillStyle.*
+
+
+.. rubric:: Literals
+
++----------------------------------------------------------------+-------------+
+| Name                                                           | Symbol      |
++================================================================+=============+
+| .. _dexpi-Graphics-FillStyle-Solid:                            | Solid       |
+|                                                                |             |
+| Solid                                                          |             |
++----------------------------------------------------------------+-------------+
+| .. _dexpi-Graphics-FillStyle-Transparent:                      | Transparent |
+|                                                                |             |
+| Transparent                                                    |             |
++----------------------------------------------------------------+-------------+
+| .. _dexpi-Graphics-FillStyle-Hatch:                            | Hatch       |
+|                                                                |             |
+| Hatch                                                          |             |
++----------------------------------------------------------------+-------------+
+

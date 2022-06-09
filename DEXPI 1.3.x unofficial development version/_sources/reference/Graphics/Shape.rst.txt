@@ -1,0 +1,106 @@
+=====
+Shape
+=====
+
+Overview
+========
+
+.. rubric:: Abstract class
+
+.. image:: Shape.*
+
+
+.. rubric:: Subtypes
+
+* :doc:`ActuatingSystemComponentShape </reference/Graphics/ActuatingSystemComponentShape>`
+
+* :doc:`InsulationSymbolShape </reference/Graphics/InsulationSymbolShape>`
+
+* :doc:`NozzleShape </reference/Graphics/NozzleShape>`
+
+* :doc:`PipeFlowArrowShape </reference/Graphics/PipeFlowArrowShape>`
+
+* :doc:`PipeOffPageConnectorShape </reference/Graphics/PipeOffPageConnectorShape>`
+
+* :doc:`PipeSlopeSymbolShape </reference/Graphics/PipeSlopeSymbolShape>`
+
+* :doc:`PipingComponentShape </reference/Graphics/PipingComponentShape>`
+
+* :doc:`ProcessInstrumentationFunctionShape </reference/Graphics/ProcessInstrumentationFunctionShape>`
+
+* :doc:`PropertyBreakShape </reference/Graphics/PropertyBreakShape>`
+
+* :doc:`SignalOffPageConnectorShape </reference/Graphics/SignalOffPageConnectorShape>`
+
+* :doc:`SymbolShape </reference/Graphics/SymbolShape>`
+
+* :doc:`TaggedPlantItemShape </reference/Graphics/TaggedPlantItemShape>`
+
+.. rubric:: Attributes (data)
+
++--------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+| Name                                                                                                               | Multiplicity | Type                                                               |
++====================================================================================================================+==============+====================================================================+
+| :ref:`Name <dexpi-Graphics-Shape-Name>`                                                                            | 1            | :doc:`String </reference/DataTypes/String>`                        |
++--------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+| :ref:`SymbolRegistrationNumber <dexpi-Graphics-Shape-SymbolRegistrationNumber>`                                    | 0..1         | :doc:`String </reference/DataTypes/String>`                        |
++--------------------------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------+
+
+.. rubric:: Attributes (composition)
+
++----------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------+
+| Name                                                                       | Multiplicity | Type                                                                                           |
++============================================================================+==============+================================================================================================+
+| :ref:`Primitives <dexpi-Graphics-Shape-Primitives>`                        | \*           | :doc:`GraphicalPrimitive </reference/Graphics/GraphicalPrimitive>`                             |
++----------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------+
+
+
+.. _dexpi-Graphics-Shape-Name:
+
+Name
+====
+
+.. rubric:: Attribute (data)
+
+
+Multiplicity
+    1
+
+Type
+    :doc:`String </reference/DataTypes/String>`
+
+
+.. _dexpi-Graphics-Shape-Primitives:
+
+Primitives
+==========
+
+.. rubric:: Attribute (composition)
+
+
+The primitives of the :doc:`Shape </reference/Graphics/Shape>`.
+
+Multiplicity
+    \*
+
+Type
+    :doc:`GraphicalPrimitive </reference/Graphics/GraphicalPrimitive>`
+
+Opposite multiplicity
+    0..1
+
+
+.. _dexpi-Graphics-Shape-SymbolRegistrationNumber:
+
+SymbolRegistrationNumber
+========================
+
+.. rubric:: Attribute (data)
+
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`String </reference/DataTypes/String>`
+

@@ -1,0 +1,52 @@
+==============
+AngleBallValve
+==============
+
+Overview
+========
+
+.. rubric:: Class
+
+A valve that has valve ports which are not in-line and that has a ball closure member.
+
+.. image:: AngleBallValve.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`OperatedValve </reference/Piping/OperatedValve>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingComponent>``
+
+   RDL reference
+       `ANGLE BALL VALVE <http://sandbox.dexpi.org/rdl/AngleBallValve>`__
+
+   ComponentClass
+       AngleBallValve
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/AngleBallValve <http://sandbox.dexpi.org/rdl/AngleBallValve>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram625.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="angleBallValve1"
+            ComponentClass="AngleBallValve"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/AngleBallValve" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+

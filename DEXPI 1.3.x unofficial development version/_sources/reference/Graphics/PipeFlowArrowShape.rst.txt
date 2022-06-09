@@ -1,0 +1,16 @@
+==================
+PipeFlowArrowShape
+==================
+
+Overview
+========
+
+.. rubric:: Class
+
+.. image:: PipeFlowArrowShape.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Shape </reference/Graphics/Shape>`
+

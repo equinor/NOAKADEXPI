@@ -1,0 +1,52 @@
+====================
+FlowMeasuringElement
+====================
+
+Overview
+========
+
+.. rubric:: Class
+
+A FLOW MEASURING ELEMENT is a MEASURING ELEMENT that is used to measure FLOW RATE.
+
+.. image:: FlowMeasuringElement.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`InlinePrimaryElement </reference/Piping/InlinePrimaryElement>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<PipingComponent>``
+
+   RDL reference
+       `FLOW MEASURING ELEMENT <http://sandbox.dexpi.org/rdl/FlowMeasuringElement>`__
+
+   ComponentClass
+       FlowMeasuringElement
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/FlowMeasuringElement <http://sandbox.dexpi.org/rdl/FlowMeasuringElement>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram651.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <PipingComponent
+            ID="flowMeasuringElement1"
+            ComponentClass="FlowMeasuringElement"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/FlowMeasuringElement" DOTS123="DOTS123">
+          ...
+        </PipingComponent>
+      
+

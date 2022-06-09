@@ -1,0 +1,54 @@
+===============
+CustomEquipment
+===============
+
+Overview
+========
+
+.. rubric:: Class
+
+A :ref:`custom <dexpi-concept-custom-sibling>` :doc:`Equipment </reference/Equipment/Equipment>`, i.e., an :doc:`Equipment </reference/Equipment/Equipment>` that is not covered by any of the other subclasses of :doc:`Equipment </reference/Equipment/Equipment>`.
+
+.. image:: CustomEquipment.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`CustomObject </reference/Customization/CustomObject>`
+
+* :doc:`Equipment </reference/Equipment/Equipment>`
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `CUSTOM EQUIPMENT <http://sandbox.dexpi.org/rdl/CustomEquipment>`__
+
+   ComponentClass
+       CustomEquipment
+
+   ComponentClassURI
+       `http://sandbox.dexpi.org/rdl/CustomEquipment <http://sandbox.dexpi.org/rdl/CustomEquipment>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram200.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="customEquipment1"
+            ComponentClass="CustomEquipment"
+            ComponentClassURI="http://sandbox.dexpi.org/rdl/CustomEquipment" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+

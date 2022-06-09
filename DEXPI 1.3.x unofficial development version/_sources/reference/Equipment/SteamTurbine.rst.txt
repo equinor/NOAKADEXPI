@@ -1,0 +1,184 @@
+============
+SteamTurbine
+============
+
+Overview
+========
+
+.. rubric:: Class
+
+A turbine that is a heat engine in which energy of steam is transformed into kinetic energy by means of expansion through nozzles and the kinetic energy of the resulting jet is in turn converted into force doing work on rings of blading mounted on a rotating shaft (from `http://data.posccaesar.org/rdl/RDS416744 <http://data.posccaesar.org/rdl/RDS416744>`__).
+
+.. image:: SteamTurbine.*
+
+
+.. rubric:: Supertypes
+
+* :doc:`Turbine </reference/Equipment/Turbine>`
+
+.. rubric:: Attributes (data)
+
++--------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------+
+| Name                                                                                                               | Multiplicity | Type                                                                                                                   |
++====================================================================================================================+==============+========================================================================================================================+
+| :ref:`DesignInletMassFlow <dexpi-Equipment-SteamTurbine-DesignInletMassFlow>`                                      | 0..1         | :doc:`NullableMassFlowRate </reference/PhysicalQuantities/NullableMassFlowRate>`                                       |
++--------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------+
+| :ref:`DesignInletVolumeFlow <dexpi-Equipment-SteamTurbine-DesignInletVolumeFlow>`                                  | 0..1         | :doc:`NullableVolumeFlowRate </reference/PhysicalQuantities/NullableVolumeFlowRate>`                                   |
++--------------------------------------------------------------------------------------------------------------------+--------------+------------------------------------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   The class is implemented as a :ref:`Proteus XML element with RDL reference <proteus-concept-xml-element-with-rdl>`.
+
+   Tag
+       ``<Equipment>``
+
+   RDL reference
+       `STEAM TURBINE <http://data.posccaesar.org/rdl/RDS416744>`__
+
+   ComponentClass
+       SteamTurbine
+
+   ComponentClassURI
+       `http://data.posccaesar.org/rdl/RDS416744 <http://data.posccaesar.org/rdl/RDS416744>`__
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram471.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="steamTurbine1"
+            ComponentClass="SteamTurbine"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS416744" DOTS123="DOTS123">
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-SteamTurbine-DesignInletMassFlow:
+
+DesignInletMassFlow
+===================
+
+.. rubric:: Attribute (data)
+
+
+The inlet mass flow for which the :doc:`SteamTurbine </reference/Equipment/SteamTurbine>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableMassFlowRate </reference/PhysicalQuantities/NullableMassFlowRate>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN INLET MASS FLOW <http://sandbox.dexpi.org/rdl/DesignInletMassFlow>`__
+
+   Name
+       DesignInletMassFlow
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignInletMassFlow <http://sandbox.dexpi.org/rdl/DesignInletMassFlow>`__
+
+.. admonition:: example
+
+   The instance steamTurbine1 represents a :doc:`SteamTurbine </reference/Equipment/SteamTurbine>` with a :ref:`DesignInletMassFlow <dexpi-Equipment-SteamTurbine-DesignInletMassFlow>` of 800.0 kg/h.
+
+   .. image:: /diagrams/diagram472.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="steamTurbine1"
+            ComponentClass="SteamTurbine"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS416744" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignInletMassFlow"
+              AttributeURI="http://sandbox.dexpi.org/rdl/DesignInletMassFlow"
+              Format="double"
+              Value="800.0"
+              Units="KilogramPerHour"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1329344" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+
+
+.. _dexpi-Equipment-SteamTurbine-DesignInletVolumeFlow:
+
+DesignInletVolumeFlow
+=====================
+
+.. rubric:: Attribute (data)
+
+
+The inlet volume flow for which the :doc:`SteamTurbine </reference/Equipment/SteamTurbine>` is designed.
+
+Multiplicity
+    0..1
+
+Type
+    :doc:`NullableVolumeFlowRate </reference/PhysicalQuantities/NullableVolumeFlowRate>`
+
+.. admonition:: proteus
+
+   The attribute is implemented as a :ref:`DEXPI generic attribute for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`.
+
+   RDL reference
+       `DESIGN INLET VOLUME FLOW <http://sandbox.dexpi.org/rdl/DesignInletVolumeFlow>`__
+
+   Name
+       DesignInletVolumeFlow
+
+   AttributeURI
+       `http://sandbox.dexpi.org/rdl/DesignInletVolumeFlow <http://sandbox.dexpi.org/rdl/DesignInletVolumeFlow>`__
+
+.. admonition:: example
+
+   The instance steamTurbine1 represents a :doc:`SteamTurbine </reference/Equipment/SteamTurbine>` with a :ref:`DesignInletVolumeFlow <dexpi-Equipment-SteamTurbine-DesignInletVolumeFlow>` of 2.8 l/s.
+
+   .. image:: /diagrams/diagram473.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <Equipment
+            ID="steamTurbine1"
+            ComponentClass="SteamTurbine"
+            ComponentClassURI="http://data.posccaesar.org/rdl/RDS416744" DOTS123="DOTS123">
+          ...
+          <GenericAttributes Set="DexpiAttributes" DOTS123="DOTS123">
+            <GenericAttribute
+              Name="DesignInletVolumeFlow"
+              AttributeURI="http://sandbox.dexpi.org/rdl/DesignInletVolumeFlow"
+              Format="double"
+              Value="2.8"
+              Units="LitrePerSecond"
+              UnitsURI="http://data.posccaesar.org/rdl/RDS1331369" />
+            ...
+          </GenericAttributes>
+          ...
+        </Equipment>
+      
+

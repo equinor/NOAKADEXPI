@@ -1,0 +1,49 @@
+=========
+ForceUnit
+=========
+
+Overview
+========
+
+.. rubric:: Enumeration
+
+A unit of measurement for a physical quantity of type :doc:`NullableForce </reference/PhysicalQuantities/NullableForce>` with :ref:`dimension <dexpi-glossary-physical-dimension>` LMT\ :sup:`-2`.
+
+.. image:: ForceUnit.*
+
+
+.. rubric:: Literals
+
++----------------------------------------------------------------------------+--------+---------+------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+| Name                                                                       | Symbol | UN Code | proteus#RDL Reference                                      | proteus#RDL URI                                                                           |
++============================================================================+========+=========+============================================================+===========================================================================================+
+| .. _dexpi-PhysicalQuantities-ForceUnit-Kilonewton:                         | kN     | B47     | `KILONEWTON <http://data.posccaesar.org/rdl/RDS1351034>`__ | `http://data.posccaesar.org/rdl/RDS1351034 <http://data.posccaesar.org/rdl/RDS1351034>`__ |
+|                                                                            |        |         |                                                            |                                                                                           |
+| Kilonewton                                                                 |        |         |                                                            |                                                                                           |
++----------------------------------------------------------------------------+--------+---------+------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+| .. _dexpi-PhysicalQuantities-ForceUnit-Newton:                             | N      | NEW     | `NEWTON <http://data.posccaesar.org/rdl/RDS1337939>`__     | `http://data.posccaesar.org/rdl/RDS1337939 <http://data.posccaesar.org/rdl/RDS1337939>`__ |
+|                                                                            |        |         |                                                            |                                                                                           |
+| Newton                                                                     |        |         |                                                            |                                                                                           |
++----------------------------------------------------------------------------+--------+---------+------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+
+.. admonition:: proteus
+
+   :doc:`ForceUnit </reference/PhysicalQuantities/ForceUnit>` is only used as the type of the :ref:`Unit <dexpi-PhysicalQuantities-Force-Unit>` attribute of :doc:`Force </reference/PhysicalQuantities/Force>`. :doc:`Force </reference/PhysicalQuantities/Force>` is implemented using :ref:`DEXPI generic attributes for physical quantities <proteus-concept-dexpi-generic-attribute-physical-quantity>`. In a ``<GenericAttribute>`` element, the :doc:`ForceUnit </reference/PhysicalQuantities/ForceUnit>` literal is given by means of its :ref:`RDL reference <proteus-concept-rdl-reference>` in the table above. The ``Units`` attribute of the element is the name of the RDL reference in camel-case; it equals the name of the literal. The ``UnitsURI`` attribute of the element is the URI of the RDL reference.
+
+.. admonition:: example
+
+   .. image:: /diagrams/diagram579.*
+
+
+   .. admonition:: proteus-example
+   
+      
+      .. code-block:: xml
+      
+        <GenericAttribute
+          Units="Newton"
+          UnitsURI="http://data.posccaesar.org/rdl/RDS1337939" DOTS123="DOTS123">
+      
+
+      Note that the ``<GenericAttribute>`` element must have further attributes (``Format``, ``Value``, ``Name``, and ``AttributeURI``)DOTANDSPACEHACKSee the implementation examples for :doc:`Force </reference/PhysicalQuantities/Force>` and for the :ref:`LowerLimitDesignPressingForce <dexpi-Equipment-ReciprocatingPressureAgglomerator-LowerLimitDesignPressingForce>` attribute of :doc:`ReciprocatingPressureAgglomerator </reference/Equipment/ReciprocatingPressureAgglomerator>`.
+
