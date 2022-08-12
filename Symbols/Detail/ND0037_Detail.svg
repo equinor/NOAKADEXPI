@@ -539,7 +539,7 @@
 				<v:ud v:nameU="LengthText" v:prompt="" v:val="VT4(9.97)"/>
 				<v:ud v:nameU="Length" v:prompt="" v:val="VT0(0.39235371621142):24"/>
 				<v:ud v:nameU="LocEndX" v:prompt="" v:val="VT0(0.39235371621142):1"/>
-				<v:ud v:nameU="LocEndY" v:prompt="" v:val="VT0(-0.062686450284969):1"/>
+				<v:ud v:nameU="LocEndY" v:prompt="" v:val="VT0(-0.062686450284968):1"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
 			<v:textRect cx="14.1247" cy="529.03" width="18.65" height="9.60356"/>
