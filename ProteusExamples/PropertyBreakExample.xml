@@ -1,0 +1,409 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<PlantModel>
+	<PlantInformation Application="Dexpi" ApplicationVersion="1.3.1" Date="2019-02-26" Discipline="PID" Is3D="no" OriginatingSystem="P&amp;ID Toolbox" OriginatingSystemVendor="pnb plants &amp; bytes GmbH, Aachen, Germany" OriginatingSystemVersion="current" SchemaVersion="4.1.1" Time="14:00:00" Units="mm">
+		<UnitsOfMeasure/>
+	</PlantInformation>
+	<PipingNetworkSystem ID="PipingNetworkSystem-1" ComponentClass="PipingNetworkSystem" ComponentClassURI="http://data.posccaesar.org/rdl/RDS270359">
+		<PipingNetworkSegment ID="SG0F93919722AC46DEA7946697B1DA9CB4" ComponentClass="PipingNetworkSegment" ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704" DualFlow="false">
+			<GenericAttributes Number="3" Set="DexpiCustomAttributes">
+				<GenericAttribute Name="SegmentLineTypeRepresentationAssignmentClass" Value="Secondary" Format="string" AttributeURI="http://noaka.org/rdl/ SegmentLineTypeRepresentationAssignmentClass"/>
+				<GenericAttribute Name="HeatTracingTypeSpecialization" ValueURI="http://sandbox.dexpi.org/rdl/NoHeatTracingSystem" Value="NoHeatTracingSystem" Format="anyURI" AttributeURI="http://sandbox.dexpi.org/rdl/HeatTracingTypeSpecialization"/>
+				<GenericAttribute Name="NominalDiameterNumericalValueRepresentationAssignmentClass" Value="" Format="string" AttributeURI="http://sandbox.dexpi.org/rdl/NominalDiameterNumericalValueRepresentationAssignmentClass"/>
+			</GenericAttributes>
+			<GenericAttributes Number="21" Set="DexpiAttributes">
+				<GenericAttribute Name="FluidCodeAssignmentClass" Value="PL" Format="string" AttributeURI="http://sandbox.dexpi.org/rdl/FluidCodeAssignmentClass"/>
+				<GenericAttribute Name="PipingClassCodeAssignmentClass" Value="AS200" Format="string" AttributeURI="http://sandbox.dexpi.org/rdl/PipingClassCodeAssignmentClass"/>
+				<GenericAttribute Name="InsulationThickness" Format="double" AttributeURI="http://data.posccaesar.org/rdl/RDS4238040"/>
+				<GenericAttribute Name="InsulationTypeAssignmentClass" Format="string" AttributeURI="http://sandbox.dexpi.org/rdl/InsulationTypeAssignmentClass"/>
+				<GenericAttribute Name="LowerLimitHeatTracingTemperature" Format="double" AttributeURI="http://sandbox.dexpi.org/rdl/LowerLimitHeatTracingTemperature"/>
+				<GenericAttribute Name="HeatTracingType" ValueURI="http://sandbox.dexpi.org/rdl/NoHeatTracingSystem" Value="NoHeatTracingSystem" Format="anyURI" AttributeURI="http://sandbox.dexpi.org/rdl/HeatTracingTypeSpecialization"/>
+				<GenericAttribute Name="JacketedPipeSpecialization" ValueURI="http://sandbox.dexpi.org/rdl/UnjacketedPipe" Value="UnjacketedPipe" Format="anyURI" AttributeURI="http://sandbox.dexpi.org/rdl/JacketedPipeSpecialization"/>
+				<GenericAttribute Name="NominalDiameterStandardSpecialization" Format="anyURI" AttributeURI="http://sandbox.dexpi.org/rdl/NominalDiameterStandardSpecialization"/>
+				<GenericAttribute Name="OnHoldSpecialization" ValueURI="http://sandbox.dexpi.org/rdl/NotOnHold" Value="NotOnHold" Format="anyURI" AttributeURI="http://sandbox.dexpi.org/rdl/OnHoldSpecialization"/>
+				<GenericAttribute Name="HeatTracingTypeAssignmentClass" Format="string" AttributeURI="http://sandbox.dexpi.org/rdl/HeatTracingTypeAssignmentClass"/>
+				<GenericAttribute Name="NominalDiameterNumericalValueRepresentationAssignmentClass" Format="string" AttributeURI="http://sandbox.dexpi.org/rdl/NominalDiameterNumericalValueRepresentationAssignmentClass"/>
+				<GenericAttribute Name="NominalDiameterRepresentationAssignmentClass" Format="string" AttributeURI="http://sandbox.dexpi.org/rdl/NominalDiameterRepresentationAssignmentClass"/>
+				<GenericAttribute Name="NominalDiameterTypeRepresentationAssignmentClass" Format="string" AttributeURI="http://sandbox.dexpi.org/rdl/NominalDiameterTypeRepresentationAssignmentClass"/>
+				<GenericAttribute Name="SegmentNumberAssignmentClass" Format="string" AttributeURI="http://sandbox.dexpi.org/rdl/SegmentNumberAssignmentClass"/>
+				<GenericAttribute Name="SlopeSpecialization" ValueURI="http://sandbox.dexpi.org/rdl/UnslopedPipingNetworkSegment" Value="UnslopedPipingNetworkSegment" Format="anyURI" AttributeURI="http://sandbox.dexpi.org/rdl/SlopeSpecialization"/>
+				<GenericAttribute Name="Inclination" Format="double" AttributeURI="http://data.posccaesar.org/rdl/RDS17688057"/>
+				<GenericAttribute Name="OperatingTemperature" Format="double" AttributeURI="http://data.posccaesar.org/rdl/RDS357119"/>
+				<GenericAttribute Name="PrimarySecondaryPipingNetworkSegmentSpecialization" ValueURI="http://sandbox.dexpi.org/rdl/SecondaryPipingNetworkSegment" Value="SecondaryPipingNetworkSegment" Format="anyURI" AttributeURI="http://sandbox.dexpi.org/rdl/PrimarySecondaryPipingNetworkSegmentSpecialization"/>
+				<GenericAttribute Name="SiphonSpecialization" ValueURI="http://sandbox.dexpi.org/rdl/NoSiphon" Value="NoSiphon" Format="anyURI" AttributeURI="http://sandbox.dexpi.org/rdl/SiphonSpecialization"/>
+				<GenericAttribute Name="ColorCodeAssignmentClass" Format="string" AttributeURI="http://sandbox.dexpi.org/rdl/ColorCodeAssignmentClass"/>
+				<GenericAttribute Name="PressureTestCircuitNumberAssignmentClass" Format="string" AttributeURI="http://sandbox.dexpi.org/rdl/PressureTestCircuitNumberAssignmentClass"/>
+			</GenericAttributes>
+			<Label ID="SP0660D85CEC524287A2710840BD7E1C15" ComponentClass="AnyLabelInfo" ComponentName="Component">
+				<GenericAttributes Set="SPPID_orig" Number="20">
+					<GenericAttribute Name="Angle" Value="0" Format="string"/>
+					<GenericAttribute Name="LabelType" Value="Component" Format="string"/>
+					<GenericAttribute Name="LeaderCount" Value="1" Format="string"/>
+					<GenericAttribute Name="LeaderStyle" Value="Normal" Format="string"/>
+					<GenericAttribute Name="IsLeaderVisible" Value="False" Format="string"/>
+					<GenericAttribute Name="IsMirrored" Value="False" Format="string"/>
+					<GenericAttribute Name="IsFitToText" Value="False" Format="string"/>
+					<GenericAttribute Name="SP_RepresentationID" Value="0F93919722AC46DEA7946697B1DA9CB4" Format="string"/>
+					<GenericAttribute Name="TerminatorStyle" Value="None" Format="string"/>
+					<GenericAttribute Name="TextLabelJustification" Value="None" Format="string"/>
+					<GenericAttribute Name="SP_DisableFlipText" Value="False" Format="string"/>
+					<GenericAttribute Name="SP_LeaderConnectPointType" Value="Connect On Element" Format="string"/>
+					<GenericAttribute Name="RepresentationType" Value="Label" Format="string"/>
+					<GenericAttribute Name="GraphicOID" Value="4121" Format="string"/>
+					<GenericAttribute Name="InStockpile" Value="False" Format="string"/>
+					<GenericAttribute Name="FileName" Value="\Piping\Labels - Piping Segments\STPL008 Slope L.sym" Format="string"/>
+					<GenericAttribute Name="SP_DrawingID" Value="CDFB9824762646E69D18BE57A24D5E82" Format="string"/>
+					<GenericAttribute Name="ItemStatus" Value="Active" Format="string"/>
+					<GenericAttribute Name="RepresentationClass" Value="Label" Format="string"/>
+					<GenericAttribute Name="SP_FileLastModifiedTime" Value="2/27/2015 4:10:12 PM" Format="string"/>
+				</GenericAttributes>
+				<Position>
+					<Location X="0.437735517825242" Y="0.380725735428513" Z="0"/>
+					<Axis X="0" Y="0" Z="1"/>
+					<Reference X="1" Y="0" Z="0"/>
+				</Position>
+				<Extent>
+					<Min X="0.43173548579216003" Y="0.38072571158409119"/>
+					<Max X="0.44373553991317749" Y="0.38582107707452312"/>
+				</Extent>
+				<Presentation Color="Black" LineType="Solid" LineWeight="0.00035"/>
+				<Line>
+					<Presentation Layer="Labels" Color="Black" LineType="Solid" LineWeight="0.00025" R="0" G="0" B="0"/>
+					<Extent>
+						<Min X="0.43173548579216003" Y="0.38272571563720703"/>
+						<Max X="0.44373553991317749" Y="0.38572576642036438"/>
+					</Extent>
+					<Coordinate X="0.443735517825242" Y="0.385725735428513"/>
+					<Coordinate X="0.431735517825242" Y="0.382725735428513"/>
+				</Line>
+				<Line>
+					<Presentation Layer="Labels" Color="Black" LineType="Solid" LineWeight="0.00025" R="0" G="0" B="0"/>
+					<Extent>
+						<Min X="0.44373548030853271" Y="0.38272571563720703"/>
+						<Max X="0.44373553991317749" Y="0.38572576642036438"/>
+					</Extent>
+					<Coordinate X="0.443735517825242" Y="0.382725735428513"/>
+					<Coordinate X="0.443735517825242" Y="0.385725735428513"/>
+				</Line>
+				<Line>
+					<Presentation Layer="Labels" Color="Black" LineType="Solid" LineWeight="0.00025" R="0" G="0" B="0"/>
+					<Extent>
+						<Min X="0.43173548579216003" Y="0.38272571563720703"/>
+						<Max X="0.44373553991317749" Y="0.38272577524185181"/>
+					</Extent>
+					<Coordinate X="0.443735517825242" Y="0.382725735428513"/>
+					<Coordinate X="0.431735517825242" Y="0.382725735428513"/>
+				</Line>
+				<Text String="Down" Font="Arial Narrow" Justification="RightCenter" Width="0.001058334" Height="0.001058334" TextAngle="0">
+					<Presentation Layer="HiddenObjects" Color="Black" LineType="Solid" LineWeight="0.00035" R="0" G="0" B="0"/>
+					<Extent>
+						<Min X="0.43717549074158535" Y="0.38408925780179587"/>
+						<Max X="0.44025428055976717" Y="0.38582107707452312"/>
+					</Extent>
+					<Position>
+						<Location X="0.44025428055976717" Y="0.3849551674381595"/>
+						<Axis X="0" Y="0" Z="1"/>
+						<Reference X="1" Y="0" Z="0"/>
+					</Position>
+				</Text>
+			</Label>
+			<Label ID="SP7EDE06FC172D4DD1990829D8911CDCDE" ComponentClass="Piping Segment Number Info" ComponentName="Component">
+				<GenericAttributes Set="SPPID_orig" Number="20">
+					<GenericAttribute Name="Angle" Value="0" Format="string"/>
+					<GenericAttribute Name="LabelType" Value="Component" Format="string"/>
+					<GenericAttribute Name="LeaderCount" Value="1" Format="string"/>
+					<GenericAttribute Name="LeaderStyle" Value="Normal" Format="string"/>
+					<GenericAttribute Name="IsLeaderVisible" Value="False" Format="string"/>
+					<GenericAttribute Name="IsMirrored" Value="False" Format="string"/>
+					<GenericAttribute Name="IsFitToText" Value="False" Format="string"/>
+					<GenericAttribute Name="SP_RepresentationID" Value="0F93919722AC46DEA7946697B1DA9CB4" Format="string"/>
+					<GenericAttribute Name="TerminatorStyle" Value="None" Format="string"/>
+					<GenericAttribute Name="TextLabelJustification" Value="Baseline" Format="string"/>
+					<GenericAttribute Name="SP_DisableFlipText" Value="False" Format="string"/>
+					<GenericAttribute Name="SP_LeaderConnectPointType" Value="Connect On Element" Format="string"/>
+					<GenericAttribute Name="RepresentationType" Value="Label" Format="string"/>
+					<GenericAttribute Name="GraphicOID" Value="3326" Format="string"/>
+					<GenericAttribute Name="InStockpile" Value="False" Format="string"/>
+					<GenericAttribute Name="FileName" Value="\Piping\Labels - Piping Segments\Line Number.sym" Format="string"/>
+					<GenericAttribute Name="SP_DrawingID" Value="CDFB9824762646E69D18BE57A24D5E82" Format="string"/>
+					<GenericAttribute Name="ItemStatus" Value="Active" Format="string"/>
+					<GenericAttribute Name="RepresentationClass" Value="Label" Format="string"/>
+					<GenericAttribute Name="SP_FileLastModifiedTime" Value="1/11/2021 6:48:48 AM" Format="string"/>
+				</GenericAttributes>
+				<Position>
+					<Location X="0.463531850646289" Y="0.38269179002068" Z="0"/>
+					<Axis X="0" Y="0" Z="1"/>
+					<Reference X="1" Y="0" Z="0"/>
+				</Position>
+				<Extent>
+					<Min X="0.446245728646289" Y="0.3806917667388916"/>
+					<Max X="0.48446622490882874" Y="0.38580543932502781"/>
+				</Extent>
+				<Presentation Color="Black" LineType="Solid" LineWeight="0.00035"/>
+				<Text String="D-20L A- PL-AS200-   " Font="Arial" Justification="CenterCenter" Width="0.002469446" Height="0.002469446" TextAngle="0" DependantAttribute="[TagName]-[NominalDiameterNumericalValueRepresentationAssignmentClass][FluidCodeAssignmentClass]-[PipingClassCodeAssignmentClass]-" ItemID="SG0F93919722AC46DEA7946697B1DA9CB4">
+					<Presentation Layer="Labels" Color="Black" LineType="Solid" LineWeight="0.00035" R="0" G="0" B="0"/>
+					<Extent>
+						<Min X="0.446245728646289" Y="0.38194021949894086"/>
+						<Max X="0.480817972646289" Y="0.38580543932502781"/>
+					</Extent>
+					<Position>
+						<Location X="0.463531850646289" Y="0.38269179002068"/>
+						<Axis X="0" Y="0" Z="1"/>
+						<Reference X="1" Y="0" Z="0"/>
+					</Position>
+				</Text>
+			</Label>
+			<Label ID="SP8B4C79B333B3484AA54A31C19F234447" ComponentClass="AnyLabelInfo" ComponentName="Component">
+				<GenericAttributes Set="SPPID_orig" Number="20">
+					<GenericAttribute Name="Angle" Value="0" Format="string"/>
+					<GenericAttribute Name="LabelType" Value="Component" Format="string"/>
+					<GenericAttribute Name="LeaderCount" Value="1" Format="string"/>
+					<GenericAttribute Name="LeaderStyle" Value="Normal" Format="string"/>
+					<GenericAttribute Name="IsLeaderVisible" Value="False" Format="string"/>
+					<GenericAttribute Name="IsMirrored" Value="False" Format="string"/>
+					<GenericAttribute Name="IsFitToText" Value="False" Format="string"/>
+					<GenericAttribute Name="SP_RepresentationID" Value="0F93919722AC46DEA7946697B1DA9CB4" Format="string"/>
+					<GenericAttribute Name="TerminatorStyle" Value="None" Format="string"/>
+					<GenericAttribute Name="TextLabelJustification" Value="None" Format="string"/>
+					<GenericAttribute Name="SP_DisableFlipText" Value="False" Format="string"/>
+					<GenericAttribute Name="SP_LeaderConnectPointType" Value="Connect On Element" Format="string"/>
+					<GenericAttribute Name="RepresentationType" Value="Label" Format="string"/>
+					<GenericAttribute Name="GraphicOID" Value="3102" Format="string"/>
+					<GenericAttribute Name="InStockpile" Value="False" Format="string"/>
+					<GenericAttribute Name="FileName" Value="\Piping\Segment Breaks\Label Pipe Spec.sym" Format="string"/>
+					<GenericAttribute Name="SP_DrawingID" Value="CDFB9824762646E69D18BE57A24D5E82" Format="string"/>
+					<GenericAttribute Name="ItemStatus" Value="Active" Format="string"/>
+					<GenericAttribute Name="RepresentationClass" Value="Label" Format="string"/>
+					<GenericAttribute Name="SP_FileLastModifiedTime" Value="7/11/2018 12:24:26 PM" Format="string"/>
+				</GenericAttributes>
+				<Position>
+					<Location X="0.523323875251489" Y="0.400233226010065" Z="0"/>
+					<Axis X="0" Y="0" Z="1"/>
+					<Reference X="1" Y="0" Z="0"/>
+				</Position>
+				<Extent>
+					<Min X="0.517972744080748" Y="0.3806917667388916"/>
+					<Max X="0.52981698513031006" Y="0.402153579955054"/>
+				</Extent>
+				<Presentation Color="Black" LineType="Solid" LineWeight="0.00035"/>
+				<Text String="AS200" Font="Arial" Justification="CenterCenter" Width="0.0025" Height="0.0025" TextAngle="0" DependantAttribute="[PipingClassCodeAssignmentClass] " ItemID="SG0F93919722AC46DEA7946697B1DA9CB4">
+					<Presentation Layer="Labels" Color="Black" LineType="Solid" LineWeight="0.00035" R="0" G="0" B="0"/>
+					<Extent>
+						<Min X="0.517972744080748" Y="0.39824053647679314"/>
+						<Max X="0.52851622234161755" Y="0.402153579955054"/>
+					</Extent>
+					<Position>
+						<Location X="0.52324448321118278" Y="0.40019705821592361"/>
+						<Axis X="0" Y="0" Z="1"/>
+						<Reference X="1" Y="0" Z="0"/>
+					</Position>
+				</Text>
+			</Label>
+			<GenericAttributes Set="SPPID_orig" Number="22">
+				<GenericAttribute Name="OperFluidCode" Value="PL"/>
+				<GenericAttribute Name="PipeRunType" Value="Piping, secondary" Format="string"/>
+				<GenericAttribute Name="SlopeDirection" Value="Down" Format="string"/>
+				<GenericAttribute Name="FlowDirection" Value="End 1 is upstream (Inlet)" Format="string"/>
+				<GenericAttribute Name="FluidSystem" Value="Process" Format="string"/>
+				<GenericAttribute Name="PipeRunClass" Value="Piping" Format="string"/>
+				<GenericAttribute Name="SP_ConnectorsZeroLength" Value="False" Format="string"/>
+				<GenericAttribute Name="PipingSpec" Value="AS200" Format="string"/>
+				<GenericAttribute Name="PipeTypeCode" Value="L" Format="string"/>
+				<GenericAttribute Name="PipeRunSuffix" Value="A" Format="string"/>
+				<GenericAttribute Name="PlatformCode" Value="D" Format="string"/>
+				<GenericAttribute Name="PlantItemType" Value="Pipe Run" Format="string"/>
+				<GenericAttribute Name="TagReqdFlag" Value="True" Format="string"/>
+				<GenericAttribute Name="aabbcc_code" Value="6M2B02" Format="string"/>
+				<GenericAttribute Name="IsBulkItem" Value="False" Format="string"/>
+				<GenericAttribute Name="ConstructionStatus" Value="New" Format="string"/>
+				<GenericAttribute Name="SP_PlantGroupID" Value="13BAF561526242FAAC61B2B1B7099748" Format="string"/>
+				<GenericAttribute Name="ModelItemType" Value="Plant Item" Format="string"/>
+				<GenericAttribute Name="UpdateCount" Value="27" Format="string"/>
+				<GenericAttribute Name="ItemStatus" Value="Active" Format="string"/>
+				<GenericAttribute Name="ItemTypeName" Value="PipeRun" Format="string"/>
+				<GenericAttribute Name="SP_IsTypical" Value="False" Format="string"/>
+			</GenericAttributes>
+			<PropertyBreak ID="SP75EB6BFA7B794ECEABB1B18363DA23C6" ComponentClass="PropertyBreak" ComponentName="PropertyBreak_d00bd43b-bfb6-4fc2-a985-c70bba6b93ec" ComponentClassURI="http://sandbox.dexpi.org/rdl/PropertyBreak">
+				<GenericAttributes Number="5" Set="DexpiAttributes">
+					<GenericAttribute Name="CompositionBreakSpecialization" ValueURI="http://sandbox.dexpi.org/rdl/NoCompositionBreak" Value="NoCompositionBreak" Format="anyURI" AttributeURI="http://sandbox.dexpi.org/rdl/CompositionBreakSpecialization"/>
+					<GenericAttribute Name="InsulationBreakSpecialization" ValueURI="http://sandbox.dexpi.org/rdl/NoInsulationBreak" Value="NoInsulationBreak" Format="anyURI" AttributeURI="http://sandbox.dexpi.org/rdl/InsulationBreakSpecialization"/>
+					<GenericAttribute Name="NominalDiameterBreakSpecialization" ValueURI="http://sandbox.dexpi.org/rdl/NoNominalDiameterBreak" Value="NoNominalDiameterBreak" Format="anyURI" AttributeURI="http://sandbox.dexpi.org/rdl/NominalDiameterBreakSpecialization"/>
+					<GenericAttribute Name="PipingClassBreakSpecialization" ValueURI="http://sandbox.dexpi.org/rdl/PipingClassBreak" Value="PipingClassBreak" Format="anyURI" AttributeURI="http://sandbox.dexpi.org/rdl/PipingClassBreakSpecialization"/>
+					<GenericAttribute Name="SymbolRegistrationNumberAssignmentClass" Value="ND0007" Format="string" AttributeURI="http://sandbox.dexpi.org/rdl/SymbolRegistrationNumberAssignmentClass"/>
+				</GenericAttributes>
+				<GenericAttributes Set="SPPID_orig" Number="20">
+					<GenericAttribute Name="Angle" Value="0" Format="string"/>
+					<GenericAttribute Name="LabelType" Value="Attribute Break" Format="string"/>
+					<GenericAttribute Name="LeaderCount" Value="1" Format="string"/>
+					<GenericAttribute Name="LeaderStyle" Value="Normal" Format="string"/>
+					<GenericAttribute Name="IsLeaderVisible" Value="True" Format="string"/>
+					<GenericAttribute Name="IsMirrored" Value="False" Format="string"/>
+					<GenericAttribute Name="IsFitToText" Value="False" Format="string"/>
+					<GenericAttribute Name="SP_RepresentationID" Value="0F93919722AC46DEA7946697B1DA9CB4" Format="string"/>
+					<GenericAttribute Name="TerminatorStyle" Value="None" Format="string"/>
+					<GenericAttribute Name="TextLabelJustification" Value="None" Format="string"/>
+					<GenericAttribute Name="SP_DisableFlipText" Value="False" Format="string"/>
+					<GenericAttribute Name="SP_LeaderConnectPointType" Value="Connect By Keypoint" Format="string"/>
+					<GenericAttribute Name="RepresentationType" Value="Label" Format="string"/>
+					<GenericAttribute Name="GraphicOID" Value="2974" Format="string"/>
+					<GenericAttribute Name="InStockpile" Value="False" Format="string"/>
+					<GenericAttribute Name="FileName" Value="\Piping\Segment Breaks\ND0007.sym" Format="string"/>
+					<GenericAttribute Name="SP_DrawingID" Value="CDFB9824762646E69D18BE57A24D5E82" Format="string"/>
+					<GenericAttribute Name="ItemStatus" Value="Active" Format="string"/>
+					<GenericAttribute Name="RepresentationClass" Value="Label" Format="string"/>
+					<GenericAttribute Name="SP_FileLastModifiedTime" Value="1/26/2022 1:31:22 PM" Format="string"/>
+				</GenericAttributes>
+				<Position>
+					<Location X="0.539945665909245" Y="0.388544376977162" Z="0"/>
+					<Axis X="0" Y="0" Z="1"/>
+					<Reference X="1" Y="0" Z="0"/>
+				</Position>
+				<Scale X="1.0" Y="1.0" Z="1.0"/>
+				<Extent>
+					<Min X="0" Y="0"/>
+					<Max X="0" Y="0"/>
+				</Extent>
+				<Presentation Color="Black" LineType="Solid" LineWeight="0.00035"/>
+				<ConnectionPoints NumPoints="3" FlowIn="1" FlowOut="2">
+					<Presentation Layer="Default" Color="Olive" LineType="Solid" LineWeight="" R="0.502" G="0.502" B="0"/>
+					<Extent>
+						<Min X="0" Y="0"/>
+						<Max X="0" Y="0"/>
+					</Extent>
+					<Node ID="SPCF9FC822AE2D4375A0E94936F7A2B21E_0">
+						<Position>
+							<Location X="0.395564214531381" Y="0.38072573529067794"/>
+							<Axis X="0" Y="0" Z="1"/>
+							<Reference X="1" Y="0" Z="0"/>
+						</Position>
+					</Node>
+					<Node ID="SPCF9FC822AE2D4375A0E94936F7A2B21E_1" Name="1" Type="process">
+						<Position>
+							<Location X="0.55646317607000984" Y="0.38072573529067794"/>
+							<Axis X="0" Y="0" Z="0"/>
+							<Reference X="0" Y="0" Z="0"/>
+						</Position>
+					</Node>
+					<Node ID="SPCF9FC822AE2D4375A0E94936F7A2B21E_2" Name="2" Type="process">
+						<Position>
+							<Location X="0.55646317607000984" Y="0.38072573529067794"/>
+							<Axis X="0" Y="0" Z="0"/>
+							<Reference X="0" Y="0" Z="0"/>
+						</Position>
+					</Node>
+				</ConnectionPoints>
+			</PropertyBreak>
+			<CenterLine ID="SP0F93919722AC46DEA7946697B1DA9CB4" NumPoints="4">
+				<Presentation Layer="Default" Color="Olive" LineType="Solid" LineWeight="0.000175" R="0.502" G="0.502" B="0"/>
+				<Extent>
+					<Min X="0" Y="0"/>
+					<Max X="0" Y="0"/>
+				</Extent>
+				<Coordinate X="0.55646317607000984" Y="0.38072573529067794"/>
+				<Coordinate X="0.397564214531381" Y="0.38072573529067794"/>
+			</CenterLine>
+			<PipingComponent ID="SPCF9FC822AE2D4375A0E94936F7A2B21E" ComponentClass="Flange" ComponentName="PipingComponent_a7901f87-0f5c-4b12-9509-653e07c0753f" ComponentClassURI="http://data.posccaesar.org/rdl/RDS13307654" TagName="">
+				<GenericAttributes Number="15" Set="DexpiCustomAttributes">
+					<GenericAttribute Name="ItemTagAssignmentClass" Value="" Format="string" AttributeURI="http://noaka.org/rdl/ItemTagAssignmentClass"/>
+					<GenericAttribute Name="ObjectDisplayNameAssignmentClass" Value="" Format="string" AttributeURI="http://noaka.org/rdl/ObjectDisplayNameAssignmentClass"/>
+					<GenericAttribute Name="SequenceAssignmentClass" Value="" Format="string" AttributeURI="http://noaka.org/rdl/SequenceAssignmentClass "/>
+					<GenericAttribute Name="TagTypeAssignmentClass" Value="" Format="string" AttributeURI="http://noaka.org/rdl/TypeCodeAssignmentClass"/>
+					<GenericAttribute Name="ValvePositionAssignmentClass" Value="" Format="string" AttributeURI="http://noaka.org/rdl/ValvePositionAssignmentClass"/>
+					<GenericAttribute Name="VDSAssignmentClass" Value="" Format="string" AttributeURI="http://noaka.org/rdl/VDSAssignmentClass"/>
+					<GenericAttribute Name="TrimTypeAssignmentClass" Value="" Format="string" AttributeURI="http://noaka.org/rdl/TrimTypeAssignmentClass"/>
+					<GenericAttribute Name="LockMechanismAssignmentClass" Value="" Format="string" AttributeURI="http://noaka.org/rdl/LockMechanismAssignmentClass"/>
+					<GenericAttribute Name="BarrierInformationFlowInAssignmentClass" Value="" Format="string" AttributeURI="http://noaka.org/rdl/BarrierInformationFlowInAssignmentClass"/>
+					<GenericAttribute Name="BarrierInformationFlowOutAssignmentClass" Value="" Format="string" AttributeURI="http://noaka.org/rdl/BarrierInformationFlowOutAssignmentClass"/>
+					<GenericAttribute Name="TypicalInformationAssignmentClass" Value="" Format="string" AttributeURI="http://sandbox.dexpi.org/rdl/TypicalInformationAssignmentClass"/>
+					<GenericAttribute Name="NominalDiameterAssignmentClass" Value="" Format="string" AttributeURI="http://noaka.org/rdl/NominalDiameterAssignmentClass"/>
+					<GenericAttribute Name="InstrumentLoopNumberAssignmentClass" Value="" Format="string" AttributeURI="http://noaka.org/rdl/InstrumentLoopNumberAssignmentClass"/>
+					<GenericAttribute Name="SpecialItemNumberAssignmentClass" Value="" Format="string" AttributeURI="http://noaka.org/rdl/SpecialItemNumberAssignmentClass"/>
+					<GenericAttribute Name="PlugStateAssignmentClass" Value="Closed" Format="string" AttributeURI="http://noaka.org/rdl/PlugStateAssignmentClass"/>
+				</GenericAttributes>
+				<GenericAttributes Number="15" Set="DexpiAttributes">
+					<GenericAttribute Name="OnHoldSpecialization" ValueURI="http://sandbox.dexpi.org/rdl/NotOnHold" Value="NotOnHold" Format="anyURI" AttributeURI="http://sandbox.dexpi.org/rdl/OnHoldSpecialization"/>
+					<GenericAttribute Name="PipingClassArtefactSpecialization" ValueURI="http://sandbox.dexpi.org/rdl/PipingClassArtefact" Value="PipingClassArtefact" Format="anyURI" AttributeURI="http://sandbox.dexpi.org/rdl/PipingClassArtefactSpecialization"/>
+					<GenericAttribute Name="BasfLineClassAssignmentClass" Format="string" AttributeURI="http://sandbox.dexpi.org/rdl/BasfLineClassAssignmentClass"/>
+					<GenericAttribute Name="FluidCodeAssignmentClass" Value="PL" Format="string" AttributeURI="http://sandbox.dexpi.org/rdl/FluidCodeAssignmentClass"/>
+					<GenericAttribute Name="NominalDiametersRepresentationAssignmentClass" Format="string" AttributeURI="http://sandbox.dexpi.org/rdl/NominalDiametersRepresentationAssignmentClass"/>
+					<GenericAttribute Name="PressureTestCircuitNumberAssignmentClass" Format="string" AttributeURI="http://sandbox.dexpi.org/rdl/PressureTestCircuitNumberAssignmentClass"/>
+					<GenericAttribute Name="SymbolRegistrationNumberAssignmentClass" Value="PV001A" Format="string" AttributeURI="http://sandbox.dexpi.org/rdl/SymbolRegistrationNumberAssignmentClass"/>
+					<GenericAttribute Name="InsulationThickness" Format="double" AttributeURI="http://data.posccaesar.org/rdl/RDS4238040"/>
+					<GenericAttribute Name="LowerLimitHeatTracingTemperature" Format="double" AttributeURI="http://sandbox.dexpi.org/rdl/LowerLimitHeatTracingTemperature"/>
+					<GenericAttribute Name="HeatTracingTypeSpecialization" ValueURI="http://sandbox.dexpi.org/rdl/NoHeatTracingSystem" Value="NoHeatTracingSystem" Format="anyURI" AttributeURI="http://sandbox.dexpi.org/rdl/HeatTracingTypeSpecialization"/>
+					<GenericAttribute Name="HeatTracingTypeAssignmentClass" Format="string" AttributeURI="http://sandbox.dexpi.org/rdl/HeatTracingTypeAssignmentClass"/>
+					<GenericAttribute Name="InsulationTypeAssignmentClass" Format="string" AttributeURI="http://sandbox.dexpi.org/rdl/InsulationTypeAssignmentClass"/>
+					<GenericAttribute Name="PipingClassCodeAssignmentClass" Value="AS200" Format="string" AttributeURI="http://sandbox.dexpi.org/rdl/PipingClassCodeAssignmentClass"/>
+					<GenericAttribute Name="PipingComponentNameAssignmentClass" Format="string" AttributeURI="http://sandbox.dexpi.org/rdl/PipingComponentNameAssignmentClass"/>
+					<GenericAttribute Name="PipingComponentNumberAssignmentClass" Format="string" AttributeURI="http://sandbox.dexpi.org/rdl/PipingComponentNumberAssignmentClass"/>
+				</GenericAttributes>
+				<GenericAttributes Set="SPPID_orig" Number="24">
+					<GenericAttribute Name="PipingCompType" Value="Flange" Format="string"/>
+					<GenericAttribute Name="PipingCompSubclass" Value="In-Line Fitting" Format="string"/>
+					<GenericAttribute Name="IsInline" Value="True" Format="string"/>
+					<GenericAttribute Name="SP_IsSpecialtyItem" Value="False" Format="string"/>
+					<GenericAttribute Name="PipingSpec" Value="AS200" Format="string"/>
+					<GenericAttribute Name="OperFluidCode" Value="PL" Format="string"/>
+					<GenericAttribute Name="PlatformCode" Value="A" Format="string"/>
+					<GenericAttribute Name="PlantItemType" Value="Piping Component" Format="string"/>
+					<GenericAttribute Name="TagReqdFlag" Value="False" Format="string"/>
+					<GenericAttribute Name="aabbcc_code" Value="6Q2C16" Format="string"/>
+					<GenericAttribute Name="IsBulkItem" Value="False" Format="string"/>
+					<GenericAttribute Name="ConstructionStatus" Value="New" Format="string"/>
+					<GenericAttribute Name="ModelItemType" Value="Plant Item" Format="string"/>
+					<GenericAttribute Name="UpdateCount" Value="12" Format="string"/>
+					<GenericAttribute Name="ItemStatus" Value="Active" Format="string"/>
+					<GenericAttribute Name="ItemTypeName" Value="PipingComp" Format="string"/>
+					<GenericAttribute Name="SP_IsTypical" Value="False" Format="string"/>
+					<GenericAttribute Name="InlineComp.SP_ID" Value="CF9FC822AE2D4375A0E94936F7A2B21E" Format="string"/>
+					<GenericAttribute Name="InlineComp.SP_PipeRunID" Value="C26CE121656C46E78B856564E0A071A0" Format="string"/>
+					<GenericAttribute Name="InlineComp.UpdateCount" Value="0" Format="string"/>
+					<GenericAttribute Name="InlineComp.SP_PipingCompID" Value="CF9FC822AE2D4375A0E94936F7A2B21E" Format="string"/>
+					<GenericAttribute Name="IsReducing" Value="False" Format="string"/>
+					<GenericAttribute Name="EndComponent" Value="False" Format="string"/>
+					<GenericAttribute Name="ValveTagGroupId" Value="Aibel" Format="string"/>
+				</GenericAttributes>
+				<PersistentID Identifier="SPCF9FC822AE2D4375A0E94936F7A2B21E" Context="SmartPID - DexpiTest"/>
+				<Position>
+					<Location X="0.395564214531381" Y="0.380725735290678" Z="0"/>
+					<Axis X="0" Y="0" Z="-1"/>
+					<Reference X="1" Y="0" Z="0"/>
+				</Position>
+				<Scale X="1.0" Y="1.0" Z="1.0"/>
+				<Presentation Layer="Default" Color="Olive" LineType="Solid" LineWeight="0.00035" R="0.502" G="0.502" B="0"/>
+				<Extent>
+					<Min X="0" Y="0"/>
+					<Max X="0" Y="0"/>
+				</Extent>
+				<ConnectionPoints NumPoints="3" FlowIn="1" FlowOut="2">
+					<Presentation Layer="Default" Color="Olive" LineType="Solid" LineWeight="" R="0.502" G="0.502" B="0"/>
+					<Extent>
+						<Min X="0.39553369509061087" Y="0.37871145219984809"/>
+						<Max X="0.39757849762221087" Y="0.38274001838150778"/>
+					</Extent>
+					<Node ID="SPCF9FC822AE2D4375A0E94936F7A2B21E_0">
+						<Position>
+							<Location X="0.395564214531381" Y="0.38072573529067794"/>
+							<Axis X="0" Y="0" Z="1"/>
+							<Reference X="1" Y="0" Z="0"/>
+						</Position>
+					</Node>
+					<Node ID="SPCF9FC822AE2D4375A0E94936F7A2B21E_1" Name="1" Type="process">
+						<Position>
+							<Location X="0.395564214531381" Y="0.38072573529067794"/>
+							<Axis X="0" Y="0" Z="0"/>
+							<Reference X="0" Y="0" Z="0"/>
+						</Position>
+					</Node>
+					<Node ID="SPCF9FC822AE2D4375A0E94936F7A2B21E_2" Name="2" Type="process">
+						<Position>
+							<Location X="0.397564214531381" Y="0.38072573529067794"/>
+							<Axis X="0" Y="0" Z="0"/>
+							<Reference X="0" Y="0" Z="0"/>
+						</Position>
+					</Node>
+				</ConnectionPoints>
+			</PipingComponent>
+			<Connection ToID="SP0C6E2729AD74458F99FAEF96296367DC" FromID="SP491630D6DDA44587AC45B442CF00E12A" FromNode="2"/>
+		</PipingNetworkSegment>
+	</PipingNetworkSystem>
+</PlantModel>
