@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PlantModel xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation = "../ProteusPIDSchema_4.0.1.xsd">
+  <!--Created with INGR ISO15926 PostProc V0.0.7.13 and ConfigurationFileVersion 7.0013 by NOOFT-01\ofslinil on ABLAPP122 at 05.10.2021 13.04.49-->
+  <PlantInformation
+    SchemaVersion = "4.0.1"
+    OriginatingSystem = "SPPID"
+    Date = "2021-10-05"
+    Time = "10:52:34.0000000+02:00"
+    Is3D = "no"
+    Units = "Metre"
+    Discipline = "PID">
+    <UnitsOfMeasure/>
+  </PlantInformation>
+  <Note
+    ID = "Note-1"
+    ComponentName = "BlackBoxShape-1"
+    ComponentClass = "Note"
+    ComponentClassURI = "http://noaka.org/rdl/Note">
+    <!--details about PersistentID still in discussion-->
+    <PersistentID Identifier = "SP6154335D35F2453886A96144BBEE351D" Context = "SmartPID - AskjaC"/>
+      <GenericAttributes Number = "3" AttributeSet="DexpiAttributes">
+        <GenericAttribute
+          Name = "NoteIdentifierAssignmentClass"
+          AttributeURI = "http://sandbox.dexpi.org/rdl/NoteIdentifierAssignmentClass"
+          Value = "1"
+          Format = "string"/>
+        <GenericAttribute
+          Name = "NoteTextAssignmentClass"
+          AttributeURI = "http://sandbox.dexpi.org/rdl/NoteTextAssignmentClass"
+          Value = "This is a new note with a line break
+ to show a second line."
+          Format = "string"/>
+        <GenericAttribute
+          Name = "NoteClassificationAssignmentClass"
+          AttributeURI = "http://sandbox.dexpi.org/rdl/NoteClassificationAssignmentClass"
+          Value = "Operational Requirement"
+          Format = "string"/>
+      </GenericAttributes>
+    <Association Type="is a comment referring to" ItemID="BlackBox-1" />
+    <Label ID="SP7EC7EB3DADC74CC09EFDFE33EE44D92C" ComponentClass="NoteTextLabel" ComponentClassURI="http://sandbox.dexpi.org/rdl/NoteTextLabel">
+      <Text String="1" Font="Arial" Justification="RightTop" Width="0.0025" Height="0.0025" TextAngle="0" >
+        <TextStringFormatSpecification>
+          <ObjectAttributesReference DependantAttribute="NoteIdentifierAssignmentClass" DependantAttributeContents="Value" ItemID="Note-1"/>
+        </TextStringFormatSpecification>
+        <Presentation  R="0" G="0" B="0" />
+        <Position>
+          <Location X="0.32091577846547509" Y="0.31729929926676065" />
+          <Axis X="0" Y="0" Z="1" />
+          <Reference X="1" Y="0" Z="0" />
+        </Position>
+      </Text>
+ 	<Text String="This is a new note with a line break
+ to show a second line." Font="Arial" Justification="LeftTop" Width="0.0025" Height="0.0025" TextAngle="0" >
+        <TextStringFormatSpecification>
+          <ObjectAttributesReference DependantAttribute="NoteTextAssignmentClass" DependantAttributeContents="Value" ItemID="Note-1"/>
+        </TextStringFormatSpecification>
+        <Presentation  R="0" G="0" B="0" />
+        <Position>
+          <Location X="0.34091577846547509" Y="0.31729929926676065" />
+          <Axis X="0" Y="0" Z="1" />
+          <Reference X="1" Y="0" Z="0" />
+        </Position>
+      </Text>
+    </Label>
+  </Note>
+  <Drawing Name = "PID.002" Type = "PID">
+    <Presentation R = "1" G = "1" B = "1"/>
+    <Extent>
+      <Min X = "0" Y = "0"/>
+      <Max X = "0.841" Y = "0.594"/>
+    </Extent>
+  </Drawing>
+  <!--arbitrary name: Symbol Library"-->
+  <ShapeCatalogue Name = "Symbol Library">
+    <!--arbitrary ID and ComponentName-->
+    <Equipment ID = "BlackBoxShape-1" ComponentName = "BlackBoxShape-1">
+      <GenericAttributes Number = "1">
+        <GenericAttribute
+          Name = "SymbolRegistrationNumberAssignmentClass"
+          AttributeURI = "http://sandbox.dexpi.org/rdl/SymboleRgistrationNumberAssignmentClass"
+          Value = "..."
+          Format = "string"/>
+      </GenericAttributes>
+    </Equipment>
+  </ShapeCatalogue>
+  <Equipment
+    ID = "BlackBox-1"
+    ComponentName = "BlackBoxShape-1"
+    ComponentClass = "Pump"
+    ComponentClassURI = "http://data.posccaesar.org/rdl/RDS327239">
+    <!--details about PersistentID still in discussion-->
+    <PersistentID Identifier = "SP6154335D35F2453886A96144BBEE351D" Context = "SmartPID - AskjaC"/>
+    <Position>
+      <Location X = "0.2857" Y = "0.3353" Z = "0"/>
+      <Axis X = "0" Y = "0" Z = "1"/>
+      <Reference X = "1" Y = "0" Z = "0"/>
+    </Position>
+    <Scale X = "1.0" Y = "1.0" Z = "1.0"/>
+    <Association Type="is referenced in comment" ItemID="Note-1" />
+    <Label ID="SP7EC7EB3DADC74CC09EFDFE33EE44D92B" ComponentClass="NoteIdentifierLabel" ComponentClassURI="http://sandbox.dexpi.org/rdl/NoteIdentifierLabel">
+      <Text String="Note 1 " Font="Arial" Justification="CenterCenter" Width="0.0025" Height="0.0025" TextAngle="0" >
+        <TextStringFormatSpecification>
+           <ObjectAttributesReference DependantAttribute="Note "/>
+          <ObjectAttributesReference DependantAttribute="NoteIdentifierAssignmentClass" DependantAttributeContents="Value" ItemID="Note-1"/>
+           <ObjectAttributesReference DependantAttribute=" "/>
+        </TextStringFormatSpecification>
+        <Presentation  R="0" G="0" B="0" />
+        <Position>
+          <Location X="0.32091577846547509" Y="0.31729929926676065" />
+          <Axis X="0" Y="0" Z="1" />
+          <Reference X="1" Y="0" Z="0" />
+        </Position>
+      </Text>
+    </Label>
+  </Equipment>
+</PlantModel>
