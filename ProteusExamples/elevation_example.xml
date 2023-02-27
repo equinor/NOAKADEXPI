@@ -1,0 +1,40 @@
+<Equipment
+  ID = "PressureVessel-1"
+  ComponentClass = "PressureVessel"
+  ComponentClassURI = "http://data.posccaesar.org/rdl/RDS427229"
+  ComponentName = "PT002A_SHAPE">
+  ...
+  <GenericAttributes Set = "DexpiCustomAttributes" Number = "4">
+    <GenericAttribute
+      Format = "string"
+      Type = "String"
+      TypeURI = "http://sandbox.dexpi.org/rdl/String"
+      Value = "EL. 500000"
+      Name = "ElevationAssignmentClass"
+      AttributeURI = "http://noaka.org/rdl/ElevationAssignmentClass"/>
+    ...
+  </GenericAttributes>
+  <Label ID = "Label-1" ComponentClass = "Label" ComponentClassURI = "http://sandbox.dexpi.org/rdl/Label">
+    <PolyLine NumPoints = "2">
+      <Presentation/>
+      <Coordinate X = "390" Y = "337"/>
+      <Coordinate X = "425" Y = "337"/>
+    </PolyLine>
+    <Text
+      String = "EL. 500000"
+      Font = "Arial"
+      Height = "3.3"
+      Width = "0"
+      Justification = "RightBottom">
+      <Position>
+        <Location X = "425" Y = "339" Z = "0"/>
+        <Axis X = "0" Y = "0" Z = "1"/>
+        <Reference X = "1" Y = "0" Z = "0"/>
+      </Position>
+      <TextStringFormatSpecification>
+        <ObjectAttributesReference ItemID = "PressureVessel-1" DependantAttribute = "ElevationAssignmentClass"/>
+      </TextStringFormatSpecification>
+    </Text>
+  </Label>
+  ...
+</Equipment>
