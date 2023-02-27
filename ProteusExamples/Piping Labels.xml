@@ -1,0 +1,33 @@
+<PipingNetworkSystem ID = "PipingNetworkSystem-1" ComponentClass = "PipingNetworkSystem" ComponentClassURI = "http://data.posccaesar.org/rdl/RDS270359">
+  <GenericAttributes Number = "1" Set = "CustomAttributes">
+    <GenericAttribute
+      Name = "ObjectDisplayName"
+      Format = "string"
+      AttributeURI = "http://sandbox.dexpi.org/rdl/ObjectDisplayName"
+      Value = "D-43L37007A-0800VF-AS7F0-0F000N"/>
+  </GenericAttributes>
+  <Label ID = "ObjectDisplayNameLabel-1" ComponentClass = "CustomLabel" ComponentClassURI = "http://sandbox.dexpi.org/rdl/CustomLabel">
+    <!--This is a custom label with custom type ObjectDisplayNameLabel. -->
+    <GenericAttributes Number = "2" Set = "DexpiAttributes">
+      <GenericAttribute
+        Name = "TypeNameAssignmentClass"
+        AttributeURI = "http://sandbox.dexpi.org/rdl/TypeNameAssignmentClass"
+        Format = "string"
+        Value = "ObjectDisplayNameLabel"/>
+      <GenericAttribute
+        Name = "TypeURIAssignmentClass"
+        AttributeURI = "http://sandbox.dexpi.org/rdl/TypeURIAssignmentClass"
+        Format = "string"
+        Value = "http://noaka.org/rdl/ObjectDisplayNameLabel"/>
+    </GenericAttributes>
+    <!--The only actual information we have to transfer is the position of the label text. -->
+    <!--Font, Width, and Height are required by Proteus Schema, and we must use some dummy values. -->
+    <Text Font = "" Width = "0" Height = "0">
+      <Position>
+        <Location X = "0.0931" Y = "0.0137" Z = "0"/>
+        <Axis X = "0" Y = "0" Z = "1"/>
+        <Reference X = "1" Y = "0" Z = "0"/>
+      </Position>
+    </Text>
+  </Label>
+</PipingNetworkSystem>
