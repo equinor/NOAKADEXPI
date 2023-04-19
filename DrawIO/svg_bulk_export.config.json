@@ -1,0 +1,31 @@
+{
+	"addDrawIOFilenameAsPrefix": false,
+	"openDevTools": false,
+	"writeToFileSystem": true,
+	"zipFilePath": "",
+	"cleanup": true,
+	"layerGroups": {
+		"Symbol": {
+			"filenamePostfix": "",
+			"exportPath": "svg_export\\symbol",
+			"enabledLayers": ["Symbol"]
+		},
+		"Origo": {
+			"exportPath": "svg_export\\origo",
+			"enabledLayers": ["Symbol", "Origo", "Connection", "Dimension", "Grid"]
+		},
+		"Label": {
+			"exportPath": "svg_export\\label",
+			"enabledLayers": ["Symbol", "Origo", "Label","Connection"]
+		},		
+		"Detail": {
+			"exportPath": "svg_export\\detail",
+			"enabledLayers": ["Symbol", "Origo", "Label", "Dimension", "Grid", "Connection"]
+		},
+		"Option": {
+			"exportPerOptionLayer": true,
+			"exportPath": "svg_export\\symbols",
+			"enabledLayers": ["Origo", "Label"]
+		}
+	}
+}
