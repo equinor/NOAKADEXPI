@@ -3,7 +3,12 @@
 	"openDevTools": false,
 	"writeToFileSystem": true,
 	"zipFilePath": "",
-	"cleanup": true,
+	"cleanup": {
+		"enabled": true,
+		"unitScaling": {
+			"enabled": true
+		}
+	},
 	"layerGroups": {
 		"Symbol": {
 			"filenamePostfix": "",
