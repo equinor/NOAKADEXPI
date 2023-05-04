@@ -29,7 +29,7 @@
 		},
 		"Option": {
 			"exportPerOptionLayer": true,
-			"exportPath": "svg_export\\symbols",
+			"exportPath": "svg_export\\symbol",
 			"enabledLayers": ["Origo", "Label"]
 		}
 	}
