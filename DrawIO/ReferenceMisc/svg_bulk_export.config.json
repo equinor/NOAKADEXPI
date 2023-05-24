@@ -12,25 +12,25 @@
 	"layerGroups": {
 		"Symbol": {
 			"filenamePostfix": "",
-			"exportPath": "svg_export\\symbol",
+			"exportPath": "C:\\GitHub\\NOAKADEXPI\\Symbols",
 			"enabledLayers": ["Symbol"]
 		},
 		"Origo": {
-			"exportPath": "svg_export\\origo",
-			"enabledLayers": ["Symbol", "Origo", "Connection", "Dimension", "Grid"]
+			"exportPath": "C:\\GitHub\\NOAKADEXPI\\Symbols\\Origo",
+			"enabledLayers": ["Symbol", "Origo", "Connection"]
 		},
 		"Label": {
-			"exportPath": "svg_export\\label",
-			"enabledLayers": ["Symbol", "Origo", "Label","Connection"]
+			"exportPath": "C:\\GitHub\\NOAKADEXPI\\Symbols\\Origo",
+			"enabledLayers": ["Symbol", "Origo","Connection", "Label"]
 		},		
 		"Detail": {
-			"exportPath": "svg_export\\detail",
+			"exportPath": "C:\\GitHub\\NOAKADEXPI\\Symbols\\Detail",
 			"enabledLayers": ["Symbol", "Origo", "Label", "Dimension", "Grid", "Connection"]
 		},
 		"Option": {
 			"exportPerOptionLayer": true,
-			"exportPath": "svg_export\\symbol",
-			"enabledLayers": ["Origo", "Label"]
+			"exportPath": "C:\\GitHub\\NOAKADEXPI\\Symbols",
+			"enabledLayers": ["Symbol"]
 		}
 	}
 }
