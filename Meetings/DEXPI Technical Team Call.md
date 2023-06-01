@@ -4,9 +4,9 @@
 ## Participants 
 - [ ] Pedersen, Tonia 
 - [ ] Theißen, Manfred 
-- [ ] Ingebrigsten, Idar Pe 
-- [ ] Ghahraman, Behnam 
-- [ ] Thos, Jaime 
+- [x ] Ingebrigsten, Idar Pe 
+- [x ] Ghahraman, Behnam 
+- [x ] Thos, Jaime 
 - [ ] Walker, Andrew
 - [ ] List, Michael
 - [ ] Rahelt, Maria
