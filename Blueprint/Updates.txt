@@ -1,0 +1,6 @@
+ChangeLog Overview:
+TestSet02:
+- Added Notes
+- Update to include ItemTag / TagName where applicable
+- Addition of FL0 attributes (base mandatory attributes)
+- Elevation removed (this should not have happened) 
