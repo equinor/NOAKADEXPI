@@ -486,7 +486,7 @@
 				<path d="M0 555.67 L801.48 555.67" class="st1"/>
 			</g>
 		</g>
-		<g id="shape1411-284" v:mID="1411" v:groupContext="shape" v:layerMember="1" transform="translate(279.777,-142.506)">
+		<g id="shape1411-284" v:mID="1411" v:groupContext="shape" v:layerMember="1" transform="translate(279.777,-275.287)">
 			<title>Horizontal.1014</title>
 			<desc>8mm</desc>
 			<v:custProps>
@@ -603,7 +603,8 @@
 			<title>Sheet.1522</title>
 			<path d="M0 555.67 L801.48 555.67" class="st1"/>
 		</g>
-		<g id="group1529-312" transform="translate(279.777,-193.977)" v:mID="1529" v:groupContext="group" v:layerMember="2">
+		<g id="group1529-312" transform="translate(393.163,846.504) rotate(180)" v:mID="1529" v:groupContext="group"
+				v:layerMember="2">
 			<v:userDefs>
 				<v:ud v:nameU="SOLSH" v:prompt="" v:val="VT4({13D0FF3B-CF5B-4a46-98AB-14030248EAEF})"/>
 				<v:ud v:nameU="DWGEntityType" v:prompt="" v:val="VT4(INSERT)"/>
@@ -664,7 +665,7 @@
 				<path d="M0 555.67 L56.69 555.67" class="st9"/>
 			</g>
 		</g>
-		<g id="group1535-328" transform="translate(292.88,-279.017)" v:mID="1535" v:groupContext="group" v:layerMember="3">
+		<g id="group1535-328" transform="translate(292.88,-165.631)" v:mID="1535" v:groupContext="group" v:layerMember="3">
 			<title>Sheet.1535</title>
 			<g id="shape1536-329" v:mID="1536" v:groupContext="shape" v:layerMember="3" transform="translate(2.14165,1.13687E-13)">
 				<title>Sheet.1536</title>
@@ -681,7 +682,8 @@
 				<rect x="0" y="541.501" width="13.2348" height="14.1732" class="st12"/>
 				<text x="4" y="555.19" class="st13" v:langID="2057"><v:paragraph/><v:tabList/><tspan class="st14">A</tspan></text>			</g>
 		</g>
-		<g id="shape1538-336" v:mID="1538" v:groupContext="shape" v:layerMember="4" transform="translate(329.906,-244.106)">
+		<g id="shape1538-336" v:mID="1538" v:groupContext="shape" v:layerMember="4"
+				transform="translate(343.035,896.632) rotate(180)">
 			<title>Circle</title>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
