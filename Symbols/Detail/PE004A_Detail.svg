@@ -494,7 +494,8 @@
 				<path d="M0 555.67 L801.48 555.67" class="st1"/>
 			</g>
 		</g>
-		<g id="shape1405-287" v:mID="1405" v:groupContext="shape" v:layerMember="1" transform="translate(273.096,-300.702)">
+		<g id="shape1405-287" v:mID="1405" v:groupContext="shape" v:layerMember="1"
+				transform="translate(399.728,868.286) rotate(180)">
 			<title>Circle.1412</title>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
@@ -626,7 +627,8 @@
 			<path d="M42.47 535.83 L78.82 535.83" class="st6"/>
 			<rect v:rectContext="textBkgnd" x="34.0533" y="524.23" width="16.8357" height="9.59985" class="st8"/>
 			<text x="34.05" y="531.43" class="st9" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>6mm</text>		</g>
-		<g id="group1413-314" transform="translate(272.574,-300.277)" v:mID="1413" v:groupContext="group" v:layerMember="3">
+		<g id="group1413-314" transform="translate(513.753,867.764) rotate(180)" v:mID="1413" v:groupContext="group"
+				v:layerMember="3">
 			<title>Sheet.1413</title>
 			<g id="shape1414-315" v:mID="1414" v:groupContext="shape" v:layerMember="3"
 					transform="translate(407.094,934.421) rotate(135)">
@@ -639,7 +641,7 @@
 				<path d="M0 555.67 L20.04 555.67" class="st10"/>
 			</g>
 		</g>
-		<g id="group1419-321" transform="translate(348.502,-364.056)" v:mID="1419" v:groupContext="group" v:layerMember="4">
+		<g id="group1419-321" transform="translate(355.119,-165.631)" v:mID="1419" v:groupContext="group" v:layerMember="4">
 			<title>Sheet.1419</title>
 			<g id="shape1420-322" v:mID="1420" v:groupContext="shape" v:layerMember="4" transform="translate(2.14165,0)">
 				<title>Sheet.1420</title>
@@ -656,7 +658,8 @@
 				<rect x="0" y="541.501" width="13.2348" height="14.1732" class="st13"/>
 				<text x="4" y="555.19" class="st14" v:langID="2057"><v:paragraph/><v:tabList/><tspan class="st15">A</tspan></text>			</g>
 		</g>
-		<g id="group1422-329" transform="translate(279.777,-193.977)" v:mID="1422" v:groupContext="group" v:layerMember="5">
+		<g id="group1422-329" transform="translate(506.549,761.465) rotate(180)" v:mID="1422" v:groupContext="group"
+				v:layerMember="5">
 			<v:userDefs>
 				<v:ud v:nameU="SOLSH" v:prompt="" v:val="VT4({13D0FF3B-CF5B-4a46-98AB-14030248EAEF})"/>
 				<v:ud v:nameU="DWGEntityType" v:prompt="" v:val="VT4(INSERT)"/>

@@ -21,7 +21,8 @@
 				v:shadowOffsetY="-8.50394"/>
 		<v:layer v:name="Origo" v:index="0"/>
 		<v:layer v:name="Symbol" v:index="1"/>
-		<g id="shape1444-1" v:mID="1444" v:groupContext="shape" v:layerMember="0" transform="translate(51.2535,-51.2535)">
+		<g id="shape1444-1" v:mID="1444" v:groupContext="shape" v:layerMember="0"
+				transform="translate(64.3824,138.543) rotate(180)">
 			<title>Circle</title>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
@@ -29,7 +30,8 @@
 			</v:userDefs>
 			<path d="M0 80.72 A6.56444 6.56444 0 0 1 13.13 80.72 A6.56444 6.56444 0 1 1 0 80.72 Z" class="st1"/>
 		</g>
-		<g id="group1465-3" transform="translate(1.125,-1.125)" v:mID="1465" v:groupContext="group" v:layerMember="1">
+		<g id="group1465-3" transform="translate(114.511,88.4144) rotate(180)" v:mID="1465" v:groupContext="group"
+				v:layerMember="1">
 			<v:userDefs>
 				<v:ud v:nameU="SOLSH" v:prompt="" v:val="VT4({13D0FF3B-CF5B-4a46-98AB-14030248EAEF})"/>
 				<v:ud v:nameU="DWGEntityType" v:prompt="" v:val="VT4(INSERT)"/>

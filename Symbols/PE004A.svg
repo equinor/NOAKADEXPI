@@ -21,7 +21,8 @@
 		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
 				v:shadowOffsetY="-8.50394"/>
 		<v:layer v:name="Symbol" v:index="0"/>
-		<g id="group1422-1" transform="translate(1.125,-1.125)" v:mID="1422" v:groupContext="group" v:layerMember="0">
+		<g id="group1422-1" transform="translate(227.897,159.281) rotate(180)" v:mID="1422" v:groupContext="group"
+				v:layerMember="0">
 			<v:userDefs>
 				<v:ud v:nameU="SOLSH" v:prompt="" v:val="VT4({13D0FF3B-CF5B-4a46-98AB-14030248EAEF})"/>
 				<v:ud v:nameU="DWGEntityType" v:prompt="" v:val="VT4(INSERT)"/>
