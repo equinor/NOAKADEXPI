@@ -1,12 +1,75 @@
 {
+	"_comments": [
+		"For a detailed description of the properties have a look at the file 'readme.pdf.'",
+		"The measuring unit in this file is 'mm' if not noted otherwise.",
+		"Color properties can be defined like a color CSS property (e.g. \"red\", \"#ff0000\", \"rgb(255, 0, 0)\")]"
+	],
+
 	"addDrawIOFilenameAsPrefix": false,
 	"openDevTools": false,
 	"writeToFileSystem": true,
-	"zipFilePath": "",
+	"zipFilePath": "svg_bulk_export_files.zip",
 	"cleanup": {
 		"enabled": true,
 		"unitScaling": {
-			"enabled": true
+			"enabled": true,
+			"millimetersModelToDisplay": 4.233,
+			"dimensions": {
+				"color": "#777777",
+				"padding": {
+					"x": 2.0,
+					"y": 2.0 
+				}
+			},
+			"strokeWidth": 0.25,
+			"roundViewBox": false
+		},
+		"origoCircle": {
+			"radius": 0.25,
+			"color": "#ff0000"
+		},
+		"connectionCircle": {
+			"radius": 0.375,
+			"color": "#00ff00",
+			"direction": {
+				"radius": 0.04,
+				"fill": "#0000ff"
+			}
+		},
+		"ellipseAsPath": true,
+		"sendSymbolLayerToBack": true,
+		"grid": {
+			"padding": {
+				"x": 1.0,
+				"y": 1.0
+			},
+			"lineGroups": {
+				"micro": {
+					"distance": 1,
+					"stroke": {
+						"width": 0.25,
+						"color": "rgb(216, 216, 216)",
+						"opacity": 0.5
+					}
+				},
+				"minor": {
+					"distance": 5,
+					"stroke": {
+						"width": 0.5,
+						"color": "#7f7f7f",
+						"opacity": 0.2,
+						"dasharray": "1.0, 2.0"
+					}
+				},
+				"major": {
+					"distance": 10,
+					"stroke": {
+						"width": 1.0,
+						"color": "#0f0f0f",
+						"opacity": 0.2
+					}
+				}
+			}
 		}
 	},
 	"layerGroups": {
@@ -17,20 +80,18 @@
 		},
 		"Origo": {
 			"exportPath": "C:\\GitHub\\NOAKADEXPI\\Symbols\\Origo",
-			"enabledLayers": ["Symbol", "Origo", "Connection"]
+			"enabledLayers": ["Symbol", "Origo", "Label","Connection"]
 		},
-		"Label": {
-			"exportPath": "C:\\GitHub\\NOAKADEXPI\\Symbols\\Origo",
-			"enabledLayers": ["Symbol", "Origo","Connection", "Label"]
-		},		
 		"Detail": {
 			"exportPath": "C:\\GitHub\\NOAKADEXPI\\Symbols\\Detail",
-			"enabledLayers": ["Symbol", "Origo", "Label", "Dimension", "Grid", "Connection"]
+			"enabledLayers": ["Symbol", "Origo", "Label", "Connection"],
+			"GridLayer": "Grid",
+			"DimensionLayer": "Dimension"
 		},
 		"Option": {
-			"exportPerOptionLayer": true,
 			"exportPath": "C:\\GitHub\\NOAKADEXPI\\Symbols",
-			"enabledLayers": ["Symbol"]
+			"exportPerOptionLayer": true,
 		}
 	}
+
 }
