@@ -1,0 +1,7 @@
+new PersistentIdentifiers
+  28e61561-5a0a-0fb7-15a1-b7f1201eff65   PipeTee
+  849013d1-beca-ce53-f75f-7ec4346ce500   CustomInlinePrimaryElement
+  bde3f573-d5ec-2d1c-2899-e2226963cc46   CustomPipingComponent
+
+removed PersistentIdentifiers
+  7c253543-ef35-9506-b768-32d0d821031e   CustomInlinePrimaryElement
