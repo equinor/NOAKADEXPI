@@ -1,4 +1,9 @@
 ChangeLog Overview:
+TestSet03:
+- Added new pipingnetworksegment configuration
+- Added two propertybreak configurations
+- Added scaling on Heat Exchanger HA001
+
 TestSet02:
 - Added Notes
 - Update to include ItemTag / TagName where applicable
