@@ -1,0 +1,3 @@
+new PersistentIdentifiers
+  6b0e8059-7072-2bd3-1d3c-44f3a14dde46   BallValve
+  c5e8f0ac-282a-885c-2914-a27e9ee5a9b1   PipeTee
