@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2023-08-21T11:43:36.615Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.3.0 Chrome/104.0.5112.114 Electron/20.1.3 Safari/537.36" etag="mH90hHOP-ltNfFYjvOjm" compressed="false" version="20.3.0" type="device">
+<mxfile host="Electron" modified="2023-10-04T09:30:58.835Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.3.0 Chrome/104.0.5112.114 Electron/20.1.3 Safari/537.36" etag="S0T65XObbMsxAq7zbN1z" compressed="false" version="20.3.0" type="device">
   <diagram name="ND0008" id="2PV6iwr6JWes_DTPrO4D">
-    <mxGraphModel dx="1408" dy="963" grid="1" gridSize="2" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="782" dy="531" grid="1" gridSize="2" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="RGgDl7oPxScjA8s9tKOe-0" />
         <object label="Symbol" Width="44" Height="6" UoM="mm" id="RGgDl7oPxScjA8s9tKOe-124">
@@ -54,7 +54,7 @@
           </mxCell>
         </object>
         <object label="%LabelLines%&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;%LabelIndex%" placeholders="1" LabelLines="3" LabelIndex="B" id="Q3lKc9ZRaQz3_cMDht4b-1">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#FF0000;fontColor=#FF0000;fontSize=10;align=left;" vertex="1" parent="RGgDl7oPxScjA8s9tKOe-135">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#FF0000;fontColor=#FF0000;fontSize=10;align=left;" parent="RGgDl7oPxScjA8s9tKOe-135" vertex="1">
             <mxGeometry x="560" y="128" width="80" height="16" as="geometry" />
           </mxCell>
         </object>

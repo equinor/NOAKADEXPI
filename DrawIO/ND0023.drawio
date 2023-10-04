@@ -1,29 +1,8 @@
-<mxfile host="Electron" modified="2023-08-22T12:16:14.231Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.3.0 Chrome/104.0.5112.114 Electron/20.1.3 Safari/537.36" etag="4X3dPQYSs685-J1vJCRP" compressed="false" version="20.3.0" type="device">
+<mxfile host="Electron" modified="2023-10-04T09:49:31.244Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.3.0 Chrome/104.0.5112.114 Electron/20.1.3 Safari/537.36" etag="L1hRNxzTNan7voeRYEyP" compressed="false" version="20.3.0" type="device">
   <diagram name="ND0023" id="1CP9VX86ncTdAmcYDIcw">
-    <mxGraphModel dx="971" dy="581" grid="1" gridSize="2" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="782" dy="531" grid="1" gridSize="2" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="22vkG-h5v2N9dKBLQ-ZE-0" />
-        <mxCell id="22vkG-h5v2N9dKBLQ-ZE-124" value="Connection" style="" parent="22vkG-h5v2N9dKBLQ-ZE-0" />
-        <object label="Connection" PipingConnector="N" LabelConnector="N" SignalConnector="Y" Direction="180" AuxiliaryConnector="N" id="22vkG-h5v2N9dKBLQ-ZE-125">
-          <mxCell style="vsdxID=1407;fillColor=none;gradientColor=none;shape=stencil(rVFbDsIgEDwNnyQU4glqvcfGblsilmZBS28vZGMsxg9j/JvZmX1kR5g2TLCg0CpE8hdcbR8nYY5CaztPSDZmJEwnTDt4wpH8be6ZL1CcBV39vUxI3KdKh1YbswPTEzuBzlmiVGmKau9zUKM+jlJJQrJBko8QrZ+rrQ5oRJnXyMHBWElhRVx25ebnw/5zVvPFWRm83jxY5zilvf4eSy5xpKZ7AA==);strokeColor=#00FF00;strokeWidth=1;points=[[0.5,0.5,0,0,0]];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;aspect=fixed;noLabel=1;snapToPoint=1;container=0;fontSize=16;" parent="22vkG-h5v2N9dKBLQ-ZE-124" vertex="1">
-            <mxGeometry x="250" y="186" width="12" height="12" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="Connection" PipingConnector="N" LabelConnector="N" SignalConnector="Y" Direction="0" AuxiliaryConnector="N" id="j2nrvzxkZ3BnKDXGnb-E-3">
-          <mxCell style="vsdxID=1407;fillColor=none;gradientColor=none;shape=stencil(rVFbDsIgEDwNnyQU4glqvcfGblsilmZBS28vZGMsxg9j/JvZmX1kR5g2TLCg0CpE8hdcbR8nYY5CaztPSDZmJEwnTDt4wpH8be6ZL1CcBV39vUxI3KdKh1YbswPTEzuBzlmiVGmKau9zUKM+jlJJQrJBko8QrZ+rrQ5oRJnXyMHBWElhRVx25ebnw/5zVvPFWRm83jxY5zilvf4eSy5xpKZ7AA==);strokeColor=#00FF00;strokeWidth=1;points=[[0.5,0.5,0,0,0]];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;aspect=fixed;noLabel=1;snapToPoint=1;container=0;fontSize=16;fontFamily=Helvetica;" parent="22vkG-h5v2N9dKBLQ-ZE-124" vertex="1">
-            <mxGeometry x="442" y="186" width="12" height="12" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="Connection" PipingConnector="N" LabelConnector="N" SignalConnector="Y" Direction="90" AuxiliaryConnector="N" id="U1XBBmectsp78E5T3mQc-3">
-          <mxCell style="vsdxID=1407;fillColor=none;gradientColor=none;shape=stencil(rVFbDsIgEDwNnyQU4glqvcfGblsilmZBS28vZGMsxg9j/JvZmX1kR5g2TLCg0CpE8hdcbR8nYY5CaztPSDZmJEwnTDt4wpH8be6ZL1CcBV39vUxI3KdKh1YbswPTEzuBzlmiVGmKau9zUKM+jlJJQrJBko8QrZ+rrQ5oRJnXyMHBWElhRVx25ebnw/5zVvPFWRm83jxY5zilvf4eSy5xpKZ7AA==);strokeColor=#00FF00;strokeWidth=1;points=[[0.5,0.5,0,0,0]];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;aspect=fixed;noLabel=1;snapToPoint=1;container=0;fontSize=16;fontFamily=Helvetica;" parent="22vkG-h5v2N9dKBLQ-ZE-124" vertex="1">
-            <mxGeometry x="346" y="90" width="12" height="12" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="Connection" PipingConnector="N" LabelConnector="N" SignalConnector="Y" Direction="270" AuxiliaryConnector="N" id="U1XBBmectsp78E5T3mQc-4">
-          <mxCell style="vsdxID=1407;fillColor=none;gradientColor=none;shape=stencil(rVFbDsIgEDwNnyQU4glqvcfGblsilmZBS28vZGMsxg9j/JvZmX1kR5g2TLCg0CpE8hdcbR8nYY5CaztPSDZmJEwnTDt4wpH8be6ZL1CcBV39vUxI3KdKh1YbswPTEzuBzlmiVGmKau9zUKM+jlJJQrJBko8QrZ+rrQ5oRJnXyMHBWElhRVx25ebnw/5zVvPFWRm83jxY5zilvf4eSy5xpKZ7AA==);strokeColor=#00FF00;strokeWidth=1;points=[[0.5,0.5,0,0,0]];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;aspect=fixed;noLabel=1;snapToPoint=1;container=0;fontSize=16;fontFamily=Helvetica;" parent="22vkG-h5v2N9dKBLQ-ZE-124" vertex="1">
-            <mxGeometry x="346" y="282" width="12" height="12" as="geometry" />
-          </mxCell>
-        </object>
         <mxCell id="22vkG-h5v2N9dKBLQ-ZE-135" value="Label" style="locked=1;" parent="22vkG-h5v2N9dKBLQ-ZE-0" />
         <object label="%LabelLines%&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;%LabelIndex%" placeholders="1" LabelLines="1" LabelIndex="A" id="U1XBBmectsp78E5T3mQc-1">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#FF0000;fontColor=#FF0000;fontSize=10;align=left;" parent="22vkG-h5v2N9dKBLQ-ZE-135" vertex="1">
@@ -40,14 +19,8 @@
             <mxGeometry x="312" y="224" width="80" height="16" as="geometry" />
           </mxCell>
         </object>
-        <mxCell id="22vkG-h5v2N9dKBLQ-ZE-136" value="Origo" style="" parent="22vkG-h5v2N9dKBLQ-ZE-0" />
-        <object label="origo" H="12" W="12" UoM="mm" id="22vkG-h5v2N9dKBLQ-ZE-137">
-          <mxCell style="vsdxID=1407;fillColor=none;gradientColor=none;shape=stencil(rVFbDsIgEDwNnyQU4glqvcfGblsilmZBS28vZGMsxg9j/JvZmX1kR5g2TLCg0CpE8hdcbR8nYY5CaztPSDZmJEwnTDt4wpH8be6ZL1CcBV39vUxI3KdKh1YbswPTEzuBzlmiVGmKau9zUKM+jlJJQrJBko8QrZ+rrQ5oRJnXyMHBWElhRVx25ebnw/5zVvPFWRm83jxY5zilvf4eSy5xpKZ7AA==);strokeColor=#ff0000;strokeWidth=1;points=[[0.5,0.5,0,0,0]];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;aspect=fixed;noLabel=1;snapToPoint=1;" parent="22vkG-h5v2N9dKBLQ-ZE-136" vertex="1">
-            <mxGeometry x="348.06" y="188.07" width="7.874" height="7.87" as="geometry" />
-          </mxCell>
-        </object>
         <object label="Symbol" Width="12" Height="12" UoM="mm" id="22vkG-h5v2N9dKBLQ-ZE-138">
-          <mxCell style="" parent="22vkG-h5v2N9dKBLQ-ZE-0" />
+          <mxCell style="locked=1;" parent="22vkG-h5v2N9dKBLQ-ZE-0" />
         </object>
         <mxCell id="XmIZ7bg3pY8JjkrYm192-0" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=none;" parent="22vkG-h5v2N9dKBLQ-ZE-138" vertex="1">
           <mxGeometry x="256" y="96" width="192" height="192" as="geometry" />
@@ -58,6 +31,33 @@
             <mxPoint x="190" y="100" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="22vkG-h5v2N9dKBLQ-ZE-124" value="Connection" style="" parent="22vkG-h5v2N9dKBLQ-ZE-0" />
+        <object label="Connection" PipingConnector="N" LabelConnector="N" SignalConnector="Y" Direction="180" AuxiliaryConnector="N" id="22vkG-h5v2N9dKBLQ-ZE-125">
+          <mxCell style="vsdxID=1407;fillColor=none;gradientColor=none;shape=stencil(rVFbDsIgEDwNnyQU4glqvcfGblsilmZBS28vZGMsxg9j/JvZmX1kR5g2TLCg0CpE8hdcbR8nYY5CaztPSDZmJEwnTDt4wpH8be6ZL1CcBV39vUxI3KdKh1YbswPTEzuBzlmiVGmKau9zUKM+jlJJQrJBko8QrZ+rrQ5oRJnXyMHBWElhRVx25ebnw/5zVvPFWRm83jxY5zilvf4eSy5xpKZ7AA==);strokeColor=#00FF00;strokeWidth=1;points=[[0.5,0.5,0,0,0]];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;aspect=fixed;noLabel=1;snapToPoint=1;container=0;fontSize=16;" parent="22vkG-h5v2N9dKBLQ-ZE-124" vertex="1">
+            <mxGeometry x="250" y="186" width="12" height="12" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Connection" PipingConnector="N" LabelConnector="N" SignalConnector="Y" Direction="0" AuxiliaryConnector="N" id="j2nrvzxkZ3BnKDXGnb-E-3">
+          <mxCell style="vsdxID=1407;fillColor=none;gradientColor=none;shape=stencil(rVFbDsIgEDwNnyQU4glqvcfGblsilmZBS28vZGMsxg9j/JvZmX1kR5g2TLCg0CpE8hdcbR8nYY5CaztPSDZmJEwnTDt4wpH8be6ZL1CcBV39vUxI3KdKh1YbswPTEzuBzlmiVGmKau9zUKM+jlJJQrJBko8QrZ+rrQ5oRJnXyMHBWElhRVx25ebnw/5zVvPFWRm83jxY5zilvf4eSy5xpKZ7AA==);strokeColor=#00FF00;strokeWidth=1;points=[[0.5,0.5,0,0,0]];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;aspect=fixed;noLabel=1;snapToPoint=1;container=0;fontSize=16;fontFamily=Helvetica;" parent="22vkG-h5v2N9dKBLQ-ZE-124" vertex="1">
+            <mxGeometry x="442" y="186" width="12" height="12" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Connection" PipingConnector="N" LabelConnector="N" SignalConnector="Y" Direction="270" AuxiliaryConnector="N" id="U1XBBmectsp78E5T3mQc-3">
+          <mxCell style="vsdxID=1407;fillColor=none;gradientColor=none;shape=stencil(rVFbDsIgEDwNnyQU4glqvcfGblsilmZBS28vZGMsxg9j/JvZmX1kR5g2TLCg0CpE8hdcbR8nYY5CaztPSDZmJEwnTDt4wpH8be6ZL1CcBV39vUxI3KdKh1YbswPTEzuBzlmiVGmKau9zUKM+jlJJQrJBko8QrZ+rrQ5oRJnXyMHBWElhRVx25ebnw/5zVvPFWRm83jxY5zilvf4eSy5xpKZ7AA==);strokeColor=#00FF00;strokeWidth=1;points=[[0.5,0.5,0,0,0]];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;aspect=fixed;noLabel=1;snapToPoint=1;container=0;fontSize=16;fontFamily=Helvetica;" parent="22vkG-h5v2N9dKBLQ-ZE-124" vertex="1">
+            <mxGeometry x="346" y="90" width="12" height="12" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Connection" PipingConnector="N" LabelConnector="N" SignalConnector="Y" Direction="90" AuxiliaryConnector="N" id="U1XBBmectsp78E5T3mQc-4">
+          <mxCell style="vsdxID=1407;fillColor=none;gradientColor=none;shape=stencil(rVFbDsIgEDwNnyQU4glqvcfGblsilmZBS28vZGMsxg9j/JvZmX1kR5g2TLCg0CpE8hdcbR8nYY5CaztPSDZmJEwnTDt4wpH8be6ZL1CcBV39vUxI3KdKh1YbswPTEzuBzlmiVGmKau9zUKM+jlJJQrJBko8QrZ+rrQ5oRJnXyMHBWElhRVx25ebnw/5zVvPFWRm83jxY5zilvf4eSy5xpKZ7AA==);strokeColor=#00FF00;strokeWidth=1;points=[[0.5,0.5,0,0,0]];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;aspect=fixed;noLabel=1;snapToPoint=1;container=0;fontSize=16;fontFamily=Helvetica;" parent="22vkG-h5v2N9dKBLQ-ZE-124" vertex="1">
+            <mxGeometry x="346" y="282" width="12" height="12" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="22vkG-h5v2N9dKBLQ-ZE-136" value="Origo" style="" parent="22vkG-h5v2N9dKBLQ-ZE-0" />
+        <object label="origo" H="12" W="12" UoM="mm" id="22vkG-h5v2N9dKBLQ-ZE-137">
+          <mxCell style="vsdxID=1407;fillColor=none;gradientColor=none;shape=stencil(rVFbDsIgEDwNnyQU4glqvcfGblsilmZBS28vZGMsxg9j/JvZmX1kR5g2TLCg0CpE8hdcbR8nYY5CaztPSDZmJEwnTDt4wpH8be6ZL1CcBV39vUxI3KdKh1YbswPTEzuBzlmiVGmKau9zUKM+jlJJQrJBko8QrZ+rrQ5oRJnXyMHBWElhRVx25ebnw/5zVvPFWRm83jxY5zilvf4eSy5xpKZ7AA==);strokeColor=#ff0000;strokeWidth=1;points=[[0.5,0.5,0,0,0]];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;aspect=fixed;noLabel=1;snapToPoint=1;" parent="22vkG-h5v2N9dKBLQ-ZE-136" vertex="1">
+            <mxGeometry x="348.06" y="188.07" width="7.874" height="7.87" as="geometry" />
+          </mxCell>
+        </object>
       </root>
     </mxGraphModel>
   </diagram>
