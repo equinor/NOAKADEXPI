@@ -1,19 +1,19 @@
-<mxfile host="Electron" modified="2023-09-28T09:50:18.343Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.3.0 Chrome/104.0.5112.114 Electron/20.1.3 Safari/537.36" etag="1W5NpoVtgpz_NxumbAOD" compressed="false" version="20.3.0" type="device">
+<mxfile host="Electron" modified="2023-10-04T11:31:19.152Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.3.0 Chrome/104.0.5112.114 Electron/20.1.3 Safari/537.36" etag="mrz4PZ0IrXeFQV1Ao6fh" compressed="false" version="20.3.0" type="device">
   <diagram name="STPL008" id="1CP9VX86ncTdAmcYDIcw">
-    <mxGraphModel dx="1422" dy="857" grid="1" gridSize="2" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="782" dy="531" grid="1" gridSize="2" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="22vkG-h5v2N9dKBLQ-ZE-0" />
         <mxCell id="22vkG-h5v2N9dKBLQ-ZE-135" value="Label" style="" parent="22vkG-h5v2N9dKBLQ-ZE-0" />
         <object label="Symbol" Width="12" Height="3" UoM="mm" id="22vkG-h5v2N9dKBLQ-ZE-138">
           <mxCell style="locked=1;" parent="22vkG-h5v2N9dKBLQ-ZE-0" />
         </object>
-        <mxCell id="1ymmlwVQ8xCxsZB6WhJE-1" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.orthogonal_triangle;direction=north;fillColor=none;" vertex="1" parent="22vkG-h5v2N9dKBLQ-ZE-138">
+        <mxCell id="1ymmlwVQ8xCxsZB6WhJE-1" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.orthogonal_triangle;direction=north;fillColor=none;" parent="22vkG-h5v2N9dKBLQ-ZE-138" vertex="1">
           <mxGeometry x="416" y="368" width="191" height="48" as="geometry" />
         </mxCell>
         <mxCell id="22vkG-h5v2N9dKBLQ-ZE-124" value="Connection" style="" parent="22vkG-h5v2N9dKBLQ-ZE-0" />
         <mxCell id="22vkG-h5v2N9dKBLQ-ZE-136" value="Origo" style="" parent="22vkG-h5v2N9dKBLQ-ZE-0" />
         <object label="origo" id="1ymmlwVQ8xCxsZB6WhJE-2">
-          <mxCell style="vsdxID=1407;fillColor=none;gradientColor=none;shape=stencil(rVFbDsIgEDwNnyQU4glqvcfGblsilmZBS28vZGMsxg9j/JvZmX1kR5g2TLCg0CpE8hdcbR8nYY5CaztPSDZmJEwnTDt4wpH8be6ZL1CcBV39vUxI3KdKh1YbswPTEzuBzlmiVGmKau9zUKM+jlJJQrJBko8QrZ+rrQ5oRJnXyMHBWElhRVx25ebnw/5zVvPFWRm83jxY5zilvf4eSy5xpKZ7AA==);strokeColor=#ff0000;strokeWidth=1;points=[[0.5,0.5,0,0,0]];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;aspect=fixed;noLabel=1;snapToPoint=1;" vertex="1" parent="22vkG-h5v2N9dKBLQ-ZE-136">
+          <mxCell style="vsdxID=1407;fillColor=none;gradientColor=none;shape=stencil(rVFbDsIgEDwNnyQU4glqvcfGblsilmZBS28vZGMsxg9j/JvZmX1kR5g2TLCg0CpE8hdcbR8nYY5CaztPSDZmJEwnTDt4wpH8be6ZL1CcBV39vUxI3KdKh1YbswPTEzuBzlmiVGmKau9zUKM+jlJJQrJBko8QrZ+rrQ5oRJnXyMHBWElhRVx25ebnw/5zVvPFWRm83jxY5zilvf4eSy5xpKZ7AA==);strokeColor=#ff0000;strokeWidth=1;points=[[0.5,0.5,0,0,0]];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;aspect=fixed;noLabel=1;snapToPoint=1;" parent="22vkG-h5v2N9dKBLQ-ZE-136" vertex="1">
             <mxGeometry x="602" y="412" width="8" height="8" as="geometry" />
           </mxCell>
         </object>
