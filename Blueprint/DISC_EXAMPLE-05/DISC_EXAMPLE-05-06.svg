@@ -1,0 +1,1913 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="841" height="594" viewBox="0 0 841 594" style="background-color: #ffffff;">
+  <symbol id="shape-1" overflow="visible">
+    <polyline points="0.1875,0.1875 0.1875,593.8125" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="30,20 30,574" stroke="#000000" stroke-width="0.75" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(22,45.883333)">A</text>
+    <polyline points="10,66.166667 30,66.166667" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(22,92.05)">B</text>
+    <polyline points="10,112.333333 30,112.333333" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(22,138.216667)">C</text>
+    <polyline points="10,158.5 30,158.5" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(22,184.383333)">D</text>
+    <polyline points="10,204.666667 30,204.666667" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(22,230.55)">E</text>
+    <polyline points="10,250.833333 30,250.833333" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(22,276.716667)">F</text>
+    <polyline points="10,297 30,297" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(22,322.883333)">G</text>
+    <polyline points="10,343.166667 30,343.166667" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(22,369.05)">H</text>
+    <polyline points="10,389.333333 30,389.333333" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(22,415.216667)">J</text>
+    <polyline points="10,435.5 30,435.5" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(22,461.383333)">K</text>
+    <polyline points="10,481.666667 30,481.666667" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(22,507.55)">L</text>
+    <polyline points="10,527.833333 30,527.833333" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(22,553.716667)">M</text>
+    <polyline points="840.8125,0.1875 840.8125,593.8125" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="821,20 821,574" stroke="#000000" stroke-width="0.75" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(829,45.883333)">A</text>
+    <polyline points="841,66.166667 821,66.166667" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(829,92.05)">B</text>
+    <polyline points="841,112.333333 821,112.333333" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(829,138.216667)">C</text>
+    <polyline points="841,158.5 821,158.5" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(829,184.383333)">D</text>
+    <polyline points="841,204.666667 821,204.666667" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(829,230.55)">E</text>
+    <polyline points="841,250.833333 821,250.833333" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(829,276.716667)">F</text>
+    <polyline points="841,297 821,297" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(829,322.883333)">G</text>
+    <polyline points="841,343.166667 821,343.166667" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(829,369.05)">H</text>
+    <polyline points="841,389.333333 821,389.333333" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(829,415.216667)">J</text>
+    <polyline points="841,435.5 821,435.5" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(829,461.383333)">K</text>
+    <polyline points="841,481.666667 821,481.666667" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(829,507.55)">L</text>
+    <polyline points="841,527.833333 821,527.833333" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(829,553.716667)">M</text>
+    <polyline points="0.1875,0.1875 840.8125,0.1875" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="30,20 821,20" stroke="#000000" stroke-width="0.75" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="79.4375,0 79.4375,20" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(54.71875,14.8)">1</text>
+    <polyline points="128.875,0 128.875,20" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(104.15625,14.8)">2</text>
+    <polyline points="178.3125,0 178.3125,20" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(153.59375,14.8)">3</text>
+    <polyline points="227.75,0 227.75,20" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(203.03125,14.8)">4</text>
+    <polyline points="277.1875,0 277.1875,20" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(252.46875,14.8)">5</text>
+    <polyline points="326.625,0 326.625,20" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(301.90625,14.8)">6</text>
+    <polyline points="376.0625,0 376.0625,20" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(351.34375,14.8)">7</text>
+    <polyline points="425.5,0 425.5,20" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(400.78125,14.8)">8</text>
+    <polyline points="474.9375,0 474.9375,20" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(450.21875,14.8)">9</text>
+    <polyline points="524.375,0 524.375,20" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(499.65625,14.8)">10</text>
+    <polyline points="573.8125,0 573.8125,20" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(549.09375,14.8)">11</text>
+    <polyline points="623.25,0 623.25,20" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(598.53125,14.8)">12</text>
+    <polyline points="672.6875,0 672.6875,20" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(647.96875,14.8)">13</text>
+    <polyline points="722.125,0 722.125,20" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(697.40625,14.8)">14</text>
+    <polyline points="771.5625,0 771.5625,20" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(746.84375,14.8)">15</text>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(796.28125,14.8)">16</text>
+    <polyline points="0.1875,593.8125 840.8125,593.8125" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="30,574 821,574" stroke="#000000" stroke-width="0.75" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="79.4375,594 79.4375,574" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(54.71875,584.8)">1</text>
+    <polyline points="128.875,594 128.875,574" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(104.15625,584.8)">2</text>
+    <polyline points="178.3125,594 178.3125,574" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(153.59375,584.8)">3</text>
+    <polyline points="227.75,594 227.75,574" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(203.03125,584.8)">4</text>
+    <polyline points="277.1875,594 277.1875,574" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(252.46875,584.8)">5</text>
+    <polyline points="326.625,594 326.625,574" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(301.90625,584.8)">6</text>
+    <polyline points="376.0625,594 376.0625,574" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(351.34375,584.8)">7</text>
+    <polyline points="425.5,594 425.5,574" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(400.78125,584.8)">8</text>
+    <polyline points="474.9375,594 474.9375,574" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(450.21875,584.8)">9</text>
+    <polyline points="524.375,594 524.375,574" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(499.65625,584.8)">10</text>
+    <polyline points="573.8125,594 573.8125,574" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(549.09375,584.8)">11</text>
+    <polyline points="623.25,594 623.25,574" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(598.53125,584.8)">12</text>
+    <polyline points="672.6875,594 672.6875,574" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(647.96875,584.8)">13</text>
+    <polyline points="722.125,594 722.125,574" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(697.40625,584.8)">14</text>
+    <polyline points="771.5625,594 771.5625,574" stroke="#000000" stroke-width="0.375" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(746.84375,584.8)">15</text>
+    <text fill="#000000" font-size="8px" font-family="Calibri" text-anchor="middle" transform="translate(796.28125,584.8)">16</text>
+    <polyline points="30,504 821,504 821,574 30,574 30,504" stroke="#000000" stroke-width="0.75" stroke-linecap="round" fill="none" vector-effect="non-scaling-stroke"/>
+    <polyline points="461,560 641,560" stroke="#000000" stroke-width="0.75" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="461,553 641,553" stroke="#000000" stroke-width="0.75" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="461,546 641,546" stroke="#000000" stroke-width="0.75" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="461,539 641,539" stroke="#000000" stroke-width="0.75" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="461,532 641,532" stroke="#000000" stroke-width="0.75" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="461,525 641,525" stroke="#000000" stroke-width="0.75" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="461,518 641,518" stroke="#000000" stroke-width="0.75" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="461,511 641,511" stroke="#000000" stroke-width="0.75" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="461,567 821,567" stroke="#000000" stroke-width="0.75" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="641,556 711,556" stroke="#000000" stroke-width="0.75" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="641,549 821,549" stroke="#000000" stroke-width="0.75" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="711,521 821,521" stroke="#000000" stroke-width="0.75" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="390,504 390,574" stroke="#000000" stroke-width="0.75" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="461,504 461,574" stroke="#000000" stroke-width="0.75" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="472,504 472,574" stroke="#000000" stroke-width="0.75" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="494,504 494,574" stroke="#000000" stroke-width="0.75" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="593,504 593,574" stroke="#000000" stroke-width="0.75" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="609,504 609,574" stroke="#000000" stroke-width="0.75" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="625,504 625,574" stroke="#000000" stroke-width="0.75" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="641,504 641,574" stroke="#000000" stroke-width="0.75" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="671,556 671,574" stroke="#000000" stroke-width="0.75" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="691,556 691,574" stroke="#000000" stroke-width="0.75" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="711,504 711,574" stroke="#000000" stroke-width="0.75" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="805,549 805,574" stroke="#000000" stroke-width="0.75" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <text fill="#000000" font-size="6px" font-family="Arial" text-anchor="middle" transform="translate(43,511)">NOTES:</text>
+    <text fill="#000000" font-size="3px" font-family="Arial Narrow" text-anchor="middle" transform="translate(466,571.5)">REV.</text>
+    <text fill="#000000" font-size="3px" font-family="Arial Narrow" text-anchor="middle" transform="translate(478,571.5)">DATE</text>
+    <text fill="#000000" font-size="3px" font-family="Arial Narrow" text-anchor="middle" transform="translate(510,571.5)">REASON FOR ISSUE</text>
+    <text fill="#000000" font-size="3px" font-family="Arial Narrow" text-anchor="middle" transform="translate(601,571.5)">PREPARED</text>
+    <text fill="#000000" font-size="3px" font-family="Arial Narrow" text-anchor="middle" transform="translate(617,571.5)">CHECKED</text>
+    <text fill="#000000" font-size="3px" font-family="Arial Narrow" text-anchor="middle" transform="translate(633,571.5)">APPROVED</text>
+    <text fill="#000000" font-size="3px" font-family="Arial Narrow" text-anchor="middle" transform="translate(647,571.5)">SCALE</text>
+    <text fill="#000000" font-size="3px" font-family="Arial Narrow" text-anchor="middle" transform="translate(666,571.5)">SIZE</text>
+    <text fill="#000000" font-size="3px" font-family="Arial Narrow" text-anchor="middle" transform="translate(681,571.5)">AREA</text>
+    <text fill="#000000" font-size="3px" font-family="Arial Narrow" text-anchor="middle" transform="translate(701,571.5)">SYSTEM</text>
+    <text fill="#000000" font-size="3px" font-family="Arial Narrow" text-anchor="middle" transform="translate(760,571.5)">DRAWING NUMBER</text>
+    <text fill="#000000" font-size="3px" font-family="Arial Narrow" text-anchor="middle" transform="translate(813,571.5)">REV.</text>
+    <text fill="#000000" font-size="3px" font-family="Arial" text-anchor="middle" transform="translate(717,508.5)">PLANT</text>
+    <text fill="#000000" font-size="3px" font-family="Arial" text-anchor="middle" transform="translate(724,525.5)">DRAWING TITLE:</text>
+    <text fill="#000000" font-size="3px" font-family="Arial" transform="translate(642,553.5)">CONTR. NO</text>
+    <text fill="#000000" font-size="5px" font-family="Arial" text-anchor="middle" transform="translate(647,564.5)">NTS</text>
+    <text fill="#000000" font-size="3px" font-family="Arial" text-anchor="middle" transform="translate(657,564.5)">AT</text>
+    <text fill="#000000" font-size="5px" font-family="Arial" text-anchor="middle" transform="translate(667,564.5)">A1</text>
+    <polygon points="1.544421,-2.61511 1.44456,-2.725379 1.37556,-2.732937 1.298853,-2.704695 1.257787,-2.680224 1.178166,-2.632784 0.926,-2.482544 0.587838,-2.281072 0.209166,-2.055467 -0.164533,-1.832826 -0.487774,-1.640248 -0.61626,-1.563699 -0.715074,-1.504829 -0.778532,-1.467022 -0.800948,-1.453667 -0.800948,-2.548009 -0.81488,-2.625369 -0.853909,-2.67233 -0.913885,-2.68787 -0.990658,-2.670969 -1.63848,-2.436643 -1.733423,-2.362428 -1.76144,-2.246582 -1.76144,2.565712 -1.71533,2.687003 -1.593863,2.732937 -0.968525,2.732937 -0.846927,2.687003 -0.800948,2.565712 -0.800948,-0.382161 -0.774526,-0.398465 -0.699758,-0.444601 -0.583392,-0.516402 -0.432173,-0.609702 -0.052171,-0.844133 0.386272,-1.114562 0.829178,-1.387659 1.222569,-1.630092 1.383828,-1.729395 1.512468,-1.808532 1.60174,-1.863339 1.644897,-1.889647 1.747173,-1.977037 1.76144,-2.031633 1.745373,-2.101841 1.693966,-2.231541 1.627112,-2.402477 1.569151,-2.551412 1.544421,-2.61511" stroke="#f10044" stroke-width="0" fill="#f10044" vector-effect="non-scaling-stroke" transform="translate(690.139415,539.576112)"/>
+    <polygon points="2.60218,-0.346044 2.559838,-0.836907 2.435169,-1.297143 2.231709,-1.716021 1.952996,-2.082807 1.602566,-2.386768 1.183954,-2.617171 0.700698,-2.763284 0.156335,-2.814373 -0.39511,-2.764373 -0.910803,-2.617517 -1.379101,-2.378524 -1.788362,-2.052111 -2.126943,-1.642996 -2.383202,-1.155899 -2.545495,-0.595536 -2.60218,0.033375 -2.553628,0.614633 -2.410588,1.146413 -2.176983,1.620079 -1.856736,2.026992 -1.453772,2.358515 -0.972013,2.606011 -0.415384,2.760843 0.212193,2.814373 0.812116,2.762357 1.393134,2.607713 1.936474,2.35255 2.423361,1.998974 2.484929,1.886027 2.445845,1.764648 2.144067,1.295645 2.039419,1.220024 1.909741,1.261919 1.496832,1.52587 1.077698,1.714367 0.650199,1.82744 0.212193,1.865124 -0.186697,1.831643 -0.537148,1.735473 -0.838903,1.583024 -1.091707,1.380706 -1.295306,1.13493 -1.449443,0.852106 -1.553864,0.538643 -1.608314,0.200951 2.437063,0.200951 2.558354,0.152251 2.60218,0.035834 2.60218,-0.346044" stroke="#f10044" stroke-width="0" fill="#f10044" vector-effect="non-scaling-stroke" transform="translate(658.602178,539.628842)"/>
+    <polygon points="-1.563521,0.619717 -1.465919,0.345262 -1.333389,0.10103 -1.167626,-0.111016 -0.970328,-0.288912 -0.74319,-0.430693 -0.487909,-0.534397 -0.20618,-0.59806 0.1003,-0.619717 0.427527,-0.594861 0.713781,-0.52343 0.958932,-0.410129 1.162848,-0.259665 1.325397,-0.076742 1.446446,0.133933 1.525865,0.367655 1.563521,0.619717 -1.563521,0.619717" stroke="#ffffff" stroke-width="0" fill="#ffffff" vector-effect="non-scaling-stroke" transform="translate(658.624487,538.372545)"/>
+    <polygon points="2.563009,3.864099 2.684475,3.81812 2.730585,3.696522 2.730585,-3.651905 2.716478,-3.729216 2.676219,-3.776094 2.612906,-3.791618 2.529634,-3.774865 1.893053,-3.540187 1.797979,-3.466104 1.770094,-3.350127 1.770094,-3.1158 1.452029,-3.430583 1.034399,-3.665826 0.543455,-3.813131 0.005445,-3.864099 -0.532122,-3.813702 -1.039208,-3.666183 -1.503115,-3.427044 -1.911146,-3.101792 -2.250606,-2.695929 -2.508796,-2.214961 -2.673022,-1.664392 -2.730585,-1.049725 -2.685047,-0.492754 -2.550526,0.030734 -2.330158,0.50817 -2.02708,0.926985 -1.644429,1.274609 -1.185343,1.538474 -0.652959,1.70601 -0.050414,1.764648 0.515245,1.704469 1.031632,1.54275 1.462123,1.307716 1.633713,1.171526 1.770094,1.027592 1.770094,3.696522 1.816204,3.81812 1.93767,3.864099" stroke="#f10044" stroke-width="0" fill="#f10044" vector-effect="non-scaling-stroke" transform="translate(664.710468,540.678497)"/>
+    <polygon points="0,1.870569 -0.348363,1.840334 -0.676191,1.750151 -0.975496,1.600808 -1.238293,1.39309 -1.456593,1.127785 -1.62241,0.805677 -1.727758,0.427555 -1.764648,-0.005797 -1.727758,-0.43865 -1.62241,-0.815459 -1.456593,-1.13571 -1.238293,-1.398887 -0.975496,-1.604476 -0.676191,-1.751963 -0.348363,-1.840832 0,-1.870569 0.361173,-1.840832 0.695014,-1.751963 0.995103,-1.604476 1.255024,-1.398887 1.468357,-1.13571 1.628684,-0.815459 1.729588,-0.43865 1.764648,-0.005797 1.729588,0.430783 1.628684,0.81042 1.468357,1.132725 1.255024,1.397306 0.995103,1.603772 0.695014,1.751732 0.361173,1.840795 0,1.870569" stroke="#ffffff" stroke-width="0" fill="#ffffff" vector-effect="non-scaling-stroke" transform="translate(664.727156,539.623327)"/>
+    <polygon points="-0.212193,2.778034 0.229457,2.738967 0.665871,2.607779 1.070864,2.36349 1.253396,2.192376 1.418253,1.98512 1.418253,2.476607 1.464363,2.598074 1.58583,2.644184 2.211168,2.644184 2.332766,2.598074 2.378745,2.476607 2.378745,-2.627277 2.364807,-2.710934 2.32574,-2.761127 2.26566,-2.777859 2.188684,-2.761127 1.541213,-2.526801 1.44627,-2.452718 1.418253,-2.336741 1.418253,0.343431 1.39023,0.679793 1.309214,0.975982 1.179782,1.230557 1.006514,1.442077 0.793985,1.6091 0.546776,1.730187 0.269463,1.803895 -0.033375,1.828785 -0.330218,1.804356 -0.598501,1.731768 -0.834829,1.612064 -1.035804,1.446292 -1.198031,1.235497 -1.318112,0.980725 -1.392652,0.683021 -1.418253,0.343431 -1.418253,-2.638519 -1.432234,-2.715676 -1.471345,-2.762533 -1.531338,-2.778034 -1.607962,-2.761127 -2.255785,-2.526801 -2.350859,-2.452718 -2.378745,-2.336741 -2.378745,0.376806 -2.335118,0.935391 -2.209823,1.421168 -2.011238,1.833622 -1.747741,2.172238 -1.42771,2.436502 -1.059523,2.625899 -0.651558,2.739915 -0.212193,2.778034" stroke="#f10044" stroke-width="0" fill="#f10044" vector-effect="non-scaling-stroke" transform="translate(670.834567,539.665076)"/>
+    <polygon points="0.357286,0.46358 0.477347,0.392483 0.513621,0.262629 0.513621,-0.552419 0.459123,-0.674061 0.395793,-0.698653 0.312669,-0.686621 -0.357637,-0.440701 -0.473176,-0.375401 -0.513621,-0.251343 -0.513621,0.530681 -0.50127,0.613108 -0.464876,0.671558 -0.405427,0.698653 -0.323911,0.687016" stroke="#f10044" stroke-width="0" fill="#f10044" vector-effect="non-scaling-stroke" transform="translate(674.843793,535.647313)"/>
+    <polygon points="0.312669,2.711106 0.434136,2.664997 0.480246,2.54353 0.480246,-2.571245 0.466265,-2.648606 0.427153,-2.695566 0.367161,-2.711106 0.290536,-2.694205 -0.357286,-2.459527 -0.45236,-2.38562 -0.480246,-2.269818 -0.480246,2.54353 -0.434136,2.664997 -0.312669,2.711106" stroke="#f10044" stroke-width="0" fill="#f10044" vector-effect="non-scaling-stroke" transform="translate(674.843793,539.598013)"/>
+    <polygon points="-1.586005,2.747273 -1.464539,2.701163 -1.418429,2.579696 -1.418429,-0.312669 -1.390405,-0.649031 -1.309384,-0.94522 -1.17994,-1.199795 -1.006645,-1.411315 -0.794075,-1.578338 -0.546803,-1.699425 -0.269403,-1.773133 0.03355,-1.798023 0.330277,-1.773594 0.598474,-1.701006 0.834739,-1.581302 1.035673,-1.41553 1.197874,-1.204735 1.317942,-0.949963 1.392477,-0.652259 1.418077,-0.312669 1.418077,2.579696 1.464187,2.701163 1.585654,2.747273 2.211344,2.747273 2.33281,2.701163 2.37892,2.579696 2.37892,-0.346044 2.335278,-0.904528 2.209944,-1.390258 2.011303,-1.802705 1.747741,-2.141344 1.427646,-2.405647 1.059403,-2.595088 0.651398,-2.709139 0.212018,-2.747273 -0.229633,-2.708205 -0.666047,-2.577017 -1.07104,-2.332728 -1.253571,-2.161614 -1.418429,-1.954358 -1.418429,-2.535079 -1.432361,-2.612439 -1.471389,-2.6594 -1.531365,-2.67494 -1.608138,-2.658039 -2.25596,-2.423361 -2.350903,-2.349454 -2.37892,-2.233652 -2.37892,2.579696 -2.33281,2.701163 -2.211344,2.747273" stroke="#f10044" stroke-width="0" fill="#f10044" vector-effect="non-scaling-stroke" transform="translate(678.852914,539.561847)"/>
+    <polygon points="0.005621,-2.814198 -0.574671,-2.759695 -1.103904,-2.602202 -1.573969,-2.350744 -1.976754,-2.014344 -2.304149,-1.602029 -2.548045,-1.12282 -2.70033,-0.585744 -2.752894,0.000176 -2.70033,0.585979 -2.548045,1.122968 -2.304149,1.602114 -1.976754,2.014388 -1.573969,2.350762 -1.103904,2.602207 -0.574671,2.759695 0.005621,2.814198 0.58543,2.759695 1.11339,2.602207 1.581654,2.350762 1.982375,2.014388 2.307706,1.602114 2.549801,1.122968 2.700813,0.585979 2.752894,0.000176 2.700813,-0.585744 2.549801,-1.12282 2.307706,-1.602029 1.982375,-2.014344 1.581654,-2.350744 1.11339,-2.602202 0.58543,-2.759695 0.005621,-2.814198" stroke="#f10044" stroke-width="0" fill="#f10044" vector-effect="non-scaling-stroke" transform="translate(684.804764,539.628842)"/>
+    <polygon points="0.005445,1.87619 -0.388271,1.838636 -0.738401,1.730681 -1.042199,1.559391 -1.296918,1.33183 -1.499813,1.055063 -1.648138,0.736156 -1.739147,0.382172 -1.770094,0.000176 -1.739147,-0.381936 -1.648138,-0.736008 -1.499813,-1.054978 -1.296918,-1.331786 -1.042199,-1.559372 -0.738401,-1.730675 -0.388271,-1.838635 0.005445,-1.87619 0.395567,-1.838635 0.742995,-1.730675 1.044857,-1.559372 1.298279,-1.331786 1.500388,-1.054978 1.648309,-0.736008 1.739168,-0.381936 1.770094,0.000176 1.739168,0.382172 1.648309,0.736156 1.500388,1.055063 1.298279,1.33183 1.044857,1.559391 0.742995,1.730681 0.395567,1.838636 0.005445,1.87619" stroke="#ffffff" stroke-width="0" fill="#ffffff" vector-effect="non-scaling-stroke" transform="translate(684.80494,539.628842)"/>
+    <polygon points="-2.826845,1.360487 -2.7662,1.597053 -2.595681,1.770118 2.349059,4.618921 2.512145,4.661347 2.66647,4.618701 2.781537,4.50801 2.826845,4.346301 2.826845,-1.360437 2.763389,-1.597003 2.59006,-1.770069 -2.35468,-4.618871 -2.516888,-4.661347 -2.669281,-4.618783 -2.782415,-4.508109 -2.826845,-4.346252" stroke="#f10044" stroke-width="0" fill="#f10044" vector-effect="non-scaling-stroke" transform="translate(684.91736,518.863443)"/>
+    <polygon points="-3.728843,-2.548429 -3.871163,-2.43922 -3.978407,-2.299216 -4.046062,-2.136355 -4.069617,-1.958573 -4.069617,6.257247 -4.052265,6.3813 -4.004382,6.490042 -3.838892,6.649357 -3.616884,6.710721 -3.382096,6.649664 3.736923,2.548429 3.877833,2.43922 3.982316,2.299216 4.047276,2.136355 4.069617,1.958573 4.069617,-6.257247 4.052713,-6.3813 4.005793,-6.490042 3.843064,-6.649357 3.623751,-6.710721 3.390176,-6.649664" stroke="#f10044" stroke-width="0" fill="#f10044" vector-effect="non-scaling-stroke" transform="translate(693.930838,516.710793)"/>
+    <polygon points="-1.036551,-0.708248 -1.105804,-0.638996 -1.131054,-0.544185 -1.131054,1.739002 -1.113,1.803743 -1.066983,1.847997 -1.005224,1.864981 -0.93994,1.84791 1.038307,0.708248 1.106682,0.638996 1.131054,0.544185 1.131054,-1.739002 1.113329,-1.803743 1.068037,-1.847997 1.007002,-1.864981 0.942047,-1.84791" stroke="#f10044" stroke-width="0" fill="#f10044" vector-effect="non-scaling-stroke" transform="translate(686.613151,529.383027)"/>
+    <polygon points="0.141755,-1.877903 -0.000176,-1.915845 -0.142106,-1.877903 -3.104734,-0.163493 -3.17548,-0.091984 -3.199062,-0.000088 -3.17548,0.091874 -3.104734,0.16358 -0.142106,1.87764 -0.000176,1.915845 0.141755,1.87764 3.104734,0.16358 3.17548,0.091874 3.199062,-0.000088 3.17548,-0.091984 3.104734,-0.163493" stroke="#f10044" stroke-width="0" fill="#f10044" vector-effect="non-scaling-stroke" transform="translate(683.297453,525.591782)"/>
+    <polygon points="-0.126122,0.906916 0,0.940906 0.126122,0.906916 1.442494,0.145268 1.505335,0.081691 1.526282,0 1.505335,-0.081691 1.442494,-0.145268 0.126122,-0.906916 0,-0.940906 -0.126122,-0.906916 -1.442494,-0.145268 -1.505335,-0.081691 -1.526282,0 -1.505335,0.081691 -1.442494,0.145268" stroke="#f10044" stroke-width="0" fill="#f10044" vector-effect="non-scaling-stroke" transform="translate(692.614466,525.591826)"/>
+    <polygon points="0.721774,-0.562552 0.814081,-0.470464 0.847895,-0.344386 0.84649,1.176451 0.822744,1.262758 0.762438,1.321763 0.681186,1.344472 0.594598,1.321894 -0.723179,0.562706 -0.814608,0.47031 -0.847544,0.344189 -0.847895,-1.176648 -0.824248,-1.262802 -0.763844,-1.321785 -0.682493,-1.344472 -0.596004,-1.321741" stroke="#f10044" stroke-width="0" fill="#f10044" vector-effect="non-scaling-stroke" transform="translate(690.709116,528.89234)"/>
+  </symbol>
+  <symbol id="shape-2" overflow="visible">
+    <ellipse rx="8.017" ry="7.999898" stroke="#ffffff" stroke-width="0" fill="#ffffff" vector-effect="non-scaling-stroke" transform="translate(0.026301,0.026569) rotate(90)"/>
+    <ellipse rx="8.017" ry="7.999898" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(0.026301,0.026569) rotate(90)"/>
+    <ellipse rx="3.99535" ry="3.986827" stroke="#ffffff" stroke-width="0" fill="#ffffff" vector-effect="non-scaling-stroke" transform="translate(0.026364,-3.995498) rotate(90)"/>
+    <ellipse rx="3.99535" ry="3.986827" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(0.026364,-3.995498) rotate(90)"/>
+    <ellipse rx="3.99535" ry="3.986827" stroke="#ffffff" stroke-width="0" fill="#ffffff" vector-effect="non-scaling-stroke" transform="translate(0.026364,4.047789) rotate(270)"/>
+    <ellipse rx="3.99535" ry="3.986827" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(0.026364,4.047789) rotate(270)"/>
+    <polyline points="-5.586764,5.703924 -7.868752,10.009153 8.026403,10.009153 5.691672,5.703924" stroke="#000000" stroke-width="0.25" stroke-linecap="round" fill="none" vector-effect="non-scaling-stroke"/>
+  </symbol>
+  <symbol id="shape-3" overflow="visible">
+    <polyline points="4.006714,0.000007 0.00682,0.000007" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="4.00682,-2.000141 4.00682,1.999859" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+  </symbol>
+  <symbol id="shape-4" overflow="visible">
+    <polyline points="12.006194,-0.012501 0.006194,-0.000134" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="11.999323,-2.000144 11.999323,1.999856" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+  </symbol>
+  <symbol id="shape-5" overflow="visible">
+    <polyline points="-15.894502,-15.940175 -15.789913,16.059248" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-13.80307,-15.940175 -13.698481,16.059248" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="13.908867,-15.940175 14.013456,16.059248" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="16.000299,-15.940175 16.104888,16.059248" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-15.895112,-15.940752 -13.803539,-15.940752" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="13.908117,-15.940752 15.99969,-15.940752" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="14.012696,16.058027 16.104269,16.058027" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-15.79054,16.058027 -13.698967,16.058027" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-13.803651,12.07298 13.999406,12.07298" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-13.803651,-11.837263 13.920902,-11.837263" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-13.803311,-7.852146 14.01352,8.088277" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-13.803907,8.088016 14.012924,-7.852407" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+  </symbol>
+  <symbol id="shape-6" overflow="visible">
+    <polyline points="4.008941,3.9498 38.083383,3.9498" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="4.008941,-4.121563 38.083383,-4.121563" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <path d="M 1.995628 3.951146 A 4.000084 2.004363 270 1 1 1.995628 -4.048945" stroke="#000000" stroke-width="0.25" stroke-linecap="round" fill="none" vector-effect="non-scaling-stroke"/>
+    <polyline points="2.004578,3.9498 3.006809,3.9498" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="2.004578,-4.121563 3.006809,-4.121563" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="4.008955,4.94975 4.008955,-5.05025" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="3.006795,4.94975 3.006795,-5.05025" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <path d="M 32.156443 0.941137 A 0.99667 0.994521 0 1 1 32.077337 -1.041393" stroke="#000000" stroke-width="0.25" stroke-linecap="round" fill="none" vector-effect="non-scaling-stroke"/>
+    <path d="M 32.156205 0.962478 A 0.99667 0.994521 0 1 1 32.235311 -1.020053" stroke="#000000" stroke-width="0.25" stroke-linecap="round" fill="none" vector-effect="non-scaling-stroke"/>
+    <path d="M 38.403876 1.591163 A 1.387216 1.384225 0 0 1 38.095777 3.9127" stroke="#000000" stroke-width="0.25" stroke-linecap="round" fill="none" vector-effect="non-scaling-stroke"/>
+    <path d="M 32.087799 -1.008178 A 7.105056 7.089739 0 0 1 38.407088 1.596096" stroke="#000000" stroke-width="0.25" stroke-linecap="round" fill="none" vector-effect="non-scaling-stroke"/>
+    <path d="M 38.174644 -3.987536 A 1.387216 1.384225 0 0 1 38.482743 -1.666" stroke="#000000" stroke-width="0.25" stroke-linecap="round" fill="none" vector-effect="non-scaling-stroke"/>
+    <path d="M 38.485955 -1.670953 A 7.105056 7.089739 0 0 1 32.166666 0.933321" stroke="#000000" stroke-width="0.25" stroke-linecap="round" fill="none" vector-effect="non-scaling-stroke"/>
+  </symbol>
+  <symbol id="shape-7" overflow="visible">
+    <polygon points="-5,-2 5,-2 5,2 -5,2" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(-0.000049,0.033052)"/>
+  </symbol>
+  <symbol id="shape-8" overflow="visible">
+    <polyline points="1.25,-1.25 0,-1.25 0,1.25 1.25,1.25" stroke="#000000" stroke-width="0.25" stroke-linecap="square" fill="none" vector-effect="non-scaling-stroke"/>
+  </symbol>
+  <symbol id="shape-9" overflow="visible">
+    <polygon points="6,-3.028523 0,7 -6,-3.028523 -6,-7 6,-7 6,-3.028523 6,-3.028523" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(0.000007,6.90059)"/>
+    <polyline points="-5.999993,3.872348 6.000007,3.872348" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+  </symbol>
+  <symbol id="shape-10" overflow="visible">
+    <polygon points="-5.999965,-5.99994 5.999965,-5.99994 5.999965,5.99994 -5.999965,5.99994" stroke="#ffffff" stroke-width="0" fill="#ffffff" vector-effect="non-scaling-stroke" transform="translate(-0.000035,0.000219)"/>
+    <polygon points="-5.999965,-5.99994 5.999965,-5.99994 5.999965,5.99994 -5.999965,5.99994" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(-0.000035,0.000219)"/>
+    <ellipse rx="5.999945" ry="5.999945" stroke="#ffffff" stroke-width="0" fill="#ffffff" vector-effect="non-scaling-stroke" transform="translate(0,0.000346)"/>
+    <ellipse rx="5.999945" ry="5.999945" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(0,0.000346)"/>
+    <polyline points="-6,0.000388 6,0.000388" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+  </symbol>
+  <symbol id="shape-11" overflow="visible">
+    <ellipse rx="1.25" ry="1.25" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke"/>
+  </symbol>
+  <symbol id="shape-12" overflow="visible">
+    <polyline points="16.014011,-40.838544 16.014011,38.799365" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="16.014293,38.780078 -15.972037,38.780078" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="16.027963,-40.856848 -15.958367,-40.856848" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-15.944274,-40.857592 -15.944274,38.780317" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <path d="M -16.191601 -40.060766 A 12.947983 8.00833 349.505614 0 1 1.326779 -48.832017" stroke="#000000" stroke-width="0.25" stroke-linecap="round" fill="none" vector-effect="non-scaling-stroke"/>
+    <path d="M -4.102534 -48.740347 A 13.896711 7.45177 12.82415 0 1 16.453528 -39.667275" stroke="#000000" stroke-width="0.25" stroke-linecap="round" fill="none" vector-effect="non-scaling-stroke"/>
+    <path d="M 16.243051 38.058565 A 12.947983 8.00833 349.505813 0 1 -1.27536 46.829756" stroke="#000000" stroke-width="0.25" stroke-linecap="round" fill="none" vector-effect="non-scaling-stroke"/>
+    <path d="M 4.154345 46.738312 A 13.896711 7.45177 12.823852 0 1 -16.401765 37.665347" stroke="#000000" stroke-width="0.25" stroke-linecap="round" fill="none" vector-effect="non-scaling-stroke"/>
+  </symbol>
+  <symbol id="shape-13" overflow="visible">
+    <polyline points="6.994246,0.000071 0.000352,0.000071" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="6.98628,12.000173 0.000141,12.000173" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="7.986469,14.000075 8.000141,-1.999915" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="6.987267,14.000085 6.987267,-1.999911" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+  </symbol>
+  <symbol id="shape-14" overflow="visible"/>
+  <symbol id="shape-15" overflow="visible">
+    <ellipse rx="8.020671" ry="7.999825" stroke="#ffffff" stroke-width="0" fill="#ffffff" vector-effect="non-scaling-stroke" transform="translate(-0.000071,0.033763) rotate(90)"/>
+    <ellipse rx="8.020671" ry="7.999825" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(-0.000071,0.033763) rotate(90)"/>
+    <ellipse rx="1.00258" ry="0.999975" stroke="#ffffff" stroke-width="0" fill="#ffffff" vector-effect="non-scaling-stroke" transform="translate(0.000141,-0.000141) rotate(90)"/>
+    <ellipse rx="1.00258" ry="0.999975" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(0.000141,-0.000141) rotate(90)"/>
+    <polyline points="-5.65772,5.671916 -7.947195,10.013092 8.000104,10.013092 5.657715,5.671916" stroke="#000000" stroke-width="0.25" stroke-linecap="round" fill="none" vector-effect="non-scaling-stroke"/>
+  </symbol>
+  <symbol id="shape-16" overflow="visible">
+    <polyline points="-12.002683,0.075431 -0.006261,0.000183" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-11.98534,2.063017 -12.006261,-1.936983" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polygon points="-1.490569,1.000176 1.501031,-0.016062 -1.501031,-1.000176 -1.490569,1.000176" stroke="#000000" stroke-width="0" fill="#000000" vector-effect="non-scaling-stroke" transform="translate(-1.507682,0.015902)"/>
+    <polygon points="-1.490569,1.000176 1.501031,-0.016062 -1.501031,-1.000176 -1.490569,1.000176" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(-1.507682,0.015902)"/>
+  </symbol>
+  <symbol id="shape-17" overflow="visible">
+    <polyline points="-29.999842,-11.941169 -29.92113,11.954514" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-27.894603,-11.94118 -27.894603,12.058539" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="24.000046,-11.822818 24.105305,11.953411" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="26.105311,-11.941169 26.184023,11.954514" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-29.999973,-11.941461 -27.894603,-11.941461" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="23.999809,-11.941461 26.105179,-11.941461" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="24.078408,11.953795 26.183778,11.953795" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-29.999973,12.058539 -27.894603,12.058539" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-27.578955,7.973524 23.999657,8.090927" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="26.000007,-11.822818 26.105266,11.953411" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="28.105271,-11.941169 28.183983,11.954514" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="25.99977,-11.941461 28.10514,-11.941461" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="26.078509,11.953795 28.18388,11.953795" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-31.9998,-11.822833 -31.921118,11.84959" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-29.894564,-11.822817 -29.894564,11.953642" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-32.000018,-11.941461 -29.894648,-11.941461" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-31.894764,12.058539 -29.789394,12.058539" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="35.816084,-11.822818 35.921343,11.953411" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="37.921207,-11.941169 37.999919,11.954514" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="35.815706,-11.941461 37.921076,-11.941461" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="35.894445,11.953795 37.999815,11.953795" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="37.816044,-11.822818 37.921303,11.953411" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="39.921309,-11.941169 40.000021,11.954514" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="37.815807,-11.941461 39.921177,-11.941461" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="37.894406,11.953795 39.999776,11.953795" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-41.999746,-11.941169 -41.921035,11.954514" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-39.894508,-11.94118 -39.894508,12.058539" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-41.999991,-11.941461 -39.89462,-11.941461" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-41.999991,12.058539 -39.89462,12.058539" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-43.999705,-11.822833 -43.921022,11.84959" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-41.894468,-11.822817 -41.894468,11.953642" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-43.999979,-11.941461 -41.894609,-11.941461" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-43.894717,12.058539 -41.789346,12.058539" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-27.561175,-7.961183 24.017437,-7.84378" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-39.894733,-7.961119 -31.986895,-7.961119" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-39.894733,7.959912 -31.934684,7.959912" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="28.118545,-7.855387 35.833062,-7.855387" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="28.16991,7.85599 35.902771,7.85599" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+  </symbol>
+  <symbol id="shape-18" overflow="visible">
+    <polyline points="0.000162,-2.000212 0.000162,1.999788" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="2.000162,-2.000212 2.000162,1.999788" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+  </symbol>
+  <symbol id="shape-19" overflow="visible">
+    <ellipse rx="6" ry="6" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(-0.000014,0.000346)"/>
+  </symbol>
+  <symbol id="shape-20" overflow="visible">
+    <polyline points="-20.000071,-3.003016 -20.000071,2.996984" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-19.999931,-3.002904 19.99993,-2.996068" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-19.99993,2.996843 19.99993,2.996843" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="23.999763,0.000164 19.999571,2.996789" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="23.999929,0.000164 19.999736,-2.99646" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+  </symbol>
+  <symbol id="shape-21" overflow="visible">
+    <polygon points="-6,-2 6,-2 6,2 -6,2" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(-0.000028,-0.000109)"/>
+  </symbol>
+  <symbol id="shape-22" overflow="visible">
+    <polygon points="-6,3.028523 0,-7 6,3.028523 6,7 -6,7 -6,3.028523 -6,3.028523" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(0.000014,-6.90052)"/>
+    <polyline points="6.000014,-3.872278 -5.999986,-3.872278" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+  </symbol>
+  <symbol id="shape-23" overflow="visible">
+    <polygon points="-3,-2.992862 3,-2.992862 3,2.992862 -3,2.992862" stroke="#ffffff" stroke-width="0" fill="#ffffff" vector-effect="non-scaling-stroke" transform="translate(0.012347,-10.006605)"/>
+    <polygon points="-3,-2.992862 3,-2.992862 3,2.992862 -3,2.992862" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(0.012347,-10.006605)"/>
+    <polyline points="-2.987653,-10.006481 3.01217,-10.006481" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="0.017487,-9.994867 -0.000158,0.000533" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+  </symbol>
+  <symbol id="shape-24" overflow="visible">
+    <polygon points="-1.994705,1.989504 1.994705,0 -1.994705,-1.989504 -1.994705,1.989504" stroke="#ffffff" stroke-width="0" fill="#ffffff" vector-effect="non-scaling-stroke" transform="translate(-1.984115,0.048866)"/>
+    <polygon points="-1.994705,1.989504 1.994705,0 -1.994705,-1.989504 -1.994705,1.989504" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(-1.984115,0.048866)"/>
+    <polygon points="1.994705,-1.989504 -1.994705,0 1.994705,1.989504 1.994705,-1.989504" stroke="#ffffff" stroke-width="0" fill="#ffffff" vector-effect="non-scaling-stroke" transform="translate(2.026474,0.027874)"/>
+    <polygon points="1.994705,-1.989504 -1.994705,0 1.994705,1.989504 1.994705,-1.989504" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(2.026474,0.027874)"/>
+  </symbol>
+  <symbol id="shape-25" overflow="visible">
+    <ellipse rx="6" ry="6" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(0.012721,-0.006519)"/>
+  </symbol>
+  <symbol id="shape-26" overflow="visible">
+    <polyline points="-0.999834,-1.993367 -0.999834,2.006633" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="1.000166,-1.993367 1.000166,2.006633" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+  </symbol>
+  <symbol id="shape-27" overflow="visible">
+    <polyline points="-1.999894,-1.958622 -1.999894,2.004456" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="2.000106,-1.958622 2.000106,2.004456" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <ellipse rx="1.486278" ry="1.482582" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(0.022459,-7.408261) rotate(90)"/>
+    <polyline points="0.023283,-5.922054 0.023283,2.00481" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <ellipse rx="1.486278" ry="1.482582" stroke="#000000" stroke-width="0" fill="#000000" vector-effect="non-scaling-stroke" transform="translate(-0.000042,-10.508912) rotate(90)"/>
+    <ellipse rx="1.486278" ry="1.482582" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(-0.000042,-10.508912) rotate(90)"/>
+    <polyline points="-1.999894,-1.958622 -1.999894,2.004456" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="2.000106,-1.958622 2.000106,2.004456" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <ellipse rx="1.486278" ry="1.482582" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(0.022459,-7.408261) rotate(90)"/>
+    <polyline points="0.023283,-5.922054 0.023283,2.00481" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <ellipse rx="1.486278" ry="1.482582" stroke="#000000" stroke-width="0" fill="#000000" vector-effect="non-scaling-stroke" transform="translate(-0.000042,-10.508912) rotate(90)"/>
+    <ellipse rx="1.486278" ry="1.482582" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(-0.000042,-10.508912) rotate(90)"/>
+  </symbol>
+  <symbol id="shape-28" overflow="visible">
+    <polyline points="-4.010112,-2.012042 3.969368,1.985201" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <ellipse rx="0.658492" ry="0.657257" stroke="#000000" stroke-width="0" fill="#000000" vector-effect="non-scaling-stroke" transform="translate(0.000197,-0.016077) rotate(90)"/>
+    <ellipse rx="0.658492" ry="0.657257" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(0.000197,-0.016077) rotate(90)"/>
+    <polygon points="-3.989723,-1.998605 3.989723,-1.998605 3.989723,1.998605 -3.989723,1.998605" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(0.000165,-0.016193)"/>
+  </symbol>
+  <symbol id="shape-29" overflow="visible">
+    <polygon points="-1.994705,1.989504 1.994705,0 -1.994705,-1.989504 -1.994705,1.989504" stroke="#ffffff" stroke-width="0" fill="#ffffff" vector-effect="non-scaling-stroke" transform="translate(-1.984115,0.048866)"/>
+    <polygon points="-1.994705,1.989504 1.994705,0 -1.994705,-1.989504 -1.994705,1.989504" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(-1.984115,0.048866)"/>
+    <polygon points="1.994705,-1.989504 -1.994705,0 1.994705,1.989504 1.994705,-1.989504" stroke="#ffffff" stroke-width="0" fill="#ffffff" vector-effect="non-scaling-stroke" transform="translate(2.026474,0.027874)"/>
+    <polygon points="1.994705,-1.989504 -1.994705,0 1.994705,1.989504 1.994705,-1.989504" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(2.026474,0.027874)"/>
+    <polyline points="-0.011397,-1.947674 -0.011397,1.988974" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+  </symbol>
+  <symbol id="shape-30" overflow="visible">
+    <polygon points="-6,-4 6,-4 6,4 -6,4 -6,-4 -6,-4" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(0.036844,0.037083)"/>
+    <polyline points="-5.963156,0.037104 -3.962921,0.037104 -2.963156,-2.962808 1.036609,3.037721 2.037079,0.037809 6.036844,0.037104 6.036844,0.037104" stroke="#000000" stroke-width="0.25" stroke-linecap="round" fill="none" vector-effect="non-scaling-stroke"/>
+    <polyline points="-5.963156,0.037104 -1.963391,0.037104 -0.962921,-2.962808 3.036844,3.037721 4.036609,0.037809 6.036844,0.037104 6.036844,0.037104" stroke="#000000" stroke-width="0.25" stroke-linecap="round" fill="none" vector-effect="non-scaling-stroke"/>
+  </symbol>
+  <symbol id="shape-31" overflow="visible">
+    <polyline points="-3.99985,-2.000253 -3.99985,1.999646" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="4.000061,-2.000253 4.000061,1.999646" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-3.999939,-2.000354 3.397975,1.698754" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+  </symbol>
+  <symbol id="shape-32" overflow="visible">
+    <polyline points="-2.008184,-1.999468 -2.008184,2.000382" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="1.991492,-0.989332 1.991492,1.003914" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="1.991601,-0.989368 -2.008399,-1.999618" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="1.991564,1.003603 -2.008266,2.000124" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+  </symbol>
+  <symbol id="shape-33" overflow="visible">
+    <polyline points="0.002329,-12.000575 0.000009,-0.000575" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="2.35815,-10.00168 2.38355,-10.001736 7.999843,-10.014037" stroke="#000000" stroke-width="0.25" stroke-linecap="round" fill="none" vector-effect="non-scaling-stroke"/>
+    <polyline points="-8.000157,-10.013983 -2.378924,-10.001678" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polygon points="-2,0.75 2,-0.75 2,0.75 -2,-0.75" stroke="#000000" stroke-width="0.25" fill="#000000" vector-effect="non-scaling-stroke" transform="translate(0,-10)"/>
+  </symbol>
+  <symbol id="shape-34" overflow="visible">
+    <ellipse rx="3.000003" ry="2.999853" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(-0.000084,0.037279) rotate(180)"/>
+    <polyline points="-3.000472,-2.962867 -3.000472,3.036937" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="2.999563,-2.962868 2.999563,3.036936" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-4.00049,-2.278688 -4.00049,2.036556" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="3.99951,-1.962915 3.99951,2.352329" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+  </symbol>
+  <symbol id="shape-35" overflow="visible">
+    <ellipse rx="3.000015" ry="3.000015" stroke="#ffffff" stroke-width="0" fill="#ffffff" vector-effect="non-scaling-stroke" transform="translate(-0.075868,-9.999726)"/>
+    <ellipse rx="3.000015" ry="3.000015" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(-0.075868,-9.999726)"/>
+    <polyline points="-0.076155,-6.999937 -0.000306,0.000243" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+  </symbol>
+  <symbol id="shape-36" overflow="visible">
+    <polyline points="2.045526,-1.094705 0.045407,0.90554 0.045407,4.905324" stroke="#000000" stroke-width="0.25" stroke-linecap="round" fill="none" vector-effect="non-scaling-stroke"/>
+    <polyline points="0.045498,0.905117 -1.954474,-1.09498" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polygon points="1.00006,-1.500007 -1.00006,-1.500007 -0.000353,1.500007 1.00006,-1.500007" stroke="#000000" stroke-width="0" fill="#000000" vector-effect="non-scaling-stroke" transform="translate(0.045527,-2.594669)"/>
+    <polygon points="1.00006,-1.500007 -1.00006,-1.500007 -0.000353,1.500007 1.00006,-1.500007" stroke="#000000" stroke-width="0.075" fill="none" vector-effect="non-scaling-stroke" transform="translate(0.045527,-2.594669)"/>
+  </symbol>
+  <symbol id="shape-37" overflow="visible">
+    <polygon points="2.024652,2.037406 0,-2.037406 -2.024652,2.037406 2.024652,2.037406" stroke="#000000" stroke-width="0" fill="#000000" vector-effect="non-scaling-stroke" transform="translate(-0.064838,1.967302)"/>
+    <polygon points="2.024652,2.037406 0,-2.037406 -2.024652,2.037406 2.024652,2.037406" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(-0.064838,1.967302)"/>
+    <polygon points="2.024652,-2.037406 -2.024652,0 2.024652,2.037406 2.024652,-2.037406" stroke="#000000" stroke-width="0" fill="#000000" vector-effect="non-scaling-stroke" transform="translate(1.885859,-0.060503)"/>
+    <polygon points="2.024652,-2.037406 -2.024652,0 2.024652,2.037406 2.024652,-2.037406" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(1.885859,-0.060503)"/>
+    <polyline points="-0.121285,-5.995292 -0.121285,-0.09926" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-0.875682,-4.131699 0.540972,-5.557277" stroke="#000000" stroke-width="0.075" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-1.198827,-2.533368 0.925904,-4.671484" stroke="#000000" stroke-width="0.075" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="-1.515125,-0.955714 1.317683,-3.806367" stroke="#000000" stroke-width="0.075" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+  </symbol>
+  <symbol id="shape-38" overflow="visible">
+    <polygon points="6,1.5 -6,1.5 6,-1.5 6,1.5" stroke="#ffffff" stroke-width="0" fill="#ffffff" vector-effect="non-scaling-stroke" transform="translate(-6,-1.500313)"/>
+    <polygon points="6,1.5 -6,1.5 6,-1.5 6,1.5" stroke="#000000" stroke-width="0.25" fill="none" vector-effect="non-scaling-stroke" transform="translate(-6,-1.500313)"/>
+  </symbol>
+  <symbol id="shape-39" overflow="visible">
+    <polyline points="-2.991632,-7.004679 3.008085,-7.004679" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <polyline points="0.008085,-7.004586 0.007804,-0.004769" stroke="#000000" stroke-width="0.25" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <path d="M -2.991105 -7.004305 A 2.999696 2.000356 0 0 1 3.008287 -7.004305" stroke="#000000" stroke-width="0.25" stroke-linecap="round" fill="none" vector-effect="non-scaling-stroke"/>
+  </symbol>
+  <g>
+    <g>
+      <use href="#shape-1"/>
+      <text fill="#000000" font-size="6.5px" font-family="Arial Narrow" transform="translate(713,532.5)">PIPING AND INSTRUMENT DIAGRAM</text>
+      <text fill="#000000" font-size="5px" font-family="Arial Narrow" transform="translate(713,547)">TEST P&amp;ID1</text>
+      <text fill="#000000" font-size="3px" font-family="Arial" text-anchor="middle" transform="translate(466,564.5)">06</text>
+      <text fill="#000000" font-size="3px" font-family="Arial" text-anchor="middle" transform="translate(601,564.5)">pnb</text>
+      <text fill="#000000" font-size="5px" font-family="Arial" text-anchor="middle" transform="translate(681,564.5)">AP110</text>
+      <text fill="#000000" font-size="5px" font-family="Arial" text-anchor="middle" transform="translate(701,564.5)">20</text>
+      <text fill="#000000" font-size="6.5px" font-family="Arial" transform="translate(713,564.5)">C01_NOA1</text>
+      <text fill="#000000" font-size="6.5px" font-family="Arial" text-anchor="middle" transform="translate(813,564.5)">06</text>
+      <text fill="#000000" font-size="9px" font-family="Arial" transform="translate(713,517)">DISC</text>
+    </g>
+    <g>
+      <g>
+        <use transform="translate(159,238)" href="#shape-2"/>
+      </g>
+      <g>
+        <g>
+          <use transform="translate(151,238) rotate(180)" href="#shape-3"/>
+        </g>
+        <g/>
+        <g>
+          <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="end" transform="translate(150.5,234.65)">N01</text>
+        </g>
+      </g>
+      <g>
+        <g>
+          <use transform="translate(159,230)" href="#shape-4"/>
+        </g>
+        <g/>
+        <g>
+          <text fill="#000000" font-size="3.3px" font-family="Arial" transform="translate(163.5,228.15)">N02</text>
+        </g>
+      </g>
+      <g>
+        <text fill="#000000" font-size="4.5px" font-family="Arial" text-anchor="middle" transform="translate(159,253.75)">D-20PA001</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <use transform="translate(252,222)" href="#shape-5"/>
+      </g>
+      <g>
+        <g>
+          <use transform="translate(236,230) rotate(180)" href="#shape-3"/>
+        </g>
+        <g/>
+        <g>
+          <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="end" transform="translate(235.5,226.65)">N01</text>
+        </g>
+      </g>
+      <g>
+        <g>
+          <use transform="translate(268,214)" href="#shape-3"/>
+        </g>
+        <g/>
+        <g>
+          <text fill="#000000" font-size="3.3px" font-family="Arial" transform="translate(268.5,210.65)">N02</text>
+        </g>
+      </g>
+      <g>
+        <g>
+          <use transform="translate(268,230)" href="#shape-3"/>
+        </g>
+        <g/>
+        <g>
+          <text fill="#000000" font-size="3.3px" font-family="Arial" transform="translate(268.5,226.65)">N03</text>
+        </g>
+      </g>
+      <g>
+        <g>
+          <use transform="translate(236,214) rotate(180)" href="#shape-3"/>
+        </g>
+        <g/>
+        <g>
+          <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="end" transform="translate(235.5,210.65)">N04</text>
+        </g>
+      </g>
+      <g>
+        <text fill="#000000" font-size="4.5px" font-family="Arial" text-anchor="middle" transform="translate(252,239.75)">D-20HA001</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <use transform="translate(351,63)" href="#shape-6"/>
+      </g>
+      <g>
+        <g>
+          <use transform="translate(361,59) rotate(270)" href="#shape-3"/>
+        </g>
+        <g/>
+        <g>
+          <text fill="#000000" font-size="3.3px" font-family="Arial" transform="translate(364,57.65)">N01</text>
+        </g>
+      </g>
+      <g>
+        <g>
+          <use transform="translate(361,67) rotate(90)" href="#shape-3"/>
+        </g>
+        <g/>
+        <g>
+          <text fill="#000000" font-size="3.3px" font-family="Arial" transform="translate(364,70.65)">N02</text>
+        </g>
+      </g>
+      <g>
+        <text fill="#000000" font-size="4.5px" font-family="Arial" text-anchor="middle" transform="translate(369,64.85)">D-20FE001</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <use transform="translate(331,54)" href="#shape-7"/>
+      </g>
+      <g>
+        <g>
+          <g>
+            <polyline points="351,63 331,63 331,56" stroke="#000000" stroke-width="0.25" stroke-linecap="butt" fill="none"/>
+            <use transform="translate(348.5,63) rotate(180)" href="#shape-8"/>
+            <use transform="translate(342,63) rotate(180)" href="#shape-8"/>
+            <use transform="translate(335.5,63) rotate(180)" href="#shape-8"/>
+            <use transform="translate(331,61) rotate(270)" href="#shape-8"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(331,55.25)">MCC</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <use transform="translate(341,26)" href="#shape-9"/>
+      </g>
+      <g>
+        <g>
+          <polyline points="341,40 341,54 336,54" stroke="#000000" stroke-width="0.25" stroke-dasharray="2.75 3.25" stroke-linecap="butt" fill="none"/>
+        </g>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(333,29.15)">D</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(341,33.15)">PSD</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <use transform="translate(311,54)" href="#shape-10"/>
+      </g>
+      <g>
+        <g>
+          <g>
+            <polyline points="326,54 317,54" stroke="#000000" stroke-width="0.25" stroke-dasharray="5 3.75" stroke-dashoffset="1.875" stroke-linecap="butt"/>
+            <use transform="translate(321,54) rotate(180)" href="#shape-11"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(300,50.55)">D-20</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(311,52.65)">FE</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(311,57.65)">001</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <use transform="translate(390,210)" href="#shape-12"/>
+      </g>
+      <g>
+        <g>
+          <use transform="translate(380,163) rotate(270)" href="#shape-3"/>
+        </g>
+        <g/>
+        <g>
+          <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="end" transform="translate(379,163.15)">N01</text>
+        </g>
+      </g>
+      <g>
+        <g>
+          <use transform="translate(390,257) rotate(90)" href="#shape-3"/>
+        </g>
+        <g/>
+        <g>
+          <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(390,254.65)">N02</text>
+        </g>
+      </g>
+      <g>
+        <g>
+          <use transform="translate(406,240)" href="#shape-3"/>
+        </g>
+        <g/>
+        <g>
+          <text fill="#000000" font-size="3.3px" font-family="Arial" transform="translate(406.5,236.65)">N04</text>
+        </g>
+      </g>
+      <g>
+        <g>
+          <use transform="translate(406,215)" href="#shape-3"/>
+        </g>
+        <g/>
+        <g>
+          <text fill="#000000" font-size="3.3px" font-family="Arial" transform="translate(406.5,211.65)">N05</text>
+        </g>
+      </g>
+      <g>
+        <g>
+          <use transform="translate(406,180)" href="#shape-3"/>
+        </g>
+        <g/>
+        <g>
+          <text fill="#000000" font-size="3.3px" font-family="Arial" transform="translate(406.5,176.65)">N06</text>
+        </g>
+      </g>
+      <g>
+        <g>
+          <use transform="translate(400,163) rotate(270)" href="#shape-3"/>
+        </g>
+        <g/>
+        <g>
+          <text fill="#000000" font-size="3.3px" font-family="Arial" transform="translate(401,163.15)">N07</text>
+        </g>
+      </g>
+      <g>
+        <g>
+          <use transform="translate(374,212) rotate(180)" href="#shape-13"/>
+        </g>
+        <g>
+          <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(364.65,205.5) rotate(270)">M01</text>
+        </g>
+      </g>
+      <g>
+        <use transform="translate(408,254)" href="#shape-14"/>
+        <polyline points="390,257 425,257" stroke="#000000" stroke-width="0.25" stroke-linecap="round"/>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" transform="translate(408,255.65)">EL: 400000</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="4.5px" font-family="Arial" text-anchor="middle" transform="translate(390,191.25)">D-20VA001</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <use transform="translate(552,422)" href="#shape-15"/>
+      </g>
+      <g>
+        <g>
+          <use transform="translate(552,422)" href="#shape-16"/>
+        </g>
+        <g/>
+        <g>
+          <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="end" transform="translate(544.5,418.65)">N01</text>
+        </g>
+      </g>
+      <g>
+        <g>
+          <use transform="translate(552,414)" href="#shape-4"/>
+        </g>
+        <g/>
+        <g>
+          <text fill="#000000" font-size="3.3px" font-family="Arial" transform="translate(556.5,412.15)">N02</text>
+        </g>
+      </g>
+      <g>
+        <text fill="#000000" font-size="4.5px" font-family="Arial" text-anchor="middle" transform="translate(552,437.75)">D-20PA002</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <use transform="translate(682,325)" href="#shape-17"/>
+      </g>
+      <g>
+        <g>
+          <use transform="translate(646,333) rotate(90)" href="#shape-3"/>
+        </g>
+        <g/>
+        <g>
+          <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(646,331.65)">N01</text>
+        </g>
+      </g>
+      <g>
+        <g>
+          <use transform="translate(646,317) rotate(270)" href="#shape-3"/>
+        </g>
+        <g/>
+        <g>
+          <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(646,321.65)">N02</text>
+        </g>
+      </g>
+      <g>
+        <g>
+          <use transform="translate(714,317) rotate(270)" href="#shape-3"/>
+        </g>
+        <g/>
+        <g>
+          <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(714,321.65)">N03</text>
+        </g>
+      </g>
+      <g>
+        <g>
+          <use transform="translate(714,333) rotate(90)" href="#shape-3"/>
+        </g>
+        <g/>
+        <g>
+          <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(714,331.65)">N04</text>
+        </g>
+      </g>
+      <g>
+        <text fill="#000000" font-size="4.5px" font-family="Arial" text-anchor="middle" transform="translate(680,327.25)">D-20HA002</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <g>
+          <g>
+            <use transform="translate(410,240)" href="#shape-18"/>
+          </g>
+          <g/>
+          <g/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <g>
+        <use transform="translate(430,240)" href="#shape-19"/>
+      </g>
+      <g>
+        <g>
+          <polyline points="412,240 424,240" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <polyline points="464,240 436,240" stroke="#000000" stroke-width="0.25" stroke-dasharray="2.75 3.25" stroke-linecap="butt"/>
+        </g>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(419,236.55)">D-20</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(430,238.65)">LST</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(430,243.65)">0008</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <use transform="translate(470,240)" href="#shape-10"/>
+      </g>
+      <g>
+        <g>
+          <use transform="translate(788,240)" href="#shape-20"/>
+        </g>
+        <g>
+          <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(788,241.25)">C01_NOA3</text>
+        </g>
+      </g>
+      <g>
+        <g>
+          <polyline points="768,240 476,240" stroke="#000000" stroke-width="0.25" stroke-dasharray="2.75 3.25" stroke-linecap="butt"/>
+        </g>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(459,236.55)">D-20</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(470,238.65)">LST</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(470,243.65)">0008</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <use transform="translate(470,248)" href="#shape-21"/>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(470,249.25)">4-20-51</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <use transform="translate(470,250)" href="#shape-9"/>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(462,253.15)">D</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(470,253.15)">4-20-52</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(470,257.15)">PSD</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <use transform="translate(470,234)" href="#shape-22"/>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(462,233.15)">D</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(470,233.15)">3-20-5</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(470,229.15)">PSD</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <g>
+          <g>
+            <use transform="translate(61,238)" href="#shape-20"/>
+          </g>
+          <g/>
+          <g>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(61,239.25)">C01_NOA2</text>
+          </g>
+          <g>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" transform="translate(41,233.65)">FROM TEST P&amp;ID2</text>
+          </g>
+        </g>
+        <g>
+          <g>
+            <use transform="translate(145,238)" href="#shape-18"/>
+          </g>
+          <g/>
+          <g/>
+        </g>
+        <g>
+          <g>
+            <polyline points="85,238 145,238" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <use transform="translate(111,235)" href="#shape-14"/>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(111,236.65)">D-20L00001A-1800PL-AD200-</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <g>
+          <g>
+            <use transform="translate(171,230)" href="#shape-18"/>
+          </g>
+          <g/>
+          <g/>
+        </g>
+        <g>
+          <g>
+            <use transform="translate(230,230)" href="#shape-18"/>
+          </g>
+          <g/>
+          <g/>
+        </g>
+        <g>
+          <g>
+            <polyline points="173,230 230,230" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <use transform="translate(199,227)" href="#shape-14"/>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(199,228.65)">D-20L00002A-1800PL-AD200-</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <g>
+          <g>
+            <use transform="translate(230,214)" href="#shape-18"/>
+          </g>
+          <g/>
+          <g/>
+        </g>
+        <g>
+          <g>
+            <polyline points="230,214 172,214" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <use transform="translate(204,211)" href="#shape-14"/>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(204,212.65)">D-20L00021A-0600PL-DS200-</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <g>
+          <g>
+            <use transform="translate(272,230)" href="#shape-18"/>
+          </g>
+          <g/>
+          <g/>
+        </g>
+        <g>
+          <g>
+            <polyline points="332,230 274,230" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <use transform="translate(306,227)" href="#shape-14"/>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(306,228.65)">D-20L00020A-0600PL-DS200-</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <use transform="translate(250,160)" href="#shape-10"/>
+      </g>
+      <g>
+        <g>
+          <polyline points="279,160 256,160" stroke="#000000" stroke-width="0.25" stroke-dasharray="2.75 3.25" stroke-linecap="butt"/>
+        </g>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(239,156.55)">D-20</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(250,158.65)">HV</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(250,163.65)">0001</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <g>
+          <use transform="translate(292,160) rotate(270)" href="#shape-23"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <g>
+        <g>
+          <g>
+            <use transform="translate(292,160) rotate(270)" href="#shape-24"/>
+          </g>
+          <g/>
+          <g/>
+          <g>
+            <use transform="translate(276,144)" href="#shape-25"/>
+            <polyline points="280.242641,148.242641 292,160" stroke="#000000" stroke-width="0.25" stroke-linecap="round"/>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="end" transform="translate(270,140.55)">D-20</text>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(276,142.65)">HV</text>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(276,147.65)">0001</text>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(276,153.65)">HV10</text>
+          </g>
+          <g>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(300,160) rotate(270)">14″</text>
+          </g>
+        </g>
+        <g>
+          <g>
+            <use transform="translate(272,214)" href="#shape-18"/>
+          </g>
+          <g/>
+          <g/>
+        </g>
+        <g>
+          <g>
+            <polyline points="274,214 292,214 292,164" stroke="#000000" stroke-width="0.25" stroke-linecap="butt" fill="none"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <use transform="translate(301,127) rotate(90)" href="#shape-26"/>
+          </g>
+          <g/>
+          <g/>
+          <g>
+            <use transform="translate(285,111)" href="#shape-25"/>
+            <polyline points="289.242641,115.242641 300,126" stroke="#000000" stroke-width="0.25" stroke-linecap="round"/>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="end" transform="translate(279,107.55)">D-20</text>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(285,109.65)">TE</text>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(285,114.65)">0007</text>
+          </g>
+        </g>
+        <g>
+          <g>
+            <polyline points="292,156 292,127 301,127" stroke="#000000" stroke-width="0.25" stroke-linecap="butt" fill="none"/>
+          </g>
+        </g>
+        <g>
+          <g/>
+          <g/>
+          <g/>
+        </g>
+        <g>
+          <g>
+            <polyline points="301,127 361,127" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <g>
+          <g>
+            <use transform="translate(380,157) rotate(90)" href="#shape-18"/>
+          </g>
+          <g/>
+          <g/>
+        </g>
+        <g>
+          <g>
+            <polyline points="361,127 380,127 380,157" stroke="#000000" stroke-width="0.25" stroke-linecap="butt" fill="none"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <use transform="translate(328,124)" href="#shape-14"/>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(328,125.65)">D-20L00003A-1400PL-AD200-</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <use transform="translate(301,107)" href="#shape-19"/>
+      </g>
+      <g>
+        <g>
+          <polyline points="301,93 301,101" stroke="#000000" stroke-width="0.25" stroke-dasharray="2.75 3.25" stroke-linecap="butt"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <polyline points="301,126.000166 301,113.000346" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+        </g>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(290,103.55)">D-20</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(301,105.65)">TT</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(301,110.65)">0007</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <use transform="translate(301,87)" href="#shape-10"/>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(290,83.55)">D-20</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(301,85.65)">TT</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(301,90.65)">0007</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <g>
+          <g>
+            <use transform="translate(361,71) rotate(90)" href="#shape-18"/>
+          </g>
+          <g/>
+          <g/>
+        </g>
+        <g>
+          <g>
+            <polyline points="361,127 361,73" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <use transform="translate(358,101) rotate(270)" href="#shape-14"/>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(359.65,101) rotate(270)">D-20L00022A-0600PL-AD200-</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <g>
+          <g>
+            <use transform="translate(361,53) rotate(90)" href="#shape-18"/>
+          </g>
+          <g/>
+          <g/>
+        </g>
+        <g>
+          <g>
+            <polyline points="361,53 361,36 562,36" stroke="#000000" stroke-width="0.25" stroke-linecap="butt" fill="none"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <use transform="translate(443,33)" href="#shape-14"/>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(443,34.65)">D-20L00023A-0600PL-AD200-</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <g>
+          <g>
+            <use transform="translate(390,263) rotate(270)" href="#shape-27"/>
+          </g>
+          <g/>
+          <g/>
+        </g>
+        <g>
+          <g>
+            <use transform="translate(390,290) rotate(270)" href="#shape-28"/>
+          </g>
+          <g/>
+          <g/>
+          <g>
+            <g>
+              <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(398,290) rotate(270)">D-VF20-0003</text>
+              <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(401.3,290) rotate(270)">14″</text>
+            </g>
+          </g>
+        </g>
+        <g>
+          <g>
+            <polyline points="390,265 390,286" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <use transform="translate(425,422)" href="#shape-29"/>
+          </g>
+          <g/>
+          <g/>
+          <g>
+            <use transform="translate(441,406)" href="#shape-25"/>
+            <polyline points="436.757359,410.242641 425,422" stroke="#000000" stroke-width="0.25" stroke-linecap="round"/>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="end" transform="translate(435,402.55)">D-20</text>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(441,404.65)">ESV</text>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(441,409.65)">0006</text>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(441,415.65)">ESV20</text>
+          </g>
+        </g>
+        <g>
+          <g>
+            <polyline points="390,294 390,422 421,422" stroke="#000000" stroke-width="0.25" stroke-linecap="butt" fill="none"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <polyline points="429,422 442,422" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+        </g>
+        <g>
+          <g/>
+          <g/>
+          <g/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <g>
+            <polyline points="442,422 454,422" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <use transform="translate(460,422)" href="#shape-30"/>
+          </g>
+          <g/>
+          <g/>
+          <g>
+            <use transform="translate(469,406)" href="#shape-25"/>
+            <polyline points="466.058433,411.229453 462.25,418" stroke="#000000" stroke-width="0.25" stroke-linecap="round"/>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="end" transform="translate(463,402.55)">D-20</text>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(469,404.65)">FE</text>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(469,409.65)">0001</text>
+          </g>
+        </g>
+        <g>
+          <g>
+            <use transform="translate(480,422)" href="#shape-31"/>
+          </g>
+          <g/>
+          <g/>
+          <g>
+            <g>
+              <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(480,430)">D-VC20-0001</text>
+              <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(480,433.3)">14″</text>
+            </g>
+          </g>
+        </g>
+        <g>
+          <g>
+            <polyline points="466,422 476,422" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <use transform="translate(500,422)" href="#shape-32"/>
+          </g>
+          <g/>
+          <g/>
+          <g>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(500,430)">1400x1200</text>
+          </g>
+        </g>
+        <g>
+          <g>
+            <polyline points="484,422 498,422" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <use transform="translate(502,422)" href="#shape-33"/>
+          </g>
+          <g/>
+          <g/>
+          <g>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="end" transform="translate(500,410.5)">D-20L00004A</text>
+          </g>
+          <g>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" transform="translate(504,410.5)">D-20L00004B</text>
+          </g>
+        </g>
+      </g>
+      <g>
+        <g>
+          <g>
+            <use transform="translate(442,442) rotate(270)" href="#shape-34"/>
+          </g>
+          <g/>
+          <g/>
+          <g>
+            <g>
+              <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(450,442) rotate(270)">D-VB20-0004</text>
+              <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(453.3,442) rotate(270)">12″</text>
+            </g>
+          </g>
+        </g>
+        <g>
+          <g>
+            <polyline points="442,422 442,438" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <use transform="translate(387,343) rotate(270)" href="#shape-14"/>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(388.65,343) rotate(270)">D-20L00004A-1400PL-AS200-</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <use transform="translate(407,382)" href="#shape-10"/>
+      </g>
+      <g>
+        <g>
+          <polyline points="425,409 425,382 413,382" stroke="#000000" stroke-width="0.25" stroke-dasharray="2.75 3.25" stroke-linecap="butt" fill="none"/>
+        </g>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(396,378.55)">D-20</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(407,380.65)">ESV</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(407,385.65)">0006</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <use transform="translate(425,357)" href="#shape-9"/>
+      </g>
+      <g>
+        <g>
+          <polyline points="425,409 425,371" stroke="#000000" stroke-width="0.25" stroke-dasharray="2.75 3.25" stroke-linecap="butt"/>
+        </g>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(417,360.15)">D</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(425,360.15)">4-20-61</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(425,364.15)">PSD</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <use transform="translate(441,357)" href="#shape-9"/>
+      </g>
+      <g>
+        <g>
+          <polyline points="425,409 425,382 441,382 441,371" stroke="#000000" stroke-width="0.25" stroke-dasharray="2.75 3.25" stroke-linecap="butt" fill="none"/>
+        </g>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(433,360.15)">D</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(441,360.15)">2-10</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(441,364.15)">ESD</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <g>
+          <use transform="translate(425,422)" href="#shape-35"/>
+        </g>
+        <g>
+          <text fill="#000000" font-size="4.5px" font-family="Arial" text-anchor="middle" transform="translate(425,413.75)">M</text>
+        </g>
+        <g>
+          <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(421,417.65)">FC</text>
+        </g>
+      </g>
+    </g>
+    <g>
+      <g>
+        <g>
+          <g>
+            <use transform="translate(522,422)" href="#shape-34"/>
+          </g>
+          <g/>
+          <g/>
+          <g>
+            <g>
+              <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(522,430)">D-VB20-0001</text>
+              <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(522,433.3)">12″</text>
+            </g>
+          </g>
+        </g>
+        <g>
+          <g>
+            <polyline points="502,422 518,422" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <use transform="translate(538,422)" href="#shape-18"/>
+          </g>
+          <g/>
+          <g/>
+        </g>
+        <g>
+          <g>
+            <polyline points="526,422 538,422" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g>
+      <g>
+        <g>
+          <g>
+            <use transform="translate(714,337) rotate(90)" href="#shape-18"/>
+          </g>
+          <g/>
+          <g/>
+        </g>
+        <g>
+          <g>
+            <polyline points="714,450 714,339" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <use transform="translate(711,378) rotate(270)" href="#shape-14"/>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(712.65,378) rotate(270)">D-20L00014A-1000PL-AT750-</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <g>
+          <g>
+            <use transform="translate(714,311) rotate(90)" href="#shape-18"/>
+          </g>
+          <g/>
+          <g/>
+        </g>
+        <g>
+          <g>
+            <use transform="translate(723,295)" href="#shape-24"/>
+          </g>
+          <g/>
+          <g/>
+          <g>
+            <use transform="translate(739,279)" href="#shape-25"/>
+            <polyline points="734.757359,283.242641 723,295" stroke="#000000" stroke-width="0.25" stroke-linecap="round"/>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="end" transform="translate(733,275.55)">D-20</text>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(739,277.65)">TV</text>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(739,282.65)">0013</text>
+          </g>
+        </g>
+        <g>
+          <g>
+            <polyline points="714,311 714,295 719,295" stroke="#000000" stroke-width="0.25" stroke-linecap="butt" fill="none"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <polyline points="727,295 732,295 732,436" stroke="#000000" stroke-width="0.25" stroke-linecap="butt" fill="none"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <use transform="translate(729,379) rotate(270)" href="#shape-14"/>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(730.65,379) rotate(270)">D-20L00013A-0600PL-AT750-00000N</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <use transform="translate(723,127)" href="#shape-10"/>
+      </g>
+      <g>
+        <g>
+          <polyline points="723,282 723,133" stroke="#000000" stroke-width="0.25" stroke-dasharray="2.75 3.25" stroke-linecap="butt"/>
+        </g>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(712,123.55)">D-20</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(723,125.65)">TIC</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(723,130.65)">0013</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <g>
+          <use transform="translate(723,295)" href="#shape-35"/>
+        </g>
+        <g>
+          <text fill="#000000" font-size="4.5px" font-family="Arial" text-anchor="middle" transform="translate(723,286.75)">M</text>
+        </g>
+        <g>
+          <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(719,290.65)">FM</text>
+        </g>
+      </g>
+    </g>
+    <g>
+      <g>
+        <g>
+          <g>
+            <use transform="translate(732,440)" href="#shape-36"/>
+          </g>
+          <g/>
+          <g/>
+          <g>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" transform="translate(735,438.15)">D-20TD414</text>
+          </g>
+        </g>
+        <g>
+          <g>
+            <polyline points="732,445 732,500" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <use transform="translate(729,468) rotate(270)" href="#shape-14"/>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(730.65,468) rotate(270)">D-20L00099A-0600PL-AT750-</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <g>
+          <g>
+            <use transform="translate(400,157) rotate(90)" href="#shape-18"/>
+          </g>
+          <g/>
+          <g/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <g>
+        <use transform="translate(400,127)" href="#shape-19"/>
+      </g>
+      <g>
+        <g>
+          <polyline points="400,157 400,133" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <polyline points="717,127 406,127" stroke="#000000" stroke-width="0.25" stroke-dasharray="2.75 3.25" stroke-linecap="butt"/>
+        </g>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(389,123.55)">D-20</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(400,125.65)">TI</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(400,130.65)">0013</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <g>
+          <g>
+            <use transform="translate(564,414)" href="#shape-18"/>
+          </g>
+          <g/>
+          <g/>
+        </g>
+        <g>
+          <g/>
+          <g/>
+          <g/>
+        </g>
+        <g>
+          <g>
+            <polyline points="566,414 572,414" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <g>
+          <g>
+            <use transform="translate(572,429) rotate(270)" href="#shape-34"/>
+          </g>
+          <g/>
+          <g/>
+          <g>
+            <g>
+              <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(580,429) rotate(270)">D-VB20-0003</text>
+              <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(583.3,429) rotate(270)">0.5″</text>
+            </g>
+          </g>
+        </g>
+        <g>
+          <g>
+            <polyline points="572,414 572,425" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <g>
+          <g/>
+          <g/>
+          <g/>
+        </g>
+        <g>
+          <g>
+            <polyline points="572,414 587,414" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <g>
+          <g/>
+          <g/>
+          <g/>
+        </g>
+        <g>
+          <g>
+            <polyline points="587,414 607,414" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <g>
+          <g>
+            <use transform="translate(607,400) rotate(270)" href="#shape-24"/>
+          </g>
+          <g/>
+          <g>
+            <g>
+              <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(615,400) rotate(270)">D-VG20-0001</text>
+              <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(618.3,400) rotate(270)">0.5″</text>
+            </g>
+          </g>
+        </g>
+        <g>
+          <g>
+            <polyline points="607,414 607,404" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <g>
+          <g>
+            <use transform="translate(626,414)" href="#shape-34"/>
+          </g>
+          <g/>
+          <g/>
+          <g>
+            <g>
+              <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(626,422)">D-VB20-0002</text>
+              <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(626,425.3)">12″</text>
+            </g>
+          </g>
+        </g>
+        <g>
+          <g>
+            <polyline points="607,414 622,414" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+        </g>
+        <g>
+          <g/>
+          <g/>
+          <g/>
+        </g>
+        <g>
+          <g>
+            <polyline points="630,414 646,414" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <g>
+          <g>
+            <use transform="translate(750,396) rotate(270)" href="#shape-24"/>
+          </g>
+          <g/>
+          <g>
+            <g>
+              <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(758,396) rotate(270)">D-VG20-0002</text>
+              <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(761.3,396) rotate(270)">0.5″</text>
+            </g>
+          </g>
+        </g>
+        <g>
+          <g>
+            <polyline points="750,414 750,400" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <g>
+          <g/>
+          <g/>
+          <g/>
+        </g>
+        <g>
+          <g>
+            <polyline points="646,414 750,414" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <g>
+          <g>
+            <use transform="translate(788,414)" href="#shape-20"/>
+          </g>
+          <g/>
+          <g>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(788,415.25)">C01_NOA3</text>
+          </g>
+        </g>
+        <g>
+          <g>
+            <polyline points="750,414 768,414" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <use transform="translate(678,410)" href="#shape-14"/>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(678,411.65)">D-20L00005A-1200PL-AS200-</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <use transform="translate(607,372)" href="#shape-19"/>
+      </g>
+      <g>
+        <g>
+          <polyline points="607,396 607,378" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+        </g>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(596,368.55)">D-20</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(607,370.65)">PI</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(607,375.65)">0005</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <use transform="translate(750,372)" href="#shape-19"/>
+      </g>
+      <g>
+        <g>
+          <polyline points="750,392 750,378" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <polyline points="750,353 750,366" stroke="#000000" stroke-width="0.25" stroke-dasharray="2.75 3.25" stroke-linecap="butt"/>
+        </g>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(739,368.55)">D-20</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(750,370.65)">PI</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(750,375.65)">0004</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <g>
+          <g>
+            <use transform="translate(587,215) scale(-1,1)" href="#shape-37"/>
+          </g>
+          <g/>
+          <g/>
+          <g>
+            <use transform="translate(595,201)" href="#shape-25"/>
+            <polyline points="592.023166,206.209459 587,215" stroke="#000000" stroke-width="0.25" stroke-linecap="round"/>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="end" transform="translate(589,197.55)">D-20</text>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(595,199.65)">PSV</text>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(595,204.65)">0002</text>
+          </g>
+          <g>
+            <ellipse rx="7" ry="7" stroke="#000000" stroke-width="0.2" stroke-dasharray="1 1.4" stroke-linecap="round" fill="none" transform="translate(595,201)"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <polyline points="587,414 587,219" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+          <g>
+            <polyline points="589,414 589,219" stroke="#000000" stroke-width="0.2" stroke-dasharray="1 1.4" stroke-linecap="round"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <use transform="translate(562,205)" href="#shape-33"/>
+            <polyline points="562,205 583,205 583,215" stroke="#000000" stroke-width="0.25" stroke-linecap="round" fill="none"/>
+          </g>
+          <g/>
+          <g/>
+          <g>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="end" transform="translate(560,193.5)">AS200</text>
+          </g>
+          <g>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" transform="translate(564,193.5)">AD750</text>
+          </g>
+        </g>
+      </g>
+      <g>
+        <use transform="translate(584,356) rotate(270)" href="#shape-14"/>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(585.65,356) rotate(270)">D-20L00010A-0800PL-AD750-02050Y</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <g>
+          <use transform="translate(460,212)" href="#shape-38"/>
+        </g>
+        <g>
+          <g>
+            <use transform="translate(410,215)" href="#shape-18"/>
+          </g>
+          <g/>
+          <g/>
+        </g>
+        <g>
+          <g>
+            <polyline points="583,215 412,215" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+          <g>
+            <polyline points="583,213 412,213" stroke="#000000" stroke-width="0.2" stroke-dasharray="1 1.4" stroke-linecap="round"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <use transform="translate(515,211)" href="#shape-14"/>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(515,212.65)">D-20L00011A-0800PL-AS200- </text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <g>
+          <g>
+            <use transform="translate(646,337) rotate(90)" href="#shape-18"/>
+          </g>
+          <g/>
+          <g/>
+        </g>
+        <g>
+          <g>
+            <polyline points="646,414 646,339" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <use transform="translate(643,377) rotate(270)" href="#shape-14"/>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(644.65,377) rotate(270)">D-20L00015A-0800PL-AD750-</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <g>
+          <g>
+            <use transform="translate(646,311) rotate(90)" href="#shape-18"/>
+          </g>
+          <g/>
+          <g/>
+        </g>
+        <g>
+          <g>
+            <use transform="translate(410,180)" href="#shape-18"/>
+          </g>
+          <g/>
+          <g/>
+        </g>
+        <g>
+          <g>
+            <use transform="translate(646,192) rotate(90)" href="#shape-24"/>
+          </g>
+          <g/>
+          <g/>
+          <g>
+            <use transform="translate(662,176)" href="#shape-25"/>
+            <polyline points="657.757359,180.242641 646,192" stroke="#000000" stroke-width="0.25" stroke-linecap="round"/>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="end" transform="translate(656,172.55)">D-20</text>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(662,174.65)">PV</text>
+            <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(662,179.65)">0004</text>
+          </g>
+        </g>
+        <g>
+          <g>
+            <polyline points="646,311 646,196" stroke="#000000" stroke-width="0.25" stroke-linecap="butt"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <polyline points="646,188 646,180 412,180" stroke="#000000" stroke-width="0.25" stroke-linecap="butt" fill="none"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <use transform="translate(518,176)" href="#shape-14"/>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(518,177.65)">D-20L00012A-0600PL-AD750-</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <g>
+          <use transform="translate(646,192) rotate(90)" href="#shape-39"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <g>
+        <use transform="translate(750,347)" href="#shape-10"/>
+      </g>
+      <g>
+        <g>
+          <polyline points="655,192 750,192 750,341" stroke="#000000" stroke-width="0.25" stroke-dasharray="2.75 3.25" stroke-linecap="butt" fill="none"/>
+        </g>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(739,343.55)">D-20</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(750,345.65)">PIC</text>
+      </g>
+      <g>
+        <text fill="#000000" font-size="3.3px" font-family="Arial" text-anchor="middle" transform="translate(750,350.65)">0004</text>
+      </g>
+    </g>
+  </g>
+</svg>

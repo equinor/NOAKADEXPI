@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<PlantModel>
+  <PlantInformation Application="Dexpi" ApplicationVersion="1.3.1" Date="2019-02-26" Discipline="PID" Is3D="no" OriginatingSystem="pnb unit test" OriginatingSystemVendor="pnb plants &amp; bytes GmbH, Aachen, Germany" OriginatingSystemVersion="current" SchemaVersion="4.1.1" Time="14:00:00" Units="mm">
+    <UnitsOfMeasure/>
+  </PlantInformation>
+  <MetaData ID="MetaData-1" ComponentClass="MetaData" ComponentClassURI="http://sandbox.dexpi.org/rdl/MetaData">
+    <GenericAttributes Set="DexpiAttributes" Number="8">
+      <GenericAttribute Name="CreatorNameAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/CreatorNameAssignmentClass" Format="string" Value="pnb"/>
+      <GenericAttribute Name="DrawingNameAssignmentClass" AttributeURI="http://data.posccaesar.org/rdl/RDS2102503531" Format="string" Value="PIPING AND INSTRUMENT DIAGRAM"/>
+      <GenericAttribute Name="DrawingNumberAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/DrawingNumberAssignmentClass" Format="string" Value="C01_NOA2"/>
+      <GenericAttribute Name="DrawingSubTitleAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/DrawingSubTitleAssignmentClass" Language="en" Value="TEST P&amp;ID2" Format="string"/>
+      <GenericAttribute Name="AreaIsa95NameAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/AreaIsa95NameAssignmentClass" Format="string" Value="AP110"/>
+      <GenericAttribute Name="PlantSystemIdentificationCodeAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/PlantSystemIdentificationCodeAssignmentClass" Format="string" Value="20"/>
+      <GenericAttribute Name="ProcessPlantNameAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/ProcessPlantNameAssignmentClass" Format="string" Value="DISC"/>
+      <GenericAttribute Name="RevisionNumberAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/RevisionNumberAssignmentClass" Format="string" Value="01"/>
+    </GenericAttributes>
+  </MetaData>
+  <PlantStructureItem ID="ProcessPlant-1" ComponentClass="ProcessPlant" ComponentClassURI="http://data.posccaesar.org/rdl/RDS7151859">
+    <PersistentID Context="DISC DEXPI" Identifier="d9bafacf-f0d7-f031-2f57-49204d7d82d5"/>
+    <GenericAttributes Set="DexpiAttributes" Number="1">
+      <GenericAttribute Name="ProcessPlantIdentificationCodeAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/ProcessPlantIdentificationCodeAssignmentClass" Format="string" Value="D"/>
+    </GenericAttributes>
+    <Association Type="is a collection including" ItemID="PipingNetworkSystem-1"/>
+  </PlantStructureItem>
+  <PlantStructureItem ID="PlantSystem-1" ComponentClass="PlantSystem" ComponentClassURI="http://sandbox.dexpi.org/rdl/PlantSystem">
+    <PersistentID Context="DISC DEXPI" Identifier="089bb0ce-82d5-8073-6ab6-c6f4aa968b6b"/>
+    <GenericAttributes Set="DexpiAttributes" Number="1">
+      <GenericAttribute Name="PlantSystemIdentificationCodeAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/PlantSystemIdentificationCodeAssignmentClass" Format="string" Value="20"/>
+    </GenericAttributes>
+    <Association Type="is the location of" ItemID="PipingNetworkSystem-1"/>
+  </PlantStructureItem>
+  <PipingNetworkSystem ID="PipingNetworkSystem-1" ComponentClass="PipingNetworkSystem" ComponentClassURI="http://data.posccaesar.org/rdl/RDS270359">
+    <PersistentID Context="DISC DEXPI" Identifier="fe7ab1b6-fc85-7d8b-6a79-4c235bf97614"/>
+    <Label ID="PipingNetworkSystem-1-Label-1" ComponentClass="Label" ComponentClassURI="http://sandbox.dexpi.org/rdl/Label" ComponentName="ND0040_SHAPE">
+      <Position>
+        <Location X="651" Y="268" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Label>
+    <GenericAttributes Set="DexpiCustomAttributes" Number="7">
+      <GenericAttribute Format="string" Type="String" TypeURI="http://sandbox.dexpi.org/rdl/String" Value="D-20L00001A" Name="ItemTagAssignmentClass" AttributeURI="http://noaka.org/rdl/ItemTagAssignmentClass"/>
+      <GenericAttribute Format="string" Type="String" TypeURI="http://sandbox.dexpi.org/rdl/String" Value="D-20L00001A-1800PL-AD200-" Name="LineDescriptionAssignmentClass" AttributeURI="http://noaka.org/rdl/LineDescriptionAssignmentClass"/>
+      <GenericAttribute Format="string" Type="String" TypeURI="http://sandbox.dexpi.org/rdl/String" Value="A" Name="LineSuffixAssignmentClass" AttributeURI="http://noaka.org/rdl/LineSuffixAssignmentClass"/>
+      <GenericAttribute Format="string" Type="String" TypeURI="http://sandbox.dexpi.org/rdl/String" Value="D-20L00001A-1800PL-AD200-" Name="ObjectDisplayNameAssignmentClass" AttributeURI="http://noaka.org/rdl/ObjectDisplayNameAssignmentClass"/>
+      <GenericAttribute Format="string" Type="String" TypeURI="http://sandbox.dexpi.org/rdl/String" Value="PL" Name="ProductCodeAssignmentClass" AttributeURI="http://noaka.org/rdl/ProductCodeAssignmentClass"/>
+      <GenericAttribute Format="string" Type="String" TypeURI="http://sandbox.dexpi.org/rdl/String" Value="N" Name="HeatTraceRequiredAssignmentClass" AttributeURI="http://noaka.org/rdl/HeatTraceRequiredAssignmentClass"/>
+      <GenericAttribute Format="string" Type="String" TypeURI="http://sandbox.dexpi.org/rdl/String" Value="L" Name="TagTypeAssignmentClass" AttributeURI="http://noaka.org/rdl/TagTypeAssignmentClass"/>
+    </GenericAttributes>
+    <GenericAttributes Set="DexpiAttributes" Number="1">
+      <GenericAttribute Name="PipingClassCodeAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/PipingClassCodeAssignmentClass" Format="string" Value="AD200"/>
+    </GenericAttributes>
+    <Association Type="is a part of" ItemID="ProcessPlant-1"/>
+    <Association Type="is located in" ItemID="PlantSystem-1"/>
+    <PipingNetworkSegment ID="PipingNetworkSegment-1" ComponentClass="PipingNetworkSegment" ComponentClassURI="http://data.posccaesar.org/rdl/RDS267704">
+      <GenericAttributes Set="DexpiCustomAttributes" Number="1">
+        <GenericAttribute Format="string" Type="String" TypeURI="http://sandbox.dexpi.org/rdl/String" Value="Primary" Name="SegmentLineTypeRepresentationAssignmentClass" AttributeURI="http://noaka.org/rdl/SegmentLineTypeRepresentationAssignmentClass"/>
+      </GenericAttributes>
+      <GenericAttributes Set="DexpiAttributes" Number="3">
+        <GenericAttribute Name="HeatTracingTypeSpecialization" AttributeURI="http://sandbox.dexpi.org/rdl/HeatTracingTypeSpecialization" Format="anyURI" Value="NoHeatTracingSystem" ValueURI="http://sandbox.dexpi.org/rdl/NoHeatTracingSystem"/>
+        <GenericAttribute Name="NominalDiameterNumericalValueRepresentationAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/NominalDiameterNumericalValueRepresentationAssignmentClass" Format="string" Value="1800"/>
+        <GenericAttribute Name="SlopeSpecialization" AttributeURI="http://sandbox.dexpi.org/rdl/SlopeSpecialization" Format="anyURI" Value="UnslopedPipingNetworkSegment" ValueURI="http://sandbox.dexpi.org/rdl/UnslopedPipingNetworkSegment"/>
+      </GenericAttributes>
+      <CenterLine NumPoints="2">
+        <Coordinate X="523" Y="264"/>
+        <Coordinate X="758" Y="264"/>
+      </CenterLine>
+      <PipeOffPageConnector ID="FlowOutPipeOffPageConnector-1" ComponentClass="FlowOutPipeOffPageConnector" ComponentClassURI="http://sandbox.dexpi.org/rdl/FlowOutPipeOffPageConnector" ComponentName="ND0008_SHAPE">
+        <PersistentID Context="DISC DEXPI" Identifier="8c7cf046-2b6b-8843-779c-d2dc021dcd87"/>
+        <Position>
+          <Location X="778" Y="264" Z="0"/>
+          <Axis X="0" Y="0" Z="1"/>
+          <Reference X="1" Y="0" Z="0"/>
+        </Position>
+        <ConnectionPoints FlowIn="1" NumPoints="2">
+          <Node ID="FlowOutPipeOffPageConnector-1-DefaultNode"/>
+          <Node Type="process" ID="PipingNode-1">
+            <Position>
+              <Location X="758" Y="264" Z="0"/>
+              <Axis X="0" Y="0" Z="1"/>
+              <Reference X="1" Y="0" Z="0"/>
+            </Position>
+          </Node>
+        </ConnectionPoints>
+        <GenericAttributes Set="DexpiAttributes" Number="1">
+          <GenericAttribute Name="PipeConnectorNumberAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/PipeConnectorNumberAssignmentClass" Format="string" Value="123"/>
+        </GenericAttributes>
+        <PipeOffPageConnectorReference ID="PipeOffPageConnectorReferenceByNumber-1" ComponentClass="PipeOffPageConnectorReferenceByNumber" ComponentClassURI="http://sandbox.dexpi.org/rdl/PipeOffPageConnectorReferenceByNumber">
+          <GenericAttributes Set="DexpiCustomAttributes" Number="1">
+            <GenericAttribute Format="string" Type="String" TypeURI="http://sandbox.dexpi.org/rdl/String" Value="TO TEST P&amp;ID1" Name="ReferencedDrawingDescriptorAssignmentClass" AttributeURI="http://noaka.org/rdl/ReferencedDrawingDescriptorAssignmentClass"/>
+          </GenericAttributes>
+          <GenericAttributes Set="DexpiAttributes" Number="2">
+            <GenericAttribute Name="ReferencedConnectorNumberAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/ReferencedConnectorNumberAssignmentClass" Format="string" Value="123"/>
+            <GenericAttribute Name="ReferencedDrawingNumberAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/ReferencedDrawingNumberAssignmentClass" Format="string" Value="C01_NOA1"/>
+          </GenericAttributes>
+        </PipeOffPageConnectorReference>
+      </PipeOffPageConnector>
+      <Connection ToID="FlowOutPipeOffPageConnector-1" ToNode="1"/>
+    </PipingNetworkSegment>
+  </PipingNetworkSystem>
+  <Drawing Name="C01 NOA2 Reference" Type="PID">
+    <Presentation/>
+    <Extent>
+      <Min X="0" Y="0"/>
+      <Max X="841" Y="594"/>
+    </Extent>
+    <Label ID="ConceptualModel-1-Label-1" ComponentClass="Label" ComponentClassURI="http://sandbox.dexpi.org/rdl/Label" ComponentName="BORDER_A1_SHAPE">
+      <Position>
+        <Location X="0" Y="594" Z="0"/>
+        <Axis X="0" Y="0" Z="1"/>
+        <Reference X="1" Y="0" Z="0"/>
+      </Position>
+    </Label>
+  </Drawing>
+  <ShapeCatalogue Name="Shapes">
+    <Label ID="LabelShape-1" ComponentName="BORDER_A1_SHAPE">
+      <GenericAttributes Set="DexpiAttributes" Number="1">
+        <GenericAttribute Name="SymbolRegistrationNumberAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/SymbolRegistrationNumberAssignmentClass" Format="string" Value="BORDER_A1"/>
+      </GenericAttributes>
+    </Label>
+    <PipeOffPageConnector ID="PipeOffPageConnectorShape-1" ComponentName="ND0008_SHAPE">
+      <GenericAttributes Set="DexpiAttributes" Number="1">
+        <GenericAttribute Name="SymbolRegistrationNumberAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/SymbolRegistrationNumberAssignmentClass" Format="string" Value="ND0008"/>
+      </GenericAttributes>
+    </PipeOffPageConnector>
+    <Label ID="LabelShape-2" ComponentName="ND0040_SHAPE">
+      <GenericAttributes Set="DexpiAttributes" Number="1">
+        <GenericAttribute Name="SymbolRegistrationNumberAssignmentClass" AttributeURI="http://sandbox.dexpi.org/rdl/SymbolRegistrationNumberAssignmentClass" Format="string" Value="ND0040"/>
+      </GenericAttributes>
+    </Label>
+  </ShapeCatalogue>
+</PlantModel>
