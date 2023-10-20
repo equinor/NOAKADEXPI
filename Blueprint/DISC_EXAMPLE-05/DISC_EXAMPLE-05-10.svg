@@ -1613,7 +1613,7 @@
       <g>
         <g>
           <g>
-            <use transform="translate(750,414)" href="#shape-39"/>
+            <use transform="translate(750,414) rotate(180)" href="#shape-39"/>
           </g>
           <g/>
           <g/>

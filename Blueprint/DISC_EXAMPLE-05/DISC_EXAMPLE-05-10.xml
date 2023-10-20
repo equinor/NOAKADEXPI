@@ -3813,7 +3813,7 @@
         <Position>
           <Location X="750" Y="180" Z="0"/>
           <Axis X="0" Y="0" Z="1"/>
-          <Reference X="-1" Y="0" Z="0"/>
+          <Reference X="1" Y="0" Z="0"/>
         </Position>
         <GenericAttributes Set="DexpiCustomAttributes" Number="1">
           <GenericAttribute Format="string" Type="String" TypeURI="http://sandbox.dexpi.org/rdl/String" Name="ItemTagAssignmentClass" AttributeURI="http://noaka.org/rdl/ItemTagAssignmentClass"/>
