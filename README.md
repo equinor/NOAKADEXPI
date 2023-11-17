@@ -5,6 +5,8 @@ NOAKA DEXPI Project:
 - custom DEXPI attribute list and class hierarchy reference
 - NOAKA drafting and DEXPI modelling requirements
 
+ProteusPIDSchema 4.1.1 noaka.xsd - includes new approved Note class and should be used to verify the Blueprint file.
+
 DISC DEXPI Verificator (1.2 alpha 4 for DISC DEXPI):
 This is DEXPI Verificator has been customized towards specific requirements within the DISC project. 
 Key features:
@@ -16,3 +18,4 @@ Key features:
 Download: <https://my.hidrive.com/share/3d8ekf7sp3#$/Verificator>
 
 Please refer to DEXPI DISC Verificator File Comparison.pptx for usage
+
